@@ -50,7 +50,7 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
 
-1. The agency SHALL conduct a privacy risk assessment of these mitigation measures.  Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).The CSP SHALL NOT apply additional risk-based approaches without providing explicit notice of such approaches. 
+1. If the CSP employs risk mitigation measures, the agency SHALL conduct a privacy risk assessment of these mitigation measures.  Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).The CSP SHALL NOT apply additional risk-based approaches without providing explicit notice of such approaches. 
 2. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.
 3.	The agency SHALL publish a System of Records Notice to cover such collections, as applicable.
 4.	The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
