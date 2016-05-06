@@ -9,6 +9,7 @@ description: "DRAFT NIST Special Publication 800-63C"
 # <a name="800-63c"></a> DRAFT NIST Special Publication 800-63C
 
 # Digital Authentication Guideline
+
 ### Federation and Assertions
 
 Paul A. Grassi  
