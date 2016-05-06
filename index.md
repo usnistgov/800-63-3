@@ -34,7 +34,7 @@ But this release is neither complete nor perfect--and it's not intended to be. R
 
 ## A quick summary
 
-Here's a quick list for the biggest changes we've made, but you'll need to dig into the documents (yes, document_S_) too :
+Here's a quick list for the biggest changes we've made, but you'll need to dig into the documents (yes, _documentS_) too:
 
 1. LOA is decoupled into its component parts
 2. Complete revamp of identity proofing
