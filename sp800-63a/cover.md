@@ -23,7 +23,8 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 # DRAFT NIST Special Publication 800-63A
 
-# Digital Authentication Guideline  
+# Digital Authentication Guideline
+
 ###  Enrollment and Identity Proofing Requirements
 
 Paul A. Grassi  
