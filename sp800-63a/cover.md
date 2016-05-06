@@ -1,6 +1,7 @@
 # <a name="800-63a"></a> DRAFT NIST Special Publication 800-63A
 
 # Digital Authentication Guideline
+
 ### Enrollment and Identity Proofing Requirements
 
 Paul A. Grassi  
@@ -15,6 +16,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 # DRAFT NIST Special Publication 800-63A
 
 # Digital Authentication Guideline  
+
 ###  Enrollment and Identity Proofing Requirements
 
 Paul A. Grassi  
