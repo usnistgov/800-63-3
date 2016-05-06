@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 3. Definitions and Abbreviations"
+description: "Section 3. Definitions and Abbreviations"
+---
+
 # 3. Definitions and Abbreviations
 
 There is a wide variety of terms used in the area of authentication. While the definitions of many terms are consistent with earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted.
@@ -11,7 +17,7 @@ The official location where an individual can be found. The address of record al
 A party undergoing the processes of registration and identity proofing.
 
 #### Assurance
-In the context of [[OMB M-04-04]](sec10_references.md#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
+In the context of [[OMB M-04-04]](sec10_references.html#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
 
 #### Attack
 An attempt by an unauthorized individual to defeat security controls. For example, to cause a credential service provider to register an impostor as the subscriber.

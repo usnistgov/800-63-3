@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 7. Session Management"
+description: "Section 7. Session Management"
+---
+
 ##7. Session Management
 
 Once a an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in volume C), where the authentication event necessarily involves several components and actors coordinating across a network.
@@ -22,7 +28,7 @@ Secrets used for session binding:
 - SHOULD be erased on the user endpoint when the user logs out or when the secret is deemed to have expired
 - SHOULD not be placed in insecure locations such as HTML5 Local Storage
 - SHALL be sent to and received from the device using an encrypted protocol that authenticates the session host (e.g., TLS)
-- SHALL time out and not be accepted after the times specified in section [4.1.4](sec4_aal.md#aal1reauth), [4.2.4](sec4_aal.md#aal2reauth), and [4.3.4](sec4_aal.md#aal3reauth) (depending on AAL)
+- SHALL time out and not be accepted after the times specified in section [4.1.4](sec4_aal.html#aal1reauth), [4.2.4](sec4_aal.html#aal2reauth), and [4.3.4](sec4_aal.html#aal3reauth) (depending on AAL)
 
 There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology.
 
@@ -48,7 +54,7 @@ Other methods of secure device identification, such as but not limited to mutual
 ### 7.2. Reauthentication
 
 
-A session SHALL NOT be extended past the guidelines in sections [4.1.4](sec4_aal.md#aal1reauth), [4.2.4](sec4_aal.md#aal2reauth), and [4.3.4](sec4_aal.md#aal3reauth) (depending on AAL) based on presentation of the session secret alone. 
+A session SHALL NOT be extended past the guidelines in sections [4.1.4](sec4_aal.html#aal1reauth), [4.2.4](sec4_aal.html#aal2reauth), and [4.3.4](sec4_aal.html#aal3reauth) (depending on AAL) based on presentation of the session secret alone. 
 
 When a session is terminated due to a time-out or other action, the user MAY reauthenticate using their primary authentication mechanism or an appropriate subset thereof, depending on the AAL.
 

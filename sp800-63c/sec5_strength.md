@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 5. Assertion Strength"
+description: "Section 5. Assertion Strength"
+---
+
 ## 5. Assertion Strength
 
 An assertion contains a set of claims or statements about an authenticated subscriber. Assertions can be categorized along multiple orthogonal dimensions, including the characteristics of using the assertion or the protections on the assertion itself.

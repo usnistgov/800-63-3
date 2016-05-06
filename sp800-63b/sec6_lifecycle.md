@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 6. Authenticator Lifecycle Management"
+description: "Section 6. Authenticator Lifecycle Management"
+---
+
 ##6. Authenticator Lifecycle Management
 
 During the lifecycle of an authenticator bound to a subscriber's identity, a number of events may occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions that SHALL be taken in response to those events.
@@ -47,7 +53,7 @@ The following requirements apply when a claimant choses to increase IAL in order
 1. The CSP MAY accept an existing authenticator at or above the desired IAL
 2. The CSP SHALL require the user to authenticate using their existing authenticator
 3. The CSP SHALL execute all required identity proofing processes for the desired IAL
-4. If the user successfully completes identity proofing, the CSP MAY issue an enrollment code (temporary secret) that confirms address of record as per [800-63-A, Section 5.3.1, Address Confirmation Requirements](../sp800-63a/sec5_proofing.md#address_confirmation), **OR** MAY request the claimant to register their own authenticator by proving proof of possession (for example, activating a private key by physically touching the token)
+4. If the user successfully completes identity proofing, the CSP MAY issue an enrollment code (temporary secret) that confirms address of record as per [800-63-A, Section 5.3.1, Address Confirmation Requirements](../sp800-63a/sec5_proofing.html#address_confirmation), **OR** MAY request the claimant to register their own authenticator by proving proof of possession (for example, activating a private key by physically touching the token)
 
 ####6.1.3 Renewal
 

@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 7. Threats and Security Considerations"
+description: "Section 7. Threats and Security Considerations"
+---
+
 # 7. Threats and Security Considerations
 
 There are two general categories of threats to the enrollment process: impersonation and either compromise or malfeasance of the infrastructure (CSPs). This recommendation focuses on addressing impersonation threats. Infrastructure threats are addressed by normal computer security controls (e.g., separation of duties, record keeping, independent audits) and are outside the scope of this document.

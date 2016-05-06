@@ -1,0 +1,153 @@
+.nist {
+  margin: 0;
+  padding: 0;
+}
+.nist-header {
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px 4px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  margin-bottom: 0px;
+}
+.nist-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nist-header * {
+  box-sizing: inherit;
+}
+.nist-header a, .nist-header a:link, .nist-header a:visited {
+  color: #EEE;
+  text-decoration: none;
+}
+.nist-header h1 {
+  margin: 0 10px 0 0;
+  float: left;
+  font-size: 0;
+}
+.nist-header h1 a {
+  font-weight: normal;
+  font-size: 20px;
+  height: 40px;
+  width: 280px;
+  background: url('nist_logo.png') no-repeat;
+  background-size: 280px auto;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: inline-block;
+}
+.nist-header-text {
+  position: absolute;
+  left: -9999px;
+  background: yellow;
+}
+.nist-links {
+  float: right;
+}
+a.nist-links-button {
+  display: inline-block;
+  padding: 6px;
+  margin: 0 2px;
+  border-radius: 3px;
+  border: 1px solid #666;
+  font-size: 14px;
+}
+.nist-header a.nist-links-button:hover,
+.nist-header a.nist-links-button:focus {
+  background: #ccc;
+  color: #333;
+}
+
+@media screen and (max-width: 700px) {
+  .nist-header {
+    padding: 6px 10px;
+  }
+  .nist-header h1 a {
+    height: 26px;
+    width: 80px;
+    background: url('nist_logo_mark.png') 0 4px no-repeat;
+    background-size: 80px auto;
+  }
+  .mobile-hide {
+    display:none !important;
+  }
+}
+
+/* Custom styling */
+
+section.home {
+  text-align: left;
+}
+
+section.home ul, section.home ol {
+  text-align: left;
+}
+
+ul.audiences li {
+  text-align: center;
+}
+
+.navbar-fixed-left {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 139px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -50px;
+  margin-left: 140px;
+}
+
+.nav>li>a.icon {
+  display: inline-block;
+}
+
+.nav>li>a.icon.icon-fa {
+  padding: 0;
+}
+
+/* Style default/base tables since we are using markdown */
+table{
+  width:100%;
+  margin-bottom:20px
+}
+
+table>thead>tr>th,table>tbody>tr>th,table>tfoot>tr>th,table>thead>tr>td,table>tbody>tr>td,table>tfoot>tr>td{
+  padding:8px;
+  line-height:1.42857143;
+  vertical-align:top;
+  border-top:1px solid #ddd
+}
+
+table>thead>tr>th{
+  vertical-align:bottom;
+  border-bottom:2px solid #ddd
+}
+
+table>caption+thead>tr:first-child>th,table>colgroup+thead>tr:first-child>th,table>thead:first-child>tr:first-child>th,table>caption+thead>tr:first-child>td,table>colgroup+thead>tr:first-child>td,table>thead:first-child>tr:first-child>td{
+  border-top:0
+}
+
+table>tbody+tbody{
+  border-top:2px solid #ddd
+}
+
+table table{
+  background-color:#fff
+}
+
+

@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Sections 1 & 2. Purpose & Introduction"
+description: "Sections 1 & 2. Purpose & Introduction"
+---
 
 # 1. <a name="purpose"></a> Purpose
 
@@ -35,4 +40,4 @@ At IAL 2 and IAL 3, pseudonymity is enabled by CSP limiting the number of attrib
 
 Since the individual will have undergone an identity proofing process at enrollment and likely associated with one or more authenticators, transactions are not pseudonymous with respect to individual interactions with the CSP.
 
-Detailed requirements for each of the IALs is given in [Section 4](sec4_ial.md#ial-section) and [Section 5](sec5_proofing.md#ipv-section).
+Detailed requirements for each of the IALs is given in [Section 4](sec4_ial.html#ial-section) and [Section 5](sec5_proofing.html#ipv-section).

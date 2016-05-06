@@ -1,8 +1,14 @@
+---
+layout: page
+title: "Section 4. Digital Authentication Model"
+description: "Section 4. Digital Authentication Model"
+---
+
 ## 4. Digital Authentication Model
 
 ### <a name="4-1"></a>4.1. Overview 
 
-In accordance with [OMB M-04-04](sec5_references.md#M-04-04), digital authentication is the process of establishing confidence in individual identities presented to a digital system. Systems can use the authenticated identity to determine if that individual is authorized to perform an online transaction. In most cases, the authentication and transaction take place across an open network such as the Internet; however, in some cases access to the network may be limited and access control decisions may take this into account.
+In accordance with [OMB M-04-04](sec5_references.html#M-04-04), digital authentication is the process of establishing confidence in individual identities presented to a digital system. Systems can use the authenticated identity to determine if that individual is authorized to perform an online transaction. In most cases, the authentication and transaction take place across an open network such as the Internet; however, in some cases access to the network may be limited and access control decisions may take this into account.
 
 The digital authentication model used in these guidelines reflects current technologies and architectures used in government. More complex models that separate functions, such as issuing credentials and providing attributes, among larger numbers of parties are also available and may have advantages in some classes of applications. While a simpler model is used in this document, it does not preclude agencies from separating these functions. In addition, certain enrollment, identity proofing, and issuance processes performed by the credential service provider (CSP) are sometimes delegated to an entity known as the registration authority (RA) or identity manager (IM). A close relationship between the RA/IM and CSP is typical, and the nature of this relationship may differ among RAs, IMs, and CSPs. The types of relationship and their requirements is outside of the scope of this document.  Accordingly, the term CSP will be used to be inclusive of RA/IM functions.
 
@@ -50,7 +56,7 @@ Figure 1 - Digital Authentication Model
 
 ### 4.2. Enrollment and Identity Proofing
 
-Normative requirements can be found in [Special Publication 800-63A, Enrollment and Identity Proofing](../sp800-63a/cover.md#800-63a).
+Normative requirements can be found in [Special Publication 800-63A, Enrollment and Identity Proofing](../sp800-63a/cover.html#800-63a).
 
 The previous section introduced the different participants in the conceptual digital authentication model. This section provides additional details regarding the relationships and responsibilities of the participants involved with enrollment and identity proofing.
 
@@ -60,7 +66,7 @@ The CSP establishes a mechanism to uniquely identify each subscriber, register t
 
 ### 4.3. Authentication and Lifecycle Managment
 
-Normative requirements can be found in [Special Publication 800-63B, Authentication and Lifecycle Management](../sp800-63b/cover.md#800-63b).
+Normative requirements can be found in [Special Publication 800-63B, Authentication and Lifecycle Management](../sp800-63b/cover.html#800-63b).
 
 #### 4.3.1. Authenticators
 
@@ -84,7 +90,7 @@ However, this recommendation does accept that authentication systems that incorp
 
 For example, consider a piece of hardware (the authenticator) that contains a cryptographic key (the authenticator secret) where access is protected with a fingerprint. When used with the biometric, the cryptographic key produces an output that is used in the authentication process to authenticate the claimant. An impostor must steal the encrypted key (by stealing the hardware) and replicate the fingerprint to use the authenticator. This specification considers such a device to effectively provide two factor authentication, although the actual authentication protocol between the verifier and the claimant simply proves possession of the key.
 
-As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication, but they do have their place in this specification. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris and retina scans, voiceprints and many other characteristics. [Special Publication 800-63A, Enrollment and Identity Proofing](../sp800-63a/cover.md#800-63a) recommends that biometrics be used in the enrollment process for higher levels of assurance to later help prevent a subscriber who is registered from repudiating the enrollment, to help identify those who commit enrollment fraud, and to unlock authenticators.
+As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication, but they do have their place in this specification. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris and retina scans, voiceprints and many other characteristics. [Special Publication 800-63A, Enrollment and Identity Proofing](../sp800-63a/cover.html#800-63a) recommends that biometrics be used in the enrollment process for higher levels of assurance to later help prevent a subscriber who is registered from repudiating the enrollment, to help identify those who commit enrollment fraud, and to unlock authenticators.
 
 #### 4.3.2. Credentials
 
@@ -102,9 +108,9 @@ The verifier is a functional role, but is frequently implemented in combination 
 
 ### 4.4. Federation and Assertions
 
-Normative requirements can be found in [Special Publication 800-63C, Federation and Assertions](../sp800-63c/cover.md#800-63c).
+Normative requirements can be found in [Special Publication 800-63C, Federation and Assertions](../sp800-63c/cover.html#800-63c).
 
-Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, the guidance is agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation, consistent with the National Strategy for Trusted Identities in Cyberspace (NSTIC) [[NSTIC]](sec5_references.md#theNSTIC), is preferred over a number of siloed identity systems that each serve a single agency or RP.
+Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, the guidance is agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation, consistent with the National Strategy for Trusted Identities in Cyberspace (NSTIC) [[NSTIC]](sec5_references.html#theNSTIC), is preferred over a number of siloed identity systems that each serve a single agency or RP.
 
 Federated architectures have many significant benefits, including, but not limited to:  
 

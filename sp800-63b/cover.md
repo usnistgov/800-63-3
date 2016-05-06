@@ -1,3 +1,11 @@
+---
+layout: page
+title: "DRAFT NIST Special Publication 800-63B"
+description: "DRAFT NIST Special Publication 800-63B"
+---
+
+<div class="text-right" markdown="1">
+
 # <a name="800-63b"></a> DRAFT NIST Special Publication 800-63B
 
 # Digital Authentication Guideline
@@ -57,6 +65,8 @@ U.S. Department of Commerce
 National Institute of Standards and Technology  
 *Willie E. May, Under Secretary of Commerce for Standards and
 Technology and Director*
+
+</div>
 
 <div class="text-center" markdown="1">
 
@@ -165,7 +175,7 @@ The three AALs reflect the options agencies will select based on their risk prof
 
 **AAL 3**: AAL 3 provides the highest practical remote digital authentication assurance. It requires proof of possession of a key in a physical multifactor authenticator through a cryptographic protocol.
 
-The three AALs correspond to the existing Levels of Assurance, specified in OMB Memorandum [M-04-04](sec_references.md#M-04-04), as follows:
+The three AALs correspond to the existing Levels of Assurance, specified in OMB Memorandum [M-04-04](sec_references.html#M-04-04), as follows:
 
 | Level of Assurance |  Authenticator Assurance Level |
 |:------------------:|:------------------------------:|
@@ -177,25 +187,25 @@ The three AALs correspond to the existing Levels of Assurance, specified in OMB 
 
 ## Table of Contents
 
-[1. Purpose and Introduction](sec1_2_introduction.md)
+[1. Purpose and Introduction](sec1_2_introduction.html)
 
-[3. Definitions and Abbreviations](sec3_definitions.md)
+[3. Definitions and Abbreviations](sec3_definitions.html)
 
-[4. Authenticator Assurance Levels](sec4_aal.md)
+[4. Authenticator Assurance Levels](sec4_aal.html)
 
-[5. Authenticator and Verifier Requirements](sec5_authenticators.md)
+[5. Authenticator and Verifier Requirements](sec5_authenticators.html)
 
-[6. Authenticator Lifecycle Requirements](sec6_lifecycle.md)
+[6. Authenticator Lifecycle Requirements](sec6_lifecycle.html)
 
-[7. Session Management](sec7_session.md)
+[7. Session Management](sec7_session.html)
 
-[8. Threats and Security Considerations](sec8_security.md)
+[8. Threats and Security Considerations](sec8_security.html)
 
-[8. Privacy Considerations](sec9_privacy.md)
+[8. Privacy Considerations](sec9_privacy.html)
 
-[10. Usability Considerations](sec10_usability.md)
+[10. Usability Considerations](sec10_usability.html)
 
-[11. References](references.md)
+[11. References](references.html)
 
-[Appendix A. Strength of Memorized Secrets](appA_memorized.md)
+[Appendix A. Strength of Memorized Secrets](appA_memorized.html)
 

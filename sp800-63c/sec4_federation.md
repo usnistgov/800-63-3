@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 4. Federation"
+description: "Section 4. Federation"
+---
+
 ## 4. Federation
 Federation is a process that allows for the conveyance of identity and authentication information across a set of networked systems. In a federation scenario, the verifier or CSP is often known as the *identity provider*, or IdP.
 

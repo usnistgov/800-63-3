@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 6. Requirements for Derived Credentials"
+description: "Section 6. Requirements for Derived Credentials"
+---
+
 # 6. Requirements for Derived Credentials
 
 Where the applicant already possesses recognized authentication credentials from a trusted CSP, the additional CSP may choose to identity proof the claimant by verifying possession and control of the token associated with the credentials and issue a new derived credential.  The following details the proofing requirements for the CSP issuing a derived credential.

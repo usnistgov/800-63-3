@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 6. Assertion Presentation"
+description: "Section 6. Assertion Presentation"
+---
+
 ## 6. Assertion Presentation
 
 Assertions MAY be presented in either an *indirect* or *direct* manner from the CSP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between CSPs and RPs under specific circumstances, as discussed in section 4.1.4.

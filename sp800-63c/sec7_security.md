@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 7. Security"
+description: "Section 7. Security"
+---
+
 ## 7. Security
 
 *This section is non-normative.*

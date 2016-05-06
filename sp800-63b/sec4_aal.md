@@ -1,10 +1,16 @@
+---
+layout: page
+title: "Section 4. Authenticator Assurance Levels"
+description: "Section 4. Authenticator Assurance Levels"
+---
+
 ## <a name="AAL_SEC4"></a>4. Authenticator Assurance Levels
 
 In order to satisfy the requirements of a given Authenticator Assurance Level (AAL), a claimant SHALL authenticate themselves with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier, that MAY be pseudonymous, that SHALL be used each time that subscriber authenticates to that relying party. Optionally, other attributes that identify the subscriber as a unique person may also be provided.
 
 Detailed normative requirements for authenticators and verifiers at each AAL are provided in Section 5.
 
-FIPS 140 requirements are satisfied by [[FIPS 140-2]](references.md#FIPS140-2) or newer revisions.
+FIPS 140 requirements are satisfied by [[FIPS 140-2]](references.html#FIPS140-2) or newer revisions.
 
 ###4.1. Authenticator Assurance Level 1
 
@@ -16,7 +22,7 @@ Authenticator Assurance Level 1 permits the use of any of the following authenti
 
 * Memorized Secret
 * Look-up Secret
-* Out of Band (Partially deprecated; see [Section 5.1.3](sec5_authenticators.md#out-of-band) for more details)
+* Out of Band (Partially deprecated; see [Section 5.1.3](sec5_authenticators.html#out-of-band) for more details)
 * Single Factor OTP Device
 * Multi-Factor OTP Device
 * Single Factor Cryptographic Device
@@ -27,11 +33,11 @@ Authenticator Assurance Level 1 permits the use of any of the following authenti
 
 Cryptographic authenticators used at AAL 1 SHALL use applied cryptography.
 
-Verifiers operated by government agencies at AAL 1 SHALL be validated to meet the requirements of [[FIPS 140]](references.md#FIPS140-2) Level 1.
+Verifiers operated by government agencies at AAL 1 SHALL be validated to meet the requirements of [[FIPS 140]](references.html#FIPS140-2) Level 1.
 
 ####4.1.3. Assertion Requirements
 
-In order to be valid at AAL 1, authentication assertions SHALL meet the requirements defined in [SP 800-63C](../sp800-63c/cover.md#800-63c). Bearer assertions MAY be used.
+In order to be valid at AAL 1, authentication assertions SHALL meet the requirements defined in [SP 800-63C](../sp800-63c/cover.html#800-63c). Bearer assertions MAY be used.
 
 ####<a name="aal1reauth"></a>4.1.4. Reauthentication
 
@@ -39,7 +45,7 @@ At AAL 1, reauthentication of the subscriber SHOULD be repeated at least once pe
 
 ####4.1.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](references.md#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](references.html#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
 ####4.1.6. Records Retention
 
@@ -70,21 +76,21 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 ####4.2.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL 2 SHALL use applied cryptography. Authenticators developed by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](references.md#FIPS140-2) Level 1.
+Cryptographic authenticators used at AAL 2 SHALL use applied cryptography. Authenticators developed by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](references.html#FIPS140-2) Level 1.
 
-Verifiers operated by government agencies at AAL 2 SHALL be validated to meet the requirements of [[FIPS 140]](references.md#FIPS140-2) Level 1.
+Verifiers operated by government agencies at AAL 2 SHALL be validated to meet the requirements of [[FIPS 140]](references.html#FIPS140-2) Level 1.
 
 ####4.2.3. Assertion Requirements
 
-In order to be valid at AAL 2, authentication assertions SHALL meet the requirements defined in [SP 800-63C](../sp800-63c/cover.md#800-63c). Bearer assertions MAY be used.
+In order to be valid at AAL 2, authentication assertions SHALL meet the requirements defined in [SP 800-63C](../sp800-63c/cover.html#800-63c). Bearer assertions MAY be used.
 
 ####<a name="aal2reauth"></a>4.2.4. Reauthentication
 
-At AAL 2, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following no more than 30 minutes of user inactivity. The CSP MAY prompt the user to cause activity just before the inactivity timeout, if desired. Reauthentication MAY use one of two authentication factors if the AAL 2 requirements of [Section 5.2.4](sec5_authenticators.md#reauth_sm) are met.
+At AAL 2, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following no more than 30 minutes of user inactivity. The CSP MAY prompt the user to cause activity just before the inactivity timeout, if desired. Reauthentication MAY use one of two authentication factors if the AAL 2 requirements of [Section 5.2.4](sec5_authenticators.html#reauth_sm) are met.
 
 ####4.2.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](references.md#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](references.html#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
 ####4.2.6. Records Retention
 
@@ -102,13 +108,13 @@ Authentication Assurance Level 3 requires the use of one of two kinds of hardwar
 
 ####4.3.2. Authenticator and Verifier Requirements
 
-Authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](references.md#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](references.md#FIPS140-2) Level 3 physical security. AAL 3 authenticator requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](references.md#FIPS201) compliant Personal Identity Verification (PIV) Card.
+Authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](references.html#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](references.html#FIPS140-2) Level 3 physical security. AAL 3 authenticator requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](references.html#FIPS201) compliant Personal Identity Verification (PIV) Card.
 
-Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](references.md#FIPS140-2) Level 2 or higher.
+Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](references.html#FIPS140-2) Level 2 or higher.
 
 ####4.3.3. Assertion Requirements
 
-In order to be valid at AAL 3, authentication assertions SHALL meet the requirements of proof-of-possession assertions as defined in [SP 800-63C](../sp800-63c/cover.md#800-63c).
+In order to be valid at AAL 3, authentication assertions SHALL meet the requirements of proof-of-possession assertions as defined in [SP 800-63C](../sp800-63c/cover.html#800-63c).
 
 ####<a name="aal3reauth"></a>4.3.4. Reauthentication
 
@@ -116,7 +122,7 @@ At AAL 3, authentication of the subscriber SHALL be repeated at least once per 1
 
 ####4.3.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](references.md#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](references.html#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
 ####4.3.6. Records Retention
 
@@ -134,7 +140,7 @@ Requirement | AAL 1 | AAL 2 | AAL 3
 **FIPS 140 verification** | Level 1 | Level 1 (single factor),<br /> Level 2 (multi factor) | Level 2 overall<br />Level 3 physical security
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
-**Security Controls**|[[SP 800-53]](references.md#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](references.md#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](references.md#SP800-53) High Baseline (or equivalent)
+**Security Controls**|[[SP 800-53]](references.html#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](references.html#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](references.html#SP800-53) High Baseline (or equivalent)
 **Records Retention**|Not required|7 years, 6 months|10 years, 6 months
 
 

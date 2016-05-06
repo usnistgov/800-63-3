@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 10. Assertion Examples"
+description: "Section 10. Assertion Examples"
+---
+
 ##10. Assertion Examples
 
 *This section is non-normative.*

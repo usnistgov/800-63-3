@@ -1,3 +1,11 @@
+---
+layout: page
+title: "DRAFT NIST Special Publication 800-63C"
+description: "DRAFT NIST Special Publication 800-63C"
+---
+
+<div class="text-right" markdown="1">
+
 # <a name="800-63c"></a> DRAFT NIST Special Publication 800-63C
 
 # Digital Authentication Guideline
@@ -47,6 +55,8 @@ U.S. Department of Commerce
 National Institute of Standards and Technology  
 *Willie E. May, Under Secretary of Commerce for Standards and
 Technology and Director*
+
+</div>
 
 <div class="text-center" markdown="1">
 

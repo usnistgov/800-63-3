@@ -1,1 +1,7 @@
 *.pdf
+
+_site/
+.sass-cache/
+.jekyll-metadata
+*.css.map
+*.lock

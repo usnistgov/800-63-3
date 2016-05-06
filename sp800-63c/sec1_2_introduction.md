@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Sections 1 & 2. Purpose & Introduction"
+description: "Sections 1 & 2. Purpose & Introduction"
+---
+
 ##1. Purpose
 
 This recommendation and its companion documents, SP 800-63-3, SP 800-63A, and SP 800-63B, provide technical guidelines to credential service providers for the implementation of remote authentication.

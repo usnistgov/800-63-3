@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Section 8. Threats and Security Considerations"
+description: "Section 8. Threats and Security Considerations"
+---
+
 ##8. Threats and Security Considerations
 
 This section is non-normative.

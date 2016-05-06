@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Appendix A: Strength of Memorized Secrets"
+description: "Appendix A: Strength of Memorized Secrets"
+---
+
 ## Appendix A: Strength of Memorized Secrets
 
 *This appendix is non-normative.*
