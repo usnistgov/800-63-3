@@ -1,7 +1,7 @@
 # Site settings
 title: SP 800-63-3 Digital Authentication Guideline
 description: "Public Preview for NIST Special Publication: SP 800-63-3 Digital Authentication Guideline"
-baseurl: "/737" # the subpath of your site, e.g. /blog
+baseurl: "/800-63-3" # the subpath of your site, e.g. /blog
 url: "https://pages.nist.gov/" # the base hostname & protocol for your site
 
 # Build settings
@@ -24,20 +24,20 @@ exclude:
 
 # GitHub information
 org_name: usnistgov
-repo_name: 737
+repo_name: 800-63-3
 
 # Navigation
 # List links that should appear in the site sidebar here
 navigation:
 - text: Home
-  url: /737/
+  url: /800-63-3/
 - text: SP 800-63-3
-  url: /737/sp800-63-3/
+  url: /800-63-3/sp800-63-3/
 - text: SP 800-63A
-  url: /737/sp800-63a/
+  url: /800-63-3/sp800-63a/
 - text: SP 800-63B
-  url: /737/sp800-63b/
+  url: /800-63-3/sp800-63b/
 - text: SP 800-63C
-  url: /737/sp800-63c/
+  url: /800-63-3/sp800-63c/
 
 host: 0.0.0.0
