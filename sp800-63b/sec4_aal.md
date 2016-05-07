@@ -25,7 +25,7 @@ Authenticator Assurance Level 1 permits the use of any of the following authenti
 
 ####4.1.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL 1 SHALL use applied cryptography.
+Cryptographic authenticators used at AAL 1 SHALL use approved cryptography.
 
 Verifiers operated by government agencies at AAL 1 SHALL be validated to meet the requirements of [[FIPS 140]](references.md#FIPS140-2) Level 1.
 
@@ -70,7 +70,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 ####4.2.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL 2 SHALL use applied cryptography. Authenticators developed by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](references.md#FIPS140-2) Level 1.
+Cryptographic authenticators used at AAL 2 SHALL use approved cryptography. Authenticators developed by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](references.md#FIPS140-2) Level 1.
 
 Verifiers operated by government agencies at AAL 2 SHALL be validated to meet the requirements of [[FIPS 140]](references.md#FIPS140-2) Level 1.
 
