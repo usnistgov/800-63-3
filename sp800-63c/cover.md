@@ -143,7 +143,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 ## Table of Contents
 
-[1. Purpose and Introduction](#sec1_2_introduction.md)
+[1. Purpose and Introduction](sec1_2_introduction.md)
 
 [3. Definitions and Abbreviations](sec3_definitions.md)
 
