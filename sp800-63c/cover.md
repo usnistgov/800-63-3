@@ -143,22 +143,22 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 ## Table of Contents  
 
-[1. Purpose and Introduction](sec1_2_introduction.md)
+[1. Purpose and Introduction](sec1_2_introduction.html)
 
-[3. Definitions and Abbreviations](sec3_definitions.md)
+[3. Definitions and Abbreviations](sec3_definitions.html)
 
-[4. Federation](sec4_federation.md)
+[4. Federation](sec4_federation.html)
 
-[5. Assertion Strength](sec5_strength.md)
+[5. Assertion Strength](sec5_strength.html)
 
-[6. Assertion Presentation](sec6_presententation.md)
+[6. Assertion Presentation](sec6_presententation.html)
 
-[7. Security](sec7_security.md)
+[7. Security](sec7_security.html)
 
-[8. Privacy Requirements and Considerations](sec8_privacy.md)
+[8. Privacy Requirements and Considerations](sec8_privacy.html)
 
-[9. Usability](sec9_usability.md)
+[9. Usability](sec9_usability.html)
 
-[10. Assertion Examples](sec10_examples.md)
+[10. Assertion Examples](sec10_examples.html)
 
-[11. References](references.md)
+[11. References](references.html)
