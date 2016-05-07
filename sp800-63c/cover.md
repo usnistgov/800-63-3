@@ -141,7 +141,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 > Under Construction
 
-## Table of Contents
+## Table of Contents  
 
 [1. Purpose and Introduction](sec1_2_introduction.md)
 
