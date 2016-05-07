@@ -151,7 +151,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 [5. Assertion Strength](sec5_strength.md)
 
-[6. Assertion Presentation](sec6_presentation.md)
+[6. Assertion Presentation](sec6_presententation.md)
 
 [7. Security](sec7_security.md)
 
