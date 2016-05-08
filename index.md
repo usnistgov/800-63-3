@@ -18,11 +18,11 @@ Welcome to the NIST SP 800-63-3 Public Preview!  We're excited to share the majo
 
 ### Public preview vs public draft
 
-If you've made it to this page, you can see we're approaching this a little different by putting our work up on github, rather than the "traditional" comment period for a NIST Special Publication. We're calling it a public preview because some of our of agency partners (and NIST itself) have formal processes for public drafts. Calling it a public preview is our way of letting everyone know those processes aren't in play. This lets do things differently...
+If you've made it to this page, you can see we're approaching this a little different by putting our work up on GitHub, rather than the "traditional" comment period for a NIST Special Publication. We're calling it a public preview because some of our of agency partners (and NIST itself) have formal processes for public drafts. Calling it a public preview is our way of letting everyone know those processes aren't in play. This lets us do things differently...
 
 ### A different cadence
 
-This public preview is focused on gaining input through successive open comment periods and editing iterations of the SP draft. This phase will include multiple iterations of drafts of approximately 2 weeks in length, followed by a 2-3 week period for the editors to adjudicate comments and make appropriate updates to the document.
+This public preview is focused on gaining input through successive open comment periods and editing iterations of the SP draft. This phase will include multiple iterations of comments of approximately 2 weeks in length, followed by a 2-3 week period for the editors to adjudicate comments and make appropriate updates to the document.
 
 We'll continue iterations as long as we have feedback that results in meaningful changes. We welcome you to come back every iteration to see what's new, or watch daily. While we'll be posting major iterations every few weeks, we'll also make updates mid-cycle. 
 
@@ -50,7 +50,7 @@ Please note that the privacy and usability chapters are under construction.  We 
 
 ## Why GitHub
 
-Ok, "Why GitHub?" you ask. For us, the choice was relatively straightforward. GitHub has been a mainstay of the development, including the standards community for many years now, serving as a hub for collaborative interaction, the epicenter for evolving open source software, and an essential component in every coder’s toolkit. It only seemed appropriate for us to engage where so much of our community already congregates and collaborates. 
+Ok, "Why GitHub?" you ask. For us, the choice was relatively straightforward. GitHub has been a mainstay of the development, including the standards, community for many years now, serving as a hub for collaborative interaction, the epicenter for evolving open source software, and an essential component in every coder’s toolkit. It only seemed appropriate for us to engage where so much of our community already congregates and collaborates. 
 
 Second, as a platform, GitHub has many unique characteristics that make it attractive as a place to develop this special publication. From its ability to support broad engagement, to excellent version control, and multiple avenues for collecting and receiving input—it is a robust forum suited to this phase of drafting the 800-63-3 suite.
 
