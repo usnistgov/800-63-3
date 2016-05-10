@@ -18,7 +18,7 @@ Welcome to the NIST SP 800-63-3 Public Preview!  We're excited to share the majo
 
 ### Public preview vs public draft
 
-If you've made it to this page, you can see we're approaching this a little differently by putting our work up [on GitHub](https://pages.nist.gov/800-63-3/), rather than the "traditional" comment period for a NIST Special Publication (SP). We're calling it a public preview because some of our agency partners (and NIST itself) have formal processes for public drafts. Calling it a public preview is our way of letting everyone know those processes aren't in play. This lets us do things differently...
+If you've made it to this page, you can see we're approaching this a little differently by putting our work up on GitHub, rather than the "traditional" comment period for a NIST Special Publication (SP). We're calling it a public preview because some of our agency partners (and NIST itself) have formal processes for public drafts. Calling it a public preview is our way of letting everyone know those processes aren't in play. This lets us do things differently...
 
 ### A different cadence
 
