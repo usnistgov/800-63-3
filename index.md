@@ -18,13 +18,13 @@ Welcome to the NIST SP 800-63-3 Public Preview!  We're excited to share the majo
 
 ### Public preview vs public draft
 
-If you've made it to this page, you can see we're approaching this a little different by putting our work up on GitHub, rather than the "traditional" comment period for a NIST Special Publication. We're calling it a public preview because some of our of agency partners (and NIST itself) have formal processes for public drafts. Calling it a public preview is our way of letting everyone know those processes aren't in play. This lets us do things differently...
+If you've made it to this page, you can see we're approaching this a little differently by putting our work up [on GitHub](https://github.com/usnistgov/800-63-3), rather than the "traditional" comment period for a NIST Special Publication (SP). We're calling it a public preview because some of our agency partners (and NIST itself) have formal processes for public drafts. Calling it a public preview is our way of letting everyone know those processes aren't in play. This lets us do things differently...
 
 ### A different cadence
 
 This public preview is focused on gaining input through successive open comment periods and editing iterations of the SP draft. This phase will include multiple iterations of comments of approximately 2 weeks in length, followed by a 2-3 week period for the editors to adjudicate comments and make appropriate updates to the document.
 
-We'll continue iterations as long as we have feedback that results in meaningful changes. We welcome you to come back every iteration to see what's new, or watch daily. While we'll be posting major iterations every few weeks, we'll also make updates mid-cycle. 
+We'll continue iterations for as long as we have feedback that results in meaningful changes. We welcome you to come back every iteration to see what's new, or watch daily. While we'll be posting major iterations every few weeks, we'll also make updates mid-cycle. 
 
 ### The first release
 
@@ -50,7 +50,7 @@ Please note that the privacy and usability chapters are under construction.  We 
 
 ## Why GitHub
 
-Ok, "Why GitHub?" you ask. For us, the choice was relatively straightforward. GitHub has been a mainstay of the development, including the standards, community for many years now, serving as a hub for collaborative interaction, the epicenter for evolving open source software, and an essential component in every coder’s toolkit. It only seemed appropriate for us to engage where so much of our community already congregates and collaborates. 
+Ok, "Why GitHub?" you ask. For us, the choice was relatively straightforward. GitHub has been a mainstay of the development and standards communities for many years now, serving as a space for collaborative interaction, the epicenter for evolving open source software, and an essential component in every coder’s toolkit. It only seemed appropriate for us to engage where so much of our community already congregates and collaborates. 
 
 Second, as a platform, GitHub has many unique characteristics that make it attractive as a place to develop this special publication. From its ability to support broad engagement, to excellent version control, and multiple avenues for collecting and receiving input—it is a robust forum suited to this phase of drafting the 800-63-3 suite.
 
@@ -60,7 +60,7 @@ To that end, our use of GitHub is additive to the existing open and transparent 
 
 However, to manage this phase properly, we sincerely request that commenters provide substantive input.  Editorial or general comments will be accepted begrudgingly.  We want substantive technical/procedural comments.  We'll get to the grammar and formatting later. Trust us, this is as hard for some of the rather strict grammarians here at NIST as it is for anyone!
 
-In addition, commenters are **STRONGLY** encouraged to collaborate with the team and other public participants via GitHub issues. See [this page](comment_help.html) for details on how to submit a comment to us.  We want to maintain a lean approach, so we are discouraging email and excel files during this phase. We thank you in advance for your efforts to keep this process streamlined for the editors.
+In addition, commenters are **STRONGLY** encouraged to collaborate with the team and other public participants via GitHub issues. See [this page](comment_help.html) for details on how to submit a comment to us.  We want to maintain a lean approach, so we are discouraging email and Excel files during this phase. We thank you in advance for your efforts to keep this process streamlined for the editors.
 
 So have at it!  We're really excited about the changes we've made - we think you will be too!
 
