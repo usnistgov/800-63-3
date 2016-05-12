@@ -12,7 +12,7 @@ James L. Fenton
 Justin P. Richer
 
 This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
+(to be added at publication)  
 ![](../sp800-63-3/media/csd.png)  
 ![](../sp800-63-3/media/nist_logo.png)
 
@@ -47,7 +47,7 @@ Justin P. Richer
 Billerica, MA*
 
 This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX
+(to be added at publication)
 
 Month TBD 2016
 
@@ -75,7 +75,7 @@ CODEN: NSPUE2
 
 
 This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX
+(to be added at publication)
 
 >Certain commercial entities, equipment, or materials may be identified in this document in order to describe an experimental procedure or concept adequately. Such identification is not intended to imply recommendation or endorsement by NIST, nor is it intended to imply that the entities, materials, or equipment are necessarily the best available for the purpose.
 There may be references in this publication to other publications currently under development by NIST in accordance with its assigned statutory responsibilities. The information in this publication, including concepts and methodologies, may be used by federal agencies even before the completion of such companion publications. Thus, until each publication is completed, current requirements, guidelines, and procedures, where they exist, remain operative. For planning and transition purposes, federal agencies may wish to closely follow the development of these new publications by NIST.
