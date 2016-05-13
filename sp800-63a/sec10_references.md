@@ -1,8 +1,4 @@
----
-layout: page
-title: "References"
-description: "References"
----
+<a name="references"></a>
 
 # 10. References
 

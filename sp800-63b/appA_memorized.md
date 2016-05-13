@@ -1,8 +1,4 @@
----
-layout: page
-title: "Appendix A: Strength of Memorized Secrets"
-description: "Appendix A: Strength of Memorized Secrets"
----
+<a name="appA"></a>
 
 ## Appendix A: Strength of Memorized Secrets
 

@@ -1,9 +1,3 @@
----
-layout: page
-title: "DRAFT NIST Special Publication 800-63-3"
-description: "DRAFT NIST Special Publication 800-63-3"
----
-
 <div class="text-right" markdown="1">
 
 # <a name="800-63-3"></a>DRAFT NIST Special Publication 800-63-3
@@ -20,8 +14,8 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 {:/comment}
 
-![](media/csd.png)  
-![](media/nist_logo.png)
+![](sp800-63-3/media/csd.png)  
+![](sp800-63-3/media/nist_logo.png)
 
 # DRAFT NIST Special Publication 800-63-3
 
@@ -45,7 +39,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 Month TBD 2016
 
-![](media/commerce_logo.png)
+![](sp800-63-3/media/commerce_logo.png)
 
 U.S. Department of Commerce  
 *Penny Pritzker, Secretary*
@@ -168,7 +162,7 @@ Digital authentication is the process of establishing confidence in user identit
 The suite of SP 800-63-3 documents provides technical guidelines to agencies to allow an individual to authenticate his or her identity to a Federal digital service.  This document may inform but does not restrict or constrain the development or use of standards for application outside of the Federal government, such as e-commerce transactions. These guidelines address only traditional, widely implemented methods for digital authentication, primarily based on secrets. With these methods, the individual to be authenticated proves that he or she knows or possesses a valid authenticator or combination of authenticators.
 
 These technical guidelines supplement OMB guidance, *E-Authentication
-Guidance for Federal Agencies* [[OMB M-04-04]](sec5_references.html#M-04-04) and
+Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and
 supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of assurance, Levels 1 to 4, in terms of the consequences of authentication errors and misuse of credentials. Level 1 is the lowest assurance level, and Level 4 is the highest. The OMB guidance defines the required level of identity assurance in terms of the likely consequences of an authentication error. As the consequences of an authentication error become more serious, the required level of assurance increases. The OMB guidance provides agencies with the criteria for determining the level of identity assurance required for specific applications and transactions, based on the risks and their likelihood of occurrence of each application or transaction.
 
 OMB guidance outlines a five-step process by which agencies should meet their digital authentication assurance requirements:
@@ -210,13 +204,13 @@ A summary of each of the identity and authenticator assurance levels is provided
 
 **Identity Assurance Level 1** – At this level, attributes provided in conjunction with the authentication process, if any, are self-asserted.
 
-**Identity Assurance Level 2** – IAL 2 introduces the need for either remote or in-person identity proofing. IAL 2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](../sp800-63a/cover.html#800-63a).
+**Identity Assurance Level 2** – IAL 2 introduces the need for either remote or in-person identity proofing. IAL 2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).
 
-**Identity Assurance Level 3** – At IAL 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](../sp800-63a/cover.html#800-63a).
+**Identity Assurance Level 3** – At IAL 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).
 
 **Authenticator Assurance Level 1** - AAL 1 provides single factor digital authentication, giving some assurance that the same claimant who participated in previous transactions is accessing the protected transaction or data. AAL 1 allows a wide range of available authentication technologies to be employed and requires only a single authentication factor to be used. It also permits the use of any of the authentication methods of higher authenticator assurance levels. Successful authentication requires that the claimant prove through a secure authentication protocol that he or she possesses and controls the authenticator.
 
-**Authenticator Assurance Level 2** – AAL 2 provides higher assurance that the same claimant who participated in previous transactions is accessing the protected transaction or data. At least two different authentication factors are required. Various types of authenticators, including multi-factor Software Cryptographic Authenticators, may be used as described in [SP 800-63B](../sp800-63b/cover.html#800-63b). AAL 2 also permits any of the authentication methods of AAL 3. AAL 2 authentication requires cryptographic mechanisms that protect the primary authenticator against compromise by the protocol threats for all threats at AAL 1 as well as verifier impersonation attacks. Approved cryptographic techniques are required for all assertion protocols used at AAL 2 and above.
+**Authenticator Assurance Level 2** – AAL 2 provides higher assurance that the same claimant who participated in previous transactions is accessing the protected transaction or data. At least two different authentication factors are required. Various types of authenticators, including multi-factor Software Cryptographic Authenticators, may be used as described in [SP 800-63B](sp800-63b.html). AAL 2 also permits any of the authentication methods of AAL 3. AAL 2 authentication requires cryptographic mechanisms that protect the primary authenticator against compromise by the protocol threats for all threats at AAL 1 as well as verifier impersonation attacks. Approved cryptographic techniques are required for all assertion protocols used at AAL 2 and above.
 
 **Authenticator Assurance Level 3** – AAL 3 is intended to provide the highest practical digital authentication assurance. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed. The authenticator is required to be a hardware cryptographic module validated at Federal Information Processing Standard (FIPS) 140 Level 2 or higher overall with at least FIPS 140 Level 3 physical security. AAL 3 authenticator requirements can be met by using the PIV authentication key of a FIPS 201 compliant Personal Identity Verification (PIV) Card.
 
@@ -244,18 +238,18 @@ The following table details valid combinations of IAL and AAL that agencies may 
 | **AAL 2** | Allowed | Allowed | **NO** |
 | **AAL 3** | Allowed | Allowed | Allowed |
 
-The rationale for the prohibitions above are based on [Executive Order 13681](sec5_references.html#EO13681) which states "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication..." Based on this, an agency is required to issue an multi-factor authenticator at the higher IALs.  AAL 1 authentication is not acceptable for applications that require identity proofing at IAL 2 or 3.
+The rationale for the prohibitions above are based on [Executive Order 13681](#EO13681) which states "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication..." Based on this, an agency is required to issue an multi-factor authenticator at the higher IALs.  AAL 1 authentication is not acceptable for applications that require identity proofing at IAL 2 or 3.
 
 ## Table of Contents
 
-[1. Purpose](sec1_2_introduction.html#purpose)
+[1. Purpose](#sec1)
 
-[2. Introduction](sec1_2_introduction.html#intro)
+[2. Introduction](#sec2)
 
-[3. Definitions and Abbreviations](sec3_definitions.html)
+[3. Definitions and Abbreviations](#sec3)
 
-[4. Digital Authentication Model](sec4_model.html)
+[4. Digital Authentication Model](#sec4)
 
-[5. References](sec5_references.html)
+[5. References](#references)
 
  

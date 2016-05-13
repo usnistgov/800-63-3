@@ -1,14 +1,11 @@
----
-layout: page
-title: "Section 8. Threats and Security Considerations"
-description: "Section 8. Threats and Security Considerations"
----
+<a name="sec8"></a>
 
-##8. Threats and Security Considerations
+## 8. Threats and Security Considerations
 
-This section is non-normative.
+*This section is non-normative.*
 
 ### 8.1. Authenticator Threats
+
 An attacker who can gain control of an authenticator will often be able to masquerade as the authenticator's owner. Threats to authenticators can be categorized based on attacks on the types of authentication factors that comprise the authenticator:
 
 - *Something you have* may be lost, damaged, stolen from the owner or cloned by an attacker. For example, an attacker who gains access to the owner’s computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.

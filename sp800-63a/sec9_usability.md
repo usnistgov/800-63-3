@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 9. Usability Considerations"
-description: "Section 9. Usability Considerations"
----
+<a name="sec9"></a>
 
 # 9. Usability Considerations
 

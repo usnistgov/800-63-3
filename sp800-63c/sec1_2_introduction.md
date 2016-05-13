@@ -1,14 +1,12 @@
----
-layout: page
-title: "Sections 1 & 2. Purpose & Introduction"
-description: "Sections 1 & 2. Purpose & Introduction"
----
+<a name="sec1"></a>
 
-##1. Purpose
+## 1. Purpose
 
 This recommendation and its companion documents, SP 800-63-3, SP 800-63A, and SP 800-63B, provide technical guidelines to credential service providers for the implementation of remote authentication.
 
-##2. Introduction
+<a name="sec2"></a>
+
+## 2. Introduction
 
 Assertions are statements from a credential service provider (CSP) to a relying party (RP) that contain information about a subscriber. Assertions are used when the RP and the verifier are not co-located (i.e., they are connected through a shared network or the internet). The RP uses the information in the assertion to identify the subscriber and make authorization decisions about their access to resources controlled by the RP. An assertion may include identification and authentication statements regarding the subscriber and may additionally include attribute statements that further characterize the subscriber and support the authorization decision at the RP.
 

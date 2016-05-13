@@ -1,12 +1,10 @@
----
-layout: page
-title: "Sections 1 & 2. Purpose & Introduction"
-description: "Sections 1 & 2. Purpose & Introduction"
----
+<a name="sec1"></a>
 
 ## 1. <a name="purpose"></a>Purpose
 
 This recommendation and its companion documents, SP 800-63A, SP 800-63B, and SP 800-63C, provide technical guidelines to agencies for the implementation of digital authentication.
+
+<a name="sec2"></a>
 
 ## 2. <a name="intro"></a>Introduction
 
@@ -24,7 +22,7 @@ Current government systems do not separate the functions of
 authentication and attribute providers. However, in some applications, these
 functions are provided by different parties. This document suite describes authenticator assurance and identity assurance as separate metrics, and provides a mapping between these metrics and overall level of assurance.
 These technical guidelines supplement OMB guidance, *E-Authentication
-Guidance for Federal Agencies* \[[OMB M-04-04](sec5_references.html#M-04-04)\] and
+Guidance for Federal Agencies* \[[OMB M-04-04](#M-04-04)\] and
 supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of
 assurance, Levels 1 to 4, in terms of the consequences of authentication
 errors and misuse of credentials. Level 1 is the lowest assurance level
@@ -52,7 +50,7 @@ their authentication assurance requirements:
 1.  *Conduct a risk assessment of the government system* – No specific
     risk assessment methodology is prescribed for this purpose;
     however, NIST Special
-    Publication (SP) 800-30 [[SP 800-30]](sec5_references.html#SP800-30) offers a general
+    Publication (SP) 800-30 [[SP 800-30]](#SP800-30) offers a general
     process for risk assessment and risk mitigation.
 
 2.  *Map identified risks to the appropriate assurance level* – Section
@@ -72,21 +70,21 @@ their authentication assurance requirements:
     level* – As some implementations may create or compound particular
     risks, agencies should conduct a final validation to confirm that
     the system achieves the required assurance level for the
-    user-to-agency process. NIST SP 800-53A [[SP 800-53A]](sec5_references.html#SP800-53A)
+    user-to-agency process. NIST SP 800-53A [[SP 800-53A]](#SP800-53A)
     provides guidelines for the assessment of the implemented system
     during the validation process. Validation should be performed as
     part of a security authorization process as described in NIST SP
-    800-37, Revision 1 [[SP 800-37]](sec5_references.html#SP800-37).
+    800-37, Revision 1 [[SP 800-37]](#SP800-37).
 
 5.  *Periodically reassess the information system to determine
     technology refresh requirements* – The agency shall periodically
     reassess the information system to ensure that the identity
     authentication requirements continue to be satisfied. NIST SP
-    800-37, Revision 1 [[SP 800-37]](sec5_references.html#SP800-37) provides guidelines on
+    800-37, Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on
     the frequency, depth and breadth of periodic reassessments. As with
     the initial validation process, agencies should follow the
     assessment guidelines specified in SP 800-53A [[SP
-    800-53A]](sec5_references.html#SP800-53A) for conducting the security assessment.
+    800-53A]](#SP800-53A) for conducting the security assessment.
 
 This family of documents provides guidelines for implementing the third step of the
 above process. In particular, this document maps the four (4) Levels of Assurance defined in OMB M-04-04 into corresponding authenticator assurance and identity assurance levels. Other documents in the family state specific technical
@@ -180,17 +178,17 @@ determine that additional authentication measures or other process
 safeguards are appropriate. When developing digital authentication processes
 and systems, agencies should consult *OMB Guidance for Implementing the
 Privacy Provisions of the E-Government Act of 2002* \[[OMB
-M-03-22](sec5_references.html#M-03-22)\]. See the *Guide to Federal Agencies on
-Implementing Electronic Processes* \[[DOJ 2000](sec5_references.html#DOJ2000)\] for
+M-03-22](#M-03-22)\]. See the *Guide to Federal Agencies on
+Implementing Electronic Processes* \[[DOJ 2000](#DOJ2000)\] for
 additional information on legal risks, especially those that are related
 to the need to satisfy legal standards of proof and prevent repudiation,
 as well as *Use of Electronic Signatures in Federal Organization
-Transactions* \[[GSA ESIG](sec5_references.html#GSAESIG)\].
+Transactions* \[[GSA ESIG](#GSAESIG)\].
 
 Additionally, Federal agencies implementing these guidelines should
 adhere to the requirements of Title III of the E-Government Act,
 entitled the *Federal Information Security Management Act*
-\[[FISMA](sec5_references.html#FISMA)\], and the related NIST standards and guidelines.
+\[[FISMA](#FISMA)\], and the related NIST standards and guidelines.
 FISMA directs Federal agencies to develop, document, and implement
 agency-wide programs to provide information security for the information
 and information systems that support the operations and assets of the
@@ -202,14 +200,14 @@ operations of their digital systems.
 
 ### 2.1. How to Use this Suite of Special Publications
 
-The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since initial versions of Special Publication 800-63 were released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to provide strong authenticators even if no identity proofing is required.  Therefore, a suite of special publications under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the guidelines in [SP 800-63A](../sp800-63a/cover.html#800-63a) and [SP 800-63B](../sp800-63b/cover.html#800-63b).  If the CSP also participates in an identity federation, which is preferred over a standalone CSP, meeting the requirements of [SP 800-63C](../sp800-63c/cover.html#800-63c) will apply.
+The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since initial versions of Special Publication 800-63 were released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to provide strong authenticators even if no identity proofing is required.  Therefore, a suite of special publications under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the guidelines in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is preferred over a standalone CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) will apply.
 
 ### 2.2. Relationship to Other Standards and Guidelines
 
-This document has been written to satisfy the needs of federal agencies. However, with the expansion of citizen services throughout the world that require identity and authenticaiotn assurance, as well as an increasing number of use cases that promote international identity federation and interoperability, it is intended to achieve alignment to national and international standards that describe levels of identity assurance. This is not meant to imply that there is direct correlation between the IALs and AALs in this document and the levels in those standards, but that it is seen that this document fulfils the criteria as demonstrated in those standards.
+This document has been written to satisfy the needs of federal agencies. However, with the expansion of citizen services throughout the world that require identity and authentication assurance, as well as an increasing number of use cases that promote international identity federation and interoperability, it is intended to achieve alignment to national and international standards that describe levels of identity assurance. This is not meant to imply that there is direct correlation between the IALs and AALs in this document and the levels in those standards, but that it is seen that this document fulfils the criteria as demonstrated in those standards.
 
 
-SP 800-63|[[GPG 45]](sec5_references#GPG45)|[[RSDOPS]](sec5_references#RSDOPS)|STORK 2.0|29115:2011|ISO 29003|Government of Canada
+SP 800-63|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|STORK 2.0|29115:2011|ISO 29003|Government of Canada
 :---------:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
 N/A|N/A|Level 01|N/A|N/A|N/A|N/A
 AAL/IAL 1|Level 1|Level 1|QAA Level 1|LoA 1|LoA 1|IAL/CAL 1

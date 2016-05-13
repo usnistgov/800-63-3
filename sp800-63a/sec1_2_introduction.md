@@ -1,12 +1,10 @@
----
-layout: page
-title: "Sections 1 & 2. Purpose & Introduction"
-description: "Sections 1 & 2. Purpose & Introduction"
----
+<a name="sec1"></a>
 
 # 1. <a name="purpose"></a> Purpose
 
 This document provides requirements for enrollment and identity proofing of subscribers that wish to gain access to online resources for each Identity Assurance Level (IAL).  The requirements detail the acceptability, validation, and verification of identity evidence that will be presented by an individual to support their claim of identity. This document also details the responsibilities of Credential Service Providers (CSPs) with respect to establishing and maintaining enrollment records, and binding of authenticators (either CSP issued or subscriber-provided) to the enrollment record. 
+
+<a name="sec2"></a>
 
 # 2. <a name="intro"></a> Introduction
 
@@ -40,4 +38,4 @@ At IAL 2 and IAL 3, pseudonymity is enabled by CSP limiting the number of attrib
 
 Since the individual will have undergone an identity proofing process at enrollment and likely associated with one or more authenticators, transactions are not pseudonymous with respect to individual interactions with the CSP.
 
-Detailed requirements for each of the IALs is given in [Section 4](sec4_ial.html#ial-section) and [Section 5](sec5_proofing.html#ipv-section).
+Detailed requirements for each of the IALs is given in [Section 4](#ial-section) and [Section 5](#ipv-section).

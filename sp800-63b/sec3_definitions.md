@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 3. Definitions and Abbreviations"
-description: "Section 3. Definitions and Abbreviations"
----
+<a name="sec3"></a>
 
 ## 3. Definitions and Abbreviations
 
@@ -23,7 +19,7 @@ A statement from a verifier to a Relying Party (RP) that contains identity infor
 A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier.
 
 #### Assurance
-In the context of [[OMB M-04-04]](references.html#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
+In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
 
 #### Asymmetric Keys
 Two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification.
@@ -229,7 +225,7 @@ Credentials that describe the binding in a way that does not compromise the auth
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
 
 #### Public Key Certificate
-A digital document issued and digitally signed by the private key of a certificate authority that binds the name of a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](references.html#RFC5280).
+A digital document issued and digitally signed by the private key of a certificate authority that binds the name of a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](#RFC5280).
 
 #### Public Key Infrastructure (PKI)
 A set of policies, processes, server platforms, software and workstations used for the purpose of administering certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
@@ -302,7 +298,7 @@ See *Authenticator Output*.
 See *Authenticator Secret*.
 
 #### Transport Layer Security (TLS)
-An authentication and security protocol widely implemented in browsers and web servers. TLS is defined by [[RFC 5246]](references.html#RFC5246). TLS is similar to the older Secure Sockets Layer (SSL) protocol, and TLS 1.0 is effectively SSL version 3.1. NIST [[SP 800-52]](references.html#SP800-52), *Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations* specifies how TLS is to be used in government applications.
+An authentication and security protocol widely implemented in browsers and web servers. TLS is defined by [[RFC 5246]](#RFC5246). TLS is similar to the older Secure Sockets Layer (SSL) protocol, and TLS 1.0 is effectively SSL version 3.1. NIST [[SP 800-52]](#SP800-52), *Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations* specifies how TLS is to be used in government applications.
 
 #### Trust Anchor
 A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate).

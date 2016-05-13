@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 5. Assertion Strength"
-description: "Section 5. Assertion Strength"
----
+<a name="sec5"></a>
 
 ## 5. Assertion Strength
 

@@ -1,10 +1,6 @@
----
-layout: page
-title: "Section 10. Assertion Examples"
-description: "Section 10. Assertion Examples"
----
+<a name="sec10"></a>
 
-##10. Assertion Examples
+## 10. Assertion Examples
 
 *This section is non-normative.*
 
