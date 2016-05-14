@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 7. Security"
-description: "Section 7. Security"
----
+<a name="sec7"></a>
 
 ## 7. Security
 

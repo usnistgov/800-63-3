@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 6. Requirements for Derived Credentials"
-description: "Section 6. Requirements for Derived Credentials"
----
+<a name="sec6"></a>
 
 # 6. Requirements for Derived Credentials
 

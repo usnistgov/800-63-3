@@ -1,10 +1,6 @@
----
-layout: page
-title: "Section 5. References"
-description: "Section 5. References"
----
+<a name="references"></a>
 
-# 5. References
+## 5. References
 
 >Under construction
 

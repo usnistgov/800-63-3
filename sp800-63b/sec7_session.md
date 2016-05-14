@@ -1,18 +1,14 @@
----
-layout: page
-title: "Section 7. Session Management"
-description: "Section 7. Session Management"
----
+<a name="sec7"></a>
 
-##7. Session Management
+## 7. Session Management
 
-Once a an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in volume C), where the authentication event necessarily involves several components and actors coordinating across a network.
+Once an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in volume C), where the authentication event necessarily involves several components and actors coordinating across a network.
 
 To facilitate this behavior, a *session* MAY be started in response to an authentication event, and such a session SHALL continue until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in section 7.2), wherein the user repeats some or all of the initial authentication event, thereby asserting their presence again.
 
 Session management is preferable over continuous presentation of credentials as the usability requirements of such continuous presentation would incentivize workarounds such as cached unlocking credentials, negating the freshness of the authentication event in the first place. 
 
-###7.1. Session Bindings
+### 7.1. Session Bindings
 
 A session occurs between the software that a subscriber is running, such as a browser, application, or operating system (the session subject), and the RP or CSP that the subscriber is accessing (the session host). A session secret is shared between the subscriber's software and the service being accessed. This secret binds the two ends of the session, allowing the user to continue using the service over time. The secret MAY be presented directly by the user's software (a bearer secret) or MAY be proofed using a cryptographic mechanism (a proof of possession secret). 
 
@@ -28,11 +24,11 @@ Secrets used for session binding:
 - SHOULD be erased on the user endpoint when the user logs out or when the secret is deemed to have expired
 - SHOULD not be placed in insecure locations such as HTML5 Local Storage
 - SHALL be sent to and received from the device using an encrypted protocol that authenticates the session host (e.g., TLS)
-- SHALL time out and not be accepted after the times specified in section [4.1.4](sec4_aal.html#aal1reauth), [4.2.4](sec4_aal.html#aal2reauth), and [4.3.4](sec4_aal.html#aal3reauth) (depending on AAL)
+- SHALL time out and not be accepted after the times specified in section [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL)
 
 There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology.
 
-####7.1.1. Browser Cookies
+#### 7.1.1. Browser Cookies
 
 Browser cookies are the predominant mechanism by which a session will be created and tracked for a user accessing a service. 
 
@@ -43,18 +39,18 @@ Cookies:
 - SHOULD be tagged to be inaccessible via JavaScript
 - SHOULD be tagged to expire at or soon after the validity period of the session (This requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.)
 
-####7.1.2. OAuth Tokens
+#### 7.1.2. OAuth Tokens
 
 An OAuth access token MAY be used to allow an application to act on behalf of a user after an initial authentication event. The presence of an OAuth token SHALL NOT be interpreted to indicate the presence of the user, in the absence of other signals.
 
-####7.1.3. Device Identification
+#### 7.1.3. Device Identification
 
 Other methods of secure device identification, such as but not limited to mutual TLS, token binding, or other mechanisms, MAY be used to enact a session between a user and a service. 
 
 ### 7.2. Reauthentication
 
 
-A session SHALL NOT be extended past the guidelines in sections [4.1.4](sec4_aal.html#aal1reauth), [4.2.4](sec4_aal.html#aal2reauth), and [4.3.4](sec4_aal.html#aal3reauth) (depending on AAL) based on presentation of the session secret alone. 
+A session SHALL NOT be extended past the guidelines in sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL) based on presentation of the session secret alone. 
 
 When a session is terminated due to a time-out or other action, the user MAY reauthenticate using their primary authentication mechanism or an appropriate subset thereof, depending on the AAL.
 

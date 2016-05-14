@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 7. Threats and Security Considerations"
-description: "Section 7. Threats and Security Considerations"
----
+<a name="sec7"></a>
 
 # 7. Threats and Security Considerations
 

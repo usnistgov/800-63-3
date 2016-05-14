@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 4. Identity Assurance Level Requirements"
-description: "Section 4. Identity Assurance Level Requirements"
----
+<a name="sec4"></a>
 
 # <a name="ial-section"></a> 4. Identity Assurance Level Requirements
 
@@ -24,10 +20,12 @@ The following diagram outlines the basic flow for Identity Proofing and Enrollme
 
 <div class="text-center" markdown="1">
 
-![](media/ProofingProcess.png)
-Figure 1.  The Identity Proofing Process
+![](sp800-63a/media/ProofingProcess.png)
+
+**Figure 1.  The Identity Proofing Process**
 
 </div>
+
 ## 4.2. General Requirements
 
 The following requirements apply to any CSP performing identity proofing at IAL 2 or 3. 
@@ -46,7 +44,7 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 12. Exact matches of information used in the proofing process may be difficult to achieve due to multiple factors. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple pieces of evidence, authoritative records, and third party records. Matching algorithms/rules used SHALL be publicly or community of interest available. For example, they MAY be included as part of the written policy or practice statement referenced above. 
 13. The entire proofing transaction, including transactions that involve a third party, SHALL occur over mutually authenticated protected sessions.
 13. The CSP MAY obtain additional confidence in remote identity proofing using risk mitigation measures such as geolocation, device characteristics, and behavioral characteristics, so long as additional mitigation approaches do not substitute for requirements contained herein. 
-14. Knowledge based verification (KBV) (sometimes referred to as knowledge based authentication (KBA)) is typically used to verify a claimed identity by testing the personal knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. The CSP MAY use KBV to verify the identity of an applicant provided the requirements in Section [Knowledge Based Verification Requirements](./sec5_proofing.html#kbv) are met. 
+14. Knowledge based verification (KBV) (sometimes referred to as knowledge based authentication (KBA)) is typically used to verify a claimed identity by testing the personal knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. The CSP MAY use KBV to verify the identity of an applicant provided the requirements in Section [Knowledge Based Verification Requirements](#kbv) are met. 
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
 
@@ -61,12 +59,12 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 At IAL 3, identity proofing SHOULD be performed in person. "Virtual in-person" identity proofing MAY be employed by a CSP as an equivalent process to in-person identity proofing. Remote proofing SHALL NOT be performed. 
 
-Any such "virtual in-person" identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL 3 validation and verification requirements specified in [Section 5.2. Identity Evidence Validation](sec5_proofing.html#validate) and [Section 5.3. Identity Verification](sec5_proofing.html#verify):
+Any such "virtual in-person" identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL 3 validation and verification requirements specified in [Section 5.2. Identity Evidence Validation](#validate) and [Section 5.3. Identity Verification](#verify):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHAll require all actions taken by the applicant during the enrollment and identity proofing process are visible.
 4. All digital verification of evidence (e.g., via chip or wireless technologies) SHALL be performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
-5. Collection of biometrics SHALL be done in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](../sp800-63b/sec5_authenticators.html#biometric_use) apply.
+5. Collection of biometrics SHALL be done in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
 6. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing and registration session.
 7. A CSP SHOULD have a live operator participate in-person with the applicant for the entirely of the identity proofing and registration session.
 8. The CSP SHALL have the live operator view the biometric source (e.g.,fingers or face) for presence of non-natural materials.

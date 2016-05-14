@@ -1,9 +1,3 @@
----
-layout: page
-title: "DRAFT NIST Special Publication 800-63A"
-description: "DRAFT NIST Special Publication 800-63A"
----
-
 <div class="text-right" markdown="1">
 
 # <a name="800-63a"></a> DRAFT NIST Special Publication 800-63A
@@ -23,8 +17,8 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 {:/comment}
 
-![](../sp800-63-3/media/csd.png)  
-![](../sp800-63-3/media/nist_logo.png)
+![](sp800-63-3/media/csd.png)  
+![](sp800-63-3/media/nist_logo.png)
 
 # DRAFT NIST Special Publication 800-63A
 
@@ -54,7 +48,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 Month TBD 2016
 
-![](../sp800-63-3/media/commerce_logo.png)
+![](sp800-63-3/media/commerce_logo.png)
 
 U.S. Department of Commerce  
 *Penny Pritzker, Secretary*
@@ -182,7 +176,7 @@ At IAL 2, the claimed identity is proven with evidence that supports the real wo
 **IAL 3**:
 At Identity Assurance Level 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes. 
 
-A mapping is provided below to allow agencies using the existing Level of Assurance model, specified in OMB Memorandum [M-04-04](sec_references.html#M-04-04), to select appropriate technology and process based on the selected IAL.
+A mapping is provided below to allow agencies using the existing Level of Assurance model, specified in OMB Memorandum [M-04-04](#M-04-04), to select appropriate technology and process based on the selected IAL.
 
 | Level of Assurance |  Identity Assurance Level |
 |:------------------:|:------------------------:|
@@ -194,24 +188,24 @@ A mapping is provided below to allow agencies using the existing Level of Assura
 
 ## Table of Contents
 
-[1. Purpose](sec1_2_introduction.html#purpose)
+[1. Purpose](#sec1)
 
-[2. Introduction](sec1_2_introduction.html#intro)
+[2. Introduction](#sec2)
 
-[3. Definitions and Abbreviations](sec3_definitions.html)
+[3. Definitions and Abbreviations](#sec3)
 
-[4. Identity Assurance Level Requirements](sec4_ial.html)
+[4. Identity Assurance Level Requirements](#sec4)
 
-[5. Identity Proofing Requirements](sec5_proofing.html)
+[5. Identity Proofing Requirements](#sec5)
 
-[6. Requirements for Derived Credentials](sec6_dc.html)
+[6. Requirements for Derived Credentials](#sec6)
 
-[7. Threats and Security Considerations](sec7_security.html)
+[7. Threats and Security Considerations](#sec7)
 
-[8. Privacy Considerations](sec8_privacy.html)
+[8. Privacy Considerations](#sec8)
 
-[9. Usability Considerations](sec9_usability.html)
+[9. Usability Considerations](#sec9)
 
-[10. References](sec10_references.html)
+[10. References](#references)
 
  

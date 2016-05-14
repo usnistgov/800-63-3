@@ -1,9 +1,3 @@
----
-layout: page
-title: "DRAFT NIST Special Publication 800-63C"
-description: "DRAFT NIST Special Publication 800-63C"
----
-
 <div class="text-right" markdown="1">
 
 # <a name="800-63c"></a> DRAFT NIST Special Publication 800-63C
@@ -158,22 +152,24 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 ## Table of Contents  
 
-[1. Purpose and Introduction](sec1_2_introduction.html)
+[1. Purpose](#sec1)
 
-[3. Definitions and Abbreviations](sec3_definitions.html)
+[2. Introduction](#sec2)
 
-[4. Federation](sec4_federation.html)
+[3. Definitions and Abbreviations](#sec3\)
 
-[5. Assertion Strength](sec5_strength.html)
+[4. Federation](#sec4)
 
-[6. Assertion Presentation](sec6_presententation.html)
+[5. Assertion Strength](#sec5)
 
-[7. Security](sec7_security.html)
+[6. Assertion Presentation](#sec6)
 
-[8. Privacy Requirements and Considerations](sec8_privacy.html)
+[7. Security](#sec7)
 
-[9. Usability](sec9_usability.html)
+[8. Privacy Requirements and Considerations](#sec8)
 
-[10. Assertion Examples](sec10_examples.html)
+[9. Usability](#sec9)
 
-[11. References](references.html)
+[10. Assertion Examples](#sec10)
+
+[11. References](#references)

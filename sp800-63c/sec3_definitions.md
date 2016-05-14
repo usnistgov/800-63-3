@@ -1,8 +1,4 @@
----
-layout: page
-title: "Section 3. Definitions and Abbreviations"
-description: "Section 3. Definitions and Abbreviations"
----
+<a name="sec3"></a>
 
 ## 3. Definitions and Abbreviations
 
