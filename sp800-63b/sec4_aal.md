@@ -35,7 +35,7 @@ Verifiers operated by government agencies at AAL 1 SHALL be validated to meet th
 
 In order to be valid at AAL 1, authentication assertions SHALL meet the requirements defined in [SP 800-63C](sp800-63c.html). Bearer assertions MAY be used.
 
-####<a name="aal1reauth"></a> 4.1.4. Reauthentication
+#### <a name="aal1reauth"></a>4.1.4. Reauthentication
 
 At AAL 1, reauthentication of the subscriber SHOULD be repeated at least once per 30 days, regardless of user activity.
 
@@ -80,7 +80,7 @@ Verifiers operated by government agencies at AAL 2 SHALL be validated to meet th
 
 In order to be valid at AAL 2, authentication assertions SHALL meet the requirements defined in [SP 800-63C](sp800-63c.html). Bearer assertions MAY be used.
 
-####<a name="aal2reauth"></a> 4.2.4. Reauthentication
+#### <a name="aal2reauth"></a>4.2.4. Reauthentication
 
 At AAL 2, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following no more than 30 minutes of user inactivity. The CSP MAY prompt the user to cause activity just before the inactivity timeout, if desired. Reauthentication MAY use one of two authentication factors if the AAL 2 requirements of [Section 5.2.4](#reauth_sm) are met.
 
@@ -112,7 +112,7 @@ Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 2 or hig
 
 In order to be valid at AAL 3, authentication assertions SHALL meet the requirements of proof-of-possession assertions as defined in [SP 800-63C](sp800-63c.html).
 
-####<a name="aal3reauth"></a> 4.3.4. Reauthentication
+#### <a name="aal3reauth"></a>4.3.4. Reauthentication
 
 At AAL 3, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following a period of no more than 15 minutes of user inactivity. It is permissible to prompt the user to cause activity just before the inactivity timeout, if desired.
 
