@@ -99,6 +99,7 @@ AAL 3 is intended to provide the highest practical remote network authentication
 #### 4.3.1. Permitted Authenticator Types
 
 Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
+
 * Multi-factor OTP Device
 * Multi-Factor Cryptographic Device
 
