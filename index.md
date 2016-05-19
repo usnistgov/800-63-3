@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: cover
 title: "NIST SP 800-63-3 Digital Authentication Guideline"
 description: "Public Preview for NIST Special Publication: SP 800-63-3 Digital Authentication Guideline"
 ---
@@ -11,6 +11,33 @@ description: "Public Preview for NIST Special Publication: SP 800-63-3 Digital A
 <section class="home home-about" markdown="1">
 <div class="section-container" markdown="1">
 <div class="section-content" markdown="1">
+
+<ul class="audiences">
+<li>
+  <div>
+    <a href="sp800-63-3.html"><img src="assets/800_63_3_doc.png" alt="SP 800-63-3" width="150px" height="150px"></a>
+  </div>
+  <h3><a href="sp800-63-3.html">SP 800-63-3</a></h3>
+</li>
+<li>
+  <div>
+    <a href="sp800-63a.html"><img src="assets/800_63_3_Proofing.png" alt="SP 800-63A" width="150px" height="150px"></a>
+  </div>
+  <h3><a href="sp800-63a.html">SP 800-63A</a></h3>
+</li>
+<li>
+  <div>
+    <a href="sp800-63b.html"><img src="assets/800_63_3_Authenticators.png" alt="SP 800-63B" width="150px" height="150px"></a>
+  </div>
+  <h3><a href="sp800-63b.html">SP 800-63B</a></h3>
+</li>
+<li>
+  <div>
+    <a href="sp800-63c.html"><img src="assets/800_63_3_Federation.png" alt="SP 800-63C" width="150px" height="150px"></a>
+  </div>
+  <h3><a href="sp800-63c.html">SP 800-63C</a></h3>
+</li>
+</ul>
 
 Welcome to the NIST SP 800-63-3 Public Preview!  We're excited to share the major transformation that this document has undergone, as well as collaboratively enhance and evolve the guidance as we head to a public draft later this summer.
 

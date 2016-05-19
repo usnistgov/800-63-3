@@ -197,7 +197,7 @@ An attack on the authentication protocol run in which the attacker positions him
 #### Message Authentication Code (MAC)
 A cryptographic checksum on data that uses a symmetric key to detect both accidental and intentional modifications of the data. MACs provide authenticity and integrity protection, but not non-repudiation protection.
 
-####Multi-Factor
+#### Multi-Factor
 A characteristic of an authentication system or an authenticator that uses more than one authentication factor.
 
 The three types of authentication factors are something you know, something you have, and something you are.

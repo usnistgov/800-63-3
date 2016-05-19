@@ -76,7 +76,7 @@ There are several other strategies that may be applied to mitigate the threats d
 
 - *Out of band techniques* may be employed to verify proof of possession of registered devices (e.g., cell phones).
 
-###8.3. Authenticator Recovery
+### 8.3. Authenticator Recovery
 
 The weak point in many authentication mechanisms is the process followed when a subscriber loses control of one or more authenticators and needs to replace them. In many cases, the options remaining available to authenticate the subscriber are limited, and economic concerns (cost of maintaining call centers, etc.) motivate the use of inexpensive, and frequently less secure, backup authentication methods. To the extent that authenticator recovery is human-assisted, there is also the risk of social engineering attacks.
 

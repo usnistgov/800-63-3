@@ -18,8 +18,8 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 {:/comment}
  
-![](../sp800-63-3/media/csd.png)  
-![](../sp800-63-3/media/nist_logo.png)
+![](sp800-63-3/media/csd.png)  
+![](sp800-63-3/media/nist_logo.png)
 
 # DRAFT NIST Special Publication 800-63C
 
@@ -53,7 +53,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 Month TBD 2016
 
-![](../sp800-63-3/media/commerce_logo.png)
+![](sp800-63-3/media/commerce_logo.png)
 
 U.S. Department of Commerce  
 *Penny Pritzker, Secretary*
