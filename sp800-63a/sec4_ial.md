@@ -42,13 +42,13 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 4. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities.
 6. All personally identifiable information (PII) collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 12. Exact matches of information used in the proofing process may be difficult to achieve due to multiple factors. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple pieces of evidence, authoritative records, and third party records. Matching algorithms/rules used SHALL be publicly or community of interest available. For example, they MAY be included as part of the written policy or practice statement referenced above. 
-13. The entire proofing transaction, including transactions that involve a third party, SHALL occur over mutually authenticated protected sessions.
-13. The CSP MAY obtain additional confidence in remote identity proofing using risk mitigation measures such as geolocation, device characteristics, and behavioral characteristics, so long as additional mitigation approaches do not substitute for requirements contained herein. 
+13. The entire proofing transaction, including transactions that involve a third party, SHALL occur over sessions/channels that protect confidentiality and integrity of all transactional, personal, and organizational data.
+13. <a name="gr14"></a>The CSP MAY obtain additional confidence in remote identity proofing using risk mitigation measures such as geolocation, device characteristics, and behavioral characteristics, so long as additional mitigations do not substitute for requirements contained herein. 
 14. Knowledge based verification (KBV) (sometimes referred to as knowledge based authentication (KBA)) is typically used to verify a claimed identity by testing the personal knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. The CSP MAY use KBV to verify the identity of an applicant provided the requirements in Section [Knowledge Based Verification Requirements](#kbv) are met. 
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
 
-1. If the CSP employs risk mitigation measures, the agency SHALL conduct a privacy risk assessment of these mitigation measures.  Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).The CSP SHALL NOT apply additional risk-based approaches without providing explicit notice of such approaches. 
+1. If the CSP employs risk mitigation measures described in General Requirement [#14](#gr14) above, the agency SHALL conduct a privacy risk assessment of these mitigation measures.  Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).The CSP SHALL NOT apply additional risk mitigation approaches without providing explicit notice of such approaches. 
 2. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.
 3.	The agency SHALL publish a System of Records Notice to cover such collections, as applicable.
 4.	The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
@@ -102,14 +102,13 @@ At a minimum, the applicant must be verified by a process that is able to achiev
 ### 4.5.5. Address Confirmation
 
 - A CSP SHALL send an enrollment code to an address of record of the applicant.
-- The application SHALL present a valid enrollment code to complete the identity proofing process.
+- The applicant SHALL present a valid enrollment code to complete the identity proofing process.
 - Self-asserted address data SHALL NOT be used for confirmation.
-- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.
-- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address verified records
+- The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address that has been verified in records
 - SHALL NOT be sent to any form of software-based (i.e., VoIP) telephone number.
 - If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
 - Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days.
-- A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code.
+- A notification of proofing SHALL be sent to different address of record than the destination of the enrollment code. The address of record MAY include the postal address obtained from validated identity evidence.  For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the postal address in records or obtained from validated evidence, like a drivers license.
 
 ### 4.5.6. Biometric Collection
 
@@ -142,17 +141,25 @@ The CSP SHALL perform identity proofing in-person.
 - A CSP SHALL send an enrollment code to an address of record of the applicant.
 - The application SHALL present a valid enrollment code to complete the identity proofing process.
 - Self-asserted address data SHALL NOT be used for confirmation.
-- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.
 - SHALL be sent to the physical mailing address verified in records
 - If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
 - Enrollment code SHALL be valid for a maximum of 5 days.
-- A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code.
+- A notification of proofing SHALL be sent to different address of record than the physical mailing address. 
 
 ### 4.6.6. Biometric Collection
 
 The CSP SHALL collect and record a current biometric (e.g., photograph or fingerprints) to ensure that the applicant cannot repudiate application.
 
-## 4.7. Summary of Requirements
+## 4.7. Enrollment Code
+An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offers the applicant the ability to reestablish binding to their enrollment record.  Binding is not always completed in the same session as the original identity proofing transaction.  
+
+An enrollment code SHALL be comprised of one of the following:
+
+* A random six (6) character alphanumeric 
+* A machine readable optical label, such as a QR Code, that contains data of similar or higher entropy as a random six (6) character alphanumeric
+
+
+## 4.8. Summary of Requirements
 *(Non-normative; refer to preceding sections for normative requirements)*
 
 The following table summarizes the requirements for each of the authenticator assurance levels:
