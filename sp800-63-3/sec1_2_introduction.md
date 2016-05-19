@@ -51,7 +51,7 @@ their authentication assurance requirements:
     risk assessment methodology is prescribed for this purpose;
     however, NIST Special
     Publication (SP) 800-30 [[SP 800-30]](#SP800-30) offers a general
-    process for risk assessment and risk mitigation.
+    process for risk assessment and risk mitigation, and NIST Special Publication (SP) 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on the selection and specification of security controls for an information system as part of an organization-wide information security program. This guidance supports the identification of risk to the organization or to individuals associated with the operation of an information system.
 
 2.  *Map identified risks to the appropriate assurance level* – Section
     2.2 of OMB M-04-04 provides the guidance necessary for agencies to

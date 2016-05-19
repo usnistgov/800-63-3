@@ -4,7 +4,8 @@
 
 During the lifecycle of an authenticator bound to a subscriber's identity, a number of events may occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions that SHALL be taken in response to those events.
 
-###<a name="binding"></a> 6.1. Authenticator binding
+### <a name="binding"></a>6.1. Authenticator binding
+
 Authenticators may be provided by a CSP as part of a process such as enrollment; in other cases, the subscriber may provide their own, such as software or hardware cryptographic modules. For this reason, we refer to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. It SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
@@ -12,6 +13,7 @@ Throughout the online identity lifecycle, CSPs SHALL maintain a record of all au
 The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address or other device identifier associated with the enrollment. It SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
 
 #### 6.1.1. Enrollment
+
 The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in 800-63-A.
 
 At IAL 2, the CSP SHALL bind at least one, and SHOULD bind at least two, authenticators to the subscriber's online identity. Binding of multiple authenticators is preferred in order to recover from loss or theft of their primary authenticator. While at IAL 1 all identifying information is self-asserted, creation of online material or an online reputation makes it undesirable to lose control of an account as result of the loss of an authenticator. The second authenticator makes it possible to securely recover from that situation.
