@@ -30,7 +30,7 @@ The following diagram outlines the basic flow for Identity Proofing and Enrollme
 
 The following requirements apply to any CSP performing identity proofing at IAL 2 or 3. 
 
-1. Identity proofing SHALL NOT be performed to determine suitability and/or entitlement to any protected service or benefit. The RP, not the CSP, is responsible for collecting and validating information for access control purposes.
+1. Identity proofing SHALL NOT be performed to determine suitability/entitlement to gain access to services or benefits. The RP, not the CSP, is responsible for collecting and validating information for access control purposes.
 2. Collection of personally identifiable information (PII) SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the person providing identity evidence based on best available practices for appropriate identity resolution, validation, and verification. 
 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether the such attributes are voluntary or mandatory in order to complete the identity proofing transactions and the consequences for not providing the attributes. 
 4.	The CSP SHALL NOT collect the SSN unless it is 1) necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.  
