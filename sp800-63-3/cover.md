@@ -221,24 +221,29 @@ The following table shows the mapping between M-04-04 Level of Assurance and the
 | Level of Assurance | Authenticator Assurance Level | Identity Assurance Level |
 |:------------------:|:-----------------------------:|:------------------------:|
 | 1 | 1 | 1 |
-| 2 (pseudonymous) | 1 | 1 |
-| 2 (non-pseudonymous) | 1 | 2 |
+| 2 | 1 | 2 |
 | 3 | 2 | 2 |
 | 4 | 3 | 3 |
 
-Agency risk profiles and mission need will help determine the acceptable combination if IAL, AAL, and if necessary, FAL.  The LOA mapping table above does not constitute the only possible combinations of these discrete elements.  
+Note that a pseudonym (or no name at all) MAY be asserted by a CSP at LOA 2, but even when that is done the CSP SHALL have performed identity proofing at IAL 2 or higher, even though a given transaction, as seen by the relying party, MAY have an IAL of 1.
+
+Under the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", it is expected that the use of LOA 2 will be rare and limited to situations that do not release personal information (including, potentially, user attributes) to the user by either the CSP or RP.
+
+Agency risk profiles and mission need will help determine the acceptable combination if IAL, AAL, and as appropriate, FAL.  The LOA mapping table above does not constitute the only possible combinations of these discrete elements.  
 
 ### Acceptable IAL and AAL Combinations
 
-The following table details valid combinations of IAL and AAL that agencies may select:
+The following table details valid combinations of IAL and AAL that may be established during the enrollment process:
 
 | | IAL 1 | IAL 2 | IAL 3 |
 |:-:|:-:|:-:|:-:|
 | **AAL 1** | Allowed | **NO** | **NO** |
-| **AAL 2** | Allowed | Allowed | **NO** |
+| **AAL 2** | Allowed | Allowed | See Note |
 | **AAL 3** | Allowed | Allowed | Allowed |
 
-The rationale for the prohibitions above are based on [Executive Order 13681](#EO13681) which states "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication..." Based on this, an agency is required to issue an multi-factor authenticator at the higher IALs.  AAL 1 authentication is not acceptable for applications that require identity proofing at IAL 2 or 3.
+Note: AAL 2 capable authenticators MUST be bound to credentials at IAL 2 enrollment since management (and often use) of those credentials is a release of personal data requiring multi-factor authentication. AAL 3 authenticators SHOULD be bound to IAL 3 credentials since they are frequently required for the high-sensitivity applications that require in-person identity proofing.
+
+In limited situations, a given transaction requiring IAL 2 MAY be able to authenticate at AAL 1 when personal data is not made accessible to the subscriber (per Executive Order 13681) and the other risk and sensitivity requirements of M-04-04 are satisfied.
 
 ## Table of Contents
 
