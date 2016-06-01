@@ -38,7 +38,7 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 #### 5.2.2.1. Methods to Perform Identity Evidence Validation
 
-The following table lists qualities, ranging from weak to superior, of identity validation that is performed to validate evidence and the information contained therein. 
+The following table lists qualities, ranging from unacceptable to superior, of identity validation that is performed to validate evidence and the information contained therein. 
 
 
 |Strength|Method(s)|
@@ -51,7 +51,7 @@ The following table lists qualities, ranging from weak to superior, of identity 
 
 ## 5.3. <a name="verify"></a> Identity Verification
 
-The goal of identity validation is to establish a linkage to the physical, live existence of the claimed identity to the person actually presenting the evidence.  I
+The goal of identity validation is to establish a linkage to the physical, live existence of the claimed identity to the person actually presenting the evidence.
 
 ### 5.3.1. Identity Verification Methods
 

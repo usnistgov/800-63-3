@@ -30,11 +30,11 @@ The following diagram outlines the basic flow for Identity Proofing and Enrollme
 
 The following requirements apply to any CSP performing identity proofing at IAL 2 or 3. 
 
-1. Identity proofing SHALL NOT be performed to determine suitability/entitlement to gain access to services or benefits. The RP, not the CSP, is responsible for collecting and validating information for access control purposes.
+1. Identity proofing SHALL NOT be performed to determine suitability/entitlement to gain access to services or benefits.
 2. Collection of personally identifiable information (PII) SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the person providing identity evidence based on best available practices for appropriate identity resolution, validation, and verification. 
 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether the such attributes are voluntary or mandatory in order to complete the identity proofing transactions and the consequences for not providing the attributes. 
 4.	The CSP SHALL NOT collect the SSN unless it is 1) necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.  
-5.	 The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses.  
+5.	 The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, authorization or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses.  
 6.	The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access. 
 7. The CSP SHALL record the types of identity evidence presented in the proofing process, including any identification and reference number. The CSP SHALL NOT record an image, scan, or other copy of the evidence.
 3. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant, to include steps that are additive to mandatory requirements specified herein.
@@ -62,7 +62,7 @@ At IAL 3, identity proofing SHOULD be performed in person. "Virtual in-person" i
 Any such "virtual in-person" identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL 3 validation and verification requirements specified in [Section 5.2. Identity Evidence Validation](#validate) and [Section 5.3. Identity Verification](#verify):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
-2. The CSP SHAll require all actions taken by the applicant during the enrollment and identity proofing process are visible.
+2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process are visible.
 4. All digital verification of evidence (e.g., via chip or wireless technologies) SHALL be performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
 5. Collection of biometrics SHALL be done in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
 6. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing and registration session.
@@ -105,9 +105,8 @@ At a minimum, the applicant must be verified by a process that is able to achiev
 - The applicant SHALL present a valid enrollment code to complete the identity proofing process.
 - Self-asserted address data SHALL NOT be used for confirmation.
 - The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address that has been verified in records
-- SHALL NOT be sent to any form of software-based (i.e., VoIP) telephone number.
 - If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
-- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days.
+- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  
 - A notification of proofing SHALL be sent to different address of record than the destination of the enrollment code. The address of record MAY include the postal address obtained from validated identity evidence.  For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the postal address in records or obtained from validated evidence, like a drivers license.
 
 ### 4.5.6. Biometric Collection
@@ -138,13 +137,10 @@ The CSP SHALL perform identity proofing in-person.
 
 ### 4.6.5 Address Confirmation
 
-- A CSP SHALL send an enrollment code to an address of record of the applicant.
-- The application SHALL present a valid enrollment code to complete the identity proofing process.
+
+- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence.
 - Self-asserted address data SHALL NOT be used for confirmation.
-- SHALL be sent to the physical mailing address verified in records
-- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
-- Enrollment code SHALL be valid for a maximum of 5 days.
-- A notification of proofing SHALL be sent to different address of record than the physical mailing address. 
+- A notification of proofing SHALL be sent to the confirmed address of record. 
 
 ### 4.6.6. Biometric Collection
 
@@ -171,7 +167,7 @@ Resolution|No requirements|The minimum attributes necessary to accomplish identi
 Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>**OR**<br>One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence|One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence<br>**OR**<br>Two (2) pieces of STRONG evidence plus one (1) piece of ADEQUATE evidence
 Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.<br><br>- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.|- SHALL be performed in person.  See [Section 4.3](#in-person) for more details.<br><br>- Requirements are the same as IAL 2.
 Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- SHALL be performed in person.  See [Section 4.3](#in-person) for more details.<br><br>- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
-Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records- SHALL NOT be sent any form of software-based (i.e., VoIP) telephone number.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days.<br> - A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- SHALL be sent the physical mailing address verified in records<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment code SHALL be valid for a maximum of 5 days.<br>- A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code.
+Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  <br> - A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. - A notification of proofing SHALL be sent to the confirmed address of record.
 Biometric Collection|No|No|Yes|
 
 
