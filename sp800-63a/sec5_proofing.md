@@ -80,7 +80,7 @@ The following requirements apply to the identity verification steps for IAL 2 an
 
 - The CSP MAY perform KBV by asking questions of the claimed identity to demonstrate they are the owner of the claimed information. 
 	- The CSP SHALL require a minimum of four (4) KBV questions each requiring a correct answer to successfully complete the KBV step.
-	- The CSP SHOULD require a free form response to a KBV question.  The CSP MAY all multiple choice, however, the CSP SHALL require a minimum of four (4) multiple choice KBV answers per question.
+	- The CSP SHOULD require a free form response to a KBV question.  The CSP MAY allow multiple choice, however, the CSP SHALL require a minimum of four (4) multiple choice KBV answers per question.
 	- The CSP SHOULD allow two (2) attempts for an applicant to complete the KBV.  A CSP MAY allow no more than three (3) attempts to complete the KBV.
 	- The CSP MAY use KBV to verify an applicants identity against one (1) piece of validated identity evidence.  
 	- The CSP SHALL NOT present diversionary KBV questions.  The CSP SHALL NOT allow answers to KBV questions be 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.
