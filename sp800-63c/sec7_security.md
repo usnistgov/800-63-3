@@ -98,10 +98,10 @@ described in the last subsection.
     checks the digital signature to verify that it was issued by a
     legitimate CSP.
 
-	2.  The assertion is sent over a protected session such as TLS. In
+    2.  The assertion is sent over a protected session such as TLS. In
     order to protect the integrity of assertions from malicious attack,
     the CSP is authenticated.
-    
+
     3. The assertion contains a non-guessable random identifier. 
 
 -   *Assertion disclosure* – To mitigate this threat, one of the
