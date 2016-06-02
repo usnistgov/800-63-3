@@ -72,18 +72,20 @@ The following table details the verification methods necessary to achieve a give
 The following requirements apply to the identity verification steps for IAL 2 and 3. There are no restrictions for the use of KBV for identity resolution.
 
 - KBV SHALL NOT be used if the CSP is not, or does not maintain a relationship with, an authoritative source. 
+- KBV SHALL NOT be based on data held by the issuing source of an applicants supplied identity evidence.
 - The CSP SHALL only use information that is expected to be known only to the applicant, to include any information that in needed to trigger KBV processes. Information accessible freely or for any fee in the public domain SHALL NOT be used.
-- A CSP SHALL allow a resolved, validated, or verified identity to opt-out of KBV.
+- The CSP SHALL allow a resolved, validated, or verified identity to opt-out of KBV.
 
-- A CSP SHOULD verify knowledge of recent transactional history that the CSP is a participant to.  For example, verification of amount and confirmation number of a micro-deposit to a claimed and valid bank account.
+- The CSP SHOULD verify knowledge of recent transactional history that the CSP is a participant to.  For example, verification of amount and confirmation number of a micro-deposit to a claimed and valid bank account.
 
-- A CSP MAY perform KBV by asking questions of the claimed identity to demonstrate they are the owner of the claimed information. 
-	- A CSP SHALL require a minimum of four (4) KBV questions each requiring a correct answer to successfully complete the KBV step.
-	- A CSP SHOULD allow two (2) attempts for an applicant to complete the KBV.  A CSP MAY allow no more than three (3) attempts to complete the KBV.
-	- A CSP MAY use KBV to verify an applicants identity against one (1) piece of validated identity evidence.  
-	- KBV questions SHALL NOT be diversionary.  The CSP SHALL NOT allow answers to KBV questions be 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.
-	- A CSP SHALL NOT ask the same KBV questions in subsequent attempts.
-	- A CSP SHALL time out KBV sessions after 2 minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process.
+- The CSP MAY perform KBV by asking questions of the claimed identity to demonstrate they are the owner of the claimed information. 
+	- The CSP SHALL require a minimum of four (4) KBV questions each requiring a correct answer to successfully complete the KBV step.
+	- The CSP SHOULD require a free form response to a KBV question.  The CSP MAY all multiple choice, however, the CSP SHALL require a minimum of four (4) multiple choice KBV answers per question.
+	- The CSP SHOULD allow two (2) attempts for an applicant to complete the KBV.  A CSP MAY allow no more than three (3) attempts to complete the KBV.
+	- The CSP MAY use KBV to verify an applicants identity against one (1) piece of validated identity evidence.  
+	- The CSP SHALL NOT present diversionary KBV questions.  The CSP SHALL NOT allow answers to KBV questions be 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.
+	- The CSP SHALL NOT ask the same KBV questions in subsequent attempts.
+	- The CSP SHALL time out KBV sessions after 2 minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process.
 
 
 
