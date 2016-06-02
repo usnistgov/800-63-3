@@ -33,6 +33,9 @@ A party who acts with malicious intent to compromise an information system.
 #### Attribute
 A claim of a named quality or characteristic inherent in or ascribed to someone or something. (See term in [[ICAM]](#ICAM) for more information.)
 
+#### Authenticated Protected Channel
+A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
+
 #### Authentication
 The process of establishing confidence in the identity of users or information systems.
 

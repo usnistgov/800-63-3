@@ -8,13 +8,15 @@
 
 <a name="M-03-22">[OMB M-03-22]</a> OMB Memorandum M-03-22, *OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002*, September 26, 2003, available at: http://www.whitehouse.gov/omb/memoranda/m03-22.html.
 
-<a name="M-04-04"></a>[M-04-04] OMB Memorandum M-04-04, E-Authentication Guidance for Federal Agencies, December 16, 2003, available at: https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf.
+<a name="M-04-04">[M-04-04]</a> OMB Memorandum M-04-04, E-Authentication Guidance for Federal Agencies, December 16, 2003, available at: https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf.
 
-<a name="RFC20">[RFC 20]</a> Cerf, V., *ASCII format for Network Interchange*, October 16, 1969, available at: https://tools.ietf.org/html/rfc20/.
+<a name="RFC20">[RFC 20]</a> Cerf, V., *ASCII format for network interchange*, STD 80, RFC 20, DOI 10.17487/RFC0020, October 1969, <http://www.rfc-editor.org/info/rfc20>.
 
 <a name="RFC5246">[RFC 5246]</a> IETF, *The Transport Layer Security (TLS) Protocol Version 1.2*, available at https://tools.ietf.org/html/rfc5246/.
 
 <a name="RFC5280">[RFC 5280]</a> IETF, *Internet X.509 Public Key Infrastructure Certificate and CRL Profile*, available at https://tools.ietf.org/html/rfc5280/.
+
+<a name="bcp195">[BCP 195]</a> Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
 
 <a name="ISOIEC10646">[ISO/IEC 10646]</a> International Standards Organization, *Universal Coded Character Set*, 2014, available at http://standards.iso.org/ittf/PubliclyAvailableStandards/c063182_ISO_IEC_10646_2014.zip
 

@@ -23,7 +23,7 @@ Secrets used for session binding:
 - SHALL be erased or invalidated by the session subject when the user logs out
 - SHOULD be erased on the user endpoint when the user logs out or when the secret is deemed to have expired
 - SHOULD not be placed in insecure locations such as HTML5 Local Storage
-- SHALL be sent to and received from the device using an encrypted protocol that authenticates the session host (e.g., TLS)
+- SHALL be sent to and received from the device using an authenticated protected channel
 - SHALL time out and not be accepted after the times specified in section [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL)
 
 There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology.
@@ -45,7 +45,7 @@ An OAuth access token MAY be used to allow an application to act on behalf of a 
 
 #### 7.1.3. Device Identification
 
-Other methods of secure device identification, such as but not limited to mutual TLS, token binding, or other mechanisms, MAY be used to enact a session between a user and a service. 
+Other methods of secure device identification, including but not limited to mutual TLS, token binding, or other mechanisms, MAY be used to enact a session between a user and a service. 
 
 ### 7.2. Reauthentication
 

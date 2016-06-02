@@ -63,7 +63,7 @@ Ability to receive email messages or other types of instant message does not gen
 
 ##### 5.1.3.1. Out of Band Authenticators
 
-The out of band authenticator SHALL establish a secure communication channel with the  verifier that is resistant to man-in-the-middle attacks (e.g., TLS using certificates that are trusted by the authenticator) in order to retrieve the out of band secret. This secure communication channel is considered to be out of band with respect to the primary communication channel, even if they terminate on the same device, provided the device does not leak information from one to the other.
+The out of band authenticator SHALL establish an authenticated protected channel in order to retrieve the out of band secret. This channel is considered to be out of band with respect to the primary communication channel, even if they terminate on the same device, provided the device does not leak information from one to the other.
 
 The out of band authenticator SHALL uniquely authenticate itself in one of the following ways in order to receive the authentication secret:
 
@@ -79,7 +79,7 @@ Out of band verifiers SHALL generate a random authentication secret with at leas
 
 If the out of band verification is to be made using a SMS message on a public mobile telephone network, the verifier SHALL verify that the pre-registered telephone number being used is actually associated with a mobile network and not with a VoIP (or other software-based) service. It then sends the SMS message to the pre-registered telephone number. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change.  **OOB using SMS is deprecated**, and will no longer be allowed in future releases of this guidance.
 
-If out of band verification is to be made using a secure application (e.g., on a smart phone), the verifier MAY send a push notification to that device. The verifier then waits for a secure (e.g., TLS) connection from that authenticator and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as hashing (using an approved hash function) or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator and waits for the secret to be returned on the primary communication channel.
+If out of band verification is to be made using a secure application (e.g., on a smart phone), the verifier MAY send a push notification to that device. The verifier then waits for a establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as hashing (using an approved hash function) or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator and waits for the secret to be returned on the primary communication channel.
 
 In collecting the authentication secret from the claimant, the verifier SHALL use approved encryption and SHALL authenticate itself to the claimant. The authentication secret SHALL be considered invalid if not received over the primary channel within 5 minutes.
 
@@ -246,8 +246,8 @@ If matching is performed centrally:
 
 * Use of the biometric SHALL be bound tightly to a single, specific device that is identified using approved cryptography.
 * Biometric revocation SHALL be implemented.
-* Mutual TLS authentication between sensor and central verifier SHALL be established **prior** to capturing the biometric sample from the claimant.
-* All transmission of biometrics shall be over a secure channel that authenticates the verifier, such as TLS.
+* An authenticated protected channel between sensor and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
+* All transmission of biometrics shall be over the authenticated protected channel.
 
 Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be immediately erased from storage immediately after a password has been generated.
 
