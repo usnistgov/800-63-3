@@ -67,7 +67,7 @@ The out of band authenticator SHALL establish an authenticated protected channel
 
 The out of band authenticator SHALL uniquely authenticate itself in one of the following ways in order to receive the authentication secret:
 
-- Authentication to the verifier using approved cryptography. The key SHOULD be stored in the most secure storage available on the device (e.g., keychain storage).
+- Authentication to the verifier using approved cryptography. The key SHOULD be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, or trusted execution environment if available).
 
 - Authentication to a public mobile telephone network using a SIM card or equivalent that uniquely identifies the device
 
