@@ -152,7 +152,7 @@ A metric describing degree of confidence that the Applicant’s Claimed Identity
 #### Kerberos
 A widely used authentication protocol developed at MIT. In “classic” Kerberos, users share a secret password with a Key Distribution Center (KDC). The user, Alice, who wishes to communicate with another user, Bob, authenticates to the KDC and is furnished a “ticket” by the KDC to use to authenticate with Bob.
 
-When Kerberos authentication is based on passwords, the protocol is known to be vulnerable to off-line dictionary attacks by eavesdroppers who capture the initial user-to- KDC exchange. Longer password length and complexity provide some mitigation to this vulnerability, although sufficiently long passwords tend to be cumbersome for users.
+When Kerberos authentication is based on passwords, the protocol is known to be vulnerable to offline dictionary attacks by eavesdroppers who capture the initial user-to- KDC exchange. Longer password length and complexity provide some mitigation to this vulnerability, although sufficiently long passwords tend to be cumbersome for users.
 
 #### Knowledge Based Authentication
 Authentication of an individual based on knowledge of information associated with his or her claimed identity in public databases. Knowledge of such information is considered to be private rather than secret, because it may be used in contexts other than authentication to a verifier, thereby reducing the overall assurance associated with the authentication process.
@@ -174,7 +174,7 @@ An open communications medium, typically the Internet, that is used to transport
 #### Nonce
 A value used in security protocols that is never repeated with the same key. For example, nonces used as challenges in challenge-response authentication protocols SHALL not be repeated until authentication keys are changed. Otherwise, there is a possibility of a replay attack. Using a nonce as a challenge is a different requirement than a random challenge, because a nonce is not necessarily unpredictable.
 
-#### Off-line Attack
+#### Offline Attack
 An attack where the attacker obtains some data (typically by eavesdropping on an authentication protocol run or by penetrating a system and stealing security files) that he/she is able to analyze in a system of his/her own choosing.
 
 #### Online Attack
@@ -275,6 +275,9 @@ An attack in which the attacker is able to insert himself or herself between a c
 
 #### Shared Secret
 A secret used in authentication that is known to the claimant and the verifier.
+
+#### Side Channel Attack
+An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, and electromagnetic emissions are examples of characteristics that could be exploited in a side-channel attack.
 
 #### Social Engineering
 The act of deceiving an individual into revealing sensitive information by associating with the individual to gain confidence and trust.
