@@ -214,23 +214,22 @@ A summary of each of the identity and authenticator assurance levels is provided
 
 **Authenticator Assurance Level 3** – AAL 3 is intended to provide the highest practical digital authentication assurance. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed. The authenticator is required to be a hardware cryptographic module validated at Federal Information Processing Standard (FIPS) 140 Level 2 or higher overall with at least FIPS 140 Level 3 physical security. AAL 3 authenticator requirements can be met by using the PIV authentication key of a FIPS 201 compliant Personal Identity Verification (PIV) Card.
 
-### Backwards Compatibility to M-04-04 Levels of Assurance
+### M-04-04 Levels of Assurance Requirements
 
-The following table shows the mapping between M-04-04 Level of Assurance and the corresponding Authenticator and Identity Assurance Levels.  This table is explanatory only to assist agencies in transitioning to this new model.
+The following table shows the new requirements for M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. Further details and normative requirements are provided in the appropriate document corresponding to each separate assurance level.
 
-| Level of Assurance | Authenticator Assurance Level | Identity Assurance Level |
-|:------------------:|:-----------------------------:|:------------------------:|
-| 1 | 1 | 1 |
-| 2 | 1 | 2 |
-| 3 | 2 | 2 |
-| 4 | 3 | 3 |
+| Level of Assurance | Identity Assurance Level | Authenticator Assurance Level | Federation Assurance Level
+|:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
+| 1 | Any | 1 | TBD
+| 2 | Any | 2 |TBD
+| 3 | Any | 2 |TBD
+| 4 | Any | 3 |TBD
 
-Note that a pseudonym (or no name at all) MAY be asserted by a CSP at LOA 2, but even when that is done the CSP SHALL have performed identity proofing at IAL 2 or higher, even though a given transaction, as seen by the relying party, MAY have an IAL of 1.
+Agency risk profiles and mission need will help determine the acceptable IAL at a given LOA.  Since agencies to limit the collection of personal data in order to provide services and allow for strong pseudonymity, a specific IAL is not explicitly required for each LOA. For example, an agency may establish a "health tracker" application, where the sensitivity of the data requires LOA3.  In line with the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency must implement multi-factor authentication (MFA).  However, there may be no need for the agency system to know the true identity of the user.  In the past, the LOA3 assessment of data sensitivity would also require the agency to identity proof the user.  This is no longer necessary and the agency is encouraged in this case to not perform any identity proofing and allow the user of the health tracker system to be pseudonymous.  The MFA authenticator at AAL2 or AAL3 will not leak any personal information because it is bound to an IAL 1 identity.
 
-Under the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", it is expected that the use of LOA 2 will be rare and limited to situations that do not release personal information (including, potentially, user attributes) to the user by either the CSP or RP.
+In this case of federal employees, bound to HSPD-12 and required to obtain and Personal Identity Verification (PIV) smart card, the requirement is that agencies meet LOA4. The HSPD-12 use case requires an authenticator at AAL3 **and** identity proofing at IAL 3.   
 
-Agency risk profiles and mission need will help determine the acceptable combination if IAL, AAL, and as appropriate, FAL.  The LOA mapping table above does not constitute the only possible combinations of these discrete elements.  
-
+ 
 ### Acceptable IAL and AAL Combinations
 
 The following table details valid combinations of IAL and AAL that may be established during the enrollment process:
