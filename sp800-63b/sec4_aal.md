@@ -8,6 +8,16 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
+The following table shows the required AAL per M-04-04 Level of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+
+| Level of Assurance | Authenticator Assurance Level
+|:------------------:|:-----------------------------:
+| 1 | 1, 2 or 3 
+| 2 | 2 or 3
+| 3 | 2 or 3 
+| 4 | 3 
+
+
 ### 4.1. Authenticator Assurance Level 1
 
 AAL 1 provides single factor remote network authentication, giving some assurance that the same Claimant who participated in previous transactions is accessing the protected transaction or data. AAL 1 allows a wide range of available authentication technologies to be employed and requires only a single authentication factor to be used. It also permits the use of any of the authentication methods of higher authenticator assurance levels. Successful authentication requires that the Claimant prove through a secure authentication protocol that he or she possesses and controls the authenticator.
