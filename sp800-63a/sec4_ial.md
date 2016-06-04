@@ -28,7 +28,7 @@ The following diagram outlines the basic flow for Identity Proofing and Enrollme
 
 ## 4.2. General Requirements
 
-The following table shows the required IAL per M-04-04 Level of Assurance.
+The following table shows the required IAL per M-04-04 Level of Assurance.  Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA.
 
 | Level of Assurance | Identity Assurance Level
 |:------------------:|:-----------------------------:

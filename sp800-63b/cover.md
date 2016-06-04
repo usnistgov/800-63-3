@@ -186,15 +186,6 @@ The three AALs reflect the options agencies will select based on their risk prof
 
 **AAL 3**: AAL 3 provides the highest practical remote digital authentication assurance. It requires proof of possession of a key in a physical multifactor authenticator through a cryptographic protocol.
 
-The three AALs correspond to the existing Levels of Assurance, specified in OMB Memorandum [M-04-04](#M-04-04), as follows:
-
-| Level of Assurance |  Authenticator Assurance Level |
-|:------------------:|:------------------------------:|
-| 1 | 1 |
-| 2 (pseudonymous) |  1 |
-| 2 (non-pseudonymous) |  1 |
-| 3 | 2 |
-| 4 | 3 |
 
 ## Table of Contents
 
