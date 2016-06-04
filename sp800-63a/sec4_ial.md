@@ -28,6 +28,16 @@ The following diagram outlines the basic flow for Identity Proofing and Enrollme
 
 ## 4.2. General Requirements
 
+The following table shows the required IAL per M-04-04 Level of Assurance.
+
+| Level of Assurance | Identity Assurance Level
+|:------------------:|:-----------------------------:
+| 1 | 1 
+| 2 | 1 or 2 
+| 3 | 1 or 2 
+| 4 | 1, 2 or 3 
+
+
 The following requirements apply to any CSP performing identity proofing at IAL 2 or 3. 
 
 1. Identity proofing SHALL NOT be performed to determine suitability/entitlement to gain access to services or benefits.
@@ -55,11 +65,9 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 5.	The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
 
 
-## <a name="in-person"></a>4.3. In-person Proofing Requirements
+## <a name="vip"></a>4.3. Virtual In-person Proofing Requirements
 
-At IAL 3, identity proofing SHOULD be performed in person. "Virtual in-person" identity proofing MAY be employed by a CSP as an equivalent process to in-person identity proofing. Remote proofing SHALL NOT be performed. 
-
-Any such "virtual in-person" identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL 3 validation and verification requirements specified in [Section 5.2. Identity Evidence Validation](#validate) and [Section 5.3. Identity Verification](#verify):
+Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL 3 validation and verification requirements specified in [Section 5.2. Identity Evidence Validation](#validate) and [Section 5.3. Identity Verification](#verify):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process are visible.
@@ -115,11 +123,16 @@ The CSP SHALL NOT collect biometrics for the purpose of non-repudiation.
 
 ## 4.6. Identity Assurance Level 3
 
-IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 SHALL be performed in-person. SHALL be performed in person.  See [Section 4.3](#in-person) for more details. A CSP MAY exceed these requirements.
+IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is either performed in-person or via a valid virtual in-person proofing process. See [Section 4.3](#vip) for more details. A CSP MAY exceed these requirements.
 
 ### 4.6.1. Presence Requirements
 
-The CSP SHALL perform identity proofing in-person. 
+All identity proofing steps SHOULD be performed in person. 
+
+Virtual in-person identity proofing MAY be employed by a CSP as an equivalent process to in-person identity proofing provided all requirements specified in [Section 4.3](#vip) are met.
+
+Remote proofing SHALL NOT be allowed. 
+
 
 ### 4.6.2. Evidence Requirements
 
@@ -128,15 +141,14 @@ The CSP SHALL perform identity proofing in-person.
 
 ### 4.6.3. Validation Requirements  
 
-- SHALL be performed in person.  See [Section 4.3](#in-person) for more details.
-- Requirements are the same as IAL 2.
+- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
+- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 ### 4.6.4. Verification Requirements
 
 - At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.
 
 ### 4.6.5 Address Confirmation
-
 
 - The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence.
 - Self-asserted address data SHALL NOT be used for confirmation.
@@ -162,11 +174,11 @@ The following table summarizes the requirements for each of the authenticator as
 
 Requirement | IAL 1 | IAL 2 | IAL 3
 ------------|-------|-------|-------
-Presence|No requirements|In-person and remote|In-person only
+Presence|No requirements|In-person and remote|In-person or virtual in-person
 Resolution|No requirements|The minimum attributes necessary to accomplish identity proofing. KBV may be used for added confidence.||
 Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>**OR**<br>One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence|One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence<br>**OR**<br>Two (2) pieces of STRONG evidence plus one (1) piece of ADEQUATE evidence
-Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.<br><br>- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.|- SHALL be performed in person.  See [Section 4.3](#in-person) for more details.<br><br>- Requirements are the same as IAL 2.
-Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- SHALL be performed in person.  See [Section 4.3](#in-person) for more details.<br><br>- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
+Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.<br><br>- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.|Same as IAL 2.
+Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
 Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  <br> - A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. - A notification of proofing SHALL be sent to the confirmed address of record.
 Biometric Collection|No|No|Yes|
 

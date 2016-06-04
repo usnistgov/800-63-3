@@ -176,16 +176,6 @@ At IAL 2, the claimed identity is proven with evidence that supports the real wo
 **IAL 3**:
 At Identity Assurance Level 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes. 
 
-A mapping is provided below to allow agencies using the existing Level of Assurance model, specified in OMB Memorandum [M-04-04](#M-04-04), to select appropriate technology and process based on the selected IAL.
-
-| Level of Assurance |  Identity Assurance Level |
-|:------------------:|:------------------------:|
-| 1 | 1 |
-| 2 (pseudonymous) |  1 |
-| 2 (non-pseudonymous) |  2 |
-| 3 | 2 |
-| 4 | 3 |
-
 ## Table of Contents
 
 [1. Purpose](#sec1)
