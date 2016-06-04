@@ -10,7 +10,7 @@ An attacker who can gain control of an authenticator will often be able to masqu
 
 - *Something you have* may be lost, damaged, stolen from the owner or cloned by an attacker. For example, an attacker who gains access to the owner’s computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.
 
-- *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through off-line attacks on a hashed password database maintained by the verifier.
+- *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through offline attacks on a hashed password database maintained by the verifier.
     
 - *Something you are* may be replicated. An attacker may obtain a copy of the subscriber’s fingerprint and construct a replica - assuming that the biometric system(s) employed do not block such attacks by employing robust liveness detection techniques.
 
@@ -31,8 +31,9 @@ This document assumes that the subscriber is not colluding with the attacker who
 | Eavesdropping | The authenticator secret or authenticator output is revealed to the attacker as the subscriber is authenticating. | Memorized secrets are obtained by watching keyboard entry. |
 | | | Memorized secrets or authenticator outputs are intercepted by keystroke logging software. |
 | | | A PIN is captured from PIN pad device. |
-| Offline cracking | The authenticator is exposed using analytical methods outside the authentication mechanism. | A key is extracted by differential power analysis on stolen hardware cryptographic authenticator. |
-| | | A software PKI authenticator is subjected to dictionary attack to identify the correct password to use to decrypt the private key. |
+| Offline cracking | The authenticator is exposed using analytical methods outside the authentication mechanism. | A software PKI authenticator is subjected to dictionary attack to identify the correct password to use to decrypt the private key. |
+| Side channel attack | The authenticator secret is exposed using physical characteristics of the authenticator | A key is extracted by differential power analysis on a hardware cryptographic authenticator. |
+| | | A cryptographic authenticator secret is extracted by analysis of the response time of the authenticator over a number of attempts. |
 | Phishing or pharming | The authenticator output is captured by fooling the subscriber into thinking the attacker is a Verifier or RP. | A password is revealed by subscriber to a website impersonating the verifier.
 | | | A memorized secret is revealed by a bank subscriber in response to an email inquiry from a phisher pretending to represent the bank. |
 | | | A memorized secret is revealed by the subscriber at a bogus verifier website reached through DNS spoofing.
@@ -40,6 +41,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | | A memorized secret is revealed by a subscriber in a telephone inquiry from an attacker masquerading as a system administrator. |
 | Online guessing | The attacker connects to the verifier online and attempts to guess a valid authenticator output in the context of that verifier. | Online dictionary attacks are used to guess memorized secrets. |
 | | | Online guessing is used to guess authenticator outputs for a one-time password device registered to a legitimate claimant. |
+
 
 ### 8.2. Threat Mitigation Strategies
 Related mechanisms that assist in mitigating the threats identified above are summarized in Table 5.
@@ -57,6 +59,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
 | | Use an authenticator that locks up after a number of repeated failed activation attempts.
 | | Store memorized secrets in a salted, hashed form to raise the cost of dictionary attacks; use a keyed hash.
+| Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values
 | Phishing or pharming | Use authenticators with dynamic outputs where knowledge of one output does not assist in deriving a subsequent output.
 | Social engineering | Use authenticators with dynamic outputs where knowledge of one output does not assist in deriving a subsequent output.
 | Online guessing | Use authenticators that generate high entropy output.
