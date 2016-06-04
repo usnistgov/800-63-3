@@ -140,12 +140,10 @@ An RP relies on results of an authentication protocol to establish confidence in
 
 ### 4.5. Assurance Levels
 
-The overall level of assurance is determined by combining the assurance levels for each of the components of the architecture. For instance, to achieve an overall assurance level of 3:
+The overall M-04-04 LOA is determined by combining the discrete assurance level for each of the components of the architecture. For instance, to achieve M-04-04 LOA3:
 
-* The enrollment and identity proofing process shall, at a minimum, use IAL 2 processes or higher.
+* The enrollment and identity proofing process shall, at a minimum, use IAL 1 or 2 processes.
 * The authenticator (or combination of authenticators) used shall have an AAL of 2 or higher.
-* Authentication assertions (if used) shall have an FAL of 2 or higher.
+* Authentication assertions (if used) shall have an FAL of 2 or higher (under consideration as -C is finalized).
 
-The overall level is determined by the lowest level because it will likely be the target of an attacker. For example, if a system uses an authenticator for authentication that has AAL 2 assurance, but uses assertion mechanisms at FAL 3, the attacker will likely focus on gaining access to the authenticator since it is easier to attack a system component meeting AAL 2 rather than attacking the assertion that meets FAL 3. 
-
-However, with the new model of separating IAL, AAL, and FAL into discrete parts, agencies are encouraged to reduce identity proofing if it is not required, yet still provide authentication at AAL2 or higher.  This does not degrade system security at all, rather it protects individual privacy and allows the agency to reduce the infrastructure and governance requirements typical for the collection, storage, and disposal of sensitive identity proofing data.
+The overall level is determined by the lowest level because it will likely be the target of an attacker. For example, if a system uses an authenticator that has AAL 2 assurance, but uses assertion mechanisms at FAL 3, the attacker will likely focus on gaining access to the authenticator since it is easier to attack a system component meeting AAL 2 rather than attacking the assertion that meets FAL 3. 
