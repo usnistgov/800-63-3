@@ -28,6 +28,16 @@ The following diagram outlines the basic flow for Identity Proofing and Enrollme
 
 ## 4.2. General Requirements
 
+The following table shows the required IAL per M-04-04 Level of Assurance.
+
+| Level of Assurance | Identity Assurance Level
+|:------------------:|:-----------------------------:
+| 1 | 1 
+| 2 | 1 or 2 
+| 3 | 1 or 2 
+| 4 | 1, 2 or 3 
+
+
 The following requirements apply to any CSP performing identity proofing at IAL 2 or 3. 
 
 1. Identity proofing SHALL NOT be performed to determine suitability/entitlement to gain access to services or benefits.
