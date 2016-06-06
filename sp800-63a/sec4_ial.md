@@ -58,7 +58,7 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
 
-1. If the CSP employs risk mitigation measures described in General Requirement [#14](#gr14) above, the agency SHALL conduct a privacy risk assessment of these mitigation measures.  Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).The CSP SHALL NOT apply additional risk mitigation approaches without providing explicit notice of such approaches. 
+1. If the CSP employs risk mitigation measures described in General Requirement [#14](#gr14) above, the agency SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography). The CSP SHALL NOT apply additional risk mitigation approaches without providing explicit notice of such approaches. 
 2. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.
 3.	The agency SHALL publish a System of Records Notice to cover such collections, as applicable.
 4.	The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
@@ -75,7 +75,7 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 5. Collection of biometrics SHALL be done in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
 6. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing and registration session.
 7. A CSP SHOULD have a live operator participate in-person with the applicant for the entirely of the identity proofing and registration session.
-8. The CSP SHALL have the live operator view the biometric source (e.g.,fingers or face) for presence of non-natural materials.
+8. The CSP SHALL have the live operator view the biometric source (e.g., fingers or face) for presence of non-natural materials.
 6. The CSP SHALL require operators to have undergone a training program to detect potential fraud.
 7. The CSP SHALL employ tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as a retail store.
 8. All communications CSP SHALL take place over a mutually authenticated encrypted session.
