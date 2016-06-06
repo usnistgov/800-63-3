@@ -1,6 +1,6 @@
 <a name="sec5"></a>
 
-# <a name="ipv-section"></a> 5. Identity Proofing, Validation, and Verification
+# <a name="ipv-section"></a> 5. Identity Validation and Verification
 
 The following sections list the objectives and steps a CSP SHALL follow to identity proof an individual to meet the security requirements per IAL. The requirements are intended to ensure the claimed identity is the actual identity of the person attempting to enroll with the CSP and that scalable attacks effecting a large population of enrolled individuals are difficult to execute without significant time and cost. 
 
@@ -45,9 +45,9 @@ The following table lists qualities, ranging from unacceptable to superior, of i
 |:---:|:------------------------------| 
 |Unacceptable|Validation of the evidence failed.|
 |Weak|All personal details from the evidence have been confirmed as valid by comparison with information held or published by an authoritative source.|
-|Adequate|- All personal and evidence details have been confirmed as valid by comparison with information held/published by the issuing source <br> **OR** <br>- The evidence has been confirmed as genuine by trained personnel and appropriate equipment, confirming the integrity of physical security features <br> **OR** <br>- The issued evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features|
-|Strong|- The evidence has been confirmed as genuine by trained personnel and appropriate equipment, confirming the integrity of the physical security features **OR** The evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.<br>**AND**<br> - All personal details and evidence details have been confirmed as valid by comparison with information held/published by the issuing source **OR** evidence details have been confirmed as valid by comparison with information held/published by the issuing source|
-|Superior|- The evidence has been confirmed as genuine by trained personnel and appropriate equipment including the integrity of any physical and cryptographic security features<br>**AND**<br>- All personal details and evidence details from the evidence have been confirmed as valid by comparison with information held/published by the issuing source|
+|Adequate|- All personal and evidence details have been confirmed as valid by comparison with information held/published by the issuing source **AND** The evidence has been confirmed as genuine using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification.<br> **OR** <br>- The evidence has been confirmed as genuine by trained personnel and appropriate equipment, confirming the integrity of physical security features. <br> **OR** <br>- The issued evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.|
+|Strong|- The evidence has been confirmed as genuine by trained personnel and appropriate equipment, confirming the integrity of the physical security features  and lack of fraudulent modification **OR** The evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.<br>**AND**<br> - All personal details and evidence details have been confirmed as valid by comparison with information held/published by the issuing source **OR** evidence details have been confirmed as valid by comparison with information held/published by the issuing source.|
+|Superior|- The evidence has been confirmed as genuine by trained personnel and appropriate equipment including the integrity of any physical and cryptographic security features.<br>**AND**<br>- All personal details and evidence details from the evidence have been confirmed as valid by comparison with information held/published by the issuing source.|
 
 ## 5.3. <a name="verify"></a> Identity Verification
 
@@ -63,7 +63,7 @@ The following table details the verification methods necessary to achieve a give
 |Weak|The applicant has been confirmed as having access to the evidence provided to support the claimed identity.|
 |Adequate|- The applicant’s ownership of the claimed identity has been confirmed by Knowledge Based Verification.  See [Section 5.3.2](#kbv)  for more details.<br>**OR**<br>- The applicant’s ownership of the claimed identity has been confirmed by a physical **OR** biometric comparison of the applicant to the strongest piece of evidence provided.|
 |Strong|- The applicant’s ownership of the claimed identity has been confirmed by physical comparison using a photograph/image **OR** Biometric comparison of the Applicant to the strongest piece of evidence provided to support the claimed identity.<br>**AND**<br>- The applicant’s ownership of the claimed identity has been confirmed by Knowledge Based Verification See [Section 5.3.2](#kbv) for more details **OR** a trusted referee confirms the identity of the applicant.|
-|Superior|- The applicant’s ownership of the claimed identity has been confirmed by a physical comparison of the applicant using a photograph/image to the strongest pieces of evidence **OR** by a biometric comparison of the applicant to the strongest piece of evidence provided to support the claimed identity.<br>**AND**<br>- The applicant’s ownership of the claimed identity has been confirmed by Knowledge Based VerificationSee [Section 5.3.2](#kbv) for more details.<br>**AND**<br>- The applicant’s ownership of the claimed identity has been confirmed by an interaction with the applicant via the postal address of record.|
+|Superior|- The applicant’s ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest piece of evidence provided to support the claimed identity.<br>**AND**<br>- The applicant’s ownership of the claimed identity has been confirmed by an interaction with the applicant via the postal address of record.|
 
 
 
