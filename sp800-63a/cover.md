@@ -186,7 +186,7 @@ At Identity Assurance Level 3, in-person identity proofing is required. Identify
 
 [4. Identity Assurance Level Requirements](#sec4)
 
-[5. Identity Proofing Requirements](#sec5)
+[5. Identity Validation and Verification](#sec5)
 
 [6. Requirements for Derived Credentials](#sec6)
 
