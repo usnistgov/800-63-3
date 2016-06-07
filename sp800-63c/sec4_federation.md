@@ -9,7 +9,12 @@ Federation is a process that allows for the conveyance of identity and authentic
 
 In a federation protocol, a triangle is formed between the subscriber, the CSP, and the RP (Figure 1). Depending on the specifics of the protocol, different information passes across each leg of the triangle at different times. The subscriber communicates with both the CSP and the RP, usually through a web browser. The RP communicates with the CSP, though this communication can happen indirectly (through redirects involving the subscriber), directly (through a back-channel connection), or via a packaged information bundle (such as a cryptographically protected and self-contained assertion).
 
-The subscriber authenticates to the CSP using some form of primary credential, and then that authentication event is asserted to the RP across the network. The CSP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are usually carried to the RP through the use of an assertion (see section 5.). 
+The subscriber authenticates to the CSP using some form of primary credential, and then that authentication event is asserted to the RP across the network. The CSP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are usually carried to the RP through the use of an assertion (see section 5.).
+
+The RP communication with the CSP reveals to the CSP where the subscriber is conducting a transaction. Communications from multiple RPs allow the CSP to build a profile of subscriber transactions that would not have existed absent federation. This aggregation could enable new capabilities for subscriber tracking and use of profile information that do not align with the privacy interests of the subscribers. 
+
+The CSP SHALL not disclose information on subscriber activities with an RP to any party, nor use the 
+information for any purpose other than federated authentication or to comply with law or legal process. The CSP SHOULD employ technical measures to provide unlinkability and prevent subscriber activity tracking and profiling.
 
 ### 4.1. Federation Models
 
@@ -39,13 +44,28 @@ Many federated parties establish whitelists of other federated parties who may d
 
 #### 4.1.4 Brokered Federation
 
-For some specific privacy and technology reasons, some federated parties choose to blind themselves from knowing which other members of the federation they are interacting with. For example, a government-run RP might wish to use a bank as a CSP, but for privacy reasons would prefer not to know where its citizens have bank accounts. In this model, a third-party would sit in the middle of the transaction and communicate the success or failure of an authentication event at the CSP without disclosing the source of that information to the RP. Likewise for privacy reasons a bank may not wish to know which government services its customers are using, and thus would want to tell the broker that an authentication event occurred without the broker disclosing why or by whom that authentication event was requested.
+In this model, a third-party sits in the middle of the transaction and communicates the success or failure of an authentication event at the CSP to the RP. Effectively, a broker functions as a federation CSP on one side and a federation RP on the other side. Therefore, all normative and non-normative requirements that apply to CSPs and RPs in this chapter SHALL apply to the broker.
 
 ![Figure 2: Broker](sp800-63c/media/broker.png)
 
 **Figure 2: Broker**
 
-Effectively, a broker functions as a federation CSP on one side and a federation RP on the other side. The assertions passing through the broker can be translated from one side to the other, allowing the broker to blind the participants on either side of the transaction to each other. 
+ 
 
-There are two types of brokers: *traditional* and *blinded*. A traditional broker blinds the RP and the CSP from each other, but is able to monitor and track all user transactions at both parties. This type of broker is concerning to many privacy advocates because while the CSP and RP do not know the full nature of the transaction, the broker knows everything its users do. For this reason, some federated models use a blind broker. A blind broker uses some combination of opaque identifiers and encrypted attribute bundles to help the CSP and RP communicate, but is intentionally limited in its ability to deduce information about specific user behavior. Blinded brokers are significantly more complex to deploy properly at the time of this writing.
+Brokers can enable simplified technical integrations between the RP and CSP by eliminating the need for multiple point to point integrations. Brokers can also provide business confidentiality and mitigate some of the privacy risks of point to point federation described above by passing the assertions while blinding the participants on either side of the transaction to each other. For example, organizations may not wish to reveal their subscriber lists to each other and blinding prevents the capability for CSPs or RPs to track and profile subscribers. However, this model transfers this capability to the broker.  
+
+There is a spectrum of blinding technologies that offer varying levels of privacy protection. However, as the level of blinding increases, so does the technical implementation complexity. Although privacy policies may dictate appropriate use by the CSP, RP, and the broker, blinding technology is far more effective, by making the data unavailable.
+
+1. The broker does not blind the RP and CSP from one another. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion.
+
+2. The broker does not blind the RP and CSP from one another. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion.
+
+2. The broker blinds the RP and CSP from each other. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion.
+
+3. The broker blinds the RP and CSP from each other. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion.
+
+4. The broker blinds the RP, CSP, and itself. The broker cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. 
+ 
+
+
 
