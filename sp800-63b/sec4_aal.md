@@ -92,7 +92,7 @@ In order to be valid at AAL 2, authentication assertions SHALL meet the requirem
 
 #### <a name="aal2reauth"></a>4.2.4. Reauthentication
 
-At AAL 2, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following no more than 30 minutes of user inactivity. The CSP MAY prompt the user to cause activity just before the inactivity timeout, if desired. Reauthentication MAY use one of two authentication factors if the AAL 2 requirements of [Section 5.2.4](#reauth_sm) are met.
+At AAL 2, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following no more than 30 minutes of user inactivity. The CSP MAY prompt the user to cause activity just before the inactivity timeout, if desired. Reauthentication MAY use a single authentication factor.
 
 #### 4.2.5. Security Controls
 

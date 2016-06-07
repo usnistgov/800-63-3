@@ -1,4 +1,4 @@
-<a href="references"></a>
+<a name="references"></a>
 
 ## 11. References
 
@@ -18,7 +18,11 @@
 
 <a name="bcp195">[BCP 195]</a> Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
 
+<a name="ICAM">[ICAM]</a> National Security Systems and Identity, Credential and Access Management Sub-Committee Focus Group, Federal CIO Council, *ICAM Lexicon*, Version 0.5, March 2011.
+
 <a name="ISOIEC10646">[ISO/IEC 10646]</a> International Standards Organization, *Universal Coded Character Set*, 2014, available at http://standards.iso.org/ittf/PubliclyAvailableStandards/c063182_ISO_IEC_10646_2014.zip
+
+<a name="SAML">[SAML]</a> OASIS, SAML, *Security Assertion Markup Language 2.0", v2.0, March 2005, available at http://oasis-open.org/standards#samlv2.0
 
 ### 11.2. NIST Special Publications
 
@@ -29,6 +33,8 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 <a name="SP800-53">[SP 800-53]</a> NIST Special Publication 800-53, Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, August 2013 and Errata as of January 2015.
 
 <a name="SP800-63C">[SP 800-63C]</a> NIST Special Publication 800-63C, *Assertions and Federation*. ***To be updated at publication***
+
+<a name="SP800-131A">[SP 800-131A]</a> NIST Special Publication 800-131A , *Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths*, Revision 1, November 2015.
 
 <a name="SP800-132">[SP 800-132]</a> NIST Special Publication 800-132, *Recommendation for Password-Based Key Derivation*, December 2010.
 
