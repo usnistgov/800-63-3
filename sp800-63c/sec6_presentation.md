@@ -4,6 +4,11 @@
 
 Assertions MAY be presented in either an *indirect* or *direct* manner from the CSP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between CSPs and RPs under specific circumstances, as discussed in section 4.1.4.
 
+Regardless of the manner of assertion, explict notice SHALL be provided to the subscriber regarding federated authentication and the attributes requested by the RP.  including whether the such attributes are voluntary or mandatory in order to complete the federated authentication transaction and the consequences for not providing the attributes. Positive confirmation SHALL be obtained from the subscriber before any attributes about the subscriber are transmitted to any RP. 
+
+The manner of presentation may impact who is in the best position to provide notice and obtain confirmation from the subscriber. Accordingly, the CSP, RP, and any broker SHALL agree in advance on who will provide notice and obtain confirmation.
+The CSP SHALL transmit only those attributes that were explicitly requested by the RP.
+
 ### 6.1. Indirect presentation
 
 In the *indirect* model, the subscriber is given an assertion reference to present to the RP, such as an HTTP redirect. The assertion reference itself contains no information about the subscriber. The RP presents the assertion reference to the CSP, usually along with authentication of the RP itself, to fetch the assertion. 
