@@ -218,7 +218,7 @@ A summary of each of the identity and authenticator assurance levels is provided
 
 The following table shows the new requirements for M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. Further details and normative requirements are provided in are provided in [SP 800-63A](../sp800-63a.md), [SP 800-63B](../sp800-63b.md), and [SP 800-63C](../sp800-63c.md) respectively.
 
-| Level of Assurance | Identity Assurance Level | Authenticator Assurance Level | Federation Assurance Level
+| Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
 | 1 | 1 | 1, 2 or 3 | TBD
 | 2 | 1 or 2 | 2 or 3 |TBD
