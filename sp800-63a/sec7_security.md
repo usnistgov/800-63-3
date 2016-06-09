@@ -29,7 +29,7 @@ to the enrollment and issuance processes.
 |--------------|-------------------|-------------------------|
 | Enrollment | Falsified identity proofing evidence | CSP validates physical security features of presented evidence.
 | | | CSP validates personal details in the evidence with the issuer or other authoritative source.
-| | Fraudulent use of another's identity | CSP verifies photo or biometric of applicant against information on evidence or obtained from issuer or other authoritative source.
+| | Fraudulent use of another's identity | CSP verifies identity evidence or biometric of applicant against information on evidence or obtained from issuer or other authoritative source.
 | | | Verify Applicant-provided non-government issued documentation (e.g. electricity bills in the name of the Applicant with the current address of the Applicant printed on the bill, or a credit card bill) to help in achieving a higher level of confidence in the identity of the applicant. |
 | | Repudiation of enrollment | Have the applicant sign a form acknowledging participation in the enrollment activity. |
 | |
