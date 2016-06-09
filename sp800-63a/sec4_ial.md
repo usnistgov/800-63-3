@@ -73,8 +73,8 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process are visible.
 4. All digital verification of evidence (e.g., via chip or wireless technologies) SHALL be performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
 5. Collection of biometrics SHALL be done in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
-6. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing and registration session.
-7. A CSP SHOULD have a live operator participate in-person with the applicant for the entirely of the identity proofing and registration session.
+6. The CSP SHALL have an operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
+7. A CSP SHOULD have an operator participate in-person, at the same physical location as the applicant, for the entirety of the enrollment and identity proofing session.
 8. The CSP SHALL have the live operator view the biometric source (e.g., fingers or face) for presence of non-natural materials.
 6. The CSP SHALL require operators to have undergone a training program to detect potential fraud.
 7. The CSP SHALL employ tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as a retail store.
@@ -95,15 +95,21 @@ The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote i
 
 ### 4.5.2. Evidence Requirements
 
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+
 - Two (2) pieces of STRONG evidence; **OR**
 - One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence.
 
 ### 4.5.3. Validation Requirements
 
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 ### 4.5.4. Verification Requirements
+
+See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
 At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.
 
@@ -111,7 +117,7 @@ At a minimum, the applicant must be verified by a process that is able to achiev
 
 - A CSP SHALL send an enrollment code to an address of record of the applicant.
 - The applicant SHALL present a valid enrollment code to complete the identity proofing process.
-- Self-asserted address data SHALL NOT be used for confirmation.
+- Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
 - The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address that has been verified in records
 - If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
 - Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  
@@ -136,15 +142,21 @@ Remote proofing SHALL NOT be allowed.
 
 ### 4.6.2. Evidence Requirements
 
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+
 - One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence; **OR**
 - Two (2) pieces of STRONG evidence plus one (1) piece of ADEQUATE evidence
 
 ### 4.6.3. Validation Requirements  
 
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 ### 4.6.4. Verification Requirements
+
+See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
 - At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.
 
@@ -156,15 +168,15 @@ Remote proofing SHALL NOT be allowed.
 
 ### 4.6.6. Biometric Collection
 
-The CSP SHALL collect and record a current biometric (e.g., photograph or fingerprints) to ensure that the applicant cannot repudiate application.
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image or fingerprints) to ensure that the applicant cannot repudiate application.  See [Section 5.2.3](#biometric_use) of SP 800-63B for more detail on biometric collection. 
 
 ## 4.7. Enrollment Code
 An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offers the applicant the ability to reestablish binding to their enrollment record.  Binding is not always completed in the same session as the original identity proofing transaction.  
 
 An enrollment code SHALL be comprised of one of the following:
 
-* A random six (6) character alphanumeric 
-* A machine readable optical label, such as a QR Code, that contains data of similar or higher entropy as a random six (6) character alphanumeric
+* Minimually, a random six (6) character alphanumeric. 
+* A machine readable optical label, such as a QR Code, that contains data of similar or higher entropy as a random six (6) character alphanumeric.
 
 
 ## 4.8. Summary of Requirements
