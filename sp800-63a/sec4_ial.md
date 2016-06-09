@@ -125,7 +125,7 @@ At a minimum, the applicant must be verified by a process that is able to achiev
 
 ### 4.5.6. Biometric Collection
 
-The CSP SHALL NOT collect biometrics for the purpose of non-repudiation.
+The CSP SHALL NOT collect biometrics for any reason.
 
 ## 4.6. Identity Assurance Level 3
 
