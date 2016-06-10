@@ -144,7 +144,7 @@ The following table summarizes the requirements for each of the authenticator as
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------
 **Authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF OTP Device<br />MF Cryptographic Device
-**FIPS 140 verification** | Level 1 | Level 1 (single factor),<br /> Level 2 (multi factor) | Level 2 overall<br />Level 3 physical security
+**FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall<br />Level 3 (authenticator physical security)
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
 **Security Controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
