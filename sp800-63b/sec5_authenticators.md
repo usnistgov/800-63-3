@@ -55,15 +55,21 @@ Verifiers SHALL use approved encryption and SHALL authenticate themselves to the
 
 #### <a name="out-of-band"></a>5.1.3. Out of Band
 
-An Out of Band authenticator is a physical device that is uniquely addressable and can receive a verifier-selected secret for one-time use. The device is possessed and controlled by the claimant and supports private communication over a secondary channel that is separate from the primary channel for e-authentication. The claimant presents the received secret to the verifier using the primary channel for e-authentication.
+An Out of Band authenticator is a physical device that is uniquely addressable and can receive a verifier-selected secret for one-time use. The device is possessed and controlled by the claimant and supports private communication over a secondary channel that is separate from the primary channel for e-authentication. The out-of-band authenticator can operate in one of two ways:
+
+-  The claimant presents the secret that was received by the out-of-band authenticator to the verifier using the primary channel for e-authentication.
+
+- The claimant sends a response to the verifier from the out-of-band authenticator via the secondary communications channel.
 
 Two key requirements are that the device be uniquely addressable and that communication over the secondary channel be private. Some voice-over-IP telephone services can deliver text messages and voice calls without the need for possession of a physical device; these SHALL NOT be used for out of band authentication. Mechanisms such as smartphone applications employing secure communications protocols are preferred for out-of-band authentication.
+
+If the authenticator responds directly to the verifier via the secondary communications channel, the verifier SHALL send and the authenticator SHALL display information, such as a transaction ID or description, allowing the claimant to uniquely associate the authentication operation on the primary channel with the request on the secondary channel.
 
 Ability to receive email messages or other types of instant message does not generally prove the possession of a specific device, so they SHALL NOT be used as out of band authentication methods.
 
 ##### 5.1.3.1. Out of Band Authenticators
 
-The out of band authenticator SHALL establish an authenticated protected channel in order to retrieve the out of band secret. This channel is considered to be out of band with respect to the primary communication channel, even if they terminate on the same device, provided the device does not leak information from one to the other.
+The out of band authenticator SHALL establish an authenticated protected channel in order to retrieve the out of band secret or authentication request. This channel is considered to be out of band with respect to the primary communication channel, even if it terminates on the same device, provided the device does not leak information from one to the other.
 
 The out of band authenticator SHALL uniquely authenticate itself in one of the following ways in order to receive the authentication secret:
 
@@ -73,15 +79,26 @@ The out of band authenticator SHALL uniquely authenticate itself in one of the f
 
 Out of band authenticators SHOULD NOT display the authentication secret on a device that is locked by the owner (i.e., requires an entry of a PIN or passcode). However, authenticators MAY indicate the receipt of an authentication secret on a locked device.
 
+If the out of band authenticator sends an approval message over the secondary communication channel (rather than by the claimant transferring a received secret to the primary communication channel):
+
+* The authenticator SHALL display identifying information about the authentication transaction to the claimant prior to their approval.
+
+* The secondary communication channel SHALL be an authenticated protected channel.
+
 ##### 5.1.3.2. Out of Band Verifiers
 
 Out of band verifiers SHALL generate a random authentication secret with at least 20 bits of entropy using an approved random number generator. They then optionally signal the device containing the subscriber's authenticator to indicate readiness to authenticate.
 
 If the out of band verification is to be made using a SMS message on a public mobile telephone network, the verifier SHALL verify that the pre-registered telephone number being used is actually associated with a mobile network and not with a VoIP (or other software-based) service. It then sends the SMS message to the pre-registered telephone number. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change.  **OOB using SMS is deprecated**, and will no longer be allowed in future releases of this guidance.
 
-If out of band verification is to be made using a secure application (e.g., on a smart phone), the verifier MAY send a push notification to that device. The verifier then waits for a establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as hashing (using an approved hash function) or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator and waits for the secret to be returned on the primary communication channel.
+If out of band verification is to be made using a secure application (e.g., on a smart phone), the verifier MAY send a push notification to that device. The verifier then waits for a establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as hashing (using an approved hash function) or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator. Depending on the type of out-of-band authenticator, either:
+* The verifier waits for the secret to be returned on the primary communication channel.
 
-In collecting the authentication secret from the claimant, the verifier SHALL use approved encryption and SHALL authenticate itself to the claimant. The authentication secret SHALL be considered invalid if not received over the primary channel within 5 minutes.
+* The verifier waits for the secret, or some type of approval message, to be returned over the secondary communication channel.
+
+If approval is made over the secondary communication channel, the request to the verifier SHALL include a transaction identifier, such as a transaction ID or description, for display by the verifier.
+
+In collecting the authentication secret from the claimant, the verifier SHALL use approved encryption and SHALL authenticate itself to the claimant. The authentication secret SHALL be considered invalid if not received within 5 minutes.
 
 If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
