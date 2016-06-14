@@ -63,4 +63,5 @@ Communications between the CSP and the RP SHALL be protected in transit using an
 
 Note that the CSP may have access to information that may be useful to the RP in enforcing security policies, such as device identity, location, system health checks, and configuration management. If so, it may be a good idea to pass this information along to the RP within the bounds of the subscriber's privacy preferences.
 
+Additional attributes about the user MAY be included outside of the assertion itself as part of a separate authorized request from the RP to the CSP. The authorization for access to these attributes MAY be issued alongside the assertion itself. Splitting user information in this manner can aid in protecting user privacy and allow for limited disclosure of identifying attributes on top of the essential information in the authentication assertion itself.
 
