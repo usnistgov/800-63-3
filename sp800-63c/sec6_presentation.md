@@ -25,6 +25,8 @@ In the indirect method, there are more network transactions required, but the in
 
 Claims within the assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
 
+Conveyance of the assertion reference from the CSP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the CSP as well as the assertion from the CSP to the RP SHALL be made over an authenticated protected channel.
+
 ### 6.2. Direct Presentation
 
 In the *direct* model, the CSP creates an assertion and sends it directly to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP. This is often handled by mechanisms within the subscriber’s browser.) 
@@ -39,6 +41,8 @@ The RP SHALL protect itself against injection of manufactured or captured assert
 
 The assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
 
+Conveyance of the assertion from the CSP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
+
 ### 6.3. Assertion proxying
 
 In some implementations, a proxy takes in an assertion from the CSP and creates a derived assertion when interacting directly with the RP, acting as an intermediary between the subscriber, the CSP, and the RP. From the perspective of the true CSP, the proxy is a single RP. From the perspective of the true RPs, the proxy is a single CSP. (See section 4.1.4.) 
@@ -51,9 +55,11 @@ There are several common reasons for such proxies:
 
 - Network monitoring and/or filtering mechanisms that terminate TLS in order to inspect and manipulate the traffic
 
+Conveyance of all information SHALL be made over authenticated protected channels.
+
 ### 6.4. Protecting Information
 
-Communications between the CSP and the RP SHALL be protected in transit. Current implementations tend to do this by using HTTP over TLS and passing the authentication assertion in the HTTP header.
+Communications between the CSP and the RP SHALL be protected in transit using an authenticated protected channel.
 
 Note that the CSP may have access to information that may be useful to the RP in enforcing security policies, such as device identity, location, system health checks, and configuration management. If so, it may be a good idea to pass this information along to the RP within the bounds of the subscriber's privacy preferences.
 
