@@ -40,7 +40,7 @@ Cookies:
 
 #### 7.1.2. OAuth Tokens
 
-An OAuth access token MAY be used to allow an application to act on behalf of a user after an initial authentication event. The presence of an OAuth token SHALL NOT be interpreted to indicate the presence of the user, in the absence of other signals.
+An OAuth access token is be used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token (and any associated refresh tokens) MAY be valid long after the authentication session has ended and the user has left the application in question.
 
 #### 7.1.3. Device Identification
 
