@@ -12,3 +12,20 @@ A technological process that allows for the conveyance of identity and authentic
 #### Identity Provider (IdP)
 The common term in federation protocols for the credential service provider (CSP) that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. 
 
+#### Authenticated Protected Channel
+A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
+
+#### Attribute
+A claim of a named quality or characteristic inherent in or ascribed to someone or something. (See term in [[ICAM]](#ICAM) for more information.)
+
+#### Assertion
+A statement from a verifier to a Relying Party (RP) that contains identity information about a subscriber. Assertions may also contain verified attributes.
+
+#### Assertion Reference
+A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier.
+
+#### Authentication
+The process of establishing confidence in the identity of users or information systems.
+
+#### Authentication Protocol
+A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of a valid authenticator to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
