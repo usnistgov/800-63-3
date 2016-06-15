@@ -4,13 +4,15 @@
 
 An assertion contains a set of claims or statements about an authenticated subscriber. Assertions can be categorized along multiple orthogonal dimensions, including the characteristics of using the assertion or the protections on the assertion itself.
 
-The core set of claims MAY include (but is not limited to):
+The core set of claims inside an assertion SHOULD include (but is not limited to):
 
  - Issuer: an identifier for the party that issued the assertion (the CSP)
- - Subject: an identifier for the party that the assertion is about (the subscriber)
+ - Subject: an identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the CSP)
  - Audience: an identifier for the party intended to consume the assertion (the RP)
- - Expiration: a timestamp indicating when the assertion expires and must no longer be accepted as valid
- - Identifier: a random value uniquely identifying this assertion, used to prevent attackers from manufacturing malicious assertions which would otherwise pass all validity checks
+ - Issuance: a timestamp indicating when the assertion was issued by the CSP
+ - Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP
+ - Authentication Time: a timestamp indicating when the CSP last verified the presence of the subscriber at the CSP through a primary authentication event
+ - Identifier: a random value uniquely identifying this assertion, used to prevent attackers from manufacturing malicious assertions which would pass other validity checks
 
 ### 5.1. Assertion possession category
 
