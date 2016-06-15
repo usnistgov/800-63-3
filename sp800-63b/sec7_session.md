@@ -58,3 +58,7 @@ When a session is terminated due to a time-out or other action, the user MAY rea
 |1|Presentation of any one factor|
 |2|Presentation of any one factor|
 |3|Presentation of all factors|
+
+#### 7.2.1 Reauthentication from a federation or assertion
+
+When using a [federation protocol](sp800-63c#sec4) to connect the CSP and RP, special consideration needs to be made for session management and reauthentication. Both the CSP and RP are likely to employ separate session management technologies, and there SHALL NOT be any assumption of correlation between these sessions. Consequently, when a session expires at an RP and reauthentication is required by the RP, it is entirely possible that the session at the CSP is not expired and a new assertion could be generated from this session at the CSP without reauthenticating the user. Therefore, an RP requiring a reauthentication through a federation protocol SHALL indicate a minimum acceptable authentication age to the CSP (if possible within the protocol), and the CSP SHALL honor this request (if possible). The CSP in all cases SHALL communicate the primary authentication event time to the RP to allow the RP to decide if the assertion is sufficient for reauthentication or not.
