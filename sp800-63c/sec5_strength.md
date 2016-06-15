@@ -14,6 +14,12 @@ The core set of claims inside an assertion SHOULD include (but is not limited to
  - Authentication Time: a timestamp indicating when the CSP last verified the presence of the subscriber at the CSP through a primary authentication event
  - Identifier: a random value uniquely identifying this assertion, used to prevent attackers from manufacturing malicious assertions which would pass other validity checks
 
+These core claims, particularly the issuance and expiration claims, apply to the assertion about the authentication event itself, and not to any additional identity attributes associated with the subscriber, even when those claims are included within the assertion. A subscriber's attributes MAY expire or be otherwise invalidated independently of the expiration or invalidation of the assertion.
+
+Assertions MAY include other additional identity attributes, but where possible the information contained in the assertion SHOULD be limited to the information required to process the authentication transaction. The RP MAY fetch additional identity attributes from the CSP in a separate transaction using an authorization credential issued along side the assertion. 
+
+Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single log-in event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) at the RP comes into play and the assertion is no longer used directly. 
+
 ### 5.1. Assertion possession category
 
 An assertion can be classified based on whether possession of the assertion itself is sufficient for representing  the subject of the assertion, or if additional proof is necessary along side the assertion.
