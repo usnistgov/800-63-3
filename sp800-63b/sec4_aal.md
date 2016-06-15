@@ -110,14 +110,17 @@ AAL 3 is intended to provide the highest practical remote network authentication
 
 Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
 
-* Multi-factor OTP Device
+* Multi-Factor OTP Device
 * Multi-Factor Cryptographic Device
+* Single-Factor Cryptographic Device used in conjunction with Memorized Secret
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
-Authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. AAL 3 authenticator requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](#FIPS201) compliant Personal Identity Verification (PIV) Card.
+Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. These requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](#FIPS201) compliant Personal Identity Verification (PIV) Card.
 
 Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher.
+
+When a single-factor cryptographic device in conjunction with a memorized secret is used at AAL 3, both factors SHALL be verified prior to giving any indication to the claimant whether the authentication was successful, and the verifier SHALL NOT indicate to the claimant which authentication factor failed.
 
 #### 4.3.3. Assertion Requirements
 
@@ -129,11 +132,11 @@ At AAL 3, authentication of the subscriber SHALL be repeated at least once per 1
 
 #### 4.3.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
 #### 4.3.6. Records Retention
 
-CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. Otherwise, retention of records is required for ten years and 6 months.
+The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. Otherwise, retention of records is required for ten years and 6 months.
 
 ### 4.4. Summary of Requirements
 
@@ -143,8 +146,8 @@ The following table summarizes the requirements for each of the authenticator as
 
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------
-**Authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF OTP Device<br />MF Cryptographic Device
-**FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall<br />Level 3 (authenticator physical security)
+**Authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF OTP Device<br />MF Cryptographic Device<br />SF Cryptographic Device plus Memorized Secret
+**FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (verifiers and MF authenticators)<br />Level 1 overall (SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
 **Security Controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
