@@ -1,6 +1,6 @@
-<a name="sec7"></a>
+<a name="sec8"></a>
 
-## 7. Security
+## 8. Security
 
 *This section is non-normative.*
 
@@ -86,7 +86,7 @@ and the assertion data referring to the subscriber needs to be strong.
     privileged subscriber. 
     
 
-### 7.1. Threat Mitigation Strategies
+### 8.1. Threat Mitigation Strategies
 
 Mitigation techniques are described below for each of the threats
 described in the last subsection.
