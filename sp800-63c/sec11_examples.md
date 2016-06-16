@@ -1,12 +1,12 @@
-<a name="sec10"></a>
+<a name="sec11"></a>
 
-## 10. Assertion Examples
+## 11. Assertion Examples
 
 *This section is non-normative.*
 
 Three types of assertion technologies will be discussed: SAML (Security Assertion Markup Language) assertions, Kerberos tickets, and OpenID Connect tokens. 
 
-### 10.1. Security Assertion Markup Language (SAML)
+### 11.1. Security Assertion Markup Language (SAML)
 
 SAML is an XML-based framework for creating and exchanging authentication and attribute information between trusted entities over the internet. As of this writing, the latest specification for \[[SAML](#SAML)\] is SAML v2.0, issued 15 March 2005.
 
@@ -38,7 +38,7 @@ SAML Assertions are encoded in an XML schema and can carry up to three types of 
 
 Authorization statements are beyond the scope of this document and will not be discussed.
 
-### 10.2. Kerberos Tickets
+### 11.2. Kerberos Tickets
 
 The Kerberos Network Authentication Service \[[RFC 4120](#RFC4120)\] was designed to provide strong authentication for client/server applications using symmetric-key cryptography on a local, shared network. Extensions to Kerberos can support the use of public key cryptography for selected steps of the protocol. Kerberos also supports confidentiality and integrity protection of session data between the subscriber and the RP. Even though Kerberos uses assertions, since it is designed for use on shared networks it is not truly a federation protocol. 
 
@@ -66,7 +66,7 @@ and uses a key it shares with the RP to generate a ticket corresponding
 to the new session key. The subscriber decrypts the session key and uses
 the ticket and the new session key together to authenticate to the RP.
 
-### 10.3. OpenID Connect
+### 11.3. OpenID Connect
 
 OpenID Connect is an internet-scale federated identity and authentication protocol built on top of the OAuth 2.0 authorization framework and the JSON Object Signing and Encryption (JOSE) cryptographic system. As of this writing, the latest specification is version 1.0 with errata, dated November 8, 2014. 
 
