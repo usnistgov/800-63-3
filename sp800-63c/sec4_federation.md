@@ -13,8 +13,7 @@ The subscriber authenticates to the CSP using some form of primary credential, a
 
 The RP communication with the CSP reveals to the CSP where the subscriber is conducting a transaction. Communications from multiple RPs allow the CSP to build a profile of subscriber transactions that would not have existed absent federation. This aggregation could enable new capabilities for subscriber tracking and use of profile information that do not align with the privacy interests of the subscribers. 
 
-The CSP SHALL not disclose information on subscriber activities with an RP to any party, nor use the 
-information for any purpose other than federated authentication or to comply with law or legal process without the consent of the subscriber. The CSP SHOULD employ technical measures to provide unlinkability and prevent subscriber activity tracking and profiling.
+Unless the subscriber consents, the CSP SHALL NOT disclose information on subscriber activities with an RP to any party, nor use the information for any purpose other than federated authentication or to comply with law or legal process . The CSP SHOULD employ technical measures to provide unlinkability and prevent subscriber activity tracking and profiling.
 
 ### 4.1. Federation Models
 
