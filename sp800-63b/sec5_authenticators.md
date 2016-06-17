@@ -176,7 +176,7 @@ A multi-factor software cryptographic authenticator is a cryptographic key is st
 
 ##### 5.1.7.1. Multi-Factor Cryptographic Software Authenticators
 
-Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. 
+Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, or trusted execution environment if available).
 
 Each authentication operation using the authenticator SHALL require the input of the additional factor. In the event that the memorized secret or the biometric are incorrect, the authenticator SHALL not provide any indication of this; the authenticator SHALL output an incorrect value that is indistinguishable from a correct one except by the verifier.
 
