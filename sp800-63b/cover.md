@@ -9,6 +9,7 @@
 Paul A. Grassi  
 Elaine M. Newton  
 Ray A. Perlner  
+Andrew R. Regenscheid  
 William E. Burr  
 James L. Fenton  
 Justin P. Richer
@@ -38,6 +39,10 @@ Elaine M. Newton
 Information Technology Laboratory*
 
 Ray A. Perlner  
+*Computer Security Division  
+Information Technology Laboratory*
+
+Andrew R. Regenscheid  
 *Computer Security Division  
 Information Technology Laboratory*
 
