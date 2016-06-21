@@ -8,7 +8,7 @@ Where the applicant already possesses recognized authentication credentials from
 
 - Before issuing any derived credential the CSP SHALL verify the original credential status and SHALL verify that the corresponding credential is possessed and controlled by the claimant.  
 - The CSP SHALL record the details of the original credential used as the basis for derived credential issuance. 
-- The CSP SHOULD set the expiration of the new credential to the expiration of the original credential. There are instances, such as loss of primary credential, where the derived credential need not be directly tied to the expiration of the primary credential.
+- The CSP SHOULD set the expiration of the new credential to the expiration of the original credential. There are instances where the derived credential need not be directly tied to the expiration of the primary credential as the derived credential can provide authentication services in its place, for example, while the expiring primary credential is being replaced.
 - The CSP that issued the derived credential SHOULD notify the issuer of the original, primary credential if the derived credential is revoked.
 
 #### 6.5.2. IAL 2 Requirements

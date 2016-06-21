@@ -102,6 +102,6 @@ Other individuals may have difficulty completing the identity proofing process b
 
 ## 5.4. Binding Requirements
 
-See [800-63B, Section 6.1, Authenticator Binding](sp800-63b.html#binding) for instructions on binding authenticators to subscribers.  
+See [800-63B, Section 6.1, Authenticator Binding](#binding) for instructions on binding authenticators to subscribers.  
 
 
