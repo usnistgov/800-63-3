@@ -120,8 +120,6 @@ Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic module
 
 Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher.
 
-When a single-factor cryptographic device in conjunction with a memorized secret is used at AAL 3, both factors SHALL be verified prior to giving any indication to the claimant whether the authentication was successful, and the verifier SHALL NOT indicate to the claimant which authentication factor failed.
-
 #### 4.3.3. Assertion Requirements
 
 In order to be valid at AAL 3, authentication assertions SHALL meet the requirements of proof-of-possession assertions as defined in [SP 800-63C](sp800-63c.html).
