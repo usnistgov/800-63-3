@@ -216,7 +216,19 @@ A summary of each of the identity and authenticator assurance levels is provided
 
 ### M-04-04 Levels of Assurance Requirements
 
-The following table shows the new requirements for M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. Further details and normative requirements are provided in are provided in [SP 800-63A](../sp800-63a.md), [SP 800-63B](../sp800-63b.md), and [SP 800-63C](../sp800-63c.md) respectively.
+
+The following table shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
+
+
+| Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
+|:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
+| 1 | 1 | 1| TBD
+| 2 | 2 | 2 or 3 |TBD
+| 3 | 2 | 2 or 3 |TBD
+| 4 | 3 | 3 |TBD
+
+However, the table below shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](../sp800-63a.md), [SP 800-63B](../sp800-63b.md), and [SP 800-63C](../sp800-63c.md) respectively.
+
 
 | Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
@@ -225,11 +237,11 @@ The following table shows the new requirements for M-04-04 Level of Assurance, m
 | 3 | 1 or 2 | 2 or 3 |TBD
 | 4 | 1, 2 or 3 | 3 |TBD
 
-This mapping takes advantage of the ability to separate distinct identity elements per assurance level.  For example, an agency is allowed to adopt multi-factor authentication (MFA) at LOA1. High assurance authenticators are allowed at low levels of assurance, where no identity is needed, because the authenticator will not leak any person information.  See [privacy requirements](../sp800-63c/sec8_privacy.md) in SP 800-63C for more details.  
+This mapping takes advantage of the ability to separate distinct identity elements per assurance level.  For example, an agency is allowed to adopt multi-factor authentication (MFA) at LOA1. Conversely, little or no identity proofing can be performed at the higher LOAs.  
 
 Agency mission need will assist in determining the acceptable IAL at a given LOA.  Since agencies should limit the collection of personal data in order to provide services and allow for strong pseudonymity, a specific IAL is not explicitly required for each LOA. For example, an agency may establish a "health tracker" application.  In line with the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication and an effective identity proofing process, as appropriate.", the agency could select LOA3 such that an AAL2 authenticator is required.  However, in this example, there may be no need for the agency system to know the true identity of the user.  In the past, the LOA3 assessment of data sensitivity would also require the agency to identity proof the user.  This is no longer necessary and the agency is encouraged in this case to not perform any identity proofing and allow the user of the health tracker system to be pseudonymous at IAL1.  The MFA authenticator at AAL2 or AAL3 will not leak any personal information because it is bound to an IAL 1 identity.
 
-In this case of federal employees, bound by HSPD-12 and required to obtain a Personal Identity Verification (PIV) smart card, the requirement is that agencies meet LOA4. The HSPD-12 use case requires an authenticator at AAL3 **and** identity proofing at IAL 3.   
+In the case of federal employees, bound by HSPD-12 and required to obtain a Personal Identity Verification (PIV) smart card, the requirement is that agencies meet LOA4. The HSPD-12 use case requires an authenticator at AAL3 **and** identity proofing at IAL 3.   
 
 >Important Note: An agency can accept a higher assurance level than those required in the table above.  For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2.  The same holds true for authenticators; stronger authenticators can be used at RP's that have lower authenticator requirements.  However, RPs will ensure that these scenarios only occur in federated scenarios with appropriate privacy protections by the CSP to ensure that only the requested attributes are provided to the RP and that no personal information leaks from the authenticator or the assertion.  See [privacy requirements](../sp800-63c/sec8_privacy.md) in SP 800-63C for more details.   
  
