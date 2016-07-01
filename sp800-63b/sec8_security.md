@@ -85,4 +85,4 @@ The weak point in many authentication mechanisms is the process followed when a 
 
 In order to maintain the integrity of the authentication factors, it is essential that it not be possible to leverage an authentication involving one factor to obtain an authenticator of a different factor. For example, a memorized secret must not be usable to obtain a new list of look-up secrets.
 
-Subscribers should be encouraged to maintain at least two valid authenticators of each factor they will be using. For example, a subscriber that usually uses a one-time OTP device as a physical authenticator should also be issued a number of look-up secret tokens, or should register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged.
+Subscribers should be encouraged to maintain at least two valid authenticators of each factor they will be using. For example, a subscriber that usually uses a one-time OTP device as a physical authenticator should also be issued a number of look-up secret authenticators, or should register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged.
