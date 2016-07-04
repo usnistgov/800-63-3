@@ -125,21 +125,16 @@ Privacy Policy で CSP, RP, Broker による適切な利用を宣言していた
 <!-- There is a spectrum of blinding technologies that offer varying levels of privacy protection. However, as the level of blinding increases, so does the technical implementation complexity. Although privacy policies may dictate appropriate use by the CSP, RP, and the broker, blinding technology is far more effective, by making the data unavailable. -->
 
 1. Broker は RP と CSP を相互に Blind しない. Broker は Subscriber と RP, CSP の関係性を監視・追跡可能であり, Assertion を通じてやりとりされるすべての属性を見ることができる.
-
 <!-- 1. The broker does not blind the RP and CSP from one another. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion. -->
 
 2. Broker は RP と CSP を相互に Blind しない. Broker は Subscriber と RP, CSP の関係性を監視・追跡可能であるが, Assertion の中身を見ることはできない.
-
 <!-- 2. The broker does not blind the RP and CSP from one another. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion. -->
 
 3. Broker は RP と CSP を相互に Blind する. Broker は Subscriber と RP, CSP の関係性を監視・追跡可能であり, Assertion を通じてやりとりされるすべての属性を見ることができる.
-
 <!-- 3. The broker blinds the RP and CSP from each other. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion. -->
 
 4. Broker は RP と CSP を相互に Blind する. Broker は Subscriber と RP, CSP の関係性を監視・追跡可能であるが, Assertion の中身を見ることはできない.
-
 <!-- 4. The broker blinds the RP and CSP from each other. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion. -->
 
 5. Broker は RP と CSP および Broker 自身を Blind する. Broker は一切の Subscriber の関係性を監視・追跡することができず, Assertion の中身を見ることもできない.
-
 <!-- 5. The broker blinds the RP, CSP, and itself. The broker cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. -->
