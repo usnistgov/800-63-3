@@ -2,30 +2,66 @@
 
 ## 3. Definitions and Abbreviations
 
-There are a variety of definitions used in the area of authentication. While many terms are consistent with earlier revisions version of SP 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted.
+Authentication のエリアでは数多くの用語定義がなされている.
+その多くは前リビジョンの SP 800-63 と一貫性が保たれているが, いくつかについては本リビジョンで改定がなされている.
+こういった用語の多くには, 一貫した単一の定義はなく, 個々の定義に注意深く注目することが望まれる.
 
-The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
+<!-- There are a variety of definitions used in the area of authentication. While many terms are consistent with earlier revisions version of SP 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted. -->
+
+本セクションで定義される用語は, 主に本ドキュメントで参照されるものである.
+その他の定義や略語については, 他の SP 800-63 ドキュメント群を参照のとこ.
+
+<!-- The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content. -->
 
 #### Federation
-A technological process that allows for the conveyance of identity and authentication information across a set of networked systems.
+
+Identity / Authentication Information を一連のネットワークシステム間でやりとりするための技術プロセス.
+
+<!-- A technological process that allows for the conveyance of identity and authentication information across a set of networked systems. -->
 
 #### Identity Provider (IdP)
-The common term in federation protocols for the credential service provider (CSP) that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. 
+
+Federation Protocol における Credential Service Provider (CSP) に対する一般的呼称.
+IdP は Subscriber の Primary Authentication Credential を管理し, それらの Credential をもとに Assertion を発行する.
+
+<!-- The common term in federation protocols for the credential service provider (CSP) that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. -->
 
 #### Authenticated Protected Channel
-A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
+
+Connection Initiator (接続元, Client) が Recipient (接続先, Server) を認証し, 暗号化されたコミュニケーションチャネル.
+Authenticated Protocol Channel は Confidentiality および Man-in-the-middle 耐性を提供するものであり, 認証プロセスの中でよく使われるものである.
+TLS [[BCP 195]](#bcp195) がその例としてあげられ, TLS では Recipient が提示した Certificate を Initiator が Verify することになる.
+
+<!-- A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator. -->
 
 #### Attribute
-A claim of a named quality or characteristic inherent in or ascribed to someone or something. (See term in [[ICAM]](#ICAM) for more information.)
+
+ある主体に関する生来の性質や特徴などの Claim. ([[ICAM]](#ICAM) 参照)
+
+<!-- A claim of a named quality or characteristic inherent in or ascribed to someone or something. (See term in [[ICAM]](#ICAM) for more information.) -->
 
 #### Assertion
-A statement from a verifier to a Relying Party (RP) that contains identity information about a subscriber. Assertions may also contain verified attributes.
+
+Verifier から Relying Party (RP) に対して発行される Subscriber に関する Identity Information を含む Statement.
+Assertion は Verified Attributes を含むこともある.
+
+<!-- A statement from a verifier to a Relying Party (RP) that contains identity information about a subscriber. Assertions may also contain verified attributes. -->
 
 #### Assertion Reference
-A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier.
+
+Assertion と紐付けて生成されるデータオブジェクトであり, Verifier を識別するとともに, Verifier が所有する Full Assertion へのポインタとして機能する.
+
+<!-- A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier. -->
 
 #### Authentication
-The process of establishing confidence in the identity of users or information systems.
+
+User や情報システムの Identity について確証を得るプロセス.
+
+<!-- The process of establishing confidence in the identity of users or information systems. -->
 
 #### Authentication Protocol
-A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of a valid authenticator to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
+
+Claimant (要求者) が自身の Identity を確立するための正当な Authenticator を保持および制御していることを示す, Claimant と Verifier の間での一連のメッセージのやりとり.
+セキュアな Authentication Protocol は, Claimant が正規の Verifier とやりとりしていることも明示する.
+
+<!-- A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of a valid authenticator to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier. -->
