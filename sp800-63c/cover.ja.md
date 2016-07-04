@@ -2,7 +2,7 @@
 
 # <a name="800-63c"></a> DRAFT NIST Special Publication 800-63C
 
-# Digital Authentication Guideline  
+# Digital Authentication Guideline (翻訳版)
 
 ### Federation and Assertions
 
@@ -17,7 +17,7 @@ This publication is available free of charge from:
 http://dx.doi.org/10.6028/NIST.SP.XXX  
 
 {:/comment}
- 
+
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)
 

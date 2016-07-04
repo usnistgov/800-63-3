@@ -2,13 +2,19 @@
 
 ## 1. Purpose
 
-This recommendation and its companion documents, SP 800-63-3, SP 800-63A, and SP 800-63B, provide technical guidelines to credential service providers for the implementation of remote authentication.
+本ドキュメントおよび SP 800-63-3, SP 800-63A, SP 800-63B は, リモートでの認証を実装する際の Credential Service Provider の技術ガイダンスである.
 
 <a name="sec2"></a>
 
 ## 2. Introduction
 
-Assertions are statements from a credential service provider (CSP) to a relying party (RP) that contain information about a subscriber. Assertions are used when the RP and the verifier are not co-located (i.e., they are connected through a shared network or the internet). The RP uses the information in the assertion to identify the subscriber and make authorization decisions about their access to resources controlled by the RP. An assertion may include identification and authentication statements regarding the subscriber and may additionally include attribute statements that further characterize the subscriber and support the authorization decision at the RP.
+Assertion は Credential Service Provider (CSP) から Relying Party (RP) に対して提示される, ある Subscriber に関する情報を含む Statement である.
+Assertion は RP と Verifier がお互いに離れた場所にいる場合に用いられる (例: 両者が共有ネットワークやインターネットを通じて接続されているなど).
+RP は Assertion に含まれる情報を使って Subscriber を識別し, RP の管理下にあるリソースに対する Subscriber のアクセスを制御する.
+Assertion は Subscriber についての Identification / Authentication Statement を含むこともあり, Subscriber のその他の属性を含むこともありうる.
+それらの情報は RP が Authorization Decision を下す際の手助けとなる.
+
+<!-- Assertions are statements from a credential service provider (CSP) to a relying party (RP) that contain information about a subscriber. Assertions are used when the RP and the verifier are not co-located (i.e., they are connected through a shared network or the internet). The RP uses the information in the assertion to identify the subscriber and make authorization decisions about their access to resources controlled by the RP. An assertion may include identification and authentication statements regarding the subscriber and may additionally include attribute statements that further characterize the subscriber and support the authorization decision at the RP. -->
 
 Assertions are presented over a network through the use of an identity federation protocol. In a federation protocol, the subscriber does not authenticate directly to the RP using credentials as described in this document suite. Instead, the federation protocol defines a mechanism for an RP to request that a CSP generate an assertion for the currently-present subscriber, by way of having the subscriber authenticate to the CSP. This supports the process of Single Sign On, allowing subscribers to authenticate once to a CSP and subsequently obtain services from multiple RPs, all without requiring the subscriber to hold or maintain separate credentials at each RP.
 
