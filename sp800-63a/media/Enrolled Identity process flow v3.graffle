@@ -7,7 +7,7 @@
 	<key>ApplicationVersion</key>
 	<array>
 		<string>com.omnigroup.OmniGraffle6</string>
-		<string>169.10.0.256984</string>
+		<string>169.14.0.260934</string>
 	</array>
 	<key>AutoAdjust</key>
 	<true/>
@@ -100,7 +100,8 @@
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc\partightenfactor0
 
 \f0\fs32 \cf0 Collect \
-Biographic}</string>
+Biographic\
+(Optional)}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1785,7 +1786,7 @@ Evidence}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2016-05-03 17:01:53 +0000</string>
+	<string>2016-07-05 13:55:05 +0000</string>
 	<key>Modifier</key>
 	<string>Grassi, Paul A.</string>
 	<key>NotesVisible</key>
@@ -1832,16 +1833,6 @@ Evidence}</string>
 		<array>
 			<string>coded</string>
 			<string>BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU051bWJlcgCEhAdOU1ZhbHVlAISECE5TT2JqZWN0AIWEASqEhAFxlwCG</string>
-		</array>
-		<key>NSPrinter</key>
-		<array>
-			<string>coded</string>
-			<string>BAtzdHJlYW10eXBlZIHoA4QBQISEhAlOU1ByaW50ZXIAhIQITlNPYmplY3QAhZKEhIQITlNTdHJpbmcBlIQBKwxIb21lIFByaW50ZXKGhg==</string>
-		</array>
-		<key>NSPrinterName</key>
-		<array>
-			<string>string</string>
-			<string>Home Printer</string>
 		</array>
 		<key>NSRightMargin</key>
 		<array>
