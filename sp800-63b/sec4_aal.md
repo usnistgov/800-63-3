@@ -51,7 +51,7 @@ At AAL 1, reauthentication of the subscriber SHOULD be repeated at least once pe
 
 #### 4.1.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
+The CSP SHOULD employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
 #### 4.1.6. Records Retention
 
@@ -96,7 +96,7 @@ At AAL 2, authentication of the subscriber SHALL be repeated at least once per 1
 
 #### 4.2.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+The CSP SHOULD employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
 #### 4.2.6. Records Retention
 
@@ -130,7 +130,7 @@ At AAL 3, authentication of the subscriber SHALL be repeated at least once per 1
 
 #### 4.3.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHOULD employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
 #### 4.3.6. Records Retention
 
