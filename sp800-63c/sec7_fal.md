@@ -1,6 +1,6 @@
 <a name="fal"></a>
 
-#7. Federation Assurance Level (FAL)
+## 7. Federation Assurance Level (FAL)
 
 This section defines a Federation and Assertion Level, or FAL. The FAL describes aspects of the assertion and federation protocol used in a given transaction. These levels can be requested by an RP or required by configuration of both RP and CSP for a given transaction. 
 
