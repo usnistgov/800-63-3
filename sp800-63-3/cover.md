@@ -198,9 +198,9 @@ Accordingly, with this revision, SP 800-63 has been split into a family of docum
 - SP 800-63C *Federation and Assertions* - Provides guidance on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
 
 
-### IAL and AAL Summary
+### IAL, AAL, and FAL Summary
 
-A summary of each of the identity and authenticator assurance levels is provided below.
+A summary of each of the identity, authenticator, and federation assurance levels is provided below.
 
 **Identity Assurance Level 1** – At this level, attributes provided in conjunction with the authentication process, if any, are self-asserted.
 
@@ -214,6 +214,14 @@ A summary of each of the identity and authenticator assurance levels is provided
 
 **Authenticator Assurance Level 3** – AAL 3 is intended to provide the highest practical digital authentication assurance. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed. The authenticator is required to be a hardware cryptographic module validated at Federal Information Processing Standard (FIPS) 140 Level 2 or higher overall with at least FIPS 140 Level 3 physical security. AAL 3 authenticator requirements can be met by using the PIV authentication key of a FIPS 201 compliant Personal Identity Verification (PIV) Card.
 
+**Federation Assurance Level 1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the RP. The assertion must be asymmetrically signed with an appropriate algorithm.
+
+**Federation Assurance Level 2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion. The assertion must be asymmetrically signed with an appropriate algorithm.
+
+**Federation Assurance Level 3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted such that the RP is the only party that can decrypt it.
+
+**Federation Assurance Level 4** - FAL 4 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be asymmetrically signed with an appropriate algorithm and encrypted to the RP.
+
 ### M-04-04 Levels of Assurance Requirements
 
 
@@ -222,20 +230,20 @@ The following table shows strict adherence to M-04-04 Level of Assurance, mappin
 
 | Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1| TBD
-| 2 | 2 | 2 or 3 |TBD
-| 3 | 2 | 2 or 3 |TBD
-| 4 | 3 | 3 |TBD
+| 1 | 1 | 1| 1
+| 2 | 2 | 2 or 3 |2
+| 3 | 2 | 2 or 3 |2
+| 4 | 3 | 3 |3
 
 However, the table below shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](../sp800-63a.md), [SP 800-63B](../sp800-63b.md), and [SP 800-63C](../sp800-63c.md) respectively.
 
 
 | Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1, 2 or 3 | TBD
-| 2 | 1 or 2 | 2 or 3 |TBD
-| 3 | 1 or 2 | 2 or 3 |TBD
-| 4 | 1, 2 or 3 | 3 |TBD
+| 1 | 1 | 1, 2 or 3 | 1
+| 2 | 1 or 2 | 2 or 3 |2
+| 3 | 1 or 2 | 2 or 3 |2
+| 4 | 1, 2 or 3 | 3 |3
 
 This mapping takes advantage of the ability to separate distinct identity elements per assurance level.  For example, an agency is allowed to adopt multi-factor authentication (MFA) at LOA1. Conversely, little or no identity proofing can be performed at the higher LOAs.  
 
