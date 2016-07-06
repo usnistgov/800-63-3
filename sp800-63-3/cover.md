@@ -233,7 +233,7 @@ The following table shows strict adherence to M-04-04 Level of Assurance, mappin
 | 1 | 1 | 1| 1
 | 2 | 2 | 2 or 3 |2
 | 3 | 2 | 2 or 3 |2
-| 4 | 3 | 3 |3
+| 4 | 3 | 3 |4
 
 However, the table below shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](../sp800-63a.md), [SP 800-63B](../sp800-63b.md), and [SP 800-63C](../sp800-63c.md) respectively.
 
