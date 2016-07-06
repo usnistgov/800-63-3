@@ -6,9 +6,7 @@
 
 ### Enrollment and Identity Proofing Requirements
 
-Paul A. Grassi
-Naomi B. Lefkovitz
-Jamie M. Danker  
+Paul A. Grassi  
 William E. Burr  
 James L. Fenton
 
@@ -29,13 +27,8 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 ###  Enrollment and Identity Proofing Requirements
 
 Paul A. Grassi  
-Naomi B. Lefkovitz
 *Applied Cybersecurity Division  
 Information Technology Laboratory*
-
-Jamie M. Danker
-*National Protection and Programs Directorate  
-Department of Homeland Security*
 
 William E. Burr  
 *Dakota Consulting, Inc.  
