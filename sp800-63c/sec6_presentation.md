@@ -4,7 +4,7 @@
 
 Assertions MAY be presented in either an *indirect* or *direct* manner from the CSP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between CSPs and RPs under specific circumstances, as discussed in section 4.1.4.
 
-Positive confirmation SHALL be obtained from the subscriber before any attributes about the subscriber are transmitted to any RP. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether transmit those attributes to the RP. These requirements do not apply to cases where the subscriber has already consented to the attribute release or has a reasonable expectation of attribute sharing, such as in cases where the RP and the CSP are the same legal entity.
+Positive confirmation SHALL be obtained from the subscriber before any attributes about the subscriber are transmitted to any RP. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether transmit those attributes to the RP. These requirements do not apply to cases where the subscriber has already consented to release the exact attribute bundle requested at the same RP before or has a reasonable expectation of attribute sharing, such as in cases where the RP and the CSP are the same legal entity.
 The CSP SHALL transmit only those attributes that were explicitly requested by the RP.
 
 ### 6.1. Indirect presentation
