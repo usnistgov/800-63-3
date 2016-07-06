@@ -41,6 +41,7 @@ The following table shows the required IAL per M-04-04 Level of Assurance.  Agen
 The following requirements apply to any CSP performing identity proofing at IAL 2 or 3. 
 
 1. Identity proofing SHALL NOT be performed to determine suitability/entitlement to gain access to services or benefits.
+2. The CSP SHALL NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
 2. Collection of personally identifiable information (PII) SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the person providing identity evidence based on best available practices for appropriate identity resolution, validation, and verification. 
 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether the such attributes are voluntary or mandatory in order to complete the identity proofing transactions and the consequences for not providing the attributes. 
 5.	 The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, authorization or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses.  
@@ -51,11 +52,11 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 4. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities.
 6. All personally identifiable information (PII) collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 13. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
-13. <a name="gr14"></a>The CSP MAY obtain additional confidence in remote identity proofing using risk mitigation measures such as geolocation, device characteristics, and behavioral characteristics, so long as additional mitigations do not substitute for requirements contained herein. 
+13. <a name="gr13"></a>The CSP MAY obtain additional confidence in remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](http://www.ntis.gov/products/ssa-dmf/#), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. 
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
 
-1. If the CSP employs risk mitigation measures described in General Requirement [#14](#gr14) above, the agency SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography). The CSP SHALL NOT apply additional risk mitigation approaches without providing explicit notice of such approaches. 
+1. If the CSP employs risk mitigation measures described in General Requirement [#13](#gr13) above, the agency SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments should include any privacy risk mitigations (e.g., limited retention, strict use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).  
 2. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.
 3.	The agency SHALL publish a System of Records Notice to cover such collections, as applicable.
 4.	The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
@@ -63,7 +64,7 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 ## 4.4. Identity Assurance Level 1
 
-The CSP SHALL NOT proof any applicants.  Applicants MAY self-assert 0 or more attributes to the CSP.
+The CSP SHALL NOT proof applicants.  Applicants MAY self-assert zero or more attributes to the CSP.
 
 ## 4.5. Identity Assurance Level 2
 
