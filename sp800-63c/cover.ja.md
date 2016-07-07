@@ -156,7 +156,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 [2. Introduction](#sec2)
 
-[3. Definitions and Abbreviations](#sec3\)
+[3. Definitions and Abbreviations](#sec3)
 
 [4. Federation](#sec4)
 
@@ -164,12 +164,14 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 [6. Assertion Presentation](#sec6)
 
-[7. Security](#sec7)
+[7. Federation Assurance Levels](#fal)
 
-[8. Privacy Requirements and Considerations](#sec8)
+[8. Security](#sec8)
 
-[9. Usability](#sec9)
+[9. Privacy Requirements and Considerations](#sec9)
 
-[10. Assertion Examples](#sec10)
+[10. Usability](#sec10)
 
-[11. References](#references)
+[11. Assertion Examples](#sec11)
+
+[12. References](#references)
