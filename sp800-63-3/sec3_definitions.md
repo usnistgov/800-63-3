@@ -9,7 +9,7 @@ The definitions in this section are primarily those that are referenced in this 
 ***To Be Done:*** Remove words/definitions only applicable to the sub-documents.
 
 #### Active Attack
-An online attack where the attacker transmits data to the claimant, credential service privider, verifier, or relying party. Examples of active attacks include man-in-the-middle, impersonation, and session hijacking.
+An online attack where the attacker transmits data to the claimant, credential service provider, verifier, or relying party. Examples of active attacks include man-in-the-middle, impersonation, and session hijacking.
 
 #### Address of Record
 The official location where an individual can be found. The address of record always includes the residential street address of an individual and may also include the mailing address of the individual. In very limited circumstances, an Army Post Office box number, Fleet Post Office box number or the street address of next of kin or of another contact individual can be used when a residential street address for the individual is not available.
@@ -255,10 +255,8 @@ A session wherein messages between two participants are encrypted and integrity 
 
 A participant is said to be *authenticated* if, during the session, he, she or it proves possession of a long term authenticator in addition to the session keys, and if the other party can verify the identity associated with that authenticator. If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
-#### Pseudonym
-A false name.
-
-In this document, all unverified names are assumed to be pseudonyms.
+#### Pseudonymous Identifer
+A meaningless, but unique number that does not allow the RP to infer the subscriber but which does permit the RP to associate multiple interactions with the subscriber’s claimed identity.
 
 #### Public Credentials
 Credentials that describe the binding in a way that does not compromise the authenticator.

@@ -114,7 +114,7 @@ mitigation measures. Easing credential assurance level requirements may
 increase the size of the enabled customer pool, but agencies shall
 ensure that this does not corrupt the system’s choice of the appropriate
 assurance level. Alternatively, agencies may consider partitioning the
-functionality of an digital authentication enabled application to allow less
+functionality of a digital authentication enabled application to allow less
 sensitive functions to be available at a lower level of authentication
 and attribute assurance, while more sensitive functions are available
 only at a higher level of assurance.
