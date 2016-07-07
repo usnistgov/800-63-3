@@ -178,7 +178,7 @@ OMB guidance outlines a five-step process by which agencies should meet their di
 
 5.  Periodically reassess the information system to determine technology refresh requirements.
 
-This document suite provides guidelines for implementing the third step of the above process.  A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two (2) individual components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a 
+This document suite provides guidelines for implementing the third step of the above process.  A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two (2) individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a 
 third component, *Federation Assurance Level (FAL)*, is required. 
 
 * IAL refers to the robustness of the identity proofing process and the binding between an authenticator and the records pertaining to a specific individual. 
