@@ -102,7 +102,8 @@ A session wherein messages between two participants are encrypted and integrity 
 A participant is said to be *authenticated* if, during the session, he, she or it proves possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
 #### Pseudonym
-A false name. In this document, all unverified names are assumed to be pseudonyms.
+
+A name that someone uses instead of his or her legal name?
 
 #### Public Key
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
@@ -135,3 +136,7 @@ In reference to an ID, the quality of not being expired or revoked.
 
 #### Verified Name
 A subscriber name that has been verified by identity proofing.
+
+#### Virtual In-Person Proofing
+
+A remote identity person proofing process that employs technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.

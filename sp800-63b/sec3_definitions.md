@@ -218,9 +218,6 @@ A session wherein messages between two participants are encrypted and integrity 
 
 A participant is said to be *authenticated* if, during the session, he, she or it proves possession of an authenticator in addition to the session keys, and if the other party can verify the identity associated with that authenticator. If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
-#### Pseudonym
-A false name. In this document, all unverified names are assumed to be pseudonyms.
-
 #### Public Credentials
 Credentials that describe the binding in a way that does not compromise the authenticator.
 
