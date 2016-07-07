@@ -1,6 +1,6 @@
 <a name="sec5"></a>
 
-## 5. Assertion Strength
+## 5. Assertions
 
 An assertion contains a set of claims or statements about an authenticated subscriber. Assertions can be categorized along multiple orthogonal dimensions, including the characteristics of using the assertion or the protections on the assertion itself.
 
@@ -42,11 +42,11 @@ Note that mere possession of a bearer assertion is not always enough to imperson
 
 Regardless of the possession mechanism (discussed above) or the federation model used to obtain them (described in section 4), assertions need to include an appropriate set of protections to the assertion data itself to prevent attackers from manufacturing valid assertions or re-using captured assertions at disparate RPs.
 
-#### 5.2.1. Shared Secret
+#### 5.2.1. Assertion Identifier
 
-Assertions SHALL contain sufficient entropy to prevent an attacker from manufacturing a valid assertion and using it with a target RP. A 128-bit random symmetric key or equivalent strength asymmetric key SHALL be used for this purpose. Assertions MAY accomplish this by use of an embedded nonce, timestamp, assertion identifier, or a combination of these or other techniques.
+Assertions SHALL contain sufficient entropy to prevent an attacker from manufacturing a valid assertion and using it with a target RP. Assertions MAY accomplish this by use of an embedded nonce, timestamp, assertion identifier, or a combination of these or other techniques. 
 
-In the absence of additional cryptographic protections, this source of randomness SHALL function as a shared secret between the CSP and the RP to uniquely identify the assertion in question.
+In the absence of additional cryptographic protections, this source of randomness SHALL function as a shared secret between the CSP and the RP to uniquely identify the assertion in question. 
 
 #### 5.2.2. Signed Assertion
 
