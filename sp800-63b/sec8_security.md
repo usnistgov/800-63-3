@@ -43,6 +43,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | | Online guessing is used to guess authenticator outputs for a one-time password device registered to a legitimate claimant. |
 | Endpoint compromise | Malicious code on the endpoint proxies remote access to a connected authenticator without user consent. | A cryptographic authenticator connected to the endpoint is used to authenticate remote attackers. |
 | | Malicious code on the endpoint causes authentication to other than the intended verifier. | Authentication is performed on behalf of an attacker rather than the subscriber.
+| | Malicious code on the endpoint compromises a multi-factor software cryptographic authenticator. | Malicious code proxies authentication or exports authenticator keys from the endpoint.
 
 ### 8.2. Threat Mitigation Strategies
 Related mechanisms that assist in mitigating the threats identified above are summarized in Table 5.
@@ -66,6 +67,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Online guessing | Use authenticators that generate high entropy output.
 | Endpoint compromise | Use hardware authenticators that require physical action by the subscriber.
 | | Provide secure display of identity of verifier and relying party.
+| | Maintain software-based keys in restricted-access storage.
 
 There are several other strategies that may be applied to mitigate the threats described in Table 5:
 
