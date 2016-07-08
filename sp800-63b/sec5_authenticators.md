@@ -269,3 +269,9 @@ If matching is performed centrally:
 Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be immediately erased from storage immediately after a password has been generated.
 
 Biometrics are also used in some cases to prevent repudiation of registration and to verify that the same individual participates in all phases of the registration process as described in SP 800-63A.
+
+#### <a name="attestation"></a>5.2.4 Attestation
+
+Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information such as the provenance or health and integrity of the authenticator (and possibly the endpoint as well) to the verifier as part of the authentication protocol. If this attestation is signed, the verifier SHOULD validate its signature. This information MAY be used as part of a risk-based authentication decision.
+
+When federated authentication is being performed as described in [SP 800-63C](sp800-63c.html), the verifier SHOULD include any such attestation information in the assertion it provides to the relying party.
