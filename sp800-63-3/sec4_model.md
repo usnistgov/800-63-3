@@ -140,8 +140,8 @@ An RP relies on results of an authentication protocol to establish confidence in
 
 The overall M-04-04 LOA is determined by combining the discrete assurance level for each of the components of the architecture. For instance, to achieve M-04-04 LOA3:
 
-* The enrollment and identity proofing process shall, at a minimum, use IAL 1 or 2 processes.
-* The authenticator (or combination of authenticators) used shall have an AAL of 2 or higher.
-* Authentication assertions (if used) shall have an FAL of 2 or higher (under consideration as -C is finalized).
+* The enrollment and identity proofing process would, at a minimum, use IAL 1 or 2 processes.
+* The authenticator (or combination of authenticators) would have an AAL of 2 or higher.
+* Authentication assertions (if used) would have an FAL of 2 or higher.
 
 The overall level is determined by the lowest level because it will likely be the target of an attacker. For example, if a system uses an authenticator that has AAL 2 assurance, but uses assertion mechanisms at FAL 3, the attacker will likely focus on gaining access to the authenticator since it is easier to attack a system component meeting AAL 2 rather than attacking the assertion that meets FAL 3. 

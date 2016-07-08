@@ -89,6 +89,9 @@ The following requirements apply to the identity verification steps for IAL 2 an
 	- The CSP MAY use KBV to verify an applicant's identity against one (1) piece of validated identity evidence.  
 	- The CSP SHALL NOT present diversionary KBV questions.  The CSP SHALL NOT allow answers to KBV questions be 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.
 	- The CSP SHALL NOT ask the same KBV questions in subsequent attempts.
+	- The CSP SHALL NOT ask a KBV question that effectively answers any future KBV question, either in the current session or subsequent attempts.
+	- The CSP SHALL NOT use data that does not change regularly over a period of time.
+	- The CSP SHALL ensure that any KBV approach does not reveal PII that the applicant has not already provided.
 	- The CSP SHALL time out KBV sessions after 2 minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process.
 
 
