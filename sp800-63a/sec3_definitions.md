@@ -103,7 +103,7 @@ A participant is said to be *authenticated* if, during the session, he, she or i
 
 #### Pseudonym
 
-A name that someone uses instead of his or her legal name?
+A name other than a legal name.
 
 #### Public Key
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
