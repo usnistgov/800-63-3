@@ -13,9 +13,9 @@ The subscriber authenticates to the CSP using some form of primary credential, a
 
 The RP communication with the CSP reveals to the CSP where the subscriber is conducting a transaction. Communications from multiple RPs allow the CSP to build a profile of subscriber transactions that would not have existed absent federation. This aggregation could enable new capabilities for subscriber tracking and use of profile information that do not align with the privacy interests of the subscribers. 
 
-The CSP SHALL NOT disclose information on subscriber activities with an RP to any party, nor use the information for any purpose other than federated authentication or to comply with law or legal process except in the case of a specific user request. The CSP SHOULD employ technical measures to provide unlinkability and prevent subscriber activity tracking and profiling.
+The CSP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information. The CSP SHOULD employ technical measures to provide unlinkability and prevent subscriber activity tracking and profiling.
 
-Subscriber activity may be disclosed for security purposes such as communication of compromised subscriber accounts.
+A CSP MAY disclose information on subscriber activities to other RPs within the federation for security purposes such as communication of compromised subscriber accounts.
 
 ### 4.1. Federation Models
 
@@ -55,7 +55,7 @@ In this model, a third-party sits in the middle of the transaction and communica
 
 Brokers can enable simplified technical integrations between the RP and CSP by eliminating the need for multiple point to point integrations, which can be onerous for protocols which do not support [dynamic registration](#dynamic-registration). If implemented in very specific ways, brokers can also provide some business confidentiality and transfer some of the privacy risks of point to point federation described above by passing the assertions while blinding the participants on either side of the transaction to each other. 
 
-For example, organizations may not wish to reveal their subscriber lists to each other. Some implementations of blinding technology can prevent the capability for CSPs or RPs to track and profile subscribers within the context of a specific authentication transaction. However, the broker model transfers this capability to the broker. Additionally, CSPs and RPs may still be able to track and profile subscribers through activity monitoring.
+For example, organizations may not wish to reveal their subscriber lists to each other. Some implementations of blinding technology can prevent CSPs or RPs from tracking and profiling subscribers within the context of an authentication transaction. However, the broker model transfers this tracking and profiling capability to the broker itself. Additionally, CSPs and RPs may still be able to track and profile subscribers through activity monitoring.
 
 While some broker deployments offer no additional privacy protection, some can offer limited additional levels of privacy to the subscriber through a variety of blinding technologies.  However, as the level of blinding increases, so does the technical and operational implementation complexity. Privacy policies may dictate appropriate use by the CSP, RP, and the broker,  but blinding technology can increase effectiveness of these policies by making the data more difficult to access.
 
