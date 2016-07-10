@@ -31,11 +31,14 @@ RP と CSP とのやりとりは, Subscriber がトランザクションを行�
 
 <!-- The RP communication with the CSP reveals to the CSP where the subscriber is conducting a transaction. Communications from multiple RPs allow the CSP to build a profile of subscriber transactions that would not have existed absent federation. This aggregation could enable new capabilities for subscriber tracking and use of profile information that do not align with the privacy interests of the subscribers. -->
 
-CSP は Subscriber と RP のやりとりを第三者に漏らすべきではなく (SHALL NOT), Federated Authentication 目的や法的手続き以外でそういった情報を利用すべきでもない (SHALL NOT).
+CSP は RP 上での Subscriber のアクティビティを第三者に漏らすべきではなく (SHALL NOT), Federated Authentication 目的や法的手続き, 当該ユーザーからの要望による以外でそういった情報を利用すべきでもない (SHALL NOT).
 CSP は Subscriber Tracking や Profiling を防止したり Unlinkability を確保するための技術的対策を行うべきである (SHOULD).
 
-<!-- The CSP SHALL not disclose information on subscriber activities with an RP to any party, nor use the
-information for any purpose other than federated authentication or to comply with law or legal process. The CSP SHOULD employ technical measures to provide unlinkability and prevent subscriber activity tracking and profiling. -->
+<!-- The CSP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information. The CSP SHOULD employ technical measures to provide unlinkability and prevent subscriber activity tracking and profiling. -->
+
+CSP は, Subscriber アカウントへの不正ログイン発生時など, セキュリティ目的であれば, Federation の範囲内で他の RP に Subscriber のアクティビティを公表することもできる (MAY).
+
+<!-- A CSP MAY disclose information on subscriber activities to other RPs within the federation for security purposes such as communication of compromised subscriber accounts. -->
 
 ### 4.1. Federation Models
 
@@ -76,7 +79,7 @@ Manual Registration は Central Authority モデルと合わせて利用する�
 
 <!-- Manual registration can work in concert with a central authority model. In this case, a registry is pre-populated with parties trusted by the central authority, and more parties are added manually on an as-needed basis. -->
 
-#### 4.1.3 Dynamic Registration
+#### <a name="dynamic-registration"></a> 4.1.3 Dynamic Registration
 
 Dynamic Registration モデルでは, 各システムはその他のシステムが当該システムのメタデータを取得できるように well-known location エンドポイントを持つ.
 また新しいシステムが人間の関与無しに自身を登録できるよう, 予測可能な形で API エンドポイントも提供する.
@@ -90,8 +93,9 @@ Software Statement とは, Dynamic Registration に関与した主体に関す�
 Software Statement は RP Software に関する属性のリストであり, 認証機関により暗号論的に署名されている.
 認証機関を信頼する主体は, 認証機関に対する Trust を Dynamic Registration によって確立したパートナーシップに対しても拡張できる.
 これにより Federated Party 間で Trust を確立したり強めたりすることができる.
+詳細は [[RFC 7591 Section 2.3]] (#RFC7591Sec23) を参照のこと.
 
-<!-- Frequently, parties in a dynamic registration model have no way to trust each other ahead of time, so little information is exchanged by default. This problem is somewhat mitigated by a technology called software statements, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by certifying bodies. Because both parties trust the certifying body, that trust can be extended to the other party in the dynamic registration partnership.  This allows trust to be established or elevated between the federating parties. -->
+<!-- Frequently, parties in a dynamic registration model have no way to trust each other ahead of time, so little information is exchanged by default. This problem is somewhat mitigated by a technology called software statements, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by certifying bodies. Because both parties trust the certifying body, that trust can be extended to the other party in the dynamic registration partnership.  This allows trust to be established or elevated between the federating parties. See [[RFC 7591 Section 2.3]] (#RFC7591Sec23) for more information. -->
 
 一定レベルの Trust を確保した状態で Dynamic Registration を利用可能な相手を Whitelist で管理する場合もある.
 同時に, Blacklist を利用して, 低レベルの Trust 関係で Dynamic Registration をさせる相手を管理したり Dynamic Registration を禁止したりすることもある.
@@ -111,18 +115,31 @@ Broker は片や Federation CSP として動作し, もう片方では Federatio
 
 **Figure 2: Broker**
 
-
 Broker の介在により, RP と CSP の間のやりとりは簡素化され, 技術的に単純になる.
-また Broker はトランザクションの両端の主体を Blinding した状態での Assertion のやりとりを可能とするため, Business Confidentiality と Privacy Risk 低減にもつながる.
-例えば, 相互に Subscriber リストを開示したくはない Organization が Federation を行う場合や, 相互の Blinding が CSP や RP による Subscriber の Tracking / Profiling を防止する場合などが例として挙げられる.
+そういったやりとりは, [Dynamic Registration](#dynamic-registration) をサポートしないプロトコルでは厄介になりうる.
+また, 特定の実装方法に従えば, Broker はトランザクションの両端の主体を Blinding した状態での Assertion のやりとりを可能とするため, Business Confidentiality と Privacy Risk 低減にもつながる.
+
+<!-- Brokers can enable simplified technical integrations between the RP and CSP by eliminating the need for multiple point to point integrations, which can be onerous for protocols which do not support [dynamic registration](#dynamic-registration). If implemented in very specific ways, brokers can also provide some business confidentiality and transfer some of the privacy risks of point to point federation described above by passing the assertions while blinding the participants on either side of the transaction to each other. -->
+
+例えば, ある組織が Subscriber リスト
+
+例えば, 相互に Subscriber リストを開示したくはない Organization がいるとしよう.
+ある Blinding Technology 実装では CSP や RP が Authentication Transaction のコンテキスト内で Subscriber を Tracking したり Profiling したりすることを防止できる.
 しかしながらこのモデルではそういった能力を Broker が持つことになる.
+また CSP と RP は依然としてアクティビティを監視することで Subscriber の Tracking / Profiling が可能かもしれない.
 
-<!-- Brokers can enable simplified technical integrations between the RP and CSP by eliminating the need for multiple point to point integrations. Brokers can also provide business confidentiality and mitigate some of the privacy risks of point to point federation described above by passing the assertions while blinding the participants on either side of the transaction to each other. For example, organizations may not wish to reveal their subscriber lists to each other and blinding prevents the capability for CSPs or RPs to track and profile subscribers. However, this model transfers this capability to the broker. -->
+<!-- For example, organizations may not wish to reveal their subscriber lists to each other. Some implementations of blinding technology can prevent CSPs or RPs from tracking and profiling subscribers within the context of an authentication transaction. However, the broker model transfers this tracking and profiling capability to the broker itself. Additionally, CSPs and RPs may still be able to track and profile subscribers through activity monitoring. -->
 
-多様な Privacy 保護レベルを実現する Blinding 技術が存在するが, Blinding レベルが上がると技術的複雑度は上昇する.
-Privacy Policy で CSP, RP, Broker による適切な利用を宣言していたとしても, Blinding 技術はデータを利用不可とするため効率的とは言い難い.
+追加のプライバシー保護策を提供しない Broker 実装もあれば, Blinding Technology によってある程度のプライバシーレベルを提供する Broker 実装もある.
+しかしながらBlinding レベルが上がると, それに比例して技術的・運用上の複雑度は上昇する.
+Privacy Policy で CSP, RP, Broker による適切なデータ利用を宣言していたとしても, Blinding 技術はデータへのアクセス自体を困難にするため, より効率的である.
 
-<!-- There is a spectrum of blinding technologies that offer varying levels of privacy protection. However, as the level of blinding increases, so does the technical implementation complexity. Although privacy policies may dictate appropriate use by the CSP, RP, and the broker, blinding technology is far more effective, by making the data unavailable. -->
+<!-- While some broker deployments offer no additional privacy protection, some can offer limited additional levels of privacy to the subscriber through a variety of blinding technologies.  However, as the level of blinding increases, so does the technical and operational implementation complexity.
+Privacy policies may dictate appropriate use by the CSP, RP, and the broker, but blinding technology can increase effectiveness of these policies by making the data more difficult to access. -->
+
+以下に Blinding 実装のパターンを挙げる.
+
+<!-- The following list illustrates a spectrum of blinding implementations: -->
 
 1. Broker は RP と CSP を相互に Blind しない. Broker は Subscriber と RP, CSP の関係性を監視・追跡可能であり, Assertion を通じてやりとりされるすべての属性を見ることができる.
 <!-- 1. The broker does not blind the RP and CSP from one another. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion. -->
@@ -138,3 +155,7 @@ Privacy Policy で CSP, RP, Broker による適切な利用を宣言していた
 
 5. Broker は RP と CSP および Broker 自身を Blind する. Broker は一切の Subscriber の関係性を監視・追跡することができず, Assertion の中身を見ることもできない.
 <!-- 5. The broker blinds the RP, CSP, and itself. The broker cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. -->
+
+注) Blinding Technology を利用したとしても, Blind された主体が Timestamp や Cookie, Attribute や Attribute Bundle のサイズなどを解析し, Subscriber の行動を推測することは可能である.
+
+<!-- NOTE: even with the use of blinding technologies, it is often possible for a blinded party to deduce subscriber behavior patterns through analysis of timestamps, cookies, attributes, or attribute bundle sizes. -->
