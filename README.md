@@ -57,6 +57,8 @@ jekyll server
 
 各ファイルへの変更は, 自動的に反映されます.
 
+また, Repository Root に `sp800-63-3.ja.md` というファイルを作成した場合, [http://localhost:4000/800-63-3/sp800-63-3.ja.html](http://localhost:4000/800-63-3/sp800-63-3.ja.html) でそのページが確認できます.
+
 ## 翻訳対象ファイルの作成
 
 `sp800-63c` ディレクトリをみると, Section ごとの Markdown ファイルが確認できると思います.
