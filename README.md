@@ -55,7 +55,13 @@ Repository Root で以下のコマンドを実行すると, [http://localhost:40
 jekyll server
 ```
 
-各ファイルへの変更は, 自動的に反映されます.
+Rails 開発等を行っているマシンでは, 以下のように `bundle exec` をつける必要があるかもしれません.
+
+```
+bundle exec jekyll server
+```
+
+なお, 各ファイルへの変更は自動的に反映されるため, 明示的に Markdown ファイルを HTML に変換する必要はありません.
 
 また, Repository Root に `sp800-63-3.ja.md` というファイルを作成した場合, [http://localhost:4000/800-63-3/sp800-63-3.ja.html](http://localhost:4000/800-63-3/sp800-63-3.ja.html) でそのページが確認できます.
 
