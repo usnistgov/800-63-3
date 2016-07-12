@@ -145,7 +145,7 @@ described in the last subsection. -->
     3. Assertion に推測不可能な識別子を含める.
     <!-- 3. The assertion contains a non-guessable random identifier. -->
 
--   *Assertion disclosure* – この脅威を防ぐためには, 以下の対策のいずれかの対策を行うこと.
+-   *Assertion disclosure* – この脅威を防ぐためには, 以下のいずれかの対策を行うこと.
 <!-- -   *Assertion disclosure* – To mitigate this threat, one of the
     following mechanisms are used: -->
 
@@ -209,7 +209,7 @@ described in the last subsection. -->
     a (configurable) time window to ensure that an assertion is not
     used more than once within that time window. -->
 
--   *Secondary authenticator manufacture* – この脅威を防ぐためには, 以下の対策のいずれかの対策を行うこと.
+-   *Secondary authenticator manufacture* – この脅威を防ぐためには, 以下のいずれかの対策を行うこと.
 <!-- -   *Secondary authenticator manufacture* – To mitigate this threat, one
     of the following mechanisms is used: -->
 
@@ -224,32 +224,40 @@ described in the last subsection. -->
     is signed by the CSP or integrity protected using a key shared
     between the CSP and the RP. -->
 
--   *Secondary authenticator capture* – To mitigate this threat,
+-   *Secondary authenticator capture* – この脅威を防ぐためには, Assertion Protocol で利用される Secondary Authenticator の有効期間全体を通じて, 適切な保護策が必要となる.
+<!-- -   *Secondary authenticator capture* – To mitigate this threat,
     adequate protections are in place throughout the lifetime of
-    any secondary authenticators used in the assertion protocol.
+    any secondary authenticators used in the assertion protocol. -->
 
-    1.  In order to protect the secondary authenticator while it is in
+    1. CSP と Subscriber の間で Secondary Authenticator を伝送する際は, Subscriber の Primary Authentication 時に確立された保護セッションを通じて Secondary Authenticator を送信する.
+    <!-- 1.  In order to protect the secondary authenticator while it is in
     transit between the CSP and the subscriber, the secondary
     authenticator is sent via a protected session established
-    during the primary authentication of the subscriber.
+    during the primary authentication of the subscriber. -->
 
-    2.  In order to protect the secondary authenticator from capture as it
+    2. RP に送信される Secondary Authenticator をキャプチャから守るには, 盗聴や Man-in-the-Middle 攻撃から Secondary Authenticator を保護する何らかの認証プロトコルを利用する.
+    <!-- 2.  In order to protect the secondary authenticator from capture as it
     is submitted to the RP, the secondary authenticator is used in
     an authentication protocol which protects against eavesdropping and
-    man-in-the-middle attacks.
+    man-in-the-middle attacks. -->
 
-    3.  In order to protect the secondary authenticator after it has been
+    3. Secondary Authenticator を再利用から守るには, Secondary Authenticator の有効期限を迎えるまで, 当該 Secondary Authenticator を保護されていないセッションを通じて伝送したり, 認証されていない主体に送信したりしてはならない.
+    <!-- 3.  In order to protect the secondary authenticator after it has been
     used, it is never transmitted over an unprotected session or to
-    an unauthenticated party while it is still valid.
+    an unauthenticated party while it is still valid. -->
 
--   *Assertion substitution* – To mitigate this threat, one of the
-    following mechanisms is used:
+-   *Assertion substitution* – この脅威を防ぐためには, 以下のいずれかの対策を行うこと.
+<!-- -   *Assertion substitution* – To mitigate this threat, one of the
+    following mechanisms is used: -->
 
-    1.  Responses to assertion requests contain the value of the assertion reference used
+    1. Assertion Request に対する Response に, リクエスト時に指定された Assertion 参照値や, RP が暗号論的に当該リクエストに紐づけた nonce を含める.
+    <!-- 1.  Responses to assertion requests contain the value of the assertion reference used
     in the request or some other nonce that was cryptographically bound
-    to the request by the RP.
+    to the request by the RP. -->
 
-    2.  Responses to assertion requests are bound to the corresponding
+    2. Assertion Request に対する Response を対応するリクエストと HTTP のメッセージ順通りに紐付けること.
+    TLS などで Assertion と Request を保護すれば, 許可されていない悪意あるパケット順序入れかえを検知できる.
+    <!-- 2.  Responses to assertion requests are bound to the corresponding
     requests by message order, as in HTTP, provided that assertions and
     requests are protected by a protocol such as TLS that can detect and
-    disallow malicious reordering of packets.
+    disallow malicious reordering of packets. -->
