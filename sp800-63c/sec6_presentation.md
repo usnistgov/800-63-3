@@ -4,10 +4,9 @@
 
 Assertions MAY be presented in either an *indirect* or *direct* manner from the CSP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between CSPs and RPs under specific circumstances, as discussed in section 4.1.4.
 
-Regardless of the manner of assertion, explict notice SHALL be provided to the subscriber regarding federated authentication and the attributes requested by the RP.  including whether the such attributes are voluntary or mandatory in order to complete the federated authentication transaction and the consequences for not providing the attributes. Positive confirmation SHALL be obtained from the subscriber before any attributes about the subscriber are transmitted to any RP. 
+Positive confirmation SHALL be obtained from the subscriber before any attributes about the subscriber are transmitted to any RP. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether transmit those attributes to the RP. A CSP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. The CSP SHALL transmit only those attributes that were explicitly requested by the RP. The manner of presentation may impact who is in the best position to provide notice and obtain confirmation from the subscriber.  Accordingly, the CSP, RP and any broker SHALL agree in advance on who will provide notice and obtain confirmation.
 
-The manner of presentation may impact who is in the best position to provide notice and obtain confirmation from the subscriber. Accordingly, the CSP, RP, and any broker SHALL agree in advance on who will provide notice and obtain confirmation.
-The CSP SHALL transmit only those attributes that were explicitly requested by the RP.
+The CSP SHALL enable the subscriber to view the attribute values to be transmitted. However, the CSP SHALL employ masking mechanisms, as necessary, to mitigate the risk of unauthorized exposure of sensitive information (e.g. shoulder surfing).
 
 ### 6.1. Indirect presentation
 
@@ -64,4 +63,6 @@ Communications between the CSP and the RP SHALL be protected in transit using an
 Note that the CSP may have access to information that may be useful to the RP in enforcing security policies, such as device identity, location, system health checks, and configuration management. If so, it may be a good idea to pass this information along to the RP within the bounds of the subscriber's privacy preferences.
 
 Additional attributes about the user MAY be included outside of the assertion itself as part of a separate authorized request from the RP to the CSP. The authorization for access to these attributes MAY be issued alongside the assertion itself. Splitting user information in this manner can aid in protecting user privacy and allow for limited disclosure of identifying attributes on top of the essential information in the authentication assertion itself.
+
+The RP SHALL, where feasible, request attribute claims rather than full attribute values. The CSP SHALL support attribute claims.  
 
