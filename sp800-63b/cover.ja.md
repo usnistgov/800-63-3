@@ -180,7 +180,7 @@ The authors would like to acknowledge the thought leadership and innovation of t
 
 ### 要求記法および規則
 
-<--The terms “SHALL” and “SHALL NOT” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.-->
+<!--The terms “SHALL” and “SHALL NOT” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.-->
 「SHALL(するものとする)」及び「SHALL NOT(しないものとする)」というキーワードは、刊行物に厳密に従うことを要求しており、内容と異なってはならない。
 
 
@@ -207,7 +207,7 @@ The authors would like to acknowledge the thought leadership and innovation of t
 
 <!--Digital authentication is the process of establishing confidence that a given claimant is the same as a subscriber that has previously authenticated. The robustness of this confidence is described by categorization known as the Authenticator Assurance Level (AAL). The separation of AAL from Identity Assurance Level (IAL), described in SP 800-63A, better supports applications requiring strong authentication that may be pseudonymous. The separation of authenticator issuance from the establishment of credentials binding those authenticators to individuals provides additional flexibility in the enrollment and identity proofing process.-->
 
-デジタル認証は、与えられた要求者と以前認証を行った加入者とが同一である、という確からしさを証明するためのプロセスである。この確からしさの堅牢性については、認証器信頼レベル(Authenticator Assurance Level、以下AAL)<!--TODO-->として知られている分類を用いて表される。AALはsp 800-63Aにおいてアイデンティティ信頼レベル(Identity Assurance Level、以下IAL)<!--TODO-->と区別される。これはより高いAALをサポートするようなアプリケーションでは、仮名を用いた高度な認証を要求するようなことがあるかもしれないためである。
+デジタル認証は、与えられた要求者と以前認証を行った加入者とが同一である、という確からしさを証明するためのプロセスである。この確からしさの堅牢性については、認証器信頼レベル(Authenticator Assurance Level、以下AAL)として知られている分類を用いて表される。AALはsp 800-63Aにおいてアイデンティティ信頼レベル(Identity Assurance Level、以下IAL)と区別される。これはより高いAALをサポートするようなアプリケーションでは、仮名を用いた高度な認証を要求するようなことがあるかもしれないためである。
 
 <!--This guideline addresses how an individual, known as a claimant, can securely authenticate to a Credential Service Provider to establish the context for a remote digital interaction.-->
 
@@ -220,19 +220,23 @@ The authors would like to acknowledge the thought leadership and innovation of t
 <!--
 **AAL 1**: AAL 1 requires single factor authentication, giving some assurance that the same claimant who participated in previous transactions is accessing the protected transaction or data.
 -->
+
 **AAL 1**: ALL 1は、単一要素の認証を必要とする。これは、保護された取引/データへアクセスしようとする要求者が以前の取引に関わった人と同一であるという、ある程度の信頼性を持つ。
 
 <!--
 **AAL 2**: AAL 2 requires two different authentication factors, providing higher assurance that the same claimaint who participated in previous transactions is accessing the protected transaction or data.
 -->
+
 **AAL 2**: AAL 2は、2つの異なる要素の認証を必要とする。これは、保護された取引/データへアクセスしようとする要求者が以前の取引に関わった人と同一であるという、より高い信頼性を提供する。
 
 <!--
 **AAL 3**: AAL 3 provides the highest practical remote digital authentication assurance. It requires proof of possession of a key in a physical multifactor authenticator through a cryptographic protocol.-->
+
 **AAL 3**: AAL 3は、遠隔で行われるデジタル認証のうち最も実用的な信頼性を提供する。これは、暗号理論に基づくプロトコルを介して、物理的な多要素認証器内部にある鍵の所有者であることを証明することを必要とする。
 
 
 <!-- ## Table of Contents -->
+
 ## 目次
 
 [1. 目的](#sec1)
