@@ -181,6 +181,7 @@ The authors would like to acknowledge the thought leadership and innovation of t
 ### 要求記法および規則
 
 <!--The terms “SHALL” and “SHALL NOT” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.-->
+
 「SHALL(するものとする)」及び「SHALL NOT(しないものとする)」というキーワードは、刊行物に厳密に従うことを要求しており、内容と異なってはならない。
 
 
