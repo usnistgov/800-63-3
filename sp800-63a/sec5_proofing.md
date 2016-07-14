@@ -6,7 +6,7 @@ The following sections list the objectives and steps a CSP SHALL follow to ident
 
 ## <a name="resolve"></a>5.2. Identity Resolution
   
-2. Exact matches of information used in the proofing process may be difficult to achieve due to multiple factors. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple pieces of evidence, authoritative records, and third party records. Matching algorithms/rules used SHALL be publicly or community of interest available. For example, they MAY be included as part of the written policy or practice statement referenced above. 
+2. Exact matches of information used in the proofing process may be difficult to achieve due to multiple factors. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple pieces of evidence, authoritative records, and third party records. Matching algorithms/rules used SHOULD be publicly or community of interest available. For example, they MAY be included as part of the written policy or practice statement referenced above. 
 3. Knowledge based verification (KBV) (sometimes referred to as knowledge based authentication (KBA)) is typically used to verify a claimed identity by testing the personal knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. 
 
 ## <a name="validate"></a>5.3. Identity Evidence Validation
