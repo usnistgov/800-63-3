@@ -7,7 +7,7 @@ There are a variety of definitions used in the area of authentication. While man
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Federation
-A technological process that allows for the conveyance of identity and authentication information across a set of networked systems.
+A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Identity Provider (IdP)
 The common term in federation protocols for the credential service provider (CSP) that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. 
