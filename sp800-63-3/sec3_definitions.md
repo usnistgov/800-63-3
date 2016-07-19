@@ -6,7 +6,12 @@ There is a wide variety of terms used in the area of authentication. While the d
 
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
+#### Address of Record
+
+The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
+
 #### Applicant
+
 A party undergoing the processes of registration and identity proofing.
 
 #### Assertion
