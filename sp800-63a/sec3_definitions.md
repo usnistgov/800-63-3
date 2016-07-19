@@ -7,7 +7,8 @@ There is a wide variety of terms used in the area of authentication. While the d
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Address of Record
-The official location where an individual can be found. The address of record always includes the residential street address of an individual and may also include the mailing address of the individual. In very limited circumstances, an Army Post Office box number, Fleet Post Office box number or the street address of next of kin or of another contact individual can be used when a residential street address for the individual is not available.
+
+The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
 
 #### Applicant
 A party undergoing the processes of registration and identity proofing.
