@@ -274,7 +274,7 @@ An attack in which the attacker is able to insert himself or herself between a c
 A secret used in authentication that is known to the claimant and the verifier.
 
 #### Side Channel Attack
-An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, and electromagnetic emissions are examples of characteristics that could be exploited in a side-channel attack.
+An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, electromagnetic and acoustic emissions are examples of characteristics that could be exploited in a side-channel attack.
 
 #### Social Engineering
 The act of deceiving an individual into revealing sensitive information by associating with the individual to gain confidence and trust.
