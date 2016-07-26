@@ -45,7 +45,11 @@ If the subscriber has only one of the two authentication factors, they SHALL rep
 #### 6.1.3. Binding Identity to a Subscriber Provided Authenticator
 In some instances, a claimant may already possess authenticators at a suitable AAL without having been proofed at the equivalent IAL. For example, a user may have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
 
+{::comment}
+
 **I think we are making this too hard.  And not sure this is correct if we even want this as increasing IAL should still require address confirmation.  I'm thinking we require address confirmation and then let the binding of an existing authenticator to occur, so the OR below turns into an AND.**
+
+{:/comment}
 
 The following requirements apply when a claimant choses to increase IAL in order to bind to a suitable authenticator they already have.
 
