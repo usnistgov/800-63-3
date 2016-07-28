@@ -4,7 +4,8 @@
 
 This section provides the detailed requirements specific for each of the authenticator types. With the exception of validation requirements specified in Section 4, the technical requirements for each of the authenticator types is the same regardless of the AAL at which it is used.
 
-![authenticator](sp800-63b/media/Memorized-secret.png)
+![authenticator](sp800-63b/media/Memorized-secret.png)  
+![authenticator](sp800-63b/media/Look-up-secrets.png)
 
 ### 5.1. Requirements by Authenticator Type
 
