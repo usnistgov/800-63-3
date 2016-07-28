@@ -4,9 +4,13 @@
 
 This section provides the detailed requirements specific for each of the authenticator types. With the exception of validation requirements specified in Section 4, the technical requirements for each of the authenticator types is the same regardless of the AAL at which it is used.
 
+![authenticator](sp800-63b/media/Memorized-secret.png)
+
 ### 5.1. Requirements by Authenticator Type
 
 #### 5.1.1. Memorized Secrets
+
+ 
 
 A Memorized Secret authenticator (commonly referred to as a *password* or *PIN* if it is numeric) is a secret value that is intended to be chosen and memorizable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value.
 

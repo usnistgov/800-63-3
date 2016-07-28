@@ -126,7 +126,7 @@ In order to be valid at AAL 3, authentication assertions SHALL meet the requirem
 
 #### <a name="aal3reauth"></a>4.3.4. Reauthentication
 
-At AAL 3, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following a period of no more than 15 minutes of user inactivity. It is permissible to prompt the user to cause activity just before the inactivity timeout, if desired.
+At AAL 3, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following a period of no more than 15 minutes of user inactivity. Reauthentication SHALL use both factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout.
 
 #### 4.3.5. Security Controls
 
