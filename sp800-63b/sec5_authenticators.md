@@ -8,9 +8,16 @@ This section provides the detailed requirements specific for each of the authent
 
 #### 5.1.1. Memorized Secrets
 
-![authenticator](sp800-63b/media/Memorized-secret.png)  
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Memorized-secret.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A Memorized Secret authenticator (commonly referred to as a *password* or *PIN* if it is numeric) is a secret value that is intended to be chosen and memorizable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value.</td> 
+  </tr>
+  </table>
+  </div>
 
- A Memorized Secret authenticator (commonly referred to as a *password* or *PIN* if it is numeric) is a secret value that is intended to be chosen and memorizable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value.
+
 
 ##### 5.1.1.1. Memorized Secret Authenticators
 
