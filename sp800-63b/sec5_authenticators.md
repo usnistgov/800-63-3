@@ -12,7 +12,7 @@ This section provides the detailed requirements specific for each of the authent
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Memorized-secret.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
-    <td>A Memorized Secret authenticator (commonly referred to as a *password* or *PIN* if it is numeric) is a secret value that is intended to be chosen and memorizable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value.</td> 
+    <td>A Memorized Secret authenticator (commonly referred to as a <i>password</i> or <i>PIN</i> if it is numeric) is a secret value that is intended to be chosen and memorizable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value.</td> 
   </tr>
   </table>
   </div>
@@ -164,7 +164,7 @@ If the authenticator output has less than 64 bits of entropy, the verifier SHALL
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Multi-factor-otp-device.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
-    <td>A multi-factor (MF) OTP device hardware device generates one-time passwords for use in authentication and requires activation through a second factor of authentication. The second factor of authentication may be achieved through some kind of integral entry pad, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). The one-time password is typically displayed on the device and manually input to the verifier, although direct electronic output from the device as input to a computer is also allowed. For example, a one-time password device may display 6 characters at a time. The MF OTP device is *something you have*, and it may be activated by either *something you know* or *something you are*.</td> 
+    <td>A multi-factor (MF) OTP device hardware device generates one-time passwords for use in authentication and requires activation through a second factor of authentication. The second factor of authentication may be achieved through some kind of integral entry pad, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). The one-time password is typically displayed on the device and manually input to the verifier, although direct electronic output from the device as input to a computer is also allowed. For example, a one-time password device may display 6 characters at a time. The MF OTP device is <i>something you have</i>, and it may be activated by either <i>something you know</i> or <i>something you are</i>.</td> 
   </tr>
   </table>
   </div>
@@ -221,7 +221,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Multi-factor-software-crypto.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
-    <td>A multi-factor software cryptographic authenticator is a cryptographic key is stored on disk or some other “soft” media that requires activation through a second factor of authentication. Authentication is accomplished by proving possession and control of the key. The authenticator output is highly dependent on the specific cryptographic protocol, but it is generally some type of signed message. The MF software cryptographic authenticator is *something you have*, and it may be activated by either *something you know* or *something you are*.</td> 
+    <td>A multi-factor software cryptographic authenticator is a cryptographic key is stored on disk or some other “soft” media that requires activation through a second factor of authentication. Authentication is accomplished by proving possession and control of the key. The authenticator output is highly dependent on the specific cryptographic protocol, but it is generally some type of signed message. The MF software cryptographic authenticator is <i>something you have</i>, and it may be activated by either <i>something you know</i> or <i>something you are</i>.</td> 
   </tr>
   </table>
   </div>
@@ -248,7 +248,7 @@ The requirements for a multi-factor cryptographic software verifier are identica
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Multi-factor-crypto-device.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
-    <td>A multi-factor cryptographic device is a hardware device that contains a protected cryptographic key that requires activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message. The MF Cryptographic device is *something you have*, and it may be activated by either *something you know* or *something you are*.</td> 
+    <td>A multi-factor cryptographic device is a hardware device that contains a protected cryptographic key that requires activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message. The MF Cryptographic device is <i>something you have</i>, and it may be activated by either <i>something you know</i> or <i>something you are</i>.</td> 
   </tr>
   </table>
   </div>
