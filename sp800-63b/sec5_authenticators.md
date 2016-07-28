@@ -45,9 +45,14 @@ Verifiers SHALL store memorized secrets in a form that is resistant to offline a
 
 #### 5.1.2. Look-up Secrets
 
-![authenticator](sp800-63b/media/Look-up-secrets.png)  
-
-A look-up secret authenticator is a physical or electronic record that stores a set of secrets shared between the claimant and the CSP. The claimant uses the authenticator to look up the appropriate secret(s) needed to respond to a prompt from the verifier. For example, a claimant may be asked by the verifier to provide a specific subset of the numeric or character strings printed on a card in table format.
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Look-up-secrets.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A look-up secret authenticator is a physical or electronic record that stores a set of secrets shared between the claimant and the CSP. The claimant uses the authenticator to look up the appropriate secret(s) needed to respond to a prompt from the verifier. For example, a claimant may be asked by the verifier to provide a specific subset of the numeric or character strings printed on a card in table format.</td> 
+  </tr>
+  </table>
+  </div>
 
 ##### 5.1.2.1 Look-up Secret Authenticators
 CSPs creating look-up secret authenticators SHALL use an approved random number generator to generate the list of secrets, and SHALL deliver the authenticator securely to the subscriber. Look-up secrets SHALL have at least 64 bits of entropy, or SHALL have at least 20 bits of entropy if the number of failed authentication attempts is limited as described in [Section 5.2.2](#throttle).
@@ -66,19 +71,24 @@ Verifiers SHALL use approved encryption and SHALL authenticate themselves to the
 
 #### <a name="out-of-band"></a>5.1.3. Out of Band
 
-![authenticator](sp800-63b/media/Out-of-band-OOB.png)  
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Out-of-band-OOB.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>An Out of Band authenticator is a physical device that is uniquely addressable and can receive a verifier-selected secret for one-time use. The device is possessed and controlled by the claimant and supports private communication over a secondary channel that is separate from the primary channel for e-authentication. The out-of-band authenticator can operate in one of two ways:<br><br>
 
-An Out of Band authenticator is a physical device that is uniquely addressable and can receive a verifier-selected secret for one-time use. The device is possessed and controlled by the claimant and supports private communication over a secondary channel that is separate from the primary channel for e-authentication. The out-of-band authenticator can operate in one of two ways:
+-  The claimant presents the secret that was received by the out-of-band authenticator to the verifier using the primary channel for e-authentication.<br><br>
 
--  The claimant presents the secret that was received by the out-of-band authenticator to the verifier using the primary channel for e-authentication.
+- The claimant sends a response to the verifier from the out-of-band authenticator via the secondary communications channel<br><br>
 
-- The claimant sends a response to the verifier from the out-of-band authenticator via the secondary communications channel.
+Two key requirements are that the device be uniquely addressable and that communication over the secondary channel be private. Some voice-over-IP telephone services can deliver text messages and voice calls without the need for possession of a physical device; these SHALL NOT be used for out of band authentication. Mechanisms such as smartphone applications employing secure communications protocols are preferred for out-of-band authentication.<br><br>
 
-Two key requirements are that the device be uniquely addressable and that communication over the secondary channel be private. Some voice-over-IP telephone services can deliver text messages and voice calls without the need for possession of a physical device; these SHALL NOT be used for out of band authentication. Mechanisms such as smartphone applications employing secure communications protocols are preferred for out-of-band authentication.
+If the authenticator responds directly to the verifier via the secondary communications channel, the verifier SHALL send and the authenticator SHALL display information, such as a transaction ID or description, allowing the claimant to uniquely associate the authentication operation on the primary channel with the request on the secondary channel.<br><br>
 
-If the authenticator responds directly to the verifier via the secondary communications channel, the verifier SHALL send and the authenticator SHALL display information, such as a transaction ID or description, allowing the claimant to uniquely associate the authentication operation on the primary channel with the request on the secondary channel.
-
-Ability to receive email messages or other types of instant message does not generally prove the possession of a specific device, so they SHALL NOT be used as out of band authentication methods.
+Ability to receive email messages or other types of instant message does not generally prove the possession of a specific device, so they SHALL NOT be used as out of band authentication methods.</td> 
+  </tr>
+  </table>
+  </div>
 
 ##### 5.1.3.1. Out of Band Authenticators
 
@@ -117,11 +127,16 @@ If the authentication secret has less than 64 bits of entropy, the verifier SHAL
 
 #### 5.1.4. Single Factor OTP Device
 
-![authenticator](sp800-63b/media/Single-factor-otp-device.png)  
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Single-factor-otp-device.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A single factor OTP device is a hardware device that supports the time-based generation of one-time passwords. This includes software-based OTP generators installed on devices such as mobile phones. This device has an embedded secret that is used as the seed for generation of one-time passwords and does not require activation through a second factor. Authentication is accomplished by using the authenticator output (i.e., the one-time password) in an authentication protocol, thereby proving possession and control of the device. A one-time password device may, for example, display 6 characters at a time.<br><br>
 
-A single factor OTP device is a hardware device that supports the time-based generation of one-time passwords. This includes software-based OTP generators installed on devices such as mobile phones. This device has an embedded secret that is used as the seed for generation of one-time passwords and does not require activation through a second factor. Authentication is accomplished by using the authenticator output (i.e., the one-time password) in an authentication protocol, thereby proving possession and control of the device. A one-time password device may, for example, display 6 characters at a time.
-
-Single factor OTP devices are similar to look-up secret authenticators with the exception that the secrets are cryptographically generated by the authenticator and verifier and compared by the verifier. The secret is computed based on a nonce that may be time-based or from a counter on the authenticator and verifier.
+Single factor OTP devices are similar to look-up secret authenticators with the exception that the secrets are cryptographically generated by the authenticator and verifier and compared by the verifier. The secret is computed based on a nonce that may be time-based or from a counter on the authenticator and verifier.</td> 
+  </tr>
+  </table>
+  </div>
 
 ##### <a name="sfotpa"></a>5.1.4.1. Single Factor OTP Authenticators
 
@@ -145,9 +160,15 @@ If the authenticator output has less than 64 bits of entropy, the verifier SHALL
 
 #### 5.1.5. Multi-Factor OTP Devices
 
-![authenticator](sp800-63b/media/Multi-factor-otp-device.png)  
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Multi-factor-otp-device.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A multi-factor (MF) OTP device hardware device generates one-time passwords for use in authentication and requires activation through a second factor of authentication. The second factor of authentication may be achieved through some kind of integral entry pad, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). The one-time password is typically displayed on the device and manually input to the verifier, although direct electronic output from the device as input to a computer is also allowed. For example, a one-time password device may display 6 characters at a time. The MF OTP device is *something you have*, and it may be activated by either *something you know* or *something you are*.</td> 
+  </tr>
+  </table>
+  </div>
 
-A multi-factor (MF) OTP device hardware device generates one-time passwords for use in authentication and requires activation through a second factor of authentication. The second factor of authentication may be achieved through some kind of integral entry pad, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). The one-time password is typically displayed on the device and manually input to the verifier, although direct electronic output from the device as input to a computer is also allowed. For example, a one-time password device may display 6 characters at a time. The MF OTP device is *something you have*, and it may be activated by either *something you know* or *something you are*.
 
 ##### 5.1.5.1. Multi-Factor OTP Authenticators
 
@@ -169,9 +190,14 @@ If the authenticator output or activation secret has less than 64 bits of entrop
     
 #### 5.1.6. Single Factor Cryptographic Devices
 
-![authenticator](sp800-63b/media/Single-factor-crypto.png)  
-
-A single-factor cryptographic device is a hardware device that performs cryptographic operations on input provided to the device. This device does not require activation through a second factor of authentication. This device uses embedded symmetric or asymmetric cryptographic keys. Authentication is accomplished by proving possession of the device. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message.
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Single-factor-crypto.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A single-factor cryptographic device is a hardware device that performs cryptographic operations on input provided to the device. This device does not require activation through a second factor of authentication. This device uses embedded symmetric or asymmetric cryptographic keys. Authentication is accomplished by proving possession of the device. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message.</td> 
+  </tr>
+  </table>
+  </div>
 
 ##### 5.1.6.1. Single Factor Cryptographic Device Authenticators
 
@@ -191,9 +217,16 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
     
 #### 5.1.7. Multi-Factor Cryptographic Software
 
-![authenticator](sp800-63b/media/Multi-factor-software-crypto.png)  
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Multi-factor-software-crypto.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A multi-factor software cryptographic authenticator is a cryptographic key is stored on disk or some other “soft” media that requires activation through a second factor of authentication. Authentication is accomplished by proving possession and control of the key. The authenticator output is highly dependent on the specific cryptographic protocol, but it is generally some type of signed message. The MF software cryptographic authenticator is *something you have*, and it may be activated by either *something you know* or *something you are*.</td> 
+  </tr>
+  </table>
+  </div>
 
-A multi-factor software cryptographic authenticator is a cryptographic key is stored on disk or some other “soft” media that requires activation through a second factor of authentication. Authentication is accomplished by proving possession and control of the key. The authenticator output is highly dependent on the specific cryptographic protocol, but it is generally some type of signed message. The MF software cryptographic authenticator is *something you have*, and it may be activated by either *something you know* or *something you are*.
+
 
 ##### 5.1.7.1. Multi-Factor Cryptographic Software Authenticators
 
@@ -211,9 +244,15 @@ The requirements for a multi-factor cryptographic software verifier are identica
 
 #### 5.1.8. Multi-Factor Cryptographic Devices
 
-![authenticator](sp800-63b/media/Multi-factor-crypto-device.png)  
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Multi-factor-crypto-device.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A multi-factor cryptographic device is a hardware device that contains a protected cryptographic key that requires activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message. The MF Cryptographic device is *something you have*, and it may be activated by either *something you know* or *something you are*.</td> 
+  </tr>
+  </table>
+  </div>
 
-A multi-factor cryptographic device is a hardware device that contains a protected cryptographic key that requires activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message. The MF Cryptographic device is *something you have*, and it may be activated by either *something you know* or *something you are*.
 
 ##### 5.1.8.1. Multi-Factor Cryptographic Device Authenticators
 
