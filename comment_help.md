@@ -14,12 +14,11 @@ description: "Guide on providing feedback"
 2. **Open an issue.** As you are reading and identify comments you would like to make:
 
     1. Click on either the "Comment" link in the sidebar navigation or the "Send Feedback" link in the footer of the page.
+    
+    2. Review open and closed issues to determine if a similar issue has already been created
 
     2. Click on the "New Issue" button in the upper right of the screen.  
     ![Create issue](assets/create_new_issue.png)
-
-    3. When the “Issue Page” opens, you will be presented with several labels based on the sections of the document, select the one that applies to your comment.  
-    ![Apply label](assets/issue_apply_label.png)
 
     4. Provide a short description in the field labelled "Title" for the feedback being provided.  
     ![Issue title](assets/issue_title.png)
@@ -29,6 +28,8 @@ description: "Guide on providing feedback"
             **Organization**:
 
             **Type**:
+            
+            **Document (63-3, 63A, 63B, or 63C)**:
 
             **Reference (Include section and paragraph number)**:
 
