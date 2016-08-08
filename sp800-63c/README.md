@@ -14,26 +14,22 @@ This document is broken up into sections as follows:
 
 [3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. Assertion Strength](sec4_strength.md)
+[4. Federation](sec4_federation.md)
 
-    4.1. Bearer assertions
-    4.2. Holder of key assertions
+[5. Assertion Strength](sec5_strength.md)
 
-[5. Assertion Models](sec5_models.md)
-
-    5.1 Direct Model
-    5.2 Indirect Model
+[6. Assertion Presentation](sec5_models.md)
 
 [6. Examples](sec6_examples.md)
 
-    6.1. SAML
-    6.2. Kerberos
-    6.3. OpenID Connect and OAuth
+[7. Federation Assurance Level](sec7_fal.md)
 
-[7. Assertion Threats](sec7_threats.md)
+[8. Security](sec8_security.md)
 
-[8. Privacy Considerations](sec8_privacy.md)
+[9. Privacy](sec9_privacy.md)
 
-[9. Usability](sec9_usability.md)
+[10. Usability](sec10_usability.md)
+
+[11. Assertion Examples](sec11_examples.md)
 
 [10. References](sec10_references.md)
