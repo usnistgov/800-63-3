@@ -18,9 +18,7 @@ This document is broken up into sections as follows:
 
 [5. Assertion Strength](sec5_strength.md)
 
-[6. Assertion Presentation](sec5_models.md)
-
-[6. Examples](sec6_examples.md)
+[6. Assertion Presentation](sec6_presentation.md)
 
 [7. Federation Assurance Level](sec7_fal.md)
 
@@ -32,4 +30,4 @@ This document is broken up into sections as follows:
 
 [11. Assertion Examples](sec11_examples.md)
 
-[10. References](sec10_references.md)
+[12. References](references.md)
