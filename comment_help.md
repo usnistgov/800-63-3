@@ -15,7 +15,7 @@ description: "Guide on providing feedback"
 
     1. Click on either the "Comment" link in the sidebar navigation or the "Send Feedback" link in the footer of the page.
     
-    2. Review open and closed issues to determine if a similar issue has already been created
+    2. Review open and closed issues to determine if a similar issue has already been created.
 
     2. Click on the "New Issue" button in the upper right of the screen.  
     ![Create issue](assets/create_new_issue.png)
