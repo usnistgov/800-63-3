@@ -5,3 +5,7 @@ _site/
 .jekyll-metadata
 *.css.map
 *.lock
+
+sp800-63a/cover.md
+
+sp800-63a/sec6_dc.md
