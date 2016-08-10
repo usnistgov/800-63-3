@@ -16,3 +16,12 @@ The FAL combines aspects of [federation model](#sec4), [assertion protection str
 For example, FAL 1 maps to the OpenID Connect Implicit Client profile or the SAML Web SSO profile, with no additional features. FAL 2 maps to the OpenID Connect Basic Client profile or the SAML Artifact Binding profile, with no additional features. FAL 3 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL 4 requires the presentation of an additional key bound to the assertion (for example, a FIDO token) along with all requirements of FAL3.
 
 Regardless of what is requested or required by the protocol, the applicable FAL is easily detected by the RP by observing the nature of the assertion as it is presented as part of the federation protocol. Therefore, the RP is responsible for determining which FALs it is willing to accept for a given authentication transaction and ensuring that the transaction meets the requirements of that FAL.
+
+The following table shows the required FAL per M-04-04 Level of Assurance.  Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
+
+| Level of Assurance | Federation Assurance Level
+|:------------------:|:-----------------------------:
+| 1 | 1, 2, 3, or 4 
+| 2 | 2, 3, or 4
+| 3 | 2, 3, or 4
+| 4 | 3 or 4
