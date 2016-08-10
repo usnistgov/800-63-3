@@ -78,6 +78,7 @@ Collection of PII SHALL be limited to the minimum necessary to resolve to a uniq
 
 See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
+- One (1) piece of SUPERIOR or STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
 - Two (2) pieces of STRONG evidence; **OR**
 - One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence.
 
@@ -112,7 +113,7 @@ The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote i
 
 The CSP SHALL NOT collect biometrics for any reason.
 
-## <a name="ial3-requirements"/> 4.6. Identity Assurance Level 3
+## <a name="ial3-requirements"></a> 4.6. Identity Assurance Level 3
 
 IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is either performed in-person or via a valid virtual in-person proofing process. See [Section 5.4.3](#vip) for more details. A CSP MAY exceed these requirements.
 
@@ -125,7 +126,8 @@ Collection of PII SHALL be limited to the minimum necessary to resolve to a uniq
 
 See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
-- One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence; **OR**
+- Two (2) or more pieces of SUPERIOR evidence; **OR**
+- One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
 - Two (2) pieces of STRONG evidence plus one (1) piece of ADEQUATE evidence
 
 ### 4.6.3. Validation Requirements  

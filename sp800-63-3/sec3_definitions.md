@@ -179,7 +179,7 @@ See *Authenticator*.
 A subscriber name that is not verified as meaningful by identity proofing.
 
 #### Valid
-In reference to an ID, the quality of not being expired or revoked.
+In reference to identity evidence, the quality of not being expired or revoked.
 
 #### Verified Name
 A subscriber name that has been verified by identity proofing.
