@@ -34,7 +34,7 @@ This section applies when the secondary authenticator is directly tied to the au
 4. The CSP SHALL compare a fresh biometric sample obtained in person from the applicant to the reference biometric retained from the original, primary AAL 3 authenticator and determine that they match.
 5. The CSP SHALL determine that the authenticator of the original, primary authenticator meets all requirements of an AAL 3 authenticator.
 
-## <a name="prior"></a>6.2 Requirement for Accepting Results of Prior Proofing
+## <a name="prior"></a>6.2 Issuance Requirements for Accepting Results of Prior Proofing
 
 Where the applicant already possesses an authenticator from a trusted CSP, the new CSP could choose to "inherit" the successful identity proofing transaction performed in a prior encounter at the original CSP, by verifying possession and control of the authenticator associated the original CSP.  The following details the requirements for the new CSP:
 
