@@ -78,6 +78,7 @@ Collection of PII SHALL be limited to the minimum necessary to resolve to a uniq
 
 See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
+- One (1) piece of SUPERIOR or STRONG evidence **if** the issuing source of the evidence, during identity proofing, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
 - Two (2) pieces of STRONG evidence; **OR**
 - One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence.
 
@@ -125,7 +126,8 @@ Collection of PII SHALL be limited to the minimum necessary to resolve to a uniq
 
 See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
-- One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence; **OR**
+- Two (2) or more pieces of SUPERIOR evidence; **OR**
+- One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence **if** the issuing source of the evidence, during identity proofing, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
 - Two (2) pieces of STRONG evidence plus one (1) piece of ADEQUATE evidence
 
 ### 4.6.3. Validation Requirements  
