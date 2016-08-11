@@ -152,26 +152,26 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 ## Table of Contents  
 
-[1. Purpose](#sec1)
+[1. Purpose](sec1_2_introduction.md#1-purpose)
 
-[2. Introduction](#sec2)
+[2. Introduction](sec1_2_introduction.md#2-introduction)
 
-[3. Definitions and Abbreviations](#sec3)
+[3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. Federation](#sec4)
+[4. Federation](sec4_federation.md)
 
-[5. Assertion Strength](#sec5)
+[5. Assertion Strength](sec5_strength.md)
 
-[6. Assertion Presentation](#sec6)
+[6. Assertion Presentation](sec6_presentation.md)
 
-[7. Federation Assurance Levels](#fal)
+[7. Federation Assurance Levels](sec7_fal.md)
 
-[8. Security](#sec8)
+[8. Security](sec8_security.md)
 
-[9. Privacy Requirements and Considerations](#sec9)
+[9. Privacy Requirements and Considerations](sec9_privacy.md)
 
-[10. Usability](#sec10)
+[10. Usability](sec10_usability.md)
 
-[11. Assertion Examples](#sec11)
+[11. Assertion Examples](sec11_examples.md)
 
-[12. References](#references)
+[12. References](references.md)
