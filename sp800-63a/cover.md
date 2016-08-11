@@ -185,25 +185,24 @@ At Identity Assurance Level 3, in-person identity proofing is required. Identify
 
 ## Table of Contents
 
-[1. Purpose](#sec1)
+[1. Purpose](sec1_2_introduction.md#1--purpose)
 
-[2. Introduction](#sec2)
+[2. Introduction](sec1_2_introduction.md#2--introduction)
 
-[3. Definitions and Abbreviations](#sec3)
+[3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. Identity Assurance Level Requirements](#sec4)
+[4. Identity Assurance Level Requirements](sec4_ial.md)
 
-[5. Identity Resolution, Validation and Verification](#sec5)
+[5. Identity Resolution, Validation and Verification](sec5_proofing.md)
 
-[6. Leveraging Antecedent Proofing Events
-](#sec6)
+[6. Leveraging Antecedent Proofing Events](sec6_dc.md)
 
-[7. Threats and Security Considerations](#sec7)
+[7. Threats and Security Considerations](sec7_security.md)
 
-[8. Privacy Considerations](#sec8)
+[8. Privacy Considerations](sec8_privacy.md)
 
-[9. Usability Considerations](#sec9)
+[9. Usability Considerations](sec9_usability.md)
 
-[10. References](#references)
+[10. References](sec10_references.md)
 
  
