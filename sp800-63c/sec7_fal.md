@@ -17,7 +17,17 @@ For example, FAL 1 maps to the OpenID Connect Implicit Client profile or the SAM
 
 Regardless of what is requested or required by the protocol, the applicable FAL is easily detected by the RP by observing the nature of the assertion as it is presented as part of the federation protocol. Therefore, the RP is responsible for determining which FALs it is willing to accept for a given authentication transaction and ensuring that the transaction meets the requirements of that FAL.
 
-The following table shows the required FAL per M-04-04 Level of Assurance.  Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
+
+The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Federation Assurance Levels. 
+
+| Level of Assurance (LOA) |  Federation Assurance Level (FAL)
+|:------------------:|:-----------------------------:
+| 1 |  1
+| 2 | 2
+| 3 | 2
+| 4 | 4
+
+However, the table below shows the expanded set of FAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
 
 | Level of Assurance | Federation Assurance Level
 |:------------------:|:-----------------------------:
