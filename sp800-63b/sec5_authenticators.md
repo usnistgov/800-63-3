@@ -21,7 +21,7 @@ This section provides the detailed requirements specific for each of the authent
 
 ##### 5.1.1.1. Memorized Secret Authenticators
 
-Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Some values for user-chosen memorized secrets may be disallowed based on their appearance on a blacklist of compromised values. No other complexity requirements for memorized secrets are imposed; a rationale for this is presented in [Appendix A](#appA).
+Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Some values for user-chosen memorized secrets may be disallowed based on their appearance on a blacklist of compromised values. No other complexity requirements for memorized secrets are imposed; a rationale for this is presented in [Appendix A](appA_memorized.md).
 
 ##### 5.1.1.2. Memorized Secret Verifiers
 

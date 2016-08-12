@@ -269,14 +269,14 @@ In limited situations, a given transaction requiring IAL 2 MAY be able to authen
 
 ## Table of Contents
 
-[1. Purpose](#sec1)
+[1. Purpose](sec1_2_introduction.md#1-purpose)
 
-[2. Introduction](#sec2)
+[2. Introduction](sec1_2_introduction.md#2-introduction)
 
-[3. Definitions and Abbreviations](#sec3)
+[3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. Digital Authentication Model](#sec4)
+[4. Digital Authentication Model](sec4_model.md)
 
-[5. References](#references)
+[5. References](sec5_references.md)
 
  

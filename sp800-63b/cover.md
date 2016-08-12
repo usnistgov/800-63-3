@@ -194,27 +194,27 @@ The three AALs reflect the options agencies will select based on their risk prof
 
 ## Table of Contents
 
-[1. Purpose](#sec1)
+[1. Purpose](sec1_2_introduction.md#1-purpose)
 
-[2. Introduction](#sec2)
+[2. Introduction](sec1_2_introduction.md#2-introduction)
 
-[3. Definitions and Abbreviations](#sec3)
+[3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. Authenticator Assurance Levels](#sec4)
+[4. Authenticator Assurance Levels](sec4_aal.md)
 
-[5. Authenticator and Verifier Requirements](#sec5)
+[5. Authenticator and Verifier Requirements](sec5_authenticators.md)
 
-[6. Authenticator Lifecycle Requirements](#sec6)
+[6. Authenticator Lifecycle Requirements](sec6_lifecycle.md)
 
-[7. Session Management](#sec7)
+[7. Session Management](sec7_session.md)
 
-[8. Threats and Security Considerations](#sec8)
+[8. Threats and Security Considerations](sec8_security.md)
 
-[9. Privacy Considerations](#sec9)
+[9. Privacy Considerations](sec9_privacy.md)
 
-[10. Usability Considerations](#sec10)
+[10. Usability Considerations](sec10_usability.md)
 
-[11. References](#references)
+[11. References](references.md)
 
-[Appendix A. Strength of Memorized Secrets](#appA)
+[Appendix A. Strength of Memorized Secrets](appA_memorized.md)
 
