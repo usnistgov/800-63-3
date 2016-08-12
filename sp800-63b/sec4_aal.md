@@ -8,7 +8,18 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
-The following table shows the required AAL per M-04-04 Level of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels. 
+
+
+| Level of Assurance (LOA) |  Authenticator Assurance Level (AAL) |
+|:------------------:|:-----------------------------:|
+| 1 |  1| 
+| 2 |  2 or 3 |
+| 3 |  2 or 3 |
+| 4 |  3 |
+
+However, the table below shows the expanded set of AAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA.
+
 
 | Level of Assurance | Authenticator Assurance Level
 |:------------------:|:-----------------------------:

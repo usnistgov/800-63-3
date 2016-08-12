@@ -37,7 +37,7 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 | 2 |
 | 4 | 3 |
 
-However, the table below shows the IAL's that are allowable for M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA.
+However, the table below shows the expanded set of IAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA.
 
 | Level of Assurance | Identity Assurance Level
 |:------------------:|:-----------------------------:
