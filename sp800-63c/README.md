@@ -1,6 +1,6 @@
 # SP 800-63C
 
-This is a working draft of NIST Special Publication 800-63C, *Assertions and Federation*. This document is a sub-document referenced by [SP 800-63-3](../sp800-63-3/README.html) covering the associated topics that had been previously in SP 800-63-2.
+This is a working draft of NIST Special Publication 800-63C, *Assertions and Federation*. This document is a sub-document referenced by [SP 800-63-3](../sp800-63-3/README.md) covering the associated topics that had been previously in SP 800-63-2.
 
 SP 800-63C provides guidance on the use of assertions to convey the results of authentication processes to a relying party. Assertions are used in federated identity systems where the authentication is performed a verifier (sometimes called an Identity Provider) and used by a different party, sometimes called a Relying Party. Federation permits a centrally-managed set of credentials to be used at a number if different relying parties.
 
@@ -8,32 +8,26 @@ Keys and other secrets used to maintain state (stored in cookies, local storage,
 
 This document is broken up into sections as follows:
 
-[Front matter](front.html)
+[Front matter](front.md)
 
-[1. Purpose and 2. Introduction](sec1_2_introduction.html)
+[1. Purpose and 2. Introduction](sec1_2_introduction.md)
 
-[3. Definitions and Abbreviations](sec3_definitions.html)
+[3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. Assertion Strength](sec4_strength.html)
+[4. Federation](sec4_federation.md)
 
-    4.1. Bearer assertions
-    4.2. Holder of key assertions
+[5. Assertion Strength](sec5_strength.md)
 
-[5. Assertion Models](sec5_models.html)
+[6. Assertion Presentation](sec6_presentation.md)
 
-    5.1 Direct Model
-    5.2 Indirect Model
+[7. Federation Assurance Level](sec7_fal.md)
 
-[6. Examples](sec6_examples.html)
+[8. Security](sec8_security.md)
 
-    6.1. SAML
-    6.2. Kerberos
-    6.3. OpenID Connect and OAuth
+[9. Privacy](sec9_privacy.md)
 
-[7. Assertion Threats](sec7_threats.html)
+[10. Usability](sec10_usability.md)
 
-[8. Privacy Considerations](sec8_privacy.html)
+[11. Assertion Examples](sec11_examples.md)
 
-[9. Usability](sec9_usability.html)
-
-[10. References](sec10_references.html)
+[12. References](references.md)

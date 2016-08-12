@@ -240,10 +240,10 @@ However, the table below shows the new requirements that are allowable for M-04-
 
 | Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1, 2 or 3 | 1
-| 2 | 1 or 2 | 2 or 3 |2
-| 3 | 1 or 2 | 2 or 3 |2
-| 4 | 1, 2 or 3 | 3 |3
+| 1 | 1 | 1, 2 or 3 | 1, 2, 3, or 4
+| 2 | 1 or 2 | 2 or 3 |2, 3, or 4
+| 3 | 1 or 2 | 2 or 3 |2, 3, or 4
+| 4 | 1, 2, or 3 | 3 |3 or 4
 
 This mapping takes advantage of the ability to separate distinct identity elements per assurance level.  For example, an agency is allowed to adopt multi-factor authentication (MFA) at LOA1. Conversely, little or no identity proofing can be performed at the higher LOAs.  
 
