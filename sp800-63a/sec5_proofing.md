@@ -80,7 +80,7 @@ The following requirements apply to the identity verification steps for IAL 2 an
 - The CSP SHALL only use information that is expected to be known only to the applicant, to include any information that in needed to trigger KBV processes. Information accessible freely or for any fee in the public domain SHALL NOT be used.
 - The CSP SHALL allow a resolved, validated, or verified identity to opt-out of KBV.
 
-- The CSP SHOULD verify knowledge of recent transactional history that the CSP is a participant to.  For example, verification of amount and confirmation number of a micro-deposit to a claimed and valid bank account.
+- The CSP SHOULD verify knowledge of recent transactional history that the CSP is a participant to.  The CSP SHALL ensure transaction information meets the minimum entropy for a Memorized Secret. For example, verification of amount and confirmation number of a micro-deposit to a claimed and valid bank account.
 
 - The CSP MAY perform KBV by asking questions of the claimed identity to demonstrate they are the owner of the claimed information. 
 	- The CSP SHALL require a minimum of four (4) KBV questions each requiring a correct answer to successfully complete the KBV step.
