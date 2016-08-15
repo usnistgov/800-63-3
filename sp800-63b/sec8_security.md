@@ -56,7 +56,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Duplication |  Use authenticators that are difficult to duplicate, such as hardware cryptographic authenticators. |
 | Discovery | Use methods in which the responses to prompts cannot be easily discovered.
 | Eavesdropping | Use authenticators with dynamic outputs where knowledge of one authenticator does not assist in deriving a subsequent authenticator.
-| | Use authenticators that generate authenticators based on an authenticator input value or challenge.
+| | Use authenticators whose output is based on an input value or challenge.
 | | Establish authenticators through a separate channel.
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
 | | Use an authenticator that locks up after a number of repeated failed activation attempts.
