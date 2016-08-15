@@ -14,6 +14,8 @@ An attacker who can gain control of an authenticator will often be able to masqu
     
 - *Something you are* may be replicated. An attacker may obtain a copy of the subscriber’s fingerprint and construct a replica - assuming that the biometric system(s) employed do not block such attacks by employing robust liveness detection techniques.
 
+- *Out of band* verifiers may be intercepted. An attacker may receive a challenge or response by evesdropping on the primary or secondary communications channel. The attacker might then authenticate their own channel or save the message for later replay.
+
 This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in Table 4, along with some examples.
 
 **Table 4 – Authenticator Threats**
@@ -39,10 +41,12 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | | A memorized secret is revealed by the subscriber at a bogus verifier website reached through DNS spoofing.
 | Social engineering | The attacker establishes a level of trust with a subscriber in order to convince the subscriber to reveal his or her authenticator secret or authenticator output. | A memorized secret is revealed by the subscriber to an officemate asking for the password on behalf of the subscriber’s boss. |
 | | | A memorized secret is revealed by a subscriber in a telephone inquiry from an attacker masquerading as a system administrator. |
+| | | A One-Time Password sent via SMS is received by an attacker who has convinced the mobile operator to redirect the victims mobile phone to the attacker. |
 | Online guessing | The attacker connects to the verifier online and attempts to guess a valid authenticator output in the context of that verifier. | Online dictionary attacks are used to guess memorized secrets. |
 | | | Online guessing is used to guess authenticator outputs for a one-time password device registered to a legitimate claimant. |
 | Endpoint compromise | Malicious code on the endpoint proxies remote access to a connected authenticator without user consent. | A cryptographic authenticator connected to the endpoint is used to authenticate remote attackers. |
 | | Malicious code on the endpoint causes authentication to other than the intended verifier. | Authentication is performed on behalf of an attacker rather than the subscriber.
+| | | A malicious app on the endpoint relays a SMS One-Time Password to an attacker, who uses it to authenticate.
 | | Malicious code on the endpoint compromises a multi-factor software cryptographic authenticator. | Malicious code proxies authentication or exports authenticator keys from the endpoint.
 
 ### 8.2. Threat Mitigation Strategies
