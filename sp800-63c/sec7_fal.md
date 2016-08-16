@@ -9,7 +9,7 @@ The FAL combines aspects of [federation model](#sec4), [assertion protection str
 Such definitions not found in the FAL table are possible but outside the scope of this document.
 
 |FAL|Direct Presentation Requirement|Indirect Presentation Requirement|
-|:--:|----|
+|:--:|----|----|
 |1|Bearer assertion, asymmetrically signed by CSP|Bearer assertion, asymmetrically signed by CSP|
 |2|Bearer assertion, asymmetrically signed by CSP|Bearer assertion, asymmetrically signed by CSP and encrypted to RP|
 |3|Bearer assertion, asymmetrically signed by CSP and encrypted to RP|Bearer assertion, asymmetrically signed by CSP and encrypted to RP|
