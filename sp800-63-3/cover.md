@@ -216,7 +216,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 **Federation Assurance Level 1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the RP. The assertion must be asymmetrically signed with an appropriate algorithm.
 
-**Federation Assurance Level 2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion. The assertion must be asymmetrically signed with an appropriate algorithm.
+**Federation Assurance Level 2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion. The assertion must be asymmetrically signed with an appropriate algorithm. Alternatively, if the assertion is presented directly, the assertion is required to be encrypted such that the RP is the only party that can decrypt it.
 
 **Federation Assurance Level 3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted such that the RP is the only party that can decrypt it.
 
