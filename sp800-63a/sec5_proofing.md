@@ -66,7 +66,7 @@ The following table details the verification methods necessary to achieve a give
 |Unacceptable|Unable to confirm that the applicant is the owner of the claimed identity.|
 |Weak|The applicant has been confirmed as having access to the evidence provided to support the claimed identity.|
 |Adequate|- The applicant’s ownership of the claimed identity has been confirmed by KBV.  See [Section 5.3.2](#kbv)  for more details.<br>**OR**<br>- The applicant’s ownership of the claimed identity has been confirmed by a physical **OR** biometric comparison of the applicant to the strongest piece of evidence provided.|
-|Strong|- The applicant’s ownership of the claimed identity has been confirmed by physical comparison using a photograph/image **OR** Biometric comparison of the Applicant to the strongest piece of evidence provided to support the claimed identity.<br>**OR**<br>- A trusted referee confirms the identity of the applicant.|
+|Strong|- The applicant’s ownership of the claimed identity has been confirmed by physical comparison using a photograph/image.<br>**OR**<br>- Biometric comparison of the Applicant to the strongest piece of evidence provided to support the claimed identity.|
 |Superior|- The applicant’s ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest piece of evidence provided to support the claimed identity.<br>**AND**<br>- The applicant’s ownership of the claimed identity has been confirmed by an interaction with the applicant via the postal address of record.|
 
 The CSP MAY use KBV to verify the identity of an applicant provided the requirements in Section [Knowledge Based Verification Requirements](#kbv) are met. 
@@ -111,19 +111,23 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 8. All communications CSP SHALL take place over a mutually authenticated encrypted session.
 
 
+### <a name="trustref"></a> 5.4.4. Trusted Referee Requirements
 
-### 5.4.4. Trusted Referee Requirements
+The CSP MAY use trusted referees, such as notaries, legal guardians, conservators, persons with power attorney, or some other form of certified/approved individuals that can vouch for and/or act on behalf of the individual in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an individual that has successfully completed identity proofing to act as a trusted referee for another individual.  The CSP MAY use a trusted referee for both remote and in-person processes.  
 
-The CSP MAY determine to utilize trusted referees, such as notaries, legal guardian, or some other form of certified individual that can legally vouch for and/or act on behalf of the individual.  CSP MAY use a trusted referee for both remote and in-person processes.  
+The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains his/her status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements. 
 
-In addition, antecedent in-person identity proofing MAY be allowed at IAL2.  See [The Federal Bridge Certification Authority (FBCA) Certificate Policy (CP)](#fbcacp), Section 3.2.3.1 Authentication of Human Subscribers for Medium Assurance _and_ [FBCA Supplementary Antecedent, In-Person Definition](#fbcasup) for more details.
+The CSP SHALL audit all interactions with the trusted referee and the enrollee they are supporting in the proofing process.
 
-In some instances, the CSP MAY allow an individual that has successfully completed identity proofing with the same CSP to act as a trusted referee for another individual.  The CSP SHALL not accept this type of trusted referee verification at IAL3.
+The trusted referee and applicant SHALL be present together for the entire proofing transaction.  The CSP SHALL require visual evidence that both the trusted referee and applicant are participating in the proofing transaction.
 
-### 5.4.5. Considerations for Minors and People with Unique Needs
+The CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant. Minimum evidence may vary on a CSP by CSP basis.
+
+The CSP SHOULD perform re-proofing on a regular basis, with each reproofing event attempting to satisfy the requirements of [Section 4.5.1.](#normal). 
+
+
+##### Considerations for Minors
 Enrollment of minors under age 18, unable to meet the evidence requirements of identity proofing SHOULD involve a parent or legal adult guardian as a trusted referee as described in Section 5.3.4. Minors under age 13 require special consideration to ensure compliance with the Children's Online Privacy Protection Act of 1998, 15 USC 6501-6505 and 16 CFR Part 312.
-
-Other individuals may have difficulty completing the identity proofing process based on various circumstances, such as not possessing the complete set of evidence requirements at a given IAL.  In these circumstances, the CSP SHOULD allow the applicant to be enrolled by a conservator or other person with power of attorney.
 
 ## 5.5. Binding Requirements
 
