@@ -67,7 +67,7 @@ The following table details the verification methods necessary to achieve a give
 |Weak|The applicant has been confirmed as having access to the evidence provided to support the claimed identity.|
 |Adequate|- The applicant’s ownership of the claimed identity has been confirmed by KBV.  See [Section 5.3.2](#kbv)  for more details.<br>**OR**<br>- The applicant’s ownership of the claimed identity has been confirmed by a physical **OR** biometric comparison of the applicant to the strongest piece of evidence provided.|
 |Strong|- The applicant’s ownership of the claimed identity has been confirmed by physical comparison using a photograph/image.<br>**OR**<br>- Biometric comparison of the Applicant to the strongest piece of evidence provided to support the claimed identity.|
-|Superior|- The applicant’s ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest piece of evidence provided to support the claimed identity.<br>**AND**<br>- The applicant’s ownership of the claimed identity has been confirmed by an interaction with the applicant via the postal address of record.|
+|Superior|- The applicant’s ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest piece of evidence provided to support the claimed identity.|
 
 The CSP MAY use KBV to verify the identity of an applicant provided the requirements in Section [Knowledge Based Verification Requirements](#kbv) are met. 
 
