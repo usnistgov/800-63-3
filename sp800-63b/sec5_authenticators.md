@@ -21,17 +21,23 @@ This section provides the detailed requirements specific for each of the authent
 
 ##### 5.1.1.1. Memorized Secret Authenticators
 
-Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Some values for user-chosen memorized secrets may be disallowed based on their appearance on a blacklist of compromised values. No other complexity requirements for memorized secrets are imposed; a rationale for this is presented in [Appendix A](#appA).
+Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Since the CSP or verifier may disallow some choices of memorized secrets  based on their appearance on a blacklist of compromised values, the subscriber SHALL choose a different memorized secret if a choice is rejected. No other complexity requirements for memorized secrets SHOULD be imposed; a rationale for this is presented in [Appendix A](#appA).
 
 ##### 5.1.1.2. Memorized Secret Verifiers
 
-Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHALL permit user-chosen memorized secrets to be at least 64 characters in length. All printing ASCII [[RFC 20]](#RFC20) characters as well as the space character SHALL be acceptable in memorized secrets; Unicode [[ISO/ISC 10646:2014]](#ISOIEC10646) characters SHOULD be accepted as well. Verifiers MAY remove space characters prior to verification; all other characters SHALL be considered significant. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
+Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHOULD permit user-chosen memorized secrets to be at least 64 characters in length. All printing ASCII [[RFC 20]](#RFC20) characters as well as the space character SHOULD be acceptable in memorized secrets; Unicode [[ISO/ISC 10646:2014]](#ISOIEC10646) characters SHOULD be accepted as well. Verifiers MAY remove space characters prior to verification. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
 
 Memorized secrets that are randomly chosen by the CSP (e.g., at enrollment) or by the verifier (e.g., when a user requests a new PIN) SHALL be at least 6 characters in length and SHALL be generated using an approved random number generator.
 
 Memorized secret verifiers SHALL NOT permit the subscriber to store a "hint" that is accessible to an unauthenticated claimant. Verifiers also SHALL NOT prompt subscribers to use specific types of information (e.g., "What was the name of your first pet?") when choosing memorized secrets.
 
-When processing requests to establish and change memorized secrets, verifiers SHOULD compare the prospective secrets against a dictionary of known commonly-used and/or compromised values. This list SHOULD include passwords from previous breach corpuses, as well as dictionary words and specific words (such as the name of the service itself) that users are likely to choose. If the chosen secret is found in the dictionary, the subscriber SHOULD be required to choose a different value. The subscriber SHOULD be advised that they need to select a different secret because their previous choice was commonly used.
+When processing requests to establish and change memorized secrets, verifiers SHALL compare the prospective secrets against a list of known commonly-used, expected, and/or compromised values. For example, the list MAY include (but is not limited to):
+
+* Passwords obtained from previous breach corpuses
+* Dictionary words
+* Context specific words, such as the name of the service, the username, and derivates thereof
+
+If the chosen secret is found in the list, the subscriber SHALL be advised that they need to select a different secret because their previous choice was commonly used, and be required to choose a different value.
 
 Verifiers SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
