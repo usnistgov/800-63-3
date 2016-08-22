@@ -7,6 +7,8 @@
 ### Enrollment and Identity Proofing Requirements
 
 Paul A. Grassi  
+Naomi B. Lefkovitz  
+Jamie M. Danker    
 William E. Burr  
 James L. Fenton
 
@@ -27,8 +29,13 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 ###  Enrollment and Identity Proofing Requirements
 
 Paul A. Grassi  
+Naomi B. Lefkovitz  
 *Applied Cybersecurity Division  
 Information Technology Laboratory*
+
+Jamie M. Danker  
+*National Protection and Programs Directorate  
+Department of Homeland Security*  
 
 William E. Burr  
 *Dakota Consulting, Inc.  
@@ -186,9 +193,10 @@ At Identity Assurance Level 3, in-person identity proofing is required. Identify
 
 [4. Identity Assurance Level Requirements](#sec4)
 
-[5. Identity Validation and Verification](#sec5)
+[5. Identity Resolution, Validation and Verification](#sec5)
 
-[6. Requirements for Derived Credentials](#sec6)
+[6. Leveraging Antecedent Proofing Events
+](#sec6)
 
 [7. Threats and Security Considerations](#sec7)
 

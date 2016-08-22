@@ -8,7 +8,18 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
-The following table shows the required AAL per M-04-04 Level of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels. 
+
+
+| Level of Assurance (LOA) |  Authenticator Assurance Level (AAL) |
+|:------------------:|:-----------------------------:|
+| 1 |  1| 
+| 2 |  2 or 3 |
+| 3 |  2 or 3 |
+| 4 |  3 |
+
+However, the table below shows the expanded set of AAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+
 
 | Level of Assurance | Authenticator Assurance Level
 |:------------------:|:-----------------------------:
@@ -51,7 +62,7 @@ At AAL 1, reauthentication of the subscriber SHOULD be repeated at least once pe
 
 #### 4.1.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
+The CSP SHOULD employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
 #### 4.1.6. Records Retention
 
@@ -96,7 +107,7 @@ At AAL 2, authentication of the subscriber SHALL be repeated at least once per 1
 
 #### 4.2.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+The CSP SHOULD employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
 #### 4.2.6. Records Retention
 
@@ -108,16 +119,17 @@ AAL 3 is intended to provide the highest practical remote network authentication
 
 #### 4.3.1. Permitted Authenticator Types
 
-Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
+Authentication Assurance Level 3 requires the use of one of three kinds of hardware devices:
 
-* Multi-factor OTP Device
+* Multi-Factor OTP Device
 * Multi-Factor Cryptographic Device
+* Single-Factor Cryptographic Device used in conjunction with Memorized Secret
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
-Authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. AAL 3 authenticator requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](#FIPS201) compliant Personal Identity Verification (PIV) Card.
+Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. These requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](#FIPS201) compliant Personal Identity Verification (PIV) Card.
 
-Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher.
+Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher.
 
 #### 4.3.3. Assertion Requirements
 
@@ -125,15 +137,15 @@ In order to be valid at AAL 3, authentication assertions SHALL meet the requirem
 
 #### <a name="aal3reauth"></a>4.3.4. Reauthentication
 
-At AAL 3, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following a period of no more than 15 minutes of user inactivity. It is permissible to prompt the user to cause activity just before the inactivity timeout, if desired.
+At AAL 3, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following a period of no more than 15 minutes of user inactivity. Reauthentication SHALL use both factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout.
 
 #### 4.3.5. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHALL ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHOULD employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
 #### 4.3.6. Records Retention
 
-CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. Otherwise, retention of records is required for ten years and 6 months.
+The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. Otherwise, retention of records is required for ten years and 6 months.
 
 ### 4.4. Summary of Requirements
 
@@ -143,8 +155,8 @@ The following table summarizes the requirements for each of the authenticator as
 
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------
-**Authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF OTP Device<br />MF Cryptographic Device
-**FIPS 140 verification** | Level 1 | Level 1 (single factor),<br /> Level 2 (multi factor) | Level 2 overall<br />Level 3 physical security
+**Permitted authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF OTP Device<br />MF Cryptographic Device<br />SF Cryptographic Device plus Memorized Secret
+**FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
 **Security Controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)

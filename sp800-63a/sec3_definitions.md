@@ -7,7 +7,8 @@ There is a wide variety of terms used in the area of authentication. While the d
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Address of Record
-The official location where an individual can be found. The address of record always includes the residential street address of an individual and may also include the mailing address of the individual. In very limited circumstances, an Army Post Office box number, Fleet Post Office box number or the street address of next of kin or of another contact individual can be used when a residential street address for the individual is not available.
+
+The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
 
 #### Applicant
 A party undergoing the processes of registration and identity proofing.
@@ -102,7 +103,8 @@ A session wherein messages between two participants are encrypted and integrity 
 A participant is said to be *authenticated* if, during the session, he, she or it proves possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
 #### Pseudonym
-A false name. In this document, all unverified names are assumed to be pseudonyms.
+
+A name other than a legal name.
 
 #### Public Key
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
@@ -135,3 +137,7 @@ In reference to an ID, the quality of not being expired or revoked.
 
 #### Verified Name
 A subscriber name that has been verified by identity proofing.
+
+#### Virtual In-Person Proofing
+
+A remote identity person proofing process that employs technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.

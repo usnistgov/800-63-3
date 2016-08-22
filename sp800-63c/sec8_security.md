@@ -1,6 +1,6 @@
-<a name="sec7"></a>
+<a name="sec8"></a>
 
-## 7. Security
+## 8. Security
 
 *This section is non-normative.*
 
@@ -86,7 +86,7 @@ and the assertion data referring to the subscriber needs to be strong.
     privileged subscriber. 
     
 
-### 7.1. Threat Mitigation Strategies
+### 8.1. Threat Mitigation Strategies
 
 Mitigation techniques are described below for each of the threats
 described in the last subsection.
@@ -94,15 +94,15 @@ described in the last subsection.
 -   *Assertion manufacture/modification*: To mitigate this threat,
     the following mechanisms are used:
 
-  	1.  The assertion is digitally signed by the CSP. The RP 
+	1.  The assertion is digitally signed by the CSP. The RP 
     checks the digital signature to verify that it was issued by a
     legitimate CSP.
 
-    2.  The assertion is sent over a protected session such as TLS. In
+	2.  The assertion is sent over a protected session such as TLS. In
     order to protect the integrity of assertions from malicious attack,
     the CSP is authenticated.
 
-    3. The assertion contains a non-guessable random identifier. 
+	3. The assertion contains a non-guessable random identifier. 
 
 -   *Assertion disclosure* – To mitigate this threat, one of the
     following mechanisms are used:

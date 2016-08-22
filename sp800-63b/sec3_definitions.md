@@ -218,9 +218,6 @@ A session wherein messages between two participants are encrypted and integrity 
 
 A participant is said to be *authenticated* if, during the session, he, she or it proves possession of an authenticator in addition to the session keys, and if the other party can verify the identity associated with that authenticator. If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
-#### Pseudonym
-A false name. In this document, all unverified names are assumed to be pseudonyms.
-
 #### Public Credentials
 Credentials that describe the binding in a way that does not compromise the authenticator.
 
@@ -277,7 +274,7 @@ An attack in which the attacker is able to insert himself or herself between a c
 A secret used in authentication that is known to the claimant and the verifier.
 
 #### Side Channel Attack
-An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, and electromagnetic emissions are examples of characteristics that could be exploited in a side-channel attack.
+An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, electromagnetic and acoustic emissions are examples of characteristics that could be exploited in a side-channel attack.
 
 #### Social Engineering
 The act of deceiving an individual into revealing sensitive information by associating with the individual to gain confidence and trust.
@@ -308,6 +305,10 @@ An authentication and security protocol widely implemented in browsers and web s
 
 #### Trust Anchor
 A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate).
+
+#### Usability
+
+Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use
 
 #### Verifier
 An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) and identity and check their status.
