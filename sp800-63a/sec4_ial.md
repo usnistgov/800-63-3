@@ -57,7 +57,7 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 6.	The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access. 
 3. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant, to include steps that are additive to mandatory requirements specified herein.
 4. The CSP SHALL conduct a privacy risk assessment to determine what PII is necessary to maintain a record of identity proofing, however the CSP SHALL record the types of identity evidence presented in the proofing process, including any identification and reference number.  The CSP SHALL maintain such records in accordance with National Archives and Records Administration (NARA) records retention schedules or agency specific schedules as appropriate.
-5. The CSP The CSP SHALL NOT record an image, scan, or other copy of the identity evidence, unless explicitly required for a specify IAL.
+5. The CSP SHALL NOT record an image, scan, or other copy of the identity evidence, unless explicitly required for a specify IAL.
 4. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities.
 6. All personally identifiable information (PII) collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 13. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
