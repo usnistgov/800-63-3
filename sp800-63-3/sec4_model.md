@@ -105,7 +105,7 @@ The verifier is a functional role, but is frequently implemented in combination 
 
 Normative requirements can be found in [Special Publication 800-63C, Federation and Assertions](sp800-63c.html).
 
-Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, the guidance is agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation, consistent with the National Strategy for Trusted Identities in Cyberspace (NSTIC) [[NSTIC]](#theNSTIC), is preferred over a number of siloed identity systems that each serve a single agency or RP.
+Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, the guideline is agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation, consistent with the National Strategy for Trusted Identities in Cyberspace (NSTIC) [[NSTIC]](#theNSTIC), is preferred over a number of siloed identity systems that each serve a single agency or RP.
 
 Federated architectures have many significant benefits, including, but not limited to:  
 
