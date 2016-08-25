@@ -38,11 +38,11 @@ SP 800-63 is organized as a family of documents as follows:
 
 - SP 800-63A *Enrollment and Identity Proofing* - Deals with the processes by which a credential, and authenticator(s) associated with that credential can be bound to a specific individual. This typically happens when that individual is enrolled in an identity system, through the identity proofing process.
 
-- SP 800-63B *Authentication and Lifecycle Management* - provides guidance on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
+- SP 800-63B *Authentication and Lifecycle Management* - provides guidelines on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
 
-- SP 800-63C *Federation and Assertions* - Provides guidance on the use of assertions to convey the results of authentication processes to a relying party.
+- SP 800-63C *Federation and Assertions* - Provides guidelines on the use of assertions to convey the results of authentication processes to a relying party.
 
-It is anticipated that SP 800-63A, SP 800-63B, and SP 800-63C will be revised asynchronously with each other and with this document. The latest revision of each should be used for guidance.
+It is anticipated that SP 800-63A, SP 800-63B, and SP 800-63C will be revised asynchronously with each other and with this document. The latest revision of each should be used.
 
 OMB guidance outlines a five-step process by which agencies should meet
 their authentication assurance requirements:
@@ -51,7 +51,7 @@ their authentication assurance requirements:
     risk assessment methodology is prescribed for this purpose;
     however, NIST Special
     Publication (SP) 800-30 [[SP 800-30]](#SP800-30) offers a general
-    process for risk assessment and risk mitigation, and NIST Special Publication (SP) 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on the selection and specification of security controls for an information system as part of an organization-wide information security program. This guidance supports the identification of risk to the organization or to individuals associated with the operation of an information system.
+    process for risk assessment and risk mitigation, and NIST Special Publication (SP) 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on the selection and specification of security controls for an information system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of an information system.
 
 2.  *Map identified risks to the appropriate assurance level* – Section
     2.2 of OMB M-04-04 provides the guidance necessary for agencies to

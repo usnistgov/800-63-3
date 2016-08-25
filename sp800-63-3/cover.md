@@ -189,13 +189,13 @@ The separation of these metrics supports applications requiring strong authentic
 
 Accordingly, with this revision, SP 800-63 has been split into a family of documents organized as follows:
 
-- SP 800-63-3 *Digital Authentication Guideline* - Provides guidance on general authentication issues and for using authenticators, credentials, and assertions together in an information system.
+- SP 800-63-3 *Digital Authentication Guideline* - Provides guidelines on general authentication issues and for using authenticators, credentials, and assertions together in an information system.
 
 - SP 800-63A *Enrollment and Identity Proofing* - Deals with the processes by which a credential, and authenticator(s) associated with that credential, can be bound to a specific individual. This typically happens when that individual is enrolled in an identity system, through the identity proofing process.
 
-- SP 800-63B *Authentication and Lifecycle Management* - provides guidance on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
+- SP 800-63B *Authentication and Lifecycle Management* - provides guidelines on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
 
-- SP 800-63C *Federation and Assertions* - Provides guidance on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
+- SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
 
 
 ### IAL, AAL, and FAL Summary
