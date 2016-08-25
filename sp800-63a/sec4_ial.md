@@ -30,7 +30,7 @@ The following diagram outlines the basic flow for Identity Proofing and Enrollme
 
 The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Identity Assurance Levels. 
 
-| Level of Assurance (LOA) | Identity Assurance Level (IAL)|
+| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)|
 |:------------------:|:-----------------------------:|
 | 1 | 1 | 
 | 2 | 2 |
@@ -39,7 +39,7 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 
 However, the table below shows the expanded set of IAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA. Agencies SHOULD consider the privacy risks of stronger identity proofing and SHOULD NOT select an IAL that is higher than necessary considering the sensitivity of the business purpose.  
 
-| Level of Assurance | Identity Assurance Level
+| M-04-04 Level of Assurance | Identity Assurance Level
 |:------------------:|:-----------------------------:
 | 1 | 1 
 | 2 | 1 or 2 

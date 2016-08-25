@@ -107,7 +107,7 @@ areas:
     authentication if these results are sent to other parties (covered
     in SP 800-63C).
 
-The overall authentication assurance level is determined by the lowest identity assurance and authenticator assurance level achieved in any of the areas listed above, and then by mapping the result to the corresponding Level of Assurance.
+The M-04-04 Level of Assurance is determined by considering the identity assurance, authenticator assurance level, and federation assurance level achieved for each of the elements listed above, and determining the Level of Assurance satisfied by all elements.
 
 Agencies may adjust the level of assurance using additional risk
 mitigation measures. Easing credential assurance level requirements may
@@ -136,20 +136,12 @@ The paradigm of this document suite is that individuals are enrolled, issued an 
 undergo a registration process in which their identity is bound to that authenticator. Thereafter, the individuals are remotely authenticated to systems
 and applications over a network, using the authenticator in an authentication
 protocol. The authentication protocol allows an individual to
-demonstrate to a Verifier that he or she has possession and control of
+demonstrate to a verifier that he or she has possession and control of
 the authenticator, in a manner that protects the authenticator secret from
-compromise by different kinds of attacks. Higher authenticator assurance levels require use of stronger authenticators, better protection of
+compromise by different kinds of attacks. Higher authenticator assurance levels require use of stronger authentication mechanisms, better protocols, and better protection of
 the authenticator(s) and related secrets from attacks. Higher identity assurance levels require stronger registration procedures.
 
-This document suite focuses on authenticators that are difficult to forge because they
-contain some type of secret information that is not available to
-unauthorized parties and that is preferably not used in unrelated
-contexts. Certain authentication technologies, particularly biometrics
-and knowledge based authentication, use information that is private
-rather than secret. While they are discussed to a limited degree, they
-are largely avoided because their security is often weak or difficult to
-quantify, especially in the remote situations that are the primary
-scope of this document suite.
+This document suite focuses on authenticators that are difficult to forge because they contain some type of secret information that is not available to unauthorized parties and that is preferably not used in unrelated contexts. Biometric authentication uses human characteristics that in some cases may be available to an attacker. Accordingly, the use of biometrics for authentication is limited to activation of a specific physical authenticator to which it is strongly bound, and the number of consecutive activation failures is limited, beyond which another activation factor or authenticator is required. This document suite also supports the use of biometrics to prevent repudiation of registration, and to verify that the same individual participates in all phases of the registration process.
 
 Knowledge based authentication achieves authentication by testing the
 personal knowledge of the individual against information obtained from
@@ -159,16 +151,6 @@ to achieve. In addition, the complexity and interdependencies of
 knowledge based authentication systems are difficult to quantify.
 However, knowledge based verification techniques are included as part
 of registration in this document suite.
-
-Biometric characteristics do not constitute secrets suitable for use in
-the conventional remote authentication protocols addressed in this
-document suite either. In the local authentication case (which is outside the scope of this document suite), where the claimant is
-observed by an attendant and uses a capture device controlled by the
-Verifier, authentication does not require that biometrics be kept
-secret. This document suite supports the use of biometrics to “unlock”
-multifactor authentication authenticators, to prevent repudiation of
-registration, and to verify that the same individual participates in all
-phases of the registration process.
 
 This document suite identifies minimum technical requirements for remotely
 authenticating users. Agencies may determine based on their risk
@@ -192,7 +174,7 @@ entitled the *Federal Information Security Management Act*
 FISMA directs Federal agencies to develop, document, and implement
 agency-wide programs to provide information security for the information
 and information systems that support the operations and assets of the
-agency. This includes the security authorization of IT systems that
+agency. This includes the security authorization of IT systems that support
 digital authentication. It is recommended that non-Federal entities
 implementing these guidelines follow equivalent standards of security
 management, certification and accreditation to ensure the secure
