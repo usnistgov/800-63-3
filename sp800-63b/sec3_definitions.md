@@ -109,6 +109,9 @@ The property that data has not been altered by an unauthorized entity.
 #### Derived Credential
 A credential issued based on proof of possession and control of one or more authenticators associated with a previously issued credential, so as not to duplicate the identity proofing process.
 
+#### Digital Authentication
+The process of establishing confidence in user identities electronically presented to an information system. In previous editions of this guideline, this was referred to as *Electronic Authentication*.
+
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
 
@@ -116,7 +119,7 @@ An asymmetric key operation where the private key is used to digitally sign data
 An attack in which an attacker listens passively to the authentication protocol to capture information which can be used in a subsequent active attack to masquerade as the claimant.
 
 #### Electronic Authentication (E-Authentication)
-The process of establishing confidence in user identities electronically presented to an information system.
+See *Digital Authentication*.
 
 #### Entropy
 A measure of the amount of uncertainty that an attacker faces to determine the value of a secret. Entropy is usually stated in bits.
@@ -191,9 +194,6 @@ A secret that a claimant memorizes and uses to authenticate his or her identity.
 
 #### Personal Identification Number (PIN)
 A password consisting only of decimal digits.
-
-#### Personal Identity Verification (PIV) Card
-Defined by \[FIPS 201\] as a physical artifact (e.g., identity card, smart card) issued to federal employees and contractors that contains stored credentials (e.g., photograph, cryptographic keys, digitized fingerprint representation) so that the claimed identity of the cardholder can be verified against the stored credentials by another person (human readable and verifiable) or an automated process (computer readable and verifiable).
 
 #### Pharming
 An attack in which an attacker corrupts an infrastructure service such as DNS (Domain Name Service) causing the subscriber to be misdirected to a forged verifier/RP, which could cause the subscriber to reveal sensitive information, download harmful software or contribute to a fraudulent act.
