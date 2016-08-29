@@ -113,21 +113,23 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 
 ### <a name="trustref"></a> 5.4.4. Trusted Referee Requirements
 
-The CSP MAY use trusted referees, such as notaries, legal guardians, conservators, persons with power attorney, or some other form of certified/approved individuals that can vouch for and/or act on behalf of the individual in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an individual that has successfully completed identity proofing to act as a trusted referee for another individual.  The CSP MAY use a trusted referee for both remote and in-person processes.  
+The CSP MAY use trusted referees, such as notaries, legal guardians, conservators, persons with power attorney, or some other form of certified/approved individuals that can vouch for or act on behalf of the individual in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an individual that has successfully completed identity proofing to act as a trusted referee for another individual.  The CSP MAY use a trusted referee for both remote and in-person processes.  
 
 The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains his/her status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements. 
 
-The CSP SHALL audit all interactions with the trusted referee and the enrollee they are supporting in the proofing process.
+The CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant. 
 
-The trusted referee and applicant SHALL be present together for the entire proofing transaction.  The CSP SHALL require visual evidence that both the trusted referee and applicant are participating in the proofing transaction.
+The trusted referee and applicant SHALL be present together for the entire proofing transaction.
 
-The CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant. Minimum evidence may vary on a CSP by CSP basis.
-
-The CSP SHOULD perform re-proofing on a regular basis, with each reproofing event attempting to satisfy the requirements of [Section 4.5.1.](#normal). 
+The CSP MAY perform re-proofing on a regular basis, as defined by CSP policy, with the goal of satisfying the requirements of [Section 4.5.1](#normal). 
 
 
 ##### Considerations for Minors
-Enrollment of minors under age 18, unable to meet the evidence requirements of identity proofing SHOULD involve a parent or legal adult guardian as a trusted referee as described in Section 5.3.4. Minors under age 13 require special consideration to ensure compliance with the Children's Online Privacy Protection Act of 1998, 15 USC 6501-6505 and 16 CFR Part 312.
+The CSP SHALL give special consideration to the legal restrictions of interacting with minors unable to meet the evidence requirements of identity proofing.
+
+The CSP SHOULD involve a parent or legal adult guardian as a trusted referee as described in [Section 5.4.4](#trustref). 
+
+Minors under age 13 require special consideration to ensure compliance with the Children's Online Privacy Protection Act of 1998, 15 USC 6501-6505 and 16 CFR Part 312.
 
 ## 5.5. Binding Requirements
 
