@@ -84,12 +84,13 @@ See also Asymmetric keys, Symmetric key.
 An authenticator where the secret is a cryptographic key.
 
 #### Digital Authentication
-
-The process of establishing confidence in user identities digitally presented to an information system.
+The process of establishing confidence in user identities digitally presented to an information system. In previous editions of this guideline, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
 
+#### Electronic Authentication (E-Authentication)
+See *Digital Authentication*.
 
 #### Federal Information Security Management Act (FISMA)
 Title III of the E-Government Act requiring each federal agency to develop, document, and implement an agency-wide program to provide information security for the information and information systems that support the operations and assets of the agency, including those provided or managed by another agency, contractor, or other source.
