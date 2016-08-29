@@ -17,6 +17,16 @@ The CSP SHALL NOT disclose information on subscriber activities at an RP to any 
 
 A CSP MAY disclose information on subscriber activities to other RPs within the federation for security purposes such as communication of compromised subscriber accounts.
 
+The following requirements apply specifically to agencies:
+
+a) The agency SHALL consult with their Senior Agency Official for Privacy to conduct and analysis to determine whether the agency acting as either a CSP, or an RP in an identity federation triggers the requirements of the Privacy Act.
+
+b) The agency SHALL publish, or identify coverage by a System of Records Notice as applicable.
+
+c) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the agency acting as either a CSP, or an RP in an identity federation triggers the requirements of the E-Government Act.
+
+d) The agency SHALL publish or identify coverage by a Privacy Impact Assessment, as applicable.
+
 ### 4.1. Federation Models
 
 This section provides an overview of a few common models of identity federation currently in use. In these models, trust is established between members of the federation in several different ways. Some models mandate that federated parties have a high level of trust. Other models allow for parties with a diversity of trust relationships.
