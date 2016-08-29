@@ -76,13 +76,17 @@ The CSP SHALL NOT proof applicants.  Applicants MAY self-assert zero or more att
 
 ## 4.5. Identity Assurance Level 2
 
-IAL 2 allows for remote or in-person identity proofing.  IAL supports a wide range of acceptable identity evidence and validation techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant. A CSP MAY exceed these requirements.
+IAL 2 allows for remote or in-person identity proofing.  IAL supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant. A CSP MAY exceed these requirements.
 
-### 4.5.1. Resolution Requirements
+A CSP SHOULD implement identity proofing in accordance with [Section 4.5.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.5.2](#antecedent) or [Section 4.5.3](#referee). 
+
+### <a name="normal"></a>4.5.1. IAL2 Conventional Proofing Requirements
+
+#### 4.5.1.1. Resolution Requirements
 
 Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.2](#resolve) for general resolution requirements.
 
-### 4.5.2. Evidence Requirements
+#### 4.5.1.2. Evidence Requirements
 
 See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
@@ -90,36 +94,57 @@ See [Section 5.3, Identity Evidence Validation](#validate) for more information 
 - Two (2) pieces of STRONG evidence; **OR**
 - One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence.
 
-### 4.5.3. Validation Requirements
+#### 4.5.1.3. Validation Requirements
 
 See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
-### 4.5.4. Verification Requirements
+#### 4.5.1.4. Verification Requirements
 
 See [Section 5.4, Identity Verification](#verify) for more information on acceptable identity evidence.
 
 At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.
 
-### 4.5.5. Presence Requirements
+#### 4.5.1.5. Presence Requirements
 
 The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote identity proofing. The CSP SHOULD offer both in-person and remote proofing.
 
-### 4.5.6. Address Confirmation
+#### 4.5.1.6. Address Confirmation
 
-- A CSP SHALL send an enrollment code to an address of record of the applicant.
-- The applicant SHALL present a valid enrollment code to complete the identity proofing process.
+- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence.
 - Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
-- The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address that has been verified in records
-- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
-- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  
-- A notification of proofing SHALL be sent to different address of record than the destination of the enrollment code. The address of record MAY include the postal address obtained from validated identity evidence.  For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the postal address in records or obtained from validated evidence, like a drivers license.
 
-### 4.5.7. Biometric Collection
+- **If CSP performed in-person proofing:**  
+
+	- The CSP SHALL send a notification of proofing to the confirmed address of record. 
+	- The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.
+	- The enrollment code SHALL be valid for a maximum of 7 days 
+
+- **If the CSP performed remote proofing:**  
+	- A CSP SHALL send an enrollment code to an address of record of the applicant.
+	- The applicant SHALL present a valid enrollment code to complete the identity proofing process.	
+	- The CSP SHOULD send the enrollment code to the physical mailing address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
+	- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
+	- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  
+	- A notification of proofing SHALL be sent to different address of record than the destination of the enrollment code. The address of record MAY include the postal address obtained from validated identity evidence.  For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the postal address in records or obtained from validated evidence, like a drivers license.
+
+#### 4.5.1.7. Biometric Collection
 
 The CSP SHALL NOT collect biometrics for any reason.
+
+#### 4.5.1.8. Security Controls
+
+The CSP SHOULD employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+
+### <a name="antecedent"></a>4.5.2. IAL2 Antecedent Proofing Requirements
+
+Antecedent in-person identity proofing MAY be used provided the prior proofing transaction is determined to be comparable to the process defined in [Section 4.5.1.](#normal).  See also [The Federal Bridge Certification Authority (FBCA) Certificate Policy (CP)](#fbcacp), Section 3.2.3.1 Authentication of Human Subscribers for Medium Assurance _and_ [FBCA Supplementary Antecedent, In-Person Definition](#fbcasup) for more details.
+
+### <a name="referee"></a>4.5.3. IAL2 Trusted Referee Proofing Requirements
+
+In instances where the individual enrolling cannot meet the identity evidence requirements specified in [Section 4.5.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the enrollee.  See [Section 5.4.4.](#trustref) for more details.
 
 ## <a name="ial3-requirements"></a> 4.6. Identity Assurance Level 3
 
@@ -169,6 +194,10 @@ Remote proofing SHALL NOT be allowed.
 
 The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image or fingerprints) to ensure that the applicant cannot repudiate application.  See [Section 5.2.3](#biometric_use) of SP 800-63B for more detail on biometric collection. 
 
+### 4.6.8. Security  Controls
+
+The CSP SHOULD employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+
 ## 4.7. Enrollment Code
 An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offers the applicant the ability to reestablish binding to their enrollment record.  Binding is not always completed in the same session as the original identity proofing transaction.  
 
@@ -192,5 +221,6 @@ Validation|No validation of evidence is required|- Each piece of evidence must b
 Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
 Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  <br> - A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. - A notification of proofing SHALL be sent to the confirmed address of record.
 Biometric Collection|No|No|Yes|
+Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
 
 

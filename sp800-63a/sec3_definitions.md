@@ -85,7 +85,7 @@ The process by which a CSP collects and verifies information about a person for 
 An authority that is responsible for the generation of data and/or documents that can be used as identity evidence.
 
 #### Knowledge Based Verification
-Identity proofing of an individual based on knowledge of information associated with his or her claimed identity in public databases. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
+Identity proofing of an individual based on knowledge of information associated with his or her claimed identity in private databases. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
 
 #### Network
 An open communications medium, typically the internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, man-in-the-middle, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).
