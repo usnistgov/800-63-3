@@ -135,6 +135,10 @@ The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote i
 
 The CSP SHALL NOT collect biometrics for any reason.
 
+#### 4.5.1.8. Security Controls
+
+The CSP SHOULD employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+
 ### <a name="antecedent"></a>4.5.2. IAL2 Antecedent Proofing Requirements
 
 Antecedent in-person identity proofing MAY be used provided the prior proofing transaction is determined to be comparable to the process defined in [Section 4.5.1.](#normal).  See also [The Federal Bridge Certification Authority (FBCA) Certificate Policy (CP)](#fbcacp), Section 3.2.3.1 Authentication of Human Subscribers for Medium Assurance _and_ [FBCA Supplementary Antecedent, In-Person Definition](#fbcasup) for more details.
@@ -191,6 +195,10 @@ Remote proofing SHALL NOT be allowed.
 
 The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image or fingerprints) to ensure that the applicant cannot repudiate application.  See [Section 5.2.3](#biometric_use) of SP 800-63B for more detail on biometric collection. 
 
+### 4.6.8. Security  Controls
+
+The CSP SHOULD employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+
 ## 4.7. Enrollment Code
 An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offers the applicant the ability to reestablish binding to their enrollment record.  Binding is not always completed in the same session as the original identity proofing transaction.  
 
@@ -214,5 +222,6 @@ Validation|No validation of evidence is required|- Each piece of evidence must b
 Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
 Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  <br> - A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. - A notification of proofing SHALL be sent to the confirmed address of record.
 Biometric Collection|No|No|Yes|
+Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
 
 
