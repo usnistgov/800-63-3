@@ -37,7 +37,7 @@ A claim of a named quality or characteristic inherent in or ascribed to someone 
 A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
 
 #### Authentication
-The process of establishing confidence in the identity of users or information systems.
+The process of establishing confidence in the identity of users or information systems. Authentication of users (subscribers) implies confirmation of the subscriber's presence and intent to authenticate.
 
 #### Authentication Protocol
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of a valid authenticator to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
@@ -230,8 +230,11 @@ A digital document issued and digitally signed by the private key of a certifica
 #### Public Key Infrastructure (PKI)
 A set of policies, processes, server platforms, software and workstations used for the purpose of administering certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
 
+#### Reauthentication
+The process of confirming the subscriber's continued presence and intent to be authenticated during an extended usage session.
+
 #### Registration
-The process through which an Applicant applies to become a subscriber of a CSP and the CSP validates the identity of the Applicant.
+The process through which an applicant applies to become a subscriber of a CSP and the CSP validates the identity of the applicant.
 
 #### Relying Party (RP)
 An entity that relies upon the subscriber's authenticator and credentials or a verifier's assertion of a claimant’s identity, typically to process a transaction or grant access to information or a system.
