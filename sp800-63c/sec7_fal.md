@@ -2,7 +2,7 @@
 
 ## 7. Federation Assurance Level (FAL)
 
-This section defines allowable Federation Assurance Levels, or FAL. The FAL describes aspects of the assertion and federation protocol used in a given transaction. These levels can be requested by an RP or required by configuration of both RP and CSP for a given transaction. 
+This section defines allowable Federation Assurance Levels, or FAL. The FAL describes aspects of the assertion and federation protocol used in a given transaction. These levels can be requested by an RP or required by configuration of both RP and IdP for a given transaction. 
 
 The FAL combines aspects of [federation model](#sec4), [assertion protection strength](#sec5), and [assertion presentation](#sec6) into a single, increasing scale. While many other combinations of factors are possible, this list is intended to provide clear implementation guidelines representing increasingly secure deployment choices. Each successive level subsumes and fulfills all requirements of lower levels. This table presents different requirements depending on whether the assertion is presented directly or indirectly. 
 
@@ -10,10 +10,10 @@ Such definitions not found in the FAL table are possible but outside the scope o
 
 |FAL|Direct Presentation Requirement|Indirect Presentation Requirement|
 |:--:|----|----|
-|1|Bearer assertion, asymmetrically signed by CSP|Bearer assertion, asymmetrically signed by CSP|
-|2|Bearer assertion, asymmetrically signed by CSP|Bearer assertion, asymmetrically signed by CSP and encrypted to RP|
-|3|Bearer assertion, asymmetrically signed by CSP and encrypted to RP|Bearer assertion, asymmetrically signed by CSP and encrypted to RP|
-|4|Holder of key assertion, asymmetrically signed by CSP and encrypted to RP|Holder of key assertion, asymmetrically signed by CSP and encrypted to RP|
+|1|Bearer assertion, asymmetrically signed by IdP|Bearer assertion, asymmetrically signed by IdP|
+|2|Bearer assertion, asymmetrically signed by IdP|Bearer assertion, asymmetrically signed by IdP and encrypted to RP|
+|3|Bearer assertion, asymmetrically signed by IdP and encrypted to RP|Bearer assertion, asymmetrically signed by IdP and encrypted to RP|
+|4|Holder of key assertion, asymmetrically signed by IdP and encrypted to RP|Holder of key assertion, asymmetrically signed by IdP and encrypted to RP|
 
 For example, FAL 1 maps to the OpenID Connect Implicit Client profile or the SAML Web SSO profile, with no additional features. FAL 2 maps to the OpenID Connect Basic Client profile or the SAML Artifact Binding profile, with no additional features. FAL 3 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL 4 requires the presentation of an additional key bound to the assertion (for example, a FIDO token) along with all requirements of FAL3.
 

@@ -42,7 +42,7 @@ Authorization statements are beyond the scope of this document and will not be d
 
 The Kerberos Network Authentication Service \[[RFC 4120](#RFC4120)\] was designed to provide strong authentication for client/server applications using symmetric-key cryptography on a local, shared network. Extensions to Kerberos can support the use of public key cryptography for selected steps of the protocol. Kerberos also supports confidentiality and integrity protection of session data between the subscriber and the RP. Even though Kerberos uses assertions, since it is designed for use on shared networks it is not truly a federation protocol. 
 
-Kerberos supports authentication of a subscriber over an untrusted, shared local network using one or more CSPs. The subscriber implicitly authenticates to the CSP by demonstrating the ability to decrypt a random session key encrypted for the subscriber by the CSP. (Some Kerberos variants also require the subscriber to explicitly authenticate to the CSP, but this is not universal.) In addition to the encrypted session key, the CSP also generates another encrypted object called a Kerberos ticket. The ticket contains the same session key, the identity of the subscriber to whom the session key was issued, and an expiration time after which the session key is no longer valid. The ticket is confidentiality and integrity protected by a pre-established that is key shared between the CSP and the RP during an explicit setup phase.
+Kerberos supports authentication of a subscriber over an untrusted, shared local network using one or more IdPs. The subscriber implicitly authenticates to the IdP by demonstrating the ability to decrypt a random session key encrypted for the subscriber by the IdP. (Some Kerberos variants also require the subscriber to explicitly authenticate to the IdP, but this is not universal.) In addition to the encrypted session key, the IdP also generates another encrypted object called a Kerberos ticket. The ticket contains the same session key, the identity of the subscriber to whom the session key was issued, and an expiration time after which the session key is no longer valid. The ticket is confidentiality and integrity protected by a pre-established that is key shared between the IdP and the RP during an explicit setup phase.
 
 To authenticate using the session key, the subscriber sends the ticket to the RP along with encrypted data that proves that the subscriber possesses the session key embedded within the Kerberos ticket. Session keys are either used to generate new tickets, or to encrypt and authenticate communications between the subscriber and the RP.
 
@@ -52,7 +52,7 @@ subscriber using the subscriber’s long term credential. The long term
 credential may either be a secret key shared between the AS and the
 subscriber, or in the PKINIT variant of Kerberos, a public key
 certificate. It should be noted that most variants of Kerberos based on
-a shared secret key between the subscriber and CSP derive this key
+a shared secret key between the subscriber and IdP derive this key
 from a user generated password. As such, they are vulnerable to offline
 dictionary attack by a passive eavesdropper. 
 
@@ -70,7 +70,7 @@ the ticket and the new session key together to authenticate to the RP.
 
 OpenID Connect is an internet-scale federated identity and authentication protocol built on top of the OAuth 2.0 authorization framework and the JSON Object Signing and Encryption (JOSE) cryptographic system. As of this writing, the latest specification is version 1.0 with errata, dated November 8, 2014. 
 
-OpenID Connect builds on top of the OAuth 2.0 authorization protocol to enable the subscriber to authorize the RP to access the subscriber's identity and authentication information. The CSP in OpenID Connect is known as the identity provider, or IdP. The RP in both OpenID Connect and OAuth 2.0 is known as the client.
+OpenID Connect builds on top of the OAuth 2.0 authorization protocol to enable the subscriber to authorize the RP to access the subscriber's identity and authentication information. The RP in both OpenID Connect and OAuth 2.0 is known as the client.
 
 In a successful OpenID Connect transaction, the IdP issues an ID Token, which is a signed assertion in JSON Web Token (JWT) format. The client parses the ID Token to learn about the subscriber and primary authentication event at the IdP. This token contains at minimum the following claims about the subscriber and authentication event:
 
