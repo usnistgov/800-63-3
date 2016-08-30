@@ -69,8 +69,14 @@ A trusted entity that issues or registers subscriber authenticators and issues e
 #### Derived Credential
 A credential issued based on proof of possession and control of an authenticator associated with a previously issued credential, so as not to duplicate the identity proofing process.
 
+#### Digital Authentication
+The process of establishing confidence in user identities electronically presented to an information system. In previous editions of this guideline, this was referred to as *Electronic Authentication*.
+
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
+
+#### Electronic Authentication (E-Authentication)
+See *Digital Authentication*.
 
 #### Enrollment
 The process through which an applicant applies to become a subscriber of a CSP and an RA validates the identity of the applicant on behalf of the CSP.

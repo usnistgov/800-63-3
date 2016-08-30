@@ -189,13 +189,13 @@ The separation of these metrics supports applications requiring strong authentic
 
 Accordingly, with this revision, SP 800-63 has been split into a family of documents organized as follows:
 
-- SP 800-63-3 *Digital Authentication Guideline* - Provides guidance on general authentication issues and for using authenticators, credentials, and assertions together in an information system.
+- SP 800-63-3 *Digital Authentication Guideline* - Provides guidelines on general authentication issues and for using authenticators, credentials, and assertions together in an information system.
 
 - SP 800-63A *Enrollment and Identity Proofing* - Deals with the processes by which a credential, and authenticator(s) associated with that credential, can be bound to a specific individual. This typically happens when that individual is enrolled in an identity system, through the identity proofing process.
 
-- SP 800-63B *Authentication and Lifecycle Management* - provides guidance on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
+- SP 800-63B *Authentication and Lifecycle Management* - provides guidelines on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
 
-- SP 800-63C *Federation and Assertions* - Provides guidance on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
+- SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
 
 
 ### IAL, AAL, and FAL Summary
@@ -212,7 +212,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 **Authenticator Assurance Level 2** – AAL 2 provides higher assurance that the same claimant who participated in previous transactions is accessing the protected transaction or data. Two different authentication factors are required. Various types of authenticators, including multi-factor Software Cryptographic Authenticators, may be used as described in [SP 800-63B](sp800-63b.html). AAL 2 also permits any of the authentication methods of AAL 3. AAL 2 authentication requires cryptographic mechanisms that protect the primary authenticator against compromise by the protocol threats for all threats at AAL 1 as well as verifier impersonation attacks. Approved cryptographic techniques are required for all assertion protocols used at AAL 2 and above.
 
-**Authenticator Assurance Level 3** – AAL 3 is intended to provide the highest practical digital authentication assurance. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed. The authenticator is required to be a hardware cryptographic module validated at Federal Information Processing Standard (FIPS) 140 Level 2 or higher overall with at least FIPS 140 Level 3 physical security. AAL 3 authenticator requirements can be met by using the PIV authentication key of a FIPS 201 compliant Personal Identity Verification (PIV) Card.
+**Authenticator Assurance Level 3** – AAL 3 is intended to provide the highest practical digital authentication assurance. Two different authentication factors are required. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” authenticators are allowed (in conjunction with a memorized secret if a single-factor cryptographic device is used). The authenticator is required to be a hardware cryptographic module or multi-factor OTP device validated at Federal Information Processing Standard (FIPS) 140 Level 2 or higher overall (Level 1 for single-factor authenticators) with at least FIPS 140 Level 3 physical security. AAL 3 authenticator requirements can be met by using the PIV authentication private key of a FIPS 201 compliant Personal Identity Verification (PIV) Card.
 
 **Federation Assurance Level 1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the RP. The assertion must be asymmetrically signed with an appropriate algorithm.
 
@@ -228,7 +228,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 The following table shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
 
 
-| Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
+| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
 | 1 | 1 | 1| 1
 | 2 | 2 | 2 or 3 |2
@@ -238,7 +238,7 @@ The following table shows strict adherence to M-04-04 Level of Assurance, mappin
 However, the table below shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
 
 
-| Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
+| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
 | 1 | 1 | 1, 2 or 3 | 1, 2, 3, or 4
 | 2 | 1 or 2 | 2 or 3 |2, 3, or 4
@@ -251,7 +251,7 @@ Agency mission need will assist in determining the acceptable IAL at a given LOA
 
 In the case of federal employees, bound by HSPD-12 and required to obtain a Personal Identity Verification (PIV) smart card, the requirement is that agencies meet LOA4. The HSPD-12 use case requires an authenticator at AAL3 **and** identity proofing at IAL 3.   
 
->Important Note: An agency can accept a higher assurance level than those required in the table above.  For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2.  The same holds true for authenticators; stronger authenticators can be used at RP's that have lower authenticator requirements.  However, RPs will ensure that these scenarios only occur in federated scenarios with appropriate privacy protections by the CSP to ensure that only the requested attributes are provided to the RP and that no personal information leaks from the authenticator or the assertion.  See [privacy requirements](../sp800-63c/sec8_privacy.md) in SP 800-63C for more details.   
+>Important Note: An agency can accept a higher assurance level than those required in the table above.  For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2.  The same holds true for authenticators; stronger authenticators can be used at RP's that have lower authenticator requirements.  However, RPs will ensure that these scenarios only occur in federated scenarios with appropriate privacy protections by the CSP to ensure that only the requested attributes are provided to the RP and that no personal information leaks from the authenticator or the assertion.  See [privacy requirements](./sp800-63c.html#sec9) in SP 800-63C for more details.
  
 ### Acceptable IAL and AAL Combinations
 

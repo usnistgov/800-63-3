@@ -21,17 +21,23 @@ This section provides the detailed requirements specific for each of the authent
 
 ##### 5.1.1.1. Memorized Secret Authenticators
 
-Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Some values for user-chosen memorized secrets may be disallowed based on their appearance on a blacklist of compromised values. No other complexity requirements for memorized secrets are imposed; a rationale for this is presented in [Appendix A](#appA).
+Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Since the CSP or verifier may disallow some choices of memorized secrets  based on their appearance on a blacklist of compromised values, the subscriber SHALL choose a different memorized secret if a choice is rejected. No other complexity requirements for memorized secrets SHOULD be imposed; a rationale for this is presented in [Appendix A](#appA).
 
 ##### 5.1.1.2. Memorized Secret Verifiers
 
-Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHALL permit user-chosen memorized secrets to be at least 64 characters in length. All printing ASCII [[RFC 20]](#RFC20) characters as well as the space character SHALL be acceptable in memorized secrets; Unicode [[ISO/ISC 10646:2014]](#ISOIEC10646) characters SHOULD be accepted as well. Verifiers MAY remove space characters prior to verification; all other characters SHALL be considered significant. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
+Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHOULD permit user-chosen memorized secrets to be at least 64 characters in length. All printing ASCII [[RFC 20]](#RFC20) characters as well as the space character SHOULD be acceptable in memorized secrets; Unicode [[ISO/ISC 10646:2014]](#ISOIEC10646) characters SHOULD be accepted as well. Verifiers MAY remove space characters prior to verification. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
 
 Memorized secrets that are randomly chosen by the CSP (e.g., at enrollment) or by the verifier (e.g., when a user requests a new PIN) SHALL be at least 6 characters in length and SHALL be generated using an approved random number generator.
 
 Memorized secret verifiers SHALL NOT permit the subscriber to store a "hint" that is accessible to an unauthenticated claimant. Verifiers also SHALL NOT prompt subscribers to use specific types of information (e.g., "What was the name of your first pet?") when choosing memorized secrets.
 
-When processing requests to establish and change memorized secrets, verifiers SHOULD compare the prospective secrets against a dictionary of known commonly-used and/or compromised values. This list SHOULD include passwords from previous breach corpuses, as well as dictionary words and specific words (such as the name of the service itself) that users are likely to choose. If the chosen secret is found in the dictionary, the subscriber SHOULD be required to choose a different value. The subscriber SHOULD be advised that they need to select a different secret because their previous choice was commonly used.
+When processing requests to establish and change memorized secrets, verifiers SHALL compare the prospective secrets against a list of known commonly-used, expected, and/or compromised values. For example, the list MAY include (but is not limited to):
+
+* Passwords obtained from previous breach corpuses
+* Dictionary words
+* Context specific words, such as the name of the service, the username, and derivates thereof
+
+If the chosen secret is found in the list, the subscriber SHALL be advised that they need to select a different secret because their previous choice was commonly used, and be required to choose a different value.
 
 Verifiers SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
@@ -69,61 +75,62 @@ Look-up secrets SHALL be generated using an approved random number generator and
 
 Verifiers SHALL use approved encryption and SHALL authenticate themselves to the claimant (e.g., through the use of a X.509 certificate using approved encryption that is acceptable to the claimant) when requesting look-up secrets in order to provide resistance to eavesdropping and phishing attacks.
 
-#### <a name="out-of-band"></a>5.1.3. Out of Band
+#### <a name="out-of-band"></a>5.1.3. Out-of-Band Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Out-of-band-OOB.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
-    <td>An Out of Band authenticator is a physical device that is uniquely addressable and can receive a verifier-selected secret for one-time use. The device is possessed and controlled by the claimant and supports private communication over a secondary channel that is separate from the primary channel for e-authentication. The out-of-band authenticator can operate in one of two ways:<br><br>
+    <td>An out-of-band authenticator is a physical device that is uniquely addressable and can communicate securely with the verifier over a distinct communications channel, referred to as the secondary channel. The device is possessed and controlled by the claimant and supports private communication over this secondary channel that is separate from the primary channel for e-authentication. The out-of-band authenticator can operate in one of the following ways:<br><br>
 
--  The claimant presents the secret that was received by the out-of-band authenticator to the verifier using the primary channel for e-authentication.<br><br>
+- The claimant transfers a secret received by the out-of-band device via the secondary channel to the verifier using the primary channel. For example, the claimant may receive the secret on their mobile device and type it (typically a 6 digit code) into their authentication session.<br><br>
 
-- The claimant sends a response to the verifier from the out-of-band authenticator via the secondary communications channel<br><br>
+- The claimant transfers a secret received via the primary channel to the out-of-band device for transmission to the verifier via the secondary channel. For example, the claimant may view the secret on their authentication session and either type it into an app on their mobile device or use a technology such as a barcode or QR code to effect the transfer.<br><br>
 
-Two key requirements are that the device be uniquely addressable and that communication over the secondary channel be private. Some voice-over-IP telephone services can deliver text messages and voice calls without the need for possession of a physical device; these SHALL NOT be used for out of band authentication. Mechanisms such as smartphone applications employing secure communications protocols are preferred for out-of-band authentication.<br><br>
+- The claimant compares secrets received from the primary channel and the secondary channel and confirms the authentication via the secondary channel.<br><br>
 
-If the authenticator responds directly to the verifier via the secondary communications channel, the verifier SHALL send and the authenticator SHALL display information, such as a transaction ID or description, allowing the claimant to uniquely associate the authentication operation on the primary channel with the request on the secondary channel.<br><br>
-
-Ability to receive email messages or other types of instant message does not generally prove the possession of a specific device, so they SHALL NOT be used as out of band authentication methods.</td> 
+The purpose of the secret is to securely bind the authentication operation on the primary and secondary channel. When the response is via the primary communication channel, the secret also establishes the claimant's control of the out-of-band device.</td> 
   </tr>
   </table>
   </div>
 
-##### 5.1.3.1. Out of Band Authenticators
+##### 5.1.3.1. Out-of-Band Authenticators
 
-The out of band authenticator SHALL establish an authenticated protected channel in order to retrieve the out of band secret or authentication request. This channel is considered to be out of band with respect to the primary communication channel, even if it terminates on the same device, provided the device does not leak information from one to the other.
+The out-of-band authenticator SHALL establish a separate channel with the verifier in order to retrieve the out-of-band secret or authentication request. This channel is considered to be out-of-band with respect to the primary communication channel, even if it terminates on the same device, provided the device does not leak information from one to the other without the authorization of the claimant.
 
-The out of band authenticator SHALL uniquely authenticate itself in one of the following ways in order to receive the authentication secret:
+The out-of-band device SHALL be uniquely addressable and communication over the secondary channel SHALL be private. Some voice-over-IP telephone services can deliver text messages and voice calls without the need for possession of a physical device; these SHALL NOT be used for out-of-band authentication. Ability to receive email messages or other types of instant message does not generally prove the possession of a specific device, and therefore SHALL NOT be used as out-of-band authentication methods. Mechanisms such as smartphone applications that employ secure communications protocols and uniquely identify the out-of-band device SHOULD be used for out-of-band authentication.
 
-- Authentication to the verifier using approved cryptography. The key SHOULD be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, or trusted execution environment if available).
+The out-of-band authenticator SHALL uniquely authenticate itself in one of the following ways in communicating with the verifier:
 
-- Authentication to a public mobile telephone network using a SIM card or equivalent that uniquely identifies the device
+- Establish an authenticated protected channel to the verifier using approved cryptography. The key used SHALL be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, or trusted execution environment if available).
 
-Out of band authenticators SHOULD NOT display the authentication secret on a device that is locked by the owner (i.e., requires an entry of a PIN or passcode). However, authenticators MAY indicate the receipt of an authentication secret on a locked device.
+- Authenticate to a public mobile telephone network using a SIM card or equivalent that uniquely identifies the device. This method SHALL only be used if a secret is being sent from the verifier to the out-of-band device via the telephone network (SMS or voice).
 
-If the out of band authenticator sends an approval message over the secondary communication channel (rather than by the claimant transferring a received secret to the primary communication channel):
+If a secret is sent by the verifier to the out-of-band device, the device SHOULD NOT display the authentication secret on a device while it is locked by the owner (i.e., requires an entry of a PIN or passcode). However, authenticators MAY indicate the receipt of an authentication secret on a locked device.
 
-* The authenticator SHALL display identifying information about the authentication transaction to the claimant prior to their approval.
+If the out-of-band authenticator sends an approval message over the secondary communication channel (rather than by the claimant transferring a received secret to the primary communication channel), it SHALL do one of the following:
 
-* The secondary communication channel SHALL be an authenticated protected channel.
+* The authenticator SHALL accept transfer of the secret from the primary channel which it SHALL send to the verifier over the secondary channel to associate the approval with the authentication transaction. The claimant MAY perform the transfer manually or use a technology such as a barcode or QR code to effect the transfer.
 
-##### 5.1.3.2. Out of Band Verifiers
+* The authenticator SHALL present a secret received via the secondary channel from the verifier and prompt the claimant to verify the consistency of that secret with the primary channel, prior to accepting a yes/no response from the claimant. It SHALL then send that response to the verifier.
 
-Out of band verifiers SHALL generate a random authentication secret with at least 20 bits of entropy using an approved random number generator. They then optionally signal the device containing the subscriber's authenticator to indicate readiness to authenticate.
+##### 5.1.3.2. Out-of-Band Verifiers
 
-Due to the risk that SMS messages may be intercepted or redirected, implementers of new systems SHOULD carefully consider alternative authenticators. If the out of band verification is to be made using a SMS message on a public mobile telephone network, the verifier SHALL verify that the pre-registered telephone number being used is actually associated with a mobile network and not with a VoIP (or other software-based) service. It then sends the SMS message to the pre-registered telephone number. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change.  **OOB using SMS is deprecated**, and may no longer be allowed in future releases of this guidance.
+Due to the risk that SMS messages or voice calls may be intercepted or redirected, implementers of new systems SHOULD carefully consider alternative authenticators. If the out-of-band verification is to be made using the public switched telephone network (PSTN), the verifier SHALL verify that the pre-registered telephone number being used is not associated with a VoIP (or other software-based) service. It then sends the SMS or voice message to the pre-registered telephone number. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change.  **OOB using the PSTN (SMS or voice) is deprecated**, and may no longer be allowed in future releases of this guidance.
 
-If out of band verification is to be made using a secure application (e.g., on a smart phone), the verifier MAY send a push notification to that device. The verifier then waits for a establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as hashing (using an approved hash function) or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator. Depending on the type of out-of-band authenticator, either:
-* The verifier waits for the secret to be returned on the primary communication channel.
+If out-of-band verification is to be made using a secure application (e.g., on a smart phone), the verifier MAY send a push notification to that device. The verifier then waits for a establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as hashing (using an approved hash function) or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator.
 
-* The verifier waits for the secret, or some type of approval message, to be returned over the secondary communication channel.
+Depending on the type of out-of-band authenticator, one of the following SHALL take place:
 
-If approval is made over the secondary communication channel, the request to the verifier SHALL include a transaction identifier, such as a transaction ID or description, for display by the verifier.
+* Transfer of secret to primary channel: The verifier MAY signal the device containing the subscriber's authenticator to indicate readiness to authenticate. It SHALL then transmit a random secret to the out-of-band authenticator. The verifier SHALL then wait for the secret to be returned on the primary communication channel.
 
-In collecting the authentication secret from the claimant, the verifier SHALL use approved encryption and SHALL authenticate itself to the claimant. The authentication secret SHALL be considered invalid if not received within 5 minutes.
+* Transfer of secret to secondary channel: The verifier SHALL display a random authentication secret to the claimant via the primary channel. It SHALL then wait for the secret to be returned on the secondary channel from the claimant's out-of-band authenticator.
 
-If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
+* Verification of secrets by claimant: The verifier SHALL display a random authentication secret to the claimant via the primary channel, and SHALL send the same secret to the out-of-band authenticator via the secondary channel for presentation to the claimant. It SHALL then wait for an approval (or disapproval) message via the secondary channel.
+
+In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes.
+
+The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random number generator. If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
 #### 5.1.4. Single Factor OTP Device
 

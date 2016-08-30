@@ -22,7 +22,7 @@ Regardless of what is requested or required by the protocol, the applicable FAL 
 
 The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Federation Assurance Levels. 
 
-| Level of Assurance (LOA) |  Federation Assurance Level (FAL)
+| M-04-04 Level of Assurance (LOA) |  Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:
 | 1 |  1
 | 2 | 2
@@ -31,7 +31,7 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 
 However, the table below shows the expanded set of FAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
 
-| Level of Assurance | Federation Assurance Level
+| M-04-04 Level of Assurance | Federation Assurance Level
 |:------------------:|:-----------------------------:
 | 1 | 1, 2, 3, or 4 
 | 2 | 2, 3, or 4

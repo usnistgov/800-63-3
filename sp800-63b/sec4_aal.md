@@ -11,7 +11,7 @@ FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revis
 The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels. 
 
 
-| Level of Assurance (LOA) |  Authenticator Assurance Level (AAL) |
+| M-04-04 Level of Assurance (LOA) |  Authenticator Assurance Level (AAL) |
 |:------------------:|:-----------------------------:|
 | 1 |  1| 
 | 2 |  2 or 3 |
@@ -21,7 +21,7 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 However, the table below shows the expanded set of AAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
 
 
-| Level of Assurance | Authenticator Assurance Level
+| M-04-04 Level of Assurance | Authenticator Assurance Level
 |:------------------:|:-----------------------------:
 | 1 | 1, 2 or 3 
 | 2 | 2 or 3
@@ -66,7 +66,7 @@ The CSP SHOULD employ appropriately tailored security controls from the low base
 
 #### 4.1.6. Records Retention
 
-The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply. Otherwise, no retention period is required.
+The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained.
 
 ### 4.2. Authenticator Assurance Level 2
 
@@ -111,7 +111,7 @@ The CSP SHOULD employ appropriately tailored security controls from the moderate
 
 #### 4.2.6. Records Retention
 
-CSPs shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. Otherwise, retention of records is required for seven years and 6 months.
+CSPs shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained.
 
 ### 4.3. Authenticator Assurance Level 3
 
@@ -145,9 +145,13 @@ The CSP SHOULD employ appropriately tailored security controls from the high bas
 
 #### 4.3.6. Records Retention
 
-The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. Otherwise, retention of records is required for ten years and 6 months.
+The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained. 
 
-### 4.4. Summary of Requirements
+### 4.4. Privacy Requirements
+
+•	The CSP SHOULD employ appropriately tailored privacy controls defined in [SP 800-53] or equivalent industry standard.•	CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service.•	Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:a) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the Privacy Act. b) The agency SHALL publish a System of Records Notice to cover such collections, as applicable. c) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the E-Government Act of 2002. d) The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
+
+### 4.5. Summary of Requirements
 
 *(Non-normative; refer to preceding sections for normative requirements)*
 
@@ -160,7 +164,7 @@ Requirement | AAL 1 | AAL 2 | AAL 3
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
 **Security Controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
-**Records Retention**|Not required|7 years, 6 months|10 years, 6 months
+**Records Retention**|Not required|Not required|Not required
 
 
 

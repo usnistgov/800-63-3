@@ -105,7 +105,7 @@ The verifier is a functional role, but is frequently implemented in combination 
 
 Normative requirements can be found in [Special Publication 800-63C, Federation and Assertions](sp800-63c.html).
 
-Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, the guidance is agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation, consistent with the National Strategy for Trusted Identities in Cyberspace (NSTIC) [[NSTIC]](#theNSTIC), is preferred over a number of siloed identity systems that each serve a single agency or RP.
+Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, the guideline is agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation, consistent with the National Strategy for Trusted Identities in Cyberspace (NSTIC) [[NSTIC]](#theNSTIC), is preferred over a number of siloed identity systems that each serve a single agency or RP.
 
 Federated architectures have many significant benefits, including, but not limited to:  
 
@@ -138,10 +138,10 @@ An RP relies on results of an authentication protocol to establish confidence in
 
 ### 4.5. Assurance Levels
 
-The overall M-04-04 LOA is determined by combining the discrete assurance level for each of the components of the architecture. For instance, to achieve M-04-04 LOA3:
+The M-04-04 Level of Assurance (LOA) is determined by combining the discrete assurance level for each of the components of the architecture. For instance, to achieve M-04-04 LOA 3:
 
 * The enrollment and identity proofing process would, at a minimum, use IAL 1 or 2 processes.
 * The authenticator (or combination of authenticators) would have an AAL of 2 or higher.
 * Authentication assertions (if used) would have an FAL of 2 or higher.
 
-The overall level is determined by the lowest level because it will likely be the target of an attacker. For example, if a system uses an authenticator that has AAL 2 assurance, but uses assertion mechanisms at FAL 3, the attacker will likely focus on gaining access to the authenticator since it is easier to attack a system component meeting AAL 2 rather than attacking the assertion that meets FAL 3. 
+The M-04-04 level is determined by the lowest level because it will likely be the target of an attacker. For example, if a system uses an authenticator that has AAL 2 assurance, but uses assertion mechanisms at FAL 3, the attacker will likely focus on gaining access to the authenticator since it is easier to attack a system component meeting AAL 2 rather than attacking the assertion that meets FAL 3. 

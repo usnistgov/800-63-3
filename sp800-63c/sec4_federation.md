@@ -17,6 +17,16 @@ The CSP SHALL NOT disclose information on subscriber activities at an RP to any 
 
 A CSP MAY disclose information on subscriber activities to other RPs within the federation for security purposes such as communication of compromised subscriber accounts.
 
+The following requirements apply specifically to agencies:
+
+a) The agency SHALL consult with their Senior Agency Official for Privacy to conduct and analysis to determine whether the agency acting as either a CSP, or an RP in an identity federation triggers the requirements of the Privacy Act.
+
+b) The agency SHALL publish, or identify coverage by a System of Records Notice as applicable.
+
+c) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the agency acting as either a CSP, or an RP in an identity federation triggers the requirements of the E-Government Act.
+
+d) The agency SHALL publish or identify coverage by a Privacy Impact Assessment, as applicable.
+
 ### 4.1. Federation Models
 
 This section provides an overview of a few common models of identity federation currently in use. In these models, trust is established between members of the federation in several different ways. Some models mandate that federated parties have a high level of trust. Other models allow for parties with a diversity of trust relationships.
@@ -39,38 +49,22 @@ Manual registration can work in concert with a central authority model. In this 
 
 In the dynamic registration model of federation, systems have a well-known location where other systems can find their metadata. They also have predictable API endpoints where new systems can register themselves without human involvement. Systems that make use of dynamic registration SHOULD require verifiable human interaction, such as the approval of the identity federation transaction by the authenticated subscriber at the CSP. 
 
-Frequently, parties in a dynamic registration model have no way to trust each other ahead of time, so little information is exchanged by default. This problem is somewhat mitigated by a technology called software statements, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by certifying bodies. Because both parties trust the certifying body, that trust can be extended to the other party in the dynamic registration partnership.  This allows trust to be established or elevated between the federating parties. See [[RFC 7591 Section 2.3]] (#RFC7591Sec23) for more information.
+Frequently, parties in a dynamic registration model have no way to trust each other ahead of time, so little information is exchanged by default. This problem is somewhat mitigated by a technology called software statements, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by certifying bodies. Because both parties trust the certifying body, that trust can be extended to the other party in the dynamic registration partnership.  This allows trust to be established or elevated between the federating parties. See [[RFC 7591]](#RFC7591) section 2.3 for more information.
 
 Many federated parties establish whitelists of other federated parties who may dynamically register with some predetermined level of trust. They also establish blacklists of federated parties who may be allowed dynamically register with a low level of trust, or who may not be allowed to dynamically register at all. Everything that is not on a whitelist or a blacklist can be considered to be in a gray area or on a "graylist." Graylisted parties generally start out with a low level of trust until they can be reviewed by a human who can determine an appropriate level of trust. 
 
-#### 4.1.4 Brokered Federation
+#### 4.1.4 Distributed Federation
 
-In this model, a third-party sits in the middle of the transaction and communicates the success or failure of an authentication event at the CSP to the RP. Effectively, a broker functions as a federation CSP on one side and a federation RP on the other side. Therefore, all normative and non-normative requirements that apply to CSPs and RPs in this chapter SHALL apply to the broker.
+In a distributed federation model, the communication between the CSP and the RP is distributed in a way that prevents direct communication between the two parties. There may be multiple methods of achieving this effect, but common configurations include a third party that acts as a “broker” or a network of “nodes” that distribute the communications. Effectively though, the distributing parties still function in some degree as a federation CSP on one side and a federation RP on the other side. Therefore, all normative and non-normative requirements that apply to CSPs and RPs SHALL apply to the distributing parties in their respective roles.![Figure 2: Broker](sp800-63c/media/broker.png)
 
-![Figure 2: Broker](sp800-63c/media/broker.png)
+**Figure 2: Broker**A distributed federation model can provide various benefits. For example, brokers can enable simplified technical integrations between the RP and CSP by eliminating the need for multiple point to point integrations, which can be onerous for protocols which do not support [dynamic registration](#dynamic-registration). Additionally, to the extent a distributed federation model effectively “blinds” the RP and CSP from each other, it can provide some business confidentiality for organizations that may not wish to reveal their subscriber lists to each other, as well as mitigate some of the privacy risks of point to point federation described above. While some distributed deployments offer no additional privacy protection, others can offer varying levels of privacy to the subscriber through a range of blinding technologies. NOTE: even with the use of blinding technologies, it may still be possible for a blinded party to deduce subscriber behavior patterns through analysis of timestamps, cookies, attributes, or attribute bundle sizes. Privacy policies, therefore, may dictate appropriate use by the CSP, RP, and the distributing party, but blinding technology can increase effectiveness of these policies by making the data more difficult to access. It should also be noted that as the level of blinding increases, so may the technical and operational implementation complexity.The following list illustrates a spectrum of blinding implementations:1.	The distributing party does not blind the RP and CSP from one another. The distributing party is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion.2.	The distributing party does not blind the RP and CSP from one another. The distributing party is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion.3.	The distributing party blinds the RP and CSP from each other. The distributing party is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion.4.	The distributing party blinds the RP and CSP from each other. The distributing party is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion.
+5. The distributing party blinds the RP, CSP, and itself. The distributing party cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. 
 
-**Figure 2: Broker**
+
+
 
  
 
-Brokers can enable simplified technical integrations between the RP and CSP by eliminating the need for multiple point to point integrations, which can be onerous for protocols which do not support [dynamic registration](#dynamic-registration). If implemented in very specific ways, brokers can also provide some business confidentiality and transfer some of the privacy risks of point to point federation described above by passing the assertions while blinding the participants on either side of the transaction to each other. 
 
-For example, organizations may not wish to reveal their subscriber lists to each other. Some implementations of blinding technology can prevent CSPs or RPs from tracking and profiling subscribers within the context of an authentication transaction. However, the broker model transfers this tracking and profiling capability to the broker itself. Additionally, CSPs and RPs may still be able to track and profile subscribers through activity monitoring.
-
-While some broker deployments offer no additional privacy protection, some can offer limited additional levels of privacy to the subscriber through a variety of blinding technologies.  However, as the level of blinding increases, so does the technical and operational implementation complexity. Privacy policies may dictate appropriate use by the CSP, RP, and the broker,  but blinding technology can increase effectiveness of these policies by making the data more difficult to access.
-
-The following list illustrates a spectrum of blinding implementations:
-
-1. The broker does not blind the RP and CSP from one another. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion.
-
-1. The broker does not blind the RP and CSP from one another. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion.
-
-1. The broker blinds the RP and CSP from each other. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, and has visibility into any attributes it is transmitting in the assertion.
-
-1. The broker blinds the RP and CSP from each other. The broker is able to monitor and track all subscriber relationships between the RPs and CSPs, but has no visibility into any attributes it is transmitting in the assertion.
-
-1. The broker blinds the RP, CSP, and itself. The broker cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. 
- 
-NOTE: even with the use of blinding technologies, it is often possible for a blinded party to deduce subscriber behavior patterns through analysis of timestamps, cookies, attributes, or attribute bundle sizes.
 
 
