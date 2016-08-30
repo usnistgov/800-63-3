@@ -6,7 +6,7 @@ During the lifecycle of an authenticator bound to a subscriber's identity, a num
 
 ### <a name="binding"></a>6.1. Authenticator binding
 
-Authenticators may be provided by a CSP as part of a process such as enrollment; in other cases, the subscriber may provide their own, such as software or hardware cryptographic modules. For this reason, we refer to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
+Authenticators may be issued (provided) by a CSP as part of a process such as enrollment; in other cases, the subscriber may provide their own, such as software or hardware cryptographic modules. For this reason, this guideline refers to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. It SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
 
@@ -70,9 +70,9 @@ To facilitate secure reporting of loss or theft of an authenticator, the CSP SHO
 
 ### 6.3. Expiration
 
-CSP's SHOULD issue authenticators that expire. When an authenticator expires, it SHALL NOT be usable for authentication. When an authentication is attempted, the CSP SHOULD give an indication to the subscriber that the authentication failure is due to expiration rather than some other cause.
+CSP's MAY issue authenticators that expire. If and when an authenticator expires, it SHALL NOT be usable for authentication. When an authentication is attempted using an expired authenticator, the CSP SHOULD give an indication to the subscriber that the authentication failure is due to expiration rather than some other cause.
 
-The CSP SHALL require subscribers to surrender any physical authenticator containing trustable attributes as soon as practical after expiration or after receipt of a renewed authenticator.
+The CSP SHALL require subscribers to surrender any physical authenticator containing trustable attributes as soon as practical after expiration, revocation, or receipt of a renewed authenticator.
 
 ### 6.4. Revocation
 
