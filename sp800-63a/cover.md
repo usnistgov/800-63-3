@@ -7,10 +7,12 @@
 ### Enrollment and Identity Proofing Requirements
 
 Paul A. Grassi  
-Naomi B. Lefkovitz  
-Jamie M. Danker    
-William E. Burr  
-James L. Fenton
+James L. Fenton  
+Naomi B. Lefkovitz    
+Jamie M. Danker       
+Yee-Yin Choong    
+Kristen K. Greene    
+Mary F. Theofanos   
 
 {::comment}
 
@@ -28,22 +30,27 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 ###  Enrollment and Identity Proofing Requirements
 
-Paul A. Grassi  
-Naomi B. Lefkovitz  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*
+Paul A. Grassi
+Applied Cybersecurity Division
+Information Technology Laboratory
 
-Jamie M. Danker  
-*National Protection and Programs Directorate  
-Department of Homeland Security*  
+James L. Fenton
+Altmode Networks
+Los Altos, CA
 
-William E. Burr  
-*Dakota Consulting, Inc.  
-Silver Spring, MD*
+Naomi B. Lefkovitz
+Applied Cybersecurity Division
+Information Technology Laboratory
 
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*
+Jamie M. Danker
+National Protection and Programs Directorate
+Department of Homeland Security
+
+Yee-Yin Choong  
+Kristen K. Greene  
+Mary F. Theofanos  
+Information Access Division  
+Information Technology Laboratory  
 
 {::comment}
 
