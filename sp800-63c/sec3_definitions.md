@@ -10,7 +10,10 @@ The definitions in this section are primarily those that are referenced in this 
 A process that allows for the conveyance of identity and authentication information across a set of networked systems. These systems are often run and controlled by disparate parties in different network and security domains.
 
 #### Identity Provider (IdP)
-The common term in federation protocols for the credential service provider (CSP) that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. 
+The party that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. This is commonly the credential service provider (CSP) as discussed within this document suite.
+
+#### Relying Party (RP)
+In this document, the party that receives and processes the assertion identifying the subscriber.
 
 #### Authenticated Protected Channel
 A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
