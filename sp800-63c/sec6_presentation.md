@@ -2,37 +2,41 @@
 
 ## 6. Assertion Presentation
 
-Assertions MAY be presented in either an *indirect* or *direct* manner from the CSP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between CSPs and RPs under specific circumstances, as discussed in section 4.1.4.
+Assertions MAY be presented in either a *front-channel* or *back-channel* communication method from the CSP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between CSPs and RPs under specific circumstances, as discussed in section 4.1.4.
 
 The CSP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. The subscriber SHALL be able to view the attribute values to be transmitted, although masking mechanisms SHALL be employed, as necessary, to mitigate the risk of unauthorized exposure of sensitive information (e.g. shoulder surfing). The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation. See section 9.2 for considerations on determining which party should provide the notice and obtain confirmation. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. A CSP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
 
-### 6.1. Indirect presentation
+### 6.1. Back-channel presentation
 
-In the *indirect* model, the subscriber is given an assertion reference to present to the RP, such as an HTTP redirect. The assertion reference itself contains no information about the subscriber. The RP presents the assertion reference to the CSP, usually along with authentication of the RP itself, to fetch the assertion. 
+In the *back-channel* model, the subscriber is given an assertion reference to present to the RP, generally through the front channel. The assertion reference itself contains no information about the subscriber and MUST be resistant to tampering and fabrication by an attacker. The RP presents the assertion reference to the CSP, usually along with authentication of the RP itself, to fetch the assertion. 
 
-![Figure 1: Indirect presentation](sp800-63c/media/indirect.png)
+![Figure 1: Back-channel presentation](sp800-63c/media/indirect.png)
 
-**Figure 1: Indirect presentation**
+**Figure 1: Back-channel presentation**
 
-In this model, the assertion itself is requested directly from the CSP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves). This also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself.
+In this model, the assertion itself is requested directly from the CSP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves). 
 
-The assertion is still considered a *bearer* assertion if the artifact required to fetch the Assertion does not require presentation of additional proof of key possession after the assertion has been fetched.
+This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, as back-channel communication can occur after the initial authentication transaction. 
 
-In the indirect method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the CSP directly, the attack surface is reduced.
+In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the CSP directly, the attack surface is reduced.
+
+The RP SHALL protect itself against injection of manufactured or captured assertion references by use of cross-site scripting protection or other accepted techniques. 
 
 Claims within the assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
 
 Conveyance of the assertion reference from the CSP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the CSP as well as the assertion from the CSP to the RP SHALL be made over an authenticated protected channel.
 
-### 6.2. Direct Presentation
+### 6.2. Front-channel Presentation
 
-In the *direct* model, the CSP creates an assertion and sends it directly to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP. This is often handled by mechanisms within the subscriber’s browser.) 
+In the *front-channel* model, the CSP creates an assertion and sends it to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP. This is often handled by mechanisms within the subscriber’s browser.) 
 
-![Figure 2: Direct presentation](sp800-63c/media/direct.png)
+![Figure 2: Front-channel presentation](sp800-63c/media/direct.png)
 
-**Figure 2: Direct presentation**
+**Figure 2: Front-channel presentation**
 
-In the direct method, an assertion is visible to the user, which could potentially cause leakage of system information included in the assertion. Since the assertion is visible to the subscriber, the direct method also allows the assertion to be replayed to other RPs by the subscriber. 
+In the front-channel method, an assertion is visible to the subscriber, which could potentially cause leakage of system information included in the assertion. 
+
+Since the assertion is under the control of the subscriber, the direct method also allows the assertion to be replayed the subscriber to submit a single assertion to multiple RPs. This
 
 The RP SHALL protect itself against injection of manufactured or captured assertions by use of cross-site scripting protection or other accepted techniques. 
 
