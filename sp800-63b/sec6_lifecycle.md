@@ -33,30 +33,21 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 #### 6.1.2. Post-Enrollment Binding
 
-Following enrollment, binding an additional authenticator to an account requires the use of an existing authenticator of the same type (or types). For example, binding a new single-factor OTP device requires the subscriber to authenticate with another *something you have* authentication factor. If the account has only one authentication factor bound to it (which is possible only at IAL 1/AAL 1), an additional authenticator of the same factor may be bound to it.
+Following enrollment, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. In order to do so, the CSP SHALL require the subscriber to first authenticate at the AAL of the authenticator to be added. When an authenticator is added, the CSP SHOULD send a notification to the subscriber.
 
-Binding an additional authenticator SHALL require the use of two different authentication factors, except as provided below.
+If the account has only one authentication factor bound to it (which is possible only at IAL 1/AAL 1), an additional authenticator may be added, and if it is a different factor (e.g., *something you have* added when authenticated with *something you know*), the subscriber MAY request that the account be upgraded to AAL 2 (but still at IAL 1). Once this has been done, it SHALL no longer be possible for the subscriber to use single-factor authentication.
 
-If the subscriber has only one of the two authentication factors, they SHALL repeat the identity proofing process, using the remaining authentication and SHOULD verify knowledge of some information collected during the proofing process to bind to the existing identity. In order to reestablish authentication factors at IAL 3, they SHALL verify the biometric collected during the proofing process.
-
-***Consider what proofing information the CSP is allowed to maintain. Privacy impact here?***
-
+If the subscriber loses one of the two authentication factors and has been identity proofed at IAL 2 or 3, they SHALL repeat the identity proofing process, using the remaining authenticator and SHOULD verify knowledge of some information collected during the proofing process to bind to the existing identity. Reestablishment of authentication factors at IAL 3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
 
 #### 6.1.3. Binding Identity to a Subscriber Provided Authenticator
+
 In some instances, a claimant may already possess authenticators at a suitable AAL without having been proofed at the equivalent IAL. For example, a user may have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
-
-{::comment}
-
-**I think we are making this too hard.  And not sure this is correct if we even want this as increasing IAL should still require address confirmation.  I'm thinking we require address confirmation and then let the binding of an existing authenticator to occur, so the OR below turns into an AND.**
-
-{:/comment}
 
 The following requirements apply when a claimant choses to increase IAL in order to bind to a suitable authenticator they already have.
 
-1. The CSP MAY accept an existing authenticator at or above the desired IAL
-2. The CSP SHALL require the user to authenticate using their existing authenticator
+1. The CSP MAY accept existing one or more existing authenticators
+2. The CSP SHALL require the user to authenticate using their existing authenticator(s) at an AAL compatible with the desired IAL (as defined in [SP 800-63-3](sp800-63-3.html), Acceptable IAL and AAL Combinations table)
 3. The CSP SHALL execute all required identity proofing processes for the desired IAL
-4. If the user successfully completes identity proofing, the CSP MAY issue an enrollment code (temporary secret) that confirms address of record as per [800-63-A, Section 5.3.1, Address Confirmation Requirements](sp800-63a.html#address_confirmation), **OR** MAY request the claimant to register their own authenticator by proving proof of possession (for example, activating a private key by physically touching the token)
 
 #### 6.1.4. Renewal
 
