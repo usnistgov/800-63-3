@@ -40,7 +40,7 @@ A communication channel that uses approved encryption where the initiator of the
 The process of establishing confidence in the identity of users or information systems. Authentication of users (subscribers) implies confirmation of the subscriber's presence and intent to authenticate.
 
 #### Authentication Protocol
-A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of a valid authenticator to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
+A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
 
 #### Authentication Protocol Run
 An exchange of messages between a claimant and a verifier that results in authentication (or authentication failure) between the two parties.

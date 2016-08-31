@@ -36,6 +36,9 @@ A complete statement asserting a property of a subscriber, independent of format
 #### Authentication
 The process of establishing confidence in the identity of users or information systems.
 
+#### Authentication Protocol
+A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
+
 #### Authenticator
 Something that a claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous versions of this guideline, this was referred to as a *token*.
 
