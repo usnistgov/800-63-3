@@ -2,11 +2,11 @@
 
 ## 6. Authenticator Lifecycle Management
 
-During the lifecycle of an authenticator bound to a subscriber's identity, a number of events may occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions that SHALL be taken in response to those events.
+During the lifecycle of an authenticator bound to a subscriber's identity, a number of events can occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions that SHALL be taken in response to those events.
 
 ### <a name="binding"></a>6.1. Authenticator binding
 
-Authenticators may be issued (provided) by a CSP as part of a process such as enrollment; in other cases, the subscriber may provide their own, such as software or hardware cryptographic modules. For this reason, this guideline refers to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
+Authenticators MAY be issued (provided) by a CSP as part of a process such as enrollment; in other cases, the subscriber MAY provide their own, such as software or hardware cryptographic modules. For this reason, this guideline refers to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. It SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
 
@@ -24,7 +24,7 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 1. For remote transactions:
 	2. The applicant SHALL identify himself/herself in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the Applicant’s phone number, email address, or postal address of record.
-	3. Permanent secrets shall only be issued to the Applicant within a protected session.
+	3. Permanent secrets SHALL only be issued to the Applicant within a protected session.
 2. For physical transactions:
 	3. The applicant SHALL identify himself/herself in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.
 	4. Temporary secrets SHALL not be reused.
@@ -35,13 +35,13 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 Following enrollment, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. In order to do so, the CSP SHALL require the subscriber to first authenticate at the AAL of the authenticator to be added. When an authenticator is added, the CSP SHOULD send a notification to the subscriber.
 
-If the account has only one authentication factor bound to it (which is possible only at IAL 1/AAL 1), an additional authenticator may be added, and if it is a different factor (e.g., *something you have* added when authenticated with *something you know*), the subscriber MAY request that the account be upgraded to AAL 2 (but still at IAL 1). Once this has been done, it SHALL no longer be possible for the subscriber to use single-factor authentication.
+If the account has only one authentication factor bound to it (which is possible only at IAL 1/AAL 1), an additional authenticator MAY be added, and if it is a different factor (e.g., *something you have* added when authenticated with *something you know*), the subscriber MAY request that the account be upgraded to AAL 2 (but still at IAL 1). Once this has been done, it SHALL no longer be possible for the subscriber to use single-factor authentication.
 
 If the subscriber loses one of the two authentication factors and has been identity proofed at IAL 2 or 3, they SHALL repeat the identity proofing process, using the remaining authenticator and SHOULD verify knowledge of some information collected during the proofing process to bind to the existing identity. Reestablishment of authentication factors at IAL 3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
 
 #### 6.1.3. Binding Identity to a Subscriber Provided Authenticator
 
-In some instances, a claimant may already possess authenticators at a suitable AAL without having been proofed at the equivalent IAL. For example, a user may have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
+In some instances, a claimant MAY already possess authenticators at a suitable AAL without having been proofed at the equivalent IAL. For example, a user MAY have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
 
 The following requirements apply when a claimant choses to increase IAL in order to bind to a suitable authenticator they already have.
 
