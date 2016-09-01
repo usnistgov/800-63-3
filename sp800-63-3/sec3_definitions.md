@@ -37,7 +37,7 @@ A claim of a named quality or characteristic inherent in or ascribed to someone 
 The process of establishing confidence in the identity of users or information systems.
 
 #### Authentication Protocol
-A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of a valid authenticator to establish his/her identity, and optionally, demonstrates to the claimant that he or she is communicating with the intended verifier.
+A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity, and optionally, demonstrates to the claimant that he or she is communicating with the intended verifier.
 
 #### Authentication Secret
 A generic term for any secret value that could be used by an attacker to impersonate the subscriber in an authentication protocol.

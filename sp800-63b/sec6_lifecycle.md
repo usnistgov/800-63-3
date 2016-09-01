@@ -2,11 +2,11 @@
 
 ## 6. Authenticator Lifecycle Management
 
-During the lifecycle of an authenticator bound to a subscriber's identity, a number of events may occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions that SHALL be taken in response to those events.
+During the lifecycle of an authenticator bound to a subscriber's identity, a number of events can occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions that SHALL be taken in response to those events.
 
 ### <a name="binding"></a>6.1. Authenticator binding
 
-Authenticators may be provided by a CSP as part of a process such as enrollment; in other cases, the subscriber may provide their own, such as software or hardware cryptographic modules. For this reason, we refer to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
+Authenticators MAY be issued (provided) by a CSP as part of a process such as enrollment; in other cases, the subscriber MAY provide their own, such as software or hardware cryptographic modules. For this reason, this guideline refers to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. It SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
 
@@ -24,7 +24,7 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 1. For remote transactions:
 	2. The applicant SHALL identify himself/herself in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the Applicant’s phone number, email address, or postal address of record.
-	3. Permanent secrets shall only be issued to the Applicant within a protected session.
+	3. Permanent secrets SHALL only be issued to the Applicant within a protected session.
 2. For physical transactions:
 	3. The applicant SHALL identify himself/herself in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.
 	4. Temporary secrets SHALL not be reused.
@@ -33,30 +33,21 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 #### 6.1.2. Post-Enrollment Binding
 
-Following enrollment, binding an additional authenticator to an account requires the use of an existing authenticator of the same type (or types). For example, binding a new single-factor OTP device requires the subscriber to authenticate with another *something you have* authentication factor. If the account has only one authentication factor bound to it (which is possible only at IAL 1/AAL 1), an additional authenticator of the same factor may be bound to it.
+Following enrollment, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. In order to do so, the CSP SHALL require the subscriber to first authenticate at the AAL of the authenticator to be added. When an authenticator is added, the CSP SHOULD send a notification to the subscriber.
 
-Binding an additional authenticator SHALL require the use of two different authentication factors, except as provided below.
+If the account has only one authentication factor bound to it (which is possible only at IAL 1/AAL 1), an additional authenticator MAY be added, and if it is a different factor (e.g., *something you have* added when authenticated with *something you know*), the subscriber MAY request that the account be upgraded to AAL 2 (but still at IAL 1). Once this has been done, it SHALL no longer be possible for the subscriber to use single-factor authentication.
 
-If the subscriber has only one of the two authentication factors, they SHALL repeat the identity proofing process, using the remaining authentication and SHOULD verify knowledge of some information collected during the proofing process to bind to the existing identity. In order to reestablish authentication factors at IAL 3, they SHALL verify the biometric collected during the proofing process.
-
-***Consider what proofing information the CSP is allowed to maintain. Privacy impact here?***
-
+If the subscriber loses one of the two authentication factors and has been identity proofed at IAL 2 or 3, they SHALL repeat the identity proofing process, using the remaining authenticator and SHOULD verify knowledge of some information collected during the proofing process to bind to the existing identity. Reestablishment of authentication factors at IAL 3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
 
 #### 6.1.3. Binding Identity to a Subscriber Provided Authenticator
-In some instances, a claimant may already possess authenticators at a suitable AAL without having been proofed at the equivalent IAL. For example, a user may have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
 
-{::comment}
-
-**I think we are making this too hard.  And not sure this is correct if we even want this as increasing IAL should still require address confirmation.  I'm thinking we require address confirmation and then let the binding of an existing authenticator to occur, so the OR below turns into an AND.**
-
-{:/comment}
+In some instances, a claimant MAY already possess authenticators at a suitable AAL without having been proofed at the equivalent IAL. For example, a user MAY have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
 
 The following requirements apply when a claimant choses to increase IAL in order to bind to a suitable authenticator they already have.
 
-1. The CSP MAY accept an existing authenticator at or above the desired IAL
-2. The CSP SHALL require the user to authenticate using their existing authenticator
+1. The CSP MAY accept existing one or more existing authenticators
+2. The CSP SHALL require the user to authenticate using their existing authenticator(s) at an AAL compatible with the desired IAL (as defined in [SP 800-63-3](sp800-63-3.html), Acceptable IAL and AAL Combinations table)
 3. The CSP SHALL execute all required identity proofing processes for the desired IAL
-4. If the user successfully completes identity proofing, the CSP MAY issue an enrollment code (temporary secret) that confirms address of record as per [800-63-A, Section 5.3.1, Address Confirmation Requirements](sp800-63a.html#address_confirmation), **OR** MAY request the claimant to register their own authenticator by proving proof of possession (for example, activating a private key by physically touching the token)
 
 #### 6.1.4. Renewal
 
@@ -70,9 +61,9 @@ To facilitate secure reporting of loss or theft of an authenticator, the CSP SHO
 
 ### 6.3. Expiration
 
-CSP's SHOULD issue authenticators that expire. When an authenticator expires, it SHALL NOT be usable for authentication. When an authentication is attempted, the CSP SHOULD give an indication to the subscriber that the authentication failure is due to expiration rather than some other cause.
+CSP's MAY issue authenticators that expire. If and when an authenticator expires, it SHALL NOT be usable for authentication. When an authentication is attempted using an expired authenticator, the CSP SHOULD give an indication to the subscriber that the authentication failure is due to expiration rather than some other cause.
 
-The CSP SHALL require subscribers to surrender any physical authenticator containing trustable attributes as soon as practical after expiration or after receipt of a renewed authenticator.
+The CSP SHALL require subscribers to surrender any physical authenticator containing trustable attributes as soon as practical after expiration, revocation, or receipt of a renewed authenticator.
 
 ### 6.4. Revocation
 
