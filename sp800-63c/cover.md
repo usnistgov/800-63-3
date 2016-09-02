@@ -7,9 +7,10 @@
 ### Federation and Assertions
 
 Paul A. Grassi  
-James L. Fenton  
 Justin P. Richer  
-Sarah K. Squire
+Sarah K. Squire  
+James L. Fenton  
+
 
 {::comment}
 
@@ -31,17 +32,19 @@ Paul A. Grassi
 *Applied Cybersecurity Division  
 Information Technology Laboratory*
 
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*
-
 Justin P. Richer  
 *Bespoke Engineering  
 Billerica, MA*
 
 Sarah K. Squire  
 *Engage Identity  
-Seattle, WA*
+Seattle, WA*  
+
+James L. Fenton  
+*Altmode Networks  
+Los Altos, CA*
+
+
 
 {::comment}
 

@@ -6,13 +6,18 @@
 
 ### Authentication and Lifecycle Management
 
-Paul A. Grassi  
-Elaine M. Newton  
-Ray A. Perlner  
-Andrew R. Regenscheid  
-William E. Burr  
-James L. Fenton  
-Justin P. Richer
+Paul A. Grassi    
+James L. Fenton    
+Elaine M. Newton    
+Ray A. Perlner    
+Andrew R. Regenscheid    
+William E. Burr    
+Justin P. Richer  
+Naomi B. Lefkovitz  
+Jamie M. Danker  
+Yee-Yin Choong      
+Kristen K. Greene      
+Mary F. Theofanos   
 
 {::comment}
 
@@ -32,15 +37,19 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 Paul A. Grassi  
 *Applied Cybersecurity Division  
-Information Technology Laboratory*
+Information Technology Laboratory*  
+
+James L. Fenton  
+*Altmode Networks  
+Los Altos, CA*  
 
 Elaine M. Newton  
 *Office of the Director  
-Information Technology Laboratory*
+Information Technology Laboratory*  
 
 Ray A. Perlner  
 *Computer Security Division  
-Information Technology Laboratory*
+Information Technology Laboratory*  
 
 Andrew R. Regenscheid  
 *Computer Security Division  
@@ -50,13 +59,23 @@ William E. Burr
 *Dakota Consulting, Inc.  
 Silver Spring, MD*
 
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*
-
 Justin P. Richer  
 *Bespoke Engineering  
-Billerica, MA*
+Billerica, MA*  
+
+Naomi B. Lefkovitz
+Applied Cybersecurity Division
+Information Technology Laboratory  
+
+Jamie M. Danker
+National Protection and Programs Directorate
+Department of Homeland Security  
+
+Yee-Yin Choong      
+Kristen K. Greene      
+Mary F. Theofanos   
+*Information Access Division  
+Information Technology Laboratory*
 
 {::comment}
 
