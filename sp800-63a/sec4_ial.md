@@ -52,7 +52,7 @@ However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IAL's that are a
 
 <div class="text-center" markdown="1">
 
-**Table 4-2.  Preferred M-04-04 IAL Requirements**
+**Table 4-2.  Recommended M-04-04 IAL Requirements**
 
 </div> 
 
