@@ -10,8 +10,6 @@ The threats to the enrollment process include impersonation attacks and threats 
 
 <div class="text-center" markdown="1">
 
-![](sp800-63a/media/ProofingProcess.png)
-
 **Table 7-1.  Enrollment and Identity Proofing Threats**
 
 </div>
@@ -36,8 +34,6 @@ to the enrollment and issuance processes.
 <a name="63aSec7-Table2"></a>
 
 <div class="text-center" markdown="1">
-
-![](sp800-63a/media/ProofingProcess.png)
 
 **Table 7-2.  Enrollment and Issuance Threat Mitigation Strategies**
 

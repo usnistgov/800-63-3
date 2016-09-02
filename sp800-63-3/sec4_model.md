@@ -20,7 +20,7 @@ The strength of the authentication process is described by a categorization call
 
 As part of authentication, mechanisms such as device identity or geo-location may be used to identify or prevent possible authentication false positives. While these mechanisms do not directly increase the authenticator assurance level, they can enforce security policies and mitigate risks. In many cases, the authentication process and services will be shared by many applications and agencies. However, it is the individual agency or application acting as the RP that shall make the decision to grant access or process a transaction based on the specific application requirements.
 
-The various entities and interactions that comprise the digital authentication model used here are illustrated below in [Figure 1](#63Sec4-Figure1). The left shows the enrollment, credential issuance, lifecycle management activities, and the various states an individual transitions to based on the phase of identity proofing and authentication they are in. The usual sequence of interactions is as follows:
+The various entities and interactions that comprise the digital authentication model used here are illustrated below in [Figure 4-1](#63Sec4-Figure1). The left shows the enrollment, credential issuance, lifecycle management activities, and the various states an individual transitions to based on the phase of identity proofing and authentication they are in. The usual sequence of interactions is as follows:
 
 1.	An individual (applicant) applies to a CSP through an enrollment process.
 2.	The CSP identity proofs that applicant. Upon successful proofing, the applicant becomes a subscriber.
@@ -29,7 +29,7 @@ The various entities and interactions that comprise the digital authentication m
 
 Other sequences are less common, but could also achieve the same functional requirements.
 
-The right side of [Figure 1](#63Sec4-Figure1) shows the entities and the interactions related to using a authenticator to perform digital authentication. When the subscriber needs to authenticate to perform a transaction, he or she becomes a claimant to a verifier. The interactions are as follows:
+The right side of [Figure 4-1](#63Sec4-Figure1) shows the entities and the interactions related to using a authenticator to perform digital authentication. When the subscriber needs to authenticate to perform a transaction, he or she becomes a claimant to a verifier. The interactions are as follows:
 
 1.	The claimant proves to the verifier that he or she possesses and controls the authenticator through an authentication protocol.
 2.	The verifier interacts with the CSP to validate the credential that binds the subscriber’s identity to his or her authenticator and to optionally obtain claimant attributes.
@@ -38,7 +38,7 @@ The right side of [Figure 1](#63Sec4-Figure1) shows the entities and the interac
 
 In all cases, the RP should request the attributes it requires from a CSP prior to authentication of the claimant.  In addition, the claimant should be requested to consent to the release of those attribute prior to generation and release of an assertion.
 
-In some cases, the verifier does not need to communicate in real time with the CSP to complete the authentication activity (e.g., some uses of digital certificates). Therefore, the dashed line between the verifier and the CSP represents a logical link between the two entities rather than a physical link. In some implementations, the verifier, RP and the CSP functions may be distributed and separated as shown in [Figure 1](#63Sec4-Figure1); however, if these functions reside on the same platform, the interactions between the components are local messages between applications running on the same system rather than protocols over shared untrusted networks.
+In some cases, the verifier does not need to communicate in real time with the CSP to complete the authentication activity (e.g., some uses of digital certificates). Therefore, the dashed line between the verifier and the CSP represents a logical link between the two entities rather than a physical link. In some implementations, the verifier, RP and the CSP functions may be distributed and separated as shown in [Figure 4-1](#63Sec4-Figure1); however, if these functions reside on the same platform, the interactions between the components are local messages between applications running on the same system rather than protocols over shared untrusted networks.
 
 As noted above, CSPs maintain status information about credentials they issue. CSPs will generally assign a finite lifetime when issuing credentials to limit the maintenance period. When the status changes, or when the credentials near expiration, credentials may be renewed or re-issued; or, the credential may be revoked and/or destroyed. Typically, the subscriber authenticates to the CSP using his or her existing, unexpired authenticator and credential in order to request issuance of a new authenticator and credential. If the subscriber fails to request authenticator and credential re-issuance prior to their expiration or revocation, he or she may be required to repeat the enrollment process to obtain a new authenticator and credential. Alternatively, the CSP may choose to accept a request during a grace period after expiration.
 
@@ -138,7 +138,7 @@ An RP relies on results of an authentication protocol to establish confidence in
 
 ### 4.5. Assurance Levels
 
-The M-04-04 Level of Assurance (LOA) is determined by combining the discrete assurance level for each of the components of the architecture. [Table 1](#63Sec4-Table1) shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
+The M-04-04 Level of Assurance (LOA) is determined by combining the discrete assurance level for each of the components of the architecture. [Table 4-1](#63Sec4-Table1) shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
 
 <a name="63Sec4-Table1"></a>
 
