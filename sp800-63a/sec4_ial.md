@@ -2,7 +2,7 @@
 
 # <a name="ial-section"></a> 4. Identity Assurance Level Requirements
 
-The paradigm of this document is that individuals (referred to as applicants at this stage) undergo an identity proofing and enrollment process, in which their identity evidence and attributes are collected, uniquely resolved to a single identity record, then validated and verified. These attributes are then bound to an authenticator (described in [SP 800-63B](#800-63b).
+The paradigm of this document is that individuals (referred to as applicants at this stage) undergo an identity proofing and enrollment process, in which their identity evidence and attributes are collected, uniquely resolved to a single identity record, then validated and verified. These attributes are then bound to an authenticator (described in [SP 800-63B](#800-63b)).
 
 The only outcome of identity proofing is to ensure that the applicant is who he/she claims to be. This includes presentation, validation and verification of the minimum attributes necessary to accomplish identity proofing.  Such core attributes, to the extent they are the minimum necessary, could include:  
 
@@ -14,21 +14,30 @@ It is possible that additional information could be collected in the process of 
 
 ## 4.1. Process Flow
 
-The following diagram outlines the basic flow for Identity Proofing and Enrollment, to include the corresponding sections with normative requirements.
+[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for Identity Proofing and Enrollment, to include the corresponding sections with normative requirements.
 
-<a name="figure1"></a>
+<a name="63aSec4-Figure1"></a>
 
 <div class="text-center" markdown="1">
 
 ![](sp800-63a/media/ProofingProcess.png)
 
-**Figure 1.  The Identity Proofing Process**
+**Figure 4-1.  The Identity Proofing Process**
 
 </div>
 
 ## 4.2. General Requirements
 
-The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Identity Assurance Levels. 
+[Table 4-1](#63aSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Identity Assurance Levels. 
+
+
+<a name="63aSec4-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-1.  Legacy M-04-04 IAL Requirements**
+
+</div>
 
 | M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)|
 |:------------------:|:-----------------------------:|
@@ -37,7 +46,15 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 | 2 |
 | 4 | 3 |
 
-However, the table below shows the expanded set of IAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA. Agencies SHOULD consider the privacy risks of stronger identity proofing and SHOULD NOT select an IAL that is higher than necessary considering the sensitivity of the business purpose.  
+However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA. Agencies SHOULD consider the privacy risks of stronger identity proofing and SHOULD NOT select an IAL that is higher than necessary considering the sensitivity of the business purpose. 
+
+<a name="63aSec4-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-2.  Preferred M-04-04 IAL Requirements**
+
+</div> 
 
 | M-04-04 Level of Assurance | Identity Assurance Level
 |:------------------:|:-----------------------------:
@@ -214,7 +231,15 @@ An enrollment code SHALL be comprised of one of the following:
 ## 4.8. Summary of Requirements
 *(Non-normative; refer to preceding sections for normative requirements)*
 
-The following table summarizes the requirements for each of the authenticator assurance levels:
+[Table 4-3](#63aSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
+
+<a name="63aSec4-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-3.  IAL Requirements Summary**
+
+</div> 
 
 Requirement | IAL 1 | IAL 2 | IAL 3
 ------------|-------|-------|-------

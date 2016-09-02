@@ -20,7 +20,15 @@ This section provides requirements on the properties and qualities of identity e
 
 #### 5.3.1.1. Scoring of Identity Evidence
 
-The following table lists qualities, ranging from weak to superior, of identity evidence that is collected to establish a valid identity. Unless otherwise noted, to achieve a given strength the evidence SHALL, at a minimum, meet all the properties listed.
+[Table 5-1](#63aSec5-Table1) lists qualities, ranging from weak to superior, of identity evidence that is collected to establish a valid identity. Unless otherwise noted, to achieve a given strength the evidence SHALL, at a minimum, meet all the properties listed.
+
+<a name="63aSec5-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 5-1.  Properties of Identity Evidence**
+
+</div> 
 
 
 |Strength|Properties of Identity Evidence|
@@ -42,8 +50,15 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 #### 5.3.2.1. Methods to Perform Identity Evidence Validation
 
-The following table lists qualities, ranging from unacceptable to superior, of identity validation that is performed to validate evidence and the information contained therein. 
+[Table 5-2](#63aSec5-Table2) lists qualities, ranging from unacceptable to superior, of identity validation that is performed to validate evidence and the information contained therein. 
 
+<a name="63aSec5-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 5-2.  Validating Identity Evidence**
+
+</div> 
 
 |Strength|Method(s)|
 |:---:|:------------------------------| 
@@ -59,7 +74,15 @@ The goal of identity validation is to establish a linkage to the physical, live 
 
 ### 5.4.1. Identity Verification Methods
 
-The following table details the verification methods necessary to achieve a given identity verification strength.  
+[Table 5-3](#63aSec5-Table3) details the verification methods necessary to achieve a given identity verification strength.  
+
+<a name="63aSec5-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 5-3.  Verifying Identity Evidence**
+
+</div> 
 
 |Strength|Identity Verification Methods|
 |:---:|:------------------------------| 
