@@ -33,21 +33,29 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 #### 6.1.2. Post-Enrollment Binding
 
-Following enrollment, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. In order to do so, the CSP SHALL require the subscriber to first authenticate at the AAL of the authenticator to be added. When an authenticator is added, the CSP SHOULD send a notification to the subscriber.
+##### 6.1.2.1. Binding of additional authenticator at existing AAL
 
-If the account has only one authentication factor bound to it (which is possible only at IAL 1/AAL 1), an additional authenticator MAY be added, and if it is a different factor (e.g., *something you have* added when authenticated with *something you know*), the subscriber MAY request that the account be upgraded to AAL 2 (but still at IAL 1). Once this has been done, it SHALL no longer be possible for the subscriber to use single-factor authentication.
+Subscribers SHOULD be encouraged to maintain at least two valid authenticators of each factor they will be using. For example, a subscriber that usually uses a one-time OTP device as a physical authenticator MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged.
 
-If the subscriber loses one of the two authentication factors and has been identity proofed at IAL 2 or 3, they SHALL repeat the identity proofing process, using the remaining authenticator and SHOULD verify knowledge of some information collected during the proofing process to bind to the existing identity. Reestablishment of authentication factors at IAL 3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
+Accordingly, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. Before adding the new authenticator, the CSP SHALL first require the subscriber to authenticate at the AAL at which the new authenticator will be used. When an authenticator is added, the CSP SHOULD send a notification to the subscriber. The CSP MAY limit the number of authenticators that may be bound in this manner.
 
-#### 6.1.3. Binding Identity to a Subscriber Provided Authenticator
+##### 6.1.2.2. Adding an additional factor to a one-factor account
 
-In some instances, a claimant MAY already possess authenticators at a suitable AAL without having been proofed at the equivalent IAL. For example, a user MAY have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
+If the subscriber's account has only one authentication factor bound to it (at IAL 1/AAL 1), and an additional authenticator of a different authentication factor is to be added, the subscriber MAY request that the account be upgraded to AAL 2 (but still at IAL 1). Once this has been done, the CSP SHALL no longer permit the subscriber to use single-factor authentication.
 
-The following requirements apply when a claimant choses to increase IAL in order to bind to a suitable authenticator they already have.
+Prior to binding the new authenticator, the CSP SHALL first require the subscriber to authenticate at AAL 1. The CSP SHOULD send a notification of the event to the subscriber.
 
-1. The CSP MAY accept existing one or more existing authenticators
-2. The CSP SHALL require the user to authenticate using their existing authenticator(s) at an AAL compatible with the desired IAL (as defined in [SP 800-63-3](sp800-63-3.html), Acceptable IAL and AAL Combinations table)
-3. The CSP SHALL execute all required identity proofing processes for the desired IAL
+##### 6.1.2.3. Replacement of lost authentication factor
+
+As a last resort, if a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL 2 or 3, that subscriber SHALL repeat the identity proofing process. An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [SP 800-63A](sp800-63a.html) section 4.2. The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor (if any) to confirm binding to the existing identity. Reestablishment of authentication factors at IAL 3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
+
+The CSP SHOULD send a notification of the event to the subscriber; this MAY be the same notice as is required as part of the proofing process.
+
+#### 6.1.3. Binding to a subscriber-provided authenticator
+
+A subscriber MAY already possess authenticators suitable for authentication at a particular AAL. For example, he or she MAY have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at a relying party that requires IAL2.
+
+CSPs SHOULD, where practical, accommodate the use of subscriber-provided authenticators in order to relieve the burden to the subscriber of managing a large number of authenticators. Binding of these authenticators SHALL be done as described in section 6.1.2.1.
 
 #### 6.1.4. Renewal
 
