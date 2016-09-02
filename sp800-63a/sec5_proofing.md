@@ -20,7 +20,15 @@ This section provides requirements on the properties and qualities of identity e
 
 #### 5.3.1.1. Scoring of Identity Evidence
 
-The following table lists qualities, ranging from weak to superior, of identity evidence that is collected to establish a valid identity. Unless otherwise noted, to achieve a given strength the evidence SHALL, at a minimum, meet all the properties listed.
+[Table 5-1](#63aSec5-Table1) lists qualities, ranging from weak to superior, of identity evidence that is collected to establish a valid identity. Unless otherwise noted, to achieve a given strength the evidence SHALL, at a minimum, meet all the properties listed.
+
+<a name="63aSec5-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 5-1.  Properties of Identity Evidence**
+
+</div> 
 
 
 |Strength|Properties of Identity Evidence|
@@ -42,12 +50,19 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 #### 5.3.2.1. Methods to Perform Identity Evidence Validation
 
-The following table lists qualities, ranging from unacceptable to superior, of identity validation that is performed to validate evidence and the information contained therein. 
+[Table 5-2](#63aSec5-Table2) lists qualities, ranging from unacceptable to superior, of identity validation that is performed to validate evidence and the information contained therein. 
 
+<a name="63aSec5-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 5-2.  Validating Identity Evidence**
+
+</div> 
 
 |Strength|Method(s)|
 |:---:|:------------------------------| 
-|Unacceptable|Validation of the evidence failed.|
+|Unacceptable|Evidence validation was not performed, or validation of the evidence failed.|
 |Weak|All personal details from the evidence have been confirmed as valid by comparison with information held or published by an authoritative source.|
 |Adequate|- All personal and evidence details have been confirmed as valid by comparison with information held/published by the issuing source.<br>**OR**<br> - The evidence has been confirmed as genuine using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification.<br> **OR** <br>- The evidence has been confirmed as genuine by trained personnel. <br> **OR** <br>- The issued evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.|
 |Strong|- The evidence has been confirmed as genuine using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification. **OR** The evidence has been confirmed as genuine by trained personnel and appropriate equipment, confirming the integrity of the physical security features  and lack of fraudulent modification **OR** The evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.<br>**AND**<br> - All personal details and evidence details have been confirmed as valid by comparison with information held/published by the issuing source **OR** evidence details have been confirmed as valid by comparison with information held/published by the issuing source.|
@@ -59,11 +74,19 @@ The goal of identity validation is to establish a linkage to the physical, live 
 
 ### 5.4.1. Identity Verification Methods
 
-The following table details the verification methods necessary to achieve a given identity verification strength.  
+[Table 5-3](#63aSec5-Table3) details the verification methods necessary to achieve a given identity verification strength.  
+
+<a name="63aSec5-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 5-3.  Verifying Identity Evidence**
+
+</div> 
 
 |Strength|Identity Verification Methods|
 |:---:|:------------------------------| 
-|Unacceptable|Unable to confirm that the applicant is the owner of the claimed identity.|
+|Unacceptable|Evidence verification was not performed, or verification of the evidence failed. Unable to confirm that the applicant is the owner of the claimed identity.|
 |Weak|The applicant has been confirmed as having access to the evidence provided to support the claimed identity.|
 |Adequate|- The applicant’s ownership of the claimed identity has been confirmed by KBV.  See [Section 5.3.2](#kbv)  for more details.<br>**OR**<br>- The applicant’s ownership of the claimed identity has been confirmed by a physical **OR** biometric comparison of the applicant to the strongest piece of evidence provided. Physical comparison performed remotely requires liveness detection as specified in [Section 5.2.3](#biometric_use) of [SP 800-63B](#800-63b). Biometric comparison performed remotely all appropriate requirements as specified in [Section 5.2.3](#biometric_use) of [SP 800-63B](#800-63b) to be met. |
 |Strong|- The applicant’s ownership of the claimed identity has been confirmed by physical comparison, using appropriate equipment, to a photograph/image. Physical comparison performed remotely requires liveness detection as specified in [Section 5.2.3](#biometric_use) of [SP 800-63B](#800-63b). <br>**OR**<br>- Biometric comparison, using appropriate equipment, of the applicant to the strongest piece of evidence provided to support the claimed identity. Biometric comparison performed remotely all appropriate requirements as specified in [Section 5.2.3](#biometric_use) of [SP 800-63B](#800-63b) to be met.|

@@ -186,8 +186,15 @@ The business model, marketplace, and the composition of the way identity service
 
 ### 2.2. Relationship to Other Standards and Guidelines
 
-This document has been written to satisfy the needs of federal agencies. However, with the expansion of citizen services throughout the world that require identity and authentication assurance, as well as an increasing number of use cases that promote international identity federation and interoperability, it is intended to achieve alignment to national and international standards that describe levels of identity assurance. This is not meant to imply that there is direct correlation between the IALs and AALs in this document and the levels in those standards, but that it is seen that this document fulfils the criteria as demonstrated in those standards.
+This document has been written to satisfy the needs of federal agencies. However, with the expansion of citizen services throughout the world that require identity and authentication assurance, as well as an increasing number of use cases that promote international identity federation and interoperability, this guideline is intended to achieve alignment to national and international standards that describe levels of identity assurance. [Table 2-1](#63Sec2-Table1) provides a representative snapshot of mappings to various international and national assurance documents. This is not meant to imply that there is direct correlation between the IALs and AALs in this document and the levels in those standards, but that it is seen that this document fulfils the criteria as demonstrated in those standards.
 
+<a name="63Sec2-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 2-1.  800-63 Mapping to Other Standards and Guidelines**
+
+</div>
 
 SP 800-63|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|STORK 2.0|29115:2011|ISO 29003|Government of Canada
 :---------:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:

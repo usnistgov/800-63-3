@@ -2,7 +2,7 @@
 
 # <a name="ial-section"></a> 4. Identity Assurance Level Requirements
 
-The paradigm of this document is that individuals (referred to as applicants at this stage) undergo an identity proofing and enrollment process, in which their identity evidence and attributes are collected, uniquely resolved to a single identity record, then validated and verified. These attributes are then bound to an authenticator (described in [SP 800-63B](#800-63b).
+The paradigm of this document is that individuals (referred to as applicants at this stage) undergo an identity proofing and enrollment process, in which their identity evidence and attributes are collected, uniquely resolved to a single identity record, then validated and verified. These attributes are then bound to an authenticator (described in [SP 800-63B](#800-63b)).
 
 The only outcome of identity proofing is to ensure that the applicant is who he/she claims to be. This includes presentation, validation and verification of the minimum attributes necessary to accomplish identity proofing.  Such core attributes, to the extent they are the minimum necessary, could include:  
 
@@ -14,21 +14,30 @@ It is possible that additional information could be collected in the process of 
 
 ## 4.1. Process Flow
 
-The following diagram outlines the basic flow for Identity Proofing and Enrollment, to include the corresponding sections with normative requirements.
+[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for Identity Proofing and Enrollment, to include the corresponding sections with normative requirements.
 
-<a name="figure1"></a>
+<a name="63aSec4-Figure1"></a>
 
 <div class="text-center" markdown="1">
 
 ![](sp800-63a/media/ProofingProcess.png)
 
-**Figure 1.  The Identity Proofing Process**
+**Figure 4-1.  The Identity Proofing Process**
 
 </div>
 
 ## 4.2. General Requirements
 
-The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Identity Assurance Levels. 
+[Table 4-1](#63aSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Identity Assurance Levels. 
+
+
+<a name="63aSec4-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-1.  Legacy M-04-04 IAL Requirements**
+
+</div>
 
 | M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)|
 |:------------------:|:-----------------------------:|
@@ -37,7 +46,15 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 | 2 |
 | 4 | 3 |
 
-However, the table below shows the expanded set of IAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA. Agencies SHOULD consider the privacy risks of stronger identity proofing and SHOULD NOT select an IAL that is higher than necessary considering the sensitivity of the business purpose.  
+However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA. Agencies SHOULD consider the privacy risks of stronger identity proofing and SHOULD NOT select an IAL that is higher than necessary considering the sensitivity of the business purpose. 
+
+<a name="63aSec4-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-2.  Recommended M-04-04 IAL Requirements**
+
+</div> 
 
 | M-04-04 Level of Assurance | Identity Assurance Level
 |:------------------:|:-----------------------------:
@@ -132,7 +149,7 @@ The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote i
 	- The CSP SHOULD send the enrollment code to the physical mailing address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
 	- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
 	- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  
-	- A notification of proofing SHALL be sent to different address of record than the destination of the enrollment code. The address of record MAY include the postal address obtained from validated identity evidence.  For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the postal address in records or obtained from validated evidence, like a drivers license.
+	- If delivery of the enrollment code was sent to an address of record that is not physical mail, the CSP SHALL send notification of proofing to a different address of record than the destination of the enrollment code. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the postal address in records or obtained from validated and verified evidence, like a drivers license.
 
 #### 4.5.1.7. Biometric Collection
 
@@ -214,7 +231,15 @@ An enrollment code SHALL be comprised of one of the following:
 ## 4.8. Summary of Requirements
 *(Non-normative; refer to preceding sections for normative requirements)*
 
-The following table summarizes the requirements for each of the authenticator assurance levels:
+[Table 4-3](#63aSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
+
+<a name="63aSec4-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-3.  IAL Requirements Summary**
+
+</div> 
 
 Requirement | IAL 1 | IAL 2 | IAL 3
 ------------|-------|-------|-------

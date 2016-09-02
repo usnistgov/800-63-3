@@ -225,8 +225,15 @@ A summary of each of the identity, authenticator, and federation assurance level
 ### M-04-04 Levels of Assurance Requirements
 
 
-The following table shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
+[Table 1](#63ES-Table1) shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
 
+<a name="63ES-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 1.  Legacy M-04-04 Requirements**
+
+</div>
 
 | M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
@@ -235,8 +242,15 @@ The following table shows strict adherence to M-04-04 Level of Assurance, mappin
 | 3 | 2 | 2 or 3 |2
 | 4 | 3 | 3 |4
 
-However, the table below shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
+However, [Table 2](#63ES-Table2) shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
 
+<a name="63ES-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 2.  Recommended M-04-04 Requirements**
+
+</div>
 
 | M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
@@ -255,7 +269,15 @@ In the case of federal employees, bound by HSPD-12 and required to obtain a Pers
  
 ### Acceptable IAL and AAL Combinations
 
-The following table details valid combinations of IAL and AAL that may be established during the enrollment process:
+[Table 3](#63ES-Table3) details valid combinations of IAL and AAL that may be established during the enrollment process:
+
+<a name="63ES-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 3.  Acceptable combinations of IAL and AAL**
+
+</div>
 
 | | IAL 1 | IAL 2 | IAL 3 |
 |:-:|:-:|:-:|:-:|
