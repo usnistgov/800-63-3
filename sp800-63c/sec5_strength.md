@@ -10,7 +10,7 @@ The core set of claims inside an assertion SHOULD include (but is not limited to
  - Subject: an identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP)
  - Audience: an identifier for the party intended to consume the assertion (the RP)
  - Issuance: a timestamp indicating when the assertion was issued by the IdP
- - Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP
+ - Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is not the expiration of the session at the RP)
  - Authentication Time: a timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event
  - Identifier: a random value uniquely identifying this assertion, used to prevent attackers from manufacturing malicious assertions which would pass other validity checks
 
@@ -18,7 +18,7 @@ These core claims, particularly the issuance and expiration claims, apply to the
 
 Assertions MAY include other additional identity attributes. See sec. 6 for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in a separate transaction using an authorization credential issued along side the assertion. 
 
-Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single log-in event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) at the RP comes into play and the assertion is no longer used directly. 
+Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single log-in event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) at the RP comes into play and the assertion is no longer used directly. The expiration of the assertion SHALL NOT represent the expiration of the session at the RP.
 
 ### 5.1. Assertion possession category
 
