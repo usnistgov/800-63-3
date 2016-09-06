@@ -4,9 +4,9 @@
 
 This section defines allowable Federation Assurance Levels, or FAL. The FAL describes aspects of the assertion and federation protocol used in a given transaction. These levels can be requested by an RP or required by configuration of both RP and IdP for a given transaction. 
 
-The FAL combines aspects of [assertion protection strength](#sec5) and [assertion presentation](#sec6) into a single, increasing scale applicable across different [federation models](#sec4). While many other combinations of factors are possible, this list is intended to provide clear implementation guidelines representing increasingly secure deployment choices. Each successive level subsumes and fulfills all requirements of lower levels. This table presents different requirements depending on whether the assertion is presented through either the front channel or the back channel (via an assertion reference). 
+The FAL combines aspects of [assertion protection strength](#sec5) and [assertion presentation](#sec6) into a single, increasing scale applicable across different [federation models](#sec4). While many other combinations of factors are possible, this list is intended to provide clear implementation guidelines representing increasingly secure deployment choices. Combinations of aspects not found in the FAL table are possible but outside the scope of this document.
 
-Such definitions not found in the FAL table are possible but outside the scope of this document.
+This table presents different requirements depending on whether the assertion is presented through either the front channel or the back channel (via an assertion reference). Each successive level subsumes and fulfills all requirements of lower levels. Federations presented through a proxy SHALL be represented by the lowest level used during the proxied transaction.
 
 |FAL|Back-channel Presentation Requirement|Front-channel Presentation Requirement|
 |:--:|----|----|
