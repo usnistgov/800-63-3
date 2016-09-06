@@ -2,7 +2,7 @@
 
 ## 6. Assertion Presentation
 
-Assertions MAY be presented in either an *indirect* or *direct* manner from the IdP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in section 4.1.4.
+Assertions MAY be presented in either an *back-channel* or *front-channel* manner from the IdP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in section 4.1.4.
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
 
@@ -18,15 +18,17 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 
 In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves). 
 
-This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, as back-channel communication can occur after the initial authentication transaction. 
+This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, as back-channel communication can occur after the initial authentication transaction, or when the subscriber is no longer available. 
 
-In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced.
+In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced it is more difficult to inject assertions directly into the RP.
 
 The RP SHALL protect itself against injection of manufactured or captured assertion references by use of cross-site scripting protection or other accepted techniques. 
 
 Claims within the assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
 
 Conveyance of the assertion reference from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP as well as the assertion from the IdP to the RP SHALL be made over an authenticated protected channel.
+
+The assertion reference SHOULD require authentication of the client upon presentation at the IdP before an assertion is issued.
 
 ### 6.2. Front-channel Presentation
 
@@ -42,7 +44,7 @@ Since the assertion is under the control of the subscriber, the direct method al
 
 The RP SHALL protect itself against injection of manufactured or captured assertions by use of cross-site scripting protection or other accepted techniques. 
 
-The assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
+Claims within the assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
 
 Conveyance of the assertion from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
 
