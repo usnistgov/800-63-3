@@ -26,11 +26,15 @@ An assertion can be classified based on whether possession of the assertion itse
 
 #### 5.1.1. Holder-of-Key Assertions
 
-A holder-of-key assertion contains a reference to a symmetric key or a public key (corresponding to a private key) possessed by and representing the subscriber. The RP may require the subscriber to prove possession of the key that is referenced in the assertion in parallel with presentation of the assertion itself. 
+A holder-of-key assertion contains a reference to a symmetric key or a public key (corresponding to a private key) possessed by and representing the subscriber. An RP MAY decide when to require the subscriber to prove possession of the key, depending on the policy of the RP. However, the RP SHALL require the subscriber to prove possession of the key that is referenced in the assertion in parallel with presentation of the assertion itself in order for the assertion to be considered holder-of-key. Otherwise, an assertion containing reference to a key which the user has not proved possession of will be considered a bearer assertion (5.1.2).
+
+The key referenced in a holder-of-key represents the subscriber, not the client. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
 
 In proving possession of the subscriber’s secret, the subscriber also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well. 
 
 Note that the reference to the key material in question is asserted by the issuer of the assertion as are any other claims therein, and reference to a given key SHALL be trusted at the same level as all other claims within the assertion itself.
+
+The assertion SHALL NOT include an unencrypted private or symmetric key to be used with holder-of-key presentation.
 
 #### 5.1.2. Bearer Assertions
 
