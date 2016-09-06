@@ -80,4 +80,4 @@ Note that in a distributed federation model, the distributing party that is acti
 
 Pairwise pseudonymous identifiers SHALL be opaque and unguessable, containing no identifying information about the subscriber. Additionally, they SHALL only be known and used by one IdP-RP pair. 
 
-Several RPs MAY be combined into a single logical RP for the purposes of generating a pairwise pseudonymous identifier, provided that the IdP ensure that only intended RPs are in such a group. Otherwise, a rogue RP could learn of the pairwise pseudonymous identifier by posing as part of an RP group of which it is not a part.
+If several RPs have an explicit and tight correlation, such as a shared security domain or legal ownership, those RPs MAY be combined into a single logical RP for the purposes of generating a pairwise pseudonymous identifier. The IdP SHALL ensure that only intended RPs are in such a group, otherwise a rogue RP could learn of the pairwise pseudonymous identifier by posing as part of an RP group of which it is not a member.
