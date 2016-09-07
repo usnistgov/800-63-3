@@ -2,7 +2,7 @@
 
 ## 5. <a name="AAL_SEC5"></a>Authenticator and Verifier Requirements
 
-This section provides the detailed requirements specific for each of the authenticator types. With the exception of validation requirements specified in Section 4, the technical requirements for each of the authenticator types is the same regardless of the AAL at which it is used.
+This section provides the detailed requirements specific for each of the authenticator types. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4), the technical requirements for each of the authenticator types is the same regardless of the AAL at which it is used.
 
 ### 5.1. Requirements by Authenticator Type
 
