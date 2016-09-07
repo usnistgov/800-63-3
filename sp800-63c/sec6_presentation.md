@@ -47,7 +47,7 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 
 In the front-channel method, an assertion is visible to the subscriber, which could potentially cause leakage of system information included in the assertion. 
 
-Since the assertion is under the control of the subscriber, the direct method also allows the assertion to be replayed the subscriber to submit a single assertion to unintended parties, perhaps by a browser replaying an assertion at multiple RPs. Intentional use of this method can lead to lax audience restriction of the assertion itself, which in turn could lead to privacy and security breaches for the subscriber across these RPs. Such multi-RP use is not recommended. Instead, RPs are encouraged to fetch their own individual assertions.
+Since the assertion is under the control of the subscriber, the direct method also allows the subscriber to submit a single assertion to unintended parties, perhaps by a browser replaying an assertion at multiple RPs. Intentional use of this method can lead to lax audience restriction of the assertion itself, which in turn could lead to privacy and security breaches for the subscriber across these RPs. Such multi-RP use is not recommended. Instead, RPs are encouraged to fetch their own individual assertions.
 
 The RP SHALL protect itself against injection of manufactured or captured assertions by use of cross-site scripting protection or other accepted techniques. 
 
