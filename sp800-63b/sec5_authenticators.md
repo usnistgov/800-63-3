@@ -161,6 +161,8 @@ If the authenticator supplies its output via an electronic interface such as USB
 
 Single factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator. As such, the symmetric keys used by authenticators are also present in the verifier, and SHALL be strongly protected against compromise.
 
+When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography.
+
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and phishing attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.
 
 If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
@@ -190,6 +192,8 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 ##### 5.1.5.2. Multi-Factor OTP Verifiers
 
 Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but without the requirement that a second factor be provided. As such, the symmetric keys used by authenticators SHALL be strongly protected against compromise.
+
+When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also obtain an assertion from the authenticator source that the authenticator is a multifactor device. In the absence of a trusted assertion that it is a multifactor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and phishing attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.
 
