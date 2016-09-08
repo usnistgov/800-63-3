@@ -34,7 +34,7 @@ Cookies:
 
 - SHALL be tagged to be accessible on secure (HTTPS) sessions only
 - SHALL be accessible to the minimum practical set of hostnames and paths
-- SHOULD be tagged to be inaccessible via JavaScript (HtmlOnly)
+- SHOULD be tagged to be inaccessible via JavaScript (HttpOnly)
 - SHOULD be tagged to expire at or soon after the validity period of the session (This requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.)
 
 #### 7.1.2. OAuth Tokens
