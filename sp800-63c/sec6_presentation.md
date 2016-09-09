@@ -35,7 +35,7 @@ Claims within the assertion SHALL be validated including issuer verification, si
 
 Conveyance of the assertion reference from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP as well as the assertion from the IdP to the RP SHALL be made over an authenticated protected channel.
 
-The assertion reference SHOULD require authentication of the client upon presentation at the IdP before an assertion is issued.
+Presentation of the assertion reference at the IdP SHOULD require authentication of the RP before an assertion is issued.
 
 ### 6.2. Front-channel Presentation
 
@@ -63,7 +63,7 @@ There are several common reasons for such proxies:
 
 - Portals that provide users access to multiple RPs that require user authentication
 
-- Web caching mechanisms that are required to satisfy the RP’s access control policies, especially when client-authenticated TLS with the subscriber is used
+- Web caching mechanisms that are required to satisfy the RP’s access control policies, especially when mutually-authenticated TLS with the subscriber is used
 
 - Network monitoring and/or filtering mechanisms that terminate TLS in order to inspect and manipulate the traffic
 
