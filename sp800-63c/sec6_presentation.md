@@ -18,7 +18,7 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 
 In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves). 
 
-This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, as back-channel communication can occur after the initial authentication transaction, or when the subscriber is no longer available. 
+This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed.
 
 In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced it is more difficult to inject assertions directly into the RP.
 
