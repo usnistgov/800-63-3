@@ -53,26 +53,27 @@ Frequently, parties in a dynamic registration model have no way to trust each ot
 
 Many federated parties establish whitelists of other federated parties who may dynamically register with some predetermined level of trust. They also establish blacklists of federated parties who may be allowed dynamically register with a low level of trust, or who may not be allowed to dynamically register at all. Everything that is not on a whitelist or a blacklist can be considered to be in a gray area or on a "graylist." Graylisted parties generally start out with a low level of trust until they can be reviewed by a human who can determine an appropriate level of trust. 
 
-#### 4.1.4 Distributed Federation
+#### 4.1.4 Proxied Federation
 
+In a proxied federation model, the communication between the IdP and the RP is proxied in a way that prevents direct communication between the two parties. There may be multiple methods of achieving this effect, but common configurations include a third party that acts as a federation proxy (or "broker") or a network of "nodes" that distribute the communications. 
 
-In a distributed federation model, the communication between the IdP and the RP is distributed in a way that prevents direct communication between the two parties. There may be multiple methods of achieving this effect, but common configurations include a third party that acts as a “broker” or a network of “nodes” that distribute the communications. Effectively though, the distributing parties still function in some degree as a federation IdP on one side and a federation RP on the other side. Therefore, all normative and non-normative requirements that apply to IdPs and RPs SHALL apply to the distributing parties in their respective roles.
+Effectively, the parties still function in some degree as a federation IdP on one side and a federation RP on the other side. Notably, a federation proxy acts as an IdP to all federated RPs and as an RP to all federated IdPs. Therefore, all normative requirements that apply to IdPs and RPs SHALL apply to the parties of such a system in their respective roles.
 
-![Figure 2: Broker](sp800-63c/media/broker.png)
+![Figure 2: Federation Proxy](sp800-63c/media/broker.png)
 
-**Figure 2: Broker**
+**Figure 2: Federation Proxy**
 
-A distributed federation model can provide various benefits. For example, brokers can enable simplified technical integrations between the RP and IdP by eliminating the need for multiple point to point integrations, which can be onerous for protocols which do not support [dynamic registration](#dynamic-registration). Additionally, to the extent a distributed federation model effectively “blinds” the RP and IdP from each other, it can provide some business confidentiality for organizations that may not wish to reveal their subscriber lists to each other, as well as mitigate some of the privacy risks of point to point federation described above. 
+A proxied federation model can provide various benefits. For example, federation proxies can enable simplified technical integrations between the RP and IdP by eliminating the need for multiple point to point integrations, which can be onerous for protocols which do not support [dynamic registration](#dynamic-registration). Additionally, to the extent a proxied federation model effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that may not wish to reveal their subscriber lists to each other, as well as mitigate some of the privacy risks of point to point federation described above. 
 
-While some distributed deployments offer no additional privacy protection, others can offer varying levels of privacy to the subscriber through a range of blinding technologies. NOTE: even with the use of blinding technologies, it may still be possible for a blinded party to deduce subscriber behavior patterns through analysis of timestamps, cookies, attributes, or attribute bundle sizes. Privacy policies, therefore, may dictate appropriate use by the IdP, RP, and the distributing party, but blinding technology can increase effectiveness of these policies by making the data more difficult to access. It should also be noted that as the level of blinding increases, so may the technical and operational implementation complexity.
+While some proxied deployments offer no additional privacy protection (such as those that exist as integration points), others can offer varying levels of privacy to the subscriber through a range of blinding technologies. NOTE: even with the use of blinding technologies, it may still be possible for a blinded party to deduce subscriber behavior patterns through analysis of timestamps, cookies, attributes, or attribute bundle sizes. Privacy policies may dictate appropriate use by the IdP, RP, and the federation proxy, but blinding technology can increase effectiveness of these policies by making the data more difficult to access. It should also be noted that as the level of blinding increases, so does the technical and operational implementation complexity.
 
 The following list illustrates a spectrum of blinding implementations:
 
-1.	The distributing party does not blind the RP and IdP from one another. The distributing party is able to monitor and track all subscriber relationships between the RPs and IdPs, and has visibility into any attributes it is transmitting in the assertion.
-2.	The distributing party does not blind the RP and IdP from one another. The distributing party is able to monitor and track all subscriber relationships between the RPs and IdPs, but has no visibility into any attributes it is transmitting in the assertion.
-3.	The distributing party blinds the RP and IdP from each other. The distributing party is able to monitor and track all subscriber relationships between the RPs and IdPs, and has visibility into any attributes it is transmitting in the assertion.
-4.	The distributing party blinds the RP and IdP from each other. The distributing party is able to monitor and track all subscriber relationships between the RPs and IdPs, but has no visibility into any attributes it is transmitting in the assertion.
-5. The distributing party blinds the RP, IdP, and itself. The distributing party cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. 
+1.	The federation proxy does not blind the RP and IdP from one another. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, and has visibility into any attributes it is transmitting in the assertion.
+2.	The federation proxy does not blind the RP and IdP from one another. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, but has no visibility into any attributes it is transmitting in the assertion.
+3.	The federation proxy blinds the RP and IdP from each other. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, and has visibility into any attributes it is transmitting in the assertion.
+4.	The federation proxy blinds the RP and IdP from each other. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, but has no visibility into any attributes it is transmitting in the assertion.
+5. The federation proxy blinds the RP, IdP, and itself. The federation proxy cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. 
 
 
 

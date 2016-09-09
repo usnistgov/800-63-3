@@ -41,3 +41,6 @@ Communication between two systems that relies on redirects through an intermedia
 
 #### Back-Channel Communication
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
+
+#### Federation Proxy
+A component that acts as a logical RP to a set of IdPs and a logical IdP to a set of RPs, bridging the two systems with a single component. These are sometimes referred to as "brokers". 

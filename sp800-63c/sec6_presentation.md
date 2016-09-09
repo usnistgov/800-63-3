@@ -2,7 +2,7 @@
 
 ## 6. Assertion Presentation
 
-Assertions MAY be presented in either an *indirect* or *direct* manner from the IdP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in section 4.1.4.
+Assertions MAY be presented in either a *back-channel* or *front-channel* manner from the IdP to the RP. Each model has its benefits and drawbacks, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in section 4.1.4.
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
 
@@ -18,15 +18,24 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 
 In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves). 
 
-This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, as back-channel communication can occur after the initial authentication transaction. 
+This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed.
 
-In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced.
+In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced it is more difficult to inject assertions directly into the RP.
+
+The assertion reference:
+
+ - SHALL be limited to use by a single RP
+ - SHALL be single-use
+ - SHOULD be time limited with a short lifetime of seconds or minutes
+ - SHOULD be presented along with authentication of the RP
 
 The RP SHALL protect itself against injection of manufactured or captured assertion references by use of cross-site scripting protection or other accepted techniques. 
 
 Claims within the assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
 
 Conveyance of the assertion reference from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP as well as the assertion from the IdP to the RP SHALL be made over an authenticated protected channel.
+
+Presentation of the assertion reference at the IdP SHOULD require authentication of the RP before an assertion is issued.
 
 ### 6.2. Front-channel Presentation
 
@@ -38,11 +47,11 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 
 In the front-channel method, an assertion is visible to the subscriber, which could potentially cause leakage of system information included in the assertion. 
 
-Since the assertion is under the control of the subscriber, the direct method also allows the assertion to be replayed the subscriber to submit a single assertion to multiple RPs. This
+Since the assertion is under the control of the subscriber, the front-channel presentation method also allows the subscriber to submit a single assertion to unintended parties, perhaps by a browser replaying an assertion at multiple RPs. Even if the assertion is audience restricted and rejected by RPs, its presentation at unintended RPs could lead to leaking information about the subscriber and their online activities. Though it is possible to intentionally create an assertion designed to be presented to multiple RPs, this method can lead to lax audience restriction of the assertion itself, which in turn could lead to privacy and security breaches for the subscriber across these RPs. Such multi-RP use is not recommended. Instead, RPs are encouraged to fetch their own individual assertions.
 
 The RP SHALL protect itself against injection of manufactured or captured assertions by use of cross-site scripting protection or other accepted techniques. 
 
-The assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
+Claims within the assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
 
 Conveyance of the assertion from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
 
@@ -54,7 +63,7 @@ There are several common reasons for such proxies:
 
 - Portals that provide users access to multiple RPs that require user authentication
 
-- Web caching mechanisms that are required to satisfy the RP’s access control policies, especially when client-authenticated TLS with the subscriber is used
+- Web caching mechanisms that are required to satisfy the RP’s access control policies, especially when mutually-authenticated TLS with the subscriber is used
 
 - Network monitoring and/or filtering mechanisms that terminate TLS in order to inspect and manipulate the traffic
 
