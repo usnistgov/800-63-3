@@ -316,8 +316,8 @@ Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to
 #### Verifier
 An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) and identity and check their status.
 
-#### Verifier Impersonation Attack
-A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier.
+#### Verifier Impersonation
+A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier. In previous editions of SP 800-63, authentication protocols that are resistant to verifier impersonation have been described as "strongly man-in-the-middle" resistant.
 
 #### Weakly Bound Credentials
 Credentials that are bound to a subscriber in a manner than can be modified without invalidating the credential.
