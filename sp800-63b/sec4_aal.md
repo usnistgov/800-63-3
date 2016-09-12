@@ -50,6 +50,8 @@ Authenticator Assurance Level 1 permits the use of any of the following authenti
 
 Cryptographic authenticators used at AAL 1 SHALL use approved cryptography.
 
+Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
+
 Verifiers operated by government agencies at AAL 1 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
 #### 4.1.3. Assertion Requirements
@@ -95,6 +97,8 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 Cryptographic authenticators used at AAL 2 SHALL use approved cryptography. Authenticators developed by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
+Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
+
 Verifiers operated by government agencies at AAL 2 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
 #### 4.2.3. Assertion Requirements
@@ -126,6 +130,8 @@ Authentication Assurance Level 3 requires the use of one of three kinds of hardw
 * Single-Factor Cryptographic Device used in conjunction with Memorized Secret
 
 #### 4.3.2. Authenticator and Verifier Requirements
+
+Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
 
 Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. These requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](#FIPS201) compliant Personal Identity Verification (PIV) Card.
 
