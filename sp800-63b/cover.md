@@ -63,12 +63,12 @@ Justin P. Richer
 *Bespoke Engineering  
 Billerica, MA*  
 
-Naomi B. Lefkovitz
-Applied Cybersecurity Division
+Naomi B. Lefkovitz  
+Applied Cybersecurity Division  
 Information Technology Laboratory  
 
-Jamie M. Danker
-National Protection and Programs Directorate
+Jamie M. Danker  
+National Protection and Programs Directorate  
 Department of Homeland Security  
 
 Yee-Yin Choong      

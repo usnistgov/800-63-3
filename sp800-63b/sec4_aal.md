@@ -18,7 +18,7 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 |  2 or 3 |
 | 4 |  3 |
 
-However, the table below shows the expanded set of AAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+However, the table below shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
 
 
 | M-04-04 Level of Assurance | Authenticator Assurance Level
