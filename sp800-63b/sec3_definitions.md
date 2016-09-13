@@ -122,7 +122,7 @@ An attack in which an attacker listens passively to the authentication protocol 
 See *Digital Authentication*.
 
 #### Entropy
-A measure of the amount of uncertainty that an attacker faces to determine the value of a secret. Entropy is usually stated in bits.
+A measure of the amount of uncertainty that an attacker faces to determine the value of a secret. Entropy is usually stated in bits. A value having *n* bits of entropy has the same degree of uncertainty as a uniformly-distributed *n*-bit random value.
 
 #### Equal Error Rate (EER)
 The value where the false match rate (FMR) and false non-match rate (FNMR) of a sensor are equal. EER is a figure of merit for the sensor; the lower the EER is, the more certain the sensor's decision is likely to be.
