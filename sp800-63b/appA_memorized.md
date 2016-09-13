@@ -10,7 +10,7 @@ Despite widespread frustration with the use of passwords from both a usability a
 
 Complexity of user-chosen passwords has often been characterized using the information theory concept of entropy[ref]. While entropy can be readily calculated for data having deterministic distribution functions, estimating the entropy for user-chosen passwords is difficult and past efforts to do so have not been particularly accurate. For this reason, a different and somewhat simpler approach, based primarily on password length, is presented herein.
 
-It should be noted that there are many attacks associated with the use of passwords that are not affected by password complexity. Keystroke logging, phishing, and social engineering attacks are equally effective on complex passwords as simple ones. These attacks are outside the scope of this Appendix.
+It should be noted that there are many attacks associated with the use of passwords that are not affected by password complexity and length. Keystroke logging, phishing, and social engineering attacks are equally effective on lengthy, complex passwords as simple ones. These attacks are outside the scope of this Appendix.
 
 ### A.2 Length
 
