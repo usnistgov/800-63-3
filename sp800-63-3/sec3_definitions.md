@@ -113,9 +113,9 @@ A metric describing degree of confidence that the applicant’s claimed identity
 The process by which a CSP and a Registration Authority (RA) collect and verify information about a person for the purpose of issuing credentials to that person.
 
 #### Multi-Factor
-A characteristic of an authentication system or an authenticator that uses more than one authentication factor.
+A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
-The three types of authentication factors are something you know, something you have, and something you are.
+The three authentication factors are something you know, something you have, and something you are.
 
 #### Network
 An open communications medium, typically the Internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, man-in-the-middle, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).
