@@ -63,12 +63,12 @@ Justin P. Richer
 *Bespoke Engineering  
 Billerica, MA*  
 
-Naomi B. Lefkovitz
-Applied Cybersecurity Division
+Naomi B. Lefkovitz  
+Applied Cybersecurity Division  
 Information Technology Laboratory  
 
-Jamie M. Danker
-National Protection and Programs Directorate
+Jamie M. Danker  
+National Protection and Programs Directorate  
 Department of Homeland Security  
 
 Yee-Yin Choong      
@@ -208,7 +208,7 @@ The three AALs reflect the options agencies will select based on their risk prof
 
 **AAL 2**: AAL 2 requires two different authentication factors, providing higher assurance that the same claimaint who participated in previous transactions is accessing the protected transaction or data.
 
-**AAL 3**: AAL 3 provides the highest practical remote digital authentication assurance. It requires proof of possession of a key in a physical multifactor authenticator through a cryptographic protocol.
+**AAL 3**: AAL 3 provides the highest practical remote digital authentication assurance. It requires proof of possession of a key in a physical multi-factor authenticator through a cryptographic protocol.
 
 
 ## Table of Contents
