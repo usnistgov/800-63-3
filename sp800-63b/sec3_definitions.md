@@ -51,7 +51,7 @@ A generic term for any secret value that could be used by an attacker to imperso
 These are further divided into *short-term authentication secrets*, which are only useful to an attacker for a limited period of time, and *long-term authentication secrets*, which allow an attacker to impersonate the subscriber until they are manually reset. The authenticator secret is the canonical example of a long term authentication secret, while the authenticator output, if it is different from the authenticator secret, is usually a short term authentication secret.
 
 #### Authenticator
-Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous versions of this guideline, this was referred to as a *token*.
+Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticator Assurance Level (AAL)
 A metric describing robustness of the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
@@ -110,7 +110,7 @@ The property that data has not been altered by an unauthorized entity.
 A credential issued based on proof of possession and control of one or more authenticators associated with a previously issued credential, so as not to duplicate the identity proofing process.
 
 #### Digital Authentication
-The process of establishing confidence in user identities electronically presented to an information system. In previous editions of this guideline, this was referred to as *Electronic Authentication*.
+The process of establishing confidence in user identities electronically presented to an information system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
@@ -317,7 +317,7 @@ Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to
 An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) and identity and check their status.
 
 #### Verifier Impersonation
-A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier. In previous editions of SP 800-63, authentication protocols that are resistant to verifier impersonation have been described as "strongly man-in-the-middle" resistant.
+A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier. In previous editions of SP 800-63, authentication protocols that are resistant to verifier impersonation have been described as "strongly man-in-the-middle resistant".
 
 #### Weakly Bound Credentials
 Credentials that are bound to a subscriber in a manner than can be modified without invalidating the credential.

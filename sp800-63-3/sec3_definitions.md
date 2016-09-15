@@ -45,7 +45,7 @@ A generic term for any secret value that could be used by an attacker to imperso
 These are further divided into *short-term authentication secrets*, which are only useful to an attacker for a limited period of time, and *long-term authentication secrets*, which allow an attacker to impersonate the subscriber until they are manually reset. The authenticator secret is the canonical example of a long term authentication secret, while the authenticator output, if it is different from the authenticator secret, is usually a short term authentication secret.
 
 #### Authenticator
-Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous versions of this guideline, this was referred to as a *token*.
+Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticator Assurance Level (AAL)
 A metric describing robustness of the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
@@ -84,7 +84,7 @@ See also Asymmetric keys, Symmetric key.
 An authenticator where the secret is a cryptographic key.
 
 #### Digital Authentication
-The process of establishing confidence in user identities digitally presented to an information system. In previous editions of this guideline, this was referred to as *Electronic Authentication*.
+The process of establishing confidence in user identities digitally presented to an information system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.

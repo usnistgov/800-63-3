@@ -351,7 +351,7 @@ When federated authentication is being performed as described in [SP 800-63C](sp
 
 #### <a name="verifimpers"></a>5.2.5 Verifier impersonation resistance
 
-Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and relying parties to fool an unwary claimant into authenticating to an impostor website. In previous editions of the Guideline, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly man-in-the-middle resistant".
+Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and relying parties to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly man-in-the-middle resistant".
 
 Authentication protocols that are verifier impersonation resistant SHALL strongly and irreversibly bind the authenticator output to the hostname, domain, or public key of the certificate of the verifier to which it is sent. This makes the authenticator output useless to the attacker since it is not bound to the legitimate verifier.
 
