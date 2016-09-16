@@ -348,3 +348,15 @@ Biometrics are also used in some cases to prevent repudiation of registration an
 Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information such as the provenance or health and integrity of the authenticator (and possibly the endpoint as well) to the verifier as part of the authentication protocol. If this attestation is signed, the verifier SHOULD validate its signature. This information MAY be used as part of a risk-based authentication decision.
 
 When federated authentication is being performed as described in [SP 800-63C](sp800-63c.html), the verifier SHOULD include any such attestation information in the assertion it provides to the relying party.
+
+#### <a name="verifimpers"></a>5.2.5 Verifier impersonation resistance
+
+Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and relying parties to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly man-in-the-middle resistant".
+
+Authentication protocols that are verifier impersonation resistant SHALL strongly and irreversibly bind the authenticator output to the public key of the certificate presented by the host to which it is sent, or to that host's verified name or domain. This makes the authenticator output useless to the attacker since it is not bound to the legitimate verifier.
+
+One example of a verifier impersonation resistant authentication protocol is client-authenticated TLS, because it encrypts the authenticator output with the verifier's public key, having obtained that key from an X.509 certificate that the client's endpoint has verified. Other protocols use techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by the attacker at the real verifier. Specialized protocols where the claimant's authenticator will only release its output to a preset list of valid verifiers MAY also be considered verifier impersonation resistant.
+
+In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and one-time password authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
+
+
