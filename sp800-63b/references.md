@@ -26,6 +26,9 @@
 
 <a name="ISO9241-11">[ISO 9241-11]</a> International Organization for Standardization, *Ergonomic requirements for office work with visual display terminals (VDTs) – Part 11: Guidance on Usability*, ISO 9241-11:1998, ISO: Geneva, Switzerland, 1998.
 
+[[UAX 15]](#UAX15)
+<a name="UAX15">[UAX 15]</a> Unicode Consortium, *Unicode Normalization Forms*, Unicode Standard Annex 15, Version 9.0.0, February, 2016. Available at http://www.unicode.org/reports/tr15/
+
 ### 11.2. NIST Special Publications
 
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.

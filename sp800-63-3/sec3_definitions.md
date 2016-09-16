@@ -37,7 +37,7 @@ A claim of a named quality or characteristic inherent in or ascribed to someone 
 The process of establishing confidence in the identity of users or information systems.
 
 #### Authentication Protocol
-A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of a valid authenticator to establish his/her identity, and optionally, demonstrates to the claimant that he or she is communicating with the intended verifier.
+A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity, and optionally, demonstrates to the claimant that he or she is communicating with the intended verifier.
 
 #### Authentication Secret
 A generic term for any secret value that could be used by an attacker to impersonate the subscriber in an authentication protocol.
@@ -45,7 +45,7 @@ A generic term for any secret value that could be used by an attacker to imperso
 These are further divided into *short-term authentication secrets*, which are only useful to an attacker for a limited period of time, and *long-term authentication secrets*, which allow an attacker to impersonate the subscriber until they are manually reset. The authenticator secret is the canonical example of a long term authentication secret, while the authenticator output, if it is different from the authenticator secret, is usually a short term authentication secret.
 
 #### Authenticator
-Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous versions of this guideline, this was referred to as a *token*.
+Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticator Assurance Level (AAL)
 A metric describing robustness of the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
@@ -62,7 +62,7 @@ Automated recognition of individuals based on their behavioral and biological ch
 In this document, biometrics may be used to unlock authenticators and prevent repudiation of registration.
 
 #### Claimant
-A party whose identity is to be verified using an authentication protocol.
+A party whose identity is to be verified using one or more authentication protocols.
 
 #### Claimed Identity
 A declaration by the applicant of their current Personal Name, date of birth and address. [[GPG45]](#gpg45)
@@ -84,7 +84,7 @@ See also Asymmetric keys, Symmetric key.
 An authenticator where the secret is a cryptographic key.
 
 #### Digital Authentication
-The process of establishing confidence in user identities digitally presented to an information system. In previous editions of this guideline, this was referred to as *Electronic Authentication*.
+The process of establishing confidence in user identities digitally presented to an information system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
@@ -113,9 +113,9 @@ A metric describing degree of confidence that the applicant’s claimed identity
 The process by which a CSP and a Registration Authority (RA) collect and verify information about a person for the purpose of issuing credentials to that person.
 
 #### Multi-Factor
-A characteristic of an authentication system or an authenticator that uses more than one authentication factor.
+A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
-The three types of authentication factors are something you know, something you have, and something you are.
+The three authentication factors are something you know, something you have, and something you are.
 
 #### Network
 An open communications medium, typically the Internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, man-in-the-middle, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).

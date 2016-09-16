@@ -36,8 +36,11 @@ A complete statement asserting a property of a subscriber, independent of format
 #### Authentication
 The process of establishing confidence in the identity of users or information systems.
 
+#### Authentication Protocol
+A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
+
 #### Authenticator
-Something that a claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous versions of this guideline, this was referred to as a *token*.
+Something that a claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticity
 The property that data originated from its purported source.
@@ -51,7 +54,7 @@ Automated recognition of individuals based on their behavioral and biological ch
 In this document, biometrics may be used to unlock authenticators and prevent repudiation of registration.
 
 #### Claimant
-A party whose identity is to be verified using an authentication protocol.
+A party whose identity is to be verified using one or more authentication protocols.
 
 #### Claimed Address
 The physical location asserted by an individual (e.g. an applicant) where he/she can be reached. It includes the residential street address of an individual and may also include the mailing address of the individual.
@@ -70,7 +73,7 @@ A trusted entity that issues or registers subscriber authenticators and issues e
 A credential issued based on proof of possession and control of an authenticator associated with a previously issued credential, so as not to duplicate the identity proofing process.
 
 #### Digital Authentication
-The process of establishing confidence in user identities electronically presented to an information system. In previous editions of this guideline, this was referred to as *Electronic Authentication*.
+The process of establishing confidence in user identities electronically presented to an information system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.

@@ -57,19 +57,21 @@ Related mechanisms that assist in mitigating the threats identified above are su
 
 | **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
 |---------------------------------|----------------------------------|
-| Theft | Use multi-factor authenticators which need to be activated through a PIN or biometric.|
-| Duplication |  Use authenticators that are difficult to duplicate, such as hardware cryptographic authenticators. |
-| Discovery | Use methods in which the responses to prompts cannot be easily discovered.
-| Eavesdropping | Use authenticators with dynamic outputs where knowledge of one authenticator does not assist in deriving a subsequent authenticator.
-| | Use authenticators whose output is based on an input value or challenge.
-| | Establish authenticators through a separate channel.
+| Theft | Use multi-factor authenticators which need to be activated through a memorized secret or biometric.|
+| Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
+| Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
+| | Maintain situational awareness when entering memorized secrets and one-time passwords to ensure that they cannot be observed by others.
+| | Authenticate over authenticated protected channels (observe lock icon in browser window, for example)
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
-| | Use an authenticator that locks up after a number of repeated failed activation attempts.
 | | Store memorized secrets in a salted, hashed form to raise the cost of dictionary attacks; use a keyed hash.
 | Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.
-| Phishing or pharming | Use authenticators with dynamic outputs where knowledge of one output does not assist in deriving a subsequent output.
-| Social engineering | Use authenticators with dynamic outputs where knowledge of one output does not assist in deriving a subsequent output.
+| Phishing or pharming | Use authenticators that provide verifier impersonation resistance.
+| | Be alert for unexpected hostnames in URLs.
+| | Do not click on links in email messages; instead, enter the URL manually or through a trusted bookmark.
+| Social engineering | Do not reveal authentication secrets to others, regardless of their story.
+| | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents.
 | Online guessing | Use authenticators that generate high entropy output.
+| | Use an authenticator that locks up after a number of repeated failed activation attempts.
 | Endpoint compromise | Use hardware authenticators that require physical action by the subscriber.
 | | Provide secure display of identity of verifier and relying party.
 | | Maintain software-based keys in restricted-access storage.
@@ -93,5 +95,3 @@ There are several other strategies that may be applied to mitigate the threats d
 The weak point in many authentication mechanisms is the process followed when a subscriber loses control of one or more authenticators and needs to replace them. In many cases, the options remaining available to authenticate the subscriber are limited, and economic concerns (cost of maintaining call centers, etc.) motivate the use of inexpensive, and frequently less secure, backup authentication methods. To the extent that authenticator recovery is human-assisted, there is also the risk of social engineering attacks.
 
 In order to maintain the integrity of the authentication factors, it is essential that it not be possible to leverage an authentication involving one factor to obtain an authenticator of a different factor. For example, a memorized secret must not be usable to obtain a new list of look-up secrets.
-
-Subscribers should be encouraged to maintain at least two valid authenticators of each factor they will be using. For example, a subscriber that usually uses a one-time OTP device as a physical authenticator should also be issued a number of look-up secret authenticators, or should register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged.

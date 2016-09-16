@@ -2,7 +2,7 @@
 
 ## <a name="AAL_SEC4"></a>4. Authenticator Assurance Levels
 
-In order to satisfy the requirements of a given Authenticator Assurance Level (AAL), a claimant SHALL authenticate themselves with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier, that MAY be pseudonymous, that SHALL be used each time that subscriber authenticates to that relying party. Optionally, other attributes that identify the subscriber as a unique person may also be provided.
+In order to satisfy the requirements of a given Authenticator Assurance Level (AAL), a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier, that MAY be pseudonymous, that SHALL be used each time that subscriber authenticates to that relying party. Optionally, other attributes that identify the subscriber as a unique person may also be provided.
 
 Detailed normative requirements for authenticators and verifiers at each AAL are provided in Section 5.
 
@@ -18,7 +18,7 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 |  2 or 3 |
 | 4 |  3 |
 
-However, the table below shows the expanded set of AAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+However, the table below shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
 
 
 | M-04-04 Level of Assurance | Authenticator Assurance Level
@@ -48,7 +48,9 @@ Authenticator Assurance Level 1 permits the use of any of the following authenti
 
 #### 4.1.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL 1 SHALL use approved cryptography.
+Cryptographic authenticators used at AAL 1 SHALL use approved cryptography. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware or "jailbreak") and SHOULD decline to operate when such a compromise is detected.
+
+Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
 
 Verifiers operated by government agencies at AAL 1 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
@@ -93,7 +95,9 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 #### 4.2.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL 2 SHALL use approved cryptography. Authenticators developed by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
+Cryptographic authenticators used at AAL 2 SHALL use approved cryptography. Authenticators developed by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware or "jailbreak") and SHOULD decline to operate when such a compromise is detected.
+
+Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
 
 Verifiers operated by government agencies at AAL 2 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
@@ -115,17 +119,23 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL 3 is intended to provide the highest practical remote network authentication assurance. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed.
+AAL 3 is intended to provide the highest practical remote network authentication assurance. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed and verifier impersonation resistance is required.
 
 #### 4.3.1. Permitted Authenticator Types
 
 Authentication Assurance Level 3 requires the use of one of three kinds of hardware devices:
 
-* Multi-Factor OTP Device
+* Multi-Factor OTP Device used in conjunction with:
+ * Multi-Factor Software Cryptographic Authenticator, or
+ * Single-Factor Cryptographic Device
 * Multi-Factor Cryptographic Device
 * Single-Factor Cryptographic Device used in conjunction with Memorized Secret
 
+> Note: OTP devices do not provide verifier impersonation resistance, which is required at AAL 3, so a cryptographic authenticator or device is also required even though the OTP device is a multi-factor device.
+
 #### 4.3.2. Authenticator and Verifier Requirements
+
+Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. At least one authenticator used in each AAL 3 authentication SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers). 
 
 Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. These requirements CAN be met by using the PIV authentication key of a [[FIPS 201]](#FIPS201) compliant Personal Identity Verification (PIV) Card.
 
@@ -149,7 +159,10 @@ The CSP shall comply with their respective records retention policies in accorda
 
 ### 4.4. Privacy Requirements
 
-•	The CSP SHOULD employ appropriately tailored privacy controls defined in [SP 800-53] or equivalent industry standard.•	CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service.•	Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:a) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the Privacy Act. b) The agency SHALL publish a System of Records Notice to cover such collections, as applicable. c) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the E-Government Act of 2002. d) The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
+The CSP SHOULD employ appropriately tailored privacy controls defined in [[SP 800-53]](@SP800-53) or equivalent industry standard.
+CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service.
+Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
+1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the Privacy Act. * The agency SHALL publish a System of Records Notice to cover such collections, as applicable. * The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the E-Government Act of 2002. * The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
 
 ### 4.5. Summary of Requirements
 
@@ -159,12 +172,14 @@ The following table summarizes the requirements for each of the authenticator as
 
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------
-**Permitted authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF OTP Device<br />MF Cryptographic Device<br />SF Cryptographic Device plus Memorized Secret
+**Permitted authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF Cryptographic Device<br />SF Cryptographic Device plus Memorized Secret<br />MF OTP Device plus:<br />&nbsp;MF Software Cryptographic Authenticator<br />&nbsp;SF Cryptographic Device
 **FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
-**Security Controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
-**Records Retention**|Not required|Not required|Not required
+**Security controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
+**MITM resistance** | Required | Required | Required |
+**Verifier impersonation resistance** | Not required | Not required | Required |
+
 
 
 

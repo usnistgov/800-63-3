@@ -4,7 +4,7 @@
 
 *This section is non-normative.*
 
-CSPs, RPs, subscribers, and parties outside of a typical assertions transaction may be malicious or become compromised. An attacker might have an interest in modifying or replacing an assertion to obtain a greater level of access to a resource or service provided by an
+IdPs, RPs, subscribers, and parties outside of a typical assertions transaction may be malicious or become compromised. An attacker might have an interest in modifying or replacing an assertion to obtain a greater level of access to a resource or service provided by an
 RP. They might be interested in obtaining or modifying
 assertions and assertion references to impersonate a subscriber or
 access unauthorized data or services. Furthermore, it is possible that
@@ -27,11 +27,11 @@ exceed their privileges may be considered attackers. This section lists some com
     Disclosure of the assertion contents can make the subscriber
     vulnerable to other types of attacks.
 
--   *Assertion repudiation by the CSP* – An assertion may be
-    repudiated by a CSP if the proper mechanisms are not in place.
-    For example, if a CSP does not digitally sign an assertion, the
-    CSP can claim that it was not generated through the services of
-    the CSP.
+-   *Assertion repudiation by the IdP* – An assertion may be
+    repudiated by an IdP if the proper mechanisms are not in place.
+    For example, if an IdP does not digitally sign an assertion, the
+    IdP can claim that it was not generated through the services of
+    the IdP.
 
 -   *Assertion repudiation by the subscriber* – Since it is possible for
     a compromised or malicious subscriber to issue assertions to the
@@ -49,8 +49,8 @@ some cases, the subscriber is
 issued some secret information so that they can be recognized by the RP. The knowledge of this information distinguishes the
 subscriber from attackers who wish to impersonate the them. In the
 case of holder-of-key assertions, this secret could already have been
-established with the CSP prior to the initiation of the assertion
-protocol. In other cases, the CSP will generate a temporary secret
+established with the IdP prior to the initiation of the assertion
+protocol. In other cases, the IdP will generate a temporary secret
 and transmit it to the authenticated subscriber for this purpose. When this secret is used to authenticate to the RP, this temporary secret will be referred to as a secondary
 authenticator. Secondary authenticators include assertions in the direct
 model, session keys in Kerberos, assertion references in the indirect
@@ -63,14 +63,14 @@ authenticator are as follows:
 
 -   *Secondary authenticator capture* – An attacker may use a session
     hijacking attack to capture the secondary authenticator when the
-    CSP transmits it to the subscriber after the primary
+    IdP transmits it to the subscriber after the primary
     authentication step, or the attacker may use a man-in-the-middle
     attack to obtain the secondary authenticator as it is being used by
     the subscriber to authenticate to the RP. If, as in the indirect
     model, the RP needs to send the secondary authenticator back to the
-    CSP in order to check its validity or obtain the corresponding
+    IdP in order to check its validity or obtain the corresponding
     assertion data, an attacker may similarly subvert the communication
-    protocol between the CSP and the RP to capture a
+    protocol between the IdP and the RP to capture a
     secondary authenticator. In any of the above scenarios, the
     secondary authenticator can be used to impersonate the subscriber.
 
@@ -80,7 +80,7 @@ and the assertion data referring to the subscriber needs to be strong.
 
 -   *Assertion substitution* – A subscriber may attempt to impersonate a
     more privileged subscriber by subverting the communication channel
-    between the CSP and RP, for example by reordering the messages,
+    between the IdP and RP, for example by reordering the messages,
     to convince the RP that their secondary authenticator
     corresponds to assertion data sent on behalf of the more
     privileged subscriber. 
@@ -94,13 +94,13 @@ described in the last subsection.
 -   *Assertion manufacture/modification*: To mitigate this threat,
     the following mechanisms are used:
 
-	1.  The assertion is digitally signed by the CSP. The RP 
+	1.  The assertion is digitally signed by the IdP. The RP 
     checks the digital signature to verify that it was issued by a
-    legitimate CSP.
+    legitimate IdP.
 
 	2.  The assertion is sent over a protected session such as TLS. In
     order to protect the integrity of assertions from malicious attack,
-    the CSP is authenticated.
+    the IdP is authenticated.
 
 	3. The assertion contains a non-guessable random identifier. 
 
@@ -110,30 +110,30 @@ described in the last subsection.
 	1.  The assertion is sent over a protected session to an
     authenticated RP. Note that, in order to protect assertions against
     both disclosure and manufacture/modification using a protected
-    session, both the RP and the CSP need to be validated. 
+    session, both the RP and the IdP need to be validated. 
 
-	2.  Assertions are signed by the CSP and encrypted for
+	2.  Assertions are signed by the IdP and encrypted for
     a specific RP.  It should be
     noted that this provides all the same guarantees as a mutually
     authenticated protected session, and may therefore be
     considered equivalent. The general requirement for protecting
     against both assertion disclosure and assertion
     manufacture/modification may therefore be described as a mutually
-    authenticated protected session or equivalent between the CSP
+    authenticated protected session or equivalent between the IdP
     and the RP. 
 
--   *Assertion repudiation by the CSP* – To mitigate this threat,
-    the assertion is digitally signed by the CSP using a key
+-   *Assertion repudiation by the IdP* – To mitigate this threat,
+    the assertion is digitally signed by the IdP using a key
     that supports non-repudiation. The RP checks the digital
-    signature to verify that it was issued by a legitimate CSP.
+    signature to verify that it was issued by a legitimate IdP.
 
 -   *Assertion repudiation by the subscriber* – To mitigate this threat,
-    the CSP issues holder-of-key assertions, rather than bearer assertions.
+    the IdP issues holder-of-key assertions, rather than bearer assertions.
     The subscriber can then prove possession of the asserted key to
     the RP. If the asserted key matches the subscriber’s presented key,
     it will be proof to all parties
     involved that it was the subscriber who authenticated to the RP
-    rather than a compromised CSP impersonating the subscriber.
+    rather than a compromised IdP impersonating the subscriber.
 
 -   *Assertion redirect* – To mitigate this threat, the assertion
     includes the identity of the RP for which it was generated. The RP
@@ -154,12 +154,12 @@ described in the last subsection.
     of the following mechanisms is used:
 
 	1.  The secondary authenticator may contain sufficient entropy that an
-    attacker without direct access to the CSP’s random number
+    attacker without direct access to the IdP’s random number
     generator cannot guess the value of a valid secondary authenticator.
 
 	2.  The secondary authenticator may contain timely assertion data that
-    is signed by the CSP or integrity protected using a key shared
-    between the CSP and the RP.
+    is signed by the IdP or integrity protected using a key shared
+    between the IdP and the RP.
 
 
 
@@ -168,7 +168,7 @@ described in the last subsection.
     any secondary authenticators used in the assertion protocol.
 
 	1.  In order to protect the secondary authenticator while it is in
-    transit between the CSP and the subscriber, the secondary
+    transit between the IdP and the subscriber, the secondary
     authenticator is sent via a protected session established
     during the primary authentication of the subscriber. 
 
