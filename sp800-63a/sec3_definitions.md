@@ -54,7 +54,7 @@ Automated recognition of individuals based on their behavioral and biological ch
 In this document, biometrics may be used to unlock authenticators and prevent repudiation of registration.
 
 #### Claimant
-A party whose identity is to be verified using an authentication protocol.
+A party whose identity is to be verified using one or more authentication protocols.
 
 #### Claimed Address
 The physical location asserted by an individual (e.g. an applicant) where he/she can be reached. It includes the residential street address of an individual and may also include the mailing address of the individual.

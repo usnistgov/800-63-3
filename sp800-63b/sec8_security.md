@@ -57,19 +57,21 @@ Related mechanisms that assist in mitigating the threats identified above are su
 
 | **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
 |---------------------------------|----------------------------------|
-| Theft | Use multi-factor authenticators which need to be activated through a PIN or biometric.|
-| Duplication |  Use authenticators that are difficult to duplicate, such as hardware cryptographic authenticators. |
-| Discovery | Use methods in which the responses to prompts cannot be easily discovered.
-| Eavesdropping | Use authenticators with dynamic outputs where knowledge of one authenticator does not assist in deriving a subsequent authenticator.
-| | Use authenticators whose output is based on an input value or challenge.
-| | Establish authenticators through a separate channel.
+| Theft | Use multi-factor authenticators which need to be activated through a memorized secret or biometric.|
+| Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
+| Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
+| | Maintain situational awareness when entering memorized secrets and one-time passwords to ensure that they cannot be observed by others.
+| | Authenticate over authenticated protected channels (observe lock icon in browser window, for example)
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
-| | Use an authenticator that locks up after a number of repeated failed activation attempts.
 | | Store memorized secrets in a salted, hashed form to raise the cost of dictionary attacks; use a keyed hash.
 | Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.
-| Phishing or pharming | Use authenticators with dynamic outputs where knowledge of one output does not assist in deriving a subsequent output.
-| Social engineering | Use authenticators with dynamic outputs where knowledge of one output does not assist in deriving a subsequent output.
+| Phishing or pharming | Use authenticators that provide verifier impersonation resistance.
+| | Be alert for unexpected hostnames in URLs.
+| | Do not click on links in email messages; instead, enter the URL manually or through a trusted bookmark.
+| Social engineering | Do not reveal authentication secrets to others, regardless of their story.
+| | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents.
 | Online guessing | Use authenticators that generate high entropy output.
+| | Use an authenticator that locks up after a number of repeated failed activation attempts.
 | Endpoint compromise | Use hardware authenticators that require physical action by the subscriber.
 | | Provide secure display of identity of verifier and relying party.
 | | Maintain software-based keys in restricted-access storage.
