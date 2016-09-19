@@ -15,15 +15,6 @@ Source information, current standards, and public comments received through May 
 
 
 <section class="home home-title" markdown="1">
-
-<div class="text-center">
-    <a href="sp800-63-3" class="btn btn-primary btn-lg" role="button">SP 800-63-3</a>
-    <a href="sp800-63a" class="btn btn-primary btn-lg" role="button">SP 800-63A</a>
-    <a href="sp800-63b" class="btn btn-primary btn-lg" role="button">SP 800-63B</a>
-    <a href="sp800-63c" class="btn btn-primary btn-lg" role="button">SP 800-63C</a>
-</div>
-
-
 <ul class="audiences">
 <li>
   <div>
