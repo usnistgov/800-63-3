@@ -34,7 +34,7 @@ exceed their privileges may be considered attackers. This section lists some com
     the IdP.
 
 -   *Assertion repudiation by the subscriber* – Since it is possible for
-    a compromised or malicious subscriber to issue assertions to the
+    a compromised or malicious IdP to issue assertions to the
     wrong party, a subscriber can repudiate any transaction with the RP
     that was authenticated using only a bearer assertion.
 
