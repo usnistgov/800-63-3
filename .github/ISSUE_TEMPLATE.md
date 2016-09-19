@@ -1,16 +1,6 @@
-**Organization**:
- 
-**Type**:
- 
-**Document (63-3, 63A, 63B, or 63C)**:
+## SP 800-63-3 Public Preview Has Closed!
 
-**Reference (Include section and paragraph number)**:
- 
-**Comment (Include rationale for comment)**:
- 
-**Suggested Change**:
- 
----
- 
-Organization: 1 = Federal, 2 = Industry, 3 = Other 
+Please check back in the coming weeks for the launch of our next phase, where issues and comments will resume.  Until then, all issues received will be automatically closed.
+
+Thank you for your interest in supporting and improving NIST SP 800-63-3.
 
