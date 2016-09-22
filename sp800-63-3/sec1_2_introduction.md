@@ -109,8 +109,7 @@ areas:
 
 The M-04-04 Level of Assurance is determined by considering the identity assurance, authenticator assurance level, and federation assurance level achieved for each of the elements listed above, and determining the Level of Assurance satisfied by all elements.
 
-Agencies may adjust the level of assurance using additional risk
-mitigation measures. Easing credential assurance level requirements may
+Within a given level of assurance, agencies may employ additional risk mitigation measures. Easing credential assurance level requirements may
 increase the size of the enabled customer pool, but agencies shall
 ensure that this does not corrupt the system’s choice of the appropriate
 assurance level. Alternatively, agencies may consider partitioning the
