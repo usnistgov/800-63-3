@@ -72,7 +72,7 @@ The CSP shall comply with their respective records retention policies in accorda
 
 ### 4.2. Authenticator Assurance Level 2
 
-AAL 2 provides higher assurance that the same claimant who participated in previous transactions is accessing the protected transaction or data. At least two different authentication factors are required. Various types of authenticators, including multi-factor software cryptographic authenticators, may be used as described below. AAL 2 also permits any of the authentication methods of AAL 3. AAL 2 authentication requires cryptographic mechanisms that protect the primary authenticator against compromise by the protocol threats for all threats at AAL 1. Approved cryptographic techniques are required at AAL 2 and above.
+AAL 2 provides high confidence that the claimant controls the authenticator registered to a subscriber. At least two different authentication factors are required. Various types of authenticators, including multi-factor software cryptographic authenticators, may be used as described below. AAL 2 also permits any of the authentication methods of AAL 3. AAL 2 authentication requires cryptographic mechanisms that protect the primary authenticator against compromise by the protocol threats for all threats at AAL 1. Approved cryptographic techniques are required at AAL 2 and above.
 
 #### 4.2.1. Permitted Authenticator Types
 
@@ -119,7 +119,7 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL 3 is intended to provide the highest practical remote network authentication assurance. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed and verifier impersonation resistance is required.
+AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed and verifier impersonation resistance is required.
 
 #### 4.3.1. Permitted Authenticator Types
 
@@ -161,9 +161,15 @@ The CSP shall comply with their respective records retention policies in accorda
 ### 4.4. Privacy Requirements
 
 The CSP SHOULD employ appropriately tailored privacy controls defined in [[SP 800-53]](@SP800-53) or equivalent industry standard.
-CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service.
-Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
-1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the Privacy Act. * The agency SHALL publish a System of Records Notice to cover such collections, as applicable. * The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the E-Government Act of 2002. * The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
+
+CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service.
+
+Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
+
+1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the Privacy Act. 
+* The agency SHALL publish a System of Records Notice to cover such collections, as applicable. 
+* The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the E-Government Act of 2002. 
+* The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
 
 ### 4.5. Summary of Requirements
 
