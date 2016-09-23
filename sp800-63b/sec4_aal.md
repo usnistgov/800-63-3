@@ -126,8 +126,8 @@ AAL 3 is intended to provide the highest practical remote network authentication
 Authentication Assurance Level 3 requires the use of one of three kinds of hardware devices:
 
 * Multi-Factor OTP Device used in conjunction with:
- * Multi-Factor Software Cryptographic Authenticator, or
- * Single-Factor Cryptographic Device
+ * - Multi-Factor Software Cryptographic Authenticator, or
+ * - Single-Factor Cryptographic Device
 * Multi-Factor Cryptographic Device
 * Single-Factor Cryptographic Device used in conjunction with Memorized Secret
 * Multi-Factor OTP Device used in conjunction with a single-factor cryptographic device
