@@ -357,9 +357,15 @@ When federated authentication is being performed as described in [SP 800-63C](sp
 
 Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and relying parties to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly man-in-the-middle resistant".
 
-Authentication protocols that are verifier impersonation resistant SHALL strongly and irreversibly bind the authenticator output to the public key of the certificate presented by the host to which it is sent, or to that host's verified name or domain. This makes the authenticator output useless to the attacker since it is not bound to the legitimate verifier.
+Authentication protocols that are verifier impersonation resistant SHALL authenticate the verifier and either:
 
-One example of a verifier impersonation resistant authentication protocol is client-authenticated TLS, because it encrypts the authenticator output with the verifier's public key, having obtained that key from an X.509 certificate that the client's endpoint has verified. Other protocols use techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by the attacker at the real verifier. Specialized protocols where the claimant's authenticator will only release its output to a preset list of valid verifiers MAY also be considered verifier impersonation resistant.
+1. Strongly and irreversibly bind the authenticator output to the public key of the certificate presented by the verifier to which it is sent, or to that verifier's authenticated hostname or domain name; or
+
+2. Determine whether the verifier's authenticated hostname or domain name is on a list of trusted verifiers, and release the authenticator output only to a verifier on that list.
+
+One example of the former class of verifier impersonation resistant authentication protocols is client-authenticated TLS, because the client signs the authenticator output along with earlier messages from the protocol that are unique to the particular TLS connection being negotiated. Other protocols that MAY be used are techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by a fraudulent verifier (the attacker) if proxied to the intended verifier.
+
+The latter class of verifier impersonation resistant protocols relies on access control to release the authenticator output only to trusted verifiers.
 
 In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and one-time password authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
 
