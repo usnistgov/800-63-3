@@ -31,7 +31,7 @@ An attempt by an unauthorized individual to fool a verifier or a relying party i
 A party who acts with malicious intent to compromise an information system.
 
 #### Attribute
-A claim of a named quality or characteristic inherent in or ascribed to someone or something. (See term in [\[ICAM\]](#ICAM) for more information.)
+A quality or characteristic ascribed to someone or something.
 
 #### Authentication
 The process of establishing confidence in the identity of users or information systems.
