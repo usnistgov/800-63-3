@@ -29,29 +29,29 @@ d) The agency SHALL publish or identify coverage by a Privacy Impact Assessment,
 
 ### 4.1. Federation Models
 
-This section provides an overview of a few common models of identity federation currently in use. In these models, trust is established between members of the federation in several different ways. Some models mandate that federated parties have a high level of trust. Other models allow for parties with a diversity of trust relationships.
+This section provides an overview of a few common models of identity federation currently in use. In these models, a relationship is established between members of the federation in several different ways. Some models mandate that all federated parties have an equally high level of trust, while other models allow for parties with a diversity of relationships.
 
 #### 4.1.1 Central Authority
 
-Some federated parties trust a central authority to make trust decisions for them and communicate metadata between parties. In this model, the central authority generally conducts some level of vetting on each party in the federation to verify compliance with predetermined security and integrity standards.
+Some federated parties defer to a central authority to make decisions for them and to communicate metadata between parties. In this model, the central authority generally conducts some level of vetting on each party in the federation to verify compliance with predetermined security and integrity standards.
 
-Most federations using the central authority model have a single level of trust - either parties are in the federation or they are not. However, more sophisticated federations have multiple tiers of trust which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted or have some common purpose that justifies a higher level of trust. This higher level of trust makes some parties in the federation more likely to automatically release information about their users to the parties in the higher tiers.
+Most federations using the central authority model have a simple membership model - either parties are in the federation or they are not. However, more sophisticated federations have multiple tiers of membership which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted or have some common purpose that justifies a higher level of access. As a consequence, some parties in the federation are more likely to automatically release information about their subscribers to the parties in the higher tiers.
 
 #### 4.1.2 Manual Registration
 
-In the manual registration model of federation, system administrators communicate metadata and test system interoperability before transactions take place between users over the wire. Metadata for each party who wishes to participate is manually input into a registry of federated parties. Each party maintains their own registry of other parties whom they have deemed trustworthy.
+In the manual registration model of federation, system administrators communicate metadata and test system interoperability before transactions take place between users over the wire. Metadata for each party who wishes to participate is manually input into a registry of federated parties. Each party maintains their own registry of other parties with whom they wish to federate.
 
-Manual registration can take place on a case by case basis without any authority or federation operator in place. In this case, an existing pairwise trust relationship is generally already in place between the IdP and the RP. 
+Manual registration can take place on a case by case basis without any authority or federation operator in place. In this case, a pairwise relationship is created between the IdP and the RP. 
 
-Manual registration can work in concert with a central authority model. In this case, a registry is pre-populated with parties trusted by the central authority, and more parties are added manually on an as-needed basis.
+Manual registration can also work in concert with a central authority model. In this case, a registry is pre-populated with parties known to the central authority, and more parties are added manually on an as-needed basis.
 
 #### <a name="dynamic-registration"></a> 4.1.3 Dynamic Registration
 
 In the dynamic registration model of federation, systems have a well-known location where other systems can find their metadata. They also have predictable API endpoints where new systems can register themselves without human involvement. Systems that make use of dynamic registration SHOULD require verifiable human interaction, such as the approval of the identity federation transaction by the authenticated subscriber at the IdP. 
 
-Frequently, parties in a dynamic registration model have no way to trust each other ahead of time, so little information is exchanged by default. This problem is somewhat mitigated by a technology called software statements, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by certifying bodies. Because both parties trust the certifying body, that trust can be extended to the other party in the dynamic registration partnership.  This allows trust to be established or elevated between the federating parties. See [[RFC 7591]](#RFC7591) section 2.3 for more information.
+Each federated party sets attribute and information access policies for other federated parties. In a dynamic registration environment, a newly registered party could be severely limited in its access until such time as it is reviewed by an authorized party. For instance, a system administrator can grant higher levels of access. Additionally, a dynamically registered party will usually also require authorization from a subscriber during the authentication transaction (see [Runtime Decisions](#runtime-decisions)).
 
-Many federated parties establish whitelists of other federated parties who may dynamically register with some predetermined level of trust. They also establish blacklists of federated parties who may be allowed dynamically register with a low level of trust, or who may not be allowed to dynamically register at all. Everything that is not on a whitelist or a blacklist can be considered to be in a gray area or on a "graylist." Graylisted parties generally start out with a low level of trust until they can be reviewed by a human who can determine an appropriate level of trust. 
+Frequently, parties in a dynamic registration model have no way to know each other ahead of time. As a consequence, little information about users and systems is exchanged by default. This problem is somewhat mitigated by a technology called software statements, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by certifying bodies. Because both parties trust the certifying body, that trust can be extended to the other party in the dynamic registration partnership.  This allows the connection to be established or elevated between the federating parties without relying on self-asserted attributes entirely. See [RFC 7591](#RFC7591) section 2.3 for more information.
 
 #### 4.1.4 Proxied Federation
 
@@ -75,11 +75,6 @@ The following list illustrates a spectrum of blinding implementations:
 4.	The federation proxy blinds the RP and IdP from each other. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, but has no visibility into any attributes it is transmitting in the assertion.
 5. The federation proxy blinds the RP, IdP, and itself. The federation proxy cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. 
 
+#### 4.1.5 <a name="runtime-decisions"></a>Runtime Decisions
 
-
-
- 
-
-
-
-
+The fact that federated parties are known to each other through some form of registration or centralized management does not necessarily mean they are allowed to pass information. Federated parties can establish whitelists of other federated parties who may authenticate subscribers or pass information about them without runtime authorization from the subscriber. Federated parties can also establish blacklists of other federated parties who may not be allowed to pass information about subscribers at all. Every party that is not on a whitelist or a blacklist is placed by default in a gray area where runtime authorization decisions will be made by an authorized party, often the subscriber.
