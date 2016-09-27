@@ -23,13 +23,13 @@ An attempt by an unauthorized individual to defeat security controls. For exampl
 A party who acts with malicious intent to compromise an information system.
 
 #### Attribute
-A claim of a named quality or characteristic inherent in or ascribed to someone or something.
+A quality or characteristic ascribed to someone or something.
 
-### Attribute Claim
+#### Attribute Claim
 
 A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute 'birthday', a claim could be 'older than 18' or 'born in December'.
 
-### Attribute Value
+#### Attribute Value
 
 A complete statement asserting a property of a subscriber, independent of format. For example, for the attribute 'birthday', a value could be '12/1/1980' or 'December 1, 1980'.
 
