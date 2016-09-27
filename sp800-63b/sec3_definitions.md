@@ -288,9 +288,6 @@ The act of deceiving an individual into revealing sensitive information by assoc
 #### Special Publication (SP)
 A type of publication issued by NIST. Specifically, the Special Publication 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 
-#### Strongly Bound Credentials
-Credentials that are bound to a subscriber in a tamper-evident fashion.
-
 #### Subscriber
 A party who has received a credential bound to an authenticator from a CSP.
 
