@@ -39,6 +39,9 @@ A communication channel that uses approved encryption where the initiator of the
 #### Authentication
 The process of establishing confidence in the identity of users or information systems. Authentication of users (subscribers) implies confirmation of the subscriber's presence and intent to authenticate.
 
+#### Authentication Factor
+The three types of authentication factors are *something you know*, *something you have*, and *something you are*. Every authenticator has one or more authentication factors.
+
 #### Authentication Protocol
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
 
@@ -101,7 +104,10 @@ A value used to control cryptographic operations, such as decryption, encryption
 See also Asymmetric keys, Symmetric key.
 
 #### Cryptographic Authenticator
-An authenticator where the secret is a cryptographic key.
+An authenticator where the secret is a cryptographic key. A hardware cryptographic authenticator is a cryptographic module containing one or more cryptographic keys.
+
+#### Cryptographic Module
+A set of hardware, software, and/or firmware that implements approved security functions (including cryptographic algorithms and key generation).
 
 #### Data Integrity
 The property that data has not been altered by an unauthorized entity.
