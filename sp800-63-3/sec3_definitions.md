@@ -7,22 +7,19 @@ There is a wide variety of terms used in the area of authentication. While the d
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Address of Record
-
 The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
 
 #### Applicant
-
 A party undergoing the processes of registration and identity proofing.
 
 #### Assertion
 A statement from a verifier to a relying party (RP) that contains identity information about a subscriber. Assertions may also contain verified attributes.
 
-
 #### Assurance
 In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
 
 #### Asymmetric Keys
-Two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification.
+Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
 An attempt by an unauthorized individual to fool a verifier or a relying party into believing that the unauthorized individual in question is the subscriber.
@@ -31,7 +28,7 @@ An attempt by an unauthorized individual to fool a verifier or a relying party i
 A party who acts with malicious intent to compromise an information system.
 
 #### Attribute
-A claim of a named quality or characteristic inherent in or ascribed to someone or something. (See term in [\[ICAM\]](#ICAM) for more information.)
+A quality or characteristic ascribed to someone or something.
 
 #### Authentication
 The process of establishing confidence in the identity of users or information systems.
@@ -87,7 +84,7 @@ An authenticator where the secret is a cryptographic key.
 The process of establishing confidence in user identities digitally presented to an information system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
-An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
+An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation but not confidentiality protection.
 
 #### Electronic Authentication (E-Authentication)
 See *Digital Authentication*.
@@ -132,7 +129,7 @@ As defined by OMB Circular A-130, Personally Identifiable Information means info
 #### Private Key
 The secret part of an asymmetric key pair that is used to digitally sign or decrypt data.
 
-#### Pseudonymous Identifer
+#### Pseudonymous Identifier
 A meaningless, but unique number that does not allow the RP to infer the subscriber but which does permit the RP to associate multiple interactions with the subscriber’s claimed identity.
 
 #### Public Key

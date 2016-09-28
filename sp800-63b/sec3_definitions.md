@@ -22,7 +22,7 @@ A data object, created in conjunction with an assertion, which identifies the ve
 In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
 
 #### Asymmetric Keys
-Two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification.
+Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
 An attempt by an unauthorized individual to defeat security controls. For example, to fool a verifier or a Relying Party into believing that the unauthorized individual in question is the subscriber.
@@ -31,13 +31,16 @@ An attempt by an unauthorized individual to defeat security controls. For exampl
 A party who acts with malicious intent to compromise an information system.
 
 #### Attribute
-A claim of a named quality or characteristic inherent in or ascribed to someone or something. (See term in [[ICAM]](#ICAM) for more information.)
+A quality or characteristic ascribed to someone or something.
 
 #### Authenticated Protected Channel
 A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
 
 #### Authentication
 The process of establishing confidence in the identity of users or information systems. Authentication of users (subscribers) implies confirmation of the subscriber's presence and intent to authenticate.
+
+#### Authentication Factor
+The three types of authentication factors are *something you know*, *something you have*, and *something you are*. Every authenticator has one or more authentication factors.
 
 #### Authentication Protocol
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
@@ -101,7 +104,10 @@ A value used to control cryptographic operations, such as decryption, encryption
 See also Asymmetric keys, Symmetric key.
 
 #### Cryptographic Authenticator
-An authenticator where the secret is a cryptographic key.
+An authenticator where the secret is a cryptographic key. A hardware cryptographic authenticator is a cryptographic module containing one or more cryptographic keys.
+
+#### Cryptographic Module
+A set of hardware, software, and/or firmware that implements approved security functions (including cryptographic algorithms and key generation).
 
 #### Data Integrity
 The property that data has not been altered by an unauthorized entity.
@@ -113,7 +119,7 @@ A credential issued based on proof of possession and control of one or more auth
 The process of establishing confidence in user identities electronically presented to an information system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
-An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
+An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation but not confidentiality protection.
 
 #### Eavesdropping Attack
 An attack in which an attacker listens passively to the authentication protocol to capture information which can be used in a subsequent active attack to masquerade as the claimant.
@@ -281,9 +287,6 @@ The act of deceiving an individual into revealing sensitive information by assoc
 
 #### Special Publication (SP)
 A type of publication issued by NIST. Specifically, the Special Publication 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
-
-#### Strongly Bound Credentials
-Credentials that are bound to a subscriber in a tamper-evident fashion.
 
 #### Subscriber
 A party who has received a credential bound to an authenticator from a CSP.

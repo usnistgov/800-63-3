@@ -7,7 +7,6 @@ There is a wide variety of terms used in the area of authentication. While the d
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Address of Record
-
 The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
 
 #### Applicant
@@ -16,6 +15,9 @@ A party undergoing the processes of registration and identity proofing.
 #### Assurance
 In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
 
+#### Asymmetric Keys
+Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
+
 #### Attack
 An attempt by an unauthorized individual to defeat security controls. For example, to cause a credential service provider to register an impostor as the subscriber.
 
@@ -23,14 +25,12 @@ An attempt by an unauthorized individual to defeat security controls. For exampl
 A party who acts with malicious intent to compromise an information system.
 
 #### Attribute
-A claim of a named quality or characteristic inherent in or ascribed to someone or something.
+A quality or characteristic ascribed to someone or something.
 
-### Attribute Claim
-
+#### Attribute Claim
 A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute 'birthday', a claim could be 'older than 18' or 'born in December'.
 
-### Attribute Value
-
+#### Attribute Value
 A complete statement asserting a property of a subscriber, independent of format. For example, for the attribute 'birthday', a value could be '12/1/1980' or 'December 1, 1980'.
 
 #### Authentication
@@ -76,7 +76,7 @@ A credential issued based on proof of possession and control of an authenticator
 The process of establishing confidence in user identities electronically presented to an information system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
-An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation.
+An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation but not confidentiality protection.
 
 #### Electronic Authentication (E-Authentication)
 See *Digital Authentication*.
@@ -99,7 +99,6 @@ Identity proofing of an individual based on knowledge of information associated 
 #### Network
 An open communications medium, typically the internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, man-in-the-middle, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).
 
-
 #### Personally Identifiable Information (PII)
 As defined by OMB Circular A-130, Personally Identifiable Information means information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual.
 
@@ -112,7 +111,6 @@ A session wherein messages between two participants are encrypted and integrity 
 A participant is said to be *authenticated* if, during the session, he, she or it proves possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
 #### Pseudonym
-
 A name other than a legal name.
 
 #### Public Key
@@ -148,5 +146,4 @@ In reference to an ID, the quality of not being expired or revoked.
 A subscriber name that has been verified by identity proofing.
 
 #### Virtual In-Person Proofing
-
 A remote identity person proofing process that employs technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.
