@@ -109,10 +109,9 @@ areas:
 
 The M-04-04 Level of Assurance is determined by considering the identity assurance, authenticator assurance level, and federation assurance level achieved for each of the elements listed above, and determining the Level of Assurance satisfied by all elements.
 
-Within a given level of assurance, agencies may employ additional risk mitigation measures. Easing credential assurance level requirements may
-increase the size of the enabled customer pool, but agencies shall
-ensure that this does not corrupt the system’s choice of the appropriate
-assurance level. Alternatively, agencies may consider partitioning the
+Within a given level of assurance, agencies may employ additional risk mitigation measures and compensating controls. Easing credential assurance level requirements may result in benefits such as
+increasing the size of the enabled customer pool, but agencies shall
+ensure mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Alternatively, agencies may consider partitioning the
 functionality of a digital authentication enabled application to allow less
 sensitive functions to be available at a lower level of authentication
 and attribute assurance, while more sensitive functions are available
