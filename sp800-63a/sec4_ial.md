@@ -73,7 +73,7 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 5.	 The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, authorization or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. 
 6.	The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access. 
 7. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities.
-3. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;	b) the PII, including any images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and 	c) the schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
+3. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;	b) the PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and 	c) the schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
 
 6. All personally identifiable information (PII) collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 13. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
@@ -153,7 +153,7 @@ The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote i
 
 #### 4.5.1.7. Biometric Collection
 
-The CSP SHALL NOT collect biometrics for any reason.
+The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [Section 5.2.3](#biometric_use) of SP 800-63B for more detail on biometric collection.
 
 #### 4.5.1.8. Security Controls
 
@@ -213,7 +213,7 @@ Remote proofing SHALL NOT be allowed.
 
 ### 4.6.7. Biometric Collection
 
-The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image or fingerprints) to ensure that the applicant cannot repudiate application.  See [Section 5.2.3](#biometric_use) of SP 800-63B for more detail on biometric collection. 
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image or fingerprints) the purposes of non-repudiation and re-proofing.  See [Section 5.2.3](#biometric_use) of SP 800-63B for more detail on biometric collection. 
 
 ### 4.6.8. Security  Controls
 
@@ -249,7 +249,7 @@ Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>
 Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.<br><br>- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.|Same as IAL 2.
 Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
 Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  <br> - A notification of proofing SHALL be sent via a different address of record than the destination of the enrollment code|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. - A notification of proofing SHALL be sent to the confirmed address of record.
-Biometric Collection|No|No|Yes|
+Biometric Collection|No|Yes|Yes|
 Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
 
 
