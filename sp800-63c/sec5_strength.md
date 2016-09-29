@@ -87,6 +87,6 @@ Pairwise pseudonymous identifiers SHALL be opaque and unguessable, containing no
 An IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, but only if:
 
 * Those RPs have a demonstrable relationship that justifies an operational need for the correlation, such as a shared security domain or shared legal ownership, and
-* All RPs consent to being correlated in such a manner.
+* All RPs sharing an identifier consent to being correlated in such a manner.
 
-The RPs SHALL conduct a privacy risk assessment to consider the privacy risks associated with requesting a common identifier. The IdP SHALL ensure that only intended RPs are correlated, otherwise a rogue RP could learn of the pseudonymous identifier for a correlation by fraudulently posing as part that correlation.
+The RPs SHALL conduct a privacy risk assessment to consider the privacy risks associated with requesting a common identifier. The IdP SHALL ensure that only intended RPs are correlated; otherwise, a rogue RP could learn of the pseudonymous identifier for a correlation by fraudulently posing as part of that correlation.
