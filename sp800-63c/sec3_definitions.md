@@ -53,3 +53,9 @@ Communication between two systems that relies on a direct connection (allowing f
 
 #### Federation Proxy
 A component that acts as a logical RP to a set of IdPs and a logical IdP to a set of RPs, bridging the two systems with a single component. These are sometimes referred to as "brokers". 
+
+#### Asymmetric Signature
+A means of integrity protecting data by use of a digital signature that requires asymmetric keys (a public and private key pair). Examples include RSA and Elliptic Curve signatures.
+
+#### Symmetric Signature
+A means of integrity protecting data by use of a hash or digest mechanism that requires a shared key. Examples include HMAC and KMAC.
