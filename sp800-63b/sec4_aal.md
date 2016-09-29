@@ -119,20 +119,16 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that only “hard” cryptographic authenticators are allowed and verifier impersonation resistance is required.
+AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a “hard” cryptographic authenticator that also provides impersonation resistance SHALL be used.
 
 #### 4.3.1. Permitted Authenticator Types
 
 Authentication Assurance Level 3 requires the use of one of three kinds of hardware devices:
 
-* Multi-Factor OTP Device used in conjunction with:
- * - Multi-Factor Software Cryptographic Authenticator, or
- * - Single-Factor Cryptographic Device
 * Multi-Factor Cryptographic Device
 * Single-Factor Cryptographic Device used in conjunction with Memorized Secret
-* Multi-Factor OTP Device used in conjunction with a single-factor cryptographic device
 
-> Note: OTP devices do not provide verifier impersonation resistance, which is required at AAL 3, so a cryptographic device is required even though the OTP device is a multi-factor device.
+All cryptographic device authenticators used at AAL 3 SHALL be verifier impersonation resistant as described in section [5.2.5](#verifimpers).
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
@@ -148,7 +144,7 @@ In order to be valid at AAL 3, authentication assertions SHALL meet the requirem
 
 #### <a name="aal3reauth"></a>4.3.4. Reauthentication
 
-At AAL 3, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following a period of no more than 15 minutes of user inactivity. Reauthentication SHALL use both factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout.
+At AAL 3, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following a period of no more than 15 minutes of user inactivity. Reauthentication SHALL use both authentication factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout.
 
 #### 4.3.5. Security Controls
 
@@ -179,7 +175,7 @@ The following table summarizes the requirements for each of the authenticator as
 
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------
-**Permitted authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF Cryptographic Device<br />SF Cryptographic Device plus Memorized Secret<br />MF OTP Device plus SF Cryptographic Device
+**Permitted authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF Cryptographic Device<br />SF Cryptographic Device plus Memorized Secret
 **FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
