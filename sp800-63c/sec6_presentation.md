@@ -10,13 +10,22 @@ The subscriber SHALL be able to view the attribute values to be transmitted, alt
 
 ### 6.1. Back-channel presentation
 
-In the *back-channel* model, the subscriber is given an assertion reference to present to the RP, generally through the front channel. The assertion reference itself contains no information about the subscriber and MUST be resistant to tampering and fabrication by an attacker. The RP presents the assertion reference to the IdP, usually along with authentication of the RP itself, to fetch the assertion. 
+In the *back-channel* model, the subscriber is given an assertion reference to present to the RP, generally through the front channel. The assertion reference itself contains no information about the subscriber and MUST be resistant to tampering and fabrication by an attacker. The RP presents the assertion reference to the IdP, usually along with authentication of the RP itself, to fetch the assertion.
 
+
+<a name="63cSec6-Figure1"></a>
+
+<div class="text-center" markdown="1">
 ![Figure 1: Back-channel presentation](sp800-63c/media/indirect.png)
 
-**Figure 1: Back-channel presentation**
+**Figure 6-1: Back-channel presentation**
 
-In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves). 
+</div>
+
+
+
+
+In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
 This method also allows the RP to query the CSP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed.
 
@@ -41,9 +50,19 @@ Presentation of the assertion reference at the IdP SHOULD require authentication
 
 In the *front-channel* model, the IdP creates an assertion and sends it to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP. This is often handled by mechanisms within the subscriber’s browser.) 
 
+
+<a name="63cSec6-Figure2"></a>
+
+<div class="text-center" markdown="1">
 ![Figure 2: Front-channel presentation](sp800-63c/media/direct.png)
 
-**Figure 2: Front-channel presentation**
+
+**Figure 6-2: Front-channel presentation**
+
+</div>
+
+
+
 
 In the front-channel method, an assertion is visible to the subscriber, which could potentially cause leakage of system information included in the assertion. 
 

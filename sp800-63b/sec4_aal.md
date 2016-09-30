@@ -8,7 +8,15 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
-The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels. 
+[Table 4-1](#63bSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels.
+
+<a name="63bSec4-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-1.  Legacy M-04-04 AAL Requirements**
+
+</div>
 
 
 | M-04-04 Level of Assurance (LOA) |  Authenticator Assurance Level (AAL) |
@@ -18,8 +26,15 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 |  2 or 3 |
 | 4 |  3 |
 
-However, the table below shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+However, [Table 4-2](#63bSec4-Table2) shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
 
+<a name="63bSec4-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-2.  Recommended M-04-04 AAL Requirements**
+
+</div>
 
 | M-04-04 Level of Assurance | Authenticator Assurance Level
 |:------------------:|:-----------------------------:
@@ -171,7 +186,15 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 *(Non-normative; refer to preceding sections for normative requirements)*
 
-The following table summarizes the requirements for each of the authenticator assurance levels:
+[Table 4-3](#63bSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
+
+<a name="63bSec4-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-1.  AAL Summary of Requirements**
+
+</div>
 
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------
