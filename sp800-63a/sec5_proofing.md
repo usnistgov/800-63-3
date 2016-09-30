@@ -118,20 +118,29 @@ The following requirements apply to the identity verification steps for IAL 2 an
 	- The CSP SHALL time out KBV sessions after 2 minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process.
 
 
-### <a name="vip"></a>5.4.3. Virtual In-person Proofing Requirements
+### <a name="vip"></a>5.4.3. In-person Proofing Requirements
+
+#### 5.4.3.1 General Requirements
+
+1.	The CSP SHALL have the operator view the biometric source (e.g., fingers or face) for presence of non-natural materials and perform such inspections as part of the proofing process.
+2.	The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
+
+
+
+#### 5.4.3.2. Requirements for in-person proofing performed over remote channels
+
+It is possible for a CSP to achieve the security and confidence comparable to in-peson proofing over remote channels.  The following requirements establish comparability between in-person transactions where the enrollee in the same physical locatin as the CSP or when the enrollee is remote to the CSP.
 
 Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL 3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
-2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process are visible.
-4. All digital verification of evidence (e.g., via chip or wireless technologies) SHALL be performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
-5. Collection of biometrics SHALL be done in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
+2. 2.	The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to an operator. are clearly visible and without doubt.
+4. The CSP SHALL provide that all digital verification of evidence (e.g., via chip or wireless technologies) is performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
 6. The CSP SHALL have an operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
 7. A CSP SHOULD have an operator participate in-person, at the same physical location as the applicant, for the entirety of the enrollment and identity proofing session.
-8. The CSP SHALL have the live operator view the biometric source (e.g., fingers or face) for presence of non-natural materials.
-6. The CSP SHALL require operators to have undergone a training program to detect potential fraud.
-7. The CSP SHALL employ tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as a retail store.
-8. All communications CSP SHALL take place over a mutually authenticated encrypted session.
+6. The CSP SHALL require operators to have undergone a training program to detect potential fraud and to properly perform a virtual in-process proofing session.
+7. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as a retail store.
+8. The CSP SHALL ensure all communications take place over a mutually authenticated encrypted session.
 
 
 ### <a name="trustref"></a> 5.4.4. Trusted Referee Requirements

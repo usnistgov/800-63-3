@@ -146,4 +146,4 @@ In reference to an ID, the quality of not being expired or revoked.
 A subscriber name that has been verified by identity proofing.
 
 #### Virtual In-Person Proofing
-A remote identity person proofing process that employs technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.
+A remote identity person proofing process that employs physical, technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.
