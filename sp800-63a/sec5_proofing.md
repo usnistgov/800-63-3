@@ -134,11 +134,11 @@ It is possible for a CSP to achieve the security and confidence comparable to in
 Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL 3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
-2. 2.	The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to an operator. are clearly visible and without doubt.
-4. The CSP SHALL provide that all digital verification of evidence (e.g., via chip or wireless technologies) is performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
-6. The CSP SHALL have an operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
-7. A CSP SHOULD have an operator participate in-person, at the same physical location as the applicant, for the entirety of the enrollment and identity proofing session.
-6. The CSP SHALL require operators to have undergone a training program to detect potential fraud and to properly perform a virtual in-process proofing session.
+2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to an operator. are clearly visible and without doubt.
+3. The CSP SHALL provide that all digital verification of evidence (e.g., via chip or wireless technologies) is performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
+4. The CSP SHALL have an operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
+5. The CSP SHALL require operators to have undergone a training program to detect potential fraud and to properly perform a virtual in-process proofing session.
+6. A CSP MAY have an attendant participate in-person, at the same physical location as the applicant, for the entirety of the enrollment and identity proofing session.
 7. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as a retail store.
 8. The CSP SHALL ensure all communications take place over a mutually authenticated encrypted session.
 
