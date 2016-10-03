@@ -175,7 +175,7 @@ In instances where the individual enrolling cannot meet the identity evidence re
 
 ## <a name="ial3-requirements"></a> 4.6. Identity Assurance Level 3
 
-IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is either performed in-person or via a valid virtual in-person proofing process. See [Section 5.4.3](#vip) for more details. A CSP MAY exceed these requirements.
+IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is performed in-person. See [Section 5.4.3](#vip) for more details. A CSP MAY exceed these requirements.
 
 ### 4.6.2. Resolution Requirements
 
@@ -205,11 +205,9 @@ See [Section 5.4, Identity Verification](#verify) for more information on accept
 
 ### 4.6.5. Presence Requirements
 
-All identity proofing steps SHOULD be performed in person. 
+All identity proofing steps SHALL be performed in person. See [Section 5.4.3](#vip) for more details.
 
-Virtual in-person identity proofing MAY be employed by a CSP as an equivalent process to in-person identity proofing provided all requirements specified in [Section 5.4.3](#vip) are met.
-
-Remote proofing SHALL NOT be allowed. 
+Remote proofing SHALL NOT be allowed.
 
 ### 4.6.6 Address Confirmation
 
@@ -249,7 +247,7 @@ An enrollment code SHALL be comprised of one of the following:
 
 Requirement | IAL 1 | IAL 2 | IAL 3
 ------------|-------|-------|-------
-Presence|No requirements|In-person and remote|In-person or virtual in-person
+Presence|No requirements|In-person and remote|In-person
 Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution. KBV may be used for added confidence.||
 Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>**OR**<br>One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence|One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence<br>**OR**<br>Two (2) pieces of STRONG evidence plus one (1) piece of ADEQUATE evidence
 Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.<br><br>- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.|Same as IAL 2.
