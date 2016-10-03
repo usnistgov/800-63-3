@@ -111,11 +111,11 @@ A CSP SHOULD implement identity proofing in accordance with [Section 4.5.1](#nor
 
 #### 4.5.1.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.2](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.1](#resolve) for general resolution requirements.
 
 #### 4.5.1.2. Evidence Requirements
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - One (1) piece of SUPERIOR or STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
 - Two (2) pieces of STRONG evidence; **OR**
@@ -123,14 +123,14 @@ See [Section 5.3, Identity Evidence Validation](#validate) for more information 
 
 #### 4.5.1.3. Validation Requirements
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 #### 4.5.1.4. Verification Requirements
 
-See [Section 5.4, Identity Verification](#verify) for more information on acceptable identity evidence.
+See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
 At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.
 
@@ -171,20 +171,20 @@ Antecedent in-person identity proofing MAY be used provided the prior proofing t
 
 ### <a name="referee"></a>4.5.3. IAL2 Trusted Referee Proofing Requirements
 
-In instances where the individual enrolling cannot meet the identity evidence requirements specified in [Section 4.5.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the enrollee.  See [Section 5.4.4.](#trustref) for more details.
+In instances where the individual enrolling cannot meet the identity evidence requirements specified in [Section 4.5.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the enrollee.  See [Section 5.3.4.](#trustref) for more details.
 
 ## <a name="ial3-requirements"></a> 4.6. Identity Assurance Level 3
 
-IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is performed in-person. See [Section 5.4.3](#vip) for more details. A CSP MAY exceed these requirements.
+IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is performed in-person. See [Section 5.3.3](#vip) for more details. A CSP MAY exceed these requirements.
 
 ### 4.6.2. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.2](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.1](#resolve) for general resolution requirements.
 
 
 ### 4.6.2. Evidence Requirements
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - Two (2) or more pieces of SUPERIOR evidence; **OR**
 - One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
@@ -192,20 +192,20 @@ See [Section 5.3, Identity Evidence Validation](#validate) for more information 
 
 ### 4.6.3. Validation Requirements  
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 ### 4.6.4. Verification Requirements
 
-See [Section 5.4, Identity Verification](#verify) for more information on acceptable identity evidence.
+See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
 - At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.
 
 ### 4.6.5. Presence Requirements
 
-All identity proofing steps SHALL be performed in person. See [Section 5.4.3](#vip) for more details.
+All identity proofing steps SHALL be performed in person. See [Section 5.3.3](#vip) for more details.
 
 Remote proofing SHALL NOT be allowed.
 
