@@ -24,11 +24,11 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 1. For remote transactions:
 	2. The applicant SHALL identify himself/herself in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the Applicant’s phone number, email address, or postal address of record.
-	3. Permanent secrets SHALL only be issued to the Applicant within a protected session.
+	3. Long-term authenticator secrets SHALL only be issued to the Applicant within a protected session.
 2. For physical transactions:
 	3. The applicant SHALL identify himself/herself in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.
 	4. Temporary secrets SHALL not be reused.
-	5. If the CSP issues permanent secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
+	5. If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
 
 
 #### 6.1.2. Post-Enrollment Binding
