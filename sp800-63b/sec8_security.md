@@ -16,9 +16,16 @@ An attacker who can gain control of an authenticator will often be able to masqu
 
 - *Out of band* secrets may be intercepted. An attacker may receive a challenge or response by eavesdropping on the primary or secondary communications channel. The attacker might then authenticate their own channel or save the message for later replay.
 
-This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in Table 4, along with some examples.
+This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
 
-**Table 4 – Authenticator Threats**
+<a name="63bSec8-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 8-1.  Authenticator Threats**
+
+</div>
+
 
 | **Authenticator Threats/Attacks**  | **Description**  | **Examples** |
 |------------------------------------|------------------|--------------|
@@ -51,9 +58,16 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | Malicious code on the endpoint compromises a multi-factor software cryptographic authenticator. | Malicious code proxies authentication or exports authenticator keys from the endpoint.
 
 ### 8.2. Threat Mitigation Strategies
-Related mechanisms that assist in mitigating the threats identified above are summarized in Table 5.
+Related mechanisms that assist in mitigating the threats identified above are summarized in [Table 8-2](#63bSec8-Table2).
 
-**Table 5 - Mitigating Authenticator Threats**
+<a name="63bSec8-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 8-1 - Mitigating Authenticator Threats**
+
+</div>
+
 
 | **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
 |---------------------------------|----------------------------------|

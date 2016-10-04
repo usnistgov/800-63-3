@@ -136,14 +136,8 @@ See *Authenticator Secret*.
 #### Trust Anchor
 A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate).
 
-#### Unverified Name
-A subscriber name that is not verified as meaningful by identity proofing.
-
 #### Valid
 In reference to an ID, the quality of not being expired or revoked.
 
-#### Verified Name
-A subscriber name that has been verified by identity proofing.
-
 #### Virtual In-Person Proofing
-A remote identity person proofing process that employs technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.
+A remote identity person proofing process that employs physical, technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.

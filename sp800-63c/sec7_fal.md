@@ -8,6 +8,15 @@ The FAL combines aspects of [assertion protection strength](#sec5) and [assertio
 
 This table presents different requirements depending on whether the assertion is presented through either the front channel or the back channel (via an assertion reference). Each successive level subsumes and fulfills all requirements of lower levels. Federations presented through a proxy SHALL be represented by the lowest level used during the proxied transaction.
 
+<a name="63cSec7-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+
+**Tbale 7-1: Federation Assertion Levels**
+
+</div>
+
 |FAL|Back-channel Presentation Requirement|Front-channel Presentation Requirement|
 |:--:|----|----|
 |1|Bearer assertion, asymmetrically signed by IdP|Bearer assertion, asymmetrically signed by IdP|
@@ -20,7 +29,16 @@ For example, FAL 1 maps to the OpenID Connect Implicit Client profile or the SAM
 Regardless of what is requested or required by the protocol, the applicable FAL is easily detected by the RP by observing the nature of the assertion as it is presented as part of the federation protocol. Therefore, the RP is responsible for determining which FALs it is willing to accept for a given authentication transaction and ensuring that the transaction meets the requirements of that FAL.
 
 
-The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Federation Assurance Levels. 
+[Table 7-2](#63cSec7-Table2) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Federation Assurance Levels.
+
+<a name="63cSec7-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 7-2: Legacy M-04-04 FAL Requirements**
+
+</div>
+
 
 | M-04-04 Level of Assurance (LOA) |  Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:
@@ -29,7 +47,15 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 | 2
 | 4 | 4
 
-However, the table below shows the expanded set of FAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
+However, [Table 7-3](#63cSec7-Table3) shows the expanded set of FAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
+
+<a name="63cSec7-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 7-3: Recommended M-04-04 FAL Requirements**
+
+</div>
 
 | M-04-04 Level of Assurance | Federation Assurance Level
 |:------------------:|:-----------------------------:

@@ -73,11 +73,17 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 5.	 The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, authorization or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. 
 6.	The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access. 
 7. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities.
-3. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;	b) the PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and 	c) the schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
+3. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
+
+	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;
+
+	b) the PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and 
+
+	c) the schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
 
 6. All personally identifiable information (PII) collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 13. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
-13. <a name="gr13"></a>The CSP MAY obtain additional confidence in remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](http://www.ntis.gov/products/ssa-dmf/#), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).
+13. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](http://www.ntis.gov/products/ssa-dmf/#), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g.,cryptography).
 
 12. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.
 13. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
@@ -105,11 +111,11 @@ A CSP SHOULD implement identity proofing in accordance with [Section 4.5.1](#nor
 
 #### 4.5.1.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.2](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.1](#resolve) for general resolution requirements.
 
 #### 4.5.1.2. Evidence Requirements
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - One (1) piece of SUPERIOR or STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
 - Two (2) pieces of STRONG evidence; **OR**
@@ -117,14 +123,14 @@ See [Section 5.3, Identity Evidence Validation](#validate) for more information 
 
 #### 4.5.1.3. Validation Requirements
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 #### 4.5.1.4. Verification Requirements
 
-See [Section 5.4, Identity Verification](#verify) for more information on acceptable identity evidence.
+See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
 At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.
 
@@ -165,20 +171,20 @@ Antecedent in-person identity proofing MAY be used provided the prior proofing t
 
 ### <a name="referee"></a>4.5.3. IAL2 Trusted Referee Proofing Requirements
 
-In instances where the individual enrolling cannot meet the identity evidence requirements specified in [Section 4.5.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the enrollee.  See [Section 5.4.4.](#trustref) for more details.
+In instances where the individual enrolling cannot meet the identity evidence requirements specified in [Section 4.5.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the enrollee.  See [Section 5.3.4.](#trustref) for more details.
 
 ## <a name="ial3-requirements"></a> 4.6. Identity Assurance Level 3
 
-IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is either performed in-person or via a valid virtual in-person proofing process. See [Section 5.4.3](#vip) for more details. A CSP MAY exceed these requirements.
+IAL 3 adds additional rigor to the steps required at IAL 2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages.  In addition, identity proofing at IAL 3 is performed in-person. See [Section 5.3.3](#vip) for more details. A CSP MAY exceed these requirements.
 
 ### 4.6.2. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.2](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.1](#resolve) for general resolution requirements.
 
 
 ### 4.6.2. Evidence Requirements
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - Two (2) or more pieces of SUPERIOR evidence; **OR**
 - One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
@@ -186,24 +192,22 @@ See [Section 5.3, Identity Evidence Validation](#validate) for more information 
 
 ### 4.6.3. Validation Requirements  
 
-See [Section 5.3, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 ### 4.6.4. Verification Requirements
 
-See [Section 5.4, Identity Verification](#verify) for more information on acceptable identity evidence.
+See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
 - At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.
 
 ### 4.6.5. Presence Requirements
 
-All identity proofing steps SHOULD be performed in person. 
+All identity proofing steps SHALL be performed in person. See [Section 5.3.3](#vip) for more details.
 
-Virtual in-person identity proofing MAY be employed by a CSP as an equivalent process to in-person identity proofing provided all requirements specified in [Section 5.4.3](#vip) are met.
-
-Remote proofing SHALL NOT be allowed. 
+Remote proofing SHALL NOT be allowed.
 
 ### 4.6.6 Address Confirmation
 
@@ -243,7 +247,7 @@ An enrollment code SHALL be comprised of one of the following:
 
 Requirement | IAL 1 | IAL 2 | IAL 3
 ------------|-------|-------|-------
-Presence|No requirements|In-person and remote|In-person or virtual in-person
+Presence|No requirements|In-person and remote|In-person
 Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution. KBV may be used for added confidence.||
 Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>**OR**<br>One (1) piece of STRONG evidence plus two (2) pieces of ADEQUATE evidence|One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence<br>**OR**<br>Two (2) pieces of STRONG evidence plus one (1) piece of ADEQUATE evidence
 Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.<br><br>- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.|Same as IAL 2.
