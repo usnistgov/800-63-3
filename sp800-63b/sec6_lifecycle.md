@@ -71,9 +71,14 @@ To facilitate secure reporting of loss or theft of or damage to an authenticator
 
 CSPs MAY issue authenticators that expire. If and when an authenticator expires, it SHALL NOT be usable for authentication. When an authentication is attempted using an expired authenticator, the CSP SHOULD give an indication to the subscriber that the authentication failure is due to expiration rather than some other cause.
 
-The CSP SHALL require subscribers to surrender any physical authenticator containing trustable attributes as soon as practical after expiration, revocation, or receipt of a renewed authenticator.
+The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing attribute certificates signed by the CSP as soon as practical after expiration or receipt of a renewed authenticator.
 
-### 6.4. Revocation
+### 6.4. Revocation and Termination
 
-CSPs SHALL revoke the binding of authenticators promptly when an online identity ceases to exist or when requested by the subscriber.
+Revocation of an authenticator (sometimes referred to as termination, especially in the context of PIV credentials) refers to removal of the binding between an authenticator and a credential the CSP maintains. 
+CSPs SHALL revoke the binding of authenticators promptly when an online identity ceases to exist (e.g., subscriber's death, discovery of a fraudulent subscriber), when requested by the subscriber, or when the CSP determines that the subscriber no longer meets its eligibility requirements.
+
+The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing certified attributes signed by the CSP as soon as practical after revocation or termination takes place.
+
+Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
 
