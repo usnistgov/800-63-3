@@ -233,7 +233,7 @@ The following requirements apply to the identity verification steps for IAL 2 an
 
 1.	The CSP SHALL have the operator view the biometric source (e.g., fingers or face) for presence of non-natural materials and perform such inspections as part of the proofing process.
 
-2.	The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
+2.	The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another individual. All biometric performance requirements in [SP 800-63B, Section 5.2.3 Biometric Considerations](sp800-63b.html/#biometric_use) apply.
 
 
 
@@ -245,7 +245,7 @@ The following requirements apply to the identity verification steps for IAL 2 an
 
 
 
-It is possible for a CSP to achieve the security and confidence comparable to in-peson proofing over remote channels.  The following requirements establish comparability between in-person transactions where the enrollee in the same physical locatin as the CSP or when the enrollee is remote to the CSP.
+It is possible for a CSP to achieve the security and confidence comparable to in-peson proofing over remote channels.  The following requirements establish comparability between in-person transactions where the enrollee in the same physical location as the CSP or when the enrollee is remote to the CSP.
 
 
 
@@ -255,9 +255,9 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
 
-2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to an operator. are clearly visible and without doubt.
+2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to be clearly visible to the remote operator. The operator SHALL direct the applicant as required to remove any doubt in the proofing process.
 
-3. The CSP SHALL provide that all digital verification of evidence (e.g., via chip or wireless technologies) is performed by scanners and sensors that are integrated into the solution and in the entire field of view of the camera and the remote, live operator.
+3. The CSP SHALL requier that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors that are in the entire field of view of the camera and the remote, live operator.
 
 4. The CSP SHALL have an operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
 
@@ -267,7 +267,7 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 
 7. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as a retail store.
 
-8. The CSP SHALL ensure all communications take place over a mutually authenticated encrypted session.
+8. The CSP SHALL ensure that all communications take place over a mutually authenticated encrypted session.
 
 
 
@@ -277,7 +277,7 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 
 
 
-The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power attorney, or some other form of certified/approved individuals that can vouch for or act on behalf of the individual in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an individual that has successfully completed identity proofing to act as a trusted referee for another individual.  The CSP MAY use a trusted referee for both remote and in-person processes.  
+The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of certified/approved individuals that can vouch for or act on behalf of the individual in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an individual that has successfully completed identity proofing to act as a trusted referee for another individual.  The CSP MAY use a trusted referee for both remote and in-person processes.  
 
 
 
