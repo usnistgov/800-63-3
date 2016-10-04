@@ -257,7 +257,7 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 
 2. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to be clearly visible to the remote operator. The operator SHALL direct the applicant as required to remove any doubt in the proofing process.
 
-3. The CSP SHALL requier that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors that are in the entire field of view of the camera and the remote, live operator.
+3. The CSP SHALL require that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors that are in the entire field of view of the camera and the remote, live operator.
 
 4. The CSP SHALL have an operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
 
