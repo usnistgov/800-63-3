@@ -326,19 +326,21 @@ Biometrics SHALL be used with another authentication factor (something you know 
 
 Empirical testing of the biometric system to be deployed SHALL demonstrate an equal error rate of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with a false match rate of **1 in 1000** or better.
 
-When the biometric sensor and subsequent processing are not part of an integral unit that resists replacement of the sensor, the sensor SHALL demonstrate that it is a certified or qualified sensor meeting these requirements by authenticating itself to the processing element.
+When the biometric sensor and subsequent processing are not part of an integral unit that resists replacement of the sensor, the sensor (or endpoint with which it is an integral unit that resists sensor replacement) SHALL demonstrate that it is a certified or qualified sensor meeting these requirements by authenticating itself to the processing element.
 
-Testing of the biometric system to be deployed SHALL demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks. The biometric system SHALL implement presentation attack protection (PAD).
+The biometric system SHOULD implement presentation attack protection (PAD). Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks.
 
-The biometric system SHALL allow no more than 10 consecutive failed authentication attempts. Once that limit has been reached, the claimant SHALL be required to use a different authenticator or to activate their authenticator with a different factor such as a memorized secret.
+>Note: Presentation attack detection is being considered as a mandatory requirement in future editions of this guideline.
+
+The biometric system SHALL allow no more than 3 consecutive failed authentication attempts, or 10 consecutive failed attempts if presentation attack detection meeting the above requirements is implemented. Once that limit has been reached, the claimant SHALL be required to use a different authenticator or to activate their authenticator with a different factor such as a memorized secret.
 
 Biometric matching SHOULD be performed locally on claimant's device or MAY be performed at a central verifier. 
 
 If matching is performed centrally:
 
 * Use of the biometric SHALL be bound tightly to a single, specific device that is identified using approved cryptography.
-* Biometric revocation SHALL be implemented.
-* An authenticated protected channel between sensor and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
+* Biometric revocation SHOULD be implemented.
+* An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
 Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after a password has been generated.
