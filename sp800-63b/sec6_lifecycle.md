@@ -14,7 +14,7 @@ The record created by the CSP SHALL contain the date and time the authenticator 
 
 #### 6.1.1. Enrollment
 
-The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in 800-63-A.
+The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in [SP 800-63A](sp800-63a.html).
 
 At IAL 2, the CSP SHALL bind at least one, and SHOULD bind at least two, authenticators to the subscriber's online identity. Binding of multiple authenticators is preferred in order to recover from loss or theft of their primary authenticator. While at IAL 1 all identifying information is self-asserted, creation of online material or an online reputation makes it undesirable to lose control of an account as result of the loss of an authenticator. The second authenticator makes it possible to securely recover from that situation.
 
