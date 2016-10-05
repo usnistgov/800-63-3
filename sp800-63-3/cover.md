@@ -187,7 +187,7 @@ third component, *Federation Assurance Level (FAL)*, is required.
 
 The separation of these metrics supports applications requiring strong authentication that may be pseudonymous, and the separation of authenticator issuance from the establishment of credentials binding those authenticators to individuals.
 
-Accordingly, with this revision, SP 800-63 has been split into a family of documents organized as follows:
+Accordingly, with this revision, SP 800-63 has been split into a suite of documents organized as follows:
 
 - SP 800-63-3 *Digital Authentication Guideline* - Provides guidelines on general authentication issues and for using authenticators, credentials, and assertions together in an information system.
 
