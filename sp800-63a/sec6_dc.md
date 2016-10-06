@@ -18,7 +18,7 @@ This section applies when the secondary authenticator is directly tied to the au
 3. The derived authenticator SHALL be valid only as long as the subscriber is authorized to hold the original authenticator.
 4. The CSP SHALL record the details of the original authenticator used as the basis for derived authenticator issuance. 
 5. The CSP SHOULD set the expiration of the derived authenticator to the expiration of the primary authenticator. There are instances where the derived authenticator need not be directly tied to the expiration of the primary authenticator as the derived authenticator can provide authentication services in its place, for example, while the expiring primary credential is being replaced.
-6. A derived authenticator MAY be issued at or below the primary authenticator IAL and/or AAL.
+6. The derived authenticator SHALL be issued at or below the primary authenticator IAL. For example, if the primary IAL is 2, the authenticator that is issued could be AAL2 or 1.
 
 
 ### 6.1.2. IAL 2 Requirements
@@ -49,7 +49,7 @@ Unless otherwise specified, the term "CSP" referenced below pertains to the CSP 
 5. The CSP SHOULD determine the proofing process used by the originating CSP.  If the processes are materially different, the CSP SHOULD re-proof the identity.
 6. The CSP SHOULD assert the linear distance from the original proofing event.  For example, if the applicant obtains a 3rd authenticator from a 3rd CSP, the 3rd CSP would assert "3" or "twice removed".  The assertion type, attribute name, and corresponding value is not in scope of this document.
 7. The CSP MAY check the status of the original authenticator on an interval basis. 
-8. A new authenticator MAY be issued at or below the primary authenticator IAL.
+8. A new authenticator SHALL be issued at or below the primary authenticator IAL. For example, if the primary IAL is 2, the authenticator that is issued could be AAL2 or 1.
 
 ### 6.2.2. IAL 2 Requirements
 
