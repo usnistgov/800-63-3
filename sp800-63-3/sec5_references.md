@@ -23,6 +23,8 @@ Security Management Act*, available at: <http://csrc.nist.gov/drivers/documents/
 the Privacy Provisions of the E-Government Act of 2002* (September 26,
 2003), available at: <http://www.whitehouse.gov/omb/memoranda/m03-22.html>.
 
+<a name-"A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource* (July 28, 2016), available at: <https://www.whitehouse.gov/omb/circulars_default>
+
 <a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30, *Guide for Conducting
 Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf>.
 
