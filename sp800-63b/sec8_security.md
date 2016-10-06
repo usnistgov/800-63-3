@@ -40,6 +40,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | Eavesdropping | The authenticator secret or authenticator output is revealed to the attacker as the subscriber is authenticating. | Memorized secrets are obtained by watching keyboard entry. |
 | | | Memorized secrets or authenticator outputs are intercepted by keystroke logging software. |
 | | | A PIN is captured from PIN pad device. |
+| | | A hashed password is obtained and used by an attacker for another authentication (*pass-the-hash attack*) |
 | | An out of band secret is intercepted by the attacker by compromising the communication channel. | An out of band secret is transmitted via unencrypted wifi and received by the attacker. |
 | Offline cracking | The authenticator is exposed using analytical methods outside the authentication mechanism. | A software PKI authenticator is subjected to dictionary attack to identify the correct password to use to decrypt the private key. |
 | Side channel attack | The authenticator secret is exposed using physical characteristics of the authenticator. | A key is extracted by differential power analysis on a hardware cryptographic authenticator. |
@@ -76,6 +77,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
 | | Maintain situational awareness when entering memorized secrets and one-time passwords to ensure that they cannot be observed by others.
 | | Authenticate over authenticated protected channels (observe lock icon in browser window, for example)
+| | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
 | | Store memorized secrets in a salted, hashed form to raise the cost of dictionary attacks; use a keyed hash.
 | Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.

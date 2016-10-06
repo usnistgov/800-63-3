@@ -64,12 +64,12 @@ Justin P. Richer
 Billerica, MA*  
 
 Naomi B. Lefkovitz  
-Applied Cybersecurity Division  
-Information Technology Laboratory  
+*Applied Cybersecurity Division  
+Information Technology Laboratory*  
 
 Jamie M. Danker  
-National Protection and Programs Directorate  
-Department of Homeland Security  
+*National Protection and Programs Directorate  
+Department of Homeland Security*  
 
 Yee-Yin Choong      
 Kristen K. Greene      
