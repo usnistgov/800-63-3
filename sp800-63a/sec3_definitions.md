@@ -100,7 +100,7 @@ Identity proofing of an individual based on knowledge of information associated 
 An open communications medium, typically the internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, man-in-the-middle, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).
 
 #### Personally Identifiable Information (PII)
-As defined by OMB Circular A-130, Personally Identifiable Information means information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual.
+As defined by OMB Circular [[A-130]](#A-130), Personally Identifiable Information is information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual.
 
 #### Practice Statement
 A formal statement of the practices followed by the parties to an authentication process (i.e., CSP or verifier). It usually describes the policies and practices of the parties and can become legally binding.
@@ -126,12 +126,6 @@ A party who has had their credential bound to an authenticator by a CSP.
 
 #### Token
 See *Authenticator*.
-
-#### Token Authenticator
-See *Authenticator Output*.
-
-#### Token Secret
-See *Authenticator Secret*.
 
 #### Trust Anchor
 A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate).
