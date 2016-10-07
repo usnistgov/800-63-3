@@ -174,11 +174,11 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 ## Executive Summary
 
-This guideline deals with how an individual, known as an applicant, can prove their identity to a Credential Service Provider (CSP) and become enrolled as a valid identity.
+This guideline deals with how an individual, known as an applicant, can prove their identity to a Credential Service Provider (CSP) and become enrolled as a valid subscriber.
 
 Identity Assurance Level (IAL) refers to the robustness of the identity proofing process and the binding between an authenticator and a specific individual. The separation of IAL from Authenticator Assurance Level (AAL) better supports applications requiring strong authentication that may be pseudonymous, and the separation of authenticator issuance from the establishment of credentials binding those authenticators to individuals.
 
-The three (3) IALs reflect the options agencies may select based on their risk profile and the potential harm caused by an invalid or fraudulent identity accessing their systems.  The IALs are as follows:
+The three IALs reflect the options agencies may select based on their risk profile and the potential harm caused by an invalid or fraudulent identity accessing their systems.  The IALs are as follows:
 
 
 **IAL 1**:
