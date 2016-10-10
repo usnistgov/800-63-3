@@ -87,7 +87,7 @@ The following table illustrates a spectrum of blinding implementations:
 
 <div class="text-center" markdown="1">
 
-**Table 4-1: Federation Proxies
+**Table 4-1: Federation Proxies**
 
 </div>
 
