@@ -83,7 +83,7 @@ A proxied federation model can provide various benefits. For example, federation
 
 While some proxied deployments offer no additional privacy protection (such as those that exist as integration points), others can offer varying levels of privacy to the subscriber through a range of blinding technologies. NOTE: even with the use of blinding technologies, it may still be possible for a blinded party to deduce subscriber behavior patterns through analysis of timestamps, cookies, attributes, or attribute bundle sizes. Privacy policies may dictate appropriate use by the IdP, RP, and the federation proxy, but blinding technology can increase effectiveness of these policies by making the data more difficult to access. It should also be noted that as the level of blinding increases, so does the technical and operational implementation complexity.
 
-The following table illustrates a spectrum of blinding implementations:
+The following table illustrates a spectrum of blinding implementations. This table is intended to be illustrative, and is neither comprehensive nor technology-specific.
 
 <div class="text-center" markdown="1">
 
