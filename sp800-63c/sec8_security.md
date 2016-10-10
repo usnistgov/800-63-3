@@ -66,7 +66,7 @@ authenticator are as follows:
     IdP transmits it to the subscriber after the primary
     authentication step, or the attacker may use a man-in-the-middle
     attack to obtain the secondary authenticator as it is being used by
-    the subscriber to authenticate to the RP. If, as in the front-channel
+    the subscriber to authenticate to the RP. If, as in the back-channel
     model, the RP needs to send the secondary authenticator back to the
     IdP in order to check its validity or obtain the corresponding
     assertion data, an attacker may similarly subvert the communication
