@@ -13,7 +13,7 @@ This table presents different requirements depending on whether the assertion is
 <div class="text-center" markdown="1">
 
 
-**Tbale 7-1: Federation Assertion Levels**
+**Table 7-1: Federation Assertion Levels**
 
 </div>
 
