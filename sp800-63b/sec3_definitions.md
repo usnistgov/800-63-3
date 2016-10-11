@@ -158,6 +158,11 @@ initial user-to-KDC exchange. Longer password length and complexity provide
 some mitigation to this vulnerability, although sufficiently long passwords
 tend to be cumbersome for users.
 
+When Kerberos password-based authentication is used in a FAST tunnel, a
+Man-in-the-Middle attack is required in order to perform a dictionary attack
+on the Kerberos protocol. Offline brute force attacks are made impossible
+when SPAKE is used for key exchange.
+
 #### Man-in-the-Middle Attack (MitM)
 An attack on the authentication protocol in which the attacker positions himself or herself in between the claimant and verifier so that he or she can intercept and/or alter data traveling between them.
 
