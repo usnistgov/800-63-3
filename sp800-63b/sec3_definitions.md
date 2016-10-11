@@ -147,9 +147,16 @@ A set of attributes that uniquely describe a person within a given context.
 A metric describing degree of confidence that the Applicant’s Claimed Identity is their real identity.
 
 #### Kerberos
-A widely used authentication protocol developed at MIT. In “classic” Kerberos, users share a secret password with a Key Distribution Center (KDC). The user, Alice, who wishes to communicate with another user, Bob, authenticates to the KDC and is furnished a “ticket” by the KDC to use to authenticate with Bob.
+A widely used authentication protocol developed at MIT. In “classic” Kerberos,
+users share a secret password with a Key Distribution Center (KDC). The user,
+Alice, who wishes to communicate with another user, Bob, authenticates to the
+KDC and is furnished a “ticket” by the KDC to use to authenticate with Bob.
 
-When Kerberos authentication is based on passwords, the protocol is known to be vulnerable to offline dictionary attacks by eavesdroppers who capture the initial user-to-KDC exchange. Longer password length and complexity provide some mitigation to this vulnerability, although sufficiently long passwords tend to be cumbersome for users.
+When Kerberos authentication is based on passwords, the protocol is known to
+be vulnerable to offline dictionary attacks by eavesdroppers who capture the
+initial user-to-KDC exchange. Longer password length and complexity provide
+some mitigation to this vulnerability, although sufficiently long passwords
+tend to be cumbersome for users.
 
 #### Man-in-the-Middle Attack (MitM)
 An attack on the authentication protocol in which the attacker positions himself or herself in between the claimant and verifier so that he or she can intercept and/or alter data traveling between them.
