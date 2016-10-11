@@ -77,7 +77,7 @@ subscriber, or in the PKINIT variant of Kerberos, a public key
 certificate. It should be noted that most variants of Kerberos based on
 a shared secret key between the subscriber and IdP derive this key
 from a user generated password. As such, they are vulnerable to offline
-dictionary attack by a passive eavesdropper. 
+dictionary attack by a passive eavesdropper unless SPAKE or FAST is used.
 
 In addition to delivering the session key to the subscriber, the AS also
 issues a ticket using a key it shares with the Ticket Granting Server
