@@ -48,9 +48,18 @@ Other methods of secure device identification, including but not limited to mutu
 ### 7.2. Reauthentication
 
 
-A session SHALL NOT be extended past the guidelines in sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL) based on presentation of the session secret alone. 
+A session SHALL NOT be extended past the guidelines in sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL) based on presentation of the session secret alone.
 
 When a session is terminated due to a time-out or other action, the user MAY reauthenticate using their primary authentication mechanism or an appropriate subset thereof, depending on the AAL.
+
+<a name="63bSec7-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 7-1.  AAL Reauthentication Requirements**
+
+</div>
+
 
 |AAL|Requirement|
 |----|----|

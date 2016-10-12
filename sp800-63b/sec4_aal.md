@@ -8,7 +8,15 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
-The following table lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels. 
+[Table 4-1](#63bSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels.
+
+<a name="63bSec4-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-1.  Legacy M-04-04 AAL Requirements**
+
+</div>
 
 
 | M-04-04 Level of Assurance (LOA) |  Authenticator Assurance Level (AAL) |
@@ -18,8 +26,15 @@ The following table lists strict adherence to M-04-04 Level of Assurance, mappin
 | 3 |  2 or 3 |
 | 4 |  3 |
 
-However, the table below shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+However, [Table 4-2](#63bSec4-Table2) shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
 
+<a name="63bSec4-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-2.  Recommended M-04-04 AAL Requirements**
+
+</div>
 
 | M-04-04 Level of Assurance | Authenticator Assurance Level
 |:------------------:|:-----------------------------:
@@ -31,7 +46,7 @@ However, the table below shows the expanded set of AALs that are allowable to me
 
 ### 4.1. Authenticator Assurance Level 1
 
-AAL 1 provides single factor remote network authentication, giving some assurance that the same Claimant who participated in previous transactions is accessing the protected transaction or data. AAL 1 allows a wide range of available authentication technologies to be employed and requires only a single authentication factor to be used. It also permits the use of any of the authentication methods of higher authenticator assurance levels. Successful authentication requires that the Claimant prove through a secure authentication protocol that he or she possesses and controls the authenticator.
+AAL 1 provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove through a secure authentication protocol that he or she possesses and controls the authenticator.
 
 #### 4.1.1. Permitted Authenticator Types
 
@@ -73,7 +88,7 @@ The CSP shall comply with their respective records retention policies in accorda
 
 ### 4.2. Authenticator Assurance Level 2
 
-AAL 2 provides high confidence that the claimant controls the authenticator registered to a subscriber. At least two different authentication factors are required. Various types of authenticators, including multi-factor software cryptographic authenticators, may be used as described below. AAL 2 also permits any of the authentication methods of AAL 3. AAL 2 authentication requires cryptographic mechanisms that protect the primary authenticator against compromise by the protocol threats for all threats at AAL 1. Approved cryptographic techniques are required at AAL 2 and above.
+AAL 2 provides high confidence that the claimant controls the authenticator registered to a subscriber. Two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.
 
 #### 4.2.1. Permitted Authenticator Types
 
@@ -121,7 +136,7 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a “hard” cryptographic authenticator that also provides verifier impersonation resistance SHALL be used.
+AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides verifier impersonation resistance is required.
 
 #### 4.3.1. Permitted Authenticator Types
 
@@ -173,7 +188,15 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 *(Non-normative; refer to preceding sections for normative requirements)*
 
-The following table summarizes the requirements for each of the authenticator assurance levels:
+[Table 4-3](#63bSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
+
+<a name="63bSec4-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-1.  AAL Summary of Requirements**
+
+</div>
 
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------

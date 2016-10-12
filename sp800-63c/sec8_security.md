@@ -52,8 +52,8 @@ case of holder-of-key assertions, this secret could already have been
 established with the IdP prior to the initiation of the assertion
 protocol. In other cases, the IdP will generate a temporary secret
 and transmit it to the authenticated subscriber for this purpose. When this secret is used to authenticate to the RP, this temporary secret will be referred to as a secondary
-authenticator. Secondary authenticators include assertions in the direct
-model, session keys in Kerberos, assertion references in the indirect
+authenticator. Secondary authenticators include assertions in the front-channel
+model, session keys in Kerberos, assertion references in the back-channel
 model, and cookies used for authentication. The threats to the secondary
 authenticator are as follows:
 
@@ -66,7 +66,7 @@ authenticator are as follows:
     IdP transmits it to the subscriber after the primary
     authentication step, or the attacker may use a man-in-the-middle
     attack to obtain the secondary authenticator as it is being used by
-    the subscriber to authenticate to the RP. If, as in the indirect
+    the subscriber to authenticate to the RP. If, as in the back-channel
     model, the RP needs to send the secondary authenticator back to the
     IdP in order to check its validity or obtain the corresponding
     assertion data, an attacker may similarly subvert the communication

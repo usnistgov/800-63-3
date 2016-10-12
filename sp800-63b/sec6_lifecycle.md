@@ -8,13 +8,13 @@ During the lifecycle of an authenticator bound to a subscriber's identity, a num
 
 Authenticators MAY be issued (provided) by a CSP as part of a process such as enrollment; in other cases, the subscriber MAY provide their own, such as software or hardware cryptographic modules. For this reason, this guideline refers to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
 
-Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. It SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
+Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
 
-The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address or other device identifier associated with the enrollment. It SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
+The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address or other device identifier associated with the enrollment. If available, the record SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
 
 #### 6.1.1. Enrollment
 
-The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in 800-63-A.
+The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in [SP 800-63A](sp800-63a.html).
 
 At IAL 2, the CSP SHALL bind at least one, and SHOULD bind at least two, authenticators to the subscriber's online identity. Binding of multiple authenticators is preferred in order to recover from loss or theft of their primary authenticator. While at IAL 1 all identifying information is self-asserted, creation of online material or an online reputation makes it undesirable to lose control of an account as result of the loss of an authenticator. The second authenticator makes it possible to securely recover from that situation.
 
@@ -24,11 +24,11 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 1. For remote transactions:
 	2. The applicant SHALL identify himself/herself in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the Applicant’s phone number, email address, or postal address of record.
-	3. Permanent secrets SHALL only be issued to the Applicant within a protected session.
+	3. Long-term authenticator secrets SHALL only be issued to the Applicant within a protected session.
 2. For physical transactions:
 	3. The applicant SHALL identify himself/herself in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.
 	4. Temporary secrets SHALL not be reused.
-	5. If the CSP issues permanent secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
+	5. If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
 
 
 #### 6.1.2. Post-Enrollment Binding
@@ -71,9 +71,14 @@ To facilitate secure reporting of loss or theft of or damage to an authenticator
 
 CSPs MAY issue authenticators that expire. If and when an authenticator expires, it SHALL NOT be usable for authentication. When an authentication is attempted using an expired authenticator, the CSP SHOULD give an indication to the subscriber that the authentication failure is due to expiration rather than some other cause.
 
-The CSP SHALL require subscribers to surrender any physical authenticator containing trustable attributes as soon as practical after expiration, revocation, or receipt of a renewed authenticator.
+The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing attribute certificates signed by the CSP as soon as practical after expiration or receipt of a renewed authenticator.
 
-### 6.4. Revocation
+### 6.4. Revocation and Termination
 
-CSPs SHALL revoke the binding of authenticators promptly when an online identity ceases to exist or when requested by the subscriber.
+Revocation of an authenticator (sometimes referred to as termination, especially in the context of PIV credentials) refers to removal of the binding between an authenticator and a credential the CSP maintains. 
+CSPs SHALL revoke the binding of authenticators promptly when an online identity ceases to exist (e.g., subscriber's death, discovery of a fraudulent subscriber), when requested by the subscriber, or when the CSP determines that the subscriber no longer meets its eligibility requirements.
+
+The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing certified attributes signed by the CSP as soon as practical after revocation or termination takes place.
+
+Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
 

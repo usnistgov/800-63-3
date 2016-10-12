@@ -16,9 +16,16 @@ An attacker who can gain control of an authenticator will often be able to masqu
 
 - *Out of band* secrets may be intercepted. An attacker may receive a challenge or response by eavesdropping on the primary or secondary communications channel. The attacker might then authenticate their own channel or save the message for later replay.
 
-This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in Table 4, along with some examples.
+This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
 
-**Table 4 – Authenticator Threats**
+<a name="63bSec8-Table1"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 8-1.  Authenticator Threats**
+
+</div>
+
 
 | **Authenticator Threats/Attacks**  | **Description**  | **Examples** |
 |------------------------------------|------------------|--------------|
@@ -33,6 +40,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | Eavesdropping | The authenticator secret or authenticator output is revealed to the attacker as the subscriber is authenticating. | Memorized secrets are obtained by watching keyboard entry. |
 | | | Memorized secrets or authenticator outputs are intercepted by keystroke logging software. |
 | | | A PIN is captured from PIN pad device. |
+| | | A hashed password is obtained and used by an attacker for another authentication (*pass-the-hash attack*) |
 | | An out of band secret is intercepted by the attacker by compromising the communication channel. | An out of band secret is transmitted via unencrypted wifi and received by the attacker. |
 | Offline cracking | The authenticator is exposed using analytical methods outside the authentication mechanism. | A software PKI authenticator is subjected to dictionary attack to identify the correct password to use to decrypt the private key. |
 | Side channel attack | The authenticator secret is exposed using physical characteristics of the authenticator. | A key is extracted by differential power analysis on a hardware cryptographic authenticator. |
@@ -51,9 +59,16 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | Malicious code on the endpoint compromises a multi-factor software cryptographic authenticator. | Malicious code proxies authentication or exports authenticator keys from the endpoint.
 
 ### 8.2. Threat Mitigation Strategies
-Related mechanisms that assist in mitigating the threats identified above are summarized in Table 5.
+Related mechanisms that assist in mitigating the threats identified above are summarized in [Table 8-2](#63bSec8-Table2).
 
-**Table 5 - Mitigating Authenticator Threats**
+<a name="63bSec8-Table2"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 8-1 - Mitigating Authenticator Threats**
+
+</div>
+
 
 | **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
 |---------------------------------|----------------------------------|
@@ -62,6 +77,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
 | | Maintain situational awareness when entering memorized secrets and one-time passwords to ensure that they cannot be observed by others.
 | | Authenticate over authenticated protected channels (observe lock icon in browser window, for example)
+| | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
 | | Store memorized secrets in a salted, hashed form to raise the cost of dictionary attacks; use a keyed hash.
 | Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.

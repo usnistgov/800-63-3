@@ -1,13 +1,22 @@
 <a name="sec4"></a>
 
 ## 4. Federation
+
 Federation is a process that allows for the conveyance of identity and authentication information across a set of networked systems. In a federation scenario, the verifier or CSP is known as the *identity provider*, or IdP. In this document, the *relying party*, or RP, is the party that receives the federated identity.
 
+
+
+<a name="63cSec4-Figure1"></a>
+
+<div class="text-center" markdown="1">
 ![Figure 1: Federation](sp800-63c/media/federation.png)
 
-**Figure 1: Federation**
+**Figure 4-1: Federation**
 
-In a federation protocol, a triangle is formed between the subscriber, the IdP, and the RP (Figure 1). Depending on the specifics of the protocol, different information passes across each leg of the triangle at different times. The subscriber communicates with both the IdP and the RP, usually through a web browser. The RP and the IdP communicate with each other, though this communication can happen over the front channel (through redirects involving the subscriber), over the back channel (through a direct connection), or via a packaged information bundle (such as a cryptographically protected and self-contained assertion).
+</div>
+
+
+In a federation protocol, a triangle is formed between the subscriber, the IdP, and the RP ([Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes across each leg of the triangle at different times. The subscriber communicates with both the IdP and the RP, usually through a web browser. The RP and the IdP communicate with each other, though this communication can happen over the front channel (through redirects involving the subscriber), over the back channel (through a direct connection), or via a packaged information bundle (such as a cryptographically protected and self-contained assertion).
 
 The subscriber authenticates to the IdP using some form of primary credential, and then that authentication event is asserted to the RP across the network. The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are usually carried to the RP through the use of an assertion (see section 5.).
 
@@ -59,21 +68,37 @@ In a proxied federation model, the communication between the IdP and the RP is p
 
 Effectively, the parties still function in some degree as a federation IdP on one side and a federation RP on the other side. Notably, a federation proxy acts as an IdP to all federated RPs and as an RP to all federated IdPs. Therefore, all normative requirements that apply to IdPs and RPs SHALL apply to the parties of such a system in their respective roles.
 
+<a name="63cSec4-Figure1"></a>
+
+<div class="text-center" markdown="1">
 ![Figure 2: Federation Proxy](sp800-63c/media/broker.png)
 
-**Figure 2: Federation Proxy**
+**Figure 4-2: Federation Proxy**
+</div>
+
+
+
 
 A proxied federation model can provide various benefits. For example, federation proxies can enable simplified technical integrations between the RP and IdP by eliminating the need for multiple point to point integrations, which can be onerous for protocols which do not support [dynamic registration](#dynamic-registration). Additionally, to the extent a proxied federation model effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that may not wish to reveal their subscriber lists to each other, as well as mitigate some of the privacy risks of point to point federation described above. 
 
 While some proxied deployments offer no additional privacy protection (such as those that exist as integration points), others can offer varying levels of privacy to the subscriber through a range of blinding technologies. NOTE: even with the use of blinding technologies, it may still be possible for a blinded party to deduce subscriber behavior patterns through analysis of timestamps, cookies, attributes, or attribute bundle sizes. Privacy policies may dictate appropriate use by the IdP, RP, and the federation proxy, but blinding technology can increase effectiveness of these policies by making the data more difficult to access. It should also be noted that as the level of blinding increases, so does the technical and operational implementation complexity.
 
-The following list illustrates a spectrum of blinding implementations:
+The following table illustrates a spectrum of blinding implementations. This table is intended to be illustrative, and is neither comprehensive nor technology-specific.
 
-1.	The federation proxy does not blind the RP and IdP from one another. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, and has visibility into any attributes it is transmitting in the assertion.
-2.	The federation proxy does not blind the RP and IdP from one another. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, but has no visibility into any attributes it is transmitting in the assertion.
-3.	The federation proxy blinds the RP and IdP from each other. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, and has visibility into any attributes it is transmitting in the assertion.
-4.	The federation proxy blinds the RP and IdP from each other. The federation proxy is able to monitor and track all subscriber relationships between the RPs and IdPs, but has no visibility into any attributes it is transmitting in the assertion.
-5. The federation proxy blinds the RP, IdP, and itself. The federation proxy cannot monitor or track any subscriber relationships, and has no visibility into any attributes it is transmitting in the assertion. 
+<div class="text-center" markdown="1">
+
+**Table 4-1: Federation Proxies**
+
+</div>
+
+
+|Proxy Type|RP knows IdP|IdP knows RP|Proxy can track subscriptions between RP and IdP|Proxy can see attributes of Subscriber|
+|---|---|---|---|---|
+|Non-blinding Proxy with Attributes|Yes|Yes|Yes|Yes|
+|Non-blinding Proxy|Yes|Yes|Yes|No|
+|Double Blind Proxy with Attributes|No|No|Yes|Yes|
+|Double Blind Proxy|No|No|Yes|No|
+|Triple Blind Proxy|No|No|No|No|
 
 #### 4.1.5 <a name="runtime-decisions"></a>Runtime Decisions
 
