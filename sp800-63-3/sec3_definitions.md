@@ -173,14 +173,8 @@ A cryptographic key that is used to perform both the cryptographic operation and
 #### Token
 See *Authenticator*.
 
-#### Unverified Name
-A subscriber name that is not verified as meaningful by identity proofing.
-
 #### Valid
 In reference to identity evidence, the quality of not being expired or revoked.
-
-#### Verified Name
-A subscriber name that has been verified by identity proofing.
 
 #### Verifier
 An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) and identity and check their status.
