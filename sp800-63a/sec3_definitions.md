@@ -87,6 +87,9 @@ The process through which an applicant applies to become a subscriber of a CSP a
 #### Identity
 A set of attributes that uniquely describe a person within a given context.
 
+#### Identity Assurance Level (IAL)
+An ordinal that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
+
 #### Identity Proofing
 The process by which a CSP collects and verifies information about a person for the purpose of issuing credentials to that person.
 

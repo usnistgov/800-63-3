@@ -104,7 +104,7 @@ A process that allows for the conveyance of identity and authentication informat
 A set of attributes that uniquely describe a person within a given context.
 
 #### Identity Assurance Level (IAL)
-A metric describing degree of confidence that the applicant’s claimed identity is their real identity.
+An ordinal that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
 
 #### Identity Proofing
 The process by which a CSP and a Registration Authority (RA) collect and verify information about a person for the purpose of issuing credentials to that person.
