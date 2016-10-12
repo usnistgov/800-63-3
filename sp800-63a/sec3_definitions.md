@@ -124,6 +124,9 @@ The public part of an asymmetric key pair that is used to verify signatures or e
 
 Note: Any information exchange across the Internet is considered remote.
 
+#### Social Engineering
+The act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust.
+
 #### Subscriber
 A party who has had their credential bound to an authenticator by a CSP.
 
