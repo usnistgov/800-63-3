@@ -15,4 +15,6 @@
 <a name="fbcacp"></a>[FBCACP] X.509 Certificate Policy
 For The Federal Bridge Certification Authority (FBCA), Version 2.27 (December 2, 2013), available at: <https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s>.
 
-<a name="fbcasup"></a>[M-04-04] FBCA Supplementary Antecedent, In-Person Definition (July 16, 2009), available at: https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPgAAO&field=File__Body__s.
+<a name="fbcasup"></a>[FBCASUP] FBCA Supplementary Antecedent, In-Person Definition (July 16, 2009), available at: https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPgAAO&field=File__Body__s.
+
+<a name-"A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource* (July 28, 2016), available at: <https://www.whitehouse.gov/omb/circulars_default>
