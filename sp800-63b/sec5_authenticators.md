@@ -341,7 +341,7 @@ Biometric matching SHOULD be performed locally on claimant's device or MAY be pe
 If matching is performed centrally:
 
 * Use of the biometric SHALL be bound tightly to a single, specific device that is identified using approved cryptography.
-* Biometric revocation SHOULD be implemented.
+* Biometric revocation SHALL be implemented. Referred to as biometric template protection in [ISO/IEC 24745](#ISO24745).
 * An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
