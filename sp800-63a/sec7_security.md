@@ -21,12 +21,12 @@ The threats to the enrollment process include impersonation attacks and threats 
 |Enrollment | Falsified identity proofing evidence | An applicant claims an incorrect identity by using a forged driver's license.|
 | | Fraudulent use of another's identity | An applicant uses a passport associated with a different individual
 | | Repudiation of enrollment | A subscriber denies enrollment, claiming that he or she did not enroll with the CSP.|
-||Social engineering|A person manipulates an individual responsible for identity proofing to convince them to be enrolled as another individual.
+||Social engineering|A malicious applicant manipulates an individual responsible for identity proofing in order to be enrolled as another individual.
 |Issuance|Disclosure | A key created by the CSP for a Subscriber is copied by an attacker as it is transported from the CSP to the subscriber during authenticator issuance.|
 | |Tampering | A new password created by the subscriber is modified by an attacker as it is being submitted to the CSP during the credential issuance phase.
 | |Unauthorized issuance | A person claiming to be the subscriber (but in reality is not the subscriber) is issued credentials for that subscriber.
-||Social engineering|A person manipulates an individual responsible for issuance to convince them provide a credential bound to another identity.
-|||If social engineering was successful at enrollment, obtaining an credential requires no extra effort.
+||Social engineering|A malicious person manipulates an individual responsible for issuance in order to obtain a credential bound to another, valid subscriber.
+|||If social engineering was successful at enrollment, obtaining a credential requires no extra effort.
 
 
 ## 7.1. Threat Mitigation Strategies
