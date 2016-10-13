@@ -65,7 +65,7 @@ A party whose identity is to be verified using one or more authentication protoc
 A declaration by the applicant of their current Personal Name, date of birth and address. [[GPG45]](#gpg45)
 
 #### Credential
-An object or data structure that authoritatively binds an identity (and optionally, additional attributes) to an authenticator possessed and controlled by a subscriber.
+An object or data structure that authoritatively binds an identity (via an identifier) (and optionally, additional attributes) to an authenticator possessed and controlled by a subscriber.
 
 While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber’s authenticator(s) and identity.
 
@@ -107,7 +107,7 @@ A metric describing the robustness of the assertion protocol utilized by the fed
 A set of attributes that uniquely describe a person within a given context.
 
 #### Identity Assurance Level (IAL)
-A metric describing degree of confidence that the applicant’s claimed identity is their real identity.
+An ordinal that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
 
 #### Identity Proofing
 The process by which a CSP and a Registration Authority (RA) collect and verify information about a person for the purpose of issuing credentials to that person.
@@ -142,7 +142,7 @@ A meaningless, but unique number that does not allow the RP to infer the subscri
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
 
 #### Public Key Certificate
-A digital document issued and digitally signed by the private key of a Certificate authority that binds the name of a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](#RFC5280).
+A digital document issued and digitally signed by the private key of a Certificate authority that binds an identifier to a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](#RFC5280).
 
 #### Public Key Infrastructure (PKI)
 A set of policies, processes, server platforms, software and workstations used for the purpose of administering certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
@@ -176,15 +176,9 @@ A cryptographic key that is used to perform both the cryptographic operation and
 #### Token
 See *Authenticator*.
 
-#### Unverified Name
-A subscriber name that is not verified as meaningful by identity proofing.
-
 #### Valid
 In reference to identity evidence, the quality of not being expired or revoked.
 
-#### Verified Name
-A subscriber name that has been verified by identity proofing.
-
 #### Verifier
-An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) and identity and check their status.
+An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber's identifier and check their status.
 

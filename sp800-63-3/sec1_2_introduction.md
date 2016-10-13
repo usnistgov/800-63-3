@@ -27,7 +27,7 @@ supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of
 assurance, Levels 1 to 4, in terms of the consequences of authentication
 errors and misuse of credentials. Level 1 is the lowest assurance level
 and Level 4 is the highest. The guidance defines the required level of
-identity assurance in terms of the likely consequences of an
+assurance in terms of the likely consequences of an
 authentication error. As the consequences of an authentication error
 become more serious, the required level of assurance increases. The OMB
 guidance provides agencies with criteria for determining the level of
@@ -107,7 +107,7 @@ areas:
     authentication if these results are sent to other parties (covered
     in SP 800-63C).
 
-The M-04-04 Level of Assurance is determined by considering the identity assurance, authenticator assurance level, and federation assurance level achieved for each of the elements listed above, and determining the Level of Assurance satisfied by all elements.
+The M-04-04 Level of Assurance is determined by considering the identity assurance level, authenticator assurance level, and federation assurance level achieved for each of the elements listed above, and determining the Level of Assurance satisfied by all elements.
 
 Within a given level of assurance, agencies may employ additional risk mitigation measures and compensating controls. Easing credential assurance level requirements may result in benefits such as
 increasing the size of the enabled customer pool, but agencies shall

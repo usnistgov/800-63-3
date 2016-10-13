@@ -46,7 +46,7 @@ Something that a claimant possesses and controls (typically a cryptographic modu
 The property that data originated from its purported source.
 
 #### Authoritative Source
-An authority that has access to sufficient information from an issuing source that they are able to confirm the validity of a piece of identity evidence. An issuing source may also be an authoritative source.
+An entity that has access to, or verified copies of, a sufficient amount of accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by a policy decision of the agency or CSP before they can be used in the validation phase of identity proofing.
 
 #### Biometrics
 Automated recognition of individuals based on their behavioral and biological characteristics.
@@ -87,6 +87,9 @@ The process through which an applicant applies to become a subscriber of a CSP a
 #### Identity
 A set of attributes that uniquely describe a person within a given context.
 
+#### Identity Assurance Level (IAL)
+A category that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
+
 #### Identity Proofing
 The process by which a CSP collects and verifies information about a person for the purpose of issuing credentials to that person.
 
@@ -120,6 +123,9 @@ The public part of an asymmetric key pair that is used to verify signatures or e
 (*As in remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization’s security controls.
 
 Note: Any information exchange across the Internet is considered remote.
+
+#### Social Engineering
+The act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust.
 
 #### Subscriber
 A party who has had their credential bound to an authenticator by a CSP.
