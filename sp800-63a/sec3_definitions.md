@@ -46,7 +46,7 @@ Something that a claimant possesses and controls (typically a cryptographic modu
 The property that data originated from its purported source.
 
 #### Authoritative Source
-An entity that has access to sufficient to the accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by the policy of the agency or CSP before they can be used in the identity validation phase of identity proofing.
+An entity that has access to, or verified copies of, a sufficient amount of accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by policy decision of the agency or CSP before they can be used in the validation phase of identity proofing.
 
 #### Biometrics
 Automated recognition of individuals based on their behavioral and biological characteristics.
