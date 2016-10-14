@@ -372,7 +372,14 @@ Biometrics are also used in some cases to prevent repudiation of registration an
 
 #### <a name="attestation"></a>5.2.4 Attestation
 
-Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information such as the provenance or health and integrity of the authenticator (and possibly the endpoint as well) to the verifier as part of the authentication protocol. If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). Attestation information MAY be used as part of a risk-based authentication decision.
+Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information to the verifier as part of the authentication protocol such as:
+
+* The provenance, health, and/or integrity of the authenticator and/or endpoint
+* Security features of the authenticator
+* Security and performance characteristics of biometric sensor(s)
+* Sensor modality
+
+If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). Attestation information MAY be used as part of a risk-based authentication decision.
 
 When federated authentication is being performed as described in [SP 800-63C](sp800-63c.html), the verifier SHOULD include any such attestation information in the assertion it provides to the relying party.
 
