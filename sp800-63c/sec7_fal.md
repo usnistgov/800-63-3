@@ -19,10 +19,10 @@ This table presents different requirements depending on whether the assertion is
 
 |FAL|Back-channel Presentation Requirement|Front-channel Presentation Requirement|
 |:--:|----|----|
-|1|Bearer assertion, asymmetrically signed by IdP|Bearer assertion, asymmetrically signed by IdP|
-|2|Bearer assertion, asymmetrically signed by IdP|Bearer assertion, asymmetrically signed by IdP and encrypted to RP|
-|3|Bearer assertion, asymmetrically signed by IdP and encrypted to RP|Bearer assertion, asymmetrically signed by IdP and encrypted to RP|
-|4|Holder of key assertion, asymmetrically signed by IdP and encrypted to RP|Holder of key assertion, asymmetrically signed by IdP and encrypted to RP|
+|1|Bearer assertion, signed by IdP|Bearer assertion, signed by IdP|
+|2|Bearer assertion, signed by IdP|Bearer assertion, signed by IdP and encrypted to RP|
+|3|Bearer assertion, signed by IdP and encrypted to RP|Bearer assertion, signed by IdP and encrypted to RP|
+|4|Holder of key assertion, signed by IdP and encrypted to RP|Holder of key assertion, signed by IdP and encrypted to RP|
 
 For example, FAL 1 maps to the OpenID Connect Implicit Client profile or the SAML Web SSO profile, with no additional features. FAL 2 maps to the OpenID Connect Basic Client profile or the SAML Artifact Binding profile, with no additional features. FAL 3 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL 4 requires the presentation of an additional key bound to the assertion (for example, the use of a cryptographic authenticator) along with all requirements of FAL3. Note that the additional key presented at FAL 4 need not be the same key used by the subscriber to authenticate to the IdP.
 
@@ -42,7 +42,7 @@ Regardless of what is requested or required by the protocol, the applicable FAL 
 
 | M-04-04 Level of Assurance (LOA) |  Federation Assurance Level (FAL)
 |:------------------:|:-----------------------------:
-| 1 |  1
+| 1 | 1
 | 2 | 2
 | 3 | 2
 | 4 | 4
@@ -63,3 +63,7 @@ However, [Table 7-3](#63cSec7-Table3) shows the expanded set of FAL's that are a
 | 2 | 2, 3, or 4
 | 3 | 2, 3, or 4
 | 4 | 3 or 4
+
+### 7.1 Key Management
+
+At any FAL, the IdP SHALL ensure that an RP is unable to impersonate the IdP at another RP by protecting the assertion with an appropriate signature and key. If the assertion is protected by an asymmetric signature, the IdP MAY use the same public and private key pair to sign assertions to multiple RPs. The IdP MAY publish its public key in a verifiable fashion, such as at an HTTPS-protected URL at a well-known location. If the assertion is protected by a symmetric signature, the IdP SHALL use a different shared key for each RP.
