@@ -214,13 +214,13 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 **Authenticator Assurance Level 3** – AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides impersonation resistance is required.
 
-**Federation Assurance Level 1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the relying party (RP) in the front channel. The assertion must be signed with an appropriate algorithm.
+**Federation Assurance Level 1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the relying party (RP) in the front channel. The assertion must be signed with using approved cryptography.
 
-**Federation Assurance Level 2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion in the back channel. The assertion must be signed with an appropriate algorithm. Alternatively, if the assertion is presented in the front channel, the assertion is required to be encrypted such that the RP is the only party that can decrypt it.
+**Federation Assurance Level 2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion in the back channel. The assertion must be signed using approved cryptography. Alternatively, if the assertion is presented in the front channel, the assertion is required to be encrypted such that the RP is the only party that can decrypt it.
 
-**Federation Assurance Level 3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted such that the RP is the only party that can decrypt it.
+**Federation Assurance Level 3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.
 
-**Federation Assurance Level 4** - FAL 4 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed with an appropriate algorithm and encrypted to the RP.
+**Federation Assurance Level 4** - FAL 4 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography using approved cryptography.
 
 ### M-04-04 Levels of Assurance Requirements
 
