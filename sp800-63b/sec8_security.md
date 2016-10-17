@@ -111,3 +111,9 @@ There are several other strategies that may be applied to mitigate the threats d
 The weak point in many authentication mechanisms is the process followed when a subscriber loses control of one or more authenticators and needs to replace them. In many cases, the options remaining available to authenticate the subscriber are limited, and economic concerns (cost of maintaining call centers, etc.) motivate the use of inexpensive, and frequently less secure, backup authentication methods. To the extent that authenticator recovery is human-assisted, there is also the risk of social engineering attacks.
 
 In order to maintain the integrity of the authentication factors, it is essential that it not be possible to leverage an authentication involving one factor to obtain an authenticator of a different factor. For example, a memorized secret must not be usable to obtain a new list of look-up secrets.
+
+### 8.4. Session Attacks
+
+The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks such as cross-site scripting (XSS). In addition, it is important to sanitize all information displayed to ensure that it does not contain executable content. The guidelines also recommend that session secrets be made inaccessible to Javascript in order to provide extra protection against exfiltration of session secrets should it be possible to inject malicious Javascript.
+
+Another post-authentication threat, cross-site request forgery (CSRF) takes advantage of users' tendency to have multiple sessions active at the same time. It is important to embed and verify a session identifier into web requests to avoid existence of a stable URL or request which may be activated unintentionally by the subscriber.
