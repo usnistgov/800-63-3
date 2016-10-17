@@ -16,6 +16,8 @@
 
 <a name="RFC5280">[RFC 5280]</a> IETF, *Internet X.509 Public Key Infrastructure Certificate and CRL Profile*, available at https://tools.ietf.org/html/rfc5280/.
 
+<a name="RFC6960">[RFC 6960]</a> IETF, *X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP*, available at https://tools.ietf.org/html/rfc6960/.
+
 <a name="bcp195">[BCP 195]</a> Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
 
 <a name="ICAM">[ICAM]</a> National Security Systems and Identity, Credential and Access Management Sub-Committee Focus Group, Federal CIO Council, *ICAM Lexicon*, Version 0.5, March 2011.
