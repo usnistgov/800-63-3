@@ -201,26 +201,47 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 
 If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on number of successive authentication failures.
     
-#### 5.1.6. Single Factor Cryptographic Devices
+#### 5.1.6. Single Factor Cryptographic Software
+
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63b/media/Single-factor-software-crypto.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
+    <td>A single factor software cryptographic authenticator is a cryptographic key stored on disk or some other “soft” media. Authentication is accomplished by proving possession and control of the key. The authenticator output is highly dependent on the specific cryptographic protocol, but it is generally some type of signed message. The SF software cryptographic authenticator is <i>something you have</i>.</td> 
+  </tr>
+  </table>
+  </div>
+
+
+
+##### 5.1.6.1. Single Factor Cryptographic Software Authenticators
+
+Single factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+
+##### 5.1.6.2. Single Factor Cryptographic Software Verifiers
+
+The requirements for a single factor cryptographic software verifier are identical to those for a single factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv).
+
+#### 5.1.7. Single Factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Single-factor-crypto.png" alt="authenticator" style="width: 100px;height: 100px"/></td>
-    <td>A single factor cryptographic device is a hardware device that performs cryptographic operations using protected cryptographic key(s) and provides the authenticator output via direct connection to the user endpoint. The device uses embedded symmetric or asymmetric cryptographic keys, and does not require activation through a second factor of authentication. Authentication is accomplished by proving possession of the device via the authentication protocol. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is typically some type of signed message. A single factor cryptographic device is <i>something you have</i>.</td> 
+    <td>A single factor cryptographic device is a hardware device that performs cryptographic operations using protected cryptographic key(s) and provides the authenticator output via direct connection to the user endpoint. The device uses embedded symmetric or asymmetric cryptographic keys, and does not require activation through a second factor of authentication. Authentication is accomplished by proving possession of the device via the authentication protocol. The authenticator output is provided by direct connection to the user endpoint and is highly dependent on the specific cryptographic device and protocol, but it is typically some type of signed message. A single factor cryptographic device is <i>something you have</i>.</td> 
   </tr>
   </table>
   </div>
 
-##### 5.1.6.1. Single Factor Cryptographic Device Authenticators
+##### 5.1.7.1. Single Factor Cryptographic Device Authenticators
 
-Single-factor cryptographic device authenticators encapsulate a secret key that is unique to the device and SHALL NOT be exportable (removed from the device). They operate by signing a challenge nonce, usually presented through a direct computer interface such as a USB port.
+Single-factor cryptographic device authenticators encapsulate a secret key that is unique to the device and SHALL NOT be exportable (removed from the device). They operate by signing a challenge nonce, usually presented through a direct computer interface such as a USB port. Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or other issuer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
 
-The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). The challenge nonce SHALL be at least 64 bits in length. The authenticator output is normally provided via a computer interface (usually the same one from which the challenge value was received).
+The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). The challenge nonce SHALL be at least 64 bits in length. Approved cryptography SHALL be used.
 
 Single-factor cryptographic device authenticators SHOULD require a physical input such as the pressing of a button in order to operate. This provides defense against unintended operation of the device, which might occur if the device to which it is connected is compromised.
 
-##### 5.1.6.2. Single Factor Cryptographic Device Verifiers
+##### 5.1.7.2. <a name="sfcdv"></a>Single Factor Cryptographic Device Verifiers
 
 Single-factor cryptographic device verifiers generate a challenge nonce, send it to the corresponding authenticator, and use the authenticator output to verify possession of the device. The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message.
 
@@ -228,7 +249,7 @@ The verifier has either symmetric or asymmetric cryptographic keys corresponding
 
 The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator).
     
-#### 5.1.7. Multi-Factor Cryptographic Software
+#### 5.1.8. Multi-Factor Cryptographic Software
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -241,7 +262,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 
 
 
-##### 5.1.7.1. Multi-Factor Cryptographic Software Authenticators
+##### 5.1.8.1. Multi-Factor Cryptographic Software Authenticators
 
 Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, or trusted execution environment if available).
 
@@ -251,11 +272,11 @@ Any memorized secret used by the authenticator for activation SHALL be at least 
 
 The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after an authentication transaction has taken place.
 
-##### 5.1.7.2. Multi-Factor Cryptographic Software Verifiers
+##### 5.1.8.2. Multi-Factor Cryptographic Software Verifiers
 
-The requirements for a multi-factor cryptographic software verifier are identical to those for a multi-factor cryptographic device verifier, described in [Section 5.1.8.2](#mfcdv).
+The requirements for a multi-factor cryptographic software verifier are identical to those for a multi-factor cryptographic device verifier, described in [Section 5.1.9.2](#mfcdv).
 
-#### 5.1.8. Multi-Factor Cryptographic Devices
+#### 5.1.9. Multi-Factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -267,11 +288,11 @@ The requirements for a multi-factor cryptographic software verifier are identica
   </div>
 
 
-##### 5.1.8.1. Multi-Factor Cryptographic Device Authenticators
+##### 5.1.9.1. Multi-Factor Cryptographic Device Authenticators
 
-Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). Approved cryptography SHALL be used.
+Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric.  Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or other issuer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
 
-The authenticator output is highly dependent on the specific cryptographic device and protocol, but it is generally some type of signed message.
+The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). The challenge nonce SHALL be at least 64 bits in length. Approved cryptography SHALL be used.
 
 Each authentication operation using the authenticator SHOULD require the input of the additional factor. Input of the additional factor MAY be accomplished via either direct input on the device or via a hardware connection (e.g., USB or smartcard).
 
@@ -279,7 +300,7 @@ Any memorized secret used by the authenticator for activation SHALL be at least 
 
 The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after an authentication transaction has taken place.
 
-##### <a name="mfcdv"></a>5.1.8.2 Multi-Factor Cryptographic Device Verifiers
+##### <a name="mfcdv"></a>5.1.9.2. Multi-Factor Cryptographic Device Verifiers
 
 Multi-factor cryptographic device verifiers generate a challenge nonce, send it to the corresponding authenticator, and use the authenticator output to verify possession of the device and activation factor.
 
@@ -351,7 +372,14 @@ Biometrics are also used in some cases to prevent repudiation of registration an
 
 #### <a name="attestation"></a>5.2.4 Attestation
 
-Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information such as the provenance or health and integrity of the authenticator (and possibly the endpoint as well) to the verifier as part of the authentication protocol. If this attestation is signed, it SHALL be signed using a difital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). Attestation information MAY be used as part of a risk-based authentication decision.
+Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information to the verifier as part of the authentication protocol such as:
+
+* The provenance, health, and/or integrity of the authenticator and/or endpoint
+* Security features of the authenticator
+* Security and performance characteristics of biometric sensor(s)
+* Sensor modality
+
+If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (currently 112 bits). Attestation information MAY be used as part of a risk-based authentication decision.
 
 When federated authentication is being performed as described in [SP 800-63C](sp800-63c.html), the verifier SHOULD include any such attestation information in the assertion it provides to the relying party.
 

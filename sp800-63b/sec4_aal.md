@@ -57,8 +57,9 @@ Authenticator Assurance Level 1 permits the use of any of the following authenti
 * Out of Band (Partially deprecated; see [Section 5.1.3](#out-of-band) for more details)
 * Single Factor OTP Device
 * Multi-Factor OTP Device
+* Single Factor Cryptographic Software
 * Single Factor Cryptographic Device
-* Multi-Factor Software Cryptographic Authenticator
+* Multi-Factor Cryptographic Software
 * Multi-Factor Cryptographic Device
 
 #### 4.1.2. Authenticator and Verifier Requirements
@@ -96,7 +97,7 @@ At AAL 2, it is required to have (a) a multi-factor authenticator, or (b) a comb
 When a multi-factor authenticator is used, any of the following may be used:
 
 * Multi-Factor OTP Device
-* Multi-Factor Software Cryptographic Authenticator
+* Multi-Factor Cryptographic Software
 * Multi-Factor Cryptographic Device
 
 When a combination of two single-factor authenticators is used, it SHALL include a Memorized Secret authenticator and one possession-based ("something you have") authenticator from the following list:
@@ -104,6 +105,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 * Look-up Secret
 * Out of Band
 * Single Factor OTP Device
+* Single Factor Cryptographic Software
 * Single Factor Cryptographic Device
 
 > Note: The requirement for a memorized secret authenticator above derives from the need for two different types of authentication factors to be used. All biometric authenticators compliant with this specification are multi-factor, so something you know (a memorized secret) is the remaining possibility.
@@ -134,7 +136,7 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides impersonation resistance is required.
+AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides verifier impersonation resistance is required.
 
 #### 4.3.1. Permitted Authenticator Types
 
@@ -192,13 +194,13 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 <div class="text-center" markdown="1">
 
-**Table 4-1.  AAL Summary of Requirements**
+**Table 4-3.  AAL Summary of Requirements**
 
 </div>
 
 Requirement | AAL 1 | AAL 2 | AAL 3
 ------------|-------|-------|-------
-**Permitted authenticator types** | Memorized Secret<br />Look-up Secret<br />Out of Band<br />SF OTP Device<br />MF OTP Device<br />SF Cryptographic Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br /> | MF OTP Device<br />MF Software Cryptographic Authenticator<br />MF Cryptographic Device<br />or memorized secret plus:<br />&nbsp;Look-up Secret<br />&nbsp;Out of Band<br />&nbsp;SF OTP Device<br />&nbsp;SF Cryptographic Device<br /> | MF Cryptographic Device<br />SF Cryptographic Device plus Memorized Secret
+**Permitted authenticator types** | Memorized Secret;<br />Look-up Secret;<br />Out of Band;<br />SF OTP Device;<br />MF OTP Device;<br />SF Crypto Software;<br />SF Crypto Device;<br />MF Crypto Software;<br />MF Crypto Device<br /> | MF OTP Device;<br />MF Crypto Software;<br />MF Crypto Device;<br />or memorized secret plus:<br />&nbsp;&bull;&nbsp;Look-up Secret<br />&nbsp;&bull;&nbsp;Out of Band<br />&nbsp;&bull;&nbsp;SF OTP Device<br />&nbsp;&bull;&nbsp;SF Crypto Software<br />&nbsp;&bull;&nbsp;SF Crypto Device<br /> | MF Crypto Device<br />SF Crypto Device plus &nbsp;&nbsp;Memorized Secret
 **FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Assertions** | Bearer or proof of possession | Bearer or proof of possession | Proof of possession only
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors

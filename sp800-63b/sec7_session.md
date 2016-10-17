@@ -64,8 +64,10 @@ When a session is terminated due to a time-out or other action, the user MAY rea
 |AAL|Requirement|
 |----|----|
 |1|Presentation of any one factor|
-|2|Presentation of any one factor|
+|2|Presentation of a memorized secret or biometric|
 |3|Presentation of all factors|
+
+>Note: At AAL 2, a memorized secret or biometric and not a physical authenticator is required because the session secret is *something you have*, and an additional authentication factor is required to continue the session.
 
 #### 7.2.1 Reauthentication from a federation or assertion
 
