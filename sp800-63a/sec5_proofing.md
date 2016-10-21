@@ -67,7 +67,7 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 ## 5.3. <a name="verify"></a> Identity Verification
 
-The goal of identity validation is to confirm and establish a linkage between the claimed identity to the to the physical, live existence of the person actually presenting the evidence.
+The goal of identity validation is to confirm and establish a linkage between the claimed identity and the physical, live existence of the person actually presenting the evidence.
 
 ### 5.3.1. Identity Verification Methods
 
