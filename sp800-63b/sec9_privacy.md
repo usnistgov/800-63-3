@@ -2,15 +2,20 @@
 
 ## 9. Privacy Considerations
 
-These privacy considerations provide supplemental guidance for the requirements in section 4.
+*These privacy considerations supplement the guidance in section 4. This section is informative.*
 
 ### 9.1. Privacy Risk Assessment	
 
-Subsections 4.1.6, 4.2.6 and 4.3.6 require the CSP to conduct a privacy risk assessment for records retention. In conducting a privacy risk assessment, CSPs should consider 1) the likelihood that the records retention could create a problem for the subscriber such as invasiveness or unauthorized access to the information; and 2) the impact if a problem did occur. CSPs should be able to reasonably justify any response they take to identified privacy risks, including accepting the risk, mitigating the risk; and sharing the risk. The use of subscriber consent should be considered a form of sharing the risk, and therefore should only be used when a subscriber could reasonably be expected to have the capacity to assess and accept the shared risk.
+Subsections 4.1.6, 4.2.6 and 4.3.6 require the CSP to conduct a privacy risk assessment for records retention. Such a privacy risk assessment would include:
+
+1. The likelihood that the records retention could create a problem for the subscriber such as invasiveness or unauthorized access to the information
+2.  The impact if a problem did occur
+
+CSPs should be able to reasonably justify any response they take to identified privacy risks, including accepting the risk, mitigating the risk; and sharing the risk. The use of subscriber consent is a form of sharing the risk, and therefore appropriate for use only when a subscriber could reasonably be expected to have the capacity to assess and accept the shared risk.
 
 ### 9.2. Privacy Controls
 
-Section 4.4 encourages CSPs to employ appropriately tailored privacy controls. NIST [[SP 800-53]](#sp800-53) provides a set of privacy controls that CSPs should consider implementing when deploying authentication mechanisms. These controls cover notices, redress and other important considerations for successful and trustworthy deployments. 
+[Section 4.4](#aal_privacy) encourages CSPs to employ appropriately tailored privacy controls. NIST [[SP 800-53]](#sp800-53) provides a set of privacy controls for CSPs to consider implementing when deploying authentication mechanisms. These controls cover notices, redress and other important considerations for successful and trustworthy deployments. 
 
 ### 9.3. Use Limitation
 

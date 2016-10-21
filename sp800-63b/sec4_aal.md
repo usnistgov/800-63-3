@@ -171,7 +171,7 @@ The CSP SHOULD employ appropriately tailored security controls from the high bas
 
 The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained. 
 
-### 4.4. Privacy Requirements
+### <a name="aal_privacy"></a>4.4. Privacy Requirements
 
 The CSP SHOULD employ appropriately tailored privacy controls defined in [[SP 800-53]](@SP800-53) or equivalent industry standard.
 
