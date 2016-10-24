@@ -11,7 +11,7 @@ The following sections list the objectives and steps a CSP SHALL follow to ident
 
 ## <a name="validate"></a>5.2. Identity Evidence Validation
 
-The goal of identity validation is to collect from the applicant the most appropriate identity evidence (for example, a passport or drivers license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of two process steps: collecting the appropriate identity evidence and confirming the data contained on the identity evidence is valid and related to an actual, live individual.
+The goal of identity validation is to collect from the applicant the most appropriate identity evidence (for example, a passport or drivers license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of two process steps: collecting the appropriate identity evidence, confirming the evidence is genuine and authentic, and confirming the data contained on the identity evidence is valid, current, and related to an actual, live individual.
 
 ### 5.2.1. Identity Evidence Characteristic Requirements
 
@@ -67,7 +67,7 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 ## 5.3. <a name="verify"></a> Identity Verification
 
-The goal of identity validation is to establish a linkage to the physical, live existence of the claimed identity to the person actually presenting the evidence.
+The goal of identity validation is to confirm and establish a linkage between the claimed identity and the physical, live existence of the person actually presenting the evidence.
 
 ### 5.3.1. Identity Verification Methods
 
