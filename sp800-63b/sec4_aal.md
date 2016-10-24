@@ -84,7 +84,7 @@ The CSP SHOULD employ appropriately tailored security controls from the low base
 
 #### 4.1.6. Records Retention
 
-The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained.
+The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained.
 
 ### 4.2. Authenticator Assurance Level 2
 
