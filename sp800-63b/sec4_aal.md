@@ -84,7 +84,7 @@ The CSP SHOULD employ appropriately tailored security controls from the low base
 
 #### 4.1.6. Records Retention
 
-The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained.
+The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained.
 
 ### 4.2. Authenticator Assurance Level 2
 
@@ -169,20 +169,20 @@ The CSP SHOULD employ appropriately tailored security controls from the high bas
 
 #### 4.3.6. Records Retention
 
-The CSP shall comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained. 
+The CSP SHALL comply with their respective records retention policies in accordance with whatever laws and/or regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long any records should be retained.
 
-### 4.4. Privacy Requirements
+### <a name="aal_privacy"></a>4.4. Privacy Requirements
 
-The CSP SHOULD employ appropriately tailored privacy controls defined in [[SP 800-53]](@SP800-53) or equivalent industry standard.
+The CSP SHOULD employ appropriately tailored privacy controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard.
 
-CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service.
+CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. Care SHALL be taken to ensure that use of such information is limited to its original purpose for collection. If the use of such information does not fall within uses related to authentication or to comply with law or legal process, the CSP SHALL provide notice and obtain consent from the subscriber.  This notice SHOULD follow the same principles as described in *Notice and Consent* in [SP 800-63A Section 8.2](sp800-63a.html#consent) and SHOULD not be rolled up into a legalistic privacy policy or general terms and conditions. Rather, if there are uses outside the bounds of these explicit purposes, the subscriber SHOULD be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
 
-1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the Privacy Act. 
+1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of Personally Identifiable Information (PII) to issue or maintain authenticators triggers the requirements of the *Privacy Act of 1974* [[PrivacyAct]](#PrivacyAct). 
 * The agency SHALL publish a System of Records Notice to cover such collections, as applicable. 
-* The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the E-Government Act of 2002. 
-* The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
+* The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the *E-Government Act of 2002* [[E-Gov]](#E-Gov). 
+* The agency SHALL publish a Privacy Impact Assessment to cover such collection, as applicable.
 
 ### 4.5. Summary of Requirements
 

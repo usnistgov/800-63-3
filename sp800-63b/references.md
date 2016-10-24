@@ -54,3 +54,9 @@ FIPS can be found at: http://csrc.nist.gov/publications/fips/
 <a name="FIPS198-1">[FIPS 198-1]</a> Federal Information Processing Standard Publication 198-1, *The Keyed-Hash Message Authentication Code (HMAC)*, July 2008.
 
 <a name="FIPS201">[FIPS 201]</a> Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, available at <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
+
+### 11.4. Legislation
+
+<a name="PrivacyAct">[Privacy Act]</a> *Privacy Act of 1974* (P.L. 93-579), December 1974, available at http://www.justice.gov/opcl/privacy-act-1974
+
+<a name-"E-Gov">[E-Gov]</a> *E-Government Act* \[includes FISMA] (P.L. 107-347), December 2002, available at http://www.gpo.gov/fdsys/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf
