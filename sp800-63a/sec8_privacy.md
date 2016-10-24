@@ -10,7 +10,7 @@ Section 4.2(2) does not permit the CSP to collect the SSN unless it is necessary
 
 Section 4.2 (3) permits only the collection of PII necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant, based on best available practices for appropriate identity resolution, validation, and verification. Collection of unnecessary PII can create confusion as to why information is being collected if it is not being used for the identity proofing service and leads to concerns about invasiveness or overreach which can lead to loss of applicant trust. In addition, the retention of any PII can become vulnerable to unauthorized access or use. Data minimization reduces the amount of PII vulnerable to unauthorized access or use and encourages trust in the identity proofing process.  
 
-### 8.2. Notice and Consent
+### <a name="consent"></a>8.2. Notice and Consent
 
 Section 4.2(4) requires the CSP to provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether such attributes are voluntary or mandatory in order to complete the identity proofing transactions and the consequences for not providing the attributes.
 
