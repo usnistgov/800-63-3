@@ -169,6 +169,9 @@ An attack on the authentication protocol in which the attacker positions himself
 #### Message Authentication Code (MAC)
 A cryptographic checksum on data that uses a symmetric key to detect both accidental and intentional modifications of the data. MACs provide authenticity and integrity protection, but not non-repudiation protection.
 
+#### Mobile Code
+Executable code that is normally transferred from its source to another computer system for execution. This transfer is often through the network (e.g., JavaScript embedded in a web page) but may transfer through physical media as well.
+
 #### Multi-Factor
 A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 

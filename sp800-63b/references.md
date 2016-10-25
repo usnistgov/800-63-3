@@ -16,6 +16,8 @@
 
 <a name="RFC5280">[RFC 5280]</a> IETF, *Internet X.509 Public Key Infrastructure Certificate and CRL Profile*, available at https://tools.ietf.org/html/rfc5280/.
 
+<a name="RFC6960">[RFC 6960]</a> IETF, *X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP*, available at https://tools.ietf.org/html/rfc6960/.
+
 <a name="bcp195">[BCP 195]</a> Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
 
 <a name="ICAM">[ICAM]</a> National Security Systems and Identity, Credential and Access Management Sub-Committee Focus Group, Federal CIO Council, *ICAM Lexicon*, Version 0.5, March 2011.
@@ -23,6 +25,8 @@
 <a name="ISOIEC10646">[ISO/IEC 10646]</a> International Standards Organization, *Universal Coded Character Set*, 2014, available at http://standards.iso.org/ittf/PubliclyAvailableStandards/c063182_ISO_IEC_10646_2014.zip
 
 <a name="ISO24745">[ISO/IEC 24745]</a> International Standards Organization, *Information technology -- Security techniques -- Biometric information protection*, 2011, available at http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=52946
+
+<a name="OWASP-XSS-prevention">[OWASP-XSS-prevention]</a> Open Web Application Security Project, *XSS (Cross Site Scripting) Prevention Cheat Sheet*, available at https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
 
 <a name="SAML">[SAML]</a> OASIS, SAML, *Security Assertion Markup Language 2.0*, v2.0, March 2005, available at http://oasis-open.org/standards#samlv2.0
 

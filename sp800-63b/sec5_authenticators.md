@@ -370,7 +370,7 @@ Biometric samples collected in the authentication process MAY be used to train m
 
 Biometrics are also used in some cases to prevent repudiation of registration and to verify that the same individual participates in all phases of the registration process as described in SP 800-63A.
 
-#### <a name="attestation"></a>5.2.4 Attestation
+#### <a name="attestation"></a>5.2.4. Attestation
 
 Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information to the verifier as part of the authentication protocol such as:
 
@@ -383,7 +383,7 @@ If this attestation is signed, it SHALL be signed using a digital signature that
 
 When federated authentication is being performed as described in [SP 800-63C](sp800-63c.html), the verifier SHOULD include any such attestation information in the assertion it provides to the relying party.
 
-#### <a name="verifimpers"></a>5.2.5 Verifier impersonation resistance
+#### <a name="verifimpers"></a>5.2.5. Verifier impersonation resistance
 
 Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and relying parties to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly man-in-the-middle resistant".
 
@@ -399,4 +399,6 @@ The latter class of verifier impersonation resistant protocols relies on access 
 
 In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and one-time password authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
 
+#### <a name="csp-verifier"></a>5.2.6. Verifier-CSP commmunications
 
+In situations where the verifier and CSP are separate entities (as shown by the dotted line in [SP 800-63-3 Figure 4-1](sp800-63-3.html#63Sec4-Figure1)), communications between the verifier and CSP SHALL occur through a mutually-authenticated secure channel (such as a client-authenticated TLS connection) using approved cryptography.
