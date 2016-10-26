@@ -4,14 +4,14 @@
 
 These privacy considerations are non-normative.
 
-9.1 Minimizing Tracking and Profiling
+###9.1. Minimizing Tracking and Profiling
 
 Sections 4, 4.1.4, and 5.2.5 cover a number of requirements the objective for which is to minimize privacy risks arising from increased capabilities to track and profile subscribers. For example, a subscriber using the same IdP to authenticate to multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed absent federation.  The availability of such data makes it vulnerable to uses that may not be anticipated or desired by the subscriber.  Federation offers numerous benefits to RPs and subscribers, but requires subscribers to have trust in the IdP.  Accordingly, to build subscriber trust in a federated model, it is important that uses of subscriber data are appropriately limited and scoped to the purpose for which it was originally collected. Consult your Senior Agency Official for Privacy if there are questions about whether proposed agency uses fall within the scope of these uses. 
 
 Section 4 also encourages the use of technical measures to provide unlinkability and prevent subscriber activity tracking and profiling.  While IdP policies and procedures are important in ensuring adherence to appropriate use limitation and purpose specification principles, technical measures such as outlined in 4.1.4 for distributed federation and 5.2.5 for pairwise pseudonymous identifiers, can increase the effectiveness of these policies by making subscriber data more difficult to access. 
 
 
-9.2 Notice and Consent
+###9.2. Notice and Consent
 
 To build subscriber trust in federation, transparency must be provided to the subscriber to understand what information will be transmitted, what is required versus optional, and the ability to decide whether to transmit optional attributes to the RP.  Accordingly, Section 6 requires that positive confirmation be obtained from the subscriber before any attributes about the subscriber are transmitted to any RP.  An effective notice will take into account user experience design standards and research, as well as an assessment of privacy risks that may arise from the collection. There are many factors that should be considered, including the reliability of the assumptions Subscribers may have about the collection, whether other information is being collected and appended to the information collected from the Subscriber. However, an effective notice is never only a link that leads to a complex, legalistic privacy policy or general terms and conditions that a substantial number of Subscribers do not read or understand. 
 
@@ -19,12 +19,12 @@ Section 6.0 does not specify which party should provide the notice.  In some ca
 
 
 
-9.3 Data Minimization
+###9.3. Data Minimization
 
 Although an IdP may collect additional attributes beyond what the RP requires for its use case, only those attributes that were explicitly requested by the RP are to be transmitted by the IdP. In some instances, an RP does not require a full value of an attribute is not necessary; for example an RP may need to know whether the subscriber is over 13 years old, but has no need for the full date of birth. To minimize the collection of potentially sensitive PII, the RP may request an attribute claim (e.g., is the subscriber over 13 years old? Y/N, Pass/Fail).  This minimizes the RPs collection of potentially sensitive and unnecessary PII.  Accordingly, Section 6.4 requires the RP to, where feasible, request attribute claims rather than full attribute values.  To support this RP requirement, IdPs are in turn, required to support attribute claims.
 
 
-9.4 Agency Specific Privacy Compliance 
+###9.4. Agency Specific Privacy Compliance 
 
 Section 4.0 identifies agency requirements to consult their SAOP to determine privacy compliance requirements. It is critical to involve your agency’s SAOP in the earliest stages of digital authentication system development to assess and mitigate privacy risks and as advise the agency on compliance obligations such as whether the federation triggers the Privacy Act of 1974 or the E-Government Act of 2002 requirement to conduct a Privacy Impact Assessment.  For example, if the Agency is serving as a Credential Service Provider in a federation, it is likely that the Privacy Act requirements will be triggered and require coverage by either a new or existing Privacy Act system of records since credentials would be maintained on behalf of the agency RP.  If, however, the agency is a Relying Party and using a 3rd party IdP digital authentication may not trigger the requirements of the Privacy Act depending on what data passed from the RP are maintained by the agency as the RP (in such instances the agency may have a broader programmatic SORN that covers such data).  The SAOP can similarly assist the agency in determining whether a PIA is required.  These considerations should not be read as a requirement to develop a Privacy Act System of Records Notice or PIA for use of a federated credential alone; in many cases it will make the most sense to draft a PIA and SORN that encompasses the entire digital authentication process or include the digital authentication process as part of a larger programmatic PIA that discusses the program or benefit the agency is establishing online access.
 
