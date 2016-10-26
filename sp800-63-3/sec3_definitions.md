@@ -62,7 +62,7 @@ In this document, biometrics may be used to unlock authenticators and prevent re
 A party whose identity is to be verified using one or more authentication protocols.
 
 #### Claimed Identity
-A declaration by the applicant of their current Personal Name, date of birth and address. [[GPG45]](#gpg45)
+A declaration of unvalidated and unverified personal attributes by the applicant.
 
 #### Credential
 An object or data structure that authoritatively binds an identity (via an identifier) (and optionally, additional attributes) to an authenticator possessed and controlled by a subscriber.
