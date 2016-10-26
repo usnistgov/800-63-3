@@ -10,7 +10,8 @@ Paul A. Grassi
 Justin P. Richer  
 Sarah K. Squire  
 James L. Fenton  
-
+Naomi B. Lefkovitz  
+Jamie M. Danker  
 
 {::comment}
 
@@ -42,7 +43,15 @@ Seattle, WA*
 
 James L. Fenton  
 *Altmode Networks  
-Los Altos, CA*
+Los Altos, CA*  
+
+Naomi B. Lefkovitz  
+*Applied Cybersecurity Division  
+Information Technology Laboratory*    
+
+Jamie M. Danker  
+*National Protection and Programs Directorate  
+Department of Homeland Security*  
 
 
 
