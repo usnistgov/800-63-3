@@ -61,6 +61,9 @@ The physical location asserted by an individual (e.g. an applicant) where he/she
 
 For example, a person with a foreign passport, living in the U.S., will need to give an address when going through the identity proofing process. This address would not be an “address of record” but a “claimed address.”
 
+#### Claimed Identity
+A declaration of unvalidated and unverified personal attributes by the applicant.
+
 #### Credential
 An object or data structure that authoritatively binds an identity (and optionally, additional attributes) to an authenticator possessed and controlled by a subscriber.
 
