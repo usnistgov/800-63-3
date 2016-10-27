@@ -8,8 +8,14 @@
 
 Paul A. Grassi  
 James L. Fenton  
+
+Privacy Authors:  
+
 Naomi B. Lefkovitz    
-Jamie M. Danker       
+Jamie M. Danker  
+
+User Experience Authors:  
+       
 Yee-Yin Choong    
 Kristen K. Greene    
 Mary F. Theofanos   
@@ -30,27 +36,32 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 ###  Enrollment and Identity Proofing Requirements
 
-Paul A. Grassi
-Applied Cybersecurity Division
-Information Technology Laboratory
+Paul A. Grassi  
+*Applied Cybersecurity Division  
+Information Technology Laboratory*   
 
-James L. Fenton
-Altmode Networks
-Los Altos, CA
+James L. Fenton  
+*Altmode Networks  
+Los Altos, CA*  
 
-Naomi B. Lefkovitz
-Applied Cybersecurity Division
-Information Technology Laboratory
+Privacy Authors:  
 
-Jamie M. Danker
-National Protection and Programs Directorate
-Department of Homeland Security
+Naomi B. Lefkovitz  
+*Applied Cybersecurity Division  
+Information Technology Laboratory*    
+
+Jamie M. Danker  
+*National Protection and Programs Directorate  
+Department of Homeland Security*    
+
+
+User Experience Authors:    
 
 Yee-Yin Choong  
 Kristen K. Greene  
 Mary F. Theofanos  
-Information Access Division  
-Information Technology Laboratory  
+*Information Access Division  
+Information Technology Laboratory*  
 
 {::comment}
 
@@ -140,7 +151,7 @@ authentication; credential service provider; electronic authentication; digital 
 
 ### Acknowledgements
 
-The authors would like to acknowledge the contributions and guidance of our international peers, including Adam Cooper, Alastair Treharne, and Julian White from the Cabinet Office, United Kingdom, and Tim Bouma from the Treasury Board of Canada Secretariat, Government of Canada. 
+The authors would like to acknowledge the contributions and guidance of our international peers, including Adam Cooper, Alastair Treharne, and Julian White from the Cabinet Office, United Kingdom, and Tim Bouma from the Treasury Board of Canada Secretariat, Government of Canada. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 

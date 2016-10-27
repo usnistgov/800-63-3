@@ -13,8 +13,14 @@ Ray A. Perlner
 Andrew R. Regenscheid    
 William E. Burr    
 Justin P. Richer  
+
+Privacy Authors:  
+
 Naomi B. Lefkovitz  
 Jamie M. Danker  
+
+User Experience Authors:  
+
 Yee-Yin Choong      
 Kristen K. Greene      
 Mary F. Theofanos   
@@ -63,19 +69,23 @@ Justin P. Richer
 *Bespoke Engineering  
 Billerica, MA*  
 
+Privacy Authors:  
+
 Naomi B. Lefkovitz  
 *Applied Cybersecurity Division  
-Information Technology Laboratory*  
+Information Technology Laboratory*    
 
 Jamie M. Danker  
 *National Protection and Programs Directorate  
-Department of Homeland Security*  
+Department of Homeland Security*    
 
-Yee-Yin Choong      
-Kristen K. Greene      
-Mary F. Theofanos   
+User Experience Authors:    
+
+Yee-Yin Choong  
+Kristen K. Greene  
+Mary F. Theofanos  
 *Information Access Division  
-Information Technology Laboratory*
+Information Technology Laboratory*  
 
 {::comment}
 
@@ -166,7 +176,7 @@ authentication; credential service provider; digital authentication; digital cre
 
 ### Acknowledgements
 
-The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
+The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
 ### Audience
 

@@ -10,7 +10,8 @@ Paul A. Grassi
 Justin P. Richer  
 Sarah K. Squire  
 James L. Fenton  
-
+Naomi B. Lefkovitz  
+Jamie M. Danker  
 
 {::comment}
 
@@ -42,7 +43,15 @@ Seattle, WA*
 
 James L. Fenton  
 *Altmode Networks  
-Los Altos, CA*
+Los Altos, CA*  
+
+Naomi B. Lefkovitz  
+*Applied Cybersecurity Division  
+Information Technology Laboratory*    
+
+Jamie M. Danker  
+*National Protection and Programs Directorate  
+Department of Homeland Security*  
 
 
 
@@ -119,7 +128,7 @@ digital authentication; electronic authentication; electronic credentials; feder
 
 ### Acknowledgements
 
-The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
+The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
 ### Audience
 
