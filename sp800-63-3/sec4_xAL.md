@@ -112,6 +112,47 @@ Another example where xAL needs to be applied, but online transaction requiremen
 </div>
 
 
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63/media/ial-step1.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63/media/ial-step2.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63/media/ial-step3.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63/media/ial-step4.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63/media/ial-step5.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63/media/ial-step6.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  </table>
+</div>
+
 <a name="63Sec4-Figure2"></a>
 <div class="text-center" markdown="1">
 ![](sp800-63-3/media/AAL_CYOA.png)
@@ -119,6 +160,29 @@ Another example where xAL needs to be applied, but online transaction requiremen
 **Figure 4-2 - Selecting AAL**
 </div>
 
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63/media/aal-step1.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63/media/aal-step2.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  
+  </table>
+</div>
+
+
+
+AAL Step 2 - This applies to all AALs, but since you have already gone down a path for MFA, this question only appears here
+
+All steps - don't intend to replace the risk assessment process.  Hence no description.
 
 ### 4.4. Acceptable IAL and AAL Combinations
 
