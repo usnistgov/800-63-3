@@ -103,12 +103,45 @@ In selecting the appropriate assurance levels, the agency should assess the risk
 Another example where xAL needs to be applied, but online transaction requirements should not be impacted by the end-to-end business process is a digital service that accepts resumes in order to apply for open positions.  In this use case, the digital service allows an individual to submit their resume and in subsequent visits to the site, query and update their resume.  Since the resume information is being provided in later sessions, and is personal information, the agency must select an appropriate AAL since authentication is required.  In this case, the requirements of EO13681 apply, driving the AAL to be at least level 2.  However, what should be done about identity proofing?  The entire business process of examining a resume and ultimately interviewing a person requires a significant amount of identity proofing.  The agencies needs to be confident that the job applicant/interviewee is in fact the subject of the online submitted resume. Yet this level of proofing is not required to actually submit the resume online.  The actual digital transaction doesn't require any identity proofing.  The resume could be submitted by the applicant, but may also be submitted by a surrogate of some sort.  Identity proofing the submitter would create more risk than required in the online system as excess personal information would be collected.  Therefore, the most appropriate IAL selection would be 1.  There is no need to identity proof the user to successfully complete the online transaction, nor is there any potential negative impact as a result of offering the online transaction if a proofing failure occurred.  Yet, there would be significant impact if the entire business process failed to correctly identity proof the person - a job may be offered to a fraudulent applicant - but that risk should not be applied holistically to the online system.
 
 > In this use case, it is assumed the system allows surrogates.  If the use case is that the only person that can submit is the actual subject of the resume, then identity proofing requirements would be significantly different.  
+ 
+#### <a name="AAL_CYOA"></a> 4.3.1 Selecting Authenticator Assurance Level
 
 <a name="63Sec4-Figure1"></a>
 <div class="text-center" markdown="1">
+![](sp800-63-3/media/AAL_CYOA.png)
+
+**Figure 4-1 - Selecting AAL**
+</div>
+
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63/media/aal-step1.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63/media/aal-step2.png"/></td>
+  </tr>
+  <tr>
+   <td>Step</td> 
+  </tr>
+  
+  </table>
+</div>
+
+
+
+AAL Step 2 - This applies to all AALs, but since you have already gone down a path for MFA, this question only appears here
+
+#### <a name="IAL_CYOA"></a> 4.3.2 Selecting Identity Assurance Level
+
+<a name="63Sec4-Figure2"></a>
+<div class="text-center" markdown="1">
 ![](sp800-63-3/media/IAL_CYOA.png)
 
-**Figure 4-1 - Selecting IAL**
+**Figure 4-2 - Selecting IAL**
 </div>
 
 
@@ -153,36 +186,11 @@ Another example where xAL needs to be applied, but online transaction requiremen
   </table>
 </div>
 
-<a name="63Sec4-Figure2"></a>
-<div class="text-center" markdown="1">
-![](sp800-63-3/media/AAL_CYOA.png)
 
-**Figure 4-2 - Selecting AAL**
-</div>
-
-<div class="text-left" markdown="1">
-<table style="width:100%">
-  <tr>
-    <td><img src="sp800-63/media/aal-step1.png"/></td>
-  </tr>
-  <tr>
-   <td>Step</td> 
-  </tr>
-  <tr>
-    <td><img src="sp800-63/media/aal-step2.png"/></td>
-  </tr>
-  <tr>
-   <td>Step</td> 
-  </tr>
-  
-  </table>
-</div>
-
-
-
-AAL Step 2 - This applies to all AALs, but since you have already gone down a path for MFA, this question only appears here
 
 All steps - don't intend to replace the risk assessment process.  Hence no description.
+
+#### <a name="FAL_CYOA"></a> 4.3.3 Selecting Federation Assurance Level
 
 ### 4.4. Acceptable IAL and AAL Combinations
 
