@@ -297,8 +297,10 @@ In limited situations, a given transaction requiring IAL 2 MAY be able to authen
 
 [3. Definitions and Abbreviations](#sec3)
 
-[4. Digital Authentication Model](#sec4)
+[4. A New Approach to Levels of Assurance](#sec4)
 
-[5. References](#references)
+[5. Digital Authentication Model](#sec5)
+
+[6. References](#references)
 
  

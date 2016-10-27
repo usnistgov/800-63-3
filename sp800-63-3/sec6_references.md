@@ -1,6 +1,6 @@
 <a name="references"></a>
 
-## 5. References
+## 6. References
 
 <a name="EO13681"></a>[EO 13681] *Executive Order 13681, Improving the Security of Consumer Financial Transactions* (October 17, 201, available at: <https://www.whitehouse.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions>.
 
