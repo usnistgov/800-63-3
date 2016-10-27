@@ -13,8 +13,14 @@ Ray A. Perlner
 Andrew R. Regenscheid    
 William E. Burr    
 Justin P. Richer  
+
+Privacy Authors:  
+
 Naomi B. Lefkovitz  
 Jamie M. Danker  
+
+User Experience Authors:  
+
 Yee-Yin Choong      
 Kristen K. Greene      
 Mary F. Theofanos   
@@ -63,19 +69,23 @@ Justin P. Richer
 *Bespoke Engineering  
 Billerica, MA*  
 
+Privacy Authors:  
+
 Naomi B. Lefkovitz  
 *Applied Cybersecurity Division  
-Information Technology Laboratory*  
+Information Technology Laboratory*    
 
 Jamie M. Danker  
 *National Protection and Programs Directorate  
-Department of Homeland Security*  
+Department of Homeland Security*    
 
-Yee-Yin Choong      
-Kristen K. Greene      
-Mary F. Theofanos   
+User Experience Authors:    
+
+Yee-Yin Choong  
+Kristen K. Greene  
+Mary F. Theofanos  
 *Information Access Division  
-Information Technology Laboratory*
+Information Technology Laboratory*  
 
 {::comment}
 

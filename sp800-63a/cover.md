@@ -8,8 +8,14 @@
 
 Paul A. Grassi  
 James L. Fenton  
+
+Privacy Authors:  
+
 Naomi B. Lefkovitz    
-Jamie M. Danker       
+Jamie M. Danker  
+
+User Experience Authors:  
+       
 Yee-Yin Choong    
 Kristen K. Greene    
 Mary F. Theofanos   
@@ -38,6 +44,8 @@ James L. Fenton
 *Altmode Networks  
 Los Altos, CA*  
 
+Privacy Authors:  
+
 Naomi B. Lefkovitz  
 *Applied Cybersecurity Division  
 Information Technology Laboratory*    
@@ -45,6 +53,9 @@ Information Technology Laboratory*
 Jamie M. Danker  
 *National Protection and Programs Directorate  
 Department of Homeland Security*    
+
+
+User Experience Authors:    
 
 Yee-Yin Choong  
 Kristen K. Greene  
