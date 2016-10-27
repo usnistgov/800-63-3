@@ -106,6 +106,8 @@ Another example where xAL needs to be applied, but online transaction requiremen
  
 #### <a name="AAL_CYOA"></a> 4.3.1 Selecting Authenticator Assurance Level
 
+The AAL decision tree that follows offers agencies a possible path to determine the most appropriate authentication technologies for their digital service offering. This analysis is not intended to be complete nor replace M-04-04 risk assessments or any other risk management process in use by the agency. Descriptions follow for specific steps that fall outside the required risk management process documented in M-04-04.
+
 <a name="63Sec4-Figure1"></a>
 <div class="text-center" markdown="1">
 ![](sp800-63-3/media/AAL_CYOA.png)
@@ -119,13 +121,13 @@ Another example where xAL needs to be applied, but online transaction requiremen
     <td><img src="sp800-63/media/aal-step1.png"/></td>
   </tr>
   <tr>
-   <td>Step</td> 
+   <td>Step 1 is intended to look at the potential impacts of an authentication failure.  In other words, what would occur if un unauthorized user accessed 1 or more accounts of valid users. Risk should be considered from the perspective of the organization and to the user, since one may not be negatively impacted while the other could be severely harmed. The risk assessment process of M-04-04 and any agency specific risk management process should commence from this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63/media/aal-step2.png"/></td>
   </tr>
   <tr>
-   <td>Step</td> 
+   <td>[EO 13681](#EO13681) requires MFA when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point.  That said, personal information release at all AALs should be considered when performing the risk assessment.  An important point to note at this step, the collection of personal information, if made available online, does not need to be validated or verified to require an AAL of 2 or higher.  Even self-asserted personal information requires the protection of MFA. Even though self-asserted information can be falsified, most users will provide accurance information to benefit from the digital service.  As such, self-asserted data must be protected appropriately.</td> 
   </tr>
   
   </table>
@@ -136,6 +138,8 @@ Another example where xAL needs to be applied, but online transaction requiremen
 AAL Step 2 - This applies to all AALs, but since you have already gone down a path for MFA, this question only appears here
 
 #### <a name="IAL_CYOA"></a> 4.3.2 Selecting Identity Assurance Level
+
+The IAL decision tree that follows offers agencies a possible path to determine the most appropriate identity proofing processes and technologies for their digital service offering. This analysis is not intended to be complete nor replace M-04-04 risk assessments or any other risk management process in use by the agency. Descriptions follow for specific steps that fall outside the required risk management process documented in M-04-04.
 
 <a name="63Sec4-Figure2"></a>
 <div class="text-center" markdown="1">
@@ -151,7 +155,7 @@ AAL Step 2 - This applies to all AALs, but since you have already gone down a pa
     <td><img src="sp800-63/media/ial-step1.png"/></td>
   </tr>
   <tr>
-   <td>Step</td> 
+   <td>Step 1 is intended to look at the potential impacts of an identity proofing failure.  The primary identity proofing failure an agency may encounter is accepting a falsified identity as true, therefore providing a service or benefit to the wrong person. In addition, proofing when not required, or collecting more information than needed, is a risk in and of itself, and obtaining verified attribute information when not needed is also considered an identity proofing failure. Risk should be considered from the perspective of the organization and to the user, since one may not be negatively impacted while the other could be severely harmed. The risk assessment process of M-04-04 and any agency specific risk management process should commence from this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63/media/ial-step2.png"/></td>
@@ -187,8 +191,6 @@ AAL Step 2 - This applies to all AALs, but since you have already gone down a pa
 </div>
 
 
-
-All steps - don't intend to replace the risk assessment process.  Hence no description.
 
 #### <a name="FAL_CYOA"></a> 4.3.3 Selecting Federation Assurance Level
 
