@@ -87,7 +87,9 @@ Technology and Director*
 
 </div>
 
-<div class="breaker text-center" markdown="1">
+<div class="breaker"/>
+
+<div class="text-center" markdown="1">
 
 ### Authority
 
@@ -186,11 +188,9 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 </div>
 
-<div class="breaker" markdown="1">
+<div class="breaker"/>
 
 ## Executive Summary
-
-</div>
 
 This guideline deals with how an individual, known as an applicant, can prove their identity to a Credential Service Provider (CSP) and become enrolled as a valid subscriber.
 
@@ -208,11 +208,9 @@ At IAL 2, the claimed identity is proven with evidence that supports the real wo
 **IAL 3**:
 At Identity Assurance Level 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
-<div class="breaker" markdown="1">
+<div class="breaker"/>
 
 ## Table of Contents
-
-</div>
 
 [1. Purpose](#sec1)
 
