@@ -7,7 +7,7 @@ OMB M-04-04 guides agencies to assess the potential impact of an **authenticatio
 1.  The degree of confidence in the vetting process used to establish the identity of the individual to whom the authenticator was issued, and
 2. the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
 
-For example, if the impact of an authentication error results in an application assessed at LOA 3, the agency must identity proof and provide authenticators that meet the requirements for LOA 3.  However, in today's digital services, combining proofing and authenticator requirements into a single bundle sometimes creates unintended consequences. Agencies should look at the impact that could result from a true authentication error (the wrong individual can use someone elses credential) AND an identity proofing error.  From the perspective of an identity proofing failure, there is two dimensions of failure:
+For example, if the impact of an authentication error results in an application assessed at LOA 3, the agency must identity proof and provide authenticators that meet the requirements for LOA 3.  However, in today's digital services, combining proofing and authenticator requirements into a single bundle sometimes creates unintended consequences. Agencies should look at the impact that could result from a true authentication error (the wrong individual can use someone else’s credential) AND an identity proofing error.  From the perspective of an identity proofing failure, there is two dimensions of failure:
 
 *  The impact of providing a service to the wrong person (e.g. a fraudster successfully proofs as someone else).
 *  The impact of excessive identity proofing (i.e. collecting more information about a person than is required to successfully provide the digital service.)
@@ -20,7 +20,7 @@ In order to appropriately determine the process and system requirements to reduc
 
 * Identity Assurance Level (IAL) - the robustness of the identity proofing process to confidently determine the identity of an individual  
 * Authenticator Assurance Level (AAL) - the robustness of the authentication process itself, and the binding between an authenticator and the identifier of a specific individual.
-* Federation Assurnace Level (FAL) - the robustness of the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party. FAL is optional as not all digital systems will leverage federated identity architectures.
+* Federation Assurance Level (FAL) - the robustness of the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party. FAL is optional as not all digital systems will leverage federated identity architectures.
 
 A summary of each of the identity, authenticator, and federation assurance levels is provided below.
 
@@ -127,7 +127,7 @@ The AAL selection does not mean the digital service provider will need to issue 
     <td><img src="sp800-63/media/aal-step2.png"/></td>
   </tr>
   <tr>
-   <td>[EO 13681](#EO13681) requires MFA when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point.  That said, personal information release at all AALs should be considered when performing the risk assessment.  An important point at this step, the collection of personal information, if made available online, does not need to be validated or verified to require an AAL of 2 or higher.  Even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurrate information to benefit from the digital service.  As such, self-asserted data must be protected appropriately.</td> 
+   <td>[EO 13681](#EO13681) requires MFA when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point.  That said, personal information release at all AALs should be considered when performing the risk assessment.  An important point at this step, the collection of personal information, if made available online, does not need to be validated or verified to require an AAL of 2 or higher.  Even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service.  As such, self-asserted data must be protected appropriately.</td> 
   </tr>
   
   </table>
@@ -166,13 +166,13 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63/media/ial-step3.png"/></td>
   </tr>
   <tr>
-   <td>At this point, the agency understands that some level of proofing is required. Step 3 is intended to look at the potential impacts of an identity proofing failure in order to determine if IAL2 or IAL3 is the most appropriate selection.  The primary identity proofing failure an agency may encounter is accepting a falsified identity as true, therefore providing a service or benefit to the wrong or inelligible person. In addition, proofing, when not required, or collecting more information than needed, is a risk in and of itself. Hence, obtaining verified attribute information when not needed is also considered an identity proofing failure. This step should identify if the agency answered Step 1 and 2 incorrectly, realizing they actually don't need personal information to deliver the service. Risk should be considered from the perspective of the organization and to the user, since one may not be negatively impacted while the other could be significantly harmed. The risk assessment process of M-04-04 and any agency specific risk management process should commence from this step.</td> 
+   <td>At this point, the agency understands that some level of proofing is required. Step 3 is intended to look at the potential impacts of an identity proofing failure in order to determine if IAL2 or IAL3 is the most appropriate selection.  The primary identity proofing failure an agency may encounter is accepting a falsified identity as true, therefore providing a service or benefit to the wrong or ineligible person. In addition, proofing, when not required, or collecting more information than needed, is a risk in and of itself. Hence, obtaining verified attribute information when not needed is also considered an identity proofing failure. This step should identify if the agency answered Step 1 and 2 incorrectly, realizing they actually don't need personal information to deliver the service. Risk should be considered from the perspective of the organization and to the user, since one may not be negatively impacted while the other could be significantly harmed. The risk assessment process of M-04-04 and any agency specific risk management process should commence from this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63/media/ial-step4.png"/></td>
   </tr>
   <tr>
-   <td>Step 4 is intended to determine if the personal information required by the agency will ultimately resolve to a unique identity.  In other words, the agency needs to know the full identity of the individual accessing the digital service, and pseudonymous access, even with a few validated and verified attributes, is not possible. If the agency needs to uniquely identify the individual, the process can end.  However, the agency should consider if Step 5 is of value to them, as the acceptance of claims will reduce exposure to the risk of overcollecting and storing more personal information than is necessary.</td> 
+   <td>Step 4 is intended to determine if the personal information required by the agency will ultimately resolve to a unique identity.  In other words, the agency needs to know the full identity of the individual accessing the digital service, and pseudonymous access, even with a few validated and verified attributes, is not possible. If the agency needs to uniquely identify the individual, the process can end.  However, the agency should consider if Step 5 is of value to them, as the acceptance of claims will reduce exposure to the risk of over collecting and storing more personal information than is necessary.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63/media/ial-step5.png"/></td>
@@ -193,7 +193,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 #### <a name="FAL_CYOA"></a> 4.3.3 Selecting Federation Assurance Level
 
-### <a name="toFedorNotToFed"></a> 4.4 Federation Consideratons
+### <a name="toFedorNotToFed"></a> 4.4 Federation Considerations
 
 ### 4.5. Acceptable IAL and AAL Combinations
 
