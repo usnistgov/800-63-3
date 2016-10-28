@@ -19,7 +19,7 @@ Privacy Authors:
 Naomi B. Lefkovitz  
 Jamie M. Danker  
 
-User Experience Authors:  
+Usability Authors:  
 
 Yee-Yin Choong      
 Kristen K. Greene      
@@ -79,7 +79,7 @@ Jamie M. Danker
 *National Protection and Programs Directorate  
 Department of Homeland Security*    
 
-User Experience Authors:    
+Usability Authors:    
 
 Yee-Yin Choong  
 Kristen K. Greene  
@@ -205,21 +205,6 @@ The terms “MAY” and “NEED NOT” indicate a course of action permissible w
 The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
 
 </div>
-
-## Executive Summary
-
-Digital authentication is the process of establishing confidence in user identities electronically presented to an information system. The robustness of this confidence is described by categorization known as the Authenticator Assurance Level (AAL). The separation of AAL from Identity Assurance Level (IAL), described in SP 800-63A, better supports applications requiring strong authentication that may be pseudonomymous. The separation of authenticator issuance from the establishment of credentials binding those authenticators to individuals provides additional flexibility in the enrollment and identity proofing process.
-
-This guideline addresses how an individual, known as a claimant, can securely authenticate to a Credential Service Provider to establish the context for a remote digital interaction.
-
-The three AALs reflect the options agencies will select based on their risk profile and the potential harm caused by an invalid or fraudulent user accessing their systems. The AALs are as follows:
-
-**Authenticator Assurance Level 1** - AAL 1 provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove through a secure authentication protocol that he or she possesses and controls the authenticator.
-
-**Authenticator Assurance Level 2** – AAL 2 provides high confidence that the claimant controls the authenticator registered to a subscriber. Two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.
-
-**Authenticator Assurance Level 3** – AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides impersonation resistance is required.
-
 
 ## Table of Contents
 

@@ -5,6 +5,7 @@
 # Digital Authentication Guideline
 
 Paul A. Grassi  
+Michael E. Garcia  
 James L. Fenton
 
 {::comment}
@@ -22,6 +23,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 # Digital Authentication Guideline
 
 Paul A. Grassi  
+Michael E. Garcia  
 *Applied Cybersecurity Division  
 Information Technology Laboratory*
 
