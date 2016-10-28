@@ -186,7 +186,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 </div>
 
-<div class="breaker">
+<div class="breaker" markdown="1">
 
 ## Executive Summary
 
@@ -208,7 +208,7 @@ At IAL 2, the claimed identity is proven with evidence that supports the real wo
 **IAL 3**:
 At Identity Assurance Level 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
-<div class="breaker">
+<div class="breaker" markdown="1">
 
 ## Table of Contents
 
