@@ -198,11 +198,6 @@ td,th{
 		box-shadow:none !important
 	}
 
-	#sidebar {
-		display: none;
-		width: 0px;
-	}
-
 	.nist-header {
 		display: none;
 	}
@@ -264,7 +259,8 @@ td,th{
 	}
 
 	.navbar{
-		display:none
+		display:none;
+		width: 0px;
 	}
 
 	.table td,.table th{
