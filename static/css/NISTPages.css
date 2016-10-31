@@ -102,7 +102,7 @@ ul.audiences li {
   width: 139px;
 }
 
-.navbar-fixed-left + .container {
+.container {
   padding-left: 160px;
 }
 
@@ -130,16 +130,16 @@ table>thead>tr>th,table>tbody>tr>th,table>tfoot>tr>th,table>thead>tr>td,table>tb
   padding:8px;
   line-height:1.42857143;
   vertical-align:top;
-  border-top:1px solid #ddd
+  border:1px solid #ddd
 }
 
 table>thead>tr>th{
   vertical-align:bottom;
-  border-bottom:2px solid #ddd
+  border-bottom:2px solid #ddd;
 }
 
 table>caption+thead>tr:first-child>th,table>colgroup+thead>tr:first-child>th,table>thead:first-child>tr:first-child>th,table>caption+thead>tr:first-child>td,table>colgroup+thead>tr:first-child>td,table>thead:first-child>tr:first-child>td{
-  border-top:0
+  border-top:1px solid #ddd;
 }
 
 table>tbody+tbody{
@@ -149,5 +149,3 @@ table>tbody+tbody{
 table table{
   background-color:#fff
 }
-
-

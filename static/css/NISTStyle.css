@@ -198,6 +198,19 @@ td,th{
 		box-shadow:none !important
 	}
 
+	.nist-header {
+		display: none;
+	}
+
+	div.container {
+		padding-left:30px;
+		padding-right:30px;
+	}
+
+	.breaker{
+		page-break-before: always;
+	}
+
 	a,a:visited{
 		text-decoration:underline
 		color: purple;
@@ -246,7 +259,8 @@ td,th{
 	}
 
 	.navbar{
-		display:none
+		display:none;
+		width: 0px;
 	}
 
 	.table td,.table th{
@@ -6873,7 +6887,7 @@ table.GBInnerDataTable th{
 	text-align:center;
 	font-size:18px;
 	color:#555;
-	margin:15px 
+	margin:15px
 }
 
 #dropZone.hover{
