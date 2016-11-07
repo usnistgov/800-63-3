@@ -1,6 +1,6 @@
 <a name="sec4"></a>
 
-## 4. Digital Authentication Model
+## 4. Digital Authentication Models
 
 ### <a name="4-1"></a>4.1. Overview 
 
