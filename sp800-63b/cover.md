@@ -1,3 +1,4 @@
+
 <div class="text-right" markdown="1">
 
 # <a name="800-63b"></a> DRAFT NIST Special Publication 800-63B
@@ -31,7 +32,7 @@ This publication is available free of charge from:
 http://dx.doi.org/10.6028/NIST.SP.XXX  
 
 {:/comment}
-  
+
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)
 
@@ -246,4 +247,3 @@ The three AALs reflect the options agencies will select based on their risk prof
 [11. References](#references)
 
 [Appendix A. Strength of Memorized Secrets](#appA)
-
