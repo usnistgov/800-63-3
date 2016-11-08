@@ -1,5 +1,7 @@
 <a name="sec5"></a>
 
+<div class="breaker"/>
+
 ## 5. Digital Authentication Model
 
 ### <a name="5-1"></a>5.1. Overview 

@@ -1,5 +1,7 @@
 <a name="sec1"></a>
 
+<div class="breaker"/>
+
 ## 1. <a name="purpose"></a>Purpose
 
 This recommendation and its companion documents, SP 800-63A, SP 800-63B, and SP 800-63C, provide technical guidelines to agencies for the implementation of digital authentication.

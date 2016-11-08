@@ -18,6 +18,10 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)
 
+</div>
+
+<div class="breaker text-right" markdown="1">
+
 # DRAFT NIST Special Publication 800-63-3
 
 # Digital Authentication Guideline
@@ -51,6 +55,8 @@ National Institute of Standards and Technology
 Technology and Director*
 
 </div>
+
+<div class="breaker"/>
 
 <div class="text-center" markdown="1">
 
@@ -157,6 +163,8 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 </div>
 
+<div class="breaker"/>
+
 ## Executive Summary
 
 Digital authentication is the process of establishing confidence in user identities digitally presented to an information system. Digital authentication presents a technical challenge when this process involves the authentication of individual people over an open network for the purpose of digital government and commerce. 
@@ -199,6 +207,7 @@ Accordingly, with this revision, SP 800-63 has been split into a suite of docume
 
 - SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
 
+<div class="breaker"/>
 
 ## Table of Contents
 
