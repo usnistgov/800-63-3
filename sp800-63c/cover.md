@@ -1,3 +1,4 @@
+
 <div class="text-right" markdown="1">
 
 # <a name="800-63c"></a> DRAFT NIST Special Publication 800-63C
@@ -19,7 +20,7 @@ This publication is available free of charge from:
 http://dx.doi.org/10.6028/NIST.SP.XXX  
 
 {:/comment}
- 
+
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)
 
