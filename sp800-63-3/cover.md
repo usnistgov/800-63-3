@@ -1,3 +1,4 @@
+
 <div class="text-right" markdown="1">
 
 # <a name="800-63-3"></a>DRAFT NIST Special Publication 800-63-3
@@ -125,7 +126,7 @@ passwords; PKI.
 
 ### Acknowledgements
 
-The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. 
+The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 
 ### Audience
 
@@ -157,7 +158,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 ## Executive Summary
 
-Digital authentication is the process of establishing confidence in user identities digitally presented to an information system. Digital authentication presents a technical challenge when this process involves the authentication of individual people over an open network for the purpose of digital government and commerce. 
+Digital authentication is the process of establishing confidence in user identities digitally presented to an information system. Digital authentication presents a technical challenge when this process involves the authentication of individual people over an open network for the purpose of digital government and commerce.
 
 The suite of SP 800-63-3 documents provides technical guidelines to agencies to allow an individual to authenticate his or her identity to a Federal digital service.  This document may inform but does not restrict or constrain the development or use of standards for application outside of the Federal government, such as e-commerce transactions. These guidelines address only traditional, widely implemented methods for digital authentication, based on secrets. With these methods, the individual to be authenticated proves that he or she knows or possesses a valid authenticator or combination of authenticators.
 
@@ -178,10 +179,10 @@ OMB guidance outlines a five-step process by which agencies should meet their di
 
 5.  Periodically reassess the information system to determine technology refresh requirements.
 
-This document suite provides guidelines for implementing the third step of the above process.  A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a 
-third component, *Federation Assurance Level (FAL)*, is required. 
+This document suite provides guidelines for implementing the third step of the above process.  A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a
+third component, *Federation Assurance Level (FAL)*, is required.
 
-* IAL refers to the robustness of the identity proofing process and the binding between an authenticator and the records pertaining to a specific individual. 
+* IAL refers to the robustness of the identity proofing process and the binding between an authenticator and the records pertaining to a specific individual.
 * AAL refers to the robustness of the authentication process itself.
 * FAL refers to the robustness of the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party.
 
@@ -225,7 +226,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 ### M-04-04 Levels of Assurance Requirements
 
 
-[Table 1](#63ES-Table1) shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
+[Table 1](#63ES-Table1) shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels.
 
 <a name="63ES-Table1"></a>
 
@@ -266,7 +267,7 @@ Agency mission need will assist in determining the acceptable IAL at a given LOA
 In the case of federal employees, bound by HSPD-12 and required to obtain a Personal Identity Verification (PIV) smart card, the requirement is that agencies meet LOA4. The HSPD-12 use case requires an authenticator at AAL3 **and** identity proofing at IAL 3.   
 
 >Important Note: An agency can accept a higher assurance level than those required in the table above.  For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2.  The same holds true for authenticators; stronger authenticators can be used at RPs that have lower authenticator requirements.  However, RPs will ensure that these scenarios only occur in federated scenarios with appropriate privacy protections by the CSP to ensure that only the requested attributes are provided to the RP and that no personal information leaks from the authenticator or the assertion.  See [privacy requirements](./sp800-63c.html#sec9) in SP 800-63C for more details.
- 
+
 ### Acceptable IAL and AAL Combinations
 
 [Table 3](#63ES-Table3) details valid combinations of IAL and AAL that may be established during the enrollment process:
@@ -300,5 +301,3 @@ In limited situations, a given transaction requiring IAL 2 MAY be able to authen
 [4. Digital Authentication Model](#sec4)
 
 [5. References](#references)
-
- 
