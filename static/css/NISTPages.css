@@ -106,7 +106,7 @@ ul.audiences li {
   padding-left: 160px;
 }
 
-body > .container {
+.nist-header + .container {
     padding-left: 15px;
 }
 
