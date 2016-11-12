@@ -2,7 +2,7 @@
 
 ## 4. Federation
 
-In a federation protocol, a triangle is formed between the subscriber, the identity provider (IdP), and the relying party (RP) as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes across each leg of the triangle at different times. The subscriber communicates with both the IdP and the RP, usually through a web browser. In most cases, the RP and the IdP communicate with each other; this communication can happen over the *front channel* (through redirects involving the subscriber), or over the *back channel* (through a direct connection between the RP and IdP). In some cases, the subscriber may present an information bundle to the RP that is packaged and pre-signed by the IdP that is stored as part of a cached credential they retain.
+In a federation protocol, a relationship is formed between the subscriber, the identity provider (IdP), and the relying party (RP) as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes among the participants at different times. The subscriber communicates with both the IdP and the RP, usually through a web browser. In most cases, the RP and the IdP communicate with each other; this communication can happen over the *front channel* (through redirects involving the subscriber), or over the *back channel* (through a direct connection between the RP and IdP). In some cases, the subscriber may present an information bundle to the RP that is packaged and pre-signed by the IdP that is stored as part of a cached credential they retain.
 
 <a name="63cSec4-Figure1"></a>
 
@@ -13,38 +13,38 @@ In a federation protocol, a triangle is formed between the subscriber, the ident
 
 </div>
 
-The subscriber authenticates to the IdP as described in [SP 800-63B](sp800-63b.html), and then that authentication event is asserted to the RP across the network. The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 5](#sec5).
+The subscriber authenticates to the IdP as described in [SP 800-63B](sp800-63b.html), and then the result of that authentication event is asserted to the RP across the network. The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 5](#sec5).
 
 ### 4.1. Federation Models
 
-This section provides an overview of and requirements for common identity federation models currently in use. In these models, relationships are established between members of the federation in several different ways. Some models mandate that all federated parties have an equally high level of trust, while other models allow for parties with a diversity of relationships.
+This section provides an overview of and requirements for common identity federation models currently in use. In each model, relationships are established between members of the federation in several different ways.
 
 #### <a name="manual-registration"></a> 4.1.1. Manual Registration
 
-In the manual registration model, each party manually provisions each of the parties in the federation with which they expect to interoperate. System administrators SHALL individually vet each such participant to determine that they adhere to their expected security, identity, and privacy standards. Mutual vetting of IdPs and RPs SHALL establish, as a minimum, that:
+In the manual registration model, the IdP and RP manually provision endpoint information about parties with which they expect to interoperate. Agencies SHALL individually vet each such participant to determine that they adhere to their expected security, identity, and privacy standards. Vetting of IdPs and RPs SHALL establish, as a minimum, that:
 
-* IdP assertions of subscriber identifiers and authentication assurance level (AAL) are reliable and can be depended upon in place of direct authentication.
-* IdP assertion of attributes and, where applicable, identity assurance level (IAL) are reliable and can be depended upon.
+* IdP assertions of subscriber identifiers include the authentication assurance level (AAL) by which the subscriber authenticated.
+* IdP assertions of attributes include the identity assurance level (IAL) by which the attributes were established.
 * RPs will adhere to IdP requirements for the handling of subscriber attribute data, such as retention, aggregation, and disclosure to third parties.
-* RP and IdP systems interoperate successfully across the network.
+* RP and IdP systems use approved profiles of federation protocols.
 
 Parties MAY depend upon a federation authority, as described in [Section 4.1.3](#authorities) below, to perform some or all of this vetting, provided that they are satisfied that the authority has completed this process.
 
 Depending on the protocol being used, at registration time participants SHALL securely establish any keying information they need to operate the federated relationship, including shared secrets, if any. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants. Each party SHALL maintain their own registry of other parties with which they federate.
 
-Federation relationships SHOULD specify a given maximum identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship. For example, a given RP may only accept IAL 2 identity proofing from a given IdP that has only been vetted at that level. Authentication and identity information exceeding the maximum IAL and AAL SHALL be accepted, but SHALL be treated as if it occurred at the lower level. Similarly, federation relationships established through an authority SHALL be limited to the accreditation level of that authority.
+Federation relationships SHALL specify a given maximum identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship. For example, a given RP may only accept IAL 2 identity proofing from a given IdP that has only been vetted at that level.
 
 #### <a name="dynamic-registration"></a> 4.1.2. Dynamic Registration
 
-In the dynamic registration model of federation, all of the relationships between members of the federation are not pre-established but are negotiated at the time of a transaction. In order to establish adherence to security, identity, and privacy standards, dynamic registration of federation participants SHALL make use of a federation authority as described in [Section 4.1.3](#authorities) below. The purpose of these authorities is to improve the scaling characteristics of large and/or complex federations.
+In the dynamic registration model of federation, it is possible for relationships between members of the federation to be negotiated at the time of a transaction. In order to establish adherence to security, identity, and privacy standards, dynamic registration of federation participants SHALL make use of a federation authority as described in [Section 4.1.3](#authorities) below.
 
-Frequently, parties in a dynamic registration model have no way to know each other ahead of time. As a consequence, little information about users and systems is exchanged by default. This problem MAY be mitigated by a technology called *software statements*, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by a federation authority. Because both parties trust the federation authority, that trust can be extended to the other party in the dynamic registration partnership.  This allows the connection to be established or elevated between the federating parties without relying on self-asserted attributes entirely. See [[RFC 7591]](#RFC7591) section 2.3 for more information on software statements.
+Frequently, parties in a dynamic registration model do not know each other ahead of time. As a consequence, little information about users and systems is exchanged by default. This problem SHOULD be mitigated by a technology called *software statements*, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by a federation authority. Because both parties trust the federation authority, that trust can be extended to the other party in the dynamic registration partnership.  This allows the connection to be established or elevated between the federating parties without relying on self-asserted attributes entirely. See [[RFC 7591]](#RFC7591) section 2.3 for more information on software statements.
 
 #### <a name="authorities"></a> 4.1.3. Federation Authorities
 
-In federations that employ dynamic registration and some that employ static registration, federated parties SHALL use an authority, sometimes referred to as a *trust framework*, to establish a common set of norms and to verify and audit adherence to a set of predetermined security and identity standards among the federation members. The use of a federation authority in large federations greatly decreases the number of relationships that need to be individually vetted and negotiated.
+Some federations use a party known as a *federation authority* in order to decrease the number of relationships that need to be individually vetted and negotiated.
 
-Federation authorities SHALL evaluate the criteria listed in [Section 4.1.1](#manual-registration) (compliance with IAL and AAL requirements, privacy requirements, and interoperability) of each participant on behalf of federation members. Federation authorities SHALL establish a maximum, *accredited*, operating IAL and AAL for use among federation members. Individual members MAY participate at lower IAL and/or AAL levels, but the federation authority SHALL ensure (typically through auditing, rather than participation in actual transactions) that IAL and AAL levels of these participants do not exceed their authorized levels.
+Where they are used, federation authorities SHALL evaluate the criteria listed in [Section 4.1.1](#manual-registration) of each participant on behalf of federation members. Federation authorities SHALL establish the maximum operating IAL and AAL for use by relationships they facilitate.
 
 Federation authorities MAY assist members that are trying to discover API endpoints in order to register with other federation members. If this service is not provided, federations supporting dynamic registration SHALL ensure that participants have predictable API addresses where other participants can register themselves without administrator involvement.
 
