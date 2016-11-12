@@ -2,89 +2,96 @@
 
 ## 5. Assertions
 
-An assertion contains a set of claims or statements about an authenticated subscriber. Assertions can be categorized along multiple orthogonal dimensions, including the characteristics of using the assertion or the protections on the assertion itself.
+An assertion is a packaged set of attributes and/or claims about an authenticated subscriber that is passed from the identity provider (IdP) to the relying party (RP) in a federated identity system. Assertions contain a variety of information, including metadata, attribute values and claims about the subscriber, and other information that the RP can leverage, such as restrictions, expiration time, etc.
 
-The core set of claims inside an assertion SHOULD include (but is not limited to):
+Assertions MAY only represent an authentication event by asserting only an identifier, MAY only represent attributes and claims regarding the subscriber, or both. 
 
- - Issuer: an identifier for the party that issued the assertion (the IdP)
- - Subject: an identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP)
- - Audience: an identifier for the party intended to consume the assertion (the RP)
- - Issuance: a timestamp indicating when the assertion was issued by the IdP
- - Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is not the expiration of the session at the RP)
- - Authentication Time: a timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event
- - Identifier: a random value uniquely identifying this assertion, used to prevent attackers from manufacturing malicious assertions which would pass other validity checks
+All assertions SHALL include the following:
 
-These core claims, particularly the issuance and expiration claims, apply to the assertion about the authentication event itself, and not to any additional identity attributes associated with the subscriber, even when those claims are included within the assertion. A subscriber's attributes MAY expire or be otherwise invalidated independently of the expiration or invalidation of the assertion.
+- Subject: an identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP)
+- Issuer: an identifier for the IdP that issued the assertion
+- Issuance: a timestamp indicating when the assertion was issued by the IdP
+- Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is not the expiration of the session at the RP)
+- Identifier: a value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions
+- Signature: Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
 
-Assertions MAY include other additional identity attributes. See sec. 6 for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in a separate transaction using an authorization credential issued along side the assertion. 
+Assertions providing authentication information SHALL also include:
 
-Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single log-in event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) at the RP comes into play and the assertion is no longer used directly. The expiration of the assertion SHALL NOT represent the expiration of the session at the RP.
+- Authentication Time: a timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event
+- AAL: The authentication assurance level of the subscriber
 
-### 5.1. Assertion possession category
+Assertions providing attributes or claims about the subscriber SHALL also include (for each attribute or claim):
 
-An assertion can be classified based on whether possession of the assertion itself is sufficient for representing  the subject of the assertion, or if additional proof is necessary along side the assertion.
+- Attribute/claim identifier: An identifier that is meaningful to the RP describing the type of information being conveyed
+- Attribute/claim value: The attribute or claim value
+- IAL: The identity assurance level associated with attributes or claims that have undergone identity proofing as described in [SP 800-63A](sp800-63a.html). Derived or directly known attributes MAY use an IAL of 2 or 3 depending on the confidence that the IdP has that attribute or claim actually applies to the subject. All self-asserted attributes and claims SHALL assert IAL 1.
 
-#### 5.1.1. Holder-of-Key Assertions
+Assertions MAY also include the following information:
 
-A holder-of-key assertion contains a reference to a symmetric key or a public key (corresponding to a private key) possessed by and representing the subscriber. An RP MAY decide when to require the subscriber to prove possession of the key, depending on the policy of the RP. However, the RP SHALL require the subscriber to prove possession of the key that is referenced in the assertion in parallel with presentation of the assertion itself in order for the assertion to be considered holder-of-key. Otherwise, an assertion containing reference to a key which the user has not proved possession of will be considered a bearer assertion (5.1.2).
+- Audience: an identifier for the party intended to consume the assertion (the RP)
+- Key binding: Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion
 
-The key referenced in a holder-of-key represents the subscriber, not the client. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
+Assertions MAY include additional attributes. Refer to [Section 6](#sec6) for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in one or more separate transactions using an authorization credential issued alongside the original assertion. 
 
-In proving possession of the subscriber’s secret, the subscriber also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well. 
+Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) by the RP comes into play; the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion.
 
-Note that the reference to the key material in question is asserted by the issuer of the assertion as are any other claims therein, and reference to a given key SHALL be trusted at the same level as all other claims within the assertion itself.
+### 5.1. Assertion Binding
 
-The assertion SHALL NOT include an unencrypted private or symmetric key to be used with holder-of-key presentation.
+An assertion can be classified based on whether presentation by a claimant of an assertion reference or the assertion itself is sufficient for establishing the binding between the subscriber and the assertion, or if a stronger binding is required.
 
-#### 5.1.2. Bearer Assertions
+#### 5.1.1. Bearer Assertions
 
-A bearer assertion can be presented by any party as proof of the bearer's identity, without reference to external materials. If an attacker is able to capture or manufacture a valid assertion representing a subscriber, and that attacker is able to successfully present that assertion to the RP, then the attacker will be able to impersonate the subscriber at that RP. 
+A bearer assertion can be presented by any party as proof of the bearer's identity. If an attacker is able to capture or manufacture a valid assertion or assertion reference representing a subscriber, and that attacker is able to successfully present that assertion or reference to the RP, then the attacker MAY be able to impersonate the subscriber at that RP. 
 
-Note that mere possession of a bearer assertion is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (Section 6.1), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
+Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 6.1](#sec6-1)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
 
-### 5.2. Assertion protection category
+#### 5.1.2. Holder-of-Key Assertions
 
-Regardless of the possession mechanism (discussed above) or the federation model used to obtain them (described in section 4), assertions need to include an appropriate set of protections to the assertion data itself to prevent attackers from manufacturing valid assertions or re-using captured assertions at disparate RPs.
+A holder-of-key assertion contains a reference to a symmetric key or a public key (corresponding to a private key) possessed by and representing the subscriber.  To establish a holder-of-key binding of an assertion to a claimant, the RP SHALL require the claimant to prove possession of the key that is referenced in the assertion in addition to presentation of the assertion itself. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion.
+
+The key referenced in a holder-of-key represents the subscriber, not the claimant. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
+
+In proving possession of the subscriber’s secret, the claimant also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well. 
+
+Note that the reference to the key is asserted (and signed) by the issuer of the assertion; reference to a given key SHALL be trusted at the same level as all other information within the assertion.
+
+The assertion SHALL NOT include an unencrypted private or symmetric key to be used with holder-of-key presentation. The RP MAY verify the claimant's possession of the key in conjunction with the IdP, for example, by requesting that the IdP verify a signature or MAC calculated by the claimant in response to a cryptographic challenge.
+
+### 5.2. Assertion Protection
+
+Independent of the binding mechanism (discussed above) or the federation model used to obtain them (described in Section 4), assertions SHALL include an appropriate set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs.
 
 #### 5.2.1. Assertion Identifier
 
-Assertions SHALL contain sufficient entropy to prevent an attacker from manufacturing a valid assertion and using it with a target RP. Assertions MAY accomplish this by use of an embedded nonce, timestamp, assertion identifier, or a combination of these or other techniques. 
-
-In the absence of additional cryptographic protections, this source of randomness SHALL function as a shared secret between the IdP and the RP to uniquely identify the assertion in question. 
+Assertions SHALL be sufficiently unique to permit unique identification by the target RP. Assertions MAY accomplish this by use of an embedded nonce, timestamp, assertion identifier, or a combination of these or other techniques. 
 
 #### 5.2.2. Signed Assertion
 
-Assertions MAY be cryptographically signed by the IdP, and the RP SHALL validate the signature of each such assertion based on the IdP's key. This signature SHALL cover all vital fields of the assertion, including its issuer, audience, subject, expiration, and any unique identifiers.
+Assertions SHALL be cryptographically signed by the issuer (IdP or broker). The RP SHALL validate the digital signature or MAC of each such assertion based on the issuer's key. This signature SHALL cover all vital fields of the assertion, including its identifier, issuer, audience, subject, and expiration.
 
-The signature MAY be asymmetric based on the published public key of the IdP. In such cases, the RP MAY fetch this public key in a secure fashion at runtime (such as through an HTTPS URL hosted by the IdP), or the key MAY be provisioned out of band at the RP (during configuration of the RP).
-
-The signature MAY be symmetric based on a key shared out of band between the IdP and the RP. In such circumstances, the IdP SHALL use a different shared key for each RP.
-
-All signatures SHALL use approved signing methods.
+The assertion signature SHALL either be a digital signature using asymmetric keys or a message authentication code (MAC) using a symmetric key shared between the RP and issuer (normally during registration of the RP). Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions. Public keys for verification of digital signatures MAY be fetched by the RP in a secure fashion at runtime, such as through an HTTPS URL hosted by the IdP. Approved cryptography SHALL be used.
 
 #### 5.2.3. Encrypted Assertion
 
-Assertions MAY be encrypted in such a fashion as to allow only the intended audience to decrypt the claims therein. The IdP SHALL encrypt the payload of the assertion using the RP's public key. The IdP MAY fetch this public key in a secure fashion at runtime (such as through an HTTPS URL hosted by the RP), or the key MAY be provisioned out of band at the IdP (during registration of the RP).
+Assertions MAY be encrypted so as to allow only the intended audience to decrypt the contents. The IdP SHALL encrypt the contents of the assertion using either the RP's public key or a shared symmetric key (normally established during registration of the RP). For public-key encryption, the IdP MAY fetch the RP's public key in a secure fashion at runtime, such as through an HTTPS URL hosted by the RP.
 
-All encrypted objects SHALL use approved encryption methods.
+All encryption of assertions SHALL use approved cryptography.
 
 #### 5.2.4. Audience Restriction
 
-All assertions SHOULD use audience restriction techniques to allow an RP to recognize whether or not it is the intended target of an issued assertion. All RPs SHALL check the audience of an assertion, if provided, to prevent the injection and replay of an assertion generated for one RP at another RP. 
+Assertions MAY use audience restriction techniques to allow an RP to recognize whether or not it is the intended target of an issued assertion. All RPs SHALL check the audience of an assertion, if provided, to prevent the injection and replay of an assertion generated for one RP at another RP. 
 
 #### 5.2.5. Pairwise Pseudonymous Identifiers
 
-In some circumstances, it is desirable to prevent the subscriber's account at the IdP from being linked through one or more RPs through use of a common identifier. In these circumstances, pairwise pseudonymous subject identifiers SHALL be used within the assertions generated by the IdP for the RP, and the IdP SHALL generate a different identifier for each RP. (See [Pairwise Pseudonymous Identifier Generation](#ppi-gen) for more information.)
+In some circumstances, it is desirable to prevent the subscriber's account at the IdP from being linked at multiple RPs through use of a common identifier. In these circumstances, pairwise pseudonymous subject identifiers SHALL be used within the assertions generated by the IdP for the RP, and the IdP SHALL generate a different identifier for each RP as described in [Section 5.2.6](#ppi-gen) below.
 
-When unique pseudonymous identifiers are used with RPs along side of identity attribute bundles, it may still be possible for multiple colluding RPs to fully identify and correlate a subscriber across systems using these attributes. For example, given that two independent RPs will each see the same subscriber identified with a different pairwise pseudonymous identifier, the RPs could still determine that the subscriber is the same person by comparing their name, email address, physical address, or other identifying attributes carried alongside the pairwise pseudonymous identifier. Privacy policies may prohibit such correlation, but pairwise pseudonymous identifiers can increase effectiveness of these policies by increasing the administrative effort in managing the attribute correlation. 
+When unique pseudonymous identifiers are used with RPs alongside attributes, it may still be possible for multiple colluding RPs to reidentify a subscriber by correlation across systems using these attributes. For example, if two independent RPs each see the same subscriber identified with different pairwise pseudonymous identifiers, they could still determine that the subscriber is the same person by comparing their name, email address, physical address, or other identifying attributes carried alongside the pairwise pseudonymous identifier. Privacy policies may prohibit such correlation, and pairwise pseudonymous identifiers can increase effectiveness of these policies by increasing the administrative effort in managing the attribute correlation. 
 
-Note that in a proxied federation model, ultimate IdP may be unable to generate a pairwise pseudonymous identifier for the ultimate RP, since the proxy could blind the IdP from knowing which RP is being accessed by the subscriber. In such situations, the pairwise pseudonymous identifier is usually between the IdP and the federation proxy itself. The proxy, acting as an IdP, can itself provide pairwise pseudonymous identifiers to downstream RPs. Depending on the protocol, the federation proxy may need to map the pairwise pseudonymous identifiers back to the associated identifiers from upstream IdPs in order to allow the identity protocol to function. In such cases, the proxy will be able to track and determine which pairwise pseudonymous identifiers represent the same subscriber at different RPs.
+Note that in a proxied federation model, the initial IdP may be unable to generate a pairwise pseudonymous identifier for the ultimate RP, since the proxy could blind the IdP from knowing which RP is being accessed by the subscriber. In such situations, the pairwise pseudonymous identifier is usually established between the IdP and the federation proxy itself. The proxy, acting as an IdP, can itself provide pairwise pseudonymous identifiers to downstream RPs. Depending on the protocol, the federation proxy may need to map the pairwise pseudonymous identifiers back to the associated identifiers from upstream IdPs in order to allow the identity protocol to function. In such cases, the proxy will be able to track and determine which pairwise pseudonymous identifiers represent the same subscriber at different RPs.
 
 #### 5.2.6. <a name="ppi-gen"></a>Pairwise Pseudonymous Identifier Generation
 
-Pairwise pseudonymous identifiers SHALL be opaque and unguessable, containing no identifying information about the subscriber. Additionally, the identifiers SHALL only be known by and used by one IdP-RP pair. 
-
-An IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, but only if:
+Pairwise pseudonymous identifiers SHALL be opaque and unguessable, containing no identifying information about the subscriber. Normally, the identifiers SHALL only be known by and used by one IdP-RP pair. However, an IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, but only if:
 
 * Those RPs have a demonstrable relationship that justifies an operational need for the correlation, such as a shared security domain or shared legal ownership, and
 * All RPs sharing an identifier consent to being correlated in such a manner.
