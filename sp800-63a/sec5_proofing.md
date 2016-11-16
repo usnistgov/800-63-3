@@ -137,15 +137,13 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 
 ### <a name="trustref"></a> 5.3.4. Trusted Referee Requirements
 
-The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of certified/approved individuals that can vouch for or act on behalf of the individual in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an individual that has successfully completed identity proofing to act as a trusted referee for another individual.  The CSP MAY use a trusted referee for both remote and in-person processes.  
+The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of certified/trained/approved individuals that can vouch for or act on behalf of the individual in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an individual that has successfully completed identity proofing to act as a trusted referee for another individual.  The CSP MAY use a trusted referee for both remote and in-person processes.  
 
 The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains his/her status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements. 
 
 The CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant. 
 
-The trusted referee and applicant SHALL be present together for the entire proofing transaction.
-
-The CSP MAY perform re-proofing on a regular basis, as defined by CSP policy, with the goal of satisfying the requirements of [Section 4.5.1](#normal). 
+The CSP MAY perform re-proofing of the subscriber on a regular basis, as defined by CSP policy, with the goal of satisfying the requirements of [Section 4.5.1](#normal). 
 
 ##### Considerations for Minors
 

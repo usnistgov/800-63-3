@@ -67,13 +67,32 @@ This guideline introduces a model where individual xAL's can be selected and not
 | 3 | 2 | 2 or 3 |2
 | 4 | 3 | 3 |4
 
-However, [Table 4-2](#63sec4-Table2) represents new, allowable combinations of xAL's per each M-04-04 LOA, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements to achieve each xAL are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
+However, [Table 4-2](#63sec4-Table2) allows agencies to report the LOA of their application based on the combinations of xAL's. Further details and normative requirements to achieve each xAL are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
 
 <a name="63sec4-Table2"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 4-2.  Recommended xAL to M-04-04 Requirements**
+**Table 4-2.  Determining M-04-04 LOA from xAL**
+
+</div>
+
+
+| | IAL 1 | IAL 2 | IAL 3 |
+|:-:|:-:|:-:|:-:|
+| **AAL 1** | LOA 1 | **See Note** | **See Note** |
+| **AAL 2** | LOA 3 | LOA 3 | **See Note** |
+| **AAL 3** | LOA 4 | LOA 4 | LOA 4 |
+
+> Note: PER [Executive Order 13681](#EO13681) the release of personal information is required to be protected with multiple authentication factors.  Therefore, it should not be possible to use an authenticator at a lower assurance level then the IAL.  However, depending on the use case, specifically that the transaction that the user authenticates to does not release or manage any personal information, it could be possible for these combinations to exist, though unlikely and not recommended.
+
+Further, [Table 4-3](#63sec4-Table3) represents new, allowable combinations of xAL's per each M-04-04 LOA, by combining IAL, AAL, and FAL based on agency need. 
+
+<a name="63sec4-Table3"></a>
+
+<div class="text-center" markdown="1">
+
+**Table 4-3.  Acceptable xAL combinations to meet M-04-04 Requirements**
 
 </div>
 
@@ -197,22 +216,28 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 ### <a name="toFedorNotToFed"></a> 4.4 Federation Considerations
 
-### 4.5. Acceptable IAL and AAL Combinations
+The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes, is agnostic to the authentication and identity proofing architecture an agency selects.  However, there are scenarios an agency may encounter which makes identity federation potentially more attractive than establishing identity services local to the agency or individual applications.  [Table 4-4](#63sec4-Table4) details the scenarios where agency may consider federation as a viable option.  This list does not factor in any economic benefits or weaknesss of federation vs. localized identity architectures.
 
-[Table 3](#63ES-Table3) details valid combinations of IAL and AAL that may be established during the enrollment process:
-
-<a name="63ES-Table3"></a>
+<a name="63sec4-Table4"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 3.  Acceptable combinations of IAL and AAL**
+**Table 4-4.  Identity Federation Scenarios**
 
 </div>
 
-| | IAL 1 | IAL 2 | IAL 3 |
-|:-:|:-:|:-:|:-:|
-| **AAL 1** | Allowed | **NO** | **NO** |
-| **AAL 2** | Allowed | Allowed | See Note |
-| **AAL 3** | Allowed | Allowed | Allowed |
 
-> Note: AAL 2 capable authenticators SHALL be bound to credentials at IAL 2 enrollment since management (and often use) of those credentials is a release of personal data requiring multi-factor authentication. AAL 3 authenticators SHOULD be bound to IAL 3 credentials since they are frequently required for the high-sensitivity applications that require in-person identity proofing.
+|Federate Authenticators|
+|:----------------------|
+|Potential users already have an authenticator at or above required AAL|
+|Multiple credential form factors are required to cover all possible user communities|
+
+<!-- -->
+
+|Federate Attributes
+|:----------------------|
+|Access to the service only requires a partial attribute list|
+|Access to the service only requires at least one attribute claim|
+|Agency is not the authoritative source or issueing source for required attributes|
+
+
