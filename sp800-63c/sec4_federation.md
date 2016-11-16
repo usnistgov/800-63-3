@@ -2,7 +2,7 @@
 
 ## 4. Federation
 
-In a federation protocol, a relationship is formed between the subscriber, the identity provider (IdP), and the relying party (RP) as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes among the participants at different times. The subscriber communicates with both the IdP and the RP, usually through a web browser. In most cases, the RP and the IdP communicate with each other; this communication can happen over the *front channel* (through redirects involving the subscriber), or over the *back channel* (through a direct connection between the RP and IdP). In some cases, the subscriber may present an information bundle to the RP that is packaged and pre-signed by the IdP that is stored as part of a cached credential they retain.
+In a federation protocol, a relationship is formed between the subscriber, the identity provider (IdP), and the relying party (RP) as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes among the participants at different times. The subscriber communicates with both the IdP and the RP, usually through a web browser. The RP and the IdP communicate with each other, either over the *front channel* (through redirects involving the subscriber), or over the *back channel* (through a direct connection between the RP and IdP).
 
 <a name="63cSec4-Figure1"></a>
 
@@ -30,7 +30,7 @@ In the manual registration model, the IdP and RP manually provision endpoint inf
 
 Parties MAY depend upon a federation authority, as described in [Section 4.1.3](#authorities) below, to perform some or all of this vetting, provided that they are satisfied that the authority has completed this process.
 
-Depending on the protocol being used, at registration time participants SHALL securely establish any keying information they need to operate the federated relationship, including shared secrets, if any. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants. Each party SHALL maintain their own registry of other parties with which they federate.
+Depending on the protocol being used, at registration time participants SHALL securely establish any keying information they need to operate the federated relationship, including shared secrets, if any. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
 Federation relationships SHALL specify a given maximum identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship. For example, a given RP may only accept IAL 2 identity proofing from a given IdP that has only been vetted at that level.
 
@@ -42,13 +42,13 @@ Frequently, parties in a dynamic registration model do not know each other ahead
 
 #### <a name="authorities"></a> 4.1.3. Federation Authorities
 
-Some federations use a party known as a *federation authority* in order to decrease the number of relationships that need to be individually vetted and negotiated.
+Some federated parties defer to an authority known as a *federation authority* to assist in making federation decisions and to establish the working relationship between parties. In this model, the federation authority generally conducts some level of vetting on each party in the federation to verify compliance with predetermined security and integrity standards.
 
 Where they are used, federation authorities SHALL evaluate the criteria listed in [Section 4.1.1](#manual-registration) of each participant on behalf of federation members. Federation authorities SHALL establish the maximum operating IAL and AAL for use by relationships they facilitate.
 
 Federation authorities MAY assist members that are trying to discover API endpoints in order to register with other federation members. If this service is not provided, federations supporting dynamic registration SHALL ensure that participants have predictable API addresses where other participants can register themselves without administrator involvement.
 
-Most federations managed through authorities have a simple membership model: either parties are in the federation or they are not. However, more sophisticated federations MAY have multiple tiers of membership which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted and therefore are certified to operate at a higher IAL. Federation IdPs MAY decide that certain  subscriber information is only releasable to RPs in higher tiers.
+Most federations managed through authorities have a simple membership model: either parties are in the federation or they are not. However, more sophisticated federations MAY have multiple tiers of membership which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted and therefore are certified to operate at a higher IAL. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers.
 
 #### 4.1.4. Proxied Federation
 
@@ -56,7 +56,7 @@ In a proxied federation, communication between the IdP and the RP is intermediat
 * A third party that acts as a federation proxy (or *broker*)
 * A network of nodes that distributes the communications
 
-Where proxies are used, they function to some degree as a federation IdP on one side and a federation RP on the other side. Therefore, all normative requirements that apply to IdPs and RPs SHALL apply to proxiesin their respective roles.
+Where proxies are used, they function to some degree as an IdP on one side and an RP on the other side. Therefore, all normative requirements that apply to IdPs and RPs SHALL apply to proxiesin their respective roles.
 
 <a name="63cSec4-Figure1"></a>
 
