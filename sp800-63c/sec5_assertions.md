@@ -2,11 +2,11 @@
 
 ## 5. Assertions
 
-An assertion is a packaged set of attributes and/or claims about an authenticated subscriber that is passed from the identity provider (IdP) to the relying party (RP) in a federated identity system. Assertions contain a variety of information, including metadata, attribute values and claims about the subscriber, and other information that the RP can leverage, such as restrictions, expiration time, etc.
+An assertion is a packaged set of attributes and/or attribute claims about an authenticated subscriber that is passed from the identity provider (IdP) to the relying party (RP) in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and claims about the subscriber, and other information that the RP can leverage, such as restrictions, expiration time, etc.
 
 Assertions MAY only represent an authentication event by asserting only an identifier, MAY only represent attributes and claims regarding the subscriber, or both. 
 
-All assertions SHALL include the following:
+All assertions SHALL include the following assertion metadata:
 
 - Subject: an identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP)
 - Issuer: an identifier for the IdP that issued the assertion
@@ -18,18 +18,19 @@ All assertions SHALL include the following:
 Assertions providing authentication information SHALL also include:
 
 - Authentication Time: a timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event
-- AAL: The authentication assurance level of the subscriber
 
-Assertions providing attributes or claims about the subscriber SHALL also include (for each attribute or claim):
+Assertions providing attributes or claims about the subscriber SHALL also include (either for each attribute or claim or for the package of attributes as a whole):
 
 - Attribute/claim identifier: An identifier that is meaningful to the RP describing the type of information being conveyed
 - Attribute/claim value: The attribute or claim value
-- IAL: The identity assurance level associated with attributes or claims that have undergone identity proofing as described in [SP 800-63A](sp800-63a.html). Derived or directly known attributes MAY use an IAL of 2 or 3 depending on the confidence that the IdP has that attribute or claim actually applies to the subject. All self-asserted attributes and claims SHALL assert IAL 1.
 
 Assertions MAY also include the following information:
 
 - Audience: an identifier for the party intended to consume the assertion (the RP)
 - Key binding: Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion
+- Attribute metadata: Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112)
+
+Assertions SHOULD specify the AAL (when an authentication event is being asserted) and/or IAL (when identity proofed attributes or claims based thereon are being asserted) associated with the authentication or attributes/claims. The IAL and AAL MAY be specified in an alternate form, such as a composite level of assurance. If not specified, the RP SHALL interpret the assertion to be at IAL 1, AAL 1.
 
 Assertions MAY include additional attributes. Refer to [Section 6](#sec6) for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in one or more separate transactions using an authorization credential issued alongside the original assertion. 
 
@@ -49,7 +50,7 @@ Note that mere possession of a bearer assertion or reference is not always enoug
 
 A holder-of-key assertion contains a reference to a symmetric key or a public key (corresponding to a private key) possessed by and representing the subscriber.  To establish a holder-of-key binding of an assertion to a claimant, the RP SHALL require the claimant to prove possession of the key that is referenced in the assertion in addition to presentation of the assertion itself. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion.
 
-The key referenced in a holder-of-key represents the subscriber, not the claimant. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
+The key referenced in a holder-of-key represents the subscriber. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
 
 In proving possession of the subscriber’s secret, the claimant also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well. 
 
