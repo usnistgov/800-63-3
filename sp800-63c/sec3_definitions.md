@@ -20,7 +20,7 @@ A quality or characteristic ascribed to someone or something.
 
 #### Attribute Claim
 
-A statement asserting a property of a subscriber without necessarily revealing all of the information in one or more attributes, independent of format. For example, for the attribute 'birth date', a claim could be 'older than 18' or 'born in December'.
+A statement asserting a property of a subscriber without revealing all of the information in one or more attributes, independent of format. For example, for the attribute 'birth date', a claim could be 'older than 18' or 'born in December'.
 
 #### Attribute Value
 
