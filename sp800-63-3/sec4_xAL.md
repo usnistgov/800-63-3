@@ -1,8 +1,8 @@
 <a name="sec4"></a>
 
-<div class="breaker"/>
+<div class="breaker"></div>
 
-## 4. A New Approach to Levels of Assurance
+## 4. Determining Levels of Assurance
 
 OMB M-04-04 guides agencies to assess the potential impact of an **authentication error** as the method to determine an application or transactions overall level of assurance (LOA). Per M-04-04, in selecting an LOA, the agency is required to identity proof and issue credentials as the exact same level.  In this context, assurance is defined as:
 
@@ -67,43 +67,30 @@ This guideline introduces a model where individual xAL's can be selected and not
 | 3 | 2 | 2 or 3 |2
 | 4 | 3 | 3 |4
 
-However, [Table 4-2](#63sec4-Table2) allows agencies to report the LOA of their application based on the combinations of xAL's. Further details and normative requirements to achieve each xAL are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
+
+[Table 4-2](#63sec4-Table2) details valid combinations of IAL and AAL enrollment and issuance processes.
 
 <a name="63sec4-Table2"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 4-2.  Determining M-04-04 LOA from xAL**
+**Table 4-2.  Acceptable combinations of IAL and AAL**
 
 </div>
 
 
 | | IAL 1 | IAL 2 | IAL 3 |
 |:-:|:-:|:-:|:-:|
-| **AAL 1** | LOA 1 | **See Note** | **See Note** |
-| **AAL 2** | LOA 3 | LOA 3 | **See Note** |
-| **AAL 3** | LOA 4 | LOA 4 | LOA 4 |
+| **AAL 1** | Allowed | **NO** | **NO** |
+| **AAL 2** | Allowed | Allowed | See Note |
+| **AAL 3** | Allowed | Allowed | Allowed |
 
 > Note: PER [Executive Order 13681](#EO13681) the release of personal information is required to be protected with multiple authentication factors.  Therefore, it should not be possible to use an authenticator at a lower assurance level then the IAL.  However, depending on the use case, specifically that the transaction that the user authenticates to does not release or manage any personal information, it could be possible for these combinations to exist, though unlikely and not recommended.
 
-Further, [Table 4-3](#63sec4-Table3) represents new, allowable combinations of xAL's per each M-04-04 LOA, by combining IAL, AAL, and FAL based on agency need. 
+ 
+### 4.3. <a name="CYOA"></a>Selecting the Appropriate xAL
 
-<a name="63sec4-Table3"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 4-3.  Acceptable xAL combinations to meet M-04-04 Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
-|:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1, 2 or 3 | 1, 2, 3, or 4
-| 2 | 1 or 2 | 2 or 3 |2, 3, or 4
-| 3 | 1 or 2 | 2 or 3 |2, 3, or 4
-| 4 | 1, 2, or 3 | 3 |3 or 4
-
-The mapping in [Table 4-2](#63sec4-Table2) takes advantage of the ability to separate each assurance level based on use case.  For example, an agency is allowed to adopt multi-factor authentication (MFA) at LOA1. Conversely, little or no identity proofing can be performed at the higher LOAs.  In fact, in most cases it is no longer recommended to think in terms of a single LOA per M-04-04.  Rather, a risk assessment to determine each xAL is recommended.  [Section 4.3.](#CYOA) provides details on how agencies may going about making xAL selections.
+In fact, in most cases it is no longer recommended to think in terms of a single LOA per M-04-04.  Rather, a risk assessment to determine each xAL is recommended.  [Section 4.3.](#CYOA) provides details on how agencies may going about making xAL selections.
 
 It will often be the case that IAL can be lower than AAL, not the reverse. Agency mission and risk tolerance should drive the most advantageous selection to minimize risk.  Since agencies should limit the collection of personal data in order to provide services and allow for strong pseudonymity, a specific IAL is not explicitly required for each LOA. For example, an agency may establish a "health tracker" application.  In line with the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency could select LOA3 such that an AAL2 authenticator is required.  The EO also requires agencies employ "...an effective identity proofing process, as appropriate." when personal information is released.  This does not mean that proofing at IAL 2 or above is required for all scenarios when personal information is made available.  Rather, effective identity proofing can equate to no proofing at all.  In the above example, there may be no need for the agency system to know the true identity of the user - therefore an effective proofing process would be to not proof at all.  In the past, the LOA3 assessment would also require the agency to identity proof the user at IAL2.  This is no longer necessary and the agency is encouraged to not perform any identity proofing and allow the user of the health tracker system to be pseudonymous at IAL1.  The MFA authenticator at AAL2 or AAL3 will not leak any personal information because it is bound to an IAL 1 identity.
 
@@ -115,8 +102,6 @@ For traditional M-04-04 LOA use cases, such as HSPD-12 requiring federal employe
 
 > Note: Agencies are encouraged to consider each distinct element of assurance, therefore the notion of the 'low watermark' to determine LOA no longer applies.  An IAL1/AAL2 application should not be considered any less secure or privacy enhancing than an IAL2/AAL2 application.  The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
 
- 
-### 4.3. <a name="CYOA"></a>Selecting the Appropriate xAL
 In selecting the appropriate assurance levels, the agency should assess the risk associated with the online transactions they offering via the digital service, not the entire business process (some of which may be manual or processed by other systems) associated with an agency provided benefit or service.  For example, in the case of the census, extremely sensitive information is collected, but it is never made available online to the person after the information is submitted.  In this instance, it is important for the information to be carefully protected in backend systems, but there is no reason to identity proof or even authenticate the user providing the information.  The online transaction is submission of the data only, while the entire business process may require a significant amount of data validation, without ever needing to know if the correct person submitted the correct information regarding their family. In this scenario, there is no need for any xAL.  
 
 Another example xALs would be different if the agency assessed risk of the entire business process rather than the online transaction requirements, is a digital service that accepts resumes in order to apply for open job postings.  In this use case, the digital service allows any individual to submit a resume, and in subsequent visits to the site, query and update the resume.  Since the resume information is being provided in later sessions, and is considered personal information, the agency must select an appropriate AAL since authentication, specifically MFA, is required.  In this case, the requirements of EO13681 apply, driving the AAL to be at least level 2.  However, what should be done about identity proofing?  The entire business process of examining a resume and ultimately interviewing a person requires a significant amount of identity proofing.  The agency needs a high level of confidence that the job applicant/interviewee is in fact the subject of the resume submitted online. Yet this level of proofing is not required to actually submit the resume online.  Identity proofing is not required to complete the digital transaction successfully.  The resume could be submitted by the applicant, but may also be submitted by a surrogate.  Identity proofing the submitter would create more risk than required in the online system as excess personal information would be collected, such as from the surrogate, when no such information is needed.  Therefore, the most appropriate IAL selection would be 1.  There is no need to identity proof the user to successfully complete the online transaction, nor is there any potential negative impact as a result of offering the online transaction if a proofing failure occurred.  Yet, there would be significant impact if the entire business process failed to correctly identity proof the person - a job may be offered to a fraudulent applicant - but that risk should not be applied holistically to the online system via a higher IAL.
@@ -214,15 +199,17 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 #### <a name="FAL_CYOA"></a> 4.3.3 Selecting Federation Assurance Level
 
+_Coming Soon_
+
 ### <a name="toFedorNotToFed"></a> 4.4 Federation Considerations
 
-The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes, is agnostic to the authentication and identity proofing architecture an agency selects.  However, there are scenarios an agency may encounter which makes identity federation potentially more attractive than establishing identity services local to the agency or individual applications.  [Table 4-4](#63sec4-Table4) details the scenarios where agency may consider federation as a viable option.  This list does not factor in any economic benefits or weaknesss of federation vs. localized identity architectures.
+The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes, is agnostic to the authentication and identity proofing architecture an agency selects.  However, there are scenarios an agency may encounter which makes identity federation potentially more attractive than establishing identity services local to the agency or individual applications.  [Table 4-3](#63sec4-Table3) details the scenarios where agency may consider federation as a viable option.  This list does not factor in any economic benefits or weaknesss of federation vs. localized identity architectures.
 
-<a name="63sec4-Table4"></a>
+<a name="63sec4-Table3"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 4-4.  Identity Federation Scenarios**
+**Table 4-3.  Identity Federation Scenarios**
 
 </div>
 
