@@ -1,6 +1,6 @@
 <a name="references"></a>
 
-<div class="breaker"/>
+<div class="breaker"></div>
 
 ## 6. References
 

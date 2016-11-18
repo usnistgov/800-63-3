@@ -1,5 +1,7 @@
 <a name="sec5"></a>
 
+<div class="breaker"></div>
+
 # <a name="ipv-section"></a> 5. Identity Resolution, Validation and Verification
 
 The following sections list the objectives and steps a CSP SHALL follow to identity proof an individual to meet requirements per IAL. The requirements are intended to ensure the claimed identity is the actual identity of the person attempting to enroll with the CSP and that scalable attacks effecting a large population of enrolled individuals are difficult to execute without significant time and cost.

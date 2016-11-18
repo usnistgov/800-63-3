@@ -1,6 +1,6 @@
 <a name="sec3"></a>
 
-<div class="breaker"/>
+<div class="breaker"></div>
 
 ## 3. Definitions and Abbreviations
 

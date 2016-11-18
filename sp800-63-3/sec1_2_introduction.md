@@ -1,6 +1,6 @@
 <a name="sec1"></a>
 
-<div class="breaker"/>
+<div class="breaker"></div>
 
 ## 1. <a name="purpose"></a>Purpose
 

@@ -1,5 +1,7 @@
 <a name="sec1"></a>
 
+<div class="breaker"></div>
+
 # 1. <a name="purpose"></a> Purpose
 
 This document provides requirements for enrollment and identity proofing of subscribers that wish to gain access to online resources at each Identity Assurance Level (IAL).  The requirements detail the acceptability, validation, and verification of identity evidence that will be presented by an individual to support their claim of identity. This document also details the responsibilities of Credential Service Providers (CSPs) with respect to establishing and maintaining enrollment records, and binding of authenticators (either CSP issued or subscriber-provided) to the enrollment record. 
