@@ -96,7 +96,7 @@ The following requirements apply specifically to agencies:
 
 4. The agency SHALL publish or identify coverage by a Privacy Impact Assessment as applicable.
 
-#### 4.2.1 <a name="blinding"></a>Blinding in Proxied Federation
+#### 4.2.1. <a name="blinding"></a>Blinding in Proxied Federation
 
 While some proxy structures (typically those that exist primarily to simplify integration) MAY offer no additional subscriber privacy protection, others offer varying levels of privacy to the subscriber through a range of blinding technologies. Privacy policies may dictate appropriate use by the IdP, RP, and the federation proxy, but technical means such as blinding can increase effectiveness of these policies by making the data more difficult to obtain. It should also be noted that as the level of blinding increases, so does the technical and operational implementation complexity.
 
@@ -118,4 +118,13 @@ The following table illustrates a spectrum of blinding implementations used in p
 |Double Blind Proxy with Attributes|No|No|Yes|Yes|
 |Double Blind Proxy|No|No|Yes|No|
 |Triple Blind Proxy|No|No|No|No|
+
+#### 4.2.2. Attribute Exposure and Masking
+
+To mitigate the risk of unauthorized exposure of sensitive information (e.g., shoulder surfing), the IdP SHALL, by default, mask sensitive information displayed to the subscriber.  The IdP SHALL provide mechanisms for the subscriber to temporarily unmask such information in order for the subscriber to view full values.
+
+The subscriber SHALL be able to view the attribute values to be transmitted, although masking mechanisms SHALL be employed, as necessary, to mitigate the risk of unauthorized exposure of sensitive information (e.g. shoulder surfing). The IdP SHALL provide effective mechanisms for redress of applicant complaints or problems (e.g., subscriber identifies an inaccurate attribute value). For more details on masking and redress, please see [Section 10. Usability Considerations](#sec10).  
+
+The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation. See section 9.2 for considerations on determining which party should provide the notice and obtain confirmation. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. A IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
+
 
