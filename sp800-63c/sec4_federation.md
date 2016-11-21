@@ -106,5 +106,10 @@ The following requirements apply specifically to agencies:
 
 4. The agency SHALL publish or identify coverage by a Privacy Impact Assessment as applicable.
 
+### 4.3 Reauthentication and Session Requirements in Federated Environments
 
+In a federated environment, the RP manages its sessions separately from any sessions at the IdP. The session at the RP starts when the RP processes the federation protocol from the IdP. At the time of a federated login, the subscriber MAY have an existing session at the IdP which MAY be used as part of the authentication process to the RP. The IdP SHALL communicate any information it has regarding the time of the latest authentication event at the IdP, and the RP MAY use this information in determining its access policies. Depending on the capabilities of the federation protocol in use, the IdP SHOULD allow the RP to request that the subscriber re-authenticate at the IdP as part of a federation request. 
 
+Due to the distributed nature of a federated system, the subscriber is capable of terminating sessions with the IdP and RP independently of one another. The RP SHALL NOT assume that the subscriber has an active session at the IdP past the establishment of the federated log in. The IdP SHALL NOT assume that termination of the subscriber's session at the IdP will propagate to any sessions that subscriber would have at downstream RPs.
+
+See [800-63B section 7](sp800-63b.html#sec7) for more information about session management requirements. 
