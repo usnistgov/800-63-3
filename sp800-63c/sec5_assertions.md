@@ -15,9 +15,6 @@ All assertions SHALL include the following assertion metadata:
 - Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is not the expiration of the session at the RP)
 - Identifier: a value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions
 - Signature: Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
-
-Assertions providing authentication information SHOULD also include:
-
 - Authentication Time: a timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event
 
 Assertions MAY also include the following information:
