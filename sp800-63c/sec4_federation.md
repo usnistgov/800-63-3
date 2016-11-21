@@ -26,13 +26,15 @@ This section provides an overview of and requirements for common identity federa
 
 In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing services to transfer information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information.
 
-Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
+Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
 Federation relationships SHALL establish parameters regarding expected and acceptable identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship. For example, a given RP may only accept IAL 2 identity proofing from a given IdP that has been vetted at that level.
 
 #### <a name="dynamic-registration"></a> 4.1.2. Dynamic Registration
 
 In the dynamic registration model of federation, it is possible for relationships between members of the federation to be negotiated at the time of a transaction. This process allows components to be connected together without manually establishing a connection between components. IdPs that support dynamic registration SHALL make their configuration information (such as dynamic registration endpoints) available in such a way as to minimize system adminsitrator involvement. 
+
+Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
 IdPs SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit which IdPs it is willing to accept identity information from.
 
