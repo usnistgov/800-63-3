@@ -45,10 +45,9 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 |Federation Assurance Level|
 |:----------------------:|
-|**FAL1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the relying party (RP) in the front channel. The assertion must be signed with using approved cryptography.|
-|**FAL2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion in the back channel. The assertion must be signed using approved cryptography. Alternatively, if the assertion is presented in the front channel, the assertion is required to be encrypted such that the RP is the only party that can decrypt it.|
-|**FAL3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
-|**FAL4** - FAL 4 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
+|**FAL1** - FAL 1 allows for the subscriber to enable the relying party (RP) to retrieve an assertion from the CSP. The assertion must be signed with using approved cryptography. Additional requirements for assertions are discussed in [SP 800-63C Section 5](sp800-63c.html#sec5).|
+|**FAL2** - FAL 2 builds on FAL 1 and adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
+|**FAL3** - FAL 3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
 When described generically or bundled, this guideline will refer to the combination of IAL, AAL, and FAL as **_xAL_**.  
 
