@@ -1,5 +1,7 @@
 <a name="sec3"></a>
 
+<div class="breaker"></div>
+
 ## 3. Definitions and Abbreviations
 
 There is a wide variety of terms used in the area of authentication. While the definitions of many terms are consistent with the earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted.

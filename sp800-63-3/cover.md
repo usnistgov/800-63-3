@@ -1,4 +1,3 @@
-
 <div class="text-right" markdown="1">
 
 # <a name="800-63-3"></a>DRAFT NIST Special Publication 800-63-3
@@ -6,6 +5,7 @@
 # Digital Authentication Guideline
 
 Paul A. Grassi  
+Michael E. Garcia  
 James L. Fenton
 
 {::comment}
@@ -18,11 +18,16 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)
 
+</div>
+
+<div class="breaker text-right" markdown="1">
+
 # DRAFT NIST Special Publication 800-63-3
 
 # Digital Authentication Guideline
 
 Paul A. Grassi  
+Michael E. Garcia  
 *Applied Cybersecurity Division  
 Information Technology Laboratory*
 
@@ -50,6 +55,8 @@ National Institute of Standards and Technology
 Technology and Director*
 
 </div>
+
+<div class="breaker"/>
 
 <div class="text-center" markdown="1">
 
@@ -156,6 +163,8 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 </div>
 
+<div class="breaker"/>
+
 ## Executive Summary
 
 Digital authentication is the process of establishing confidence in user identities digitally presented to an information system. Digital authentication presents a technical challenge when this process involves the authentication of individual people over an open network for the purpose of digital government and commerce.
@@ -166,20 +175,9 @@ These technical guidelines supplement OMB guidance, *E-Authentication
 Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and
 supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of assurance, Levels 1 to 4, in terms of the consequences of authentication errors and misuse of credentials. Level 1 is the lowest assurance level, and Level 4 is the highest. The OMB guidance defines the required "level of identity assurance", herein referred to as "level of assurance", in terms of the likely consequences of an authentication error. As the consequences of an authentication error become more serious, the required level of assurance increases. The OMB guidance provides agencies with the criteria for determining the level of assurance required for specific applications and transactions, based on the risks and their likelihood of occurrence of each application or transaction.
 
-OMB guidance outlines a five-step process by which agencies should meet their digital authentication assurance requirements:
+In addition to the OMB guidance, [Section 4](#sec4) provides additional information that can guide agencies through the selection of the the assurance levels detailed in this guideline.
 
-1.  Conduct a risk assessment of the government system.
-
-2.  Map identified risks to the appropriate assurance level.
-
-3.  Select technology based on digital authentication technical guidance.
-
-4.  Validate that the implemented system has met the required
-    assurance level.
-
-5.  Periodically reassess the information system to determine technology refresh requirements.
-
-This document suite provides guidelines for implementing the third step of the above process.  A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a
+A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a 
 third component, *Federation Assurance Level (FAL)*, is required.
 
 * IAL refers to the robustness of the identity proofing process and the binding between an authenticator and the records pertaining to a specific individual.
@@ -198,97 +196,7 @@ Accordingly, with this revision, SP 800-63 has been split into a suite of docume
 
 - SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
 
-
-### IAL, AAL, and FAL Summary
-
-A summary of each of the identity, authenticator, and federation assurance levels is provided below.
-
-**Identity Assurance Level 1** – At this level, attributes provided in conjunction with the authentication process, if any, are self-asserted.
-
-**Identity Assurance Level 2** – IAL 2 introduces the need for either remote or in-person identity proofing. IAL 2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).
-
-**Identity Assurance Level 3** – At IAL 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).
-
-**Authenticator Assurance Level 1** - AAL 1 provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove through a secure authentication protocol that he or she possesses and controls the authenticator.
-
-**Authenticator Assurance Level 2** – AAL 2 provides high confidence that the claimant controls the authenticator registered to a subscriber. Two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.
-
-**Authenticator Assurance Level 3** – AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides impersonation resistance is required.
-
-**Federation Assurance Level 1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the relying party (RP) in the front channel. The assertion must be signed with using approved cryptography.
-
-**Federation Assurance Level 2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion in the back channel. The assertion must be signed using approved cryptography. Alternatively, if the assertion is presented in the front channel, the assertion is required to be encrypted such that the RP is the only party that can decrypt it.
-
-**Federation Assurance Level 3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.
-
-**Federation Assurance Level 4** - FAL 4 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography using approved cryptography.
-
-### M-04-04 Levels of Assurance Requirements
-
-
-[Table 1](#63ES-Table1) shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels.
-
-<a name="63ES-Table1"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 1.  Legacy M-04-04 Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
-|:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1| 1
-| 2 | 2 | 2 or 3 |2
-| 3 | 2 | 2 or 3 |2
-| 4 | 3 | 3 |4
-
-However, [Table 2](#63ES-Table2) shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
-
-<a name="63ES-Table2"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 2.  Recommended M-04-04 Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
-|:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1, 2 or 3 | 1, 2, 3, or 4
-| 2 | 1 or 2 | 2 or 3 |2, 3, or 4
-| 3 | 1 or 2 | 2 or 3 |2, 3, or 4
-| 4 | 1, 2, or 3 | 3 |3 or 4
-
-This mapping takes advantage of the ability to separate distinct identity elements per assurance level.  For example, an agency is allowed to adopt multi-factor authentication (MFA) at LOA1. Conversely, little or no identity proofing can be performed at the higher LOAs.  
-
-Agency mission need will assist in determining the acceptable IAL at a given LOA.  Since agencies should limit the collection of personal data in order to provide services and allow for strong pseudonymity, a specific IAL is not explicitly required for each LOA. For example, an agency may establish a "health tracker" application.  In line with the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication and an effective identity proofing process, as appropriate.", the agency could select LOA3 such that an AAL2 authenticator is required.  However, in this example, there may be no need for the agency system to know the true identity of the user.  In the past, the LOA3 assessment of data sensitivity would also require the agency to identity proof the user.  This is no longer necessary and the agency is encouraged in this case to not perform any identity proofing and allow the user of the health tracker system to be pseudonymous at IAL1.  The MFA authenticator at AAL2 or AAL3 will not leak any personal information because it is bound to an IAL 1 identity.
-
-In the case of federal employees, bound by HSPD-12 and required to obtain a Personal Identity Verification (PIV) smart card, the requirement is that agencies meet LOA4. The HSPD-12 use case requires an authenticator at AAL3 **and** identity proofing at IAL 3.   
-
->Important Note: An agency can accept a higher assurance level than those required in the table above.  For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2.  The same holds true for authenticators; stronger authenticators can be used at RPs that have lower authenticator requirements.  However, RPs will ensure that these scenarios only occur in federated scenarios with appropriate privacy protections by the CSP to ensure that only the requested attributes are provided to the RP and that no personal information leaks from the authenticator or the assertion.  See [privacy requirements](./sp800-63c.html#sec9) in SP 800-63C for more details.
-
-### Acceptable IAL and AAL Combinations
-
-[Table 3](#63ES-Table3) details valid combinations of IAL and AAL that may be established during the enrollment process:
-
-<a name="63ES-Table3"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 3.  Acceptable combinations of IAL and AAL**
-
-</div>
-
-| | IAL 1 | IAL 2 | IAL 3 |
-|:-:|:-:|:-:|:-:|
-| **AAL 1** | Allowed | **NO** | **NO** |
-| **AAL 2** | Allowed | Allowed | See Note |
-| **AAL 3** | Allowed | Allowed | Allowed |
-
-Note: AAL 2 capable authenticators SHALL be bound to credentials at IAL 2 enrollment since management (and often use) of those credentials is a release of personal data requiring multi-factor authentication. AAL 3 authenticators SHOULD be bound to IAL 3 credentials since they are frequently required for the high-sensitivity applications that require in-person identity proofing.
-
-In limited situations, a given transaction requiring IAL 2 MAY be able to authenticate at AAL 1 when personal data is not made accessible to the subscriber (per Executive Order 13681) and the other risk and sensitivity requirements of M-04-04 are satisfied.
+<div class="breaker"/>
 
 ## Table of Contents
 
@@ -298,6 +206,10 @@ In limited situations, a given transaction requiring IAL 2 MAY be able to authen
 
 [3. Definitions and Abbreviations](#sec3)
 
-[4. Digital Authentication Model](#sec4)
+[4. A New Approach to Levels of Assurance](#sec4)
 
-[5. References](#references)
+[5. Digital Authentication Model](#sec5)
+
+[6. References](#references)
+
+ 

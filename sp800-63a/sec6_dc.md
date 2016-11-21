@@ -1,5 +1,7 @@
 <a name="sec6"></a>
 
+<div class="breaker"></div>
+
 # 6. Leveraging Antecedent Proofing Events
 
 Possession of an authenticator, bound to an identity proofed at a given IAL, should allow a claimant to obtain additional authenticators, per CSP policy.  This section details requirements for two specific use cases:

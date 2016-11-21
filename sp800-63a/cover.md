@@ -1,4 +1,3 @@
-
 <div class="text-right" markdown="1">
 
 # <a name="800-63a"></a> DRAFT NIST Special Publication 800-63A
@@ -15,7 +14,7 @@ Privacy Authors:
 Naomi B. Lefkovitz    
 Jamie M. Danker  
 
-User Experience Authors:  
+Usability Authors:  
 
 Yee-Yin Choong    
 Kristen K. Greene    
@@ -58,7 +57,7 @@ Jamie M. Danker
 Department of Homeland Security*    
 
 
-User Experience Authors:    
+Usability Authors:    
 
 Yee-Yin Choong  
 Kristen K. Greene  
@@ -187,28 +186,6 @@ The terms “MAY” and “NEED NOT” indicate a course of action permissible w
 The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
 
 </div>
-
-<div class="breaker"/>
-
-## Executive Summary
-
-This guideline deals with how an individual, known as an applicant, can prove their identity to a Credential Service Provider (CSP) and become enrolled as a valid subscriber.
-
-Identity Assurance Level (IAL) refers to the robustness of the identity proofing process and the binding between an authenticator and a specific individual. The separation of IAL from Authenticator Assurance Level (AAL) better supports applications requiring strong authentication that may be pseudonymous, and the separation of authenticator issuance from the establishment of credentials binding those authenticators to individuals.
-
-The three IALs reflect the options agencies may select based on their risk profile and the potential harm caused by an invalid or fraudulent identity accessing their systems.  The IALs are as follows:
-
-
-**IAL 1**:
-At this level, there is no requirement for an applicant's identity to be proven.  Any attributes provided in conjunction with the authentication process are self-asserted.
-
-**IAL 2**:
-At IAL 2, the claimed identity is proven with evidence that supports the real world existence of the claimed identity and identifies and verifies the person to whom the claimed identity belongs.  IAL 2 introduces the need for either remote or in-person identity proofing.  Attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
-
-**IAL 3**:
-At Identity Assurance Level 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
-
-<div class="breaker"/>
 
 ## Table of Contents
 

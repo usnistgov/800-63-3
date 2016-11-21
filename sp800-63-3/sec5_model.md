@@ -1,8 +1,10 @@
-<a name="sec4"></a>
+<a name="sec5"></a>
 
-## 4. Digital Authentication Model
+<div class="breaker"></div>
 
-### <a name="4-1"></a>4.1. Overview 
+## 5. Digital Authentication Model
+
+### <a name="5-1"></a>5.1. Overview 
 
 In accordance with [OMB M-04-04](#M-04-04), digital authentication is the process of establishing confidence in individual identities presented to a digital system. Systems can use the authenticated identity to determine if that individual is authorized to perform an online transaction. In most cases, the authentication and transaction take place across an open network such as the Internet; however, in some cases access to the network may be limited and access control decisions may take this into account.
 
@@ -20,7 +22,7 @@ The strength of the authentication process is described by a categorization call
 
 As part of authentication, mechanisms such as device identity or geo-location may be used to identify or prevent possible authentication false positives. While these mechanisms do not directly increase the authenticator assurance level, they can aid in enforcing security policies and mitigate risks. In many cases, the authentication process and services will be shared by many applications and agencies. However, it is the individual agency or application acting as the RP that shall make the decision to grant access or process a transaction based on the specific application requirements.
 
-The various entities and interactions that comprise the digital authentication model used here are illustrated below in [Figure 4-1](#63Sec4-Figure1). The left shows the enrollment, credential issuance, lifecycle management activities, and the various states an individual transitions to based on the phase of identity proofing and authentication they are in. The usual sequence of interactions is as follows:
+The various entities and interactions that comprise the digital authentication model used here are illustrated below in [Figure 5-1](#63Sec5-Figure1). The left shows the enrollment, credential issuance, lifecycle management activities, and the various states an individual transitions to based on the phase of identity proofing and authentication they are in. The usual sequence of interactions is as follows:
 
 1.	An individual (applicant) applies to a CSP through an enrollment process.
 2.	The CSP identity proofs that applicant. Upon successful proofing, the applicant becomes a subscriber.
@@ -29,7 +31,7 @@ The various entities and interactions that comprise the digital authentication m
 
 Other sequences are less common, but could also achieve the same functional requirements.
 
-The right side of [Figure 4-1](#63Sec4-Figure1) shows the entities and the interactions related to using a authenticator to perform digital authentication. When the subscriber needs to authenticate to perform a transaction, he or she becomes a claimant to a verifier. The interactions are as follows:
+The right side of [Figure 5-1](#63Sec5-Figure1) shows the entities and the interactions related to using a authenticator to perform digital authentication. When the subscriber needs to authenticate to perform a transaction, he or she becomes a claimant to a verifier. The interactions are as follows:
 
 1.	The claimant proves to the verifier that he or she possesses and controls the authenticator through an authentication protocol.
 2.	The verifier interacts with the CSP to validate the credential that binds the subscriber’s identity to his or her authenticator and to optionally obtain claimant attributes.
@@ -38,18 +40,18 @@ The right side of [Figure 4-1](#63Sec4-Figure1) shows the entities and the inter
 
 In all cases, the RP should request the attributes it requires from a CSP prior to authentication of the claimant.  In addition, the claimant should be requested to consent to the release of those attribute prior to generation and release of an assertion.
 
-In some cases, the verifier does not need to communicate in real time with the CSP to complete the authentication activity (e.g., some uses of digital certificates). Therefore, the dashed line between the verifier and the CSP represents a logical link between the two entities rather than a physical link. In some implementations, the verifier, RP and the CSP functions may be distributed and separated as shown in [Figure 4-1](#63Sec4-Figure1); however, if these functions reside on the same platform, the interactions between the components are local messages between applications running on the same system rather than protocols over shared untrusted networks.
+In some cases, the verifier does not need to communicate in real time with the CSP to complete the authentication activity (e.g., some uses of digital certificates). Therefore, the dashed line between the verifier and the CSP represents a logical link between the two entities rather than a physical link. In some implementations, the verifier, RP and the CSP functions may be distributed and separated as shown in [Figure 5-1](#63Sec5-Figure1); however, if these functions reside on the same platform, the interactions between the components are local messages between applications running on the same system rather than protocols over shared untrusted networks.
 
 As noted above, CSPs maintain status information about credentials they issue. CSPs will generally assign a finite lifetime when issuing credentials to limit the maintenance period. When the status changes, or when the credentials near expiration, credentials may be renewed or re-issued; or, the credential may be revoked and/or destroyed. Typically, the subscriber authenticates to the CSP using his or her existing, unexpired authenticator and credential in order to request issuance of a new authenticator and credential. If the subscriber fails to request authenticator and credential re-issuance prior to their expiration or revocation, he or she may be required to repeat the enrollment process to obtain a new authenticator and credential. Alternatively, the CSP may choose to accept a request during a grace period after expiration.
 
-<a name="63Sec4-Figure1"></a>
+<a name="63Sec5-Figure1"></a>
 <div class="text-center" markdown="1">
 ![](sp800-63-3/media/model.png)
 
-**Figure 4-1 - Digital Authentication Model**
+**Figure 5-1 - Digital Authentication Model**
 </div>
 
-### 4.2. Enrollment and Identity Proofing
+### 5.2. Enrollment and Identity Proofing
 
 Normative requirements can be found in [Special Publication 800-63A, Enrollment and Identity Proofing](sp800-63a.html).
 
@@ -59,11 +61,11 @@ An individual, referred to as an applicant at this stage, requests credentials f
 
 The CSP establishes a mechanism to uniquely identify each subscriber, register the subscriber’s credentials, and track the authenticators issued to that subscriber. The subscriber may be given authenticators at the time of enrollment, the CSP may bind authenticators the subscriber already has, or they may be generated later as needed. Subscribers have a duty to maintain control of their authenticators and comply with their responsibilities to the CSP. The CSP maintains enrollment records for each subscriber to allow recovery of enrollment records.
 
-### 4.3. Authentication and Lifecycle Management
+### 5.3. Authentication and Lifecycle Management
 
 Normative requirements can be found in [Special Publication 800-63B, Authentication and Lifecycle Management](sp800-63b.html).
 
-#### 4.3.1. Authenticators
+#### 5.3.1. Authenticators
 
 The classic paradigm for authentication systems identifies three factors as the cornerstone of authentication:  
 
@@ -71,7 +73,7 @@ The classic paradigm for authentication systems identifies three factors as the 
 * Something you have (for example, an ID badge or a cryptographic key)
 * Something you are (for example, a fingerprint or other biometric data)
 
-Multi-factor authentication refers to the use of more than one of the factors listed above. The strength of authentication systems is largely determined by the number of factors incorporated by the system. Implementations that use two different factors are considered to be stronger than those that use only one factor; systems that incorporate all three factors are stronger than systems that only incorporate two of the factors. As discussed in [Section 4.1](#4-1), other types of information, such as location data or device identity, may be used by an RP or verifier to evaluate the risk in a claimed identity, but they are not considered authentication factors.
+Multi-factor authentication refers to the use of more than one of the factors listed above. The strength of authentication systems is largely determined by the number of factors incorporated by the system. Implementations that use two different factors are considered to be stronger than those that use only one factor; systems that incorporate all three factors are stronger than systems that only incorporate two of the factors. As discussed in [Section 5.1](#5-1), other types of information, such as location data or device identity, may be used by an RP or verifier to evaluate the risk in a claimed identity, but they are not considered authentication factors.
 
 In digital authentication the claimant possesses and controls one or more authenticators that have been registered with the CSP and are used to prove the claimant’s identity. The authenticator(s) contains secrets the claimant can use to prove that he or she is a valid subscriber, the claimant authenticates to a system or application over a network by proving that he or she has possession and control of one or more authenticators. 
 
@@ -87,11 +89,11 @@ For example, consider a piece of hardware (the authenticator) that contains a cr
 
 As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication, but they do have their place in this specification. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris patterns, voiceprints, and many other characteristics. [Special Publication 800-63A, Enrollment and Identity Proofing](sp800-63a.html) recommends that biometrics be used in the enrollment process for higher levels of assurance to later help prevent a subscriber who is registered from repudiating the enrollment, to help identify those who commit enrollment fraud, and to unlock authenticators.
 
-#### 4.3.2. Credentials
+#### 5.3.2. Credentials
 
 As described in the preceding sections, credentials bind an authenticator to the subscriber, via an identifier, as part of the issuance process. Credentials are stored and maintained by the CSP. The claimant possesses a authenticator, but is not necessarily in possession of the electronic credentials. For example, database entries containing the user attributes are considered to be credentials for the purpose of this document but are possessed by the verifier. X.509 public key certificates are a classic example of credentials the claimant can (and often does) possess.
 
-#### 4.3.3. Authentication Process
+#### 5.3.3. Authentication Process
 
 The authentication process begins with the claimant demonstrating to the verifier possession and control of a authenticator that is bound to the asserted identity through an authentication protocol. Once possession and control has been demonstrated, the verifier verifies that the credential remains valid, usually by interacting with the CSP.
 
@@ -101,7 +103,7 @@ Additionally, mechanisms located at the verifier can mitigate online guessing at
 
 The verifier is a functional role, but is frequently implemented in combination with the CSP and/or the RP. If the verifier is a separate entity from the CSP, it is often desirable to ensure that the verifier does not learn the subscriber’s authenticator secret in the process of authentication, or at least to ensure that the verifier does not have unrestricted access to secrets stored by the CSP.
 
-### 4.4. Federation and Assertions
+### 5.4. Federation and Assertions
 
 Normative requirements can be found in [Special Publication 800-63C, Federation and Assertions](sp800-63c.html).
 
@@ -118,7 +120,7 @@ Federated architectures have many significant benefits, including, but not limit
   
 The following sections discuss the components of a federated identity architecture should an agency elect this type of model.
 
-#### 4.4.1 Assertions
+#### 5.4.1 Assertions
 
 Upon completion of the authentication process, the verifier generates an assertion containing the result of the authentication and provides it to the RP. If the verifier is implemented in combination with the RP, the assertion is implicit. If the verifier is a separate entity from the RP, as in typical federated identity models, the assertion is used to communicate the result of the authentication process, and optionally information about the subscriber, from the verifier to the RP. Assertions may be communicated directly to the RP, or can be forwarded through the subscriber, which has further implications for system design.
 
@@ -132,57 +134,7 @@ Examples of assertions include:
 * OpenID Connect Claims - OpenID Connect claims are specified using JavaScript Object Notation (JSON) for describing security, and optionally, user claims.  JSON user info claims may optionally be digitally signed.
 * Kerberos Tickets – Kerberos Tickets allow a ticket granting authority to issue session keys to two authenticated parties using symmetric key based encapsulation schemes.
 
-#### 4.4.2. Relying Parties
+#### 5.4.2. Relying Parties
 
 An RP relies on results of an authentication protocol to establish confidence in the identity or attributes of a subscriber for the purpose of conducting an online transaction. RPs may use a subscriber’s authenticated identity (pseudonymous or non-pseudonymous), the IAL, AAL and/or FAL (federation assurance level, indicating the strength of the assertion protocol), and other factors to make access control or authorization decisions. The verifier and the RP may be the same entity, or they may be separate entities. If they are separate entities, the RP normally receives an assertion from the verifier. The RP ensures that the assertion came from a verifier trusted by the RP. The RP also processes any additional information in the assertion, such as personal attributes or expiration times. The RP is the final arbiter concerning whether a specific assertion presented by a verifier meets the RP's established criteria for system access regardless of IAL, AAL, and/or FAL. 
 
-### 4.5. Assurance Levels
-
-The M-04-04 Level of Assurance (LOA) is determined by combining the discrete assurance level for each of the components of the architecture. [Table 4-1](#63Sec4-Table1) shows strict adherence to M-04-04 Level of Assurance, mapping corresponding Identity, Authenticator, and Federation Assurance Levels. 
-
-<a name="63Sec4-Table1"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 4-1.  Legacy M-04-04 Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
-|:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1| 1
-| 2 | 2 | 2 or 3 |2
-| 3 | 2 | 2 or 3 |2
-| 4 | 3 | 3 |4
-
-However, [Table 4-2](#63ES-Table2) shows the new requirements that are allowable for M-04-04 Level of Assurance, by combining IAL, AAL, and FAL based on agency need. Further details and normative requirements are provided in are provided in [SP 800-63A](sp800-63a.html), [SP 800-63B](sp800-63b.html), and [SP 800-63C](sp800-63c.html) respectively.
-
-<a name="63Sec4-Table2"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 4-2.  Recommended M-04-04 Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)| Authenticator Assurance Level (AAL) | Federation Assurance Level (FAL)
-|:------------------:|:-----------------------------:|:------------------------:|:------------------------:|
-| 1 | 1 | 1, 2 or 3 | 1, 2, 3, or 4
-| 2 | 1 or 2 | 2 or 3 |2, 3, or 4
-| 3 | 1 or 2 | 2 or 3 |2, 3, or 4
-| 4 | 1, 2, or 3 | 3 |3 or 4
-
-This mapping takes advantage of the ability to separate distinct identity elements per assurance level.  This allows an agency adopt multi-factor authentication (MFA) when identification of the individual identity is not required. Conversely, little or no identity proofing can be performed at the higher LOAs. For instance, to achieve M-04-04 LOA 3:
-
-* The enrollment and identity proofing process would, at a minimum, use IAL 1 or 2 processes.
-* The authenticator (or combination of authenticators) would have an AAL of 2 or higher.
-* Authentication assertions (if used) would have an FAL of 2 or higher.
-
-Agency mission need will assist in determining the acceptable IAL at a given LOA.  Since agencies should limit the collection of personal data in order to provide services and allow for strong pseudonymity, a specific IAL is not explicitly required for each LOA. For example, an agency may establish a "health tracker" application.  In line with the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication and an effective identity proofing process, as appropriate.", the agency could select LOA3 such that an AAL2 authenticator is required.  However, in this example, there may be no need for the agency system to know the true identity of the user.  In the past, the LOA3 assessment of data sensitivity would also require the agency to identity proof the user.  This is no longer necessary and the agency is encouraged in this case to not perform any identity proofing and allow the user of the health tracker system to be pseudonymous at IAL1.  The MFA authenticator at AAL2 or AAL3 will not leak any personal information because it is bound to an IAL 1 identity.
-
-In the case of HSPD-12 and those federal employees that are required to obtain a Personal Identity Verification (PIV) smart card, the requirement is that agencies meet LOA4. This use case requires an authenticator at AAL3 **and** identity proofing at IAL 3.   
-
-> Note: An agency can accept a higher assurance level than those required in the table above.  For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2.  The same holds true for authenticators; stronger authenticators can be used at RP's that have lower authenticator requirements.  However, RPs will ensure that these scenarios only occur in federated scenarios with appropriate privacy protections by the CSP to ensure that only the requested attributes are provided to the RP and that no personal information leaks from the authenticator or the assertion.  See [privacy requirements](./sp800-63c.html#sec9) in SP 800-63C for more details.    
-
-
-> Note: Agencies are encouraged to consider each distinct element of assurance, therefore the notion of the 'low watermark' to determine LOA no longer applies.  An IAL1/AAL2 application should not be considered any less secure or privacy enhancing than an IAL2/AAL2 application.  The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.

@@ -1,5 +1,7 @@
 <a name="sec4"></a>
 
+<div class="breaker"></div>
+
 # <a name="ial-section"></a> 4. Identity Assurance Level Requirements
 
 The paradigm of this document is that individuals (referred to as applicants at this stage) undergo an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity record, then validated and verified. These attributes are then bound to an authenticator (described in [SP 800-63B](#800-63b)).
