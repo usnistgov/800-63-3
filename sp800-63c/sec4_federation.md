@@ -106,27 +106,5 @@ The following requirements apply specifically to agencies:
 
 4. The agency SHALL publish or identify coverage by a Privacy Impact Assessment as applicable.
 
-#### 4.2.1. <a name="blinding"></a>Blinding in Proxied Federation
-
-While some proxy structures (typically those that exist primarily to simplify integration) MAY offer no additional subscriber privacy protection, others offer varying levels of privacy to the subscriber through a range of blinding technologies. Privacy policies may dictate appropriate use by the IdP, RP, and the federation proxy, but technical means such as blinding can increase effectiveness of these policies by making the data more difficult to obtain. It should also be noted that as the level of blinding increases, so does the technical and operational implementation complexity.
-
-Note that even with the use of blinding technologies, it MAY still be possible for a blinded party to infer protected subscriber information through released attribute data or metadata such as analysis of timestamps, attribute bundle sizes, or attribute signer information. 
-
-The following table illustrates a spectrum of blinding implementations used in proxied federation. This table is intended to be illustrative, and is neither comprehensive nor technology-specific.
-
-<div class="text-center" markdown="1">
-
-**Table 4-1: Federation Proxies**
-
-</div>
-
-
-|Proxy Type|RP knows IdP|IdP knows RP|Proxy can track subscriptions between RP and IdP|Proxy can see attributes of Subscriber|
-|---|---|---|---|---|
-|Non-blinding Proxy with Attributes|Yes|Yes|Yes|Yes|
-|Non-blinding Proxy|Yes|Yes|Yes|No|
-|Double Blind Proxy with Attributes|No|No|Yes|Yes|
-|Double Blind Proxy|No|No|Yes|No|
-|Triple Blind Proxy|No|No|No|No|
 
 
