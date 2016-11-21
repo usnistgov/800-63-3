@@ -6,7 +6,7 @@
 
 _This section is informative._
 
-OMB M-04-04 requires agencies to select transaction or system authentication Level of Assurance (LOA) by conducting a risk assessment to determine the potential impact of an **authentication error** . In the context of M-04-04, LOA is defined as:
+OMB M-04-04 requires agencies to select transaction or system authentication Level of Assurance (LOA) by conducting a risk assessment to determine the potential impact of an **authentication error**. In the context of M-04-04, LOA is defined as:
 
 1.  The degree of confidence in the vetting process used to establish the identity of the individual to whom the authenticator was issued, and
 2. the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
@@ -133,13 +133,13 @@ The AAL selection does not mean the digital service provider will need to issue 
 <div class="text-left" markdown="1">
 <table style="width:100%">
   <tr>
-    <td><img src="sp800-63/media/aal-step1.png"/></td>
+    <td><img src="sp800-63-3/media/aal-step1.png"/></td>
   </tr>
   <tr>
    <td>Step 1 asks agencies to look at the potential impacts of an authentication failure.  In other words, what would occur if an unauthorized user accessed one or more valid user accounts. Risk should be considered from the perspective of the organization and to a valid user, since one may not be negatively impacted while the other could be significantly harmed. The risk assessment process of M-04-04 and any agency specific risk management process should commence from this step.</td> 
   </tr>
   <tr>
-    <td><img src="sp800-63/media/aal-step2.png"/></td>
+    <td><img src="sp800-63-3/media/aal-step2.png"/></td>
   </tr>
   <tr>
    <td>[EO 13681](#EO13681) requires MFA when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point.  That said, personal information release at all AALs should be considered when performing the risk assessment.  An important point at this step, the collection of personal information, if made available online, does not need to be validated or verified to require an AAL of 2 or higher.  Even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service.  As such, self-asserted data must be protected appropriately.</td> 
@@ -166,37 +166,37 @@ The IAL selection does not mean the digital service provider will need to perfor
 <div class="text-left" markdown="1">
 <table style="width:100%">
   <tr>
-    <td><img src="sp800-63/media/ial-step1.png"/></td>
+    <td><img src="sp800-63-3/media/ial-step1.png"/></td>
   </tr>
   <tr>
    <td>The risk assessment and selection of IAL can be short circuited by answering this question first. If the service does not require any personal information in order to execute any digital transactions, the IAL of the system can be set to 1.</td> 
   </tr>
   <tr>
-    <td><img src="sp800-63/media/ial-step2.png"/></td>
+    <td><img src="sp800-63-3/media/ial-step2.png"/></td>
   </tr>
   <tr>
    <td>If personal information is needed, the relying party needs to determine if validated and verified attributes are required, or if self-asserted attributes are acceptable. If even a single validated and verified attribute is needed, then the provider will need to accept attributes that have been IAL2 or 3 proofed. Again, the selection of IAL can be short circuited to IAL1 if the agency can deliver the digital service with self-asserted attributes only.</td> 
   </tr>
   <tr>
-    <td><img src="sp800-63/media/ial-step3.png"/></td>
+    <td><img src="sp800-63-3/media/ial-step3.png"/></td>
   </tr>
   <tr>
    <td>At this point, the agency understands that some level of proofing is required. Step 3 is intended to look at the potential impacts of an identity proofing failure in order to determine if IAL2 or IAL3 is the most appropriate selection.  The primary identity proofing failure an agency may encounter is accepting a falsified identity as true, therefore providing a service or benefit to the wrong or ineligible person. In addition, proofing, when not required, or collecting more information than needed, is a risk in and of itself. Hence, obtaining verified attribute information when not needed is also considered an identity proofing failure. This step should identify if the agency answered Step 1 and 2 incorrectly, realizing they actually don't need personal information to deliver the service. Risk should be considered from the perspective of the organization and to the user, since one may not be negatively impacted while the other could be significantly harmed. The risk assessment process of M-04-04 and any agency specific risk management process should commence from this step.</td> 
   </tr>
   <tr>
-    <td><img src="sp800-63/media/ial-step4.png"/></td>
+    <td><img src="sp800-63-3/media/ial-step4.png"/></td>
   </tr>
   <tr>
    <td>Step 4 is intended to determine if the personal information required by the agency will ultimately resolve to a unique identity.  In other words, the agency needs to know the full identity of the individual accessing the digital service, and pseudonymous access, even with a few validated and verified attributes, is not possible. If the agency needs to uniquely identify the individual, the process can end.  However, the agency should consider if Step 5 is of value to them, as the acceptance of claims will reduce exposure to the risk of over collecting and storing more personal information than is necessary.</td> 
   </tr>
   <tr>
-    <td><img src="sp800-63/media/ial-step5.png"/></td>
+    <td><img src="sp800-63-3/media/ial-step5.png"/></td>
   </tr>
   <tr>
    <td>Step 5 focuses on whether or not the digital service can be provided without having access to full attribute values.  This does not mean all attributes must be delivered as claims, but this step does ask the agency to look at each personal attribute they have determined they need, and identify which ones can suffice as claims and which ones need to be complete values. A federated environment is best suited for receiving claims, as the digital service provider is not in control of the attribute information to start with. If the application also performs all required identity proofing, claims may not make sense since full values are already under control of the digital service provider.</td> 
   </tr>
   <tr>
-    <td><img src="sp800-63/media/ial-step6.png"/></td>
+    <td><img src="sp800-63-3/media/ial-step6.png"/></td>
   </tr>
   <tr>
    <td>If the agency has reached Step 6, claims should be used.  This step identifies the digital service as an excellent candidate for accepting federated attribute claims from a CSP (or multiple CSP's), since it has been determined that complete attribute values are not needed to deliver the digital service.</td> 
