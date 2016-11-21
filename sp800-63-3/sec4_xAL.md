@@ -1,7 +1,5 @@
 <a name="sec4"></a>
 
-<div class="breaker"></div>
-
 ## 4. Determining Levels of Assurance
 
 _This section is informative._
@@ -105,7 +103,7 @@ Separating IAL and AAL also works for traditional M-04-04 LOA use cases, such as
 
 > Note: An agency can accept a higher assurance level than those required in the table above.  For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2.  The same holds true for authenticators; stronger authenticators can be used at RP's that have lower authenticator requirements.  However, RPs will have to ensure that these scenarios only occur in federated scenarios with appropriate privacy protections by the CSP such that only the requested attributes are provided to the RP and that excessive personal information does not leak from the authenticator or the assertion.  See [privacy requirements](./sp800-63c.html#sec9) in SP 800-63C for more details.    
 
-<!---->
+
 
 > Note: Since agencies are encouraged to consider each distinct element of assurance, the notion of the 'low watermark' to determine LOA no longer applies.  An IAL1/AAL2 application should not be considered any less secure or privacy enhancing than an IAL2/AAL2 application.  The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
 
