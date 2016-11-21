@@ -45,7 +45,7 @@ If the RP is using a front-channel presentation mechanism (such as the OpenID Co
 | 1 | 1
 | 2 | 2
 | 3 | 2
-| 4 | 4
+| 4 | 3
 
 However, [Table 7-3](#63cSec7-Table3) shows the expanded set of FAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
 
@@ -59,10 +59,10 @@ However, [Table 7-3](#63cSec7-Table3) shows the expanded set of FAL's that are a
 
 | M-04-04 Level of Assurance | Federation Assurance Level
 |:------------------:|:-----------------------------:
-| 1 | 1, 2, 3, or 4 
-| 2 | 2, 3, or 4
-| 3 | 2, 3, or 4
-| 4 | 3 or 4
+| 1 | 1, 2, or 3
+| 2 | 2, or 3
+| 3 | 2, or 3
+| 4 | 3
 
 ### 7.1 Key Management
 
