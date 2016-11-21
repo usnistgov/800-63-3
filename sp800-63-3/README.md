@@ -12,6 +12,8 @@ This document is broken up into sections as follows:
 
 [3. Definitions and Abbreviations ](sec3_definitions.md)
 
-[4. E-Authentication Model](sec4_model.md)
+[4. Definitions and Abbreviations ](sec4_xAL.md)
 
-[5. References](sec5_references.md)
+[5. E-Authentication Model](sec5_model.md)
+
+[6. References](sec6_references.md)

@@ -228,7 +228,6 @@ The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes,
 |Potential users already have an authenticator at or above required AAL|
 |Multiple credential form factors are required to cover all possible user communities|
 
-<!-- -->
 
 |Federate Attributes
 |:----------------------|
