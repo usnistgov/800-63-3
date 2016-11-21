@@ -26,7 +26,7 @@ This section provides an overview of and requirements for common identity federa
 
 In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing services to transfer information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information.
 
-Depending on the protocol being used, at registration time participants SHALL securely establish any keying information they need to operate the federated relationship, including shared secrets, if any. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
+Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
 Federation relationships SHALL establish parameters regarding expected and acceptable identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship. For example, a given RP may only accept IAL 2 identity proofing from a given IdP that has been vetted at that level.
 
