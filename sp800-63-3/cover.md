@@ -175,18 +175,7 @@ These technical guidelines supplement OMB guidance, *E-Authentication
 Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and
 supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of assurance, Levels 1 to 4, in terms of the consequences of authentication errors and misuse of credentials. Level 1 is the lowest assurance level, and Level 4 is the highest. The OMB guidance defines the required "level of identity assurance", herein referred to as "level of assurance", in terms of the likely consequences of an authentication error. As the consequences of an authentication error become more serious, the required level of assurance increases. The OMB guidance provides agencies with the criteria for determining the level of assurance required for specific applications and transactions, based on the risks and their likelihood of occurrence of each application or transaction.
 
-OMB guidance outlines a five-step process by which agencies should meet their digital authentication assurance requirements:
-
-1.  Conduct a risk assessment of the government system.
-
-2.  Map identified risks to the appropriate assurance level.
-
-3.  Select technology based on digital authentication technical guidance.
-
-4.  Validate that the implemented system has met the required
-    assurance level.
-
-5.  Periodically reassess the information system to determine technology refresh requirements.
+In addition to the OMB guidance, [Section 4](#sec4) provides additional information that can guide agencies through the selection of the the assurance levels detailed in this guideline.
 
 This document suite provides guidelines for implementing the third step of the above process.  A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a 
 third component, *Federation Assurance Level (FAL)*, is required. 
