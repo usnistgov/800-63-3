@@ -125,7 +125,7 @@ The AAL selection does not mean the digital service provider will need to issue 
 
 <a name="63Sec4-Figure1"></a>
 <div class="text-center" markdown="1">
-![](sp800-63-3/media/AAL_CYOA.png)
+<img src="sp800-63-3/media/AAL_CYOA.png" alt="AAL Choose Your Own" style="width:1000px;height:1195px;"/>
 
 **Figure 4-1 - Selecting AAL**
 </div>
@@ -157,7 +157,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 <a name="63Sec4-Figure2"></a>
 <div class="text-center" markdown="1">
-![](sp800-63-3/media/IAL_CYOA.png)
+<img src="sp800-63-3/media/IAL_CYOA.png" alt="IAL Choose Your Own" style="width:1000px;height:1195px;"/>
 
 **Figure 4-2 - Selecting IAL**
 </div>
