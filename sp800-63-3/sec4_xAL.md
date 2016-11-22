@@ -125,7 +125,7 @@ The AAL selection does not mean the digital service provider will need to issue 
 
 <a name="63Sec4-Figure1"></a>
 <div class="text-center" markdown="1">
-<img src="sp800-63-3/media/AAL_CYOA.png" alt="AAL Choose Your Own" style="width:1000px;height:1195px;"/>
+<img src="sp800-63-3/media/AAL_CYOA.png" alt="AAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
 
 **Figure 4-1 - Selecting AAL**
 </div>
@@ -142,7 +142,7 @@ The AAL selection does not mean the digital service provider will need to issue 
     <td><img src="sp800-63-3/media/aal-step2.png" alt="AAL Step 2"/></td>
   </tr>
   <tr>
-   <td>[EO 13681](#EO13681) requires MFA when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point.  That said, personal information release at all AALs should be considered when performing the risk assessment.  An important point at this step, the collection of personal information, if made available online, does not need to be validated or verified to require an AAL of 2 or higher.  Even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service.  As such, self-asserted data must be protected appropriately.</td> 
+   <td><a href="#EO13681"> EO 13681</a> requires MFA when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point.  That said, personal information release at all AALs should be considered when performing the risk assessment.  An important point at this step, the collection of personal information, if made available online, does not need to be validated or verified to require an AAL of 2 or higher.  Even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service.  As such, self-asserted data must be protected appropriately.</td> 
   </tr>
   
   </table>
@@ -157,7 +157,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 <a name="63Sec4-Figure2"></a>
 <div class="text-center" markdown="1">
-<img src="sp800-63-3/media/IAL_CYOA.png" alt="IAL Choose Your Own" style="width:1000px;height:1195px;"/>
+<img src="sp800-63-3/media/IAL_CYOA.png" alt="IAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
 
 **Figure 4-2 - Selecting IAL**
 </div>
