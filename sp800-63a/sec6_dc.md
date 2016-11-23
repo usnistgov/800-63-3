@@ -4,6 +4,8 @@
 
 # 6. Leveraging Antecedent Proofing Events
 
+_This section is normative._
+
 Possession of an authenticator, bound to an identity proofed at a given IAL, should allow a claimant to obtain additional authenticators, per CSP policy.  This section details requirements for two specific use cases:
 
 1. A _claimant_ obtains a secondary, or derived authenticator, for use only within the limits and authorizations of the primary authenticator.  For example, this could be a derived PIV credential in federal use cases, or a temporary authenticator. See [Section 6.1](#dc) for more details.

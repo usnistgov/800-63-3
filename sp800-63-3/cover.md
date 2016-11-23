@@ -147,19 +147,9 @@ The authors would like to acknowledge the thought leadership and innovation of t
 
 ### Note to Readers
 
-{:/comment}
-
 ### Trademark Information
 
-### Requirements Notation and Conventions
-
-The terms “SHALL” and “SHALL NOT” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.
-
-The terms “SHOULD” and “SHOULD NOT” indicate that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.
-
-The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
-
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
+{:/comment}
 
 </div>
 
@@ -175,7 +165,7 @@ These technical guidelines supplement OMB guidance, *E-Authentication
 Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and
 supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of assurance, Levels 1 to 4, in terms of the consequences of authentication errors and misuse of credentials. Level 1 is the lowest assurance level, and Level 4 is the highest. The OMB guidance defines the required "level of identity assurance", herein referred to as "level of assurance", in terms of the likely consequences of an authentication error. As the consequences of an authentication error become more serious, the required level of assurance increases. The OMB guidance provides agencies with the criteria for determining the level of assurance required for specific applications and transactions, based on the risks and their likelihood of occurrence of each application or transaction.
 
-In addition to the OMB guidance, [Section 4](#sec4) provides additional information that can guide agencies through the selection of the the assurance levels detailed in this guideline.
+In addition to the OMB guidance, [Section 5](#sec5) provides additional information that can guide agencies through the selection of the the assurance levels detailed in this guideline.
 
 A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a 
 third component, *Federation Assurance Level (FAL)*, is required.
@@ -188,13 +178,13 @@ The separation of these metrics supports applications requiring strong authentic
 
 Accordingly, with this revision, SP 800-63 has been split into a suite of documents organized as follows:
 
-- SP 800-63-3 *Digital Authentication Guideline* - Provides guidelines on general authentication issues and for using authenticators, credentials, and assertions together in an information system.
+- SP 800-63-3 *Digital Authentication Guideline* - Provides an overview of general authentication frameworks, for using authenticators, credentials, and assertions together in an information system, and possible methods of selecting a discrete assurance levels. _This document is informative._
 
-- SP 800-63A *Enrollment and Identity Proofing* - Deals with the processes by which a credential, and authenticator(s) associated with that credential, can be bound to a specific individual. This typically happens when that individual is enrolled in an identity system, through the identity proofing process.
+- SP 800-63A *Enrollment and Identity Proofing* - Provides guidelines on processes by which an individual is enrolled in an identity system and identity proofed. _This document contains both normative and informative material._
 
-- SP 800-63B *Authentication and Lifecycle Management* - provides guidelines on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
+- SP 800-63B *Authentication and Lifecycle Management* - Provides guidelines on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels. _This document contains both normative and informative material._
 
-- SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party.
+- SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party. _This document contains both normative and informative material._
 
 <div class="breaker"/>
 
@@ -206,9 +196,9 @@ Accordingly, with this revision, SP 800-63 has been split into a suite of docume
 
 [3. Definitions and Abbreviations](#sec3)
 
-[4. A New Approach to Levels of Assurance](#sec4)
+[4. Digital Authentication Model](#sec4)
 
-[5. Digital Authentication Model](#sec5)
+[5. A New Approach to Levels of Assurance](#sec5)
 
 [6. References](#references)
 

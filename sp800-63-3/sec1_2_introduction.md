@@ -4,6 +4,8 @@
 
 ## 1. <a name="purpose"></a>Purpose
 
+_Sections 1 - 5 are informative._
+
 This recommendation and its companion documents, SP 800-63A, SP 800-63B, and SP 800-63C, provide technical guidelines to agencies for the implementation of digital authentication.
 
 <a name="sec2"></a>
