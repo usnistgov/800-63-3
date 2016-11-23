@@ -29,3 +29,28 @@ Although an IdP may collect additional attributes beyond what the RP requires fo
 Section 4.0 identifies agency requirements to consult their SAOP to determine privacy compliance requirements. It is critical to involve your agency’s SAOP in the earliest stages of digital authentication system development to assess and mitigate privacy risks and as advise the agency on compliance obligations such as whether the federation triggers the Privacy Act of 1974 or the E-Government Act of 2002 requirement to conduct a Privacy Impact Assessment.  For example, if the Agency is serving as a Credential Service Provider in a federation, it is likely that the Privacy Act requirements will be triggered and require coverage by either a new or existing Privacy Act system of records since credentials would be maintained on behalf of the agency RP.  If, however, the agency is a Relying Party and using a 3rd party IdP digital authentication may not trigger the requirements of the Privacy Act depending on what data passed from the RP are maintained by the agency as the RP (in such instances the agency may have a broader programmatic SORN that covers such data).  The SAOP can similarly assist the agency in determining whether a PIA is required.  These considerations should not be read as a requirement to develop a Privacy Act System of Records Notice or PIA for use of a federated credential alone; in many cases it will make the most sense to draft a PIA and SORN that encompasses the entire digital authentication process or include the digital authentication process as part of a larger programmatic PIA that discusses the program or benefit the agency is establishing online access.
 
 Due to the many components of digital authentication, it is important for the SAOP to have an awareness and understanding of each individual component so as to advise appropriately on what compliance requirements apply. Moreover a thorough understanding of the individual components of digital authentication will enable the SAOP to thoroughly assess and mitigate privacy risks either through compliance processes or by other means.
+
+
+#### 9.5. <a name="blinding"></a>Blinding in Proxied Federation
+
+While some proxy structures (typically those that exist primarily to simplify integration) MAY offer no additional subscriber privacy protection, others offer varying levels of privacy to the subscriber through a range of blinding technologies. Privacy policies may dictate appropriate use by the IdP, RP, and the federation proxy, but technical means such as blinding can increase effectiveness of these policies by making the data more difficult to obtain. It should also be noted that as the level of blinding increases, so does the technical and operational implementation complexity.
+
+Note that even with the use of blinding technologies, it MAY still be possible for a blinded party to infer protected subscriber information through released attribute data or metadata such as analysis of timestamps, attribute bundle sizes, or attribute signer information. 
+
+The following table illustrates a spectrum of blinding implementations used in proxied federation. This table is intended to be illustrative, and is neither comprehensive nor technology-specific.
+
+<div class="text-center" markdown="1">
+
+**Table 9-1: Federation Proxies**
+
+</div>
+
+
+|Proxy Type|RP knows IdP|IdP knows RP|Proxy can track subscriptions between RP and IdP|Proxy can see attributes of Subscriber|
+|---|---|---|---|---|
+|Non-blinding Proxy with Attributes|Yes|Yes|Yes|Yes|
+|Non-blinding Proxy|Yes|Yes|Yes|No|
+|Double Blind Proxy with Attributes|No|No|Yes|Yes|
+|Double Blind Proxy|No|No|Yes|No|
+|Triple Blind Proxy|No|No|No|No|
+

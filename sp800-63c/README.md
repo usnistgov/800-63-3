@@ -16,7 +16,7 @@ This document is broken up into sections as follows:
 
 [4. Federation](sec4_federation.md)
 
-[5. Assertion Strength](sec5_strength.md)
+[5. Assertions](sec5_assertions.md)
 
 [6. Assertion Presentation](sec6_presentation.md)
 
