@@ -178,7 +178,7 @@ The separation of these metrics supports applications requiring strong authentic
 
 Accordingly, with this revision, SP 800-63 has been split into a suite of documents organized as follows:
 
-- SP 800-63-3 *Digital Authentication Guideline* - Provides an overview of general authentication frameworks, for using authenticators, credentials, and assertions together in an information system, and possible methods of selecting a discrete assurance levels. _This document is informative._
+- SP 800-63-3 *Digital Authentication Guideline* - Provides an overview of general authentication frameworks, for using authenticators, credentials, and assertions together in an information system, and possible methods of selecting discrete assurance levels. _This document is informative._
 
 - SP 800-63A *Enrollment and Identity Proofing* - Provides guidelines on processes by which an individual is enrolled in an identity system and identity proofed. _This document contains both normative and informative material._
 
