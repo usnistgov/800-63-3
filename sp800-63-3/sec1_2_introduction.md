@@ -40,11 +40,13 @@ and systems, based on the risks and their likelihood of occurrence.
 
 SP 800-63 is organized as a suite of documents as follows:
 
-- SP 800-63A *Enrollment and Identity Proofing* - Deals with the processes by which a credential, and authenticator(s) associated with that credential can be bound to a specific individual. This typically happens when that individual is enrolled in an identity system, through the identity proofing process.
+- SP 800-63-3 *Digital Authentication Guideline* - Provides an overview of general authentication frameworks, for using authenticators, credentials, and assertions together in an information system, and possible methods of selecting discrete assurance levels. _This document is informative._
 
-- SP 800-63B *Authentication and Lifecycle Management* - provides guidelines on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels.
+- SP 800-63A *Enrollment and Identity Proofing* - Provides guidelines on processes by which an individual is enrolled in an identity system and identity proofed. _This document contains both normative and informative material._
 
-- SP 800-63C *Federation and Assertions* - Provides guidelines on the use of assertions to convey the results of authentication processes to a relying party.
+- SP 800-63B *Authentication and Lifecycle Management* - Provides guidelines on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified authenticator assurance levels. _This document contains both normative and informative material._
+
+- SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party. _This document contains both normative and informative material._
 
 It is anticipated that SP 800-63A, SP 800-63B, and SP 800-63C will be revised asynchronously with each other and with this document. The latest revision of each should be used.
 
@@ -91,7 +93,7 @@ their authentication assurance requirements:
     800-53A]](#SP800-53A) for conducting the security assessment.
 
 This suite of documents provides guidelines for implementing the third step of the
-above process. In particular, this document maps the four (4) Levels of Assurance defined in OMB M-04-04 into corresponding authenticator assurance and identity assurance levels. Other documents in the suite state specific technical
+above process. In particular, this document maps the four Levels of Assurance defined in OMB M-04-04 into corresponding authenticator assurance and identity assurance levels. Other documents in the suite state specific technical
 requirements for identity assurance and authenticator assurance in the following
 areas:
 
@@ -115,10 +117,10 @@ The M-04-04 Level of Assurance is determined by considering the identity assuran
 
 Within a given level of assurance, agencies may employ additional risk mitigation measures and compensating controls. Easing credential assurance level requirements may result in benefits such as
 increasing the size of the enabled customer pool, but agencies shall
-ensure mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Alternatively, agencies may consider partitioning the
+ensure that mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Alternatively, agencies may consider partitioning the
 functionality of a digital authentication enabled application to allow less
 sensitive functions to be available at a lower level of authentication
-and attribute assurance, while more sensitive functions are available
+and identity assurance, while more sensitive functions are available
 only at a higher level of assurance.
 
 These technical guidelines cover remote digital authentication of
@@ -134,16 +136,16 @@ establish specific requirements for issuing authentication credentials
 and authenticators to machines and servers when they are used in
 authentication protocols with people.
 
-The paradigm of this document suite is that individuals are enrolled, issued an authenticator, and
-undergo a registration process in which their identity is bound to that authenticator. Thereafter, the individuals are remotely authenticated to systems
-and applications over a network, using the authenticator in an authentication
+The paradigm of this document suite is that individuals are enrolled, issued one or more authenticators, and
+undergo a registration process in which their identity is bound to the authenticator(s). Higher identity assurance levels require stronger registration procedures. Thereafter, the individuals are remotely authenticated to systems
+and applications over a network, using the authenticator(s) in an authentication
 protocol. The authentication protocol allows an individual to
 demonstrate to a verifier that he or she has possession and control of
-the authenticator, in a manner that protects the authenticator secret from
+the authenticator(s), in a manner that protects the authenticator secrets from
 compromise by different kinds of attacks. Higher authenticator assurance levels require use of stronger authentication mechanisms, better protocols, and better protection of
-the authenticator(s) and related secrets from attacks. Higher identity assurance levels require stronger registration procedures.
+the authenticator(s) and related secrets from attacks.
 
-This document suite focuses on authenticators that are difficult to forge because they contain some type of secret information that is not available to unauthorized parties and that is preferably not used in unrelated contexts. Biometric authentication uses human characteristics that in some cases may be available to an attacker. Accordingly, the use of biometrics for authentication is limited to activation of a specific physical authenticator to which it is strongly bound, and the number of consecutive activation failures is limited, beyond which another activation factor or authenticator is required. This document suite also supports the use of biometrics to prevent repudiation of registration, and to verify that the same individual participates in all phases of the registration process.
+This document suite focuses on authenticators that are difficult to forge because they contain some type of secret information that is not available to unauthorized parties and that is preferably not used in unrelated contexts. Biometric authentication uses human characteristics that, in some cases, may be available to an attacker. Accordingly, the use of biometrics for authentication is limited to activation of a specific physical authenticator to which it is strongly bound, and the number of consecutive activation failures is limited, beyond which another activation factor or authenticator is required. This document suite also supports the use of biometrics to prevent repudiation of registration, and to verify that the same individual participates in all phases of the registration process.
 
 Knowledge based authentication achieves authentication by testing the
 personal knowledge of the individual against information obtained from
@@ -152,7 +154,7 @@ actually secret, confidence in the identity of an individual can be hard
 to achieve. In addition, the complexity and interdependencies of
 knowledge based authentication systems are difficult to quantify.
 However, knowledge based verification techniques are included as part
-of registration in this document suite.
+of registration in SP 800-63A.
 
 This document suite identifies minimum technical requirements for remotely
 authenticating users. Agencies may determine based on their risk
@@ -161,18 +163,17 @@ In particular, privacy requirements and legal risks may lead agencies to
 determine that additional authentication measures or other process
 safeguards are appropriate. When developing digital authentication processes
 and systems, agencies should consult *OMB Guidance for Implementing the
-Privacy Provisions of the E-Government Act of 2002* \[[OMB
-M-03-22](#M-03-22)\]. See the *Guide to Federal Agencies on
-Implementing Electronic Processes* \[[DOJ 2000](#DOJ2000)\] for
+Privacy Provisions of the E-Government Act of 2002* [[M-03-22]](#M-03-22). See the *Guide to Federal Agencies on
+Implementing Electronic Processes* [[DOJ 2000]](#DOJ2000) for
 additional information on legal risks, especially those that are related
 to the need to satisfy legal standards of proof and prevent repudiation,
 as well as *Use of Electronic Signatures in Federal Organization
-Transactions* \[[GSA ESIG](#GSAESIG)\].
+Transactions* [[ESIG]](#ESIG).
 
 Additionally, Federal agencies implementing these guidelines should
 adhere to the requirements of Title III of the E-Government Act,
 entitled the *Federal Information Security Management Act*
-\[[FISMA](#FISMA)\], and the related NIST standards and guidelines.
+\[[FISMA](#FISMA)\], and related NIST standards and guidelines.
 FISMA directs Federal agencies to develop, document, and implement
 agency-wide programs to provide information security for the information
 and information systems that support the operations and assets of the
@@ -184,11 +185,11 @@ operations of their digital systems.
 
 ### 2.1. How to Use this Suite of Special Publications
 
-The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since initial versions of Special Publication 800-63 were released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to provide strong authenticators even if no identity proofing is required.  Therefore, a suite of special publications under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the guidelines in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is preferred over a standalone CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) will apply.
+The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since initial versions of Special Publication 800-63 were released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of special publications under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the guidelines in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is preferred over use of a standalone CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) also applies.
 
 ### 2.2. Relationship to Other Standards and Guidelines
 
-This document has been written to satisfy the needs of federal agencies. However, with the expansion of citizen services throughout the world that require identity and authentication assurance, as well as an increasing number of use cases that promote international identity federation and interoperability, this guideline is intended to achieve alignment to national and international standards that describe levels of identity assurance. [Table 2-1](#63Sec2-Table1) provides a representative snapshot of mappings to various international and national assurance documents. This is not meant to imply that there is direct correlation between the IALs and AALs in this document and the levels in those standards, but that it is seen that this document fulfils the criteria as demonstrated in those standards.
+This document has been written to satisfy the needs of federal agencies. However, with the expansion of citizen services throughout the world that require identity and authentication assurance, as well as an increasing number of use cases that promote international identity federation and interoperability, this guideline is intended to achieve alignment to national and international standards that describe levels of identity assurance. [Table 2-1](#63Sec2-Table1) provides a representative snapshot of mappings to various international and national assurance documents. This is not meant to imply that there is direct correlation between the IALs and AALs in this document and the levels in those standards, but that it is seen that this document fulfills the criteria as demonstrated in those standards.
 
 <a name="63Sec2-Table1"></a>
 
@@ -198,7 +199,7 @@ This document has been written to satisfy the needs of federal agencies. However
 
 </div>
 
-SP 800-63|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|STORK 2.0|29115:2011|ISO 29003|Government of Canada
+SP 800-63|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115]](#ISO29115)|[[ISO 29003]](#ISO29003)|[[Canada]](#Canada)
 :---------:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
 N/A|N/A|Level 01|N/A|N/A|N/A|N/A
 AAL/IAL 1|Level 1|Level 1|QAA Level 1|LoA 1|LoA 1|IAL/CAL 1
