@@ -212,18 +212,18 @@ _Coming Soon_
 
 The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes are agnostic to the authentication and identity proofing architecture an agency selects. However, there are scenarios an agency may encounter which make identity federation potentially more attractive than establishing identity services local to the agency or individual applications. The following list details the scenarios where an agency may consider federation as a viable option. This list does not factor in any economic benefits or weaknesses of federation vs. localized identity architectures.
 
-**Federate Authenticators:**  
-- Potential users already have an authenticator at or above required AAL  
-- Multiple credential form factors are required to cover all possible user communities
-- Agency does not have infrastructure to support authentication
-management (e.g., account recovery, authenticator issuance, help desk)
+**Federate Authenticators:**
 
+*  Potential users already have an authenticator at or above required AAL  
+*  Multiple credential form factors are required to cover all possible user communities
+*  Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk)
 
 **Federate Attributes:**  
-- Access to the service only requires a partial attribute list  
-- Access to the service only requires at least one attribute claim
-- Agency is not the authoritative source or issuing source for required attributes  
-- Attributes are only required temporarily during use (such as to make
-an access decision), such that agency does not need to locally persist the data
+
+* Pseudonymity is important to stakeholders accessing the service
+* Access to the service only requires a partial attribute list  
+* Access to the service only requires at least one attribute claim
+* Agency is not the authoritative source or issuing source for required attributes  
+* Attributes are only required temporarily during use (such as to make an access decision), such that agency does not need to locally persist the data
 
 
