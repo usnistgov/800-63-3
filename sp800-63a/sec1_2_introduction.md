@@ -4,11 +4,15 @@
 
 # 1. <a name="purpose"></a> Purpose
 
+_This section is informative._
+
 This document provides requirements for enrollment and identity proofing of subscribers that wish to gain access to online resources at each Identity Assurance Level (IAL).  The requirements detail the acceptability, validation, and verification of identity evidence that will be presented by an individual to support their claim of identity. This document also details the responsibilities of Credential Service Providers (CSPs) with respect to establishing and maintaining enrollment records, and binding of authenticators (either CSP issued or subscriber-provided) to the enrollment record. 
 
 <a name="sec2"></a>
 
 # 2. <a name="intro"></a> Introduction
+
+_This section is informative._
 
 One of the challenges associated with authenticating people is the association of their online activities with a specific physical person. While there are situations where this is not required or is even undesirable (i.e., use cases where anonymity or pseudonymity are required), there are others where it is important to reliably establish an association with a physical person. Examples include obtaining health care and executing financial transactions. There are also situations where the association is required for regulatory reasons (e.g., Know Your Customer requirements in the financial community) or to establish accountability for high-risk actions (e.g., the release of water from a hydroelectric dam).
 

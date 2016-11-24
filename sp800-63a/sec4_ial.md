@@ -4,6 +4,8 @@
 
 # <a name="ial-section"></a> 4. Identity Assurance Level Requirements
 
+_This section is normative._
+
 The paradigm of this document is that individuals (referred to as applicants at this stage) undergo an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity record, then validated and verified. These attributes are then bound to an authenticator (described in [SP 800-63B](#800-63b)).
 
 The only outcome of identity proofing is to ensure that the applicant is who he/she claims to be. This includes presentation, validation and verification of the minimum attributes necessary to accomplish identity proofing.  Such core attributes, to the extent they are the minimum necessary, could include:  
@@ -235,7 +237,8 @@ An enrollment code SHALL be comprised of one of the following:
 
 
 ## 4.8. Summary of Requirements
-*(Non-normative; refer to preceding sections for normative requirements)*
+
+_This section is informative._
 
 [Table 4-3](#63aSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
 
