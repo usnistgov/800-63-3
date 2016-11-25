@@ -4,7 +4,7 @@
 
 Once an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in volume C), where the authentication event necessarily involves several components and actors coordinating across a network.
 
-To facilitate this behavior, a *session* MAY be started in response to an authentication event, and such a session SHALL continue until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in section 7.2), wherein the user repeats some or all of the initial authentication event, thereby asserting their presence again.
+To facilitate this behavior, a *session* MAY be started in response to an authentication event, and such a session SHALL continue until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in section 7.2), wherein the user repeats some or all of the initial authentication event, thereby estblishing their presence again.
 
 Session management is preferable over continuous presentation of credentials as the usability requirements of such continuous presentation would incentivize workarounds such as cached unlocking credentials, negating the freshness of the authentication event in the first place. 
 
