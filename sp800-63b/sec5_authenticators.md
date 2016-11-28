@@ -398,3 +398,17 @@ In contrast, authenticators that involve the manual entry of an authenticator ou
 #### <a name="csp-verifier"></a>5.2.6. Verifier-CSP commmunications
 
 In situations where the verifier and CSP are separate entities (as shown by the dotted line in [SP 800-63-3 Figure 4-1](sp800-63-3.html#63Sec4-Figure1)), communications between the verifier and CSP SHALL occur through a mutually-authenticated secure channel (such as a client-authenticated TLS connection) using approved cryptography.
+
+#### <a name="verifier-secrets"></a>5.2.7. Verifier compromise resistance
+
+Use of some types of authenticators requires that the verifier store a copy of the authenticator secret. For example, an OTP authenticator (described in Section 5.1.4) requires that the verifier independently generate the authenticator output for comparison against the value sent by the claimant. Because of the potential for the verifier to be compromised and stored secrets stolen, authentication protocols that do not require the verifier to persistently store secrets that could be used for authentication are considered stronger, and are described herein as being *verifier compromise resistant*. Note that such verifiers are not resistant to all attacks; a verifier could be compromised in a different way, such as to always accept a particular  authenticator output.
+
+Verifier compromise resistance can be achieved in different ways:
+
+1. Use a cryptographic authenticator that requires that the verifier store a public key corresponding to a private key held by the authenticator.
+
+2. Store the expected authenticator output in hashed form. This method can be used with some look-up secret authenticators (described in Section 5.1.2), for example.
+
+In order to be considered verifier compromise resistant, public keys stored by the verifier SHALL use approved cryptography and SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication).
+
+Other verifier compromise resistant secrets SHALL use approved hash algorithms and the underlying secrets SHALL have at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). Note that secrets (such as memorized secrets) having lower complexity SHALL NOT be considered verifier compromise resistant when hashed because of the potential to defeat the hashing process through dictionary lookup or exhaustive search.

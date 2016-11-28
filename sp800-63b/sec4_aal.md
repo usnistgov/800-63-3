@@ -132,16 +132,14 @@ AAL 3 provides very high confidence that the claimant controls the authenticator
 
 #### 4.3.1. Permitted Authenticator Types
 
-Authentication Assurance Level 3 requires the use of one of three kinds of hardware devices:
+Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
 
 * Multi-Factor Cryptographic Device
 * Single-Factor Cryptographic Device used in conjunction with Memorized Secret
 
-All cryptographic device authenticators used at AAL 3 SHALL be verifier impersonation resistant as described in section [5.2.5](#verifimpers).
-
 #### 4.3.2. Authenticator and Verifier Requirements
 
-Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. At least one authenticator used in each AAL 3 authentication SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers). 
+Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. At least one authenticator used in each AAL 3 authentication SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers). The verifier SHALL be verifier compromise resistant as described in Section [5.2.7](#verifier-secrets) with respect to at least one authentication factor.
 
 Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security.
 
@@ -194,7 +192,7 @@ Requirement | AAL 1 | AAL 2 | AAL 3
 **Security controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
 **MITM resistance** | Required | Required | Required |
 **Verifier impersonation resistance** | Not required | Not required | Required |
-
+**Verifier compromise resistance** | Not required | Not required | Required |
 
 
 
