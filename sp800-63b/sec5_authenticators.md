@@ -193,7 +193,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but without the requirement that a second factor be provided. As such, the symmetric keys used by authenticators SHALL be strongly protected against compromise.
 
-When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also obtain an assertion from the authenticator source that the authenticator is a multi-factor device. In the absence of a trusted assertion that it is a multi-factor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
+When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source. that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and man-in-the-middle attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.
 
@@ -378,8 +378,6 @@ Authenticators that are directly connected to or embedded in endpoints MAY conve
 * Sensor modality
 
 If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). Attestation information MAY be used as part of a risk-based authentication decision.
-
-When federated authentication is being performed as described in [SP 800-63C](sp800-63c.html), the verifier SHOULD include any such attestation information in the assertion it provides to the relying party.
 
 #### <a name="verifimpers"></a>5.2.5. Verifier impersonation resistance
 
