@@ -165,10 +165,8 @@ These technical guidelines supplement OMB guidance, *E-Authentication
 Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and
 supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of assurance, Levels 1 to 4, in terms of the consequences of authentication errors and misuse of credentials. Level 1 is the lowest assurance level, and Level 4 is the highest. The OMB guidance defines the required "level of identity assurance", herein referred to as "level of assurance", in terms of the likely consequences of an authentication error. As the consequences of an authentication error become more serious, the required level of assurance increases. The OMB guidance provides agencies with criteria for determining the level of assurance required for specific applications and transactions, based on risks and their likelihood of occurrence of each application or transaction.
 
-In addition to the OMB guidance, [Section 5](#sec5) provides additional information that can guide agencies through the selection of the assurance levels detailed in this guideline.
-
 A new approach for digital authentication solutions is required by these guidelines, separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select and combine two individual components, referred to as *Identity Assurance Level (IAL)*  and *Authenticator Assurance Level (AAL)*. For federated systems, a 
-third component, *Federation Assurance Level (FAL)*, is required.
+third component, *Federation Assurance Level (FAL)*, is required. [Section 5](#sec5) provides additional information that can guide agencies through the selection of the assurance levels detailed in this guideline.
 
 * IAL refers to the robustness of the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific individual.
 * AAL refers to the robustness of the authentication process itself.
