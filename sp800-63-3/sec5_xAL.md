@@ -205,7 +205,11 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 #### <a name="FAL_CYOA"></a> 5.3.4. Selecting Federation Assurance Level
 
-_Coming Soon_
+_Additional Guidance Coming Soon_
+
+All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others. 
+
+RPs SHOULD use a back-channel presentation mechanism where possible, as such mechanisms allow for greater identification of the RP itself, better assurance of the transaction as the RP is communicating directly with the IdP to receive the assertion, and less chance of leakage of attributes or other sensitive information found in the assertion itself. RPs that allow front-channel presentation of assertions SHOULD require at least FAL 2 to protect the content of the assertion, since the assertion can be seen by the subsciber and handled by the subscriber's browser.
 
 ### <a name="toFedorNotToFed"></a> 5.4. Federation Considerations
 
@@ -213,9 +217,12 @@ The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes 
 
 **Federate Authenticators:**
 
-*  Potential users already have an authenticator at or above required AAL  
-*  Multiple credential form factors are required to cover all possible user communities
-*  Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk)
+* Potential users already have an authenticator at or above required AAL  
+* Multiple credential form factors are required to cover all possible user communities
+* Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk)
+* Desire to allow the primary authentication to be modified and upgraded over time without changing the RP's implementation
+* There are different environments to be supported, as federation protocols are network-based and allow for implementation on a wide variety of platforms and languages
+* Potential users come from multiple communities, each with its own existing identity infrastructure
 
 **Federate Attributes:**  
 
