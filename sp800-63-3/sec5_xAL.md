@@ -43,10 +43,9 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 |Federation Assurance Level|
 |:----------------------:|
-|**FAL1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the relying party (RP) in the front channel. The assertion must be signed with using approved cryptography.|
-|**FAL2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion in the back channel. The assertion must be signed using approved cryptography. Alternatively, if the assertion is presented in the front channel, the assertion is required to be encrypted such that the RP is the only party that can decrypt it.|
-|**FAL3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
-|**FAL4** - FAL 4 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
+|**FAL1** - FAL 1 allows for the subscriber enable the relying party (RP) to receive a bearer assertion. The assertion must be signed by the IdP using approved cryptography.|
+|**FAL2** - FAL 2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
+|**FAL4** - FAL 3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
 When described generically or bundled, this guideline will refer to the combination of IAL, AAL, and FAL as **_xAL_**.
 
@@ -70,7 +69,7 @@ This guideline introduces a model where individual xALs can be selected without 
 | 1 | 1 | 1 | 1
 | 2 | 2 | 2 | 2
 | 3 | 2 | 2 | 2
-| 4 | 3 | 3 | 4
+| 4 | 3 | 3 | 3
 
 >	Note: LOA2 is now equivalent to LOA3. Higher AALs than specified can always be used.
 >
