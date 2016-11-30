@@ -205,11 +205,15 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 #### <a name="FAL_CYOA"></a> 5.3.4. Selecting Federation Assurance Level
 
-_Additional Guidance Coming Soon_
+All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [SP 800-63C](sp800-63c.html#sec5). When taken together, these measures make it so that assertions can not be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
 
-All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others. 
+RPs should use a back-channel [presentation mechanism](sp800-63c.html#sec6) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. Since the assertion reference is presented by the RP directly to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Furthermore, since the assertion is fetched by the RP directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.
 
-RPs SHOULD use a back-channel presentation mechanism where possible, as such mechanisms allow for greater identification of the RP itself, better assurance of the transaction as the RP is communicating directly with the IdP to receive the assertion, and less chance of leakage of attributes or other sensitive information found in the assertion itself. RPs that allow front-channel presentation of assertions SHOULD require at least FAL 2 to protect the content of the assertion, since the assertion can be seen by the subsciber and handled by the subscriber's browser.
+FAL 2 and higher require the assertion itself to be encrypted such that the intended RP is the only party that can decrypt it. This method not only improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion), but also increases privacy protection by protecting the assertion message itself in addition to having it be passed along authenticated protected channels. RPs that allow front-channel presentation of assertions should require at least FAL 2 to protect the content of the assertion, since the assertion can be seen by the subsciber and handled by the subscriber's browser.
+
+FAL 3 further requires that the subscriber prove posession of a key in addition to the ability to present an assertion or assertion reference. This method allows the RP to more strongly verify the subscriber's presenence through use of a second factor in addition to the assertion, where that second factor is tied to the assertion being presented.
+
+Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL 2 and 3 and subscriber keys additionally need to be managed at FAL 3. Therefore, RPs should add advanced functionality where it's feasible and warranted for the application.
 
 ### <a name="toFedorNotToFed"></a> 5.4. Federation Considerations
 
