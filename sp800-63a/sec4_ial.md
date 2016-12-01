@@ -115,7 +115,7 @@ A CSP SHOULD implement identity proofing in accordance with [Section 4.5.1](#nor
 
 #### 4.5.1.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.1](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context.  See [Section 5.1](#resolve) for general resolution requirements.
 
 #### 4.5.1.2. Evidence Requirements
 
