@@ -27,7 +27,7 @@ For example, FAL 1 maps to the OpenID Connect Basic Client profile or SAML Web S
 
 Regardless of what is requested or required by the protocol, the FAL in use is easily detected by the RP by observing the nature of the assertion as it is presented as part of the federation protocol. Therefore, the RP is responsible for determining which FALs it is willing to accept for a given authentication transaction and ensuring that the transaction meets the requirements of that FAL.
 
-If the RP is using a front-channel presentation mechanism (such as the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHALL require FAL 2 or greater in order to protect the information in the assertion from the browser or other parties in the transaction.
+If the RP is using a front-channel presentation mechanism (such as the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHOULD require FAL 2 or greater in order to protect the information in the assertion from the browser or other parties in the transaction.
 
 [Table 7-2](#63cSec7-Table2) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Federation Assurance Levels.
 

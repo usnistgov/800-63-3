@@ -43,10 +43,9 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 |Federation Assurance Level|
 |:----------------------:|
-|**FAL1** - FAL 1 allows for the subscriber to retrieve and present a bearer assertion directly to the relying party (RP) in the front channel. The assertion must be signed with using approved cryptography.|
-|**FAL2** - FAL 2 requires the subscriber to retrieve an assertion artifact to present to the RP, which the RP then presents to the CSP to fetch the bearer assertion in the back channel. The assertion must be signed using approved cryptography. Alternatively, if the assertion is presented in the front channel, the assertion is required to be encrypted such that the RP is the only party that can decrypt it.|
-|**FAL3** - FAL 3 builds on FAL 2 and adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
-|**FAL4** - FAL 4 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
+|**FAL1** - FAL 1 allows for the subscriber enable the relying party (RP) to receive a bearer assertion. The assertion must be signed by the IdP using approved cryptography.|
+|**FAL2** - FAL 2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
+|**FAL3** - FAL 3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
 When described generically or bundled, this guideline will refer to the combination of IAL, AAL, and FAL as **_xAL_**.
 
@@ -70,7 +69,7 @@ This guideline introduces a model where individual xALs can be selected without 
 | 1 | 1 | 1 | 1
 | 2 | 2 | 2 | 2
 | 3 | 2 | 2 | 2
-| 4 | 3 | 3 | 4
+| 4 | 3 | 3 | 3
 
 >	Note: LOA2 is now equivalent to LOA3. Higher AALs than specified can always be used.
 >
@@ -206,7 +205,15 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 #### <a name="FAL_CYOA"></a> 5.3.4. Selecting Federation Assurance Level
 
-_Coming Soon_
+All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [SP 800-63C](sp800-63c.html#sec5). When taken together, these measures make it so that assertions can not be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
+
+RPs should use a back-channel [presentation mechanism](sp800-63c.html#sec6) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. Since the assertion reference is presented by the RP directly to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Furthermore, since the assertion is fetched by the RP directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.
+
+FAL 2 and higher require the assertion itself to be encrypted such that the intended RP is the only party that can decrypt it. This method not only improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion), but also increases privacy protection by protecting the assertion message itself in addition to having it be passed along authenticated protected channels. RPs that allow front-channel presentation of assertions should require at least FAL 2 to protect the content of the assertion, since the assertion can be seen by the subsciber and handled by the subscriber's browser.
+
+FAL 3 further requires that the subscriber prove posession of a key in addition to the ability to present an assertion or assertion reference. This method allows the RP to more strongly verify the subscriber's presenence through use of a second factor in addition to the assertion, where that second factor is tied to the assertion being presented.
+
+Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL 2 and 3 and subscriber keys additionally need to be managed at FAL 3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
 
 ### <a name="toFedorNotToFed"></a> 5.4. Federation Considerations
 
@@ -214,9 +221,12 @@ The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes 
 
 **Federate Authenticators:**
 
-*  Potential users already have an authenticator at or above required AAL  
-*  Multiple credential form factors are required to cover all possible user communities
-*  Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk)
+* Potential users already have an authenticator at or above required AAL  
+* Multiple credential form factors are required to cover all possible user communities
+* Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk)
+* Desire to allow the primary authentication to be modified and upgraded over time without changing the RP's implementation
+* There are different environments to be supported, as federation protocols are network-based and allow for implementation on a wide variety of platforms and languages
+* Potential users come from multiple communities, each with its own existing identity infrastructure
 
 **Federate Attributes:**  
 
