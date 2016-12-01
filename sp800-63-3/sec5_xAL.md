@@ -213,7 +213,7 @@ FAL 2 and higher require the assertion itself to be encrypted such that the inte
 
 FAL 3 further requires that the subscriber prove posession of a key in addition to the ability to present an assertion or assertion reference. This method allows the RP to more strongly verify the subscriber's presenence through use of a second factor in addition to the assertion, where that second factor is tied to the assertion being presented.
 
-Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL 2 and 3 and subscriber keys additionally need to be managed at FAL 3. Therefore, RPs should add advanced functionality where it's feasible and warranted for the application.
+Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL 2 and 3 and subscriber keys additionally need to be managed at FAL 3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
 
 ### <a name="toFedorNotToFed"></a> 5.4. Federation Considerations
 
