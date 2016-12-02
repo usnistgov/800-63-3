@@ -22,9 +22,7 @@ his/her identity to a Federal Information Technology (IT) system. This
 recommendation also provides guidelines for credential service providers
 (CSPs), verifiers, and relying parties (RPs).
 
-Current government systems do not separate the functions of
-authentication and attribute providers. However, in some applications, these
-functions are provided by different parties. This document suite describes authenticator assurance and identity assurance as separate metrics, and provides a mapping between these metrics and overall level of assurance.
+This document suite describes authenticator assurance and identity assurance as separate metrics, and provides a mapping between these metrics and the overall level of assurance.
 These technical guidelines supplement OMB guidance, *E-Authentication
 Guidance for Federal Agencies* \[[OMB M-04-04](#M-04-04)\] and
 supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of
@@ -38,7 +36,17 @@ guidance provides agencies with criteria for determining the level of
 assurance required for specific digital transactions
 and systems, based on the risks and their likelihood of occurrence.
 
-SP 800-63 is organized as a suite of documents as follows:
+These guidelines support the mitigation of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included. 
+
+These guidelines do not view LOA in the context of a single ordinal that drive all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies are encouraged to consider IAL, AAL, and FAL as distinct options that do not require parity. However, it is still possible, and in many instances necessary, to carry the same level per IAL, AAL, and FAL.  [Section 5](#sec5) provides options that support agency selection of the appropriate IAL, AAL and FAL combinations while adhering to OMB M-04-04 to protect all government digital services. In addition, this section also provides a mapping of IAL, AAL, and FAL to OMB M-04-04 LOAs for digital services that requires the same levels.
+
+The components of identity assurance detailed in these guidelines are as follows:
+
+* **IAL** refers to the robustness of the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific individual.
+* **AAL** refers to the robustness of the authentication process itself.
+* **FAL** refers to the robustness of the assertion protocol utilized by a federation to communicate authentication and attribute information (if applicable) to a relying party.
+
+As such, SP 800-63 is organized as a suite of documents as follows:
 
 - SP 800-63-3 *Digital Authentication Guideline* - Provides an overview of general authentication frameworks, for using authenticators, credentials, and assertions together in an information system, and possible methods of selecting discrete assurance levels. _This document is informative._
 
@@ -113,51 +121,23 @@ areas:
     authentication if these results are sent to other parties (covered
     in SP 800-63C).
 
-The M-04-04 Level of Assurance is determined by considering the identity assurance level, authenticator assurance level, and federation assurance level achieved for each of the elements listed above, and determining the Level of Assurance satisfied by all elements.
-
-Within a given level of assurance, agencies may employ additional risk mitigation measures and compensating controls. Easing credential assurance level requirements may result in benefits such as
-increasing the size of the enabled customer pool, but agencies shall
-ensure that mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Alternatively, agencies may consider partitioning the
-functionality of a digital authentication enabled application to allow less
+Within a given level of assurance, agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Agencies may consider partitioning the
+functionality of a digital service to allow less
 sensitive functions to be available at a lower level of authentication
 and identity assurance, while more sensitive functions are available
-only at a higher level of assurance.
+only at a higher level of assurance. 
 
-These technical guidelines cover remote digital authentication of
-human users to IT systems over a network. They do not address the
+These technical guidelines do not address the
 authentication of a person who is physically present, for example, for
-access to buildings, although some credentials and authenticators that are used
-remotely may also be used for local authentication. These technical
-guidelines establish requirements that Federal IT systems and service
-providers participating in authentication protocols be authenticated to
-subscribers. However, these guidelines do not specifically address
+access to buildings, even though some authenticators that are used
+remotely may also be used for local authentication. These guidelines do not specifically address
 machine-to-machine (such as router-to-router) authentication, or
-establish specific requirements for issuing authentication credentials
-and authenticators to machines and servers when they are used in
+establish specific requirements for issuing authenticators to machines and servers when they are used in
 authentication protocols with people.
-
-The paradigm of this document suite is that individuals are enrolled, issued one or more authenticators, and
-undergo a registration process in which their identity is bound to the authenticator(s). Higher identity assurance levels require stronger registration procedures. Thereafter, the individuals are remotely authenticated to systems
-and applications over a network, using the authenticator(s) in an authentication
-protocol. The authentication protocol allows an individual to
-demonstrate to a verifier that he or she has possession and control of
-the authenticator(s), in a manner that protects the authenticator secrets from
-compromise by different kinds of attacks. Higher authenticator assurance levels require use of stronger authentication mechanisms, better protocols, and better protection of
-the authenticator(s) and related secrets from attacks.
 
 This document suite focuses on authenticators that are difficult to forge because they contain some type of secret information that is not available to unauthorized parties and that is preferably not used in unrelated contexts. Biometric authentication uses human characteristics that, in some cases, may be available to an attacker. Accordingly, the use of biometrics for authentication is limited to activation of a specific physical authenticator to which it is strongly bound, and the number of consecutive activation failures is limited, beyond which another activation factor or authenticator is required. This document suite also supports the use of biometrics to prevent repudiation of registration, and to verify that the same individual participates in all phases of the registration process.
 
-Knowledge based authentication achieves authentication by testing the
-personal knowledge of the individual against information obtained from
-public databases. As this information is considered private but not
-actually secret, confidence in the identity of an individual can be hard
-to achieve. In addition, the complexity and interdependencies of
-knowledge based authentication systems are difficult to quantify.
-However, knowledge based verification techniques are included as part
-of registration in SP 800-63A.
-
-This document suite identifies minimum technical requirements for remotely
-authenticating users. Agencies may determine based on their risk
+Agencies may determine based on their risk
 analysis that additional measures are appropriate in certain contexts.
 In particular, privacy requirements and legal risks may lead agencies to
 determine that additional authentication measures or other process
@@ -288,7 +268,7 @@ clarifications.
 
 #### 2.2.3. SP 800-63-3
 
-NIST SP 800-63-3 is a substantial update and restructuring of Special Publication 800-63-2. It introduces the concepts of authenticator assurance level, identity assurance level, and federation assurance level to support the growing need for independent treatment of authentication strength and confidence in the claimant's identity (for example, in strong pseudonymous authentication). It also moves from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
+NIST SP 800-63-3 is a substantial update and restructuring of Special Publication 800-63-2. It introduces individual components of digital authentication assurance - authenticator assurance level, identity assurance level, and federation assurance level - to support the growing need for independent treatment of authentication strength and confidence in an individuals claimed identity (for example, in strong pseudonymous authentication). It also moves from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
 
 Other areas of update to SP 800-63-2 include:
 
