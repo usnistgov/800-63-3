@@ -180,7 +180,7 @@ Digital authentication is the process of establishing confidence in an identity 
 
 [4. Digital Authentication Model](#sec4)
 
-[5. A New Approach to Levels of Assurance](#sec5)
+[5. Determining Levels of Assurance](#sec5)
 
 [6. References](#references)
 
