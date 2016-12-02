@@ -159,10 +159,6 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 </div>
 
-### Executive Summary
-
-> Under Construction  
-
 ## Table of Contents  
 
 [1. Purpose](#sec1)
@@ -183,7 +179,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 [9. Privacy Requirements and Considerations](#sec9)
 
-[10. Usability](#sec10)
+[10. Usability Considerations](#sec10)
 
 [11. Assertion Examples](#sec11)
 

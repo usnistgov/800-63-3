@@ -107,7 +107,7 @@ The CSP SHALL NOT proof applicants.  Applicants MAY self-assert zero or more att
 
 ## 4.5. Identity Assurance Level 2
 
-IAL 2 allows for remote or in-person identity proofing.  IAL supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant. A CSP MAY exceed these requirements.
+IAL 2 allows for **remote** or **in-person** identity proofing.  IAL supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant. A CSP MAY exceed these requirements.
 
 A CSP SHOULD implement identity proofing in accordance with [Section 4.5.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.5.2](#antecedent) or [Section 4.5.3](#referee).
 
@@ -218,6 +218,7 @@ Remote proofing SHALL NOT be allowed.
 - The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence.
 - Self-asserted address data SHALL NOT be used for confirmation.
 - A notification of proofing SHALL be sent to the confirmed address of record.
+- The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time. The enrollment code SHALL be valid for a maximum of 7 days.
 
 ### 4.6.7. Biometric Collection
 
