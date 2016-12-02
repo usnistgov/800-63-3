@@ -5,7 +5,6 @@
 # Digital Authentication Guideline
 
 Paul A. Grassi  
-Michael E. Garcia  
 James L. Fenton
 
 {::comment}
