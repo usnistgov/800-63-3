@@ -220,7 +220,7 @@ The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes 
 
 **Federate Attributes:**  
 
-* Pseudonymity is important to stakeholders accessing the service
+* Pseudonymity is required, necessary, feasible, or important to stakeholders accessing the service
 * Access to the service only requires a partial attribute list  
 * Access to the service only requires at least one attribute claim
 * Agency is not the authoritative source or issuing source for required attributes  
