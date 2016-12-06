@@ -213,7 +213,7 @@ RPs should use a back-channel [presentation mechanism](sp800-63c.html#sec6) wher
 
 FAL 2 and higher require the assertion itself to be encrypted such that the intended RP is the only party that can decrypt it. This method not only improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion), but also increases privacy protection by protecting the assertion message itself in addition to having it be passed along authenticated protected channels. RPs that allow front-channel presentation of assertions should require at least FAL 2 to protect the content of the assertion, since the assertion can be seen by the subscriber and handled by the subscriber's browser.
 
-FAL 3 further requires that the subscriber prove possession of a key in addition to the ability to present an assertion or assertion reference. This method allows the RP to more strongly verify the subscriber’s presence through use of a second factor in addition to the assertion, where that second factor is tied to the assertion being presented.
+FAL 3 further requires that the subscriber prove possession of a key in addition to the ability to present an assertion or assertion reference. This method allows the RP to strongly verify the binding of the assertion to the subscriber by means of a key held by the subscriber. This key is referenced in the assertion and represents the subscriber.
 
 Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL 2 and 3 and subscriber keys additionally need to be managed at FAL 3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
 
