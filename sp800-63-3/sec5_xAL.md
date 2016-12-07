@@ -71,10 +71,9 @@ This guideline introduces a model where individual xALs can be selected without 
 | 3 | 2 | 2 | 2
 | 4 | 3 | 3 | 3
 
->	Note: 
+In the above table, note: 
 * LOA2 requirements are now equivalent to LOA3.
 * Higher xALs than specified can always be used.
->
 
 The ability to combine varying xALs offers significant flexibility to agencies, but not all combinations are possible due to the nature of the data collected from an individual and the authenticators to protect that data. [Table 5-2](#63sec5-Table2) details valid combinations of IAL and AAL to ensure personal information remains protected by multi-factor authentication.
 
@@ -89,11 +88,11 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
 
 | | IAL 1 | IAL 2 | IAL 3 |
 |:-:|:-:|:-:|:-:|
-| **AAL 1** | Allowed | **NO** | **NO** |
-| **AAL 2** | Allowed | Allowed | See Note |
+| **AAL 1** | **NO** | **NO** | **NO** |
+| **AAL 2** | Allowed | Allowed | Allowed |
 | **AAL 3** | Allowed | Allowed | Allowed |
 
-> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal information requires protection with multifactor authentication. Therefore, it should not be possible to use an authenticator at a lower assurance level then the IAL. However, depending on the use case, specifically that the transaction that the user authenticates to does not release or manage any personal information, it could be possible for these combinations to exist, though unlikely and not recommended.
+> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal information requires protection with multifactor authentication. Therefore, it should not be possible to use single-factor authentication (AAL 1) to release personally identifiable information from a CSP. However, depending on the use case, in particular when the transaction that the user authenticates to does not release or manage any personal information, it could be possible for authentication to occur at AAL 1, though unlikely and not recommended.
 
  
 ### 5.3. <a name="CYOA"></a>Selecting the Appropriate xAL
