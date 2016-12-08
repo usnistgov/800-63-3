@@ -86,13 +86,14 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
 </div>
 
 
-| | IAL 1 | IAL 2 | IAL 3 |
+| | AAL1 | AAL2 | AAL3 |
 |:-:|:-:|:-:|:-:|
-| **AAL 1** | **NO** | **NO** | **NO** |
-| **AAL 2** | Allowed | Allowed | Allowed |
-| **AAL 3** | Allowed | Allowed | Allowed |
+| **IAL1: Without personal data** | Allowed | Allowed | Allowed |
+| **IAL1: With personal data** | **NO** | Allowed | Allowed |
+| **IAL2** |  **NO** | Allowed | Allowed |
+| **IAL3** |  **NO** | Allowed | Allowed |
 
-> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal information requires protection with multifactor authentication. Therefore, it should not be possible to use single-factor authentication (AAL 1) to release personally identifiable information from a CSP. However, depending on the use case, in particular when the transaction that the user authenticates to does not release or manage any personal information, it could be possible for authentication to occur at AAL 1, though unlikely and not recommended.
+> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal data requires protection with multifactor authentication, even if the personal data is self-asserted and not validated. However, depending on the use case, in particular when the transaction that the user authenticates to does not make personal data accessible, it could be possible for authentication to occur at AAL 1, though unlikely and not recommended. In addition, it may be possible at IAL1 to self-assert information that is not personal, in which case AAL1 is acceptable.
 
  
 ### 5.3. <a name="CYOA"></a>Selecting the Appropriate xAL
