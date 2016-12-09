@@ -44,7 +44,7 @@ However, [Table 4-2](#63bSec4-Table2) shows the expanded set of AALs that are al
 | 3 | 2 or 3 
 | 4 | 3 
 
-At IAL1, it is possible that self-asserted personal data is collected and made available by the digital service.  Any personal data, self-asserted or validated, requires MFA; therefore agencies SHALL select a minimum of AAL2 when self-asserted personal data, collected at IAL1, is made available online.
+At IAL1, it is possible that self-asserted personal data is collected and made available by the digital service.  Any personal data, self-asserted or validated, requires multi-factor authentication; therefore agencies SHALL select a minimum of AAL2 when self-asserted personal data, collected at IAL1, is made available online.
 
 ### 4.1. Authenticator Assurance Level 1
 
