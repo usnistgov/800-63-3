@@ -50,7 +50,7 @@ It is permissible for the CSP to collect additional information in the process o
 | 3 | 2 |
 | 4 | 3 |
 
-However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding IAL based on the assessed M-04-04 LOA. Agencies SHOULD consider the privacy risks of stronger identity proofing and SHOULD NOT select an IAL that is higher than necessary considering the sensitivity of the business purpose.
+However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding IAL based on the impact of a proofing failure. Agencies SHALL consider the privacy risks of stronger identity proofing and SHALL NOT select an IAL that is higher than necessary for the business purpose of the digital service.
 
 <a name="63aSec4-Table2"></a>
 
