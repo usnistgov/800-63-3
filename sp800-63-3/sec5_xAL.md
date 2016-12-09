@@ -93,7 +93,7 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
 | **IAL2** |  **NO** | Allowed | Allowed |
 | **IAL3** |  **NO** | Allowed | Allowed |
 
-> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal data requires protection with multifactor authentication, even if the personal data is self-asserted and not validated. However, depending on the use case, in particular when the transaction that the user authenticates to does not make personal data accessible, it could be possible for authentication to occur at AAL 1, though unlikely and not recommended. In addition, it may be possible at IAL1 to self-assert information that is not personal, in which case AAL1 is acceptable.
+> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal data requires protection with multifactor authentication, even if the personal data is self-asserted and not validated. When the transaction does not make personal data accessible, authentication may occur at AAL 1, although stronger authentication is recommended. In addition, it may be possible at IAL1 to self-assert information that is not personal, in which case AAL1 is acceptable.
 
  
 ### 5.3. <a name="CYOA"></a>Selecting the Appropriate xAL

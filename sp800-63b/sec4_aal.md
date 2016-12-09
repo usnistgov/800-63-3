@@ -26,7 +26,7 @@ FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revis
 | 3 |  2 or 3 |
 | 4 |  3 |
 
-However, [Table 4-2](#63bSec4-Table2) shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the assessed M-04-04 LOA.
+However, [Table 4-2](#63bSec4-Table2) shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the impact of an authentication failure. 
 
 <a name="63bSec4-Table2"></a>
 
@@ -38,11 +38,13 @@ However, [Table 4-2](#63bSec4-Table2) shows the expanded set of AALs that are al
 
 | M-04-04 Level of Assurance | Authenticator Assurance Level
 |:------------------:|:-----------------------------:
-| 1 | 1, 2 or 3 
+| 1; without making personal data available | 1, 2 or 3 
+| 1; making personal data available | 2 or 3
 | 2 | 2 or 3
 | 3 | 2 or 3 
 | 4 | 3 
 
+At IAL1, it is possible that self-asserted personal data is collected and made available by the digital service.  Any personal data, self-asserted or validated, requires MFA; therefore agencies SHALL select a minimum of AAL2 when self-asserted personal data, collected at IAL1, is made available online.
 
 ### 4.1. Authenticator Assurance Level 1
 
