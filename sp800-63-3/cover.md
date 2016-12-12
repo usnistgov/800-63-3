@@ -153,7 +153,9 @@ passwords; PKI.
 
 </div>
 
-The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
+The authors gratefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all documents in the suite of SP 800-63-3 guidelines.
+
+In addition, the authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 
 <div class="text-center" markdown="1">
 

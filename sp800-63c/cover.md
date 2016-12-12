@@ -12,7 +12,8 @@ Justin P. Richer
 Sarah K. Squire  
 James L. Fenton  
 Naomi B. Lefkovitz  
-Jamie M. Danker  
+Jamie M. Danker
+Ellen M. Nadeau    
 
 {::comment}
 
@@ -56,7 +57,11 @@ Jamie M. Danker
 *National Protection and Programs Directorate  
 Department of Homeland Security*  
 
+Usability Authors:  
 
+Ellen M. Nadeau  
+*Applied Cybersecurity Division  
+Information Technology Laboratory*  
 
 {::comment}
 
