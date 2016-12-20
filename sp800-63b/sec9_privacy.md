@@ -9,9 +9,11 @@
 ### 9.1. Privacy Risk Assessment	
 
 Subsections 4.1.5, 4.2.5, and 4.3.5 require the CSP to conduct a privacy risk assessment for records retention. Such a privacy risk assessment would include:
-1. The likelihood that the records retention could create a problem for the subscriber such as invasiveness or unauthorized access to the information.
+
+1. The likelihood that the records retention could create a problem for the subscriber such as invasiveness or unauthorized access to the information.
 2. The impact if a problem did occur.
-CSPs should be able to reasonably justify any response they take to identified privacy risks, including accepting the risk, mitigating the risk; and sharing the risk. The use of subscriber consent is a form of sharing the risk, and therefore appropriate for use only when a subscriber could reasonably be expected to have the capacity to assess and accept the shared risk
+
+CSPs should be able to reasonably justify any response they take to identified privacy risks, including accepting the risk, mitigating the risk; and sharing the risk. The use of subscriber consent is a form of sharing the risk, and therefore appropriate for use only when a subscriber could reasonably be expected to have the capacity to assess and accept the shared risk
 
 ### 9.2. Privacy Controls
 
@@ -19,7 +21,9 @@ Subsections 4.1.5, 4.2.5, and 4.3.5 require the CSP to conduct a privacy risk as
 
 ### 9.3. Use Limitation and Consent
 
-[Section 4.4](#aal_privacy) does not permit the CSP to use information about authenticators that is collected and maintained in the authentication process for any purpose other than authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. To limit the potential for false choices, the CSP cannot make acceptance by the subscriber of additional uses a condition of providing identity proofing services. Use of consent can transfer some or all of the privacy risk to the subscriber, therefore if the subscriber could not reasonably be expected to have the capacity to assess and accept the risk, the use of consent in such situations is not an appropriate mechanism. See SP 800-63A Section 8.3 for considerations about effective notices. CSPs can use techniques such as data tagging to enable the original use policies (or any consented to amendments) to follow the attributes and support policy accountability. Consult your Senior Agency Official for Privacy if there are questions about whether proposed agency uses fall within the scope of these uses. 
+[Section 4.4](#aal_privacy) does not permit the CSP to use information about authenticators that is collected and maintained in the authentication process for any purpose other than authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. To limit the potential for false choices, the CSP cannot make acceptance by the subscriber of additional uses a condition of providing identity proofing services. Use of consent can transfer some or all of the privacy risk to the subscriber, therefore if the subscriber could not reasonably be expected to have the capacity to assess and accept the risk, the use of consent in such situations is not an appropriate mechanism. See SP 800-63A Section 8.3 for considerations about effective notices.
+
+CSPs can use techniques such as data tagging to enable the original use policies (or any consented to amendments) to follow the attributes and support policy accountability. Consult your Senior Agency Official for Privacy if there are questions about whether proposed agency uses fall within the scope of these uses. 
 
 ### 9.4. Agency Specific Privacy Compliance 
 
