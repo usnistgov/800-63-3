@@ -4,51 +4,35 @@
 
 ## 1. <a name="purpose"></a>Purpose
 
-_Sections 1 - 5 are informative._
-
 This recommendation and its companion documents, SP 800-63A, SP 800-63B, and SP 800-63C, provide technical guidelines to agencies for the implementation of digital authentication.
 
 <a name="sec2"></a>
 
 ## 2. <a name="intro"></a>Introduction
 
-Digital authentication is the process of
-establishing confidence in user identities presented to
-an information system. Digital authentication presents a technical challenge
-when this process involves the remote authentication of individual
-people over a network. This recommendation provides technical guidelines
-to agencies to allow an individual person to remotely authenticate
-his/her identity to a Federal Information Technology (IT) system. This
-recommendation also provides guidelines for credential service providers
-(CSPs), verifiers, and relying parties (RPs).
+>**MG: This intro feels really long before getting into 2.1. Consider breaking it up somwehere, maybe after the bulletted list, and then moving the last paragraph before 2.1 up, then separating the rest. I took a shot at it.**
 
-This document suite describes authenticator assurance and identity assurance as separate metrics, and provides a mapping between these metrics and the overall level of assurance.
-These technical guidelines supplement OMB guidance, *E-Authentication
-Guidance for Federal Agencies* \[[OMB M-04-04](#M-04-04)\] and
-supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of
-assurance, Levels 1 to 4, in terms of the consequences of authentication
-errors and misuse of credentials. Level 1 is the lowest assurance level
-and Level 4 is the highest. The guidance defines the required level of
-assurance in terms of the likely consequences of an
-authentication error. As the consequences of an authentication error
-become more serious, the required level of assurance increases. The OMB
-guidance provides agencies with criteria for determining the level of
-assurance required for specific digital transactions
-and systems, based on the risks and their likelihood of occurrence.
+Digital authentication is the process of determining the validity of one or more credentials used to claim a digital identity. Digital authentication presents a technical challenge when this process involves the remote authentication of subjects over an open network. This recommendation provides technical guidelines
+to agencies to allow a subject to remotely authenticate their identity to a Federal system. This recommendation also provides guidelines for credential service providers (CSPs), verifiers, and relying parties (RPs).
+
+This document suite describes authenticator assurance and identity assurance as separate ordinal measurements, and provides a mapping between these metrics and the overall level of assurance. These technical guidelines supplement OMB guidance, *E-Authentication Guidance for Federal Agencies* \[[OMB M-04-04](#M-04-04)\] and supersede NIST SP 800-63-1 and SP 800-63-2. OMB M-04-04 defines four levels of assurance, Levels 1 to 4, in terms of the consequences of authentication errors and misuse of credentials. Level 1 is the lowest assurance level and Level 4 is the highest. The guidance defines the required level of
+assurance in terms of the potential consequences of an authentication error. As the consequences of an authentication error become more severe, the required level of assurance increases. The OMB guidance provides agencies with criteria for determining the level of assurance required for specific digital transactions and systems, based on the likelihood of occurrence and potential impact should they occur.
 
 These guidelines support the mitigation of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included. 
 
-These guidelines do not view LOA in the context of a single ordinal that drive all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies are encouraged to consider IAL, AAL, and FAL as distinct options that do not require parity. However, it is still possible, and in many instances necessary, to carry the same level per IAL, AAL, and FAL.  [Section 5](#sec5) provides options that support agency selection of the appropriate IAL, AAL and FAL combinations while adhering to OMB M-04-04 to protect all government digital services. In addition, this section also provides a mapping of IAL, AAL, and FAL to OMB M-04-04 LOAs for digital services that requires the same levels.
+These guidelines do not view LOA in the context of a single ordinal that drive all implementation specific requirements.  Rather, by combining appropriate risk management for business, security, and privacy side-by-side with mission need, agencies are encouraged to consider IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system. [Section 5](#sec5) provides options that support agency selection of the appropriate IAL, AAL and FAL combinations while adhering to OMB M-04-04 to protect government digital services. In addition, this section also provides a mapping of IAL, AAL, and FAL to OMB M-04-04 LOAs for digital services that requires the same levels.
 
 The components of identity assurance detailed in these guidelines are as follows:
 
-* **IAL** refers to the robustness of the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific individual.
+* **IAL** refers to the robustness of the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific subject.
 * **AAL** refers to the robustness of the authentication process itself.
 * **FAL** refers to the robustness of the assertion protocol utilized by a federation to communicate authentication and attribute information (if applicable) to a relying party.
 
 As such, SP 800-63 is organized as a suite of documents as follows:
 
-- SP 800-63-3 *Digital Authentication Guideline* - Provides an overview of general authentication frameworks, for using authenticators, credentials, and assertions together in an information system, and possible methods of selecting discrete assurance levels. _This document is informative._
+>**MG: update to match executive summary changes**
+
+- SP 800-63-3 *Digital Authentication Guideline* - Provides an overview of general authentication frameworks for using authenticators, credentials, and assertions together in a system, and possible methods of selecting discrete assurance levels. _This document is informative._
 
 - SP 800-63A *Enrollment and Identity Proofing* - Provides guidelines on processes by which an individual is enrolled in an identity system and identity proofed. _This document contains both normative and informative material._
 
@@ -56,16 +40,18 @@ As such, SP 800-63 is organized as a suite of documents as follows:
 
 - SP 800-63C *Federation and Assertions* - Provides guidelines on the use of federated identity and assertions to convey the results of authentication processes to a relying party. _This document contains both normative and informative material._
 
-It is anticipated that SP 800-63A, SP 800-63B, and SP 800-63C will be revised asynchronously with each other and with this document. The latest revision of each should be used.
+NIST anticipates that SP 800-63A, SP 800-63B, and SP 800-63C will be revised asynchronously with each other and with this document. At any given time, the most recent revision of each should be used (e.g., if at a time in the future SP 800-63A-1 and SP 800-63B-2 are the most recent revisions of each document, they should be used together even though the revision numbers do not match).
 
 OMB guidance outlines a five-step process by which agencies should meet
 their authentication assurance requirements:
+
+>**MG: call out to A-130?**
 
 1.  *Conduct a risk assessment of the government system* – No specific
     risk assessment methodology is prescribed for this purpose;
     however, NIST Special
     Publication (SP) 800-30 [[SP 800-30]](#SP800-30) offers a general
-    process for risk assessment and risk mitigation, and NIST Special Publication (SP) 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on the selection and specification of security controls for an information system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of an information system.
+    process for risk assessment and risk mitigation, and NIST Special Publication (SP) 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
 
 2.  *Map identified risks to the appropriate assurance level* – Section
     2.2 of OMB M-04-04 provides the guidance necessary for agencies to
@@ -90,9 +76,9 @@ their authentication assurance requirements:
     part of a security authorization process as described in NIST SP
     800-37, Revision 1 [[SP 800-37]](#SP800-37).
 
-5.  *Periodically reassess the information system to determine
+5.  *Periodically reassess the system to determine
     technology refresh requirements* – The agency shall periodically
-    reassess the information system to ensure that the identity
+    reassess the system to ensure that the identity
     authentication requirements continue to be satisfied. NIST SP
     800-37, Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on
     the frequency, depth and breadth of periodic reassessments. As with
@@ -109,10 +95,11 @@ areas:
 
 -   Credential lifecycle and management mechanisms (covered in SP 800-63A)
 
--   Authenticators (typically a cryptographic key or password) for
-    authentication (covered in SP 800-63B)
+>**MG: It's confusing that we have lifecycle in A here but not in the title of A, while we have it in the text here for B and in title of B. Do we need to update the title for A?**
+
+-   Authenticators (covered in SP 800-63B)
     
--	Authenticator lifecycle and management mechanisms (covered in SP 800-63B)
+-	 Authenticator lifecycle and management mechanisms (covered in SP 800-63B)
 
 -   Protocols used to support the authentication mechanism between the
     claimant and the verifier (covered in SP 800-63B)
@@ -121,21 +108,12 @@ areas:
     authentication if these results are sent to other parties (covered
     in SP 800-63C).
 
+###2.1 Considerations, Other Requirements, and Flexibilities
 Within a given level of assurance, agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Agencies may consider partitioning the
 functionality of a digital service to allow less
 sensitive functions to be available at a lower level of authentication
 and identity assurance, while more sensitive functions are available
-only at a higher level of assurance. 
-
-These technical guidelines do not address the
-authentication of a person who is physically present, for example, for
-access to buildings, even though some authenticators that are used
-remotely may also be used for local authentication. These guidelines do not specifically address
-machine-to-machine (such as router-to-router) authentication, or
-establish specific requirements for issuing authenticators to machines and servers when they are used in
-authentication protocols with people.
-
-This document suite focuses on authenticators that are difficult to forge because they contain some type of secret information that is not available to unauthorized parties and that is preferably not used in unrelated contexts. Biometric authentication uses human characteristics that, in some cases, may be available to an attacker. Accordingly, the use of biometrics for authentication is limited to activation of a specific physical authenticator to which it is strongly bound, and the number of consecutive activation failures is limited, beyond which another activation factor or authenticator is required. This document suite also supports the use of biometrics to prevent repudiation of registration, and to verify that the same individual participates in all phases of the registration process.
+only at a higher level of assurance.
 
 Agencies may determine based on their risk
 analysis that additional measures are appropriate in certain contexts.
@@ -156,16 +134,28 @@ entitled the *Federal Information Security Management Act*
 \[[FISMA](#FISMA)\], and related NIST standards and guidelines.
 FISMA directs Federal agencies to develop, document, and implement
 agency-wide programs to provide information security for the information
-and information systems that support the operations and assets of the
+and systems that support the operations and assets of the
 agency. This includes the security authorization of IT systems that support
 digital authentication. It is recommended that non-Federal entities
 implementing these guidelines follow equivalent standards of security
 management, certification and accreditation to ensure the secure
 operations of their digital systems.
 
+### 2.2 A Few Limitations
+
+These technical guidelines do not address the
+authentication of a person who is physically present, for example, for
+access to buildings, even though some authenticators that are used
+remotely may also be used for local authentication. These guidelines do not specifically address
+machine-to-machine (such as router-to-router) authentication, or
+establish specific requirements for issuing authenticators to machines and servers when they are used in
+authentication protocols with people.
+
+This document suite focuses on authenticators that are difficult to forge because they contain some type of secret information that is not available to unauthorized parties and that is preferably not used in unrelated contexts. Biometric authentication uses human characteristics that, in some cases, may be available to an attacker. Accordingly, the use of biometrics for authentication is limited to activation of a specific physical authenticator to which it is strongly bound, and the number of consecutive activation failures is limited, beyond which another activation factor or authenticator is required. This document suite also supports the use of biometrics to prevent repudiation of registration, and to verify that the same individual participates in all phases of the registration process.
+
 ### 2.1. How to Use this Suite of Special Publications
 
-The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since initial versions of Special Publication 800-63 were released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of special publications under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the guidelines in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is preferred over use of a standalone CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) also applies.
+The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since first version of Special Publication 800-63 was released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of special publications under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the guidelines in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is generally preferred over use of an RP acting as its own CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) also applies.
 
 ### 2.2. Relationship to Other Standards and Guidelines
 
@@ -173,9 +163,11 @@ This document has been written to satisfy the needs of federal agencies. However
 
 <a name="63Sec2-Table1"></a>
 
+>**MG: added informative to the title of table 2-1. Does that help keep folks from over-focusing on it?**
+
 <div class="text-center" markdown="1">
 
-**Table 2-1.  800-63 Mapping to Other Standards and Guidelines**
+**Table 2-1.  800-63 Infomative Mapping to Other Standards and Guidelines**
 
 </div>
 

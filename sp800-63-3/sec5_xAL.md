@@ -11,10 +11,10 @@ OMB [[M-04-04]](#M-04-04) requires agencies to select the transaction or system 
 
 Per M-04-04, once an LOA is selected, the agency is required to follow the identity proofing, credentialing, and federation technical requirements specified by NIST at that level. For example, if the impact of an authentication error results in an application assessed at LOA 3, the agency must identity proof and provide authenticators that meet the requirements for LOA 3.
 
-However, in today's digital services, combining proofing and authenticator requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden upon the implementing entity. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. An authentication error is not a singleton that drives all requirements. This guideline recommends that agencies meet M-04-04 requirements by separately evaluating the impact that could result from (1) a true authentication error (the wrong individual using someone else’s credential) and (2) an identity proofing error. From the perspective of an identity proofing failure, there are two dimensions of potential risk:
+However, in today's digital services, combining proofing and authenticator requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden upon the implementing entity. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. An authentication error is not a singleton that drives all requirements. This guideline recommends that agencies meet M-04-04 requirements by separately evaluating the impact that could result from (1) a true authentication error (a false claimant using credential that are not rightfully theirs) and (2) an identity proofing error. From the perspective of an identity proofing failure, there are two dimensions of potential risk:
 
-*  The impact of providing a service to the wrong person (e.g. an attacker successfully proofs as someone else)
-*  The impact of excessive identity proofing (i.e. collecting and securely storing more information about a person than is required to successfully provide the digital service.)
+*  The impact of providing a service to the wrong subject (e.g., an attacker successfully proofs as someone else)
+*  The impact of excessive identity proofing (i.e., collecting and securely storing more information about a person than is required to successfully provide the digital service.)
 
 As such, agencies should assess the risk of authentication and proofing errors separately to determine the appropriate technical solutions that should be applied to their system. 
 
@@ -31,14 +31,14 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 | Identity Assurance Level |
 |:----------------------|
-| **IAL1** - At this level, attributes provided in conjunction with the authentication process, if any, are self-asserted.|
+| **IAL1** - At this level, attributes provided in conjunction with the authentication process, if any, are self-asserted or should be treated as self-asserted.|
 | **IAL2** - IAL 2 introduces the need for either remote or in-person identity proofing. IAL 2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
 | **IAL3** - At IAL 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
 
 |Authenticator Assurance Level|
 |:----------------------|
-|**AAL1** - AAL 1 provides some assurance that the claimant controls an authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove through a secure authentication protocol that he or she possesses and controls an authenticator.|
-| **AAL2** – AAL 2 provides high confidence that the claimant controls authenticator(s) registered to a subscriber. Two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.|
+|**AAL1** - AAL 1 provides some assurance that the claimant controls an authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator(s) through a secure authentication protocol.|
+| **AAL2** – AAL 2 provides high confidence that the claimant controls authenticator(s) registered to a subscriber. Proof of possession and control of two different authentication factors are required through a secure autheticatoni protocol. Approved cryptographic techniques are required at AAL 2 and above.|
 |**AAL3** – AAL 3 provides very high confidence that the claimant controls authenticator(s) registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides verifier impersonation resistance is required.|
 
 |Federation Assurance Level|
@@ -54,7 +54,7 @@ A risk assessment to determine each xAL is recommended. [Section 5.3](#CYOA) pro
 
 ### 5.2. Mapping xAL to M-04-04 Levels of Assurance 
 
-This guideline introduces a model where individual xALs can be selected without parity to each other to protect a digital service, as opposed to applying a single LOA where all xALs are equal. While options exist to select varying xALs for a system in many instances the same level will be chosen for all xALs. This provides an opportunity to directly map to the LOAs specified in M-04-04. [Table 5-1](#63sec5-Table1) shows strict adherence to M-04-04 by mapping the corresponding Identity, Authenticator, and Federation Assurance Levels to LOA.
+This guideline introduces a model where individual xALs can be selected without requiring parity to each other. While options exist to select varying xALs for a system, in many instances the same level will be chosen for all xALs. This provides an opportunity to directly map to the LOAs specified in M-04-04. [Table 5-1](#63sec5-Table1) shows strict adherence to M-04-04 by mapping the corresponding Identity, Authenticator, and Federation Assurance Levels to LOA.
 
 <a name="63sec5-Table1"></a>
 
@@ -75,6 +75,8 @@ In the above table, note:
 * LOA2 requirements are now equivalent to LOA3.
 * Higher xALs than specified can always be used.
 
+>**MG: If we're worried about over proofing where it isn't necessary, do we want to say that these are "minimum" and that "higher xALs" can always be used? Doesn't that run the risk of saying "you may be pseudonymous but you may not."**
+
 The ability to combine varying xALs offers significant flexibility to agencies, but not all combinations are possible due to the nature of the data collected from an individual and the authenticators to protect that data. [Table 5-2](#63sec5-Table2) details valid combinations of IAL and AAL to ensure personal information remains protected by multi-factor authentication.
 
 <a name="63sec5-Table2"></a>
@@ -93,7 +95,7 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
 | **IAL2** |  **NO** | Allowed | Allowed |
 | **IAL3** |  **NO** | Allowed | Allowed |
 
-> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal data requires protection with multifactor authentication, even if the personal data is self-asserted and not validated. When the transaction does not make personal data accessible, authentication may occur at AAL 1, although stronger authentication is recommended. In addition, it may be possible at IAL1 to self-assert information that is not personal, in which case AAL1 is acceptable.
+> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal data requires protection with multifactor authentication, even if the personal data is self-asserted and not validated. When the transaction does not make personal data accessible, authentication may occur at AAL 1, although providing and option for the user to choose stronger authentication is recommended. In addition, it may be possible at IAL1 to self-assert information that is not personal, in which case AAL1 is acceptable.
 
  
 ### 5.3. <a name="CYOA"></a>Selecting the Appropriate xAL
@@ -110,11 +112,9 @@ Separating IAL and AAL also works for traditional M-04-04 LOA use cases, such as
 
 #### 5.3.1. Business Process vs. Online Transaction
 
-An online transaction may not be equivalent to a complete business process that requires offline processing, or online processing in a completely segmented system. In selecting the appropriate assurance levels, the agency should assess the risk associated with online transactions they are offering via the digital service, not the entire business process associated with the provided benefit or service. For example, in an online survey, sensitive personally identifiable information may be collected, but it is never made available online to the person after the information is submitted. In this instance, it is important for the information to be carefully protected in backend systems, but there is no reason to identity proof or even authenticate the user providing the information. The online transaction is solely a submission of the data only. The entire business process may require a significant amount of data validation, without ever needing to know if the correct person submitted the correct information regarding their family. In this scenario, there is no need for any xAL.
+An online transaction may not be equivalent to a complete business process that requires offline processing, or online processing in a completely segmented system. In selecting the appropriate assurance levels, the agency should assess the risk associated with online transactions they are offering via the digital service, not the entire business process associated with the provided benefit or service. For example, in an online survey, sensitive personally identifiable information may be collected, but it is never made available online to the person after the information is submitted. In this instance, it is important for the information to be carefully protected in backend systems, but there is no reason to identity proof or even authenticate the user providing the information. The online transaction is solely a submission of the data. The entire business process may require a significant amount of data validation, without ever needing to know if the correct person submitted the information. In this scenario, there is no need for any identity proofing nor authentication.
 
-Another example where the assessed risk could differ if the agency evaluated the entire business process rather than the online transaction requirements, is a digital service that accepts resumes to apply for open job postings. In this use case, the digital service allows any individual to submit a resume on behalf of anyone else, and in subsequent visits to the site, access the resume for various purposes. Since the resume information is provided in later sessions, and is considered personally identifiable information, the agency must select an AAL that requires multi-factor authentication (MFA). In this case, the requirements of [[EO 13681]](#eo13681) apply, driving the AAL to be at least level 2. However, the identity proofing requirements remain unclear. The entire business process of examining a resume and ultimately interviewing a person requires a significant amount of identity proofing. The agency needs a high level of confidence that the job applicant/interviewee is in fact the subject of the resume submitted online if a decision to hire is made. Yet this level of proofing is not required to submit the resume online. Identity proofing is not required to complete the digital transaction successfully. The resume could be submitted by the applicant, but may also be submitted by a surrogate. Identity proofing the submitter would create more risk than required in the online system as excess personal information would be collected, such as from the surrogate, when no such information is needed. Therefore, the most appropriate IAL selection would be 1. There is no need to identity proof the user to successfully complete the online transaction, nor is there any potential negative impact of offering the online transaction if a proofing failure occurred. Yet, there would be significant impact if the entire business process failed to correctly identity proof the person - a job may be offered to a fraudulent applicant - but that risk should not be applied holistically to the online system via a higher IAL.
-
-> In this use case, it is assumed the system allows surrogates. If the use case is that the only person that can submit is the actual subject of the resume, then identity proofing requirements for the online transaction would be significantly different.
+Another example where the assessed risk could differ if the agency evaluated the entire business process rather than the online transaction requirements is a digital service that accepts resumes to apply for open job postings. In this use case, the digital service allows any individual to submit a resume on behalf of anyone else, and in subsequent visits to the site, access the resume for various purposes. Since the resume information is provided in later sessions, and is likely to contain personally identifiable information, the agency must select an AAL that requires MFA. In this case, the requirements of [EO 13681](#eo13681) apply and the application must provide at least AAL 2. However, the identity proofing requirements remain unclear. The entire business process of examining a resume and ultimately hiring and onboarding a person requires a significant amount of identity proofing. The agency needs a high level of confidence that the job applicant is in fact the subject of the resume submitted online if a decision to hire is made. Yet this level of proofing is not required to submit the resume online. Identity proofing is not required to complete the digital transaction successfully. Identity proofing the submitter would create more risk than required in the online system as excess personal information would be collected when no such information is needed for the portion of the hiring process served by the digital job application portal. Therefore, the most appropriate IAL selection would be 1. There is no need to identity proof the user to successfully complete the online transaction. While, there would be significant impact if the entire business process failed to correctly identity proof the person - a job may be offered to a fraudulent applicant - the requirment for identity proofing later in the process need not be applied to the online system.
  
 #### <a name="AAL_CYOA"></a> 5.3.2. Selecting Authenticator Assurance Level
 
@@ -141,7 +141,7 @@ The AAL selection does not mean the digital service provider will need to issue 
     <td><img src="sp800-63-3/media/aal-step2.png" alt="AAL Step 2"/></td>
   </tr>
   <tr>
-   <td><a href="#EO13681"> EO 13681</a> requires MFA when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point. That said, personal information release at all AALs should be considered when performing the risk assessment. An important point at this step is that the collection of personal information, if not made available online, does not need to be validated or verified to require an AAL of 2 or higher. Release of even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. As such, self-asserted data must be protected appropriately.</td> 
+   <td><a href="#EO13681"> EO 13681</a> requires MFA when any personal information is made accessible online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point. That said, personal information release at all AALs should be considered when performing the risk assessment. An important point at this step is that the collection of personal information, if not made available online, does not need to be validated or verified to require an AAL of 2 or higher. Release of even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. As such, self-asserted data must be protected appropriately. To emphasize this point, the submission of personal information does not necessarily trigger AAL 2 or higher; a requirement of AAL 2 or higher is triggered by the presentation of personal information that was not self-asserted in that session.</td> 
   </tr>
   
   </table>
@@ -174,7 +174,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step2.png" alt="IAL Step 2"/></td>
   </tr>
   <tr>
-   <td>If personal information is needed, the relying party needs to determine if validated and verified attributes are required, or if self-asserted attributes are acceptable. If even a single validated and verified attribute is needed, then the provider will need to accept attributes that have been IAL2 or 3 proofed. Again, the selection of IAL can be short circuited to IAL1 if the agency can deliver the digital service with self-asserted attributes only.</td> 
+   <td>If personal information is needed, the relying party needs to determine if validated and verified attributes are required, or if self-asserted attributes are acceptable. If even a single validated and verified attribute is needed, then the provider will need to accept attributes that have been IAL 2 or 3 proofed. Again, the selection of IAL can be short circuited to IAL 1 if the agency can deliver the digital service with self-asserted attributes only.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/ial-step3.png" alt="IAL Step 3"/></td>
@@ -186,7 +186,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step4.png" alt="IAL Step 4"/></td>
   </tr>
   <tr>
-   <td>Step 4 is intended to determine if the personal information required by the agency will ultimately resolve to a unique identity. In other words, the agency needs to know the full identity of the individual accessing the digital service, and pseudonymous access, even with a few validated and verified attributes, is not possible. If the agency needs to uniquely identify the individual, the process can end. However, the agency should consider if Step 5 is of value to them, as the acceptance of claims will reduce exposure to the risk of over collecting and storing more personal information than is necessary.</td> 
+   <td>Step 4 is intended to determine if the personal information required by the agency will ultimately resolve to a unique identity. In other words, the agency needs to know the full identity of the subject accessing the digital service, and pseudonymous access, even with a few validated and verified attributes, is not possible. If the agency needs to uniquely identify the subject, the process can end. However, the agency should consider if Step 5 is of value to them, as the acceptance of claims will reduce exposure to the risk of over collecting and storing more personal information than is necessary.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/ial-step5.png" alt="IAL Step 5"/></td>
@@ -198,7 +198,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step6.png" alt="IAL Step 6"/></td>
   </tr>
   <tr>
-   <td>If the agency has reached Step 6, claims should be used. This step identifies the digital service as an excellent candidate for accepting federated attribute claims from a CSP (or multiple CSP's), since it has been determined that complete attribute values are not needed to deliver the digital service.</td> 
+   <td>If the agency has reached Step 6, claims should be used. This step identifies the digital service as an excellent candidate for accepting federated attribute claims from a CSP (or multiple CSPs), since it has been determined that complete attribute values are not needed to deliver the digital service.</td> 
   </tr>
   </table>
 </div>

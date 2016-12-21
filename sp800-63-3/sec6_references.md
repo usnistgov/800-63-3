@@ -10,6 +10,8 @@
 
 <a name="theNSTIC"></a>[NSTIC] *National Strategy for Trusted Identities in Cyberspace* (April, 2011), available at: <https://www.whitehouse.gov/sites/default/files/rss_viewer/NSTICstrategy_041511.pdf>.
 
+>**MG: redirect to TIG website as we've been informed the wh.gov site will be wiped clean with the new administration.**
+
 <a name="DOJ2000"></a>[DOJ 2000] *Guide to Federal
 Agencies on Implementing Electronic Processes* (November 2000),
 available at: <http://www.usdoj.gov/criminal/cybercrime/ecommerce.html> ***URL not found; obsolete document?***
