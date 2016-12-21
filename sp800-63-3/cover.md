@@ -1,9 +1,10 @@
+>**MG: check all acronym first uses**
+
 <div class="text-right" markdown="1">
 
 # <a name="800-63-3"></a>DRAFT NIST Special Publication 800-63-3
 
-# Digital Authentication Guideline
-
+# Digital Authentication Guidelines
 Paul A. Grassi  
 James L. Fenton
 
@@ -19,11 +20,23 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 </div>
 
+>**MG: It's a bit confusing what we call what. I'll explain my take and that way if I got this wrong, we know we need to clean it up for our stakeholders...**  
+
+>**Guidelines (plural): the entire -63 suite as one thing that provides all the line guiding you need, or in a generic sense anything that refers to more than one requirement (e.g., the guidelines for proofing)--I've changed it where I caught it as singluar but will need a scrub**  
+
+>**Publication (singular): the whole of -63 as a single throw-on-the-desk-with-a-thud compilation. Note we also use recommendation in the abstract, which I don't particularly like.**
+
+>**Documents (plural): the entire -63 suite, each member being a volume (i.e., -3, A, B, C). Singular refers to any one of those volumes. Note we also use "document set" in the abstract and "document suite" in the purpose.**  
+
+>**Volume(s): doesn't appear in this file but we have been using it with stakeholders. If it's intentinoally left out let me know and I'll correct my vernacular.**
+
+>**How'd I do??**
+
 <div class="breaker text-right" markdown="1">
 
 # DRAFT NIST Special Publication 800-63-3
 
-# Digital Authentication Guideline
+# Digital Authentication Guidelines
 
 Paul A. Grassi  
 *Applied Cybersecurity Division  
@@ -49,7 +62,7 @@ U.S. Department of Commerce
 *Penny Pritzker, Secretary*
 
 National Institute of Standards and Technology  
-*Willie E. May, Under Secretary of Commerce for Standards and
+*Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
 
 </div>
@@ -62,7 +75,7 @@ Technology and Director*
 
 </div>
 
-This publication has been developed by NIST in accordance with its statutory responsibilities under the Federal Information Security Modernization Act (FISMA) of 2014, 44 U.S.C. § 3541 et seq., Public Law  (P.L.) 113-283. NIST is responsible for developing information security standards and guidelines, including minimum requirements for federal information systems, but such standards and guidelines shall not apply to national security systems without the express approval of appropriate federal officials exercising policy authority over such systems. This guideline is consistent with the requirements of the Office of Management and Budget (OMB) Circular A-130.
+This publication has been developed by NIST in accordance with its statutory responsibilities under the Federal Information Security Modernization Act (FISMA) of 2014, 44 U.S.C. § 3541 et seq., Public Law  (P.L.) 113-283. NIST is responsible for developing information security standards and guidelines, including minimum requirements for federal systems, but such standards and guidelines shall not apply to national security systems without the express approval of appropriate federal officials exercising policy authority over such systems. This guideline is consistent with the requirements of the Office of Management and Budget (OMB) Circular A-130.
 
 Nothing in this publication should be taken to contradict the standards and guidelines made mandatory and binding on Federal agencies by the Secretary of Commerce under statutory authority. Nor should these guidelines be interpreted as altering or superseding the existing authorities of the Secretary of Commerce, Director of the OMB, or any other Federal official. This publication may be used by nongovernmental organizations on a voluntary basis and is not subject to copyright in the United States. Attribution would, however, be appreciated by NIST.
 
@@ -116,9 +129,9 @@ to advance the development and productive use of information technology.
 ITL’s responsibilities include the development of management,
 administrative, technical, and physical standards and guidelines for the
 cost-effective security and privacy of other than national
-security-related information in Federal information systems. The Special
+security-related information in Federal systems. The Special
 Publication 800-series reports on ITL’s research, guidelines, and
-outreach efforts in information system security, and its collaborative
+outreach efforts in system security, and its collaborative
 activities with industry, government, and academic organizations.
 
 <div class="text-center" markdown="1">
@@ -133,9 +146,9 @@ the development or use of standards outside of this purpose. The
 recommendation covers remote authentication of users (such as employees,
 contractors, or private individuals) interacting with government IT
 systems over open networks. It defines technical requirements for each
-of four levels of assurance in the areas of identity proofing,
+in each of the areas of identity proofing,
 registration, authenticators, management processes, authentication protocols and
-related assertions. This publication supersedes NIST SP 800-63-1 and SP 800-63-2.
+related assertions and maps them to related levels of assertion from the Office of Management and Budget. This publication supersedes NIST SP 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
 
@@ -187,69 +200,79 @@ The terms “SHOULD” and “SHOULD NOT” indicate that among several possibil
 
 The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
 
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
+The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal or, in the negative, the absense of that possibility or capability.
 
 <div class="breaker"/>
 
 ## Executive Summary
 
-Digital authentication is the process of establishing confidence in an identity digitally presented to an information system. Authentication establishes that the individual accessing the digital service is who they claim to be, and that this same individual is in control of the technologies used to authenticate.  It provides reasonable assurances that the person that accessed the service yesterday is the same person accessing the service today, and each subsequent time. Digital authentication presents a technical challenge because this process involves the authentication of individual people over an open network to access digital government services, where multiple opportunities for impersonation and other attacks exist.
+Digital authentication is the process of determining the validity of one or more credentials used to claim a digital identity. Authentication establishes a claimant attempting to access a digital service is, or is appropriately associated with, who they claim to be and is in control of the technologies used to authenticate.  For services in which return visits are applicable, a successful authentication provides reasonable risk-based assurances that the subscriber that is accessing the service today is the same as that which accessed the service yesterday. Digital authentication presents a technical challenge because this process involves the authentication of individual people over an open network to access digital government services, where multiple opportunities for impersonation and other attacks exist.
 
-These technical guidelines supplement OMB guidance, *E-Authentication Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and supersede NIST SP 800-63-1 and SP 800-63-2. The OMB guidance defines the required "level of identity assurance", herein referred to as "level of assurance", or LOA, best suited to avoid an authentication error. As the consequences of a potential authentication errors become more serious, the required level of assurance increases. The OMB guidance provides agencies with possible impacts that could result from the risk of authentication errors for applications and transactions. OMB M-04-04 defines four LOAs, Levels 1 to 4, in terms of the confidence that an agency can attain that an authentication error may or may not occur. Level 1 is the lowest assurance level used primarily for low risk applications, and Level 4 is the highest used for the riskiest of online government digital services.
+These technical guidelines supplement OMB guidance, *E-Authentication Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and supersede NIST SP 800-63-1 and SP 800-63-2. The OMB guidance defines the required "level of identity assurance", herein referred to as "level of assurance", or LOA, best suited to avoid an authentication error. As the consequences of an authentication error become more serious, the required level of assurance increases. The OMB guidance provides agencies with possible impacts that could result from the risk of authentication errors for applications and transactions. OMB M-04-04 defines four LOAs, Levels 1 to 4, in terms of the confidence that an agency can attain that an authentication error may or may not occur. Level 1 is the lowest assurance level and is used primarily for low risk applications, while Level 4 is the highest used for those online government digital services for which risk is highest.
 
 These guidelines support the mitigation of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included. 
 
-These guidelines do not view LOA in the context of a single ordinal that drive all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies are encouraged to consider IAL, AAL, and FAL as distinct options that do not require parity. [Section 5](#sec5) provides options that support agency selection of the appropriate IAL, AAL and FAL combinations while adhering to OMB M-04-04 to protect all government digital services.
+These guidelines do not view LOA in the context of a single ordinal that drive all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies are encouraged to consider IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system. [Section 5](#sec5) provides options that support agency selection of the appropriate IAL, AAL and FAL combinations while adhering to OMB M-04-04 to protect government digital services.
 
 The components of identity assurance detailed in these guidelines are as follows:
 
-* **IAL** refers to the robustness of the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific individual.
+>**MG: I generally think of robustness as being about the ability to properly function even in the event of errors. Is that what we want here, or are we looking for something more like ability to mitigate risk?**
+
+* **IAL** refers to the robustness of the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific claimant.
 * **AAL** refers to the robustness of the authentication process itself.
-* **FAL** refers to the robustness of the assertion protocol utilized by a federation to communicate authentication and attribute information (if applicable) to a relying party.
+* **FAL** refers to the robustness of the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to a relying party.
 
-The separation of these categories provides agencies flexibility in the identity solutions they choose and allows for privacy-enhancing techniques to be a fundamental element of identity systems at any assurance level.  For example, these guidelines support scenarios that will allow an individual to remain pseudonymous even when strong, multifactor authenticators are used.  In addition, these guidelines encourage minimizing the collection of an individual's information by requiring federated identity providers to support a range of options for querying data, such as if a user is older than a certain age rather than querying the entire date of birth. While many agency use cases will require individuals to be fully identified, these guidelines encourage pseudonymous access to government digital services wherever possible.
+The separation of these categories provides agencies flexibility in the identity solutions they choose and increases the ability to include privacy-enhancing techniques as fundamental elements of identity systems at any assurance level.  For example, these guidelines support scenarios that will allow pseudonymous interactions even when strong, multifactor authenticators are used.  In addition, these guidelines encourage minimizing the dissemination of identifying information by requiring federated identity providers to support a range of options for querying data, such as asserting whether an indivdual is older than a certain age rather than querying the entire date of birth. While many agency use cases will require individuals to be fully identified, these guidelines encourage pseudonymous access to government digital services wherever possible.
 
-The market for identity services is componentized, allowing organizations and agencies to employ standards-based, pluggable identity solutions based on mission need.  No longer are identity solutions a monolith, where all functionality is provided by one system or vendor.  As such, SP 800-63 has been split into a suite of documents that stand alone based on the component service an agency requires. These documents may inform, but does not restrict or constrain, the development or use of standards for application outside of the Federal government, such as e-commerce transactions.  
+In today's environment, an organization's identity solution need not be a monolith, where all functionality is provided by one system or vendor. The market for identity services is componentized, allowing organizations and agencies to employ standards-based, pluggable identity solutions based on mission need.   As such, SP 800-63 has been split into a suite of documents that may be used independently or in an integrated fashion depending on the component service(s) an agency requires.  
 
-Each document has adopted verbs that are internationally recognized in standards organizations as normative and requirements-based. For legibility, they are CAPITALIZED throughout the document for ease of identification.  For example, the use of SHALL is used to denote a mandatory requirement, while the use of SHOULD refers to a technique, technology, or process that is recommended but not mandatory.  For more details on the definitions of these terms see the [Requirements Notation and Conventions](#notation) at the beginning of each document.
+Each document has adopted verbs that are internationally recognized in standards organizations as normative and requirements-based. When used in a normative statement in this publication, they are CAPITALIZED for ease of identification.  For example, the use of SHALL is used to denote a mandatory requirement, while the use of SHOULD refers to a technique, technology, or process that is recommended but not mandatory.  For more details on the definitions of these terms see the [Requirements Notation and Conventions](#notation) at the beginning of each document.
+
+These documents may inform, but does not restrict or constrain, the development or use of standards for application outside of the Federal government, such as e-commerce transactions.
 
 These guidelines are organized as follows:
 
-**SP 800-63-3 Digital Authentication Guideline**
+**SP 800-63-3 Digital Authentication Guideline** (This document)
 
-This document provides an overview of general authentication frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document is informative._
+SP 800-63-3 provides an overview of general authentication frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains only informative material._
 
 [**SP 800-63A Enrollment and Identity Proofing**](#800-63a)
 
-NIST SP 800-63-A deals with how an individual can prove their identity and become enrolled as a valid user within an identity system. It provides guidelines on processes by which an individual can enrolled and identity proofed in both remote and in-person scenarios. _This document contains both normative and informative material._
+NIST SP 800-63-A addresses how applicants can prove their identities and become enrolled as valid subjects within an identity system. It provides guidelines for processes by which applicants can both proof and enroll at one of three different levels of risk mitigation in both remote and physically-present scenarios. _This document contains both normative and informative material._
 
-SP 800-63A sets requirements to achieve a given IAL. The three IALs reflect the options agencies may select based on their risk profile and the potential harm caused by an attacker successfully claiming the identity of another individual.  The IALs are as follows:
+SP 800-63A sets requirements to achieve a given IAL. The three IALs reflect the options agencies may select based on their risk profile and the potential harm caused by an attacker making a successful false claim of an identity.  The IALs are as follows:
 
 **IAL 1**:
-At this level, there is no requirement for an applicant's identity to be proven.  Any attributes provided in conjunction with the authentication process are self-asserted.
+At this level, there is no requirement to link the applicant to a specific real-life identity.  Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as self-asserted.
 
 **IAL 2**:
-At IAL 2, the claimed identity is proven with evidence that supports the real-world existence of the claimed identity and identifies and verifies the person to whom the claimed identity belongs.  IAL 2 introduces the need for either remote or in-person identity proofing.  Attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
+At IAL 2, evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity.  IAL 2 introduces the need for either remote or physically-present identity proofing.  Attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
+
+>**We state that -3 is informative, but we have a MAY here (and below). Reasonable given they are definitions, and we may not have to do anything about it, but I wanted to point it out.**
 
 **IAL 3**:
-At Identity Assurance Level 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
+At Identity Assurance Level 3, physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes MAY be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
 
 [**SP 800-63B Authentication and Lifecycle Management**](#800-63b)
 
-Digital authentication is the process of establishing confidence in user identities digitally presented to an information system. The robustness of this confidence is described by a categorization known as the AAL. NIST SP 800-63B addresses how an individual can securely authenticate to a Credential Service Provider (CSP) to access a (or set of) digital service.  _This document contains both normative and informative material._
+For services in which return visits are applicable, a successful authentication provides reasonable risk-based assurances that the subscriber that is accessing the service today is the same as that which accessed the service yesterday. The robustness of this confidence is described by a categorization known as the AAL. NIST SP 800-63B addresses how an individual can securely authenticate to a Credential Service Provider (CSP) to access a digital service or set of digital services.  _This document contains both normative and informative material._
 
-The three AALs reflect the options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of an authenticator and accessing their systems. The AALs are as follows:
+The three AALs define the subsets of options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of an authenticator and accessing agencies' systems. The AALs are as follows:
 
-**AAL 1** - AAL 1 provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove through a secure authentication protocol that he or she possesses and controls the authenticator.
+>**MG: need to consistently use colons or dashes (see IAL descriptions) as well as sentence structure and style (in AAL and FAL we repeat AAL and FAL twice in a row, in IAL we say "at this level" and IAL, and spell it out in the last instance)**
 
-**AAL 2** – AAL 2 provides high confidence that the claimant controls the authenticator registered to a subscriber. Two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.
+**AAL 1** - AAL 1 provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL 1 requires at least single-factor authentication using a wide range of available authentication technologies. Successful authentication requires a secure authentication protocol through which the claimant demonstrates possession and control of the authenticator(s).
 
-**AAL 3** – AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 except that a "hard" cryptographic authenticator that also provides impersonation resistance is required.
+**AAL 2** – AAL 2 provides high confidence that the claimant controls the authenticators registered to a subscriber. In addition to requirements of AAL 1, two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.
+
+>**MG: not sure if the "in addition to AAL 1" clause is true, but I didn't like how we require secure comms in AAL 1 but not in AAL 2. Rather than repeating for all three, I took this approach. Ditto for AAL 3**
+
+**AAL 3** – AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. In addition to requirments for AAL 2, authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires that a "hard" cryptographic authenticator provide impersonation resistance.
 
 [**SP 800-63C Federation and Assertions**](#800-63c)
 
-NIST SP 800-63C provides guidelines on the use of federated identity architectures and assertions to convey the results of authentication processes to an agency application. In addition, this guideline offers privacy enhancing techniques to share information about a valid, authenticated user, as well as describing methods that allow for strong multifactor authentication while the individual remains pseudonymous to the digital service. _This document contains both normative and informative material._
+NIST SP 800-63C provides guidelines on the use of federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, these guidelines offer privacy enhancing techniques to share information about a valid, authenticated subject, as well as describing methods that allow for strong multifactor authentication while the subject remains pseudonymous to the digital service. _This document contains both normative and informative material._
 
 The three FALs reflect the options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of federated transactions. The FALs are as follows:
 
