@@ -163,16 +163,14 @@ The CSP SHALL comply with their respective records retention policies in accorda
 
 ### <a name="aal_privacy"></a>4.4. Privacy Requirements
 
-The CSP SHOULD employ appropriately tailored privacy controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard.
+1.  The CSP SHOULD employ appropriately tailored privacy controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard.
+2. CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. If the use of such information does not fall within uses related to authentication or to comply with law or legal process, the CSP SHALL provide notice and obtain consent from the subscriber. This notice SHOULD follow the same principles as described in Notice and Consent in [SP 800-63A Section 8.2](sp800-63a.html#consent) and SHOULD not be rolled up into a legalistic privacy policy or general terms and conditions. Rather, if there are uses outside the bounds of these explicit purposes, the subscriber SHOULD be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.
+3. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
+	4. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of Personally Identifiable Information (PII) to issue or maintain authenticators triggers the requirements of the *Privacy Act of 1974* [[PrivacyAct]](#PrivacyAct).
+	5. The agency SHALL publish a System of Records Notice to cover such collections, as applicable.
+	6. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the *E-Government Act of 2002* [[E-Gov]](#E-Gov).
+	7. The agency SHALL publish a Privacy Impact Assessment to cover such collection, as applicable.
 
-CSPs SHALL NOT use or disclose information about authenticators for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. Care SHALL be taken to ensure that use of such information is limited to its original purpose for collection. If the use of such information does not fall within uses related to authentication or to comply with law or legal process, the CSP SHALL provide notice and obtain consent from the subscriber.  This notice SHOULD follow the same principles as described in *Notice and Consent* in [SP 800-63A Section 8.2](sp800-63a.html#consent) and SHOULD not be rolled up into a legalistic privacy policy or general terms and conditions. Rather, if there are uses outside the bounds of these explicit purposes, the subscriber SHOULD be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.
-
-Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
-
-1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of Personally Identifiable Information (PII) to issue or maintain authenticators triggers the requirements of the *Privacy Act of 1974* [[PrivacyAct]](#PrivacyAct). 
-* The agency SHALL publish a System of Records Notice to cover such collections, as applicable. 
-* The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the *E-Government Act of 2002* [[E-Gov]](#E-Gov). 
-* The agency SHALL publish a Privacy Impact Assessment to cover such collection, as applicable.
 
 ### 4.5. Summary of Requirements
 
@@ -194,8 +192,10 @@ Requirement | AAL 1 | AAL 2 | AAL 3
 **FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
 **Security controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
+**Privacy controls**|[[SP 800-53]](#SP800-53)(or equivalent)|[[SP 800-53]](#SP800-53) (or equivalent)|[[SP 800-53]](#SP800-53) (or equivalent)
 **MITM resistance** | Required | Required | Required |
 **Verifier impersonation resistance** | Not required | Not required | Required |
+**Verifier compromise resistance** | Not required | Not required | Required |
 
 
 
