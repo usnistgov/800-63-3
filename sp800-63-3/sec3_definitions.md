@@ -4,6 +4,8 @@
 
 ## 3. Definitions and Abbreviations
 
+*This section is informative.*
+
 There is a wide variety of terms used in the area of authentication. While the definitions of many terms are consistent with the earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition for many of these terms, careful attention to how the terms are defined here is warranted.
 
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document suite for additional definitions and abbreviations specific to their content.

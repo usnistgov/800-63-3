@@ -4,11 +4,15 @@
 
 ## 1. <a name="purpose"></a>Purpose
 
+*This section is informative.*
+
 This recommendation and its companion documents, SP 800-63A, SP 800-63B, and SP 800-63C, provide technical guidelines to agencies for the implementation of digital authentication.
 
 <a name="sec2"></a>
 
 ## 2. <a name="intro"></a>Introduction
+
+*This section is informative.*
 
 >**MG: This intro feels really long before getting into 2.1. Consider breaking it up somwehere, maybe after the bulletted list, and then moving the last paragraph before 2.1 up, then separating the rest. I took a shot at it.**
 

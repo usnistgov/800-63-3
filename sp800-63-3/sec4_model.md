@@ -4,6 +4,8 @@
 
 ## 4. Digital Authentication Model
 
+*This section is informative.*
+
 ### <a name="4-1"></a>4.1. Overview 
 
 In accordance with [OMB M-04-04](#M-04-04), digital authentication is the process of establishing confidence in individual identities presented digitally to a system. Systems can use the authenticated identity to determine if that whether a claimant is authorized to perform an online transaction. In most cases, the authentication and transaction take place across an open network such as the Internet; however, in some cases, access to the network may be limited and access control decisions may take this into account.
