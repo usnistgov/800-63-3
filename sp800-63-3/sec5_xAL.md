@@ -33,7 +33,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 | Identity Assurance Level |
 |:----------------------|
-| **IAL1** - At this level, attributes provided in conjunction with the authentication process, if any, are self-asserted or should be treated as self-asserted.|
+| **IAL1** - At this level, attributes, if any, are self-asserted or should be treated as self-asserted.|
 | **IAL2** - IAL 2 introduces the need for either remote or in-person identity proofing. IAL 2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
 | **IAL3** - At IAL 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
 
@@ -73,11 +73,7 @@ This guideline introduces a model where individual xALs can be selected without 
 | 3 | 2 | 2 | 2
 | 4 | 3 | 3 | 3
 
-In the above table, note: 
-* LOA2 requirements are now equivalent to LOA3.
-* Higher xALs than specified can always be used.
-
->**MG: If we're worried about over proofing where it isn't necessary, do we want to say that these are "minimum" and that "higher xALs" can always be used? Doesn't that run the risk of saying "you may be pseudonymous but you may not."**
+> Note: LOA2 requirements are now equivalent to LOA3.
 
 The ability to combine varying xALs offers significant flexibility to agencies, but not all combinations are possible due to the nature of the data collected from an individual and the authenticators to protect that data. [Table 5-2](#63sec5-Table2) details valid combinations of IAL and AAL to ensure personal information remains protected by multi-factor authentication.
 
