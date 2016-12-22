@@ -222,7 +222,7 @@ These guidelines are organized as follows:
 
 **SP 800-63-3 Digital Identity Guidelines** (This document)
 
-SP 800-63-3 provides an overview of general authentication frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains only informative material._
+SP 800-63-3 provides an overview of general identity frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains only informative material._
 
 [**SP 800-63A Enrollment and Identity Proofing**](#800-63a)
 
