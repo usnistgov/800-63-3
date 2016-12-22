@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 5. Determining Levels of Assurance
+## 5. Determining IAL, AAL, and FAL
 
 *This section is informative.*
 

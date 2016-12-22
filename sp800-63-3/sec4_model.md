@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 4. Digital Authentication Model
+## 4. Digital Identity Model
 
 *This section is informative.*
 
