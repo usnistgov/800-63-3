@@ -117,12 +117,8 @@ In particular, privacy requirements and legal risks may lead agencies to
 determine that additional authentication measures or other process
 safeguards are appropriate. When developing digital authentication processes
 and systems, agencies should consult *OMB Guidance for Implementing the
-Privacy Provisions of the E-Government Act of 2002* [[M-03-22]](#M-03-22). See the *Guide to Federal Agencies on
-Implementing Electronic Processes* [[DOJ 2000]](#DOJ2000) for
-additional information on legal risks, especially those that are related
-to the need to satisfy legal standards of proof and prevent repudiation,
-as well as *Use of Electronic Signatures in Federal Organization
-Transactions* [[ESIG]](#ESIG).
+Privacy Provisions of the E-Government Act of 2002* [[M-03-22]](#M-03-22). See the *Use of Electronic Signatures in Federal Organization
+Transactions* [[ESIG]](#ESIG) for additional information on legal risks, especially those that are related to the need to satisfy legal standards of proof and prevent repudiation.
 
 Additionally, Federal agencies implementing these guidelines should
 adhere to the requirements of Title III of the E-Government Act,

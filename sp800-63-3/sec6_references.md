@@ -10,13 +10,7 @@
 
 <a name="M-04-04"></a>[M-04-04] *OMB Memorandum M-04-04, E-Authentication Guidance for Federal Agencies* (December 16, 2003), available at: <https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf>.
 
-<a name="theNSTIC"></a>[NSTIC] *National Strategy for Trusted Identities in Cyberspace* (April, 2011), available at: <https://www.whitehouse.gov/sites/default/files/rss_viewer/NSTICstrategy_041511.pdf>.
-
->**MG: redirect to TIG website as we've been informed the wh.gov site will be wiped clean with the new administration.**
-
-<a name="DOJ2000"></a>[DOJ 2000] *Guide to Federal
-Agencies on Implementing Electronic Processes* (November 2000),
-available at: <http://www.usdoj.gov/criminal/cybercrime/ecommerce.html> ***URL not found; obsolete document?***
+<a name="theNSTIC"></a>[NSTIC] *National Strategy for Trusted Identities in Cyberspace* (April, 2011), available at: <https://www.nist.gov/sites/default/files/documents/2016/12/08/nsticstrategy.pdf>.
 
 <a name="ESIG"></a>[ESIG] Federal CIO Council, *Use of
 Electronic Signatures in Federal Organization Transactions* (January 25, 2013),
