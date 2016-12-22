@@ -13,8 +13,6 @@ The definitions in this section are primarily those that are referenced in this 
 #### Address of Record
 The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
 
->**MG: do we intend for address of record to include email address?**
-
 #### Applicant
 A subject undergoing the processes of registration and identity proofing.
 
@@ -42,20 +40,11 @@ Process of determining the validity of one or more credentials used to claim a d
 #### Authentication Protocol
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish their identity, and, optionally, demonstrates that the claimant is communicating with the intended verifier.
 
-#### Authentication Secret
-A generic term for any secret value that could be used by an attacker to impersonate the subscriber in an authentication protocol.
-
-These are further divided into *short-term authentication secrets*, which are only useful to an attacker for a limited period of time, and *long-term authentication secrets*, which allow an attacker to impersonate the subscriber until they are manually reset. The authenticator secret is the canonical example of a long term authentication secret, while the authenticator output, if it is different from the authenticator secret, is usually a short term authentication secret.
-
->**MG: I find this paragraph very difficult to follow. Do we just not want to say password? Surely there's a clearly way to describe this.**
-
 #### Authenticator
 Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticator Assurance Level (AAL)
-An ordinal describing robustness of the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
-
->**MG: As mentioned before I don't know that robustness is correct here. Also, if we're including the 04-04 risk language, are we talking about the risk assessment side or the risk mitigation side--neither of which do I think is robustness. Same with other Ls.**
+A category describing the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
 
 #### Authenticator Secret
 The secret value contained within an authenticator.
@@ -67,8 +56,6 @@ The property that data originated from their purported source.
 Automated recognition of individuals based on their behavioral and biological characteristics.
 
 In this document, biometrics may be used to unlock authenticators and prevent repudiation of registration.
-
->**MG: Why must biometric recognition be automated?** 
 
 #### Claimant
 A subject whose identity is to be verified using one or more authentication protocols.
@@ -113,13 +100,13 @@ FIPS documents are available online through the FIPS home page: <http://www.nist
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level
-An ordinal describing the robustness of the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party.
+An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party.
 
 #### Identity
 An attribute or set of attributes that uniquely describe a subject within a given context.
 
 #### Identity Assurance Level (IAL)
-An ordinal that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
+A category that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
 
 #### Identity Proofing
 The process by which a CSP and a Registration Authority (RA) collect and verify information about a person for the purpose of issuing credentials to that person.
@@ -153,8 +140,6 @@ A meaningless but unique number that does not allow the RP to infer the subscrib
 #### Public Key
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
 
->**MG: Would it be useful to have a nod to FIDO via a definition for PK cryptography to distinguish it from PKI?**
-
 #### Public Key Certificate
 A digital document issued and digitally signed by the private key of a certificate authority that binds an identifier to a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](#RFC5280).
 
@@ -170,7 +155,7 @@ An entity that relies upon the subscriber's authenticator(s) and credentials or 
 #### Remote
 (*In the context of remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization’s security controls.
 
-Note: Any information exchange across the Internet is considered remote.
+> Note: Any information exchange across the Internet is considered remote.
 
 #### Risk Assessment
 The process of identifying, estimating, and prioritizing risks to organizational operations (including mission, functions, image, reputation), organizational assets, individuals, other organizations, resulting from the operation of an system. Part of risk management, incorporates threat and vulnerability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis.
@@ -189,9 +174,6 @@ A party who has received a credential or authenticator from a CSP.
 
 #### Symmetric Key
 A cryptographic key that is used to perform both the cryptographic operation and its inverse, for example to encrypt and decrypt, or create a message authentication code and to verify the code.
-
-#### Token
-See *Authenticator*.
 
 #### Valid
 In reference to identity evidence, the quality of not being expired or revoked.
