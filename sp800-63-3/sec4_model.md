@@ -8,9 +8,11 @@
 
 ### <a name="4-1"></a>4.1. Overview 
 
+**PAG - Align with what gets done in the cover**
+
 In accordance with [OMB M-04-04](#M-04-04), digital authentication is the process of establishing confidence in individual identities presented digitally to a system. Systems can use the authenticated identity to determine if that whether a claimant is authorized to perform an online transaction. In most cases, the authentication and transaction take place across an open network such as the Internet; however, in some cases, access to the network may be limited and access control decisions may take this into account.
 
-The digital authentication model used in these guidelines reflects current technologies and architectures used in government. More complex models that separate functions--such as issuing credentials and providing attributes--among larger numbers of parties are also available and may have advantages in some classes of applications. While a simpler model is used in this document, it does not preclude agencies from separating these functions. In addition, certain enrollment, identity proofing, and issuance processes performed by the credential service provider (CSP) are sometimes delegated to an entity known as the registration authority (RA) or identity manager (IM). A close relationship between the RA/IM and CSP is typical, and the nature of this relationship may differ among RAs, IMs, and CSPs. The types of relationship and their requirements is outside of the scope of this document.  Accordingly, the term CSP will be used to be inclusive of RA and IM functions.
+The digital identity model used in these guidelines reflects current technologies and architectures used in government. More complex models that separate functions--such as issuing credentials and providing attributes--among larger numbers of parties are also available and may have advantages in some classes of applications. While a simpler model is used in this document, it does not preclude agencies from separating these functions. In addition, certain enrollment, identity proofing, and issuance processes performed by the credential service provider (CSP) are sometimes delegated to an entity known as the registration authority (RA) or identity manager (IM). A close relationship between the RA/IM and CSP is typical, and the nature of this relationship may differ among RAs, IMs, and CSPs. The types of relationship and their requirements is outside of the scope of this document.  Accordingly, the term CSP will be used to be inclusive of RA and IM functions.
 
 Digital authentication begins with enrollment. The usual sequence for enrollment proceeds as follows. An applicant applies to a CSP. If approved, the CSP creates a credential and binds it to one or more authenticators. The credential includes at least one identifier, which can be pseudonymous, and possibly one or more attributes that the CSP has verified. The authenticators may be issued by the CSP, provided directly by the subscriber, or provided by a third party. The authenticators and credential may be used in subsequent authentication events.
 
@@ -24,14 +26,12 @@ The strength of the authentication process is described by an ordinal measuremen
 
 As part of authentication, mechanisms such as device identity or geo-location may be used to identify or prevent possible authentication false positives. While these mechanisms do not directly increase the authenticator assurance level, they can aid in enforcing security policies and mitigate risks. In many cases, the authentication process and services will be shared by many applications and agencies. However, it is the individual agency or application acting as the RP that shall make the decision to grant access or process a transaction based on the specific application requirements.
 
-The various entities and interactions that comprise the digital authentication model used here are illustrated below in [Figure 4-1](#63Sec4-Figure1). The left side of the diagram shows the enrollment, credential issuance, lifecycle management activities, and various states of an identity proofing and authentication process. The usual sequence of interactions is as follows:
+The various entities and interactions that comprise the digital identity model used here are illustrated below in [Figure 4-1](#63Sec4-Figure1). The left side of the diagram shows the enrollment, credential issuance, lifecycle management activities, and various states of an identity proofing and authentication process. The usual sequence of interactions is as follows:
 
 1.	An applicant applies to a CSP through an enrollment process.
 2.	The CSP identity proofs that applicant. Upon successful proofing, the applicant becomes a subscriber.
 4.	Authenticator(s) and a corresponding credential are established between the CSP and the subscriber.
 5. The CSP maintains the credential, its status, and the enrollment data collected for the lifetime of the credential (at a minimum). The subscriber maintains his or her authenticator(s).
-
->**MG: This last one (5) seems a bit prescriptive compared to the others. Is that really where we want to go in this informative volume?**
 
 Other sequences are less common, but could also achieve the same functional requirements.
 
@@ -52,22 +52,18 @@ As noted above, a CSP maintains status information about the credentials it issu
 <div class="text-center" markdown="1">
 ![](sp800-63-3/media/model.png)
 
->**MG: I would cut enrollment from "Authenicator Enrollment/Issuance". Maybe also use "becomes" to indicate that it is the same subject changing from applicant to subscriber to claimant. It looks a bit disjointed otherwise. Finally, the "Authentication Protocol" between verifier and claimant seems out of place. What's really happenig there?**
-
-**Figure 4-1 - Digital Authentication Model**
+**Figure 4-1 - Digital Identity Model**
 </div>
 
 ### 4.2. Enrollment and Identity Proofing
 
 Normative requirements can be found in [Special Publication 800-63A](sp800-63a.html), *Enrollment and Identity Proofing*.
 
-The previous section introduced the different participants in the conceptual digital authentication model. This section provides additional details regarding the relationships and responsibilities of the participants involved with enrollment and identity proofing.
+The previous section introduced the different participants in the conceptual digital identity model. This section provides additional details regarding the relationships and responsibilities of the participants involved with enrollment and identity proofing.
 
 An individual, referred to as an *applicant* at this stage, requests credentials from a CSP. If the applicant is successfully proofed and a credential is created by a CSP and authenticator(s) are bound to it, the individual is then termed a subscriber of that CSP.
 
-The CSP establishes a mechanism to uniquely identify each subscriber, register the subscriber’s credentials, and track the authenticators issued to that subscriber. The subscriber may be given authenticators at the time of enrollment, the CSP may bind authenticators the subscriber already has, or they may be generated later as needed. Subscribers have a duty to maintain control of their authenticators and comply with their responsibilities to the CSP. The CSP maintains enrollment records for each subscriber to allow recovery of enrollment records.
-
->**MG: What is recovery of enrollment records? Do we mean recovery of an account if authenticators are lost?**
+The CSP establishes a mechanism to uniquely identify each subscriber, register the subscriber’s credentials, and track the authenticators issued to that subscriber. The subscriber may be given authenticators at the time of enrollment, the CSP may bind authenticators the subscriber already has, or they may be generated later as needed. Subscribers have a duty to maintain control of their authenticators and comply with their responsibilities to the CSP. The CSP maintains enrollment records for each subscriber to allow recovery of authenticators, for example, when they are lost or stolen.
 
 ### 4.3. Authentication and Lifecycle Management
 
@@ -94,8 +90,6 @@ In this document, authenticators always contain a secret. Some of the classic au
 However, this guideline does recognize that authentication systems that incorporate all three factors offer better security than systems that incorporate two of the factors. A digital authentication system may incorporate multiple factors in either of two ways. The system may be implemented so that multiple factors are presented to the verifier, or some factors may be used to protect a secret that will be presented to the verifier. If multiple factors are presented to the verifier, each will need to be a authenticator (and therefore contain a secret). If a single factor is presented to the verifier, the additional factors are used to protect the authenticator and need not themselves be authenticators.
 
 For example, consider a piece of hardware (the authenticator) that contains a cryptographic key (the authenticator secret) where access is protected with a fingerprint. When used with the biometric, the cryptographic key produces an output that is used in the authentication process to authenticate the claimant. An impostor must steal the encrypted key (by stealing the hardware) and replicate the fingerprint to use the authenticator. This specification considers such a device to effectively provide two factor authentication, although the actual authentication protocol between the verifier and the claimant simply proves possession of the key.
-
->**MG: I think we use both imposter and impostor in the doc. Don't care which, but should pick one.**
 
 As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication, but they do have their place in this specification. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris patterns, voiceprints, and many other characteristics. [Special Publication 800-63A](sp800-63a.html), *Enrollment and Identity Proofing* recommends that biometrics be used in the enrollment process for higher levels of assurance to later help prevent a subscriber who is registered from repudiating the enrollment, to help identify those who commit enrollment fraud, and to unlock authenticators.
 
@@ -124,12 +118,9 @@ Federated architectures have many significant benefits, including, but not limit
 * Enhanced user experience.  For example, an individual can be identity proofed once and can reuse the issued credential at multiple RPs
 * Cost reduction to both the user (reduction in authenticators) and the agency (reduction in IT infrastructure)
 * Data minimization as agencies do not need to pay for collection, storage, disposal, and compliance activities related to storing personal information
-* Privacy enhancing
 * Pseudonymous attribute assertions as agencies can request a minimized set of attributes, to include claims, to fulfill service delivery.
 * Mission enablement as agencies can focus on mission, rather than the business of identity management.
 
->**MG: Choose one end-of-bullet format for all of -63. Also, I don't like that privacy enhancing is the only one wihtout context.**
-  
 The following sections discuss the components of a federated identity architecture should an agency elect this type of model.
 
 #### 4.4.1 Assertions
