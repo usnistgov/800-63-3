@@ -172,6 +172,10 @@ A type of publication issued by NIST. Specifically, the Special Publication 800-
 #### Subscriber
 A party who has received a credential or authenticator from a CSP.
 
+#### Subject  
+
+A person, organization, device, hardware, network, software, or service.
+
 #### Symmetric Key
 A cryptographic key that is used to perform both the cryptographic operation and its inverse, for example to encrypt and decrypt, or create a message authentication code and to verify the code.
 

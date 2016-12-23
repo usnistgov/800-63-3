@@ -45,3 +45,5 @@ Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistp
 <a name="ISO29003"></a>[ISO 29003] International Standards Organization, ISO/IEC DIS 29003 *Information technology -- Security techniques -- Identity proofing* (under development)
 
 <a name="Canada"></a>[Canada] Government of Canada, *Standard on Identity and Credential Assurance*, February 1, 2013, available at: <https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26776>
+
+<a name="steiner"></a>[Steiner]Steiner, Peter. "On the Internet, nobody knows you're a dog". Cartoon. *The New Yorker* 5 July 1993.
