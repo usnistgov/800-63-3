@@ -82,3 +82,37 @@ The CSP SHALL require subscribers to surrender or prove destruction of any physi
 
 Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
 
+### 6.5. Derived Credentials
+
+IAL and AAL as separate ordinals allows organizations to issue any type of authenticator they want regardless of how or if an individual is identity proofed.  This is one of the benefits of the separation - an organization can issue strong credentials regardless of identity proofing.  However, it may be beneficial for organizations to issue authenticators based on the individual having an authenticator bound to a credential that has an IAL of 2 or 3 (1 is not meaningful in this context since it is a self-asserted identity).
+
+In order to issue additional authenticators, the primary method for an individual to verify they have been proofed is through successful possession and authentication of an authenticator that bound via a credential to an identity proofed at a given IAL.  
+
+This section details requirements for the first of the two use cases below:
+
+1. A _claimant_ obtains a secondary, or derived authenticator, for use only within the limits and authorizations of the primary authenticator.  For example, this could be a derived PIV credential in federal use cases, or a temporary authenticator. 
+2. An _applicant_ seeks to obtain another primary authenticator from a CSP that did not issue the original authenticator. For example, if an applicant wants to switch CSPs and/or have another authenticator at a new CSP for other uses (e.g. basic browsing vs. financial). There are no requirements for issuance and management since the secondary CSP can provide an authenticator at any AAL regardless of what type of authenticator an individual has elsewhere.  
+
+#### 6.5.1. General Requirements
+
+1. Before issuance, the CSP SHALL verify the original authenticator status. The CSP SHALL NOT issue a derived authenticator if status indicates any type of termination, disablement, revocation, or expiration.
+2. Before issuance, the CSP SHALL verify that the corresponding authenticator is possessed and controlled by the claimant.  
+3. The derived authenticator SHALL be valid only as long as the subscriber is authorized to hold the original authenticator.
+4. The CSP SHOULD record the details of the original authenticator used as the basis for derived authenticator issuance. 
+5. The CSP SHOULD set the expiration of the derived authenticator to the expiration of the primary authenticator. There are instances where the derived authenticator need not be directly tied to the expiration of the primary authenticator as the derived authenticator can provide authentication services in its place, for example, while the expiring primary credential is being replaced.
+6. The derived authenticator MAY be issued at any AAL, regardless of the AAL of the primary authenticator. 
+
+
+#### 6.5.2. AAL 2 Requirements
+
+- The CSP SHOULD check the status of the original authenticator weekly. 
+
+
+#### <a name="dc-ial3"></a>6.5.3. AAL 3 Requirements
+
+1.  The CSP SHOULD perform in-person issuance. This is important if the CSP needs to explicitly provision the authenticator to a trusted device and in-person is the only mechanism to ensure delivery and assurance.
+2. The CSP SHOULD check the status of the original authenticator daily.
+3. The CSP SHALL obtain and verify a copy of a biometric recorded when the primary authenticator was issued. An example of such a biometric is the signed biometric data object, however if the biometric reference is not available from the original AAL 3 authenticator, it may be obtained elsewhere, as long as its authenticity is assured.
+4. The CSP SHALL compare a fresh biometric sample obtained in person from the applicant to the reference biometric retained from the original, primary AAL 3 authenticator and determine that they match.
+5. The CSP SHALL determine that the authenticator of the original, primary authenticator meets all requirements of an AAL 3 authenticator.
+
