@@ -205,7 +205,7 @@ These guidelines do not view LOA in the context of a single ordinal that drives 
 
 The components of identity assurance detailed in these guidelines are as follows:
 
-* **IAL** refers to the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific claimant.
+* **IAL** refers to the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific subscriber.
 * **AAL** refers to the authentication process itself.
 * **FAL** refers to the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to a relying party.
 
