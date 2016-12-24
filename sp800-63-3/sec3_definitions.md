@@ -20,7 +20,7 @@ A subject undergoing the processes of registration and identity proofing.
 A statement from a verifier to a relying party (RP) that contains identity information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assurance
-In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of a claimant to whom a credential was, or credentials were, issued, and 2) the degree of confidence that the claimant who uses the credential is the same as that to whom the credential was issued.
+In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of a claimant to whom a credential was, or credentials were, issued, and 2) the degree of confidence that the claimant who uses the credential is the same as the subscriber to whom the credential was issued.
 
 #### Asymmetric Keys
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
@@ -158,7 +158,7 @@ An entity that relies upon the subscriber's authenticator(s) and credentials or 
 > Note: Any information exchange across the Internet is considered remote.
 
 #### Risk Assessment
-The process of identifying, estimating, and prioritizing risks to organizational operations (including mission, functions, image, reputation), organizational assets, individuals, other organizations, resulting from the operation of an system. Part of risk management, incorporates threat and vulnerability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis.
+The process of identifying, estimating, and prioritizing risks to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, and other organizations, resulting from the operation of an system. Part of risk management, incorporates threat and vulnerability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis.
 
 #### Risk Management
 The program and supporting processes to manage information security risk to organizational operations (including mission, functions, image, reputation), organizational assets, individuals, other organizations, and includes: (i) establishing the context for risk-related activities; (ii) assessing risk; (iii) responding to risk once determined; and (iv) monitoring risk over time.
