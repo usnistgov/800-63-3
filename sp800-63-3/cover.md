@@ -229,11 +229,11 @@ NIST SP 800-63-A addresses how applicants can prove their identities and become 
 
 SP 800-63A sets requirements to achieve a given IAL. The three IALs reflect the options agencies may select based on their risk profile and the potential harm caused by an attacker making a successful false claim of an identity.  The IALs are as follows:
 
-**IAL 1**: There is no requirement to link the applicant to a specific real-life identity.  Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as self-asserted.
+**IAL1**: There is no requirement to link the applicant to a specific real-life identity.  Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as self-asserted.
 
-**IAL 2**: Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity.  IAL 2 introduces the need for either remote or physically-present identity proofing.  Attributes could be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
+**IAL2**: Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity.  IAL2 introduces the need for either remote or physically-present identity proofing.  Attributes could be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
-**IAL 3**: Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL 2, attributes could be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
+**IAL3**: Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL2, attributes could be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
 
 [**SP 800-63B Authentication and Lifecycle Management**](#800-63b)
@@ -242,11 +242,11 @@ For services in which return visits are applicable, a successful authentication 
 
 The three AALs define the subsets of options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of an authenticator and accessing agencies' systems. The AALs are as follows:
 
-**AAL 1**: Provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL 1 requires at least single-factor authentication using a wide range of available authentication technologies. Successful authentication requires a secure authentication protocol through which the claimant demonstrates possession and control of the authenticator(s).
+**AAL1**: Provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL1 requires at least single-factor authentication using a wide range of available authentication technologies. Successful authentication requires a secure authentication protocol through which the claimant demonstrates possession and control of the authenticator(s).
 
-**AAL 2**: Provides high confidence that the claimant controls authenticators registered to a subscriber. In addition to requirements of AAL 1, two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.
+**AAL2**: Provides high confidence that the claimant controls authenticators registered to a subscriber. In addition to requirements of AAL1, two different authentication factors are required. Approved cryptographic techniques are required at AAL2 and above.
 
-**AAL 3** – Provides very high confidence that the claimant controls the authenticator registered to a subscriber. In addition to requirments for AAL 2, authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
+**AAL3** – Provides very high confidence that the claimant controls the authenticator registered to a subscriber. In addition to requirments for AAL2, authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
 [**SP 800-63C Federation and Assertions**](#800-63c)
 
@@ -254,11 +254,11 @@ NIST SP 800-63C provides guidelines on the use of federated identity architectur
 
 The three FALs reflect the options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of federated transactions. The FALs are as follows:
 
-**FAL 1**: Allows for the subscriber to enable the relying party (RP) to receive a bearer assertion. The assertion is signed by the IdP using approved cryptography.
+**FAL1**: Allows for the subscriber to enable the relying party (RP) to receive a bearer assertion. The assertion is signed by the IdP using approved cryptography.
 
-**FAL 2**: Adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.
+**FAL2**: Adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.
 
-**FAL 3**: Requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion is signed by the Identity Provider (IdP) and encrypted to the RP using approved cryptography.
+**FAL3**: Requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion is signed by the Identity Provider (IdP) and encrypted to the RP using approved cryptography.
 
 These guidelines are agnostic to the vast array of identity services architectures that agencies can develop or acquire, and are meant to be applicable regardless of the approach an agency selects.  However, where possible federation is encouraged, and the ability to mix and match IAL, AAL, and FAL is simplified when federated architectures are used. In addition, federation is a keystone in the ability to enhance the privacy of agency constituents as they access valuable government digitial services.
 

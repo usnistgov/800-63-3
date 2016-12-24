@@ -13,7 +13,7 @@ OMB [[M-04-04]](#M-04-04) requires agencies to select the transaction or system 
 
 Per M-04-04, once an LOA is selected, the agency is required to follow the identity proofing, credentialing, and federation technical requirements specified by NIST at that level. For example, if the impact of an authentication error results in an application assessed at LOA 3, the agency must identity proof and provide authenticators that meet the requirements for LOA 3.
 
-However, in today's digital services, combining proofing and authenticator requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden upon the implementing entity. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. An authentication error is not a singleton that drives all requirements. This guideline recommends that agencies meet M-04-04 requirements by separately evaluating the impact that could result from (1) a true authentication error (a false claimant using credential that are not rightfully theirs) and (2) an identity proofing error. From the perspective of an identity proofing failure, there are two dimensions of potential risk:
+However, in today's digital services, combining proofing and authenticator requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden upon the implementing entity. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. An authentication error is not a singleton that drives all requirements. This guideline recommends that agencies meet M-04-04 requirements by separately evaluating the impact that could result from (1) a true authentication error (a false claimant using a credential that is not rightfully theirs) and (2) an identity proofing error. From the perspective of an identity proofing failure, there are two dimensions of potential risk:
 
 *  The impact of providing a service to the wrong subject (e.g., an attacker successfully proofs as someone else)
 *  The impact of excessive identity proofing (i.e., collecting and securely storing more information about a person than is required to successfully provide the digital service.)
@@ -33,21 +33,21 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 | Identity Assurance Level |
 |:----------------------|
-| **IAL1** - At this level, attributes, if any, are self-asserted or should be treated as self-asserted.|
-| **IAL2** - IAL 2 introduces the need for either remote or in-person identity proofing. IAL 2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
-| **IAL3** - At IAL 3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
+| **IAL1** - At IAL1, attributes, if any, are self-asserted or should be treated as self-asserted.|
+| **IAL2** - IAL2 introduces the need for either remote or in-person identity proofing. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
+| **IAL3** - At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
 
 |Authenticator Assurance Level|
 |:----------------------|
-|**AAL1** - AAL 1 provides some assurance that the claimant controls an authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator(s) through a secure authentication protocol.|
-| **AAL2** – AAL 2 provides high confidence that the claimant controls authenticator(s) registered to a subscriber. Proof of possession and control of two different authentication factors are required through a secure autheticatoni protocol. Approved cryptographic techniques are required at AAL 2 and above.|
-|**AAL3** – AAL 3 provides very high confidence that the claimant controls authenticator(s) registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that a "hard" cryptographic authenticator that also provides verifier impersonation resistance is required.|
+|**AAL1** - AAL1 provides some assurance that the claimant controls an authenticator registered to a subscriber. AAL 1 uses single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator(s) through a secure authentication protocol.|
+| **AAL2** – AAL2 provides high confidence that the claimant controls authenticator(s) registered to a subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL2 and above.|
+|**AAL3** – AAL3 provides very high confidence that the claimant controls authenticator(s) registered to a subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.|
 
 |Federation Assurance Level|
 |:----------------------|
-|**FAL1** - FAL 1 permits the relying party (RP) to receive a bearer assertion from an identity provider (IdP). The assertion must be signed by the IdP using approved cryptography.|
-|**FAL2** - FAL 2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
-|**FAL3** - FAL 3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
+|**FAL1** - FAL1 permits the relying party (RP) to receive a bearer assertion from an identity provider (IdP). The assertion must be signed by the IdP using approved cryptography.|
+|**FAL2** - FAL2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
+|**FAL3** - FAL3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
 When described generically or bundled, this guideline will refer to the combination of IAL, AAL, and FAL as **_xAL_**.
 
