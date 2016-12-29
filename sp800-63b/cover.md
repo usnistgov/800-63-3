@@ -106,7 +106,7 @@ U.S. Department of Commerce
 *Penny Pritzker, Secretary*
 
 National Institute of Standards and Technology  
-*Willie E. May, Under Secretary of Commerce for Standards and
+*Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
 
 </div>
@@ -184,8 +184,7 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-This document and its companion documents, SP 800-63-3, SP 800-63A, and SP 800-63C, provide technical and procedural guidelines to agencies implementing electronic authentication to choose and implement effective authentication processes based on risk. The recommendation covers remote authentication of users (such as employees, contractors, or private individuals) interacting with government IT systems over open networks. It defines technical requirements for each
-of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+This document and its companion documents, SP 800-63-3, SP 800-63A, and SP 800-63C, provide technical and procedural guidelines to agencies implementing electronic authentication to choose and implement effective authentication processes based on risk. The recommendation covers remote authentication of users (such as employees, contractors, or private individuals) interacting with government systems over open networks. It defines technical requirements for each of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
 

@@ -8,11 +8,11 @@
 
 An attacker who can gain control of an authenticator will often be able to masquerade as the authenticator's owner. Threats to authenticators can be categorized based on attacks on the types of authentication factors that comprise the authenticator:
 
-- *Something you have* may be lost, damaged, stolen from the owner or cloned by an attacker. For example, an attacker who gains access to the owner’s computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.
+- *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through offline attacks on a password database maintained by the verifier.
 
-- *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through offline attacks on a hashed password database maintained by the verifier.
+- *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner’s computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.
     
-- *Something you are* may be replicated. An attacker may obtain a copy of the subscriber’s fingerprint and construct a replica - assuming that the biometric system(s) employed do not block such attacks by employing robust liveness detection techniques.
+- *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber’s fingerprint and construct a replica. **MG: I think we talk about mitigations elsewhere so removed the reference to a defense here.**
 
 - *Out of band* secrets may be intercepted. An attacker may receive a challenge or response by eavesdropping on the primary or secondary communications channel. The attacker might then authenticate their own channel or save the message for later replay.
 
@@ -65,21 +65,21 @@ Related mechanisms that assist in mitigating the threats identified above are su
 
 <div class="text-center" markdown="1">
 
-**Table 8-1 - Mitigating Authenticator Threats**
+**Table 8-2 - Mitigating Authenticator Threats**
 
 </div>
 
 
 | **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
 |---------------------------------|----------------------------------|
-| Theft | Use multi-factor authenticators which need to be activated through a memorized secret or biometric.|
+| Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.|
 | Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
 | | Maintain situational awareness when entering memorized secrets and one-time passwords to ensure that they cannot be observed by others.
 | | Authenticate over authenticated protected channels (observe lock icon in browser window, for example)
 | | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
-| | Store memorized secrets in a salted, hashed form to raise the cost of dictionary attacks; use a keyed hash.
+| | Store memorized secrets in a salted, hashed form, including a keyed hash.
 | Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.
 | Phishing or pharming | Use authenticators that provide verifier impersonation resistance.
 | | Be alert for unexpected hostnames in URLs.
@@ -108,7 +108,7 @@ There are several other strategies that may be applied to mitigate the threats d
 
 ### 8.3. Authenticator Recovery
 
-The weak point in many authentication mechanisms is the process followed when a subscriber loses control of one or more authenticators and needs to replace them. In many cases, the options remaining available to authenticate the subscriber are limited, and economic concerns (cost of maintaining call centers, etc.) motivate the use of inexpensive, and frequently less secure, backup authentication methods. To the extent that authenticator recovery is human-assisted, there is also the risk of social engineering attacks.
+The weak point in many authentication mechanisms is the process followed when a subscriber loses control of one or more authenticators and needs to replace them. In many cases, the options remaining available to authenticate the subscriber are limited, and economic concerns (e.g., cost of maintaining call centers) motivate the use of inexpensive, and often less secure, backup authentication methods. To the extent that authenticator recovery is human-assisted, there is also the risk of social engineering attacks.
 
 In order to maintain the integrity of the authentication factors, it is essential that it not be possible to leverage an authentication involving one factor to obtain an authenticator of a different factor. For example, a memorized secret must not be usable to obtain a new list of look-up secrets.
 
