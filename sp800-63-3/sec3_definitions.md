@@ -135,7 +135,7 @@ As defined by OMB Circular [[A-130]](#A-130), Personally Identifiable Informatio
 The secret part of an asymmetric key pair that is used to digitally sign or decrypt data.
 
 #### Pseudonymous Identifier
-A meaningless but unique number that does not allow the RP to infer the subscriber but which does permit the RP to associate multiple interactions with the subscriber’s claimed identity.
+A meaningless but unique number that does not allow the RP to infer anything regarding the subscriber but which does permit the RP to associate multiple interactions with the subscriber’s claimed identity.
 
 #### Public Key
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
