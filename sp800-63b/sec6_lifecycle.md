@@ -10,9 +10,7 @@ Authenticators MAY be issued (provided) by a CSP as part of a process such as en
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
 
-The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address or other device identifier associated with the enrollment. If available, the record SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
-
->**MG: Is the IP address really a device identifier?**
+The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address and any device identifier associated with the enrollment. If available, the record SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
 
 #### 6.1.1. Enrollment
 
@@ -37,7 +35,7 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 ##### 6.1.2.1. Binding of additional authenticator at existing AAL
 
-CSPs and verifiers SHOULD encouraged subscribers to maintain at least two valid authenticators of each factor they will be using, with the exception of memorized secrets. For example, a subscriber that usually uses a one-time OTP device as a physical authenticator MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged.
+CSPs and verifiers SHOULD encourage subscribers to maintain at least two valid authenticators of each factor they will be using, with the exception of memorized secrets. For example, a subscriber that usually uses a one-time OTP device as a physical authenticator MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged.
 
 Accordingly, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. Before adding the new authenticator, the CSP SHALL first require the subscriber to authenticate at the AAL (or a higher AAL) at which the new authenticator will be used. When an authenticator is added, the CSP SHOULD send a notification to the subscriber. The CSP MAY limit the number of authenticators that may be bound in this manner.
 

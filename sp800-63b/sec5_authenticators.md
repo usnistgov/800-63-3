@@ -4,7 +4,7 @@
 
 _This section is normative._
 
-This section provides the detailed requirements specific for type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4), the technical requirements for each of the authenticator types are the same regardless of the AAL at which they authenticator is used.
+This section provides the detailed requirements specific for type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4) and the requirement for verifier impersonation resistance at AAL 3 described in section [5.2.5](#verifimpers), the technical requirements for each of the authenticator types are the same regardless of the AAL at which the authenticator is used.
 
 ### 5.1. Requirements by Authenticator Type
 
@@ -21,7 +21,7 @@ This section provides the detailed requirements specific for type of authenticat
 
 ##### 5.1.1.1. Memorized Secret Authenticators
 
-Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Since the CSP or verifier may disallow some choices of memorized secrets  based on their appearance on a blacklist of compromised values, the subscriber SHALL choose a different memorized secret if a choice is rejected. No other complexity requirements for memorized secrets SHOULD be imposed; a rationale for this is presented in [Appendix A](#appA).
+Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  Since the CSP or verifier may disallow some choices of memorized secrets based on their appearance on a blacklist of compromised values, the subscriber SHALL choose a different memorized secret if a choice is rejected. No other complexity requirements for memorized secrets SHOULD be imposed; a rationale for this is presented in [Appendix A](#appA).
 
 ##### 5.1.1.2. Memorized Secret Verifiers
 
@@ -39,19 +39,17 @@ When processing requests to establish and change memorized secrets, verifiers SH
 * Dictionary words
 * Context specific words, such as the name of the service, the username, and derivates thereof
 
-If the chosen secret is found in the list, the CSP or verifier SHALL advised the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL required the subscriber to choose a different value.
+If the chosen secret is found in the list, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
 
 Verifiers SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
 Verifiers SHOULD NOT impose other composition rules (e.g., mixtures of different character types) on memorized secrets. Verifiers SHOULD NOT require memorized secrets to be changed arbitrarily (e.g., periodically) and SHOULD only require a change if the subscriber requests a change or there is evidence of compromise of the authenticator.
 
-In order to assist the claimant in entering a memorized secret successfully, the verifier SHOULD offer an option to display the secret (rather than a series of dots or asterisks, typically) as it is typed. The verifier SHALL hide the character after it is displayed for a time sufficient for the claimant to see the character. This allows the claimant to verify their entry if they are in a location where their screen is unlikely to be observed. 
-
->**MG: do we want to restrict this display being the default? Showing the password should not be default, but showing for a second then going to asterisk is common on mobile devices.**
+In order to assist the claimant in entering a memorized secret successfully, the verifier SHOULD offer an option to display the secret (rather than a series of dots or asterisks, typically) until it is entered. This allows the claimant to verify their entry if they are in a location where their screen is unlikely to be observed. The verifier MAY also permit the user's device to display individual entered characters for a short time after each character is typed to verify correct entry, particularly on mobile devices. 
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when requesting memorized secrets in order to provide resistance to eavesdropping and man-in-the-middle attacks.
 
-Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks. Secrets SHALL be hashed with a *salt* value using an approved hash function such as PBKDF2 as described in [[SP800-132]](#SP800-132). The salt value SHALL be a 32-bit or longer random value generated by an approved random bit generator and stored along with the hash result. At least 10,000 iterations of the hash function SHOULD be performed. A keyed hash function (e.g., HMAC), with the key stored separately from the hashed authenticators (e.g., in a hardware security module) SHOULD be used to further resist dictionary attacks against the stored hashed authenticators.
+Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks. Secrets SHALL be hashed with a *salt* value using an approved hash function such as PBKDF2 as described in [[SP800-132]](#SP800-132). The salt value SHALL be a 32-bit or longer random value generated by an approved random bit generator and stored along with the hash result. At least 10,000 iterations of the hash function SHOULD be performed. A keyed hash function (e.g., HMAC [[FIPS198-1]](#FIPS198-1)), with the key stored separately from the hashed authenticators (e.g., in a hardware security module) SHOULD be used to further resist dictionary attacks against the stored hashed authenticators.
 
 #### 5.1.2. Look-up Secrets
 
@@ -73,9 +71,7 @@ If the authenticator uses look-up secrets sequentially from a list, the subscrib
 
 Verifiers of look-up secrets SHALL prompt the claimant for the next secret from their authenticator or for a specific (e.g., numbered) secret. A given secret from an authenticator SHALL be used successfully only once; therefore, a given authenticator can only be used for a finite number of successful authentications. If the look-up secret is derived from a grid card, each cell of the grid SHALL be used only once.
 
-Verifiers SHALL store look-up secrets in a form that is resistant to offline attacks. Secrets SHALL be hashed with a "salt" value using an approved hash function as described in [[SP 800-132]](#SP800-132). The "salt" value SHALL be a 128-bit or longer random value generated by an approved random bit generator that is stored along with the hash result. A keyed hash function (e.g., HMAC [[FIPS198-1]](#FIPS198-1)), with the key stored separately from the hashed authenticators (e.g., in a hardware security module) SHOULD be used to further resist dictionary attacks against the stored hashed authenticators.
-
->**MG: Why do we link to FIPS 198 here but not in 5.1.1.2?**
+Verifiers SHALL store look-up secrets in a form that is resistant to offline attacks. Secrets SHALL be hashed with a *salt* value using an approved hash function as described in [[SP 800-132]](#SP800-132). The salt value SHALL be a 128-bit or longer random value generated by an approved random bit generator that is stored along with the hash result. A keyed hash function (e.g., HMAC [[FIPS198-1]](#FIPS198-1)), with the key stored separately from the hashed authenticators (e.g., in a hardware security module) SHOULD be used to further resist dictionary attacks against the stored hashed authenticators.
 
 Look-up secrets SHALL be generated using an approved random bit generator and SHALL have at least 20 bits of entropy. When look-up secrets have less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
@@ -91,7 +87,7 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 
 - The claimant transfers a secret received by the out-of-band device via the secondary channel to the verifier using the primary channel. For example, the claimant may receive the secret on their mobile device and type it (typically a 6-digit code) into their authentication session.<br><br>
 
-- The claimant transfers a secret received via the primary channel to the out-of-band device for transmission to the verifier via the secondary channel. For example, the claimant may view the secret on their authentication session and either type it into an app on their mobile device or use a technology such as a barcode or QR code to affect the transfer.<br><br>
+- The claimant transfers a secret received via the primary channel to the out-of-band device for transmission to the verifier via the secondary channel. For example, the claimant may view the secret on their authentication session and either type it into an app on their mobile device or use a technology such as a barcode or QR code to effect the transfer.<br><br>
 
 - The claimant compares secrets received from the primary channel and the secondary channel and confirms the authentication via the secondary channel.<br><br>
 
@@ -112,11 +108,7 @@ The out-of-band authenticator SHALL uniquely authenticate itself in one of the f
 
 - Authenticate to a public mobile telephone network using a SIM card or equivalent that uniquely identifies the device. This method SHALL only be used if a secret is being sent from the verifier to the out-of-band device via the telephone network (SMS or voice).
 
-If a secret is sent by the verifier to the out-of-band device, the device SHOULD NOT display the authentication secret on a device while it is locked by the owner (i.e., requires an entry of a PIN, passcode, or biometric). However, authenticators MAY indicate the receipt of an authentication secret on a locked device.
-
->**MG: I'm tempted for a nod to usability by changing MAY to SHOULD in the last sentence. Or at least should give the user the option.** 
-
->**Separately, how will we deal with this? Right now, I'd estimate 90+% of the people I know will get push notices that have the code. Is this something we are really worried about given it's part of a multi-factor authN? It only covers the use case in which someone stole my phone and my username and my password but can't get into my phone.**
+If a secret is sent by the verifier to the out-of-band device, the device SHOULD NOT display the authentication secret on a device while it is locked by the owner (i.e., requires an entry of a PIN, passcode, or biometric). However, authenticators SHOULD indicate the receipt of an authentication secret on a locked device.
 
 If the out-of-band authenticator sends an approval message over the secondary communication channel (rather than by the claimant transferring a received secret to the primary communication channel), it SHALL do one of the following:
 
@@ -130,7 +122,7 @@ Due to the risk that SMS messages or voice calls may be intercepted or redirecte
 
 > Note: Out-of-band authentication using the PSTN (SMS or voice) is deprecated, and is being considered for removal in future editions of this guideline.
 
-If out-of-band verification is to be made using a secure application, such as on a smart phone, the verifier MAY send a push notification to that device. The verifier then waits for the establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as an approved hash function or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator.
+If out-of-band verification is to be made using a secure application, such as on a smart phone, the verifier MAY send a push notification to that device. The verifier then waits for the establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as use of an approved hash function or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator.
 
 Depending on the type of out-of-band authenticator, one of the following SHALL take place:
 
@@ -298,9 +290,7 @@ The requirements for a multi-factor cryptographic software verifier are identica
 
 ##### 5.1.9.1. Multi-Factor Cryptographic Device Authenticators
 
-Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric.  Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or other issuer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
-
->**MG: We have the "or other issuer" paranthetical. Is there an example of another issuer or is it really just in the case of a CSP oursourcing, which really is still the CSP?**
+Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric.  Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or manufacturer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
 
 The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The challenge nonce SHALL be at least 64 bits in length. Approved cryptography SHALL be used.
 
@@ -308,9 +298,7 @@ Each authentication operation using the authenticator SHOULD require the input o
 
 Any memorized secret used by the authenticator for activation SHALL be at least 6 decimal digits in length or of equivalent complexity and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), and SHALL include limits on the number of consecutive authentication failures.
 
-The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after an authentication transaction has taken place.
-
->**MG: Do we want to specify anything for erasing? I'm worried it'll end up with the drop-it-on-the-floor sadness inducing interpretation.**
+The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be overwritten in memory immediately after an authentication transaction has taken place.
 
 ##### <a name="mfcdv"></a>5.1.9.2. Multi-Factor Cryptographic Device Verifiers
 
@@ -320,8 +308,6 @@ The verifier has either symmetric or asymmetric cryptographic keys corresponding
 
 The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator). The verification operation SHALL use approved cryptography.
 
->**MG: Just chatting here, but wouldn't statistically unique be better? Reoccurrence is only a problem if it's systematic. Elminating previous used values actually reduces entropy over time. Just sayin.**
-
 #### 5.2. General Authenticator Requirements
 
 #### 5.2.1. Physical Authenticators
@@ -330,25 +316,19 @@ CSPs SHALL provide subscriber instructions on how to appropriately  protect the 
 
 #### <a name="throttle"></a>5.2.2. Rate Limiting (Throttling)
 
-*cf. 800-63-2 sec 8.2.3, p.75*
-
->**MG: What's this reference about?**
-
-When the authenticator output or activation secret does not have sufficient entropy, the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to 100 consecutive failed attempts on a single account in any 30 day period.
-
->**MG: Does time limiting the failed attempts make sense? If there were 99 consecutive failures over 30 days would we really want to let them keep rolling on the 31st day?**
+When the authenticator output or activation secret does not have sufficient entropy, the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to 100 consecutive failed attempts on a single account.
 
 Additional techniques MAY be used to prioritize authentication attempts that are likely to come from the subscriber over those that are more likely to come from an attacker:
 
 - Requiring the claimant to complete a Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA) before attempting authentication
 
-- Requiring the claimant to wait following a failed attempt for a period of time that is increasing in intervals from, say, 30 seconds to an hour, depending on how close the system is to its maximum allowance for consecutive failed attempts **MG: it's a bit hard to tell if this is normative or not.**
+- Requiring the claimant to wait following a failed attempt for a period of time that is increasing in intervals from, say, 30 seconds to an hour, as the account approaches its maximum allowance for consecutive failed attempts
 
 - Only accepting authentication requests from a white list of IP addresses at which the subscriber has been successfully authenticated before
 
 - Leveraging other risk-based or adaptive authentication techniques to identify user behavior that falls within, or out of, typical norms.
 
-Since these measures often create user inconvenience, the verifier SHOULD allow a certain number of failed authentication attempts before employing the above techniques. **MG: It's weird to have a SHOULD then use a vague term like "certain."**
+Since these measures often create user inconvenience, the verifier SHOULD allow a several failed authentication attempts before employing the above techniques.
 
 When the subscriber successfully authenticates, the verifier SHOULD disregard any previous failed attempts from the same IP address.
 
@@ -379,7 +359,7 @@ Biometric matching SHOULD be performed locally on claimant's device or MAY be pe
 
 If matching is performed centrally:
 
-* Use of the biometric SHALL be bound tightly to a single, specific device that is identified using approved cryptography. **MG: Do we need to define what tightly means?**
+* Use of the biometric SHALL be limited to a single, specific device that is identified using approved cryptography.
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
 * An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
 * All transmission of biometrics shall be over the authenticated protected channel.

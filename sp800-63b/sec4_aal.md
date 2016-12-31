@@ -2,9 +2,9 @@
 
 ## <a name="AAL_SEC4"></a>4. Authenticator Assurance Levels
 
-_The section is normative._
+_This section is normative._
 
-In order to satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier, that MAY be pseudonymous and that SHALL be used each time that subscriber authenticates to that relying party. Optionally, other attributes that identify the subscriber as a unique subject may also be provided.
+In order to satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier that MAY be pseudonymous and that SHALL be used each time that subscriber authenticates to that relying party. Optionally, other attributes that identify the subscriber as a unique subject may also be provided.
 
 Detailed normative requirements for authenticators and verifiers at each AAL are provided in Section 5.
 
@@ -50,7 +50,7 @@ At IAL 1, it is possible that attributes are collected and made available by the
 
 ### 4.1. Authenticator Assurance Level 1
 
-AAL 1 provides some assurance that the claimant controls the authenticator registered to the subscriber. AAL 1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove through a secure authentication protocol that they possess and control the authenticator.
+AAL 1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL 1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
 #### 4.1.1. Permitted Authenticator Types
 
@@ -70,8 +70,6 @@ AAL 1 permits the use of any of the following authenticator types, which are def
 
 Cryptographic authenticators used at AAL 1 SHALL use approved cryptography. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD decline to operate when such a compromise is detected.
 
->**MG: I don't disagree with having jailbreak, but it is certainly more controversial than malware, so I'd rather stick with that example.**
-
 Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
 
 Verifiers operated by government agencies at AAL 1 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
@@ -90,7 +88,7 @@ The CSP shall comply with their respective records retention policies in accorda
 
 ### 4.2. Authenticator Assurance Level 2
 
-AAL 2 provides high confidence that the claimant controls the authenticator registered to a subscriber. Two different authentication factors are required. Approved cryptographic techniques are required at AAL 2 and above.
+AAL 2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL 2 and above.
 
 #### 4.2.1. Permitted Authenticator Types
 
@@ -116,8 +114,6 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 Cryptographic authenticators used at AAL 2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD decline to operate when such a compromise is detected.
 
->**MG: Can we relax "procured" a bit? I wouldn't want to get stuck in a place where they're leveraging something free (google comes to mind) and thus don't think they need to meet the FIPS req.**
-
 Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
 
 Verifiers operated by government agencies at AAL 2 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
@@ -136,24 +132,20 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL 3 provides very high confidence that the claimant controls the authenticator registered to a subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is similar to AAL 2 except that it requires a "hard" cryptographic authenticator that also provides verifier impersonation resistance.
+AAL 3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
 #### 4.3.1. Permitted Authenticator Types
 
-Authentication Assurance Level 3 requires the use of one of three kinds of hardware devices:
+Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
 
 * Multi-Factor Cryptographic Device
 * Single-Factor Cryptographic Device used in conjunction with Memorized Secret
-
->**MG: Is there supposed to be a third kind of hardward device here?**
 
 All cryptographic device authenticators used at AAL 3 SHALL be verifier impersonation resistant as described in section [5.2.5](#verifimpers).
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
-Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. At least one authenticator used in each AAL 3 authentication SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers). 
-
->**MG: 4.3.1 states that all crypto authNors have verifier impersonation resistance but this states just authNor does, which suggests any could. It's not so much a conflict as a lack of clarity.**
+Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. All cryptographic device authenticators used at AAL 3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers). 
 
 Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security.
 

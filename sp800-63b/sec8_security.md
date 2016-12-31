@@ -12,7 +12,7 @@ An attacker who can gain control of an authenticator will often be able to masqu
 
 - *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner’s computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.
     
-- *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber’s fingerprint and construct a replica. **MG: I think we talk about mitigations elsewhere so removed the reference to a defense here.**
+- *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber’s fingerprint and construct a replica.
 
 - *Out of band* secrets may be intercepted. An attacker may receive a challenge or response by eavesdropping on the primary or secondary communications channel. The attacker might then authenticate their own channel or save the message for later replay.
 
