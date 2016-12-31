@@ -3,7 +3,7 @@
 
 # <a name="800-63b"></a> DRAFT NIST Special Publication 800-63B
 
-# Digital Authentication Guideline
+# Digital Identity Guidelines
 
 ### Authentication and Lifecycle Management
 
@@ -40,7 +40,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 # DRAFT NIST Special Publication 800-63B
 
-# Digital Authentication Guideline
+# Digital Identity Guidelines
 
 ### Authentication and Lifecycle Management
 
@@ -111,13 +111,15 @@ Technology and Director*
 
 </div>
 
+<div class="breaker"/>
+
 <div class="text-center" markdown="1">
 
 ### Authority
 
 </div>
 
-This publication has been developed by NIST in accordance with its statutory responsibilities under the Federal Information Security Modernization Act (FISMA) of 2014, 44 U.S.C. § 3541 et seq., Public Law  (P.L.) 113-283. NIST is responsible for developing information security standards and guidelines, including minimum requirements for federal information systems, but such standards and guidelines shall not apply to national security systems without the express approval of appropriate federal officials exercising policy authority over such systems. This guideline is consistent with the requirements of the Office of Management and Budget (OMB) Circular A-130.
+This publication has been developed by NIST in accordance with its statutory responsibilities under the Federal Information Security Modernization Act (FISMA) of 2014, 44 U.S.C. § 3541 et seq., Public Law  (P.L.) 113-283. NIST is responsible for developing information security standards and guidelines, including minimum requirements for federal systems, but such standards and guidelines shall not apply to national security systems without the express approval of appropriate federal officials exercising policy authority over such systems. This guideline is consistent with the requirements of the Office of Management and Budget (OMB) Circular A-130.
 
 Nothing in this publication should be taken to contradict the standards and guidelines made mandatory and binding on Federal agencies by the Secretary of Commerce under statutory authority. Nor should these guidelines be interpreted as altering or superseding the existing authorities of the Secretary of Commerce, Director of the OMB, or any other Federal official. This publication may be used by nongovernmental organizations on a voluntary basis and is not subject to copyright in the United States. Attribution would, however, be appreciated by NIST.
 
@@ -234,7 +236,7 @@ The terms “SHOULD” and “SHOULD NOT” indicate that among several possibil
 
 The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
 
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
+The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
 
 <div class="breaker"/>
 
