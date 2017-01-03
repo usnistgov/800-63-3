@@ -148,14 +148,14 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 {::comment}
 
 
-**Comments on this publication may be submitted to eauth-comments@nist.gov  
+**Comments on this publication may be submitted to dig-comments@nist.gov  
 Public comment period: Month Day, YYYY through Month Day, YYYY**  
 All comments are subject to release under the Freedom of Information Act (FOIA).
 
 National Institute of Standards and Technology  
 Attn: Computer Security Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 8930) Gaithersburg, MD 20899-8930  
-Email: <eauth-comment@nist.gov>
+Email: <dig-comments@nist.gov>
 
 
 {:/comment}
