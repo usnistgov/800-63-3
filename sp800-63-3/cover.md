@@ -1,8 +1,9 @@
 <div class="text-right" markdown="1">
 
-# <a name="800-63-3"></a>DRAFT NIST Special Publication 800-63-3
+# <a name="800-63-3"></a> DRAFT NIST Special Publication 800-63-3
 
 # Digital Identity Guidelines
+
 Paul A. Grassi  
 Michael E. Garcia  
 James L. Fenton
@@ -17,9 +18,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)
 
-</div>
-
-<div class="breaker text-right" markdown="1">
+</div><div class="breaker text-right" markdown="1">
 
 # DRAFT NIST Special Publication 800-63-3
 
@@ -129,7 +128,7 @@ activities with industry, government, and academic organizations.
 </div>
 
 These guidelines provide technical requirements for Federal agencies
-implementing digital authentication and are not intended to constrain
+implementing digital identity services and are not intended to constrain
 the development or use of standards outside of this purpose. The
 guidelines cover remote authentication of users (such as employees,
 contractors, or private individuals) interacting with government IT

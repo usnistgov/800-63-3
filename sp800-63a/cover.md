@@ -2,7 +2,7 @@
 
 # <a name="800-63a"></a> DRAFT NIST Special Publication 800-63A
 
-# Digital Authentication Guideline
+# Digital Identity Guidelines
 
 ### Enrollment and Identity Proofing Requirements
 
@@ -34,7 +34,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 # DRAFT NIST Special Publication 800-63A
 
-# Digital Authentication Guideline
+# Digital Identity Guidelines
 
 ###  Enrollment and Identity Proofing Requirements
 
@@ -81,7 +81,7 @@ U.S. Department of Commerce
 *Penny Pritzker, Secretary*
 
 National Institute of Standards and Technology  
-*Willie E. May, Under Secretary of Commerce for Standards and
+*Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
 
 </div>
@@ -160,7 +160,8 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-This document and its companion documents, SP 800-63-3, SP 800-63B, and SP 800-63C, provide technical and procedural guidelines to agencies for the implementation of digital authentication. This document focuses on the enrollment and verification of an identity for for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for Federal agencies
+implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
 
@@ -212,7 +213,10 @@ The terms “SHOULD” and “SHOULD NOT” indicate that among several possibil
 
 The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
 
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
+The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
+
+<div class="breaker"/>
+
 
 ## Table of Contents
 
