@@ -8,6 +8,8 @@
 
 <a name="canada"></a>[Canadian Guideline on Identity Assurance] available at: <http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30678&section=HTML>.
 
+<a name="COPPA"></a>[COPPA] Children's Online Privacy Protection Act of 1998 ("COPPA"), 15 U.S.C. 6501-6505, 16 CFR Part 312
+
 <a name="M-03-22"></a>[OMB M-03-22] OMB Memorandum M-03-22, *OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002* (September 26, 2003), available at: <https://www.whitehouse.gov/omb/memoranda/m03-22.html>.
 
 <a name="M-04-04"></a>[M-04-04] OMB Memorandum M-04-04, *E-Authentication Guidance for Federal Agencies* (December 16, 2003), available at: <https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf>.
