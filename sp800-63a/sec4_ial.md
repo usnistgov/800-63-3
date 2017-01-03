@@ -156,6 +156,7 @@ The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote i
 	- The enrollment code SHALL be valid for a maximum of 7 days
 
 - **If the CSP performed remote proofing:**  
+  
 	- The CSP SHALL send an enrollment code to an address of record of the applicant.
 	- The applicant SHALL present a valid enrollment code to complete the identity proofing process.
 	- The CSP SHOULD send the enrollment code to the physical mailing address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
@@ -231,7 +232,7 @@ An enrollment code allows the CSP to confirm that the applicant controls an addr
 
 An enrollment code SHALL be comprised of one of the following:
 
-* Minimally, a random six character alphanumeric.
+* Minimally, a random six character alphanumeric. For example, a code generated using a secure random cryptographic algorithm or a serial number for a physical hardware authenticator.
 * A machine readable optical label, such as a QR Code, that contains data of similar or higher entropy as a random six character alphanumeric.
 
 
