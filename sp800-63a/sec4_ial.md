@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This document describes the common pattern in which a subject (referred to as an applicant at this stage) undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity record, then validated and verified. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](#800-63b)).
+This document describes the common pattern in which a subject (referred to as an applicant at this stage) undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](#800-63b)).
 
 The only outcome of identity proofing is to ensure that the applicant is who they claim to be. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  As an example, such core attributes, to the extent they are the minimum necessary, could include:  
 
