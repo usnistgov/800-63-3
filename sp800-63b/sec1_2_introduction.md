@@ -10,7 +10,7 @@ This document and its companion documents, [SP 800-63-3](sp800-63-3.html), [SP 8
 
 ## 2. Introduction
 
-_This section is informative_
+_This section is informative._
 
 Digital identity is the unique representation of a subject engaged in an online transaction. A digital identity is always unique in the context of a digital service, but does not necessarily need to uniquely identify the subject. In other words, accessing a digital service may not mean that the physical representation of the underlying subject is known. Identity proofing establishes that a subject is actually who they claim to be. Digital authentication is the process of determining the validity of one or more authenticators used to claim a digital identity. Authentication establishes a subject attempting to access a digital service is in control of the technologies used to authenticate.  For services in which return visits are applicable, successfully authenticating provides reasonable risk-based assurances that the subject that is accessing the service today is the same as that which accessed the service yesterday. Digital identity presents a technical challenge because this process often involves the proofing of individuals over an open network, and always involves the authentication of individual subjects over an open network to access digital government services. Of which exists multiple opportunities for impersonation and other attacks to fraudulently claim another subjects digital identity.
 

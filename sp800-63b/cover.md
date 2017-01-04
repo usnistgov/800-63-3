@@ -186,7 +186,7 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-This document and its companion documents, SP 800-63-3, SP 800-63A, and SP 800-63C, provide technical and procedural guidelines to agencies implementing electronic authentication to choose and implement effective authentication processes based on risk. The recommendation covers remote authentication of users (such as employees, contractors, or private individuals) interacting with government systems over open networks. It defines technical requirements for each of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for Federal agencies implementing digital identity services are not intended to constrain the development or use of standards outside of this purpose. These guidelines focus on the remote authentication of subjects interacting with government systems over open networks, establishing that a given claimant is a subscriber that has previously authenticated. The result of the authentication process may be used locally by the system performing the authentication or may be asserted elsewhere in a federated identity system. This document defines technical requirements for each of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
 

@@ -104,7 +104,7 @@ The out-of-band device SHALL be uniquely addressable and communication over the 
 
 The out-of-band authenticator SHALL uniquely authenticate itself in one of the following ways in communicating with the verifier:
 
-- Establish an authenticated protected channel to the verifier using approved cryptography. The key used SHALL be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, trusted execution).
+- Establish an authenticated protected channel to the verifier using approved cryptography. The key used SHALL be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, trusted execution environment).
 
 - Authenticate to a public mobile telephone network using a SIM card or equivalent that uniquely identifies the device. This method SHALL only be used if a secret is being sent from the verifier to the out-of-band device via the telephone network (SMS or voice).
 
@@ -316,7 +316,7 @@ CSPs SHALL provide subscriber instructions on how to appropriately  protect the 
 
 #### <a name="throttle"></a>5.2.2. Rate Limiting (Throttling)
 
-When the authenticator output or activation secret does not have sufficient entropy, the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to 100 consecutive failed attempts on a single account.
+When the authenticator output or activation secret does not have sufficient entropy, the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to no more than 100 consecutive failed attempts on a single account.
 
 Additional techniques MAY be used to prioritize authentication attempts that are likely to come from the subscriber over those that are more likely to come from an attacker:
 
@@ -327,8 +327,6 @@ Additional techniques MAY be used to prioritize authentication attempts that are
 - Only accepting authentication requests from a white list of IP addresses at which the subscriber has been successfully authenticated before
 
 - Leveraging other risk-based or adaptive authentication techniques to identify user behavior that falls within, or out of, typical norms.
-
-Since these measures often create user inconvenience, the verifier SHOULD allow a several failed authentication attempts before employing the above techniques.
 
 When the subscriber successfully authenticates, the verifier SHOULD disregard any previous failed attempts from the same IP address.
 
