@@ -108,7 +108,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 * Single Factor Cryptographic Software
 * Single Factor Cryptographic Device
 
-> Note: The requirement for a memorized secret authenticator above derives from the need for two different types of authentication factors to be used. All biometric authenticators compliant with this specification are multi-factor, so something you know (a memorized secret) is the remaining possibility.
+> Note: When biometric authentication is used, use of the biometric SHALL be limited to specific devices as described in Section [5.2.3](#biometric_use). Therefore, the device is "something you have" which serves as a second factor for the authentication. Another factor such as a memorized secret is not required (but MAY be used to provide additional assurance).
 
 #### 4.2.2. Authenticator and Verifier Requirements
 

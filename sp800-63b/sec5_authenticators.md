@@ -316,7 +316,7 @@ CSPs SHALL provide subscriber instructions on how to appropriately  protect the 
 
 #### <a name="throttle"></a>5.2.2. Rate Limiting (Throttling)
 
-When the authenticator output or activation secret does not have sufficient entropy, the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to no more than 100 consecutive failed attempts on a single account.
+When required in the authenticator type descriptions under Section 5.1, the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to no more than 100 consecutive failed attempts on a single account.
 
 Additional techniques MAY be used to prioritize authentication attempts that are likely to come from the subscriber over those that are more likely to come from an attacker:
 
@@ -341,7 +341,7 @@ For a variety of reasons, this document supports only limited use of biometrics 
 
 Therefore, the use of biometrics for authentication is supported with the following requirements and guidelines:
 
-Biometrics SHALL be used with another authentication factor (something you know or something you have).
+Biometrics SHALL be used with another authentication factor (something you have).
 
 Empirical testing of the biometric system to be deployed SHALL demonstrate an equal error rate of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with a false match rate of **1 in 1000** or better.
 
