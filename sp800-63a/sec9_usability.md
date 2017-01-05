@@ -10,7 +10,7 @@ _This section is informative._
 
 The overarching goal of usability for enrollment and identity proofing is to promote a smooth, positive enrollment process for users by minimizing user burden (e.g., time and frustration) and enrollment friction (e.g., the number of steps to complete and amount of information to track). 
 
-The enrollment and identity proofing process sets the stage for a user’s interactions with a CSP; since negative first impressions can influence user perception of subsequent interactions, organizations benefit from promoting a positive user experience throughout the process. 
+The enrollment and identity proofing process sets the stage for a user’s interactions with a CSP and the online services the user will access; since negative first impressions can influence user perception of subsequent interactions, organizations benefit from promoting a positive user experience throughout the process. 
 
 An organization’s first step to promoting a smooth, positive enrollment process is familiarizing itself with the user. This consists of matching users with suitable CSPs based on their characteristics ahead of the enrollment and identity proofing process. 
 
