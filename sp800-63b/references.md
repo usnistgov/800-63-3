@@ -33,6 +33,8 @@
 [[UAX 15]](#UAX15)
 <a name="UAX15">[UAX 15]</a> Unicode Consortium, *Unicode Normalization Forms*, Unicode Standard Annex 15, Version 9.0.0, February, 2016. Available at <http://www.unicode.org/reports/tr15/>
 
+<a name="shannon">[Shannon]</a> Shannon, Claude E. "A Mathematical Theory of Communication," *Bell System Technical Journal*, v. 27, pp. 379-423, 623-656, July, October, 1948.
+
 ### 11.2. NIST Special Publications
 
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.

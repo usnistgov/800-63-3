@@ -97,6 +97,7 @@ All comments are subject to release under the Freedom of Information Act (FOIA).
 National Institute of Standards and Technology  
 Attn: Computer Security Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 8930) Gaithersburg, MD 20899-8930  
+=======
 Email: <dig-comments@nist.gov>
 
 {:/comment}
