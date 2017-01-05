@@ -4,7 +4,7 @@
 
 _This section is normative._
 
-This section provides the detailed requirements specific for type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4) and the requirement for verifier impersonation resistance at AAL 3 described in section [5.2.5](#verifimpers), the technical requirements for each of the authenticator types are the same regardless of the AAL at which the authenticator is used.
+This section provides the detailed requirements specific for each type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4) and the requirement for verifier impersonation resistance at AAL 3 described in section [5.2.5](#verifimpers), the technical requirements for each of the authenticator types are the same regardless of the AAL at which the authenticator is used.
 
 ### 5.1. Requirements by Authenticator Type
 
@@ -132,7 +132,7 @@ Depending on the type of out-of-band authenticator, one of the following SHALL t
 
 * Verification of secrets by claimant: The verifier SHALL display a random authentication secret to the claimant via the primary channel, and SHALL send the same secret to the out-of-band authenticator via the secondary channel for presentation to the claimant. It SHALL then wait for an approval (or disapproval) message via the secondary channel.
 
-In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes.
+In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes. In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
 
 The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator. If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
@@ -165,7 +165,7 @@ Single factor OTP verifiers effectively duplicate the process of generating the 
 
 When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography.
 
-The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and man-in-the-middle attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.
+The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and man-in-the-middle attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes. In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given time-based one-time password only once during the validity period.
 
 If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle).
 
@@ -197,7 +197,7 @@ Multi-factor OTP verifiers effectively duplicate the process of generating the O
 
 When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source. that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
 
-The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and man-in-the-middle attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.
+The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and man-in-the-middle attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given time-based one-time password only once during the validity period.
 
 If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber’s account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
@@ -393,6 +393,12 @@ The latter class of verifier impersonation resistant protocols relies on access 
 
 In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and one-time password authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
 
-#### <a name="csp-verifier"></a>5.2.6. Verifier-CSP commmunications
+#### <a name="csp-verifier"></a>5.2.6. Verifier-CSP communications
 
 In situations where the verifier and CSP are separate entities (as shown by the dotted line in [SP 800-63-3 Figure 4-1](sp800-63-3.html#63Sec4-Figure1)), communications between the verifier and CSP SHALL occur through a mutually-authenticated secure channel (such as a client-authenticated TLS connection) using approved cryptography.
+
+#### <a name="replay"></a>5.2.7. Replay resistance
+
+Authenticators whose output is usable only once are referred to as replay resistant. Replay resistance is in addition to the replay resistant nature of authenticated protected channel protocols, since the output could be stolen prior to entry into the protected channel. Examples of replay resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
+
+In contrast, memorized secrets SHALL NOT be considered replay resistant because the authenticator output (the secret itself) is provided for each authentication. Although not recognized as an independent authenticator, biometrics SHALL NOT be considered replay resistant because a match result can often be obtained if the sensor output is recorded and a subtly manipulated version is replayed, even though the replay may not have been exact.
