@@ -92,7 +92,7 @@ AAL 2 provides high confidence that the claimant controls authenticator(s) regis
 
 #### 4.2.1. Permitted Authenticator Types
 
-At AAL 2, it is required to have either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in Section 5.
+At AAL 2, it is required to have either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
 
 When a multi-factor authenticator is used, any of the following may be used:
 
@@ -108,7 +108,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 * Single Factor Cryptographic Software
 * Single Factor Cryptographic Device
 
-> Note: When biometric authentication is used, use of the biometric SHALL be limited to specific devices as described in Section [5.2.3](#biometric_use). Therefore, the device is "something you have" which serves as a second factor for the authentication. Another factor such as a memorized secret is not required (but MAY be used to provide additional assurance).
+> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use) the device has to be authenticated. Therefore, it is unneccessary to implement another factor with biometrics as the device is "something you have", which serves as a valid second factor for the authenticator. 
 
 #### 4.2.2. Authenticator and Verifier Requirements
 
