@@ -2,7 +2,7 @@
 
 ## 4. Federation
 
-In a federation protocol, a three-party relationship is formed between the subscriber, the identity provider (IdP), and the relying party (RP) as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes among the participants at different times. The subscriber communicates with both the IdP and the RP, usually through a web browser. The RP and the IdP communicate with each other in two ways:
+In a federation protocol, a three-party relationship is formed between the subscriber, the identity provider (IdP), and the relying party (RP) as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes among the participants at different times. The subscriber communicates with both the IdP and the RP, usually through a browser. The RP and the IdP communicate with each other in two ways:
 
  - The *front channel*, through redirects involving the subscriber,
  - or the *back channel*, through a direct connection between the RP and IdP, not involving the subscriber.
@@ -30,7 +30,7 @@ IdPs and RPs MAY act as their own authorities of who to federate with or MAY ext
 
 Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
-Federation relationships SHALL establish parameters regarding expected and acceptable identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship. For example, a given RP may only accept IAL 2 identity proofing from a given IdP that has been vetted at that level.
+Federation relationships SHALL establish parameters regarding expected and acceptable identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship.
 
 #### <a name="dynamic-registration"></a> 4.1.2. Dynamic Registration
 
@@ -59,6 +59,7 @@ Most federations managed through authorities have a simple membership model: eit
 #### 4.1.4. Proxied Federation
 
 In a proxied federation, communication between the IdP and the RP is intermediated in a way that prevents direct communication between the two parties. There are multiple methods to achieve this effect; common configurations include:
+
 * A third party that acts as a federation proxy (or *broker*)
 * A network of nodes that distributes the communications
 
@@ -80,11 +81,9 @@ See [section 9.5](#blinding) for further information on blinding techniques, the
 
 The fact that parties have federated SHALL NOT be interpreted as permission to pass information. Federated parties MAY establish whitelists of other federated parties who authenticate subscribers or pass information about them without runtime authorization from the subscriber. Federated parties MAY also establish blacklists of other federated parties who are not allowed to pass information about subscribers at all. Every party that is not on a whitelist or a blacklist SHALL be placed by default in a gray area where runtime authorization decisions will be made by an authorized party, often the subscriber.
 
-To mitigate the risk of unauthorized exposure of sensitive information (e.g., shoulder surfing), the IdP SHALL, by default, mask sensitive information displayed to the subscriber.  The IdP SHALL provide mechanisms for the subscriber to temporarily unmask such information in order for the subscriber to view full values.
+To mitigate the risk of unauthorized exposure of sensitive information (e.g., shoulder surfing), the IdP SHALL, by default, mask sensitive information displayed to the subscriber.  The IdP SHALL provide mechanisms for the subscriber to temporarily unmask such information in order for the subscriber to view full values. The IdP SHALL provide effective mechanisms for redress of applicant complaints or problems (e.g., subscriber identifies an inaccurate attribute value). For more details on masking and redress, please see [Section 10. Usability Considerations](#sec10).  
 
-The subscriber SHALL be able to view the attribute values to be transmitted, although masking mechanisms SHALL be employed, as necessary, to mitigate the risk of unauthorized exposure of sensitive information (e.g. shoulder surfing). The IdP SHALL provide effective mechanisms for redress of applicant complaints or problems (e.g., subscriber identifies an inaccurate attribute value). For more details on masking and redress, please see [Section 10. Usability Considerations](#sec10).  
-
-The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation. See section 9.2 for considerations on determining which party should provide the notice and obtain confirmation. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. An IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
+The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation, consistent with Section 9.2. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. An IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
 
 ### 4.2. Privacy Requirements
 
@@ -92,7 +91,7 @@ Federation involves the transfer of personal attributes from a third party, the 
 
 Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with the privacy interests of subscribers. 
 
-The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in Section 5.2.5 or privacy-enhancing cryptographic protocols, to provide unlinkability and discourage subscriber activity tracking and profiling.
+The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in Section 5.2.5, to provide unlinkability and discourage subscriber activity tracking and profiling.
 
 An IdP MAY disclose information on subscriber activities to other RPs within the federation for security purposes such as communication of compromised subscriber accounts.
 

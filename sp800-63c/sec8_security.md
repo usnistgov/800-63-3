@@ -10,9 +10,7 @@ assertions and assertion references to impersonate a subscriber or
 access unauthorized data or services. Furthermore, it is possible that
 two or more entities may be colluding to attack another party. An
 attacker may attempt to subvert assertion protocols by directly
-compromising the integrity or confidentiality of the assertion data. For
-the purpose of these types of threats, authorized parties who attempt to
-exceed their privileges may be considered attackers. This section lists some common attacks against assertion transmission transactions.
+compromising the integrity or confidentiality of the assertion data. For the purpose of these types of threats, authorized parties who attempt to exceed their privileges may be considered attackers. This section lists some common attacks against assertion transmission transactions.
 
 -   *Assertion manufacture/modification* – An attacker generates a
     forged assertion or modifies the content of an existing assertion (such as the
@@ -118,8 +116,7 @@ described in the last subsection.
     authenticated protected session, and may therefore be
     considered equivalent. The general requirement for protecting
     against both assertion disclosure and assertion
-    manufacture/modification may therefore be described as a mutually
-    authenticated protected session or equivalent between the IdP
+    manufacture or modification may therefore be described as a mutually authenticated protected session or equivalent between the IdP
     and the RP. 
 
 -   *Assertion repudiation by the IdP* – To mitigate this threat,
@@ -147,7 +144,7 @@ described in the last subsection.
     of validity. The RP checks the timestamp and lifetime values to
     ensure that the assertion is currently valid. 
 	2.  The RP keeps track of assertions that were consumed within
-    a (configurable) time window to ensure that an assertion is not
+    a configurable time window to ensure that an assertion is not
     used more than once within that time window. 
 
 -   *Secondary authenticator manufacture* – To mitigate this threat, one
