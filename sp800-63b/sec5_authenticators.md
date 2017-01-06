@@ -37,7 +37,8 @@ When processing requests to establish and change memorized secrets, verifiers SH
 
 * Passwords obtained from previous breach corpuses
 * Dictionary words
-* Context specific words, such as the name of the service, the username, and derivates thereof
+* Repetitive characters
+* Context specific words, such as the name of the service, the username, and derivatives thereof
 
 If the chosen secret is found in the list, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
 
