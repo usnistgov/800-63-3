@@ -2,7 +2,7 @@
 
 ## 5. Assertions
 
-An assertion is a packaged set of attribute values or claims about or associated with an authenticated subscriber that is passed from the identity provider (IdP) to the relying party (RP) in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time.
+An assertion is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the identity provider (IdP) to the relying party (RP) in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time.
 
 Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute claims regarding the subscriber. 
 
@@ -41,7 +41,7 @@ Note that mere possession of a bearer assertion or reference is not always enoug
 
 #### 5.1.2. Holder-of-Key Assertions
 
-A holder-of-key assertion contains a reference to a symmetric key, or a public key that corresponds to a private key, possessed by and representing the subscriber.  To establish a holder-of-key binding of an assertion to a claimant, the RP SHALL require the claimant to prove possession of the key that is referenced in the assertion in addition to presentation of the assertion itself. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion.
+A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber, and the subscriber SHALL prove possession of that key in addition to presentation of the assertion itself. The key MAY be a symmetric key or a public key that corresponds to a private key. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion by the RP.
 
 The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
 
@@ -81,7 +81,7 @@ In some circumstances, it is desirable to prevent the subscriber's account at th
 
 When pairwise pseudonymous identifiers are used with RPs alongside attributes, it may still be possible for multiple colluding RPs to reidentify a subscriber by correlation across systems using these identity attributes. For example, if two independent RPs each see the same subscriber identified with different pairwise pseudonymous identifiers, they could still determine that the subscriber is the same person by comparing the name, email address, physical address, or other identifying attributes carried alongside the pairwise pseudonymous identifier in the respective assertions. Privacy policies MAY prohibit such correlation, and pairwise pseudonymous identifiers can increase effectiveness of these policies by increasing the administrative effort in managing the attribute correlation. 
 
-Note that in a proxied federation model, the initial IdP may be unable to generate a pairwise pseudonymous identifier for the ultimate RP, since the proxy could blind the IdP from knowing which RP is being accessed by the subscriber. In such situations, the pairwise pseudonymous identifier is generally established between the IdP and the federation proxy itself. The proxy, acting as an IdP, can itself provide pairwise pseudonymous identifiers to downstream RPs. Depending on the protocol, the federation proxy may need to map the pairwise pseudonymous identifiers back to the associated identifiers from upstream IdPs in order to allow the identity protocol to function. In such cases, the proxy will be able to track and determine which pairwise pseudonymous identifiers represent the same subscriber at different RPs.
+Note that in a proxied federation model, the initial IdP may be unable to generate a pairwise pseudonymous identifier for the ultimate RP, since the proxy could blind the IdP from knowing which RP is being accessed by the subscriber. In such situations, the pairwise pseudonymous identifier is generally established between the IdP and the federation proxy itself. The proxy, acting as an IdP, can itself provide pairwise pseudonymous identifiers to downstream RPs. Depending on the protocol, the federation proxy may need to map the pairwise pseudonymous identifiers back to the associated identifiers from upstream IdPs in order to allow the identity protocol to function. In such cases, the proxy will be able to track and determine which pairwise pseudonymous identifiers represent the same subscriber at different RPs. The proxy SHALL NOT disclose the mapping between the pairwise pseudonymous identifier and any other identifiers to a third party or use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information.
 
 #### 5.2.6. <a name="ppi-gen"></a>Pairwise Pseudonymous Identifier Generation
 
