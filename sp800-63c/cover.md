@@ -1,9 +1,8 @@
-
 <div class="text-right" markdown="1">
 
 # <a name="800-63c"></a> DRAFT NIST Special Publication 800-63C
 
-# Digital Authentication Guideline  
+# Digital Identity Guidelines  
 
 ### Federation and Assertions
 
@@ -28,7 +27,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 # DRAFT NIST Special Publication 800-63C
 
-# Digital Authentication Guideline
+# Digital Identity Guidelines
 
 ### Federation and Assertions
 
@@ -56,8 +55,6 @@ Jamie M. Danker
 *National Protection and Programs Directorate  
 Department of Homeland Security*  
 
-
-
 {::comment}
 
 This publication is available free of charge from:
@@ -74,7 +71,7 @@ U.S. Department of Commerce
 *Penny Pritzker, Secretary*
 
 National Institute of Standards and Technology  
-*Willie E. May, Under Secretary of Commerce for Standards and
+*Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
 
 </div>
@@ -140,6 +137,8 @@ The Information Technology Laboratory (ITL) at the National Institute of Standar
 
 This document and its companion documents, SP 800-63-3, SP 800-63A, and SP 800-63B, provide technical and procedural guidelines to agencies for the implementation of federated identity systems and for assertions used by federations. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
 
+These guidelines provide technical requirements for Federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the use of use of federated identity, and the use of assertions to implement identity federations. Federation allows a given credential service provider to provide authentication and (optionally) subscriber attributes to a number of separately administered relying parties. Similarly, relying parties may use more than one credential service provider.
+
 <div class="text-center" markdown="1">
 
 ### Keywords
@@ -189,7 +188,7 @@ The terms “SHOULD” and “SHOULD NOT” indicate that among several possibil
 
 The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
 
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
+The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
 
 <div class="breaker"/>
 
