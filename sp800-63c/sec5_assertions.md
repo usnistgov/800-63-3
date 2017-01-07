@@ -25,8 +25,6 @@ Assertions MAY also include the following information:
 
 Assertions SHOULD specify the AAL when an authentication event is being asserted and IAL when identity proofed attributes or claims based thereon are being asserted. The IAL and AAL MAY be specified in an alternate form, such as a composite level of assurance. If not specified, the RP SHALL NOT assign any specific IAL or AAL to the assertion.
 
->**MG: Can we get away with leaving out the composite AAL? If it's normative that agencies use AAL and IAL, perhaps we could have that they MAY additionally specify a composite?**
-
 Assertions MAY include additional attributes. Refer to [Section 6](#sec6) for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in one or more separate transactions using an authorization credential issued alongside the original assertion. The ability to successfully fetch such additional attributes SHALL NOT be treated as equivalent to processing of the assertion.
 
 Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) by the RP comes into play; the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion. See [section 4.3](#federation-session) for more information.
@@ -44,8 +42,6 @@ Note that mere possession of a bearer assertion or reference is not always enoug
 #### 5.1.2. Holder-of-Key Assertions
 
 A holder-of-key assertion contains a reference to a symmetric key, or a public key that corresponds to a private key, possessed by and representing the subscriber.  To establish a holder-of-key binding of an assertion to a claimant, the RP SHALL require the claimant to prove possession of the key that is referenced in the assertion in addition to presentation of the assertion itself. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion.
-
->**MG: How does this last sentence work? Where is the holder-of-key in that scenario?**
 
 The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
 
@@ -86,8 +82,6 @@ In some circumstances, it is desirable to prevent the subscriber's account at th
 When pairwise pseudonymous identifiers are used with RPs alongside attributes, it may still be possible for multiple colluding RPs to reidentify a subscriber by correlation across systems using these identity attributes. For example, if two independent RPs each see the same subscriber identified with different pairwise pseudonymous identifiers, they could still determine that the subscriber is the same person by comparing the name, email address, physical address, or other identifying attributes carried alongside the pairwise pseudonymous identifier in the respective assertions. Privacy policies MAY prohibit such correlation, and pairwise pseudonymous identifiers can increase effectiveness of these policies by increasing the administrative effort in managing the attribute correlation. 
 
 Note that in a proxied federation model, the initial IdP may be unable to generate a pairwise pseudonymous identifier for the ultimate RP, since the proxy could blind the IdP from knowing which RP is being accessed by the subscriber. In such situations, the pairwise pseudonymous identifier is generally established between the IdP and the federation proxy itself. The proxy, acting as an IdP, can itself provide pairwise pseudonymous identifiers to downstream RPs. Depending on the protocol, the federation proxy may need to map the pairwise pseudonymous identifiers back to the associated identifiers from upstream IdPs in order to allow the identity protocol to function. In such cases, the proxy will be able to track and determine which pairwise pseudonymous identifiers represent the same subscriber at different RPs.
-
->**MG: Can we at least provide a restriction here on reuse of that mapping?**
 
 #### 5.2.6. <a name="ppi-gen"></a>Pairwise Pseudonymous Identifier Generation
 
