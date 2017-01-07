@@ -11,8 +11,15 @@ Paul A. Grassi
 Justin P. Richer  
 Sarah K. Squire  
 James L. Fenton  
-Naomi B. Lefkovitz  
-Jamie M. Danker
+
+Privacy Authors:  
+Naomi B. Lefkovitz    
+Jamie M. Danker  
+
+Usability Authors:  
+Yee-Yin Choong      
+Kristen K. Greene      
+Mary F. Theofanos   
 Ellen M. Nadeau    
 
 {::comment}
@@ -49,6 +56,8 @@ James L. Fenton
 *Altmode Networks  
 Los Altos, CA*  
 
+Privacy Authors:
+
 Naomi B. Lefkovitz  
 *Applied Cybersecurity Division  
 Information Technology Laboratory*    
@@ -58,6 +67,12 @@ Jamie M. Danker
 Department of Homeland Security*  
 
 Usability Authors:  
+
+Yee-Yin Choong  
+Kristen K. Greene  
+Mary F. Theofanos  
+*Information Access Division  
+Information Technology Laboratory*  
 
 Ellen M. Nadeau  
 *Applied Cybersecurity Division  
