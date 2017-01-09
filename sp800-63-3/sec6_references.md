@@ -40,7 +40,7 @@ Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistp
 
 <a name="STORK2.0"></a>[STORK 2.0] European Union, *Secure idenTity acrOss boRders linKed 2.0*, 2014, available at: <https://www.eid-stork2.eu/>.
 
-<a name="EIDAS"></a>[EIDAS] European Union, *REGULATION (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL (23 July 2014)*, available at: <http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG>.
+<a name="eIDAS"></a>[eIDAS] European Union, *REGULATION (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL (23 July 2014)*, available at: <http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG>.
 
 <a name="ISO29115"></a>[ISO 29115] International Standards Organization, ISO/IEC 29115 *Information technology -- Security techniques -- Entity authentication assurance framework*, April 1, 2013, available from <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=45138>
 
