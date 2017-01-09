@@ -164,7 +164,7 @@ This document has been written to satisfy the needs of federal agencies. However
 SP 800-63|[[eIDAS]](#eIDAS)|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115]](#ISO29115)|[[ISO 29003]](#ISO29003)|[[Canada]](#Canada)
 :---------:|:----:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
 N/A|N/A|N/A|Level 01|N/A|N/A|N/A|N/A
-AAL/IAL 1|N/A|Level 1|Level 1|QAA Level 1|LoA 1|LoA 1|IAL/CAL 1
+AAL/IAL 1|Low|Level 1|Level 1|QAA Level 1|LoA 1|LoA 1|IAL/CAL 1
 AAL/IAL 1|Low|Level 2|Level 2|QAA Level 2|LoA 2|LoA 2|IAL/CAL 2
 AAL/IAL 2|Substantial|Level 3|Level 3|QAA Level 3|LoA 3|LoA 3|IAL/CAL 3
 AAL/IAL 3|High|Level 4|N/A2|QAA Level 4|LoA 4|LoA 4|IAL/CAL 4
