@@ -1,13 +1,13 @@
 ---
 layout: cover
-title: "NIST SP 800-63-3 Digital Authentication Guideline"
-description: "Public Preview for NIST Special Publication: SP 800-63-3 Digital Authentication Guideline"
+title: "NIST SP 800-63-3 Digital Identity Guidelines"
+description: "Public Preview for NIST Special Publication: SP 800-63-3 Digital Identity Guidelines"
 ---
 <section class="home home-title" markdown="1">
 
 ## Public Preview Now Closed  
 
-# Coming Soon! Digital Authentication Guideline: Public Comment Period  
+# Coming Soon! Digital Identity Guidelines: Public Comment Period  
 
 </section>
 <section class="home home-about" markdown="1">
@@ -25,7 +25,7 @@ Source information, current standards, and public comments received through May 
     <a href="sp800-63-3.html"><img src="assets/63.png" alt="SP 800-63-3" width="150px" height="150px"></a>
   </div>
   <h3><a href="sp800-63-3.html">SP 800-63-3</a></h3>
-  <h6>Digital Authentication Guideline</h6>
+  <h6>Digital Identity Guidelines</h6>
 </li>
 <li>
   <div>
