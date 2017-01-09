@@ -161,7 +161,7 @@ This document has been written to satisfy the needs of federal agencies. However
 
 </div>
 
-SP 800-63|[[EIDAS]](#EIDAS)|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115]](#ISO29115)|[[ISO 29003]](#ISO29003)|[[Canada]](#Canada)
+SP 800-63|[[eIDAS]](#EIDAS)|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115]](#ISO29115)|[[ISO 29003]](#ISO29003)|[[Canada]](#Canada)
 :---------:|:----:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
 N/A|N/A|N/A|Level 01|N/A|N/A|N/A|N/A
 AAL/IAL 1|N/A|Level 1|Level 1|QAA Level 1|LoA 1|LoA 1|IAL/CAL 1
