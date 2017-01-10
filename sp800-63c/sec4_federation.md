@@ -56,7 +56,7 @@ Federation authorities MAY assist the technical connection and configuration pro
 
 Most federations managed through authorities have a simple membership model: either parties are in the federation or they are not. However, more sophisticated federations MAY have multiple tiers of membership which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers, and RPs MAY decide to accept certain information only from IdPs in higher tiers. The nature and structure of such a multi-tiered system is outside the scope of this document.
 
-#### 4.1.4. Proxied Federation
+#### <a name="proxied"></a> 4.1.4. Proxied Federation
 
 In a proxied federation, communication between the IdP and the RP is intermediated in a way that prevents direct communication between the two parties. There are multiple methods to achieve this effect; common configurations include:
 
@@ -85,7 +85,7 @@ To mitigate the risk of unauthorized exposure of sensitive information (e.g., sh
 
 The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation, consistent with Section 9.2. If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. An IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
 
-### 4.2. Privacy Requirements
+### <a name="privacy-reqs"></a> 4.2. Privacy Requirements
 
 Federation involves the transfer of personal attributes from a third party, the IdP, that is not otherwise involved in a transaction. Federation also potentially gives the IdP broad visibility into subscriber activities. Accordingly, there are specific privacy requirements associated with federation. 
 

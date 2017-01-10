@@ -26,7 +26,7 @@ Accessibility and usability differ significantly; accessibility is out of scope 
 
 ### 10.1. Considerations
 
-The following sections provide recommended practices to enhance the user experience of federated identity systems.  The primary goal of these recommendations is to alleviate the potential for friction and user drop-off that could be caused by the possible confusion created when a relying party needs to redirect control from their site to an IDP.  A good user experience may also result in increased demand of federation by users, triggering increased adoption by RPs. 
+The following sections provide recommended practices to enhance the user experience of federated identity systems.  The primary goal of these recommendations is to alleviate the potential for friction and user drop-off that could be caused by the possible confusion created when a relying party needs to redirect control from their site to an IdP.  A good user experience may also result in increased demand of federation by users, triggering increased adoption by RPs. 
 
 This section is organized by the functional elements a user may encounter when interacting with a federated identity system.  These elements are:  
 
@@ -37,7 +37,7 @@ This section is organized by the functional elements a user may encounter when i
 
 #### 10.1.1. Authentication Requests
 
-Federated identity systems typically redirect the user from the RP to the IDP, and back again. This could be jarring to users for various reasons.  They may think the redirects are the result of a malicious entity.  Or they may be concerned about leaving one domain for another, especially if the root domain changes (e.g., .gov to .com).  In addition, RPs may be concerned with branding and any friction that may keep a user from executing their intended transaction.  The following list considers tactics that can be employed to resolve negative user experience; in addition, these techniques could facilitate RP acceptance of temporarily turning control of the user experience to the IdP as the authentication request proceeds. Possible considerations include:  
+Federated identity systems typically redirect the user from the RP to the IdP, and back again. This could be jarring to users for various reasons.  They may think the redirects are the result of a malicious entity.  Or they may be concerned about leaving one domain for another, especially if the root domain changes (e.g., .gov to .com).  In addition, RPs may be concerned with branding and any friction that may keep a user from executing their intended transaction.  The following list considers tactics that can be employed to resolve negative user experience; in addition, these techniques could facilitate RP acceptance of temporarily turning control of the user experience to the IdP as the authentication request proceeds. Possible considerations include:  
 
 1.	Users will benefit from a simple understanding of how federated identity works to make informed trust decisions. As with all user-facing text, clearly explaining to users in plain language that is easy to understand, and avoiding technical jargon—as specified in 800-63A, Section 9—will positively impact their decision-making process to proceed within a federated environment.
 2.	Leverage standards, specifications, and APIs that embed user experience considerations in, rather than those that shift user experience out of the technical integration between IdP and RP. For example, OpenID Connect requires user consent to release attributes and has accommodations for joint branding of the login and consent screen.
@@ -48,7 +48,7 @@ Federated identity systems typically redirect the user from the RP to the IDP, a
 
 #### 10.1.2. Multiple Accounts
 
-It is possible that a user may maintain multiple accounts at a single IdP, or in some cases, have a shared household computer where multiple people have accounts at the same IdP. The IdP is encouraged to consider approaches such as [Account Chooser](#http://openid.net/wg/ac/). Account chooser allows users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdP’s.  Techniques such as this limit the burden on a user to select the correct account, and IdP, to use in each transaction.  This avoids unnecessary click-throughs for the user to ultimately select the IdP he or she wants as well as the account he or she wants to use for a given RP transaction.
+It is possible that a user may maintain multiple accounts at a single IdP, or in some cases, have a shared household computer where multiple people have accounts at the same IdP. The IdP is encouraged to consider approaches such as [Account Chooser](http://openid.net/wg/ac/). Account chooser allows users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdPs.  Techniques such as this limit the burden on a user to select the correct account, and IdP, to use in each transaction.  This avoids unnecessary click-throughs for the user to ultimately select the IdP he or she wants as well as the account he or she wants to use for a given RP transaction.
 
 #### 10.1.3. Attribute Sharing
 
