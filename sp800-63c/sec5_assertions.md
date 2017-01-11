@@ -85,7 +85,7 @@ Note that in a proxied federation model, the initial IdP may be unable to genera
 
 #### 5.2.6. <a name="ppi-gen"></a>Pairwise Pseudonymous Identifier Generation
 
-Pairwise pseudonymous identifiers SHALL be opaque and unguessable, neither containing nor generated from identifying information about the subscriber. Normally, the identifiers SHALL only be known by and used by one IdP-RP pair or IdP-Proxy and Proxy-RP pair. However, an IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, but only if:
+Pairwise pseudonymous identifiers SHALL be opaque, containing no identifying information about the subscriber. They SHALL also be unguessable by a party having access to some information identifying the subscriber. Pairwise pseudonymous identifiers MAY be generated and assigned randomly to subscribers by the IdP or MAY be derived from other subscriber information if the derivation is done in an irreversible, unguessable manner (e.g., using a keyed hash function with a secret key). Normally, the identifiers SHALL only be known by and used by one pair of endpoints (e.g., IdP-RP). However, an IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, provided:
 
 * Those RPs have a demonstrable relationship that justifies an operational need for the correlation, such as a shared security domain or shared legal ownership, and
 * All RPs sharing an identifier consent to being correlated in such a manner.
