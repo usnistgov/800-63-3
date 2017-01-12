@@ -43,7 +43,7 @@ Presentation of the assertion reference at the IdP SHOULD require authentication
 
 ### 6.2. Front-channel Presentation
 
-In the *front-channel* model, the IdP creates an assertion and sends it to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP, often through mechanisms within the subscriber’s browser.
+In the *front-channel* model, the IdP creates an assertion and sends it to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP, often through mechanisms within the subscriber's browser.
 
 
 <a name="63cSec6-Figure2"></a>

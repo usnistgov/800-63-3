@@ -73,7 +73,7 @@ authenticator are as follows:
     secondary authenticator. In any of the above scenarios, the
     secondary authenticator can be used to impersonate the subscriber.
 
-Finally, in order for the subscriber’s authentication to the RP to be
+Finally, in order for the subscriber's authentication to the RP to be
 useful, the binding between the secret used to authenticate to the RP
 and the assertion data referring to the subscriber needs to be strong.
 
@@ -128,7 +128,7 @@ described in the last subsection.
 -   *Assertion repudiation by the subscriber* – To mitigate this threat,
     the IdP issues holder-of-key assertions, rather than bearer assertions.
     The subscriber can then prove possession of the asserted key to
-    the RP. If the asserted key matches the subscriber’s presented key,
+    the RP. If the asserted key matches the subscriber's presented key,
     it will be proof to all parties
     involved that it was the subscriber who authenticated to the RP
     rather than a compromised IdP impersonating the subscriber.
@@ -152,7 +152,7 @@ described in the last subsection.
     of the following mechanisms is used:
 
 	1.  The secondary authenticator may contain sufficient entropy that an
-    attacker without direct access to the IdP’s random number
+    attacker without direct access to the IdP's random number
     generator cannot guess the value of a valid secondary authenticator.
 
 	2.  The secondary authenticator may contain timely assertion data that

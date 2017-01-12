@@ -8,18 +8,18 @@
 One of the major potential usability benefits of federated identity systems is to address the problem of individuals needing to maintain too many authenticators, such as multiple user names and passwords. While other authentication methods have been extensively researched and have well-established usability guidelines, federated identity is more nascent and therefore lacks deep and conclusive research findings. It is very much an active research topic in the usability domain. As the field matures, usability guidelines for federated identity systems will have stronger supporting data. 
 
 
-A well-planned and executed user experience is critical to the success of any authentication method. The overall user experience with federated identity systems should be as smooth and easy as possible, without undermining a user’s ability to understand how their data are being treated and by whom. Federated identity systems should:  
+A well-planned and executed user experience is critical to the success of any authentication method. The overall user experience with federated identity systems should be as smooth and easy as possible, without undermining a user's ability to understand how their data are being treated and by whom. Federated identity systems should:  
 
 -  Minimize user burden (e.g., frustration, learning curve)
 -  Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms CSP and RP)
 -  Provide clear, honest, and meaningful communications to users (e.g., notices of information flow should be explicit and easy to understand)
 -  Use graphics and illustrations to help users form complete and accurate mental models of federated identity systems
 
-To ensure success of federated identity systems from users’ perspectives, it is imperative that iterative and continuous usability evaluations are performed with representative users and realistic tasks in an appropriate context.
+To ensure success of federated identity systems from users' perspectives, it is imperative that iterative and continuous usability evaluations are performed with representative users and realistic tasks in an appropriate context.
 
 ##### ASSUMPTIONS 
 
-In this section, the term “users” means “subscribers” or “claimants.” This section describes usability themes from users’ perspectives, as usability can only be considered from the users’ perspective.
+In this section, the term "users" means "subscribers" or "claimants." This section describes usability themes from users' perspectives, as usability can only be considered from the users' perspective.
 
 Accessibility and usability differ significantly; accessibility is out of scope for this section. The organizations and agencies participating in the federation can address accessibility in its implementation plans and can consult other federal guidance for best practices. 
 
@@ -43,7 +43,7 @@ Federated identity systems typically redirect the user from the RP to the IdP, a
 3.	The IdP user interface (UI) should be as simple as possible, and leverage modern techniques to seamlessly appear to be part of the SP application.
 4. If the user does not have an account with any available IdPs, it could help to walk a user through the available options and help determine the most appropriate CSP for their needs. 
 4.	Display the URL of the IdP so that the user has visual assurance that he or she is not being phished by a malicious site.
-5.	Display RP branding within the IdP UI.  It is appealing to the users to have visual confirmation (via branding) to know they are logging in with their IdP (per #4 above) for access to the destination RP.  For example, a dialog box with the SP logo could read “You are authenticating to gain access to SP.gov.”
+5.	Display RP branding within the IdP UI.  It is appealing to the users to have visual confirmation (via branding) to know they are logging in with their IdP (per #4 above) for access to the destination RP.  For example, a dialog box with the SP logo could read "You are authenticating to gain access to SP.gov."
 
 #### 10.1.2. Multiple Accounts
 
@@ -58,8 +58,8 @@ In some cases, an RP will request user attributes from the IdP to provide access
 3. Ask for user consent to which attributes and attribute values are released to ensure their veracity. Partial or complete masking of attribute values is required. It is recommended that the unmasking capability uses UI elements that encourage only temporary unmasking (for example, text that is available via a mouse hover or a context sensitive popup).  Unmasking on the same page as the masked data is discouraged (see SP 800-63C, section 6, Assertion Presentation).(#sec6)
 4. Enable users to consent to a partial list of attributes, rather than an all or nothing approach.  Similarly, RPs are encouraged to allow some degree of online access even if the user does not consent to share all information.
 5. Base attribute sharing on the transaction being requested, not on all possible transactions a user may or may not access at the RP.
-6. Do not display system generated attributes such as a pairwise pseudonymous identifier (not to be confused with system derived attribute claims, such as ‘older than’ derived from ‘date of birth’), to users, even if it is shared with the RP as part of the authentication response.  If these types of attributes are visible to the user, display them in a portion of the UI that is separated from actual user attributes such as name or email. Additionally, provide a user-friendly description of the attributes to avoid confusion. Toggle this information on/off, via a UI control such as a check box, with the default as `off,’ so the user has to explicitly select whether to review this information (see SP 800-53C section 6. Assertion Presentation and section 9. Privacy Considerations).
-7. Use standards, such as OAuth or OpenID Connect, that build attribute consent into the protocol—so they’re not a feature external to the federated transaction.
+6. Do not display system generated attributes such as a pairwise pseudonymous identifier (not to be confused with system derived attribute claims, such as 'older than' derived from 'date of birth'), to users, even if it is shared with the RP as part of the authentication response.  If these types of attributes are visible to the user, display them in a portion of the UI that is separated from actual user attributes such as name or email. Additionally, provide a user-friendly description of the attributes to avoid confusion. Toggle this information on/off, via a UI control such as a check box, with the default as `off,' so the user has to explicitly select whether to review this information (see SP 800-53C section 6. Assertion Presentation and section 9. Privacy Considerations).
+7. Use standards, such as OAuth or OpenID Connect, that build attribute consent into the protocol—so they're not a feature external to the federated transaction.
 8. Provide easy to find redress methods (see [Section 6. Assertion Presentation](# #sec6) for more details) such that a user can recover from invalid attribute information claimed by the IdP.
 9. Limit the number of times a user will need to consent to the release of attributes. Upon first access it is normal to request consent; on subsequent access attempts to the same RP, consent is not needed, provided the IdP offers appropriate lifecycle management functions as discussed in [10.1.4 Lifecycle Management].
 
