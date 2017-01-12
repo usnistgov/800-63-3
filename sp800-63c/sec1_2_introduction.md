@@ -1,3 +1,4 @@
+<div class="breaker"></div>
 <a name="sec1"></a>
 
 ## 1. Purpose
@@ -6,6 +7,7 @@ This recommendation and its companion documents, [SP 800-63-3](sp800-63-3.html),
 
 This document, SP 800-63C, provides guidelines to credential service providers and relying parties of federated identity systems. Federation allows a given credential service provider to provide authentication and (optionally) subscriber attributes to a number of separately administered relying parties. Similarly, relying parties may use more than one credential service provider.
 
+<div class="breaker"></div>
 <a name="sec2"></a>
 
 ## 2. Introduction

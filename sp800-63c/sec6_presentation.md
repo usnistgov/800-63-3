@@ -1,3 +1,4 @@
+<div class="breaker"></div>
 <a name="sec6"></a>
 
 ## 6. Assertion Presentation
