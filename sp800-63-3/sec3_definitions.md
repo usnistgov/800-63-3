@@ -41,7 +41,7 @@ Process of determining the validity of one or more credentials used to claim a d
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish their identity, and, optionally, demonstrates that the claimant is communicating with the intended verifier.
 
 #### Authenticator
-Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
+Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticator Assurance Level (AAL)
 A category describing the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
@@ -66,7 +66,7 @@ A declaration of unvalidated and unverified personal attributes by the applicant
 #### Credential
 An object or data structure that authoritatively binds an identity, via an identifier or identifiers, and, optionally, additional attributes, to at least one authenticator possessed and controlled by a subscriber.
 
-While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber’s authenticator(s) and identity.
+While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber's authenticator(s) and identity.
 
 #### Credential Service Provider (CSP)
 A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. The CSP may encompass Registration Authorities (RAs) and verifiers that it operates. A CSP may be an independent third party, or may issue credentials for its own use.
@@ -106,7 +106,7 @@ An category describing the assertion protocol utilized by the federation to comm
 An attribute or set of attributes that uniquely describe a subject within a given context.
 
 #### Identity Assurance Level (IAL)
-A category that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
+A category that conveys the degree of confidence that the applicant's claimed identity is their real identity.
 
 #### Identity Proofing
 The process by which a CSP and a Registration Authority (RA) collect and verify information about a person for the purpose of issuing credentials to that person.
@@ -135,7 +135,7 @@ As defined by OMB Circular [[A-130]](#A-130), Personally Identifiable Informatio
 The secret part of an asymmetric key pair that is used to digitally sign or decrypt data.
 
 #### Pseudonymous Identifier
-A meaningless but unique number that does not allow the RP to infer anything regarding the subscriber but which does permit the RP to associate multiple interactions with the subscriber’s claimed identity.
+A meaningless but unique number that does not allow the RP to infer anything regarding the subscriber but which does permit the RP to associate multiple interactions with the subscriber's claimed identity.
 
 #### Public Key
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
@@ -150,10 +150,10 @@ A set of policies, processes, server platforms, software and workstations used f
 The process through which an applicant applies to become a subscriber of a CSP and has their identity validated by the CSP.
 
 #### Relying Party (RP)
-An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant’s identity, typically to process a transaction or grant access to information or a system.
+An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant's identity, typically to process a transaction or grant access to information or a system.
 
 #### Remote
-(*In the context of remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization’s security controls.
+(*In the context of remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls.
 
 > Note: Any information exchange across the Internet is considered remote.
 
@@ -183,5 +183,5 @@ A cryptographic key that is used to perform both the cryptographic operation and
 In reference to identity evidence, the quality of not being expired or revoked.
 
 #### Verifier
-An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber's identifier and check their status.
+An entity that verifies the claimant's identity by verifying the claimant's possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber's identifier and check their status.
 
