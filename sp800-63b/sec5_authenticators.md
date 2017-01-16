@@ -196,7 +196,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but without the requirement that a second factor be provided. As such, the symmetric keys used by authenticators SHALL be strongly protected against compromise.
 
-When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source. that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
+When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and man-in-the-middle attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given time-based one-time password only once during the validity period.
 
@@ -404,4 +404,10 @@ An authentication process resists replay attacks if it is impractical to achieve
 
 Examples of replay resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
 
-In contrast, memorized secrets are not considered replay resistant because the authenticator output (the secret itself) is provided for each authentication. 
+In contrast, memorized secrets are not considered replay resistant because the authenticator output (the secret itself) is provided for each authentication.
+
+#### <a name="intent"></a>5.2.8. Authentication intent
+
+An authentication process requires intent if it requires the subject to explicitly request each authentication or reauthentication. The goal of authentication intent is to make it more difficult for directly connected physical authenticators (cryptographic devices) to be used without the subject's knowledge, such as by malware on the endpoint. Authentication intent SHALL be established by the authenticator itself, although multi-factor cryptographic devices MAY establish intent by reentry of the other authentication factor on the endpoint with which the authenticator is used.
+
+Authentication intent MAY be established in a number of ways. Authentication processes that require intervention of the subject, e.g., to enter an authenticator output on their endpoint from an OTP device, establish intent by their very nature.  Cryptographic devices that require user action (e.g., pushing a button or reinsertion) for each authentication or reauthentication operation are also considered to establish intent.
