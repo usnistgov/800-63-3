@@ -363,7 +363,7 @@ If matching is performed centrally:
 * An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
-Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after a password has been generated.
+Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after any training or research data has been derived.
 
 Biometrics are also used in some cases to prevent repudiation of registration and to verify that the same individual participates in all phases of the registration process as described in SP 800-63A.
 
