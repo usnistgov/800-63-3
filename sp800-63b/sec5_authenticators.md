@@ -346,7 +346,7 @@ Biometrics SHALL be used with another authentication factor (something you have)
 
 Empirical testing of the biometric system to be deployed SHALL demonstrate an equal error rate of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with a false match rate of **1 in 1000** or better.
 
-When the biometric sensor and subsequent processing are not part of an integral unit that resists replacement of the sensor, the sensor (or endpoint with which it is an integral unit that resists sensor replacement) SHALL demonstrate that it is a certified or qualified sensor meeting these requirements by authenticating itself to the processing element.
+When the biometric sensor and subsequent processing (signal processing, comparison, data storage, and decision) are not part of an integral unit that resists replacement of the sensor, the sensor (or endpoint with which it is an integral unit that resists sensor replacement) SHALL provide a signed attestation as described in Section [5.2.4](#attestation) to demonstrate that it is a certified or qualified sensor meeting these requirements.
 
 The biometric system SHOULD implement presentation attack protection (PAD). Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks.
 
@@ -360,23 +360,25 @@ If matching is performed centrally:
 
 * Use of the biometric SHALL be limited to one or more specific devices that are identified using approved cryptography.
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
-* An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
+* An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established **prior** to capturing the biometric sample from the claimant.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
-Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after a password has been generated.
+Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after any training or research data has been derived.
 
 Biometrics are also used in some cases to prevent repudiation of registration and to verify that the same individual participates in all phases of the registration process as described in SP 800-63A.
 
 #### <a name="attestation"></a>5.2.4. Attestation
 
-Authenticators that are directly connected to or embedded in endpoints MAY convey attestation information to the verifier as part of the authentication protocol such as:
+Attestation is information conveyed to the verifier regarding a directly connected authenticator or the endpoint involved in an authentication operation. Information conveyed by attestation MAY include, but is not limited to:
 
-* The provenance, health, and integrity of the authenticator and/or endpoint
+* The provenance (manufacturer or supplier certification), health, and integrity of the authenticator and/or endpoint
 * Security features of the authenticator
 * Security and performance characteristics of biometric sensor(s)
 * Sensor modality
 
-If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). Attestation information MAY be used as part of a risk-based authentication decision.
+If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication).
+
+Attestation information MAY be used as part of a risk-based authentication decision.
 
 #### <a name="verifimpers"></a>5.2.5. Verifier impersonation resistance
 
