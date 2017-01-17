@@ -82,11 +82,11 @@ The CSP SHALL require subscribers to surrender or prove destruction of any physi
 
 Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
 
-### 6.5. Derived Credentials
+### 6.5. Derived Authenticators
 
 IAL and AAL as separate ordinals allows organizations to issue any type of authenticator they want regardless of how or if an individual is identity proofed.  This is one of the benefits of the separation - an organization can issue strong credentials regardless of how or if identity proofing is performed.  However, it may be beneficial for organizations to issue authenticators based on the individual having an authenticator bound to a credential that has an IAL of 2 or 3.
 
-In order to issue additional authenticators, the primary method for an individual to verify they have been proofed is through successful possession and authentication of an authenticator that is bound to a credential identity proofed at a given IAL.  
+In order to issue additional authenticators, the primary method for an individual to verify they have been proofed is to demonstrate successful authentication of an authenticator that is bound to a credential identity proofed at a given IAL.  
 
 #### 6.5.1. General Requirements
 
