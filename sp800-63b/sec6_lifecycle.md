@@ -31,7 +31,7 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 	5. If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
 
 
-#### 6.1.2. Post-Enrollment Binding
+#### <a name="post-enroll-bind">/<a> 6.1.2. Post-Enrollment Binding
 
 ##### 6.1.2.1. Binding of additional authenticator at existing AAL
 
@@ -84,9 +84,15 @@ Further requirements on the termination of PIV credentials are found in [[FIPS 2
 
 ### 6.5. Derived Authenticators
 
-The expression of IAL and AAL as separate ordinals allows organizations to issue any type or number of authenticators they want regardless of how or if a subject is identity proofed.  This is one of the benefits of the separation - an organization can issue authenticators suitable for use by subscribers having a credential at IAL 2 or 3.  However, it may be beneficial for organizations to issue authenticators based on the individual having an authenticator bound to a credential that has an IAL of 2 or 3.
+The expression of IAL and AAL as separate ordinals allows organizations to issue any type or number of authenticators they want regardless of how or if a subject is identity proofed.  This is one of the benefits of the separation - an organization can issue authenticators suitable for use by subscribers having a credential at IAL 2 or 3.  However, it may be beneficial for organizations to issue additional authenticators bound to a credential asscoiated with a primary authenticator.  This is covered in detail in [Section 6.1.2. Post-Enrollment Binding](#post-enroll-bind). 
 
-In order to issue additional authenticators, the primary method for an individual to verify they have been proofed is to demonstrate successful authentication of an authenticator that is bound to a credential identity proofed at a given IAL.  
+The management of derived authenticators is similar to that described in [Section 6.1.2. Post-Enrollment Binding](#post-enroll-bind); however, derived authenticators are issued only to a subject that is authorized to have a primary authenticator.  Once the primary authenticator has been revoked, all derived authenticators, or their credentials, should be revoked.
+
+> Note: In some cases, like the PIV smartcard, the authenticator and credential will be revoked.  The individual will typically surrender their authenticator (the PIV) even though the credential has been revoked, rendering the PIV unusable.  However, in many consumer use cases where an individual may provide their own authenticator(s), the CSP will revoke the credential the authenticator is bound to, such that authentication is no longer possible with that CSP; yet the individual can enroll the authenticator(s) with other CSPs. 
+
+The definition of derived in this case is _not_ that an authenticator is tied to a primary authenticator, for example deriving a key from another key.  Rather, the derived authenticator is issued and bound to an identity that has already been identity proofed.  To prove that identity proofing has occurred, the individual demonstrates possession and authentication of an authenticator bound to the original proofed identity record (i.e the credential). 
+
+The following requirements detail how a CSP should validate the authenticator and credential prior to issuance of a derived authenticator.  It also lists lifecycle management requirements to keep derived authenticators in sync with the primary authenticator and credential.
 
 #### 6.5.1. General Requirements
 
@@ -95,7 +101,7 @@ In order to issue additional authenticators, the primary method for an individua
 3. The derived authenticator SHALL be valid only as long as the subscriber is authorized to hold the original authenticator.
 4. The CSP SHOULD record the details of the original authenticator used as the basis for derived authenticator issuance. 
 5. The CSP SHOULD set the expiration of the derived authenticator to the expiration, if any, of the primary authenticator. There are instances where the derived authenticator need not be directly tied to the expiration of the primary authenticator as the derived authenticator can provide authentication services in its place, for example, while the expiring primary credential is being replaced.
-6. The derived authenticator type MAY be any AAL, regardless of the AAL of the primary authenticator or IAL of the bound credential. 
+6. The derived authenticator type MAY be any AAL, regardless of the AAL of the primary authenticator or the IAL of the bound credential.  
 
 
 #### 6.5.2. AAL 2 Requirements
