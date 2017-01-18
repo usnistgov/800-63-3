@@ -6,27 +6,27 @@
 
 _This section is informative._
 
-[ISO/IEC 9241-11](#ISO9241-11) defines usability as the “extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.” This definition focuses on users, goals, and context of use as key elements necessary for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability. 
+[ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, goals, and context of use as key elements necessary for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability. 
 
 The overarching goal of usability for enrollment and identity proofing is to promote a smooth, positive enrollment process for users by minimizing user burden (e.g., time and frustration) and enrollment friction (e.g., the number of steps to complete and amount of information to track). To achieve this goal, organizations have to first familiarize themselves with their users.
 
-The enrollment and identity proofing process sets the stage for a user’s interactions with a given CSP and the online services that the user will access; since negative first impressions can influence user perception of subsequent interactions, organizations need to promote a positive user experience throughout the process. 
+The enrollment and identity proofing process sets the stage for a user's interactions with a given CSP and the online services that the user will access; since negative first impressions can influence user perception of subsequent interactions, organizations need to promote a positive user experience throughout the process. 
 
 Usability cannot be achieved in a piecemeal manner. Performing a usability evaluation on the enrollment and identity proofing process is critical, conducting it with representative users, realistic goals and tasks, and appropriate contexts of use. The enrollment and identity proofing process should be designed and implemented so it is easy for users to do the right thing, hard to do the wrong thing, and easy to recover when the wrong thing happens.
 
-The goal of this section is to raise implementers’ awareness of usability considerations associated with enrollment and identity proofing (for usability considerations for typical authenticator usage and intermittent events, see 800-63-3B).
+The goal of this section is to raise implementers' awareness of usability considerations associated with enrollment and identity proofing (for usability considerations for typical authenticator usage and intermittent events, see 800-63-3B).
 
-From the user’s perspective, the three main steps of enrollment and identity proofing are pre-enrollment preparation, the enrollment and proofing session, and post-enrollment actions. These steps may occur in a single session or there could be significant time elapsed between each one (e.g., days or weeks).
+From the user's perspective, the three main steps of enrollment and identity proofing are pre-enrollment preparation, the enrollment and proofing session, and post-enrollment actions. These steps may occur in a single session or there could be significant time elapsed between each one (e.g., days or weeks).
 
 General and step-specific usability considerations are described in sub-sections below.
 
 ##### ASSUMPTIONS 
 
-In this section, the term “users” means “applicants” or “subscribers.”
+In this section, the term "users" means "applicants" or "subscribers."
 
-Guidelines and considerations are described from the users’ perspective. 
+Guidelines and considerations are described from the users' perspective. 
 
-Accessibility is out of scope for this section, and can be addressed in an organization’s implementation plans. 
+Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans. 
 
 ### 9.1. General User Experience Considerations During Enrollment and Identity Proofing
 
@@ -37,14 +37,14 @@ This sub-section provides usability considerations that are applicable across al
  
 * Clearly communicate how and where to acquire technical assistance. For example, provide users helpful information, such as a link to online self-service feature, chat sessions, and a phone number for help desk support. Ideally, sufficient information is provided to enable users to answer their own enrollment preparation questions without outside intervention.
 
-* Clearly explain to users who is collecting and who is retaining information they’re providing as well as the path their data will take.
+* Clearly explain to users who is collecting and who is retaining information they're providing as well as the path their data will take.
 
 * Ensure all information presented to the user is usable: 
     * Follow good information design practice for all user-facing materials (e.g., data collection notices and fillable forms). 
     * Write materials in plain language, typically at a 6th to 8th grade literacy level and avoid technical jargon. Use active voice and conversational style, logically sequence main points, use the same word consistently rather than synonyms to avoid confusion, and use bullets, numbers, and formatting where appropriate to aid readability. 
     * Consider text legibility, such as font style, size, color, and contrast with surrounding background. The highest contrast is black on white. Text legibility is important because users have different levels of visual acuity. Illegible text will contribute to user comprehension errors or user entry errors (e.g., when completing fillable forms).
     * Use sans serif font styles for electronic materials and serif fonts for paper materials.
-    * When possible, avoid fonts that do not clearly distinguish between easily confusable characters (such as the letter “O” and the number “0”). This is especially important for enrollment codes.
+    * When possible, avoid fonts that do not clearly distinguish between easily confusable characters (such as the letter "O" and the number "0"). This is especially important for enrollment codes.
     * Use a minimum font size of 12 points, as long as the text fits the display.
 * Perform usability evaluation for each step with representative users, realistic goals and tasks, and appropriate contexts of use.
 
@@ -55,7 +55,7 @@ Usability considerations specifically for each step are detailed below.
 
 This section describes an effective approach to facilitate sufficient pre-enrollment preparation so users can avoid challenging, frustrating enrollment sessions. Ensuring users are as prepared as possible for their enrollment sessions is critical to the overall success and usability of the enrollment and identity proofing process. 
 
-Such preparation is only possible if users receive the necessary information (e.g., documentation required) in a usable format in an appropriate timeframe. This includes making users aware of exactly what identity evidence will be required, conveyed from the users’ perspective, not the implementers’ perspectives. Users do not need to know anything about IALs or whether the identity evidence required is scored as ‘fair’, ‘strong’, or ‘superior’ whereas organizations need to know what type of IAL is required for access to a particular system. 
+Such preparation is only possible if users receive the necessary information (e.g., documentation required) in a usable format in an appropriate timeframe. This includes making users aware of exactly what identity evidence will be required, conveyed from the users' perspective, not the implementers' perspectives. Users do not need to know anything about IALs or whether the identity evidence required is scored as 'fair', 'strong', or 'superior' whereas organizations need to know what type of IAL is required for access to a particular system. 
 
 In order to ensure users are equipped to make informed decisions about whether to proceed with the enrollment process, and what will be needed for their session, provide users: 
 
@@ -63,7 +63,7 @@ In order to ensure users are equipped to make informed decisions about whether t
 * Clear explanations of the expected timeframes to allow users to plan accordingly. 
 *   Explanation of the need for—and benefits of—identity proofing to allow users to understand the value proposition. 
 *   Information on the monetary amount and acceptable forms of payment, in case there is an enrollment fee. Offering a larger variety of acceptable forms of payment allows users to choose their preferred payment operation.
-*   Information on whether the user’s enrollment session will be in-person or in-person over remote channels, and whether a user can choose. Only provide information relevant to the allowable session option(s). 
+*   Information on whether the user's enrollment session will be in-person or in-person over remote channels, and whether a user can choose. Only provide information relevant to the allowable session option(s). 
     * Information on the location(s), whether a user can choose her or his preferred location, and necessary logistical information for in-person or in-person over remote channels session. Note that users may be reluctant to bring identity evidence to certain public places (bank versus supermarket), as it increases exposure to loss or theft.
     * Information on the technical requirements (e.g., requirements for internet access) for remote sessions.
     * An option to set an appointment for in-person or in-person over remote channels identity proofing sessions to minimize wait times. If walk-ins are allowed, make it clear to users that their wait times may be greater without an appointment.
@@ -84,12 +84,12 @@ Usability considerations specific to the enrollment session include:
       * Provide rescheduling options for in-person or in-person over remote channels.
     * Provide a checklist with the allowed and required identity evidence to ensure users have the requisite identity evidence to proceed with the enrollment session, including enrollment codes, if applicable. If users do not have the complete set of identity evidence, they must be informed regarding whether they can complete a partial identity proofing session.
     * Notify users regarding what information will be destroyed, what, if any, information will be retained for future follow-up sessions, and what identity evidence they will need to bring to complete a future session. Ideally, users can choose whether they would like to complete a partial identity proofing session.
-    * Set user expectations regarding the outcome of the enrollment session as prior identity verification experiences may drive their expectations (e.g., receiving a driver’s license in person, receiving a passport in the mail). 
+    * Set user expectations regarding the outcome of the enrollment session as prior identity verification experiences may drive their expectations (e.g., receiving a driver's license in person, receiving a passport in the mail). 
     * Clearly indicate whether users will receive an authenticator immediately at the end of a successful enrollment session, if users have to schedule an appointment to pick it up in person, or if users will receive it in the mail and when they can expect to receive it.
 *   During the enrollment session, there are several requirements to provide users with explicit notice at the time of identity proofing, such as what data will be retained on record by the CSP (see [Section 4.2](#genProofReqs) and [Section 8](#sec8) for detailed requirements on notices). If CSPs seek consent from a user for additional attributes or uses of their attributes for any purpose other than identity proofing, authentication, authorization or attribute assertions, per 4.2 requirement 5, make CSPs aware that requesting additional attributes or uses may be unexpected or may make users uncomfortable. If users do not perceive benefit(s) to the additional collection or uses, but perceive extra risk, they may be unwilling or hesitant to provide consent or continue the process. Provide users with explicit notice of the additional requirements. 
 *   Avoid using KBV since it is extremely problematic from a usability perspective. KBV tends to be error-prone and frustrating for users given the limitations of human memory. 
     * KBV questions should have relevance and context to users for them to be able to answer correctly. 
-    * Phrase KBV questions clearly, as ambiguity can lead to user errors. For example, when asking about a user’s social security balance, clearly specify which time period as social security accounts fluctuate. 
+    * Phrase KBV questions clearly, as ambiguity can lead to user errors. For example, when asking about a user's social security balance, clearly specify which time period as social security accounts fluctuate. 
 
  * Prior to being asked KBV questions, users must be informed of: 
 	    * The number of allowed attempts and remaining attempt(s).
@@ -111,7 +111,7 @@ Usability considerations specific to the enrollment session include:
     * At the start of the enrollment session, inform users that they must not depart during the session, and that their actions must be visible throughout the session.
     * When biometrics are collected during the enrollment session, provide users clear instructions on how to complete the collection process just prior to the process. Verbal instructions with corrective feedback from a live operator are the most effective (e.g., instruct users where the biometric sensor is, when to start, how to interact with the sensor, and when the biometric collection is completed).
 
-* Since remote identity proofing is conducted online, follow general web usability principles. For example, design the user interface to walk users through the enrollment process; reduce users’ memory load; make the interface consistent; clearly label sequential steps; make the starting point clear; design to support multiple platforms and device sizes; and make the navigation consistent, easy to find, and easy to follow. 
+* Since remote identity proofing is conducted online, follow general web usability principles. For example, design the user interface to walk users through the enrollment process; reduce users' memory load; make the interface consistent; clearly label sequential steps; make the starting point clear; design to support multiple platforms and device sizes; and make the navigation consistent, easy to find, and easy to follow. 
       
 
 ####  9.4. Post-Enrollment 
