@@ -25,7 +25,7 @@ Memorized secrets SHALL be at least 8 characters in length if chosen by the subs
 
 ##### 5.1.1.2. Memorized Secret Verifiers
 
-Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHOULD permit user-chosen memorized secrets to be at least 64 characters in length. All printing ASCII [[RFC 20]](#RFC20) characters as well as the space character SHOULD be acceptable in memorized secrets; Unicode [[ISO/ISC 10646:2014]](#ISOIEC10646) characters SHOULD be accepted as well. Verifiers MAY remove multiple consecutive space characters, or all space characters, prior to verification provided that the result is at least 8 characters in length. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
+Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHOULD permit user-chosen memorized secrets to be up to 64 characters or more in length. All printing ASCII [[RFC 20]](#RFC20) characters as well as the space character SHOULD be acceptable in memorized secrets; Unicode [[ISO/ISC 10646:2014]](#ISOIEC10646) characters SHOULD be accepted as well. Verifiers MAY remove multiple consecutive space characters, or all space characters, prior to verification provided that the result is at least 8 characters in length. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
 
 If Unicode characters are accepted in memorized secrets, the verifier SHOULD apply the Normalization Process for Stabilized Strings defined in Section 12.1 of Unicode Standard Annex 15 [[UAX 15]](#UAX15) using either the NFKC or NFKD normalization. Subscribers choosing memorized secrets containing Unicode characters SHOULD be advised that some characters may be represented differently by some endpoints, which can affect their ability to authenticate successfully. This process is applied prior to hashing of the byte string representing the memorized secret.
 
@@ -37,7 +37,8 @@ When processing requests to establish and change memorized secrets, verifiers SH
 
 * Passwords obtained from previous breach corpuses
 * Dictionary words
-* Context specific words, such as the name of the service, the username, and derivates thereof
+* Repetitive or sequential characters (e.g. 'aaaaaa', '1234abcd')
+* Context specific words, such as the name of the service, the username, and derivatives thereof
 
 If the chosen secret is found in the list, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
 
@@ -399,6 +400,8 @@ In situations where the verifier and CSP are separate entities (as shown by the 
 
 #### <a name="replay"></a>5.2.7. Replay resistance
 
-Authenticators whose output is usable only once are referred to as replay resistant. Replay resistance is in addition to the replay resistant nature of authenticated protected channel protocols, since the output could be stolen prior to entry into the protected channel. Examples of replay resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
+An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. Replay resistance is in addition to the replay resistant nature of authenticated protected channel protocols, since the output could be stolen prior to entry into the protected channel. Protocols that use nonces or challenges to prove the “freshness” of the transaction are resistant to replay attacks since the verifier will easily detect that the old protocol messages replayed do not contain the appropriate nonces or timeliness data related to the current authentication session.
 
-In contrast, memorized secrets SHALL NOT be considered replay resistant because the authenticator output (the secret itself) is provided for each authentication. Although not recognized as an independent authenticator, biometrics SHALL NOT be considered replay resistant because a match result can often be obtained if the sensor output is recorded and a subtly manipulated version is replayed, even though the replay may not have been exact.
+Examples of replay resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
+
+In contrast, memorized secrets are not considered replay resistant because the authenticator output (the secret itself) is provided for each authentication. 

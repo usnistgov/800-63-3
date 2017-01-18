@@ -1,3 +1,4 @@
+<div class="breaker"></div>
 <a name="sec11"></a>
 
 ## 11. Assertion Examples
@@ -16,25 +17,25 @@ The building blocks of SAML include:
 -   the SAML Protocols which are used to request assertions and artifacts (the assertion references used in the indirect model described in Section 6.1) 
 -   the Bindings that define the underlying communication protocols (such as HTTP or SOAP) and can be used to transport the SAML assertions. 
 
-The three components above define a SAML profile that corresponds to a particular use case such as “Web Browser SSO”.
+The three components above define a SAML profile that corresponds to a particular use case such as "Web Browser SSO".
 
 SAML Assertions are encoded in an XML schema and can carry up to three types of statements:
 
 -   *Authentication statements* include information about the
     assertion issuer, the authenticated subscriber, validity period, and
     other authentication information. For example, an Authentication
-    Assertion would state the subscriber “John” was authenticated using a
+    Assertion would state the subscriber "John" was authenticated using a
     password at 10:32pm on 06-06-2004.
 
 -   *Attribute statements* contain specific additional characteristics
-    related to the subscriber. For example, subject “John” is associated
-    with attribute “Role” with value “Manager”.
+    related to the subscriber. For example, subject "John" is associated
+    with attribute "Role" with value "Manager".
 
 -   *Authorization statements* identify the resources the subscriber
     has permission to access. These resources may include specific
     devices, files, and information on specific web servers. For
-    example, subject “John” for action “Read” on “Webserver1002” given
-    evidence “Role”.
+    example, subject "John" for action "Read" on "Webserver1002" given
+    evidence "Role".
 
 Authorization statements are beyond the scope of this document and will not be discussed.
 
@@ -48,7 +49,7 @@ To authenticate using the session key, the subscriber sends the ticket to the RP
 
 To begin the process, the subscriber sends an authentication request to
 the Authentication Server (AS). The AS encrypts a session key for the
-subscriber using the subscriber’s long term credential. The long term
+subscriber using the subscriber's long term credential. The long term
 credential may either be a secret key shared between the AS and the
 subscriber, or in the PKINIT variant of Kerberos, a public key
 certificate. It should be noted that most variants of Kerberos based on

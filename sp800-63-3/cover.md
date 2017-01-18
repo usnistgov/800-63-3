@@ -110,15 +110,15 @@ Email: <dig-comments@nist.gov>
 
 The Information Technology Laboratory (ITL) at the National Institute of
 Standards and Technology (NIST) promotes the U.S. economy and public
-welfare by providing technical leadership for the Nation’s measurement
+welfare by providing technical leadership for the Nation's measurement
 and standards infrastructure. ITL develops tests, test methods,
 reference data, proof of concept implementations, and technical analyses
 to advance the development and productive use of information technology.
-ITL’s responsibilities include the development of management,
+ITL's responsibilities include the development of management,
 administrative, technical, and physical standards and guidelines for the
 cost-effective security and privacy of other than national
 security-related information in Federal systems. The Special
-Publication 800-series reports on ITL’s research, guidelines, and
+Publication 800-series reports on ITL's research, guidelines, and
 outreach efforts in system security, and its collaborative
 activities with industry, government, and academic organizations.
 
@@ -153,7 +153,9 @@ passwords; PKI.
 
 </div>
 
-The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
+The authors gratefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all documents in the suite of SP 800-63-3 guidelines.
+
+In addition, the authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 
 <div class="text-center" markdown="1">
 
@@ -181,13 +183,13 @@ The authors would like to acknowledge the thought leadership and innovation of t
 
 </div>
 
-The terms “SHALL” and “SHALL NOT” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.
+The terms "SHALL" and "SHALL NOT" indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.
 
-The terms “SHOULD” and “SHOULD NOT” indicate that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.
+The terms "SHOULD" and "SHOULD NOT" indicate that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.
 
-The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
+The terms "MAY" and "NEED NOT" indicate a course of action permissible within the limits of the publication.
 
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
+The terms "CAN" and "CANNOT" indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
 
 <div class="breaker"/>
 
