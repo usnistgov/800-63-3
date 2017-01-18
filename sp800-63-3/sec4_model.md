@@ -72,9 +72,9 @@ Normative requirements can be found in [Special Publication 800-63B](sp800-63b.h
 
 The classic paradigm for authentication systems identifies three factors as the cornerstones of authentication:  
 
-* Something you know (for example, a password)
-* Something you have (for example, an ID badge or a cryptographic key)
-* Something you are (for example, a fingerprint or other biometric data)
+* Something you know (for example, a password).
+* Something you have (for example, an ID badge or a cryptographic key).
+* Something you are (for example, a fingerprint or other biometric data).
 
 Multi-factor authentication refers to the use of more than one of the factors listed above. The strength of authentication systems is largely determined by the number of factors incorporated by the system. Implementations that use two different factors are typically considered stronger than those that use only one factor. As discussed in [Section 5.1](#5-1), other types of information, such as location data or device identity, may be used by an RP or verifier to evaluate the risk in a claimed identity, but they are not considered authentication factors.
 
@@ -117,9 +117,9 @@ Overall, SP 800-63-3 does not presuppose a federated identity architecture; rath
 
 Federated architectures have many significant benefits, including, but not limited to:  
 
-* Enhanced user experience.  For example, an individual can be identity proofed once and can reuse the issued credential at multiple RPs
-* Cost reduction to both the user (reduction in authenticators) and the agency (reduction in IT infrastructure)
-* Data minimization as agencies do not need to pay for collection, storage, disposal, and compliance activities related to storing personal information
+* Enhanced user experience.  For example, an individual can be identity proofed once and can reuse the issued credential at multiple RPs.
+* Cost reduction to both the user (reduction in authenticators) and the agency (reduction in IT infrastructure).
+* Data minimization as agencies do not need to pay for collection, storage, disposal, and compliance activities related to storing personal information.
 * Pseudonymous attribute assertions as agencies can request a minimized set of attributes, to include claims, to fulfill service delivery.
 * Mission enablement as agencies can focus on mission, rather than the business of identity management.
 
