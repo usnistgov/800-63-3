@@ -91,14 +91,14 @@ above process. In particular, this document maps the four Levels of Assurance de
 requirements for identity assurance and authenticator assurance in the following
 areas:
 
--   Identity proofing and registration of applicants (covered in SP 800-63A)
+-   Identity proofing and registration of applicants (covered in SP 800-63A).
 
--   Authenticators (covered in SP 800-63B)
+-   Authenticators (covered in SP 800-63B).
     
--	 Authenticator lifecycle and management mechanisms (covered in SP 800-63B)
+-	Authenticator lifecycle and management mechanisms (covered in SP 800-63B).
 
 -   Protocols used to support the authentication mechanism between the
-    claimant and the verifier (covered in SP 800-63B)
+    claimant and the verifier (covered in SP 800-63B).
 
 -   Assertion mechanisms used to communicate the results of a remote
     authentication if these results are sent to other parties (covered
@@ -254,13 +254,13 @@ NIST SP 800-63-3 is a substantial update and restructuring of Special Publicatio
 
 Other areas of update to SP 800-63-2 include:
 
--	Terminology changes, primarily the use of *authenticator* in place of *token* to avoid conflicting use of the word *token* in assertion technologies
--	Updates to authentication and assertion requirements to reflect advances in both security technology and threats
--	Requirements on the storage of long-term secrets by verifiers
--   Restructured identity proofing model
--	Updated requirements regarding remote identity proofing
--	Clarification on the use of independent channels and devices as "something you have"
+-	Terminology changes, primarily the use of *authenticator* in place of *token* to avoid conflicting use of the word *token* in assertion technologies.
+-	Updates to authentication and assertion requirements to reflect advances in both security technology and threats.
+-	Requirements on the storage of long-term secrets by verifiers.
+-   Restructured identity proofing model.
+-	Updated requirements regarding remote identity proofing.
+-	Clarification on the use of independent channels and devices as "something you have".
 -	Removal of pre-registered knowledge tokens (authenticators), with the recognition that they are special cases of (often very weak) passwords.
--	Requirements regarding account recovery in the event of loss or theft of an authenticator
--   Expanded discussion of reauthentication and session management
--   Expanded discussion of identity federation; restructuring of assertions in the context of federation
+-	Requirements regarding account recovery in the event of loss or theft of an authenticator.
+-   Expanded discussion of reauthentication and session management.
+-   Expanded discussion of identity federation; restructuring of assertions in the context of federation.
