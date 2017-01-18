@@ -169,9 +169,9 @@ AAL/IAL 1|Low|Level 2|Level 2|QAA Level 2|LoA 2|LoA 2|IAL/CAL 2
 AAL/IAL 2|Substantial|Level 3|Level 3|QAA Level 3|LoA 3|LoA 3|IAL/CAL 3
 AAL/IAL 3|High|Level 4|N/A2|QAA Level 4|LoA 4|LoA 4|IAL/CAL 4
 
-### 2.2. Change History
+### 2.5. Change History
 
-#### 2.2.1. SP 800-63-1
+#### 2.5.1. SP 800-63-1
 
 NIST SP 800-63-1 updated NIST SP 800-63 to reflect current authenticator (then referred to as token)
 technologies and restructured to provide a better understanding of the
@@ -236,7 +236,7 @@ made in NIST SP 800-63-1:
     reduce and isolate any damage done by a malicious or negligent
     trusted entity.
 
-#### 2.2.2. SP 800-63-2
+#### 2.5.2. SP 800-63-2
 
 NIST SP 800-63-2 was a limited update of Special Publication 800-63-1 and
 substantive changes were made only in section 5. *Registration and
@@ -248,7 +248,7 @@ registration. Other changes to section 5 were minor explanations and
 clarifications.
 
 
-#### 2.2.3. SP 800-63-3
+#### 2.5.3. SP 800-63-3
 
 NIST SP 800-63-3 is a substantial update and restructuring of Special Publication 800-63-2. It introduces individual components of digital authentication assurance - authenticator assurance level, identity assurance level, and federation assurance level - to support the growing need for independent treatment of authentication strength and confidence in an individuals claimed identity (for example, in strong pseudonymous authentication). It also moves from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
 
