@@ -41,7 +41,7 @@ The process of establishing confidence in the identity of users or information s
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
 
 #### Authenticator
-Something that a claimant possesses and controls that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
+Something that a claimant possesses and controls that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticity
 The property that data originated from its purported source.
@@ -60,7 +60,7 @@ A party whose identity is to be verified using one or more authentication protoc
 #### Claimed Address
 The physical location asserted by a subject at which they can be reached. It includes the residential street address of an individual and may also include the mailing address of the individual.
 
-For example, a person with a foreign passport, living in the U.S., will need to give an address when going through the identity proofing process. This address would not be an “address of record” but a “claimed address.”
+For example, a person with a foreign passport, living in the U.S., will need to give an address when going through the identity proofing process. This address would not be an "address of record" but a "claimed address."
 
 #### Claimed Identity
 A declaration of unvalidated and unverified personal attributes by the applicant.
@@ -68,7 +68,7 @@ A declaration of unvalidated and unverified personal attributes by the applicant
 #### Credential
 An object or data structure that authoritatively binds an identity (and optionally, additional attributes) to an authenticator possessed and controlled by a subscriber.
 
-While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber’s authenticator and identity.
+While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber's authenticator and identity.
 
 #### Credential Service Provider (CSP)
 A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. The CSP may encompass verifiers that it operates. A CSP may be an independent third party, or may issue credentials for its own use.
@@ -92,7 +92,7 @@ The process through which an applicant applies to become a subscriber of a CSP a
 A set of attributes that uniquely describe a person within a given context.
 
 #### Identity Assurance Level (IAL)
-A category that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
+A category that conveys the degree of confidence that the applicant's claimed identity is their real identity.
 
 #### Identity Proofing
 The process by which a CSP collects and verifies information about a person for the purpose of issuing credentials to that person.
@@ -124,7 +124,7 @@ A name other than a legal name.
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
 
 #### Remote
-(*As in remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization’s security controls.
+(*As in remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls.
 
 Note: Any information exchange across the Internet is considered remote.
 
