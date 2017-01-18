@@ -2,11 +2,11 @@
 
 <div class="breaker"></div>
 
-# <a name="resuse_proof"></a> 6. Derived Authenticators
+# <a name="derived-authN"></a> 6. Derived Authenticators
 
 _This section is normative._
 
-It is beneficial to an individual and an organization to re-proof as little as possible.  Wherever possible, verifying that an individual has already been successfully identity proofed SHOULD be performed.
+It is beneficial to the subject and CSP to minimize the number of times the identity proofing process needs to be repeated. Wherever possible, verifying that an individual has already been successfully identity proofed SHOULD be performed.
 
 >Note: This guideline supports using digital credentials, in addition to physical credentials, as identity evidence.  See [Section 5.2.](#validate) for more information.
 
@@ -18,6 +18,6 @@ There are two specific use cases to consider when leveraging the proofing associ
 
 **Requirements:**  
 1. The IAL of the credential bound to the derived authenticator SHALL be at or below the primary IAL. In most cases the IALs are expected to be the same in order to benefit from the reuse of the original identity proofing event(s).  
-2. At IAL3, the CSP SHOULD verify in-person that a claimant possesses, controls and can successfully authenticate using the primary authenticator. 
+2. At IAL3, the CSP SHOULD verify in-person that a claimant possesses, controls and can successfully authenticate using the primary authenticator(s). 
 
-Details on dervied authenticator lifecycle requirements can be found in SP 800-63B, [Section 6.5](#dc).
+Details on derived authenticator lifecycle requirements can be found in SP 800-63B, [Section 6.5](https://pages.nist.gov/800-63-3/sp800-63b.html#dc).

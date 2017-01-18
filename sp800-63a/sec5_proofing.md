@@ -10,7 +10,7 @@ This section lists the steps a CSP SHALL follow to identity proof an individual 
 
 ## <a name="resolve"></a>5.1. Identity Resolution
 
-The goal of identity resolution is to uniquely distinquish an individual among a given population or context.  Effective identity resolution uses the smallest set of attribtues necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing transaction.  
+The goal of identity resolution is to uniquely distinquish an individual among a given population or context.  Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing transaction.  
   
 1.  Exact matches of information used in the proofing process could be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, authoritative records, and third party records. Matching algorithms and rules used SHOULD be available publicly or, at minimum, to the relevant community of interest. For example, they may be included as part of the written policy or practice statement referenced above.
 2.  Knowledge based verification (KBV) (sometimes referred to as knowledge based authentication (KBA)) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. 
@@ -146,7 +146,7 @@ Virtual in-person identity proofing and enrollment transaction SHALL meet the fo
 
 ### <a name="trustref"></a> 5.3.4. Trusted Referee Requirements
 
-The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy.  The CSP MAY allow an applicant that has successfully completed identity proofing to act as a trusted referee for another applicant.  The CSP MAY use a trusted referee for both remote and in-person processes.  
+The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.  
 
 The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements. 
 
@@ -164,4 +164,4 @@ The CSP SHOULD involve a parent or legal adult guardian as a trusted referee for
 
 ## 5.4. Binding Requirements
 
-See [800-63B, Section 6.1, Authenticator Binding](#binding) for instructions on binding authenticators to subscribers.  
+See [800-63B, Section 6.1, Authenticator Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#binding) for instructions on binding authenticators to subscribers.  
