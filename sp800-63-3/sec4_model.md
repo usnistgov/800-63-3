@@ -125,7 +125,7 @@ Federated architectures have many significant benefits, including, but not limit
 
 The following sections discuss the components of a federated identity architecture should an agency elect this type of model.
 
-#### 4.4.1 Assertions
+#### 4.4.1. Assertions
 
 Upon completion of the authentication process, the verifier generates an assertion containing the result of the authentication and provides it to the RP. If the verifier is implemented in combination with the RP, the assertion is implicit. If the verifier is a separate entity from the RP, as in typical federated identity models, the assertion is used to communicate the result of the authentication process, and optionally information about the subscriber, from the verifier to the RP. Assertions may be communicated directly to the RP, or can be forwarded through the subscriber, which has further implications for system design.
 
