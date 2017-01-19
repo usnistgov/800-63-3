@@ -8,8 +8,8 @@
 
 OMB [[M-04-04]](#M-04-04) requires agencies to select the transaction or system authentication Level of Assurance (LOA) by conducting a risk assessment to determine the potential impact of an authentication error. In the context of M-04-04, LOA is defined as:
 
-1. The degree of confidence in the vetting process used to establish the identity of the individual to whom the authenticator was issued, and
-2. the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
+1. The degree of confidence in the vetting process used to establish the identity of the individual to whom the authenticator was issued; and
+2. The degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
 
 Per M-04-04, once an LOA is selected, the agency is required to follow the identity proofing, credentialing, and federation technical requirements specified by NIST at that level. For example, if the impact of an authentication error results in an application assessed at LOA3, the agency must identity proof and provide authenticators that meet the requirements for LOA3.
 
