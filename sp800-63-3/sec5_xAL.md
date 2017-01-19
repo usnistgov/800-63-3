@@ -225,20 +225,20 @@ The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes 
 
 **Federate authenticators when:**
 
-* Potential users already have an authenticator at or above required AAL  
-* Multiple credential form factors are required to cover all possible user communities
-* Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk)
-* Desire to allow the primary authentication to be modified and upgraded over time without changing the RP's implementation
-* There are different environments to be supported, as federation protocols are network-based and allow for implementation on a wide variety of platforms and languages
-* Potential users come from multiple communities, each with its own existing identity infrastructure
+* Potential users already have an authenticator at or above required AAL.
+* Multiple credential form factors are required to cover all possible user communities.
+* Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk).
+* Desire to allow the primary authentication to be modified and upgraded over time without changing the RP's implementation.
+* There are different environments to be supported, as federation protocols are network-based and allow for implementation on a wide variety of platforms and languages.
+* Potential users come from multiple communities, each with its own existing identity infrastructure.
 
 **Federate attributes when:**  
 
-* Pseudonymity is required, necessary, feasible, or important to stakeholders accessing the service
-* Access to the service only requires a partial attribute list  
-* Access to the service only requires at least one attribute claim
-* Agency is not the authoritative source or issuing source for required attributes  
-* Attributes are only required temporarily during use (such as to make an access decision), such that agency does not need to locally persist the data
+* Pseudonymity is required, necessary, feasible, or important to stakeholders accessing the service.
+* Access to the service only requires a partial attribute list.
+* Access to the service only requires at least one attribute claim.
+* Agency is not the authoritative source or issuing source for required attributes.  
+* Attributes are only required temporarily during use (such as to make an access decision), such that agency does not need to locally persist the data.
 
 
 
