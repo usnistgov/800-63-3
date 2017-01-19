@@ -172,6 +172,7 @@ The CSP SHALL comply with their respective records retention policies in accorda
 	7. The agency SHALL publish a Privacy Impact Assessment to cover such collection, as applicable.
 
 
+
 ### 4.5. Summary of Requirements
 
 *(Non-normative; refer to preceding sections for normative requirements)*

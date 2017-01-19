@@ -92,6 +92,7 @@ The following requirements apply to any CSP performing identity proofing at IAL 
 	17. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
 	18. The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
 
+
 ## 4.4. Identity Assurance Level 1
 
 The CSP SHALL NOT proof applicants.  Applicants MAY self-assert zero or more attributes to the CSP.
