@@ -1,30 +1,32 @@
 <a name="sec10"></a>
 
+<div class="breaker"></div>
+
 ## 10. Usability Considerations
 
 _This section is informative._
 
-[ISO/IEC 9241-11](#ISO9241-11) defines usability as the “extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.” This definition focuses on users, their goals, and the context of use as key elements necessary for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability.
+[ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, their goals, and the context of use as key elements necessary for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability.
 
-A user’s goal for accessing an information system is to perform an intended task; authentication is the task that enables this goal. However, from the user’s perspective, authentication stands between them and their intended task. Effective design and implementation of authentication makes it easy to do the right thing, hard to do the wrong thing, and easy to recover when the wrong thing happens.
+A user's goal for accessing an information system is to perform an intended task; authentication is the task that enables this goal. However, from the user's perspective, authentication stands between them and their intended task. Effective design and implementation of authentication makes it easy to do the right thing, hard to do the wrong thing, and easy to recover when the wrong thing happens.
 
-Organizations need to be cognizant of the overall implications of their stakeholders’ entire digital authentication ecosystem. Users often employ one or more authenticator, each for a different relying party (RP). They then struggle to remember passwords, to recall which authenticator goes with which RP, and to carry multiple physical authentication devices. Evaluating the usability of authentication is critical, as poor usability often results in coping mechanisms and unintended work-arounds that can ultimately degrade the intended security controls.
+Organizations need to be cognizant of the overall implications of their stakeholders' entire digital authentication ecosystem. Users often employ one or more authenticator, each for a different relying party (RP). They then struggle to remember passwords, to recall which authenticator goes with which RP, and to carry multiple physical authentication devices. Evaluating the usability of authentication is critical, as poor usability often results in coping mechanisms and unintended work-arounds that can ultimately degrade the intended security controls.
 
-Integrating usability into the development process can lead to authentication solutions that are secure and usable while addressing users’ authentication needs and organizations’ business goals.
+Integrating usability into the development process can lead to authentication solutions that are secure and usable while addressing users' authentication needs and organizations' business goals.
 
 The impact of usability across digital systems needs to be considered as part of the risk assessment when deciding on the Authenticator Assurance Level (AAL) requirements. Authenticators with a higher AAL sometimes offer better usability, and should be allowed for use for lower AAL applications.
 
 Leveraging a federation for authentication can alleviate many of the usability issues, though such an approach has its own tradeoffs, as discussed in NIST SP 800-63C, Federation and Assertions.
 
-This section provides general usability considerations and possible implementations, but does not recommend specific solutions. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. Furthermore, usability considerations and their implementation are sensitive to many factors that prevent a one-size-fits-all solution. For example, a font size that works in the desktop computing environment may force text to scroll off of a small OTP device screen. Performing a usability evaluation on the selected authenticator is a critical component of implementation; it’s important to conduct evaluations with representative users, realistic goals and tasks, and appropriate contexts of use.
+This section provides general usability considerations and possible implementations, but does not recommend specific solutions. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. Furthermore, usability considerations and their implementation are sensitive to many factors that prevent a one-size-fits-all solution. For example, a font size that works in the desktop computing environment may force text to scroll off of a small OTP device screen. Performing a usability evaluation on the selected authenticator is a critical component of implementation; it's important to conduct evaluations with representative users, realistic goals and tasks, and appropriate contexts of use.
 
 ##### ASSUMPTIONS
 
-In this section, the term “users” means “claimants” or “subscribers.”
+In this section, the term "users" means "claimants" or "subscribers."
 
-Guidelines and considerations are described from the users’ perspective.
+Guidelines and considerations are described from the users' perspective.
 
-Accessibility is out of scope for this section, and can be addressed in an organization’s implementation plans.
+Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans.
 
 
 ### 10.1. Usability Considerations Common to Authenticators
@@ -33,7 +35,7 @@ When selecting and implementing an authentication system, consider usability acr
 
 A single authenticator type usually does not suffice for the entire user population. Therefore, whenever possible (based on AAL requirements), support alternative authenticator types and allow users to choose based on their needs. Task immediacy, perceived cost benefit tradeoffs, and unfamiliarity with certain authenticators often impact choice. Users tend to choose options that incur the least burden or cost at that moment. For example, if a task requires immediate access to an information system, a user may prefer to create a new account and password rather than select an authenticator requiring more steps. Alternatively, users may choose a federated identity option (approved at the appropriate AAL) if they already have an account with an identity provider. Users may understand some authenticators better than others, and have different levels of trust based on their understanding and experience.
 
-Positive user authentication experiences are integral to the success of an organization achieving the organization’s desired business outcomes. Therefore, strive to consider authenticators from the users’ perspective. The overarching authentication usability goal is to minimize user burden and authentication friction (e.g., the number of times a user has to authenticate, the steps involved, and the amount of information he or she has to track). Single sign-on exemplifies one such minimization strategy.
+Positive user authentication experiences are integral to the success of an organization achieving the organization's desired business outcomes. Therefore, strive to consider authenticators from the users' perspective. The overarching authentication usability goal is to minimize user burden and authentication friction (e.g., the number of times a user has to authenticate, the steps involved, and the amount of information he or she has to track). Single sign-on exemplifies one such minimization strategy.
 
 Usability considerations that are applicable to most authenticators are described below. Subsequent sections describe usability considerations that are specific to a particular authenticator.
 
@@ -47,7 +49,7 @@ Usability considerations for typical usage of all authenticators include:
   *  Consider the legibility of user-facing and user-entered text, including font style, size, color, and contrast with surrounding background. Ilegible text contributes to user entry errors. To enhance legibility, consider the use of:
     *  High contrast, the highest contrast is black on white.
     *  Sans serif fonts for electronic displays. Serif fonts for printed materials.
-    *  Fonts that clearly distinguish between easily confusable characters (such as the capital letter “O” and the number “0”).
+    *  Fonts that clearly distinguish between easily confusable characters (such as the capital letter "O" and the number "0").
     *  A minimum font size of 12 points as long as the text fits for display on the device.
 *  User experience during authenticator entry:
   *  Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (such as tablets and smartphones) than on traditional desktop computers.
@@ -97,18 +99,18 @@ Usability considerations for intermittent events include:
   *  Allow at least 64 characters in length to support the use of passphrases. Encourage users to make memorized secrets as lengthy as they want, using any characters they like (including spaces), thus aiding memorization.
   *  Do not impose other composition rules (e.g. mixtures of different character types) on memorized secrets.
   *  Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See Section 5.1.1 for additional information)
-*  Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a “black list” of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
+*  Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a "black list" of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
 
 #### 10.2.2. Look-up Secrets
 
 **_Typical Usage_**
 
-Users use the authenticator (physical or electronic record) to look up the appropriate secret(s) needed to respond to a verifier’s prompt. For example, a user may be asked to provide a specific subset of the numeric or character strings printed on a card in table format.
+Users use the authenticator (physical or electronic record) to look up the appropriate secret(s) needed to respond to a verifier's prompt. For example, a user may be asked to provide a specific subset of the numeric or character strings printed on a card in table format.
 
 Usability considerations for typical usage include:
 
 *  User experience during entry of look-up secrets:
-  *  Consider the prompts’ complexity and size. The larger the subset of secrets a user is prompted to look up, the greater the usability implications are, both the cognitive workload and physical difficulty during entry.
+  *  Consider the prompts' complexity and size. The larger the subset of secrets a user is prompted to look up, the greater the usability implications are, both the cognitive workload and physical difficulty during entry.
 
 #### 10.2.3. Out of Band
 
@@ -172,7 +174,7 @@ Usability considerations for typical usage include:
 
 **_Typical Usage_**
 
-In order to authenticate, users prove possession and control of the cryptographic key stored on disk or some other “soft” media that requires activation. The activation is through the input of a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see section 10.1.2 for Memorized Secrets and section 10.2 for Biometrics used in Multi-Factor Authenticators).
+In order to authenticate, users prove possession and control of the cryptographic key stored on disk or some other "soft" media that requires activation. The activation is through the input of a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see section 10.1.2 for Memorized Secrets and section 10.2 for Biometrics used in Multi-Factor Authenticators).
 
 Usability considerations for typical usage include:
 
@@ -193,9 +195,9 @@ Usability considerations for typical usage include:
 
 #### 10.3. Summary of Usability Considerations
 
-[Table 10-1](#t10-1) summarizes the usability considerations for typical usage and intermittent events for each authenticator type. Many of the usability considerations for typical usage apply to most of the authenticator types, as demonstrated in the rows. The table highlights common and divergent usability characteristics across the authenticator types. Each column allows readers to easily identify the usability attributes to address for each authenticator. Depending on users’ goals and context of use, users may value certain usability attributes over others. Whenever possible, provide alternative authenticator types and allow users to choose between them.
+[Table 10-1](#t10-1) summarizes the usability considerations for typical usage and intermittent events for each authenticator type. Many of the usability considerations for typical usage apply to most of the authenticator types, as demonstrated in the rows. The table highlights common and divergent usability characteristics across the authenticator types. Each column allows readers to easily identify the usability attributes to address for each authenticator. Depending on users' goals and context of use, users may value certain usability attributes over others. Whenever possible, provide alternative authenticator types and allow users to choose between them.
 
-It is important to note that multi-factor authenticators (e.g., multi-factor OTP devices, multi-factor cryptographic software, and multi-factor cryptographic devices) also inherit their secondary factor’s usability considerations. As biometrics are only allowed as an activation factor in multi-factor authentication solutions, usability considerations for biometrics are not included in Table 10-1 and are discussed in section 10.4.
+It is important to note that multi-factor authenticators (e.g., multi-factor OTP devices, multi-factor cryptographic software, and multi-factor cryptographic devices) also inherit their secondary factor's usability considerations. As biometrics are only allowed as an activation factor in multi-factor authentication solutions, usability considerations for biometrics are not included in Table 10-1 and are discussed in section 10.4.
 
 
 <a name="t10-1"></a>
@@ -215,13 +217,13 @@ Although there are other biometric modalities, the following three biometric mod
 **_Typical Usage_**
 
 *  For all modalities, user familiarity and practice with the device improves performance.
-*  Device affordances (i.e., properties of a device that allow a user to perform an action), feedback, and clear instructions are critical to a user’s success with the biometric device. For example, provide clear instructions on the required actions for liveness detection.
+*  Device affordances (i.e., properties of a device that allow a user to perform an action), feedback, and clear instructions are critical to a user's success with the biometric device. For example, provide clear instructions on the required actions for liveness detection.
 *  Ideally, users can select the modality they are most comfortable with for their second authentication factor. The user population may be more comfortable and familiar with—and accepting of—some biometric modalities than others.
 *  User experience with biometrics as an activation factor.
 *  Provide clear, meaningful feedback on number of remaining allowed attempts. For example, for rate limiting (throttling), inform users of the time period they have to wait until next attempt to reduce user confusion and frustration.
 *  Fingerprint Usability Considerations:
   *  Users have to remember which finger(s) they used for initial enrollment.
-  *  The amount of moisture on the finger(s) affects the sensor’s ability for successful capture.
+  *  The amount of moisture on the finger(s) affects the sensor's ability for successful capture.
   *  Additional factors influencing fingerprint capture quality include age, gender, and occupation (e.g., users handling chemicals or working extensively with their hands may have degraded friction ridges).
 *  Face Usability Considerations:
   *  Users have to remember whether they wore any artifacts, such as glasses, during enrollment because it affects facial recognition accuracy.
@@ -237,7 +239,7 @@ Although there are other biometric modalities, the following three biometric mod
 As biometrics are only permitted as a second factor for multi-factor authentication, usability considerations for intermittent events with the primary factor still apply. Intermittent events with biometrics use include, but are not limited to, the following, which may affect recognition accuracy:
 
 *  If users injure their enrolled finger(s), fingerprint recognition may not work. Fingerprint authentication will be difficult for users with degraded fingerprints.
-*  The time elapsed between the time of facial recognition for authentication and the time of the initial enrollment can affect recognition accuracy as a user’s face changes naturally over time. A user’s weight change may also be a factor.
+*  The time elapsed between the time of facial recognition for authentication and the time of the initial enrollment can affect recognition accuracy as a user's face changes naturally over time. A user's weight change may also be a factor.
 *  Iris recognition may not work for people who had eye surgery, unless they re-enroll.
 
 Across all biometric modalities, usability considerations for intermittent events include:
