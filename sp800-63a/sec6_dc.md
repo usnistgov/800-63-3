@@ -21,9 +21,7 @@ For the first use case above, the management of derived authenticators is simila
 
 The following requirements detail how a CSP should validate the existence of a past proofing event (i.e. the credential) prior to issuance of a derived authenticator.  It also lists lifecycle management requirements to keep derived authenticators in sync with the primary authenticator.
 
-
 ## 6.2. General Requirements
-
 
 1. The IAL of the credential bound to the derived authenticator SHALL be at or below the primary IAL. In most cases the IALs are expected to be the same in order to benefit from the reuse of the original identity proofing event(s). 
 1. Before issuance, the CSP SHALL verify the original authenticator status. The CSP SHALL NOT issue a derived authenticator if status indicates any type of termination, disablement, revocation, or expiration.
