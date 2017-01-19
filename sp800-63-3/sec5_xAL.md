@@ -15,8 +15,8 @@ Per M-04-04, once an LOA is selected, the agency is required to follow the ident
 
 However, in today's digital services, combining proofing and authenticator requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden upon the implementing entity. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. An authentication error is not a singleton that drives all requirements. This guideline recommends that agencies meet M-04-04 requirements by separately evaluating the impact that could result from (1) a true authentication error (a false claimant using a credential that is not rightfully theirs) and (2) an identity proofing error. From the perspective of an identity proofing failure, there are two dimensions of potential risk:
 
-*  The impact of providing a service to the wrong subject (e.g., an attacker successfully proofs as someone else)
-*  The impact of excessive identity proofing (i.e., collecting and securely storing more information about a person than is required to successfully provide the digital service.)
+*  The impact of providing a service to the wrong subject (e.g., an attacker successfully proofs as someone else).
+*  The impact of excessive identity proofing (i.e., collecting and securely storing more information about a person than is required to successfully provide the digital service).
 
 As such, agencies should assess the risk of authentication and proofing errors separately to determine the appropriate technical solutions that should be applied to their system. 
 
