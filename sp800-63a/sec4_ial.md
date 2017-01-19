@@ -30,7 +30,7 @@ It is permissible for the CSP to collect additional information in the process o
 
 </div>
 
-## 4.2. General Requirements
+## <a name="genProofReqs"></a> 4.2. General Requirements
 
 [Table 4-1](#63aSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Identity Assurance Levels.
 
@@ -142,7 +142,7 @@ At a minimum, the applicant must be verified by a process that is able to achiev
 
 The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote identity proofing. The CSP SHOULD offer both in-person and remote proofing.
 
-#### 4.4.1.6. Address Confirmation
+#### <a name="4-4-1-6"></a> 4.4.1.6. Address Confirmation
 
 - The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence.
 

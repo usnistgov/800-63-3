@@ -112,7 +112,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 #### 4.2.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL 2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD decline to operate when such a compromise is detected. At least one authenticator used at AAL 2 SHALL be replay resistant as described in Section [5.2.7](#replay). Authentication at AAL 2 SHOULD demonstrate authentication intent from at least one authenticator as discussed in Section [5.2.8](#intent).
+Cryptographic authenticators used at AAL 2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD decline to operate when such a compromise is detected. At least one authenticator used at AAL 2 SHALL be replay resistant as described in Section [5.2.8](#replay). Authentication at AAL 2 SHOULD demonstrate authentication intent from at least one authenticator as discussed in Section [5.2.9](#intent).
 
 Communication between the claimant and verifier (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
 
@@ -143,7 +143,7 @@ Authentication Assurance Level 3 requires the use of one of two kinds of hardwar
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
-Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. All cryptographic device authenticators used at AAL 3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.7](#replay). All authentication and reauthentication processes at AAL 3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.8](#intent).
+Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. All cryptographic device authenticators used at AAL 3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.8](#replay). All authentication and reauthentication processes at AAL 3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.9](#intent).
 
 Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security.
 
@@ -195,10 +195,10 @@ Requirement | AAL 1 | AAL 2 | AAL 3
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
 **Security controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
 **MITM resistance** | Required | Required | Required |
-**Replay resistance** | Not required | Required | Required |
 **Verifier impersonation resistance** | Not required | Not required | Required |
+**Verifier compromise resistance** | Not required | Not required | Required |
+**Replay resistance** | Not required | Required | Required |
 **Authentication intent** | Not required | Recommended | Required |
-
 
 
 

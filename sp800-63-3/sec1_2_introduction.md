@@ -259,7 +259,7 @@ Other areas of update to SP 800-63-2 include:
 -	Requirements on the storage of long-term secrets by verifiers
 -   Restructured identity proofing model
 -	Updated requirements regarding remote identity proofing
--	Clarification on the use of independent channels and devices as “something you have”
+-	Clarification on the use of independent channels and devices as "something you have"
 -	Removal of pre-registered knowledge tokens (authenticators), with the recognition that they are special cases of (often very weak) passwords.
 -	Requirements regarding account recovery in the event of loss or theft of an authenticator
 -   Expanded discussion of reauthentication and session management
