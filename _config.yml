@@ -1,6 +1,6 @@
 # Site settings
-title: SP 800-63-3 Digital Authentication Guideline
-description: "Public Preview for NIST Special Publication: SP 800-63-3 Digital Authentication Guideline"
+title: SP 800-63-3 Digital Identity Guidelines
+description: "Public Preview for NIST Special Publication: SP 800-63-3 Digital Identity Guidelines"
 baseurl: "/800-63-3" # the subpath of your site, e.g. /blog
 url: "https://pages.nist.gov/" # the base hostname & protocol for your site
 
