@@ -196,7 +196,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but without the requirement that a second factor be provided. As such, the symmetric keys used by authenticators SHALL be strongly protected against compromise.
 
-When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source. that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
+When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single factor, in accordance with section 5.1.4.
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and man-in-the-middle attacks. Time-based one-time passwords SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given time-based one-time password only once during the validity period.
 
@@ -236,7 +236,7 @@ The requirements for a single factor cryptographic software verifier are identic
 
 ##### 5.1.7.1. Single Factor Cryptographic Device Authenticators
 
-Single-factor cryptographic device authenticators encapsulate a secret key that is unique to the device and SHALL NOT be exportable (i.e., it cannot be removed from the device). The authenticator operates by signing a challenge nonce, usually presented through a direct computer interface such as a USB port. Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or other issuer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
+Single-factor cryptographic device authenticators encapsulate a secret key that is unique to the device and SHALL NOT be exportable (i.e., it cannot be removed from the device). The authenticator operates by signing a challenge nonce presented through a direct computer interface such as a USB port. Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or other issuer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
 
 The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The challenge nonce SHALL be at least 64 bits in length. Approved cryptography SHALL be used.
 
@@ -291,7 +291,7 @@ The requirements for a multi-factor cryptographic software verifier are identica
 
 ##### 5.1.9.1. Multi-Factor Cryptographic Device Authenticators
 
-Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric.  Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or manufacturer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
+Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric.  The authenticator operates by signing a challenge nonce presented through a direct computer interface such as a USB port.  Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or manufacturer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
 
 The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The challenge nonce SHALL be at least 64 bits in length. Approved cryptography SHALL be used.
 
@@ -363,7 +363,7 @@ If matching is performed centrally:
 * An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established, and the sensor authenticated, **prior** to capturing the biometric sample from the claimant.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
-Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after a password has been generated.
+Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after any training or research data has been derived.
 
 Biometrics are also used in some cases to prevent repudiation of registration and to verify that the same individual participates in all phases of the registration process as described in SP 800-63A.
 
@@ -419,3 +419,9 @@ An authentication process resists replay attacks if it is impractical to achieve
 Examples of replay resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
 
 In contrast, memorized secrets are not considered replay resistant because the authenticator output (the secret itself) is provided for each authentication.
+
+#### <a name="intent"></a>5.2.9. Authentication intent
+
+An authentication process requires intent if it requires the subject to explicitly respond to each authentication or reauthentication request. The goal of authentication intent is to make it more difficult for directly connected physical authenticators (cryptographic devices) to be used without the subject's knowledge, such as by malware on the endpoint. Authentication intent SHALL be established by the authenticator itself, although multi-factor cryptographic devices MAY establish intent by reentry of the other authentication factor on the endpoint with which the authenticator is used.
+
+Authentication intent MAY be established in a number of ways. Authentication processes that require intervention of the subject, e.g., to enter an authenticator output on their endpoint from an OTP device, establish intent by their very nature.  Cryptographic devices that require user action (e.g., pushing a button or reinsertion) for each authentication or reauthentication operation are also considered to establish intent.
