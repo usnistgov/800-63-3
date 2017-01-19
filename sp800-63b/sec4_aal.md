@@ -197,7 +197,7 @@ Requirement | AAL 1 | AAL 2 | AAL 3
 **MITM resistance** | Required | Required | Required |
 **Replay resistance** | Not required | Required | Required |
 **Verifier impersonation resistance** | Not required | Not required | Required |
-
+**Verifier compromise resistance** | Not required | Not required | Required |
 
 
 
