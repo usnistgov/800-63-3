@@ -81,39 +81,3 @@ CSPs SHALL revoke the binding of authenticators promptly when an online identity
 The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing certified attributes signed by the CSP as soon as practical after revocation or termination takes place.
 
 Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
-
-### 6.5. Derived Authenticators
-
-The expression of IAL and AAL as separate ordinals allows organizations to issue any type or number of authenticators they want regardless of how or if a subject is identity proofed.  This is one of the benefits of the separation - an organization can issue authenticators suitable for use by subscribers having a credential at IAL 2 or 3.  However, it may be beneficial for organizations to issue additional authenticators bound to a credential asscoiated with a primary authenticator.  This is covered in detail in [Section 6.1.2. Post-Enrollment Binding](#post-enroll-bind). 
-
-The management of derived authenticators is similar to that described in [Section 6.1.2. Post-Enrollment Binding](#post-enroll-bind); however, derived authenticators are issued only to a subject that is authorized to have a primary authenticator.  Once the primary authenticator has been revoked, all derived authenticators, or their credentials, should be revoked.
-
-> Note: In some cases, like the PIV smartcard, the authenticator and credential will be revoked.  The individual will typically surrender their authenticator (the PIV) even though the credential has been revoked, rendering the PIV unusable.  However, in many consumer use cases where an individual may provide their own authenticator(s), the CSP will revoke the credential the authenticator is bound to, such that authentication is no longer possible with that CSP; yet the individual can enroll the authenticator(s) with other CSPs. 
-
-The definition of derived in this case is _not_ that an authenticator is tied to a primary authenticator, for example deriving a key from another key.  Rather, the derived authenticator is issued and bound to an identity that has already been identity proofed.  To prove that identity proofing has occurred, the individual demonstrates possession and authentication of an authenticator bound to the original proofed identity record (i.e the credential). 
-
-The following requirements detail how a CSP should validate the authenticator and credential prior to issuance of a derived authenticator.  It also lists lifecycle management requirements to keep derived authenticators in sync with the primary authenticator and credential.
-
-#### 6.5.1. General Requirements
-
-1. Before issuance, the CSP SHALL verify the original authenticator status. The CSP SHALL NOT issue a derived authenticator if status indicates any type of termination, disablement, revocation, or expiration.
-2. Before issuance, the CSP SHALL verify that the corresponding authenticator is possessed and controlled by the claimant.  
-3. The derived authenticator SHALL be valid only as long as the subscriber is authorized to hold the original authenticator.
-4. The CSP SHOULD record the details of the original authenticator used as the basis for derived authenticator issuance. 
-5. The CSP SHOULD set the expiration of the derived authenticator to the expiration, if any, of the primary authenticator. There are instances where the derived authenticator need not be directly tied to the expiration of the primary authenticator as the derived authenticator can provide authentication services in its place, for example, while the expiring primary credential is being replaced.
-6. The derived authenticator type MAY be any AAL, regardless of the AAL of the primary authenticator or the IAL of the bound credential.  
-
-
-#### 6.5.2. AAL 2 Requirements
-
-- The CSP SHOULD check the status of the original authenticator weekly. 
-
-
-#### <a name="dc-ial3"></a>6.5.3. AAL 3 Requirements
-
-1.  The CSP SHOULD perform in-person issuance. This is important if the CSP needs to explicitly provision the authenticator to a trusted device and in-person is the only mechanism to ensure delivery and assurance.
-2. The CSP SHOULD check the status of the original authenticator daily.
-3. The CSP SHALL obtain and verify a copy of a biometric recorded when the primary authenticator was issued. An example of such a biometric is the signed biometric data object, however if the biometric reference is not available from the original AAL 3 authenticator, it may be obtained elsewhere, as long as its authenticity is assured.
-4. The CSP SHALL compare a fresh biometric sample obtained in person from the applicant to the reference biometric retained when the primary AAL3 authenticator was issued.
-5. The CSP SHALL determine that the original, primary authenticator the meets all AAL3 requirements.
-
