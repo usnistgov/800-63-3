@@ -89,7 +89,7 @@ In this document, authenticators always contain a secret. Some of the classic au
 A digital authentication system may incorporate multiple factors in one of two ways:
 
 1. The system may be implemented so that multiple factors are presented to the verifier; or
-2. some factors may be used to protect a secret that will be presented to the verifier. 
+2. Some factors may be used to protect a secret that will be presented to the verifier. 
 
 For example, consider a piece of hardware (the authenticator) that contains a cryptographic key (the authenticator secret) where access is protected with a fingerprint. When used with the biometric, the cryptographic key produces an output that is used in the authentication process to authenticate the claimant. An impostor must steal the encrypted key (by stealing the hardware) and replicate the fingerprint to use the authenticator. This specification considers such a device to effectively provide two factor authentication, although the actual authentication protocol between the verifier and the claimant simply proves possession of the key.
 
