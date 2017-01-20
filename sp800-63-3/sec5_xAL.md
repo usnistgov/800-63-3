@@ -45,7 +45,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 
 |Federation Assurance Level|
 |:----------------------|
-|**FAL1** - FAL1 permits the relying party (RP) to receive a bearer assertion from an identity provider (IdP). The assertion must be signed by the IdP using approved cryptography.|
+|**FAL1** - FAL1 permits the RP to receive a bearer assertion from an identity provider (IdP). The assertion must be signed by the IdP using approved cryptography.|
 |**FAL2** - FAL2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
 |**FAL3** - FAL3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
