@@ -167,7 +167,7 @@ The program and supporting processes to manage information security risk to orga
 A secret used in authentication that is known to the subscriber and the verifier.
 
 #### Special Publication (SP)
-A type of publication issued by NIST. Specifically, the Special Publication 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
+A type of publication issued by NIST. Specifically, the SP 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 
 #### Subscriber
 A party who has received a credential or authenticator from a CSP.
