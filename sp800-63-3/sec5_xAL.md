@@ -26,7 +26,7 @@ To determine the process and system requirements that reduce the risk of an auth
 
 * Identity Assurance Level (IAL) - The robustness of the identity proofing process to confidently determine the identity of an individual.
 * Authenticator Assurance Level (AAL) - The robustness of the authentication process itself, and the binding between an authenticator and the identifier of a specific individual.
-* Federation Assurance Level (FAL) - The robustness of the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party. FAL is optional as not all digital systems will leverage federated identity architectures.
+* Federation Assurance Level (FAL) - The robustness of the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to an RP. FAL is optional as not all digital systems will leverage federated identity architectures.
 
 A summary of each of the identity, authenticator, and federation assurance levels is provided below.
 
