@@ -111,7 +111,7 @@ The verifier is a functional role, but is frequently implemented in combination 
 
 ### 4.4. Federation and Assertions
 
-Normative requirements can be found in [SP 800-63C, Federation and Assertions](sp800-63c.html).
+Normative requirements can be found in [SP 800-63C](sp800-63c.html), *Federation and Assertions*.
 
 Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, these guidelines are agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation is preferred over a number of siloed identity systems that each serve a single agency or RP.
 
