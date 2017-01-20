@@ -150,7 +150,7 @@ The AAL selection does not mean the digital service provider will need to issue 
 </div>
 
 
-#### <a name="IAL_CYOA"></a> 5.3.3. Selecting Identity Assurance Level
+#### <a name="IAL_CYOA"></a> 5.3.3. Selecting IAL
 
 The IAL decision tree in [Figure 5-2](#63Sec5-Figure2) offers agencies a possible path to determine the most appropriate identity proofing requirements for their digital service offering. This analysis is not intended to be a substitute for M-04-04 risk assessments or any other risk management process in use by the agency. Nor is it expected to cover all the identity service needs of each agencies unique mission. Descriptions follow for specific steps that fall outside the required risk management process documented in M-04-04.
 
