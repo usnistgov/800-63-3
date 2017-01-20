@@ -26,7 +26,7 @@ In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defi
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
-An attempt by an unauthorized entity to fool a verifier or a RP into believing that the unauthorized individual in question is the subscriber.
+An attempt by an unauthorized entity to fool a verifier or an RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
 A party who acts with malicious intent to compromise a system.
@@ -100,7 +100,7 @@ FIPS documents are available online through the FIPS home page: <http://www.nist
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level
-An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a RP.
+An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to an RP.
 
 #### Identity
 An attribute or set of attributes that uniquely describe a subject within a given context.
