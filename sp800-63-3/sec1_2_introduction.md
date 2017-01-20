@@ -248,7 +248,7 @@ clarifications.
 
 #### 2.5.3. SP 800-63-3
 
-NIST SP 800-63-3 is a substantial update and restructuring of SP 800-63-2. It introduces individual components of digital authentication assurance - authenticator assurance level, identity assurance level, and federation assurance level - to support the growing need for independent treatment of authentication strength and confidence in an individuals claimed identity (for example, in strong pseudonymous authentication). It also moves from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
+NIST SP 800-63-3 is a substantial update and restructuring of SP 800-63-2. It introduces individual components of digital authentication assurance - AAL, IAL, and FAL - to support the growing need for independent treatment of authentication strength and confidence in an individuals claimed identity (for example, in strong pseudonymous authentication). It also moves from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
 
 Other areas of update to SP 800-63-2 include:
 
