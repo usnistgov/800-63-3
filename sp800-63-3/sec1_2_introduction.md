@@ -205,7 +205,7 @@ included:
 The subsequent sections of NIST SP 800-63-1 presented a series of
 recommendations for the secure implementation of RAs, CSPs, Verifiers,
 and RPs. It should be noted that secure implementation of any one of
-these can only provide the desired level of assurance if the others are
+these can only provide the desired LOA if the others are
 also implemented securely. Therefore, the following assumptions were
 made in NIST SP 800-63-1:
 
