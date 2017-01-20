@@ -344,9 +344,9 @@ Therefore, the use of biometrics for authentication is supported with the follow
 
 Biometrics SHALL be used with another authentication factor (something you have).
 
-Empirical testing of the biometric system to be deployed SHALL demonstrate an equal error rate of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with a false match rate of **1 in 1000** or better.
+An authenticated protected channel between sensor (or endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint authenticated **prior** to capturing the biometric sample from the claimant.
 
-When the biometric sensor and subsequent processing (signal processing, comparison, data storage, and decision) are not part of an integral unit that resists replacement of the sensor, the sensor (or endpoint with which it is an integral unit that resists sensor replacement) SHALL provide a signed attestation as described in Section [5.2.4](#attestation) to demonstrate that it is a certified or qualified sensor meeting these requirements.
+Empirical testing of the biometric system to be deployed SHALL demonstrate an equal error rate of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with a false match rate of **1 in 1000** or better.
 
 The biometric system SHOULD implement presentation attack protection (PAD). Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks.
 
@@ -354,13 +354,14 @@ The biometric system SHOULD implement presentation attack protection (PAD). Test
 
 The biometric system SHALL allow no more than 3 consecutive failed authentication attempts, or 10 consecutive failed attempts if presentation attack detection meeting the above requirements is implemented. Once that limit has been reached, the claimant SHALL be required to use a different authenticator or to activate their authenticator with a different factor such as a memorized secret.
 
+The verifier SHALL make a determination that the biometric sensor and subsequent processing meet the performance requirements stated above. Authentication of the sensor or endpoint, if issued by the CSP or previously vetted by the verifier, meets this requirement. Sensors or endpoints not issued by the CSP SHALL on first use provide a signed attestation as described in Section [5.2.4](#attestation) to demonstrate that it is certified or qualified to meet these requirements.
+
 Biometric matching SHOULD be performed locally on claimant's device or MAY be performed at a central verifier.
 
 If matching is performed centrally:
 
 * Use of the biometric SHALL be limited to one or more specific devices that are identified using approved cryptography.
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
-* An authenticated protected channel between sensor (or integral unit containing endpoint and sensor that resists sensor replacement) and central verifier SHALL be established **prior** to capturing the biometric sample from the claimant.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
 Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after any training or research data has been derived.
