@@ -207,7 +207,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 
 
-#### <a name="FAL_CYOA"></a> 5.3.4. Selecting Federation Assurance Level
+#### <a name="FAL_CYOA"></a> 5.3.4. Selecting FAL
 
 All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [SP 800-63C](sp800-63c.html#sec5). When taken together, these measures make it so that assertions can not be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
 
