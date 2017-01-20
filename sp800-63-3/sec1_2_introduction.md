@@ -29,7 +29,7 @@ The components of identity assurance detailed in these guidelines are as follows
 
 * **IAL** refers to the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific subscriber.
 * **AAL** refers to the authentication process itself.
-* **FAL** refers to the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to a RP.
+* **FAL** refers to the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to an RP.
 
 As such, SP 800-63 is organized as a suite of documents as follows:
 
