@@ -17,7 +17,7 @@ The validated and verified location (physical or digital) where an individual ca
 A subject undergoing the processes of registration and identity proofing.
 
 #### Assertion
-A statement from a verifier to a relying party (RP) that contains identity information about a subscriber. Assertions may also contain verified attributes.
+A statement from a verifier to a RP that contains identity information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assurance
 In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of a claimant to whom a credential was, or credentials were, issued, and 2) the degree of confidence that the claimant who uses the credential is the same as the subscriber to whom the credential was issued.
@@ -26,7 +26,7 @@ In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defi
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
-An attempt by an unauthorized entity to fool a verifier or a relying party into believing that the unauthorized individual in question is the subscriber.
+An attempt by an unauthorized entity to fool a verifier or a RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
 A party who acts with malicious intent to compromise a system.
@@ -100,7 +100,7 @@ FIPS documents are available online through the FIPS home page: <http://www.nist
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level
-An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party.
+An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a RP.
 
 #### Identity
 An attribute or set of attributes that uniquely describe a subject within a given context.
