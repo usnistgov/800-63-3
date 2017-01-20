@@ -37,7 +37,7 @@ As such, SP 800-63 is organized as a suite of documents as follows:
 
 - SP 800-63A *Enrollment and Identity Proofing* - Addresses how applicants can prove their identities and become enrolled as valid subjects within an identity system. It provides a guideline for processes by which applicants can both proof and enroll at one of three different levels of risk mitigation in both remote and physically-present scenarios. _This document contains both normative and informative material._
 
-- SP 800-63B *Authentication and Lifecycle Management* - Addresses how an individual can securely authenticate to a Credential Service Provider (CSP) to access a digital service or set of digital services.  _This document contains both normative and informative material._
+- SP 800-63B *Authentication and Lifecycle Management* - Addresses how an individual can securely authenticate to a CSP to access a digital service or set of digital services.  _This document contains both normative and informative material._
 
 - SP 800-63C *Federation and Assertions* - Provides a guideline on the use of federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, this guideline offers privacy enhancing techniques to share information about a valid, authenticated subject, as well as describing methods that allow for strong multi-factor authentication while the subject remains pseudonymous to the digital service. _This document contains both normative and informative material._
 
