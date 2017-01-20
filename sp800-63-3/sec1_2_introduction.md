@@ -71,7 +71,7 @@ their authentication assurance requirements:
     risks, agencies should conduct a final validation to confirm that
     the system achieves the required assurance level for the
     user-to-agency process. NIST SP 800-53A [[SP 800-53A]](#SP800-53A)
-    provides guidelines for the assessment of the implemented system
+    provides a guideline for the assessment of the implemented system
     during the validation process. Validation should be performed as
     part of a security authorization process as described in NIST SP
     800-37, Revision 1 [[SP 800-37]](#SP800-37).
@@ -80,10 +80,10 @@ their authentication assurance requirements:
     technology refresh requirements* - The agency shall periodically
     reassess the system to ensure that the identity
     authentication requirements continue to be satisfied. NIST SP
-    800-37, Revision 1 [[SP 800-37]](#SP800-37) provides guidelines on
+    800-37, Revision 1 [[SP 800-37]](#SP800-37) provides a guideline on
     the frequency, depth and breadth of periodic reassessments. As with
     the initial validation process, agencies should follow the
-    assessment guidelines specified in SP 800-53A [[SP
+    assessment guideline specified in SP 800-53A [[SP
     800-53A]](#SP800-53A) for conducting the security assessment.
 
 This suite of documents provides guidelines for implementing the third step of the
