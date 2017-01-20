@@ -233,14 +233,14 @@ SP 800-63A sets requirements to achieve a given IAL. The three IALs reflect the 
 
 **IAL1** - There is no requirement to link the applicant to a specific real-life identity.  Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as self-asserted.
 
-**IAL2** - Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity.  IAL2 introduces the need for either remote or physically-present identity proofing.  Attributes could be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
+**IAL2** - Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity.  IAL2 introduces the need for either remote or physically-present identity proofing.  Attributes could be asserted by Credential Service Providers (CSPs) to RPs in support of pseudonymous identity with verified attributes.
 
 **IAL3** - Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL2, attributes could be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
 
 [**SP 800-63B Authentication and Lifecycle Management**](#800-63b)
 
-For services in which return visits are applicable, a successful authentication provides reasonable risk-based assurances that the subscriber that is accessing the service today is the same as that which accessed the service yesterday. The robustness of this confidence is described by a categorization known as the AAL. NIST SP 800-63B addresses how an individual can securely authenticate to a Credential Service Provider (CSP) to access a digital service or set of digital services.  _This document contains both normative and informative material._
+For services in which return visits are applicable, a successful authentication provides reasonable risk-based assurances that the subscriber that is accessing the service today is the same as that which accessed the service yesterday. The robustness of this confidence is described by a categorization known as the AAL. NIST SP 800-63B addresses how an individual can securely authenticate to a CSP to access a digital service or set of digital services.  _This document contains both normative and informative material._
 
 The three AALs define the subsets of options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of an authenticator and accessing agencies' systems. The AALs are as follows:
 
