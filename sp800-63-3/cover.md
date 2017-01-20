@@ -209,7 +209,7 @@ The components of identity assurance detailed in these guidelines are as follows
 
 * **IAL** refers to the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific subscriber.
 * **AAL** refers to the authentication process itself.
-* **FAL** refers to the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to a relying party.
+* **FAL** refers to the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to a relying party (RP).
 
 The separation of these categories provides agencies flexibility in the identity solutions they choose and increases the ability to include privacy-enhancing techniques as fundamental elements of identity systems at any assurance level.  For example, these guidelines support scenarios that will allow pseudonymous interactions even when strong, multi-factor authenticators are used.  In addition, these guidelines encourage minimizing the dissemination of identifying information by requiring federated identity providers to support a range of options for querying data, such as asserting whether an indivdual is older than a certain age rather than querying the entire date of birth. While many agency use cases will require individuals to be fully identified, these guidelines encourage pseudonymous access to government digital services wherever possible.
 
@@ -256,7 +256,7 @@ NIST SP 800-63C provides a guideline on the use of federated identity architectu
 
 The three FALs reflect the options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of federated transactions. The FALs are as follows:
 
-**FAL1** - Allows for the subscriber to enable the relying party (RP) to receive a bearer assertion. The assertion is signed by the IdP using approved cryptography.
+**FAL1** - Allows for the subscriber to enable the RP to receive a bearer assertion. The assertion is signed by the IdP using approved cryptography.
 
 **FAL2** - Adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.
 
