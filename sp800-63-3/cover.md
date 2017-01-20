@@ -248,7 +248,7 @@ The three AALs define the subsets of options agencies can select based on their 
 
 **AAL2**: Provides high confidence that the claimant controls authenticators registered to a subscriber. In addition to requirements of AAL1, two different authentication factors are required. Approved cryptographic techniques are required at AAL2 and above.
 
-**AAL3** – Provides very high confidence that the claimant controls the authenticator registered to a subscriber. In addition to requirments for AAL2, authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
+**AAL3**: Provides very high confidence that the claimant controls the authenticator registered to a subscriber. In addition to requirments for AAL2, authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
 [**SP 800-63C Federation and Assertions**](#800-63c)
 
