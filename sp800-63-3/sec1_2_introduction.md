@@ -86,7 +86,7 @@ their authentication assurance requirements:
     800-53A]](#SP800-53A) for conducting the security assessment.
 
 This suite of documents provides guidelines for implementing the third step of the
-above process. In particular, this document maps the four Levels of Assurance defined in OMB M-04-04 into corresponding authenticator assurance and identity assurance levels. Other documents in the suite state specific technical
+above process. In particular, this document maps the four LOAs defined in OMB M-04-04 into corresponding authenticator assurance and identity assurance levels. Other documents in the suite state specific technical
 requirements for identity assurance and authenticator assurance in the following
 areas:
 
