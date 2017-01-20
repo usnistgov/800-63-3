@@ -6,7 +6,7 @@
 
 *This section is informative.*
 
-OMB [[M-04-04]](#M-04-04) requires agencies to select the transaction or system authentication Level of Assurance (LOA) by conducting a risk assessment to determine the potential impact of an authentication error. In the context of M-04-04, LOA is defined as:
+OMB [[M-04-04]](#M-04-04) requires agencies to select the transaction or system authentication LOA by conducting a risk assessment to determine the potential impact of an authentication error. In the context of M-04-04, LOA is defined as:
 
 1. The degree of confidence in the vetting process used to establish the identity of the individual to whom the authenticator was issued; and
 2. The degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
