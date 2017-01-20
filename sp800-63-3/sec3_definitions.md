@@ -17,7 +17,7 @@ The validated and verified location (physical or digital) where an individual ca
 A subject undergoing the processes of registration and identity proofing.
 
 #### Assertion
-A statement from a verifier to a RP that contains identity information about a subscriber. Assertions may also contain verified attributes.
+A statement from a verifier to an RP that contains identity information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assurance
 In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of a claimant to whom a credential was, or credentials were, issued, and 2) the degree of confidence that the claimant who uses the credential is the same as the subscriber to whom the credential was issued.
