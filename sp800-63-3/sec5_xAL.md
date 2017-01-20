@@ -54,7 +54,7 @@ When described generically or bundled, this guideline will refer to the combinat
 A risk assessment to determine each xAL is recommended. [Section 5.3](#CYOA) provides details on how agencies may going about making xAL selections. 
 
 
-### 5.2. Mapping xAL to M-04-04 Levels of Assurance 
+### 5.2. Mapping xAL to M-04-04 LOAs 
 
 This guideline introduces a model where individual xALs can be selected without requiring parity to each other. While options exist to select varying xALs for a system, in many instances the same level will be chosen for all xALs. This provides an opportunity to directly map to the LOAs specified in M-04-04. [Table 5-1](#63sec5-Table1) shows strict adherence to M-04-04 by mapping the corresponding Identity, Authenticator, and Federation Assurance Levels to LOA.
 
