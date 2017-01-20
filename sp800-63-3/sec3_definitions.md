@@ -115,7 +115,7 @@ The process by which a CSP and a Registration Authority (RA) collect and verify 
 A type of authenticator consisting of a character string that is intended to be memorized or memorizable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
 
 #### Multi-Factor
-A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. MFA can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
 
