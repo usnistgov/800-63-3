@@ -6,7 +6,7 @@
 
 *This section is informative.*
 
-This recommendation and its companion documents, SP 800-63A, SP 800-63B, and SP 800-63C, provide technical guidelines to agencies for the implementation of digital authentication.
+This recommendation and its companion documents, Special Publication (SP) 800-63A, SP 800-63B, and SP 800-63C, provide technical guidelines to agencies for the implementation of digital authentication.
 
 <a name="sec2"></a>
 
