@@ -56,7 +56,7 @@ As noted above, a CSP maintains status information about the credentials it issu
 
 ### 4.2. Enrollment and Identity Proofing
 
-Normative requirements can be found in [Special Publication 800-63A](sp800-63a.html), *Enrollment and Identity Proofing*.
+Normative requirements can be found in [SP 800-63A](sp800-63a.html), *Enrollment and Identity Proofing*.
 
 The previous section introduced the different participants in the conceptual digital identity model. This section provides additional details regarding the relationships and responsibilities of the participants involved with enrollment and identity proofing.
 
@@ -66,7 +66,7 @@ The CSP establishes a mechanism to uniquely identify each subscriber, register t
 
 ### 4.3. Authentication and Lifecycle Management
 
-Normative requirements can be found in [Special Publication 800-63B](sp800-63b.html), *Authentication and Lifecycle Management*.
+Normative requirements can be found in [SP 800-63B](sp800-63b.html), *Authentication and Lifecycle Management*.
 
 #### 4.3.1. Authenticators
 
@@ -93,7 +93,7 @@ A digital authentication system may incorporate multiple factors in one of two w
 
 For example, consider a piece of hardware (the authenticator) that contains a cryptographic key (the authenticator secret) where access is protected with a fingerprint. When used with the biometric, the cryptographic key produces an output that is used in the authentication process to authenticate the claimant. An impostor must steal the encrypted key (by stealing the hardware) and replicate the fingerprint to use the authenticator. This specification considers such a device to effectively provide two factor authentication, although the actual authentication protocol between the verifier and the claimant simply proves possession of the key.
 
-As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication, but they do have their place in this specification. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris patterns, voiceprints, and many other characteristics. [Special Publication 800-63A](sp800-63a.html), *Enrollment and Identity Proofing* recommends that biometrics be used in the enrollment process for higher LOAs to later help prevent a subscriber who is registered from repudiating the enrollment, to help identify those who commit enrollment fraud, and to unlock authenticators.
+As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication, but they do have their place in this specification. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris patterns, voiceprints, and many other characteristics. [SP 800-63A](sp800-63a.html), *Enrollment and Identity Proofing* recommends that biometrics be used in the enrollment process for higher LOAs to later help prevent a subscriber who is registered from repudiating the enrollment, to help identify those who commit enrollment fraud, and to unlock authenticators.
 
 #### 4.3.2. Credentials
 
@@ -111,7 +111,7 @@ The verifier is a functional role, but is frequently implemented in combination 
 
 ### 4.4. Federation and Assertions
 
-Normative requirements can be found in [Special Publication 800-63C, Federation and Assertions](sp800-63c.html).
+Normative requirements can be found in [SP 800-63C, Federation and Assertions](sp800-63c.html).
 
 Overall, SP 800-63-3 does not presuppose a federated identity architecture; rather, these guidelines are agnostic to the types of models that exist in the marketplace, allowing agencies to deploy a digital authentication scheme according to their own requirements. However, identity federation is preferred over a number of siloed identity systems that each serve a single agency or RP.
 
