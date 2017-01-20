@@ -176,7 +176,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step2.png" alt="IAL Step 2"/></td>
   </tr>
   <tr>
-   <td>If personal information is needed, the relying party needs to determine if validated and verified attributes are required, or if self-asserted attributes are acceptable. If even a single validated and verified attribute is needed, then the provider will need to accept attributes that have been IAL 2 or 3 proofed. Again, the selection of IAL can be short circuited to IAL 1 if the agency can deliver the digital service with self-asserted attributes only.</td> 
+   <td>If personal information is needed, the relying party needs to determine if validated and verified attributes are required, or if self-asserted attributes are acceptable. If even a single validated and verified attribute is needed, then the provider will need to accept attributes that have been IAL 2 or 3 proofed. Again, the selection of IAL can be short circuited to IAL1 if the agency can deliver the digital service with self-asserted attributes only.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/ial-step3.png" alt="IAL Step 3"/></td>
