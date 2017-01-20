@@ -75,7 +75,7 @@ This guideline introduces a model where individual xALs can be selected without 
 
 > Note: LOA2 requirements are now equivalent to LOA3.
 
-The ability to combine varying xALs offers significant flexibility to agencies, but not all combinations are possible due to the nature of the data collected from an individual and the authenticators to protect that data. [Table 5-2](#63sec5-Table2) details valid combinations of IAL and AAL to ensure personal information remains protected by multi-factor authentication.
+The ability to combine varying xALs offers significant flexibility to agencies, but not all combinations are possible due to the nature of the data collected from an individual and the authenticators to protect that data. [Table 5-2](#63sec5-Table2) details valid combinations of IAL and AAL to ensure personal information remains protected by MFA.
 
 <a name="63sec5-Table2"></a>
 
@@ -93,12 +93,12 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
 | **IAL2** |  **NO** | Allowed | Allowed |
 | **IAL3** |  **NO** | Allowed | Allowed |
 
-> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal data requires protection with multi-factor authentication, even if the personal data is self-asserted and not validated. When the transaction does not make personal data accessible, authentication may occur at AAL1, although providing and option for the user to choose stronger authentication is recommended. In addition, it may be possible at IAL1 to self-assert information that is not personal, in which case AAL1 is acceptable.
+> Note: Per Executive Order 13681 [[EO 13681]](#EO13681), the release of personal data requires protection with MFA, even if the personal data is self-asserted and not validated. When the transaction does not make personal data accessible, authentication may occur at AAL1, although providing and option for the user to choose stronger authentication is recommended. In addition, it may be possible at IAL1 to self-assert information that is not personal, in which case AAL1 is acceptable.
 
  
 ### 5.3. <a name="CYOA"></a>Selecting the Appropriate xAL
 
-Agency mission and risk tolerance will drive the most advantageous selection of xALs to minimize risk. This could include the selection of an IAL that is lower than the selected AAL. For example, suppose an agency establishes a "health tracker" application. In line with the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement multi-factor authentication at AAL 2 or 3. 
+Agency mission and risk tolerance will drive the most advantageous selection of xALs to minimize risk. This could include the selection of an IAL that is lower than the selected AAL. For example, suppose an agency establishes a "health tracker" application. In line with the terms of [Executive Order 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement MFA at AAL 2 or 3. 
 
 The EO also requires agencies employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know who the user actually is. Therefore, an 'effective proofing process' would be to not proof at all. In the past, an LOA3 assessment would equate to identity proofing the user at IAL2. This is no longer necessary and the agency is discouraged from performing any identity proofing, allowing the user of the health tracker system to be pseudonymous.
 
