@@ -135,7 +135,7 @@ The RP is responsible for authenticating the source (the verifier) and for confi
 
 Examples of assertions include:
 
-* SAML assertions are specified using a mark-up language intended for describing security assertions. They can be used by a verifier to make a statement to an RP about the identity of a claimant. SAML assertions may optionally be digitally signed.
+* Security Assertion Markup Language (SAML) assertions are specified using a mark-up language intended for describing security assertions. They can be used by a verifier to make a statement to an RP about the identity of a claimant. SAML assertions may optionally be digitally signed.
 * OpenID Connect claims are specified using JavaScript Object Notation (JSON) for describing security, and optionally, user claims.  JSON user info claims may optionally be digitally signed.
 * Kerberos tickets allow a ticket granting authority to issue session keys to two authenticated parties using symmetric key based encapsulation schemes.
 
