@@ -48,9 +48,8 @@ their authentication assurance requirements:
 
 1.  *Conduct a risk assessment of the government system* - No specific
     risk assessment methodology is prescribed for this purpose;
-    however, NIST Special
-    Publication (SP) 800-30 [[SP 800-30]](#SP800-30) offers a general
-    process for risk assessment and risk mitigation, and NIST Special Publication (SP) 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides a guideline on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
+    however, NIST SP 800-30 [[SP 800-30]](#SP800-30) offers a general
+    process for risk assessment and risk mitigation, and NIST SP 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides a guideline on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
 
 2.  *Map identified risks to the appropriate assurance level* - Section
     2.2 of OMB M-04-04 provides the guidance necessary for agencies to
