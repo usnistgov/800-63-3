@@ -35,11 +35,11 @@ As such, SP 800-63 is organized as a suite of documents as follows:
 
 - SP 800-63-3 *Digital Identity Guidelines* - Provides an overview of general identity frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains only informative material._
 
-- SP 800-63A *Enrollment and Identity Proofing* - Addresses how applicants can prove their identities and become enrolled as valid subjects within an identity system. It provides a guideline for processes by which applicants can both proof and enroll at one of three different levels of risk mitigation in both remote and physically-present scenarios. _This document contains both normative and informative material._
+- SP 800-63A *Enrollment and Identity Proofing* - Addresses how applicants can prove their identities and become enrolled as valid subjects within an identity system. It provides requirements for processes by which applicants can both proof and enroll at one of three different levels of risk mitigation in both remote and physically-present scenarios. _This document contains both normative and informative material._
 
 - SP 800-63B *Authentication and Lifecycle Management* - Addresses how an individual can securely authenticate to a CSP to access a digital service or set of digital services.  _This document contains both normative and informative material._
 
-- SP 800-63C *Federation and Assertions* - Provides a guideline on the use of federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, this guideline offers privacy enhancing techniques to share information about a valid, authenticated subject, as well as describing methods that allow for strong multi-factor authentication (MFA) while the subject remains pseudonymous to the digital service. _This document contains both normative and informative material._
+- SP 800-63C *Federation and Assertions* - Provides requirements on the use of federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, this guideline offers privacy enhancing techniques to share information about a valid, authenticated subject, as well as describing methods that allow for strong multi-factor authentication (MFA) while the subject remains pseudonymous to the digital service. _This document contains both normative and informative material._
 
 NIST anticipates that SP 800-63A, SP 800-63B, and SP 800-63C will be revised asynchronously with each other and with this document. At any given time, the most recent revision of each should be used (e.g., if at a time in the future SP 800-63A-1 and SP 800-63B-2 are the most recent revisions of each document, they should be used together even though the revision numbers do not match).
 
@@ -69,7 +69,7 @@ their authentication assurance requirements:
     risks, agencies should conduct a final validation to confirm that
     the system achieves the required assurance level for the
     user-to-agency process. NIST SP 800-53A [[SP 800-53A]](#SP800-53A)
-    provides a guideline for the assessment of the implemented system
+    provides requirements for the assessment of the implemented system
     during the validation process. Validation should be performed as
     part of a security authorization process as described in NIST SP
     800-37, Revision 1 [[SP 800-37]](#SP800-37).
@@ -78,7 +78,7 @@ their authentication assurance requirements:
     technology refresh requirements* - The agency shall periodically
     reassess the system to ensure that the identity
     authentication requirements continue to be satisfied. NIST SP
-    800-37, Revision 1 [[SP 800-37]](#SP800-37) provides a guideline on
+    800-37, Revision 1 [[SP 800-37]](#SP800-37) provides recommendations on
     the frequency, depth and breadth of periodic reassessments. As with
     the initial validation process, agencies should follow the
     assessment guideline specified in SP 800-53A [[SP
