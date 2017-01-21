@@ -49,7 +49,7 @@ their authentication assurance requirements:
 1.  *Conduct a risk assessment of the government system* - No specific
     risk assessment methodology is prescribed for this purpose;
     however, NIST SP 800-30 [[SP 800-30]](#SP800-30) offers a general
-    process for risk assessment and risk mitigation, and NIST SP 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides a guideline on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
+    process for risk assessment and risk mitigation, and NIST SP 800-37 Revision 1 [[SP 800-37]](#SP800-37) provides recommendations on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
 
 2.  *Map identified risks to the appropriate assurance level* - Section
     2.2 of OMB M-04-04 provides the guidance necessary for agencies to
@@ -81,7 +81,7 @@ their authentication assurance requirements:
     800-37, Revision 1 [[SP 800-37]](#SP800-37) provides recommendations on
     the frequency, depth and breadth of periodic reassessments. As with
     the initial validation process, agencies should follow the
-    assessment guideline specified in SP 800-53A [[SP
+    assessment requirements specified in SP 800-53A [[SP
     800-53A]](#SP800-53A) for conducting the security assessment.
 
 This suite of documents provides guidelines for implementing the third step of the
@@ -145,7 +145,7 @@ This document suite focuses on authenticators that are difficult to forge becaus
 
 ### 2.3. How to Use this Suite of SPs
 
-The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the guidelines in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is generally preferred over use of an RP acting as its own CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) also applies.
+The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the requirements in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is generally preferred over use of an RP acting as its own CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) also applies.
 
 ### 2.4. Relationship to Other Standards and Guidelines
 
