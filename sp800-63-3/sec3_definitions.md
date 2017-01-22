@@ -17,7 +17,7 @@ The validated and verified location (physical or digital) where an individual ca
 A subject undergoing the processes of registration and identity proofing.
 
 #### Assertion
-A statement from a verifier to a relying party (RP) that contains identity information about a subscriber. Assertions may also contain verified attributes.
+A statement from a verifier to an RP that contains identity information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assurance
 In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of a claimant to whom a credential was, or credentials were, issued, and 2) the degree of confidence that the claimant who uses the credential is the same as the subscriber to whom the credential was issued.
@@ -26,7 +26,7 @@ In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defi
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
-An attempt by an unauthorized entity to fool a verifier or a relying party into believing that the unauthorized individual in question is the subscriber.
+An attempt by an unauthorized entity to fool a verifier or an RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
 A party who acts with malicious intent to compromise a system.
@@ -100,7 +100,7 @@ FIPS documents are available online through the FIPS home page: <http://www.nist
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level
-An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a relying party.
+An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to an RP.
 
 #### Identity
 An attribute or set of attributes that uniquely describe a subject within a given context.
@@ -109,13 +109,13 @@ An attribute or set of attributes that uniquely describe a subject within a give
 A category that conveys the degree of confidence that the applicant's claimed identity is their real identity.
 
 #### Identity Proofing
-The process by which a CSP and a Registration Authority (RA) collect and verify information about a person for the purpose of issuing credentials to that person.
+The process by which a CSP and an RA collect and verify information about a person for the purpose of issuing credentials to that person.
 
 #### Memorized Secret
 A type of authenticator consisting of a character string that is intended to be memorized or memorizable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
 
 #### Multi-Factor
-A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. MFA can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
 
@@ -141,7 +141,7 @@ A meaningless but unique number that does not allow the RP to infer anything reg
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
 
 #### Public Key Certificate
-A digital document issued and digitally signed by the private key of a certificate authority that binds an identifier to a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](#RFC5280).
+A digital document issued and digitally signed by the private key of a certificate authority that binds an identifier to a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](https://pages.nist.gov/800-63-3/sp800-63b.html#RFC5280).
 
 #### Public Key Infrastructure (PKI)
 A set of policies, processes, server platforms, software and workstations used for the purpose of administering certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
@@ -167,7 +167,7 @@ The program and supporting processes to manage information security risk to orga
 A secret used in authentication that is known to the subscriber and the verifier.
 
 #### Special Publication (SP)
-A type of publication issued by NIST. Specifically, the Special Publication 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
+A type of publication issued by NIST. Specifically, the SP 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 
 #### Subscriber
 A party who has received a credential or authenticator from a CSP.
