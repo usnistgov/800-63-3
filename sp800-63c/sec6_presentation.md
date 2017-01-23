@@ -22,10 +22,10 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 
 The assertion reference:
 
- - SHALL be limited to use by a single RP
- - SHALL be single-use
- - SHOULD be time limited with a short lifetime of seconds or minutes
- - SHOULD be presented along with authentication of the RP
+ - SHALL be limited to use by a single RP.
+ - SHALL be single-use.
+ - SHOULD be time limited with a short lifetime of seconds or minutes.
+ - SHOULD be presented along with authentication of the RP.
 
 In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
