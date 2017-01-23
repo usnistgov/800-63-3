@@ -10,10 +10,10 @@ One of the major potential usability benefits of federated identity systems is t
 
 A well-planned and executed user experience is critical to the success of any authentication method. The overall user experience with federated identity systems should be as smooth and easy as possible, without undermining a user's ability to understand how their data are being treated and by whom. Federated identity systems should:  
 
--  Minimize user burden (e.g., frustration, learning curve)
--  Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms CSP and RP)
--  Provide clear, honest, and meaningful communications to users (e.g., notices of information flow should be explicit and easy to understand)
--  Use graphics and illustrations to help users form complete and accurate mental models of federated identity systems
+-  Minimize user burden (e.g., frustration, learning curve).
+-  Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms CSP and RP).
+-  Provide clear, honest, and meaningful communications to users (e.g., notices of information flow should be explicit and easy to understand).
+-  Use graphics and illustrations to help users form complete and accurate mental models of federated identity systems.
 
 To ensure success of federated identity systems from users' perspectives, it is imperative that iterative and continuous usability evaluations are performed with representative users and realistic tasks in an appropriate context.
 
