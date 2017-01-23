@@ -24,11 +24,11 @@ This table presents different requirements depending on whether the assertion is
 |2|Bearer assertion, signed by IdP and encrypted to RP.|
 |3|Holder of key assertion, signed by IdP and encrypted to RP.|
 
-For example, FAL 1 maps to the OpenID Connect Basic Client profile or SAML Web SSO Artifact Binding profile, with no additional features. FAL 2 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL 3 requires the presentation of an additional key bound to the assertion (e.g., the use of a cryptographic authenticator) along with all requirements of FAL 2. Note that the additional key presented at FAL 3 need not be the same key used by the subscriber to authenticate to the IdP.
+For example, FAL1 maps to the OpenID Connect Basic Client profile or SAML Web SSO Artifact Binding profile, with no additional features. FAL2 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL3 requires the presentation of an additional key bound to the assertion (e.g., the use of a cryptographic authenticator) along with all requirements of FAL2. Note that the additional key presented at FAL3 need not be the same key used by the subscriber to authenticate to the IdP.
 
 Regardless of what is requested or required by the protocol, the FAL in use is easily detected by the RP by observing the nature of the assertion as it is presented as part of the federation protocol. Therefore, the RP is responsible for determining which FALs it is willing to accept for a given authentication transaction and ensuring that the transaction meets the requirements of that FAL.
 
-If the RP is using a front-channel presentation mechanism (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHOULD require FAL 2 or greater in order to protect the information in the assertion from the browser or other parties in the transaction.
+If the RP is using a front-channel presentation mechanism (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHOULD require FAL2 or greater in order to protect the information in the assertion from the browser or other parties in the transaction.
 
 [Table 7-2](#63cSec7-Table2) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Federation Assurance Levels.
 
