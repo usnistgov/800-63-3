@@ -65,6 +65,6 @@ However, [Table 7-3](#63cSec7-Table3) shows the expanded set of FAL's that are a
 | 3 | 2, or 3
 | 4 | 3
 
-### 7.1 Key Management
+### 7.1. Key Management
 
 At any FAL, the IdP SHALL ensure that an RP is unable to impersonate the IdP at another RP by protecting the assertion with a signature and key using approved cryptography. If the assertion is protected by a digital signature using an asymmetric key, the IdP MAY use the same public and private key pair to sign assertions to multiple RPs. The IdP MAY publish its public key in a verifiable fashion, such as at an HTTPS-protected URL at a well-known location. If the assertion is protected by a MAC using a shared key, the IdP SHALL use a different shared key for each RP.
