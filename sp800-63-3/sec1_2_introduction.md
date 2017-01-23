@@ -237,12 +237,12 @@ made in NIST SP 800-63-1:
 #### 2.5.2. SP 800-63-2
 
 NIST SP 800-63-2 was a limited update of SP 800-63-1 and
-substantive changes were made only in section 5. *Registration and
+substantive changes were made only in Section 5. *Registration and
 Issuance Processes*. The substantive changes in the revised draft were
 intended to facilitate the use of professional credentials in the
 identity proofing process, and to reduce the need to use postal mail to
 an address of record to issue credentials for level 3 remote
-registration. Other changes to section 5 were minor explanations and
+registration. Other changes to Section 5 were minor explanations and
 clarifications.
 
 
