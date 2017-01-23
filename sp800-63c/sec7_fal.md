@@ -20,9 +20,9 @@ This table presents different requirements depending on whether the assertion is
 
 |FAL|Requirement|
 |:--:|----|----|
-|1|Bearer assertion, signed by IdP|
-|2|Bearer assertion, signed by IdP and encrypted to RP|
-|3|Holder of key assertion, signed by IdP and encrypted to RP|
+|1|Bearer assertion, signed by IdP.|
+|2|Bearer assertion, signed by IdP and encrypted to RP.|
+|3|Holder of key assertion, signed by IdP and encrypted to RP.|
 
 For example, FAL 1 maps to the OpenID Connect Basic Client profile or SAML Web SSO Artifact Binding profile, with no additional features. FAL 2 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL 3 requires the presentation of an additional key bound to the assertion (e.g., the use of a cryptographic authenticator) along with all requirements of FAL 2. Note that the additional key presented at FAL 3 need not be the same key used by the subscriber to authenticate to the IdP.
 
