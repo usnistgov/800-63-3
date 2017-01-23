@@ -20,8 +20,7 @@ However, in today's digital services, combining proofing and authenticator requi
 
 As such, agencies should assess the risk of authentication and proofing errors separately to determine the appropriate technical solutions that should be applied to their system. 
 
-<a name="5-1"></a>
-### 5.1. Categories of Assurance Levels
+### 5.1. <a name="5-1"></a> Categories of Assurance Levels
 
 To determine the process and system requirements that reduce the risk of an authentication or identity proofing failure, this guideline introduces distinct categories of assurance which drive the technical solutions an agency may implement. They are:
 
