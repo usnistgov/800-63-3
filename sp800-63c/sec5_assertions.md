@@ -9,20 +9,20 @@ Assertions MAY represent only an authentication event, or MAY also represent att
 
 All assertions SHALL include the following assertion metadata:
 
-- Subject: an identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP).
-- Issuer: an identifier for the IdP that issued the assertion.
-- Audience: an identifier for the party intended to consume the assertion (the RP).
-- Issuance: a timestamp indicating when the assertion was issued by the IdP.
-- Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is the expiration of the assertion and not the expiration of the session at the RP).
-- Identifier: a value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions.
-- Signature: Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
-- Authentication Time: a timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event (if available).
+- Subject - An identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP).
+- Issuer - An identifier for the IdP that issued the assertion.
+- Audience - An identifier for the party intended to consume the assertion (the RP).
+- Issuance - A timestamp indicating when the assertion was issued by the IdP.
+- Expiration - A timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is the expiration of the assertion and not the expiration of the session at the RP).
+- Identifier - A value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions.
+- Signature - Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
+- Authentication Time - A timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event (if available).
 
 Assertions MAY also include the following information:
 
-- Key binding: Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion.
-- Attribute values and attribute claims: information about the subscriber.
-- Attribute metadata: Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112).
+- Key binding - Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion.
+- Attribute values and attribute claims - Information about the subscriber.
+- Attribute metadata - Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112).
 
 Assertions SHOULD specify the AAL when an authentication event is being asserted and IAL when identity proofed attributes or claims based thereon are being asserted. The IAL and AAL MAY be specified in an alternate form, such as a composite level of assurance. If not specified, the RP SHALL NOT assign any specific IAL or AAL to the assertion.
 
