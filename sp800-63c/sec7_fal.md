@@ -30,7 +30,7 @@ Regardless of what is requested or required by the protocol, the FAL in use is e
 
 If the RP is using a front-channel presentation mechanism (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHOULD require FAL2 or greater in order to protect the information in the assertion from the browser or other parties in the transaction.
 
-[Table 7-2](#63cSec7-Table2) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Federation Assurance Levels.
+[Table 7-2](#63cSec7-Table2) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding FALs.
 
 <a name="63cSec7-Table2"></a>
 
