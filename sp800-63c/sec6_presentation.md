@@ -66,7 +66,7 @@ Claims within the assertion SHALL be validated including issuer verification, si
 
 Conveyance of the assertion from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
 
-### 6.3. Protecting Information
+### <a name="sec6-3"></a> 6.3. Protecting Information
 
 Communications between the IdP and the RP SHALL be protected in transit using an authenticated protected channel. Communications between the subscriber and either the IdP or the RP (usually through a browser) SHALL be made using an authenticated protected channel.
 
