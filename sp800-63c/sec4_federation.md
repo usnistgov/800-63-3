@@ -3,7 +3,7 @@
 
 ## 4. Federation
 
-In a federation protocol, a three-party relationship is formed between the subscriber, the identity provider (IdP), and the RP as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes among the participants at different times. The subscriber communicates with both the IdP and the RP, usually through a browser. The RP and the IdP communicate with each other in two ways:
+In a federation protocol, a three-party relationship is formed between the subscriber, the IdP, and the RP as shown in [Figure 4-1](#63cSec4-Figure1). Depending on the specifics of the protocol, different information passes among the participants at different times. The subscriber communicates with both the IdP and the RP, usually through a browser. The RP and the IdP communicate with each other in two ways:
 
  - The *front channel*, through redirects involving the subscriber; or
  - The *back channel*, through a direct connection between the RP and IdP, not involving the subscriber.
