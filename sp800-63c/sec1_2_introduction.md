@@ -5,7 +5,7 @@
 
 This recommendation and its companion documents, [SP 800-63-3](sp800-63-3.html), [SP 800-63A](sp800-63a.html), and [SP 800-63B](sp800-63b.html), provide technical guidelines to credential service providers for the implementation of remote authentication.
 
-This document, SP 800-63C, provides guidelines to credential service providers and relying parties of federated identity systems. Federation allows a given credential service provider to provide authentication and (optionally) subscriber attributes to a number of separately administered relying parties. Similarly, relying parties may use more than one credential service provider.
+This document, SP 800-63C, provides requirements to credential service providers and relying parties of federated identity systems. Federation allows a given credential service provider to provide authentication and (optionally) subscriber attributes to a number of separately administered relying parties. Similarly, relying parties may use more than one credential service provider.
 
 <div class="breaker"></div>
 <a name="sec2"></a>
