@@ -25,7 +25,7 @@ Accessibility and usability differ significantly; accessibility is out of scope 
 
 ### 10.1. Considerations
 
-The following sections provide recommended practices to enhance the user experience of federated identity systems.  The primary goal of these recommendations is to alleviate the potential for friction and user drop-off that could be caused by the possible confusion created when a relying party needs to redirect control from their site to an IdP.  A good user experience may also result in increased demand of federation by users, triggering increased adoption by RPs. 
+The following sections provide recommended practices to enhance the user experience of federated identity systems.  The primary goal of these recommendations is to alleviate the potential for friction and user drop-off that could be caused by the possible confusion created when an RP needs to redirect control from their site to an IdP.  A good user experience may also result in increased demand of federation by users, triggering increased adoption by RPs. 
 
 This section is organized by the functional elements a user may encounter when interacting with a federated identity system.  These elements are:  
 
