@@ -5,7 +5,7 @@
 
 *This section is non-normative.*
 
-Three types of assertion technologies will be discussed: SAML (Security Assertion Markup Language) assertions, Kerberos tickets, and OpenID Connect tokens. 
+Three types of assertion technologies will be discussed: SAML assertions, Kerberos tickets, and OpenID Connect tokens. 
 
 ### 11.1. Security Assertion Markup Language (SAML)
 
