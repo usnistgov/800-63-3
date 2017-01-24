@@ -3,7 +3,7 @@
 
 ## 1. Purpose
 
-This recommendation and its companion documents, [SP 800-63-3](sp800-63-3.html), [SP 800-63A](sp800-63a.html), and [SP 800-63B](sp800-63b.html), provide technical guidelines to credential service providers (CSPs) for the implementation of remote authentication.
+This recommendation and its companion documents, [SP 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html), [SP 800-63A](https://pages.nist.gov/800-63-3/sp800-63a.html), and [SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html), provide technical guidelines to credential service providers (CSPs) for the implementation of remote authentication.
 
 This document, SP 800-63C, provides requirements to CSPs and relying parties (RPs) of federated identity systems. Federation allows a given CSP to provide authentication and (optionally) subscriber attributes to a number of separately administered RPs. Similarly, RPs may use more than one CSP.
 
