@@ -3,7 +3,7 @@
 
 ## 5. Assertions
 
-An assertion is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the identity provider (IdP) to the relying party (RP) in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time.
+An assertion is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the identity provider (IdP) to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time.
 
 Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute claims regarding the subscriber. 
 
