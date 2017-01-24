@@ -41,7 +41,7 @@ Protocols requiring the transfer of keying information SHALL use a secure method
 
 IdPs SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit which IdPs it is willing to accept identity information from.
 
-Frequently, parties in a dynamic registration model do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [section 4.1.3](#authorities), or another trusted party). This cryptographically verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [[RFC 7591]](#RFC7591) section 2.3 for more information on one protocol's implementation of software statements.)
+Frequently, parties in a dynamic registration model do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [Section 4.1.3](#authorities), or another trusted party). This cryptographically verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [[RFC 7591]](#RFC7591) Section 2.3 for more information on one protocol's implementation of software statements.)
 
 #### <a name="authorities"></a> 4.1.3. Federation Authorities
 
@@ -76,7 +76,7 @@ Where proxies are used, they function as an IdP on one side and an RP on the oth
 
 A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in Section 4.2 below. 
 
-See [section 9.5](#blinding) for further information on blinding techniques, their uses, and limitations.
+See [Section 9.5](#blinding) for further information on blinding techniques, their uses, and limitations.
  
 #### 4.1.5. <a name="runtime-decisions"></a>Runtime Decisions
 
@@ -112,4 +112,4 @@ In a federated environment, the RP manages its sessions separately from any sess
 
 Due to the distributed nature of a federated system, the subscriber is capable of terminating sessions with the IdP and RP independently of one another. The RP SHALL NOT assume that the subscriber has an active session at the IdP past the establishment of the federated log in. The IdP SHALL NOT assume that termination of the subscriber's session at the IdP will propagate to any sessions that subscriber would have at downstream RPs.
 
-See [800-63B section 7](sp800-63b.html#sec7) for more information about session management requirements. 
+See [Section 7 of 800-63B](sp800-63b.html#sec7) for more information about session management requirements. 
