@@ -27,7 +27,7 @@ This section provides an overview of and requirements for common identity federa
 
 In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing services to transfer information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information.
 
-IdPs and RPs MAY act as their own authorities of who to federate with or MAY externalize those authority decisions to an external party as in [section 4.1.3](#authorities).
+IdPs and RPs MAY act as their own authorities of who to federate with or MAY externalize those authority decisions to an external party as in [Section 4.1.3](#authorities).
 
 Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
