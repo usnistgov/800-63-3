@@ -100,11 +100,11 @@ The following requirements apply specifically to agencies:
 
 1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct and analysis to determine whether the agency that is acting as either an IdP or an RP in an identity federation triggers the requirements of the Privacy Act.
 
-2. The agency SHALL publish or identify coverage by a System of Records Notice as applicable.
+2. The agency SHALL publish or identify coverage by a System of Records Notice (SORN) as applicable.
 
 3. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the agency that is acting as either an IdP or an RP in an identity federation triggers the requirements of the E-Government Act.
 
-4. The agency SHALL publish or identify coverage by a Privacy Impact Assessment as applicable.
+4. The agency SHALL publish or identify coverage by a Privacy Impact Assessment (PIA) as applicable.
 
 ### 4.3. <a name="federation-session"></a> Reauthentication and Session Requirements in Federated Environments
 
