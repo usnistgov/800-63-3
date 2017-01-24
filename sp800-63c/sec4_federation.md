@@ -98,11 +98,11 @@ An IdP MAY disclose information on subscriber activities to other RPs within the
 
 The following requirements apply specifically to agencies:
 
-1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct and analysis to determine whether the agency that is acting as either an IdP or an RP in an identity federation triggers the requirements of the Privacy Act.
+1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct and analysis to determine whether the agency that is acting as either an IdP or an RP in an identity federation triggers the requirements of the Privacy Act.
 
 2. The agency SHALL publish or identify coverage by a System of Records Notice as applicable.
 
-3. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the agency that is acting as either an IdP or an RP in an identity federation triggers the requirements of the E-Government Act.
+3. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the agency that is acting as either an IdP or an RP in an identity federation triggers the requirements of the E-Government Act.
 
 4. The agency SHALL publish or identify coverage by a Privacy Impact Assessment as applicable.
 
