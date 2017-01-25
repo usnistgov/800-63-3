@@ -56,7 +56,7 @@ The assertion SHALL NOT include an unencrypted private or symmetric key to be us
 
 ### 5.2. Assertion Protection
 
-Independent of the binding mechanism (discussed above) or the federation model used to obtain them (described in [Section 4](https://pages.nist.gov/800-63-3/sp800-63c.html#sec4)), assertions SHALL include an appropriate set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs.
+Independent of the binding mechanism (discussed above) or the federation model used to obtain them (described in [Section 4](#sec4)), assertions SHALL include an appropriate set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs.
 
 #### 5.2.1. Assertion Identifier
 
