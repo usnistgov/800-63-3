@@ -3,7 +3,7 @@
 
 ## 11. Assertion Examples
 
-*This section is non-normative.*
+*This section is informative.*
 
 Three types of assertion technologies will be discussed: SAML assertions, Kerberos tickets, and OpenID Connect tokens. 
 
