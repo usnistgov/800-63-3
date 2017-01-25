@@ -3,6 +3,8 @@
 
 ## 7. Federation Assurance Level (FAL)
 
+*This section is normative.*
+
 This section defines allowable Federation Assurance Levels, or FAL. The FAL describes aspects of the assertion and federation protocol used in a given transaction. These levels can be requested by an RP or required by configuration of both RP and IdP for a given transaction. 
 
 The FAL combines aspects of [assertion protection](#sec5) and [assertion presentation](#sec6) into an ordinal measurement scale applicable across different [federation models](#sec4). All assertions SHALL comply with the requirements in [Section 5](#sec5). While many other combinations of factors are possible, this list is intended to provide clear implementation recommendations representing increasingly secure deployment choices. Combinations of aspects not found in the FAL table are possible but outside the scope of this document.
