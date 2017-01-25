@@ -9,7 +9,22 @@ This recommendation and its companion documents, [SP 800-63-3](https://pages.nis
 
 This document, SP 800-63C, provides requirements to CSPs and relying parties (RPs) of federated identity systems. Federation allows a given CSP to provide authentication and (optionally) subscriber attributes to a number of separately administered RPs. Similarly, RPs may use more than one CSP.
 
-The following table provides a listing of sections in this document that are either normative or informative.
+<div class="breaker"></div>
+<a name="sec2"></a>
+
+## 2. Introduction
+
+*This section is informative.*
+
+Federation is a process that allows for the conveyance of authentication and subscriber attribute information across a set of networked systems. In a federation scenario, the verifier or CSP is referred to as an identity provider, or IdP. The RP is the party that receives and uses the information provided by the IdP.
+
+To accomplish this task, federated identity systems use assertions. Assertions are statements from an IdP to an RP that contain information about a subscriber. Federation technology is generally used when the RP and the IdP are not a single entity or are not under common administration. The RP uses the information in the assertion to identify the subscriber and make authorization decisions about their access to resources controlled by the RP. An assertion typically includes an identifier for the subscriber, allowing association of the subscriber with their previous interactions with the RP. Assertions may additionally include attribute values or attribute claims that further characterize the subscriber and support the authorization decision at the RP. Additional attributes may also be available outside of the assertion as part of the larger federation protocol. These attribute values and attribute claims are often used in determining access privileges for Attribute Based Access Control (ABAC) or facilitatating a transaction (e.g., shipping address).
+
+In a federated identity scenario, the subscriber does not authenticate directly to the RP. Instead, the federation protocol defines a mechanism for an IdP to generate an assertion for the identifier associated with a subscriber, usually in response to a request from the RP. The IdP is responsible for authenticating the subscriber (though it may use session management as described in [Section 7 of SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html#sec7)). This process allows the subscriber to obtain services with multiple RPs without the need to hold or maintain separate credentials at each. This process can also be used to support *single sign on*, where subscribers authenticate once to an IdP and subsequently obtain services from multiple RPs.
+
+Federation requires relatively complex multiparty protocols that have subtle security and privacy requirements requiring careful consideration. When evaluating a particular federation structure, it may be instructive to break it down into its component interactions. Generally speaking, authentication between the subscriber and the IdP will be based on the authentication mechanisms presented in SP 800-63B, while interactions between the IdP and RP will convey attributes established using procedures in SP 800-63A and other self-asserted attributes. Many of the requirements presented in this document, therefore, have some relationship with corresponding requirements in those two documents.
+
+The following table provides a listing of sections in this document that are either normative or informative:
 
 |Section Name|Normative/Informative|
 |----|:--:|
@@ -25,18 +40,3 @@ The following table provides a listing of sections in this document that are eit
 |10. Usability Considerations|Informative|
 |11. Assertion Examples|Informative|
 |12. References|Informative|
-
-<div class="breaker"></div>
-<a name="sec2"></a>
-
-## 2. Introduction
-
-*This section is informative.*
-
-Federation is a process that allows for the conveyance of authentication and subscriber attribute information across a set of networked systems. In a federation scenario, the verifier or CSP is referred to as an identity provider, or IdP. The RP is the party that receives and uses the information provided by the IdP.
-
-To accomplish this task, federated identity systems use assertions. Assertions are statements from an IdP to an RP that contain information about a subscriber. Federation technology is generally used when the RP and the IdP are not a single entity or are not under common administration. The RP uses the information in the assertion to identify the subscriber and make authorization decisions about their access to resources controlled by the RP. An assertion typically includes an identifier for the subscriber, allowing association of the subscriber with their previous interactions with the RP. Assertions may additionally include attribute values or attribute claims that further characterize the subscriber and support the authorization decision at the RP. Additional attributes may also be available outside of the assertion as part of the larger federation protocol. These attribute values and attribute claims are often used in determining access privileges for Attribute Based Access Control (ABAC) or facilitatating a transaction (e.g., shipping address).
-
-In a federated identity scenario, the subscriber does not authenticate directly to the RP. Instead, the federation protocol defines a mechanism for an IdP to generate an assertion for the identifier associated with a subscriber, usually in response to a request from the RP. The IdP is responsible for authenticating the subscriber (though it may use session management as described in [Section 7 of SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html#sec7)). This process allows the subscriber to obtain services with multiple RPs without the need to hold or maintain separate credentials at each. This process can also be used to support *single sign on*, where subscribers authenticate once to an IdP and subsequently obtain services from multiple RPs.
-
-Federation requires relatively complex multiparty protocols that have subtle security and privacy requirements requiring careful consideration. When evaluating a particular federation structure, it may be instructive to break it down into its component interactions. Generally speaking, authentication between the subscriber and the IdP will be based on the authentication mechanisms presented in SP 800-63B, while interactions between the IdP and RP will convey attributes established using procedures in SP 800-63A and other self-asserted attributes. Many of the requirements presented in this document, therefore, have some relationship with corresponding requirements in those two documents.
