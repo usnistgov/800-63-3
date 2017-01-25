@@ -3,6 +3,8 @@
 
 ## 6. Assertion Presentation
 
+*This section is normative.*
+
 Assertions MAY be presented in either a *back-channel* or *front-channel* manner from the IdP to the RP. There are tradeoffs with each model, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in [Section 4.1.4](https://pages.nist.gov/800-63-3/sp800-63c.html#proxied).
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
