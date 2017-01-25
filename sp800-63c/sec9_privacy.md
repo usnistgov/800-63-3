@@ -3,7 +3,7 @@
 
 ## <a name="privacy-section-header"></a> 9. Privacy Considerations
 
-These privacy considerations are non-normative.
+*This section is informative.*
 
 ### 9.1. Minimizing Tracking and Profiling
 
