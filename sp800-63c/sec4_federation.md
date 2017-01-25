@@ -76,7 +76,7 @@ Where proxies are used, they function as an IdP on one side and an RP on the oth
 **Figure 4-2: Federation Proxy**
 </div>
 
-A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 4.2](https://pages.nist.gov/800-63-3/sp800-63c.html#privacy-reqs) below. 
+A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 4.2](#privacy-reqs) below. 
 
 See [Section 9.5](#blinding) for further information on blinding techniques, their uses, and limitations.
  
@@ -86,7 +86,7 @@ The fact that parties have federated SHALL NOT be interpreted as permission to p
 
 To mitigate the risk of unauthorized exposure of sensitive information (e.g., shoulder surfing), the IdP SHALL, by default, mask sensitive information displayed to the subscriber.  The IdP SHALL provide mechanisms for the subscriber to temporarily unmask such information in order for the subscriber to view full values. The IdP SHALL provide effective mechanisms for redress of applicant complaints or problems (e.g., subscriber identifies an inaccurate attribute value). For more details on masking and redress, please see [Section 10](#sec10) on Usability Considerations.  
 
-The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation, consistent with [Section 9.2](https://pages.nist.gov/800-63-3/sp800-63c.html#notice). If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. An IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
+The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation, consistent with [Section 9.2](#notice). If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. An IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
 
 ### <a name="privacy-reqs"></a> 4.2. Privacy Requirements
 
@@ -94,7 +94,7 @@ Federation involves the transfer of personal attributes from a third party, the 
 
 Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with the privacy interests of subscribers. 
 
-The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in [Section 5.2.5](https://pages.nist.gov/800-63-3/sp800-63c.html#ppi) or privacy-enhancing cryptographic protocols, to provide unlinkability and discourage subscriber activity tracking and profiling.
+The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in [Section 5.2.5](#ppi) or privacy-enhancing cryptographic protocols, to provide unlinkability and discourage subscriber activity tracking and profiling.
 
 An IdP MAY disclose information on subscriber activities to other RPs within the federation for security purposes such as communication of compromised subscriber accounts.
 
