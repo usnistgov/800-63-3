@@ -3,7 +3,7 @@
 
 ## 8. Security
 
-*This section is non-normative.*
+*This section is informative.*
 
 IdPs, RPs, subscribers, and parties outside of a typical assertions transaction may be malicious or become compromised. An attacker might have an interest in modifying or replacing an assertion to obtain a greater level of access to a resource or service provided by an
 RP. They might be interested in obtaining or modifying
