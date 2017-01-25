@@ -3,6 +3,8 @@
 
 ## 1. Purpose
 
+*This section is informative.*
+
 This recommendation and its companion documents, [SP 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html), [SP 800-63A](https://pages.nist.gov/800-63-3/sp800-63a.html), and [SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html), provide technical guidelines to credential service providers (CSPs) for the implementation of remote authentication.
 
 This document, SP 800-63C, provides requirements to CSPs and relying parties (RPs) of federated identity systems. Federation allows a given CSP to provide authentication and (optionally) subscriber attributes to a number of separately administered RPs. Similarly, RPs may use more than one CSP.
@@ -11,6 +13,8 @@ This document, SP 800-63C, provides requirements to CSPs and relying parties (RP
 <a name="sec2"></a>
 
 ## 2. Introduction
+
+*This section is informative.*
 
 Federation is a process that allows for the conveyance of authentication and subscriber attribute information across a set of networked systems. In a federation scenario, the verifier or CSP is referred to as an identity provider, or IdP. The RP is the party that receives and uses the information provided by the IdP.
 
