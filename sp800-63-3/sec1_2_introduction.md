@@ -48,8 +48,8 @@ their authentication assurance requirements:
 
 1.  *Conduct a risk assessment of the government system* - No specific
     risk assessment methodology is prescribed for this purpose;
-    however, NIST [[SP 800-30]](https://pages.nist.gov/800-63-3/sp800-63-3.html#SP800-30) offers a general
-    process for risk assessment and risk mitigation, and NIST [[SP 800-37]](https://pages.nist.gov/800-63-3/sp800-63-3.html#SP800-37) Revision 1 provides recommendations on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
+    however, NIST [[SP 800-30]](#SP800-30) offers a general
+    process for risk assessment and risk mitigation, and NIST [[SP 800-37]](#SP800-37) Revision 1 provides recommendations on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
 
 2.  *Map identified risks to the appropriate assurance level* - Section
     2.2 of OMB M-04-04 provides the guidance necessary for agencies to
@@ -68,18 +68,18 @@ their authentication assurance requirements:
     level* - As some implementations may create or compound particular
     risks, agencies should conduct a final validation to confirm that
     the system achieves the required assurance level for the
-    user-to-agency process. NIST [[SP 800-53A]](https://pages.nist.gov/800-63-3/sp800-63-3.html#SP800-53A)
+    user-to-agency process. NIST [[SP 800-53A]](#SP800-53A)
     provides requirements for the assessment of the implemented system
     during the validation process. Validation should be performed as
-    part of a security authorization process as described in NIST [[SP 800-37]](https://pages.nist.gov/800-63-3/sp800-63-3.html#SP800-37), Revision 1.
+    part of a security authorization process as described in NIST [[SP 800-37]](#SP800-37), Revision 1.
 
 5.  *Periodically reassess the system to determine
     technology refresh requirements* - The agency shall periodically
     reassess the system to ensure that the identity
-    authentication requirements continue to be satisfied. NIST [[SP 800-37]](https://pages.nist.gov/800-63-3/sp800-63-3.html#SP800-37), Revision 1 provides recommendations on
+    authentication requirements continue to be satisfied. NIST [[SP 800-37]](#SP800-37), Revision 1 provides recommendations on
     the frequency, depth and breadth of periodic reassessments. As with
     the initial validation process, agencies should follow the
-    assessment requirements specified in [[SP 800-53A]](https://pages.nist.gov/800-63-3/sp800-63-3.html#SP800-53A) for conducting the security assessment.
+    assessment requirements specified in [[SP 800-53A]](#SP800-53A) for conducting the security assessment.
 
 This suite of documents provides guidelines for implementing the third step of the
 above process. In particular, this document maps the four LOAs defined in OMB M-04-04 into corresponding authenticator assurance and identity assurance levels. Other documents in the suite state specific technical
