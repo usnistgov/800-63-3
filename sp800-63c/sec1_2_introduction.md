@@ -24,7 +24,7 @@ In a federated identity scenario, the subscriber does not authenticate directly 
 
 Federation requires relatively complex multiparty protocols that have subtle security and privacy requirements requiring careful consideration. When evaluating a particular federation structure, it may be instructive to break it down into its component interactions. Generally speaking, authentication between the subscriber and the IdP will be based on the authentication mechanisms presented in SP 800-63B, while interactions between the IdP and RP will convey attributes established using procedures in SP 800-63A and other self-asserted attributes. Many of the requirements presented in this document, therefore, have some relationship with corresponding requirements in those two documents.
 
-The following table provides a listing of sections in this document that are either normative or informative:
+The following table states which sections of the document are normative and which are informative:
 
 |Section Name|Normative/Informative|
 |----|:--:|
