@@ -118,6 +118,8 @@ Communication between the claimant and verifier (the primary channel in the case
 
 Verifiers operated by government agencies at AAL 2 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
+When a biometric factor is used in authentication at AAL 2, the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in Section [5.2.3](#biometric_use).
+
 #### <a name="aal2reauth"></a>4.2.3. Reauthentication
 
 At AAL 2, authentication of the subscriber SHALL be repeated at least once per 12 hours, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following no more than 30 minutes of user inactivity. The CSP MAY prompt the user to cause activity just before the inactivity timeout, if desired. Reauthentication MAY use a single authentication factor.
@@ -148,6 +150,8 @@ Communication between the claimant and channel SHALL be via an authenticated pro
 Multi-factor authenticators used at AAL 3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security.
 
 Verifiers at AAL 3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher.
+
+When a biometric factor is used in authentication at AAL 3, the verifier SHALL make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in Section [5.2.3](#biometric_use).
 
 #### <a name="aal3reauth"></a>4.3.3. Reauthentication
 
