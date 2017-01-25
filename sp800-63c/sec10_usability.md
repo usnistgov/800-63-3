@@ -3,6 +3,8 @@
 
 ## 10. Usability Considerations
 
+*This section is informative.*
+
 [ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, goals, and context of use as key elements necessary for achieving effectiveness, efficiency and satisfaction. A holistic approach considering these key elements is necessary to achieve usability. This section addresses the usability considerations that have been identified with federated identity systems.   
 
 One of the major potential usability benefits of federated identity systems is to address the problem of individuals needing to maintain too many authenticators, such as multiple user names and passwords. While other authentication methods have been extensively researched and have well-established usability guidelines, federated identity is more nascent and therefore lacks deep and conclusive research findings. It is very much an active research topic in the usability domain. As the field matures, usability guidelines for federated identity systems will have stronger supporting data. 
