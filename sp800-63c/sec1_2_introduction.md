@@ -9,6 +9,23 @@ This recommendation and its companion documents, [SP 800-63-3](https://pages.nis
 
 This document, SP 800-63C, provides requirements to CSPs and relying parties (RPs) of federated identity systems. Federation allows a given CSP to provide authentication and (optionally) subscriber attributes to a number of separately administered RPs. Similarly, RPs may use more than one CSP.
 
+The following table provides a listing of sections in this document that are either normative or informative.
+
+|Section Name|Normative/Informative|
+|----|:--:|
+|1. Purpose|Informative|
+|2. Introduction|Informative|
+|3. Definitions and Abbreviations|Informative|
+|4. Federation|Normative|
+|5. Assertion|Normative|
+|6. Assertion Presentation|Normative|
+|7. Federation Assurance Level (FAL)|Normative|
+|8. Security|Informative|
+|9. Privacy Considerations|Informative|
+|10. Usability Considerations|Informative|
+|11. Assertion Examples|Informative|
+|12. References|Informative|
+
 <div class="breaker"></div>
 <a name="sec2"></a>
 
