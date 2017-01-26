@@ -31,7 +31,7 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 	5. If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
 
 
-#### 6.1.2. Post-Enrollment Binding
+#### <a name="post-enroll-bind">/<a> 6.1.2. Post-Enrollment Binding
 
 ##### 6.1.2.1. Binding of additional authenticator at existing AAL
 
@@ -81,4 +81,3 @@ CSPs SHALL revoke the binding of authenticators promptly when an online identity
 The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing certified attributes signed by the CSP as soon as practical after revocation or termination takes place.
 
 Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
-
