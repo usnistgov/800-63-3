@@ -352,7 +352,13 @@ The biometric system SHOULD implement presentation attack protection (PAD). Test
 
 >Note: Presentation attack detection is being considered as a mandatory requirement in future editions of this guideline.
 
-The biometric system SHALL allow no more than 3 consecutive failed authentication attempts, or 10 consecutive failed attempts if presentation attack detection meeting the above requirements is implemented. Once that limit has been reached, the claimant SHALL be required to use a different authenticator or to activate their authenticator with a different factor such as a memorized secret.
+The biometric system SHALL allow no more than 5 consecutive failed authentication attempts or 10 consecutive failed attempts if presentation attack detection meeting the above requirements is implemented. Once that limit has been reached, the biometric authenticator SHALL enforce either
+
+a) an exponential increase of this delay, e.g. 1 minute after the 6th+ false attempt, 2 minutes after the 7th+ false attempt, 4 minutes after the 8th+, etc. 
+
+**OR**
+
+b) disabling the biometric user verification after the 5th (and subsequent) failed attempt and offering another factor (e.g. a different biometric or a PIN/Passcode if it is not already a required factor) if such alternative method is already implemented. 
 
 Determination of sensor/endpoint performance, integrity, and authenticity can be accomplished in several different ways, any of which are acceptable under this guideline.  These include but are not limited to: authentication of the sensor or endpoint, certification by an approved accreditation authority, or runtime interrogation of signed metadata (e.g., attestation) as described in Section [5.2.4](#attestation).
 
