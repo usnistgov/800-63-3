@@ -29,6 +29,7 @@ The strength of an authentication transaction is characterized by an ordinal mea
 **Authenticator Assurance Level 3** - AAL 3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
 The following table states which sections of the document are normative and which are informative:
+
 |Section Name|Normative/Informative|
 |----|:--:|
 |1. Purpose|Informative|
