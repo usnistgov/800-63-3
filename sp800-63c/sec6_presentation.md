@@ -3,11 +3,13 @@
 
 ## 6. Assertion Presentation
 
-Assertions MAY be presented in either a *back-channel* or *front-channel* manner from the IdP to the RP. There are tradeoffs with each model, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in section 4.1.4.
+*This section is normative.*
+
+Assertions MAY be presented in either a *back-channel* or *front-channel* manner from the IdP to the RP. There are tradeoffs with each model, but both require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in [Section 4.1.4](#proxied).
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
 
-### 6.1. Back-channel presentation
+### <a name="sec6-1"></a> 6.1. Back-channel presentation
 
 In the *back-channel* model, the subscriber is given an assertion reference to present to the RP, generally through the front channel. The assertion reference itself contains no information about the subscriber and SHALL be resistant to tampering and fabrication by an attacker. The RP presents the assertion reference to the IdP, usually along with authentication of the RP itself, to fetch the assertion.
 
@@ -22,10 +24,10 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 
 The assertion reference:
 
- - SHALL be limited to use by a single RP
- - SHALL be single-use
- - SHOULD be time limited with a short lifetime of seconds or minutes
- - SHOULD be presented along with authentication of the RP
+ - SHALL be limited to use by a single RP.
+ - SHALL be single-use.
+ - SHOULD be time limited with a short lifetime of seconds or minutes.
+ - SHOULD be presented along with authentication of the RP.
 
 In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
@@ -66,7 +68,7 @@ Claims within the assertion SHALL be validated including issuer verification, si
 
 Conveyance of the assertion from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
 
-### 6.3. Protecting Information
+### <a name="sec6-3"></a> 6.3. Protecting Information
 
 Communications between the IdP and the RP SHALL be protected in transit using an authenticated protected channel. Communications between the subscriber and either the IdP or the RP (usually through a browser) SHALL be made using an authenticated protected channel.
 

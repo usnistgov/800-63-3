@@ -2,7 +2,7 @@
 
 ## 8. Threats and Security Considerations
 
-*This section is non-normative.*
+*This section is informative.*
 
 ### 8.1. Authenticator Threats
 

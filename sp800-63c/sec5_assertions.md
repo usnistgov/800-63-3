@@ -3,32 +3,34 @@
 
 ## 5. Assertions
 
-An assertion is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the identity provider (IdP) to the relying party (RP) in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time.
+*This section is normative.*
+
+An assertion is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time.
 
 Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute claims regarding the subscriber. 
 
 All assertions SHALL include the following assertion metadata:
 
-- Subject: an identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP)
-- Issuer: an identifier for the IdP that issued the assertion
-- Audience: an identifier for the party intended to consume the assertion (the RP)
-- Issuance: a timestamp indicating when the assertion was issued by the IdP
-- Expiration: a timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is the expiration of the assertion and not the expiration of the session at the RP)
-- Identifier: a value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions
-- Signature: Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
-- Authentication Time: a timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event (if available)
+- Subject - An identifier for the party that the assertion is about (the subscriber), usually within the namespace control of the issuer (the IdP).
+- Issuer - An identifier for the IdP that issued the assertion.
+- Audience - An identifier for the party intended to consume the assertion (the RP).
+- Issuance - A timestamp indicating when the assertion was issued by the IdP.
+- Expiration - A timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is the expiration of the assertion and not the expiration of the session at the RP).
+- Identifier - A value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions.
+- Signature - Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
+- Authentication Time - A timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event (if available).
 
 Assertions MAY also include the following information:
 
-- Key binding: Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion
-- Attribute values and attribute claims: information about the subscriber
-- Attribute metadata: Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112)
+- Key binding - Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion.
+- Attribute values and attribute claims - Information about the subscriber.
+- Attribute metadata - Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112).
 
 Assertions SHOULD specify the AAL when an authentication event is being asserted and IAL when identity proofed attributes or claims based thereon are being asserted. The IAL and AAL MAY be specified in an alternate form, such as a composite level of assurance. If not specified, the RP SHALL NOT assign any specific IAL or AAL to the assertion.
 
 Assertions MAY include additional attributes. Refer to [Section 6](#sec6) for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in one or more separate transactions using an authorization credential issued alongside the original assertion. The ability to successfully fetch such additional attributes SHALL NOT be treated as equivalent to processing of the assertion.
 
-Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) by the RP comes into play; the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion. See [section 4.3](#federation-session) for more information.
+Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) by the RP comes into play; the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion. See [Section 4.3](#federation-session) for more information.
 
 ### 5.1. Assertion Binding
 
@@ -54,7 +56,7 @@ The assertion SHALL NOT include an unencrypted private or symmetric key to be us
 
 ### 5.2. Assertion Protection
 
-Independent of the binding mechanism (discussed above) or the federation model used to obtain them (described in Section 4), assertions SHALL include an appropriate set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs.
+Independent of the binding mechanism (discussed above) or the federation model used to obtain them (described in [Section 4](#sec4)), assertions SHALL include an appropriate set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs.
 
 #### 5.2.1. Assertion Identifier
 
@@ -64,7 +66,7 @@ Assertions SHALL be sufficiently unique to permit unique identification by the t
 
 Assertions SHALL be cryptographically signed by the issuer (IdP). The RP SHALL validate the digital signature or MAC of each such assertion based on the issuer's key. This signature SHALL cover all vital fields of the assertion, including its identifier, issuer, audience, subject, and expiration.
 
-The assertion signature SHALL either be a digital signature using asymmetric keys or a message authentication code (MAC) using a symmetric key shared between the RP and issuer. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for verification of digital signatures MAY be fetched by the RP in a secure fashion at runtime, such as through an HTTPS URL hosted by the IdP. Approved cryptography SHALL be used.
+The assertion signature SHALL either be a digital signature using asymmetric keys or a MAC using a symmetric key shared between the RP and issuer. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for verification of digital signatures MAY be fetched by the RP in a secure fashion at runtime, such as through an HTTPS URL hosted by the IdP. Approved cryptography SHALL be used.
 
 #### 5.2.3. Encrypted Assertion
 
@@ -88,7 +90,7 @@ Note that in a proxied federation model, the initial IdP may be unable to genera
 
 Pairwise pseudonymous identifiers SHALL be opaque, containing no identifying information about the subscriber. They SHALL also be unguessable by a party having access to some information identifying the subscriber. Pairwise pseudonymous identifiers MAY be generated randomly and assigned to subscribers by the IdP or MAY be derived from other subscriber information if the derivation is done in an irreversible, unguessable manner (e.g., using a keyed hash function with a secret key). Normally, the identifiers SHALL only be known by and used by one pair of endpoints (e.g., IdP-RP). However, an IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, provided:
 
-* Those RPs have a demonstrable relationship that justifies an operational need for the correlation, such as a shared security domain or shared legal ownership, and
+* Those RPs have a demonstrable relationship that justifies an operational need for the correlation, such as a shared security domain or shared legal ownership; and
 * All RPs sharing an identifier consent to being correlated in such a manner.
 
 The RPs SHALL conduct a privacy risk assessment to consider the privacy risks associated with requesting a common identifier. The IdP SHALL ensure that only intended RPs are correlated; otherwise, a rogue RP could learn of the pseudonymous identifier for a correlation by fraudulently posing as part of that correlation.

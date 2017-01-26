@@ -3,7 +3,7 @@
 
 ## 8. Security
 
-*This section is non-normative.*
+*This section is informative.*
 
 IdPs, RPs, subscribers, and parties outside of a typical assertions transaction may be malicious or become compromised. An attacker might have an interest in modifying or replacing an assertion to obtain a greater level of access to a resource or service provided by an
 RP. They might be interested in obtaining or modifying
@@ -13,7 +13,7 @@ two or more entities may be colluding to attack another party. An
 attacker may attempt to subvert assertion protocols by directly
 compromising the integrity or confidentiality of the assertion data. For the purpose of these types of threats, authorized parties who attempt to exceed their privileges may be considered attackers. This section lists some common attacks against assertion transmission transactions.
 
--   *Assertion manufacture/modification* – An attacker generates a
+-   *Assertion manufacture/modification* - An attacker generates a
     forged assertion or modifies the content of an existing assertion (such as the
     authentication or attribute statements),
     causing the RP to grant inappropriate access to the subscriber. For
@@ -21,26 +21,26 @@ compromising the integrity or confidentiality of the assertion data. For the pur
     period and keep using an assertion; or a subscriber may modify the assertion to have access to
     information that they should not be able to view.
 
--   *Assertion disclosure* – Assertions may contain authentication and
+-   *Assertion disclosure* - Assertions may contain authentication and
     attribute statements that include sensitive subscriber information.
     Disclosure of the assertion contents can make the subscriber
     vulnerable to other types of attacks.
 
--   *Assertion repudiation by the IdP* – An assertion may be
+-   *Assertion repudiation by the IdP* - An assertion may be
     repudiated by an IdP if the proper mechanisms are not in place.
     For example, if an IdP does not digitally sign an assertion, the
     IdP can claim that it was not generated through the services of
     the IdP.
 
--   *Assertion repudiation by the subscriber* – Since it is possible for
+-   *Assertion repudiation by the subscriber* - Since it is possible for
     a compromised or malicious IdP to issue assertions to the
     wrong party, a subscriber can repudiate any transaction with the RP
     that was authenticated using only a bearer assertion.
 
--   *Assertion redirect* – An attacker uses the assertion generated for
+-   *Assertion redirect* - An attacker uses the assertion generated for
     one RP to obtain access to a second RP.
 
--   *Assertion reuse* – An attacker attempts to use an assertion that
+-   *Assertion reuse* - An attacker attempts to use an assertion that
     has already been used once with the intended RP.
 
 In
@@ -56,11 +56,11 @@ model, session keys in Kerberos, assertion references in the back-channel
 model, and cookies used for authentication. The threats to the secondary
 authenticator are as follows:
 
--   *Secondary authenticator manufacture* – An attacker may attempt to
+-   *Secondary authenticator manufacture* - An attacker may attempt to
     generate a valid secondary authenticator and use it to impersonate
     a subscriber.
 
--   *Secondary authenticator capture* – An attacker may use a session
+-   *Secondary authenticator capture* - An attacker may use a session
     hijacking attack to capture the secondary authenticator when the
     IdP transmits it to the subscriber after the primary
     authentication step, or the attacker may use a man-in-the-middle
@@ -77,7 +77,7 @@ Finally, in order for the subscriber's authentication to the RP to be
 useful, the binding between the secret used to authenticate to the RP
 and the assertion data referring to the subscriber needs to be strong.
 
--   *Assertion substitution* – A subscriber may attempt to impersonate a
+-   *Assertion substitution* - A subscriber may attempt to impersonate a
     more privileged subscriber by subverting the communication channel
     between the IdP and RP, for example by reordering the messages,
     to convince the RP that their secondary authenticator
@@ -90,7 +90,7 @@ and the assertion data referring to the subscriber needs to be strong.
 Mitigation techniques are described below for each of the threats
 described in the last subsection.
 
--   *Assertion manufacture/modification*: To mitigate this threat,
+-   *Assertion manufacture/modification* - To mitigate this threat,
     the following mechanisms are used:
 
 	1.  The assertion is digitally signed by the IdP. The RP 
@@ -103,7 +103,7 @@ described in the last subsection.
 
 	3. The assertion contains a non-guessable random identifier. 
 
--   *Assertion disclosure* – To mitigate this threat, one of the
+-   *Assertion disclosure* - To mitigate this threat, one of the
     following mechanisms are used:
 
 	1.  The assertion is sent over a protected session to an
@@ -120,12 +120,12 @@ described in the last subsection.
     manufacture or modification may therefore be described as a mutually authenticated protected session or equivalent between the IdP
     and the RP. 
 
--   *Assertion repudiation by the IdP* – To mitigate this threat,
+-   *Assertion repudiation by the IdP* - To mitigate this threat,
     the assertion is digitally signed by the IdP using a key
     that supports non-repudiation. The RP checks the digital
     signature to verify that it was issued by a legitimate IdP.
 
--   *Assertion repudiation by the subscriber* – To mitigate this threat,
+-   *Assertion repudiation by the subscriber* - To mitigate this threat,
     the IdP issues holder-of-key assertions, rather than bearer assertions.
     The subscriber can then prove possession of the asserted key to
     the RP. If the asserted key matches the subscriber's presented key,
@@ -133,12 +133,12 @@ described in the last subsection.
     involved that it was the subscriber who authenticated to the RP
     rather than a compromised IdP impersonating the subscriber.
 
--   *Assertion redirect* – To mitigate this threat, the assertion
+-   *Assertion redirect* - To mitigate this threat, the assertion
     includes the identity of the RP for which it was generated. The RP
     verifies that incoming assertions include its identity as the
     recipient of the assertion. 
 
--   *Assertion reuse* – To mitigate this threat, the following
+-   *Assertion reuse* - To mitigate this threat, the following
     mechanisms are used:
 
 	1.  The assertion includes a timestamp and has a short lifetime
@@ -148,7 +148,7 @@ described in the last subsection.
     a configurable time window to ensure that an assertion is not
     used more than once within that time window. 
 
--   *Secondary authenticator manufacture* – To mitigate this threat, one
+-   *Secondary authenticator manufacture* - To mitigate this threat, one
     of the following mechanisms is used:
 
 	1.  The secondary authenticator may contain sufficient entropy that an
@@ -161,7 +161,7 @@ described in the last subsection.
 
 
 
--   *Secondary authenticator capture* – To mitigate this threat,
+-   *Secondary authenticator capture* - To mitigate this threat,
     adequate protections are in place throughout the lifetime of
     any secondary authenticators used in the assertion protocol.
 
@@ -179,7 +179,7 @@ described in the last subsection.
     used, it is never transmitted over an unprotected session or to
     an unauthenticated party while it is still valid.
     
--   *Assertion substitution* – To mitigate this threat, one of the
+-   *Assertion substitution* - To mitigate this threat, one of the
     following mechanisms is used:
 
 	1.  Responses to assertion requests contain the value of the assertion reference used

@@ -2,7 +2,7 @@
 
 ## 9. Privacy Considerations
 
-*These privacy considerations supplement the guidance in section 4. This section is informative.*
+*These privacy considerations supplement the guidance in Section 4. This section is informative.*
 
 ### 9.1. Privacy Risk Assessment	
 
