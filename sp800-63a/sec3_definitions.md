@@ -6,7 +6,7 @@
 
 _This section is informative._
 
-There is a wide variety of terms used in the area of authentication. While the definitions of many terms are consistent with earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted.
+There is a wide variety of terms used in the area of digital identity. While the definitions of many terms are consistent with earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted.
 
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
@@ -14,10 +14,7 @@ The definitions in this section are primarily those that are referenced in this 
 The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
 
 #### Applicant
-A party undergoing the processes of registration and identity proofing.
-
-#### Assurance
-In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of an individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued.
+A subject undergoing the processes of registration and identity proofing.
 
 #### Asymmetric Keys
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
@@ -29,7 +26,7 @@ An attempt by an unauthorized individual to defeat security controls. For exampl
 A party who acts with malicious intent to compromise an information system.
 
 #### Attribute
-A quality or characteristic ascribed to someone or something.
+A quality or characteristic ascribed to or associated with someone or something.
 
 #### Attribute Claim
 A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute 'birthday', a claim could be 'older than 18' or 'born in December'.
@@ -44,7 +41,7 @@ The process of establishing confidence in the identity of users or information s
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
 
 #### Authenticator
-Something that a claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a *token*.
+Something that a claimant possesses and controls that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticity
 The property that data originated from its purported source.
@@ -61,9 +58,9 @@ In this document, biometrics may be used to unlock authenticators and prevent re
 A party whose identity is to be verified using one or more authentication protocols.
 
 #### Claimed Address
-The physical location asserted by an individual (e.g. an applicant) where he/she can be reached. It includes the residential street address of an individual and may also include the mailing address of the individual.
+The physical location asserted by a subject at which they can be reached. It includes the residential street address of an individual and may also include the mailing address of the individual.
 
-For example, a person with a foreign passport, living in the U.S., will need to give an address when going through the identity proofing process. This address would not be an “address of record” but a “claimed address.”
+For example, a person with a foreign passport, living in the U.S., will need to give an address when going through the identity proofing process. This address would not be an "address of record" but a "claimed address."
 
 #### Claimed Identity
 A declaration of unvalidated and unverified personal attributes by the applicant.
@@ -71,7 +68,7 @@ A declaration of unvalidated and unverified personal attributes by the applicant
 #### Credential
 An object or data structure that authoritatively binds an identity (and optionally, additional attributes) to an authenticator possessed and controlled by a subscriber.
 
-While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber’s authenticator and identity.
+While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber's authenticator and identity.
 
 #### Credential Service Provider (CSP)
 A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. The CSP may encompass verifiers that it operates. A CSP may be an independent third party, or may issue credentials for its own use.
@@ -95,16 +92,16 @@ The process through which an applicant applies to become a subscriber of a CSP a
 A set of attributes that uniquely describe a person within a given context.
 
 #### Identity Assurance Level (IAL)
-A category that conveys the degree of confidence that the applicant’s claimed identity is their real identity.
+A category that conveys the degree of confidence that the applicant's claimed identity is their real identity.
 
 #### Identity Proofing
 The process by which a CSP collects and verifies information about a person for the purpose of issuing credentials to that person.
 
 #### Issuing Source
-An authority that is responsible for the generation of data and/or documents that can be used as identity evidence.
+An authority that is responsible for the generation of data or documents that can be used as identity evidence.
 
 #### Knowledge Based Verification
-Identity proofing of an individual based on knowledge of information associated with his or her claimed identity in private databases. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
+Identity verification method based on knowledge of private information associated with the claimed identity. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
 
 #### Network
 An open communications medium, typically the internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, man-in-the-middle, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).
@@ -113,12 +110,12 @@ An open communications medium, typically the internet, that is used to transport
 As defined by OMB Circular [[A-130]](#A-130), Personally Identifiable Information is information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual.
 
 #### Practice Statement
-A formal statement of the practices followed by the parties to an authentication process (i.e., CSP or verifier). It usually describes the policies and practices of the parties and can become legally binding.
+A formal statement of the practices followed by the parties to an authentication process (e.g., CSP or verifier). It usually describes the policies and practices of the parties and can become legally binding.
 
 #### Protected Session
 A session wherein messages between two participants are encrypted and integrity is protected using a set of shared secrets called session keys.
 
-A participant is said to be *authenticated* if, during the session, he, she or it proves possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
+A participant is said to be *authenticated* if, during the session, they prove possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
 #### Pseudonym
 A name other than a legal name.
@@ -127,7 +124,7 @@ A name other than a legal name.
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
 
 #### Remote
-(*As in remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization’s security controls.
+(*As in remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls.
 
 Note: Any information exchange across the Internet is considered remote.
 
@@ -135,7 +132,7 @@ Note: Any information exchange across the Internet is considered remote.
 The act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust.
 
 #### Subscriber
-A party who has had their credential bound to an authenticator by a CSP.
+A subject who has had their credential bound to an authenticator by a CSP.
 
 #### Token
 See *Authenticator*.
@@ -147,4 +144,4 @@ A public or symmetric key that is trusted because it is directly built into hard
 In reference to an ID, the quality of not being expired or revoked.
 
 #### Virtual In-Person Proofing
-A remote identity person proofing process that employs physical, technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing encounter.
+A remote identity proofing process that employs physical, technical and procedural measures that provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing process.

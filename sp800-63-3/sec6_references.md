@@ -4,15 +4,13 @@
 
 ## 6. References
 
+*This section is informative.*
+
 <a name="EO13681"></a>[EO 13681] *Executive Order 13681, Improving the Security of Consumer Financial Transactions* (October 17, 2014), available at: <https://www.whitehouse.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions>.
 
 <a name="M-04-04"></a>[M-04-04] *OMB Memorandum M-04-04, E-Authentication Guidance for Federal Agencies* (December 16, 2003), available at: <https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf>.
 
-<a name="theNSTIC"></a>[NSTIC] *National Strategy for Trusted Identities in Cyberspace* (April, 2011), available at: <https://www.whitehouse.gov/sites/default/files/rss_viewer/NSTICstrategy_041511.pdf>.
-
-<a name="DOJ2000"></a>[DOJ 2000] *Guide to Federal
-Agencies on Implementing Electronic Processes* (November 2000),
-available at: <http://www.usdoj.gov/criminal/cybercrime/ecommerce.html> ***URL not found; obsolete document?***
+<a name="theNSTIC"></a>[NSTIC] *National Strategy for Trusted Identities in Cyberspace* (April, 2011), available at: <https://www.nist.gov/sites/default/files/documents/2016/12/08/nsticstrategy.pdf>.
 
 <a name="ESIG"></a>[ESIG] Federal CIO Council, *Use of
 Electronic Signatures in Federal Organization Transactions* (January 25, 2013),
@@ -42,8 +40,12 @@ Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistp
 
 <a name="STORK2.0"></a>[STORK 2.0] European Union, *Secure idenTity acrOss boRders linKed 2.0*, 2014, available at: <https://www.eid-stork2.eu/>.
 
+<a name="eIDAS"></a>[eIDAS] European Union, *REGULATION (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL (23 July 2014)*, available at: <http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG>.
+
 <a name="ISO29115"></a>[ISO 29115] International Standards Organization, ISO/IEC 29115 *Information technology -- Security techniques -- Entity authentication assurance framework*, April 1, 2013, available from <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=45138>
 
 <a name="ISO29003"></a>[ISO 29003] International Standards Organization, ISO/IEC DIS 29003 *Information technology -- Security techniques -- Identity proofing* (under development)
 
 <a name="Canada"></a>[Canada] Government of Canada, *Standard on Identity and Credential Assurance*, February 1, 2013, available at: <https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26776>
+
+<a name="steiner"></a>[Steiner]Steiner, Peter. "On the Internet, nobody knows you're a dog". Cartoon. *The New Yorker* 5 July 1993.

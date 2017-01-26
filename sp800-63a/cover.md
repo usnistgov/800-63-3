@@ -2,7 +2,7 @@
 
 # <a name="800-63a"></a> DRAFT NIST Special Publication 800-63A
 
-# Digital Authentication Guideline
+# Digital Identity Guidelines
 
 ### Enrollment and Identity Proofing Requirements
 
@@ -34,7 +34,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 # DRAFT NIST Special Publication 800-63A
 
-# Digital Authentication Guideline
+# Digital Identity Guidelines
 
 ###  Enrollment and Identity Proofing Requirements
 
@@ -81,7 +81,7 @@ U.S. Department of Commerce
 *Penny Pritzker, Secretary*
 
 National Institute of Standards and Technology  
-*Willie E. May, Under Secretary of Commerce for Standards and
+*Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
 
 </div>
@@ -122,14 +122,14 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 {::comment}
 
-**Comments on this publication may be submitted to eauth-comment@nist.gov  
+**Comments on this publication may be submitted to dig-comments@nist.gov  
 Public comment period: Month Day, YYYY through Month Day, YYYY**  
 All comments are subject to release under the Freedom of Information Act (FOIA).
 
 National Institute of Standards and Technology  
 Attn: Computer Security Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 8930) Gaithersburg, MD 20899-8930  
-Email: eauth-comments@nist.gov
+Email: dig-comments@nist.gov
 
 
 {:/comment}
@@ -142,15 +142,15 @@ Email: eauth-comments@nist.gov
 
 The Information Technology Laboratory (ITL) at the National Institute of
 Standards and Technology (NIST) promotes the U.S. economy and public
-welfare by providing technical leadership for the Nation’s measurement
+welfare by providing technical leadership for the Nation's measurement
 and standards infrastructure. ITL develops tests, test methods,
 reference data, proof of concept implementations, and technical analyses
 to advance the development and productive use of information technology.
-ITL’s responsibilities include the development of management,
+ITL's responsibilities include the development of management,
 administrative, technical, and physical standards and guidelines for the
 cost-effective security and privacy of other than national
 security-related information in Federal information systems. The Special
-Publication 800-series reports on ITL’s research, guidelines, and
+Publication 800-series reports on ITL's research, guidelines, and
 outreach efforts in information system security, and its collaborative
 activities with industry, government, and academic organizations.
 
@@ -160,7 +160,8 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-This document and its companion documents, SP 800-63-3, SP 800-63B, and SP 800-63C, provide technical and procedural guidelines to agencies for the implementation of digital authentication. This document focuses on the enrollment and verification of an identity for for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for Federal agencies
+implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
 
@@ -206,13 +207,16 @@ The authors would also like to acknowledge the thought leadership and innovation
 
 </div>
 
-The terms “SHALL” and “SHALL NOT” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.
+The terms "SHALL" and "SHALL NOT" indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.
 
-The terms “SHOULD” and “SHOULD NOT” indicate that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.
+The terms "SHOULD" and "SHOULD NOT" indicate that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.
 
-The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
+The terms "MAY" and "NEED NOT" indicate a course of action permissible within the limits of the publication.
 
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal.
+The terms "CAN" and "CANNOT" indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
+
+<div class="breaker"/>
+
 
 ## Table of Contents
 
