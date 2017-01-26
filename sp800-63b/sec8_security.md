@@ -10,9 +10,9 @@ An attacker who can gain control of an authenticator will often be able to masqu
 
 - *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through offline attacks on a password database maintained by the verifier.
 
-- *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner’s computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.
+- *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner's computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.
     
-- *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber’s fingerprint and construct a replica.
+- *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber's fingerprint and construct a replica.
 
 - *Out of band* secrets may be intercepted. An attacker may receive a challenge or response by eavesdropping on the primary or secondary communications channel. The attacker might then authenticate their own channel or save the message for later replay.
 
@@ -33,7 +33,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | | A One-Time Password device is stolen. |
 | | | A look-up secret authenticator is stolen. |
 | | | A cell phone is stolen. |
-| Duplication | The subscriber’s authenticator has been copied with or without their knowledge. | Passwords written on paper are disclosed.
+| Duplication | The subscriber's authenticator has been copied with or without their knowledge. | Passwords written on paper are disclosed.
 | | | Passwords stored in an electronic file are copied. |
 | | | Software PKI authenticator (private key) copied. |
 | | | Look-up secret authenticator copied. |
@@ -48,7 +48,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | Phishing or pharming | The authenticator output is captured by fooling the subscriber into thinking the attacker is a verifier or RP. | A password is revealed by subscriber to a website impersonating the verifier.
 | | | A memorized secret is revealed by a bank subscriber in response to an email inquiry from a phisher pretending to represent the bank. |
 | | | A memorized secret is revealed by the subscriber at a bogus verifier website reached through DNS spoofing.
-| Social engineering | The attacker establishes a level of trust with a subscriber in order to convince the subscriber to reveal his or her authenticator secret or authenticator output. | A memorized secret is revealed by the subscriber to an officemate asking for the password on behalf of the subscriber’s boss. |
+| Social engineering | The attacker establishes a level of trust with a subscriber in order to convince the subscriber to reveal his or her authenticator secret or authenticator output. | A memorized secret is revealed by the subscriber to an officemate asking for the password on behalf of the subscriber's boss. |
 | | | A memorized secret is revealed by a subscriber in a telephone inquiry from an attacker masquerading as a system administrator. |
 | | | An out of band secret sent via SMS is received by an attacker who has convinced the mobile operator to redirect the victim's mobile phone to the attacker. |
 | Online guessing | The attacker connects to the verifier online and attempts to guess a valid authenticator output in the context of that verifier. | Online dictionary attacks are used to guess memorized secrets. |
@@ -98,7 +98,7 @@ There are several other strategies that may be applied to mitigate the threats d
 
 - *Physical security mechanisms* may be employed to protect a stolen authenticator from duplication. Physical security mechanisms can provide tamper evidence, detection, and response.
 
-- *Requiring the use of long memorized secrets* that don’t appear in common dictionaries may force attackers to try every possible value.
+- *Requiring the use of long memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
 
 - *System and network security controls* may be employed to prevent an attacker from gaining access to a system or installing malicious software.
 

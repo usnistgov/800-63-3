@@ -23,7 +23,7 @@ At IAL 2 and above, identifying information is associated with the online identi
 Enrollment and binding MAY be broken up into a number of separate physical encounters or electronic transactions. Two electronic transactions are considered to be separate if they are not part of the same protected session. In these cases, the following methods SHALL be used to ensure that the same party acts as applicant throughout the processes:
 
 1. For remote transactions:
-	2. The applicant SHALL identify themselves in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the applicant’s phone number, email address, or postal address of record.
+	2. The applicant SHALL identify themselves in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the applicant's phone number, email address, or postal address of record.
 	3. Long-term authenticator secrets SHALL only be issued to the applicant within a protected session.
 2. For physical transactions:
 	3. The applicant SHALL identify themselves in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.
@@ -31,7 +31,7 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 	5. If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
 
 
-#### 6.1.2. Post-Enrollment Binding
+#### <a name="post-enroll-bind">/<a> 6.1.2. Post-Enrollment Binding
 
 ##### 6.1.2.1. Binding of additional authenticator at existing AAL
 
@@ -81,4 +81,3 @@ CSPs SHALL revoke the binding of authenticators promptly when an online identity
 The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing certified attributes signed by the CSP as soon as practical after revocation or termination takes place.
 
 Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
-

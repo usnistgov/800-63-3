@@ -151,7 +151,7 @@ The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote i
 
 - **If CSP performed in-person proofing:**  
 
-	- The CSP SHALL send a notification of proofing to the confirmed address of record.
+	- The CSP SHOULD send a notification of proofing to the address of record.
 	- The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.
 	- The enrollment code SHALL be valid for a maximum of 7 days
 
