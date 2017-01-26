@@ -24,6 +24,22 @@ The strength of an authentication transaction is characterized by an ordinal mea
 
 **Authenticator Assurance Level 1** - AAL 1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL 1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
-**Authenticator Assurance Level 2** – AAL 2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL 2 and above.
+**Authenticator Assurance Level 2** - AAL 2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL 2 and above.
 
-**Authenticator Assurance Level 3** – AAL 3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
+**Authenticator Assurance Level 3** - AAL 3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
+
+The following table states which sections of the document are normative and which are informative:
+|Section Name|Normative/Informative|
+|----|:--:|
+|1. Purpose|Informative|
+|2. Introduction|Informative|
+|3. Definitions and Abbreviations|Informative|
+|4. Authenticator Assurance Levels|Normative|
+|5. Authenticator and Verifier Requirements|Normative|
+|6. Authenticator Lifecycle Management|Normative|
+|7. Session Management|Normative|
+|8. Threat and Security Considerations|Informative|
+|9. Privacy Considerations|Informative|
+|10. Usability Considerations|Informative|
+|11. References|Informative|
+|Appendix A|Informative|
