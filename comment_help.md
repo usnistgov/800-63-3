@@ -25,9 +25,9 @@ description: "Guide on providing feedback"
 
     5. Within the field labelled "Leave a comment", fill out the comment template and provide as much information as possible.
 
-            **Organization**:
+            **Organization Name**:
 
-            **Type**:
+            **Organization Type**:
             
             **Document (63-3, 63A, 63B, or 63C)**:
 
@@ -39,7 +39,7 @@ description: "Guide on providing feedback"
 
             ---
 
-            Organization: 1 = Federal, 2 = Industry, 3 = Other
+            Organization: 1 = Federal, 2 = Industry, 3 = Academia, 4 = Self, 5 = Other
 
     6. Hit “Submit New Issue” and you are done!  
     ![Submit issue](assets/submit_new_issue.png)
@@ -47,11 +47,11 @@ description: "Guide on providing feedback"
     7. If you want to keep up with others comments through email and monitor future changes, make sure you choose to “Watch” the project!  
     ![Watch project](assets/watch_project.png)
 
-If you are familiar with github you are also welcome to provide suggestions to concrete changes as a pull request (PR). We prefer PRs as follows:
+If you are familiar with GitHub you are also welcome to provide suggestions to concrete changes as a pull request (PR). We prefer PRs as follows:
 
 1. Fork a copy of USNISTGOV/800-63-3 to your own organization/personal space.
 2. Create a branch in your fork, named specifically for the edit you propose.  We prefer focused PR's rather than broad-sweeping updates.
-3. Issue a PR from your branch to the 'post-public-comment' branch in USNISTGOV/800-63-3.
+3. Issue a PR from your branch to the `post-public-comment` branch in USNISTGOV/800-63-3.
 4. If we intend to merge the PR, we may engage via PR reviews and request changes before completing the merge.
 
-Please provide information about organization and a rationale for suggested change.
+Please provide information about your organization and rationale for the suggested change.

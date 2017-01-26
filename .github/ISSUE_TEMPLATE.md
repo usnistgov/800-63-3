@@ -1,10 +1,7 @@
 ### All Fields Are Required
+**Organization Name (N/A, if individual):**
 
-**Organization**:
-
-**Organization Name (self, if individual):**
- 
-**Type**:
+**Organization Type (see below for codes)**:
  
 **Document (63-3, 63A, 63B, or 63C)**:
 
@@ -16,4 +13,4 @@
  
 ---
  
-Organization: 1 = Federal, 2 = Industry, 3 = Other 
+Organization Type: 1 = Federal, 2 = Industry, 3 = Academia, 4 = Self, 5 = Other
