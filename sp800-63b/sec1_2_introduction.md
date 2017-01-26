@@ -42,4 +42,4 @@ The following table states which sections of the document are normative and whic
 |9. Privacy Considerations|Informative|
 |10. Usability Considerations|Informative|
 |11. References|Informative|
-|Appendix A|Informative|
+|Appendix A: Strength of Memorized Secrets|Informative|
