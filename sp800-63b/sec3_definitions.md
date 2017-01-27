@@ -273,7 +273,7 @@ A type of publication issued by NIST. Specifically, the SP 800-series reports on
 A party who has received a credential bound to an authenticator from a CSP.
 
 #### Symmetric Key
-A cryptographic key that is used to perform both the cryptographic operation and its inverse, for example to encrypt and decrypt, or create a message authentication code and to verify the code.
+A cryptographic key that is used to perform both the cryptographic operation and its inverse, for example to encrypt and decrypt, or create a MAC and to verify the code.
 
 #### Token
 See *Authenticator*.
