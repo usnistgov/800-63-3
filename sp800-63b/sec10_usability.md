@@ -44,20 +44,27 @@ Usability considerations for typical usage of all authenticators include:
 *  Provide users information on the use and maintenance of the authenticator. For example, instructions for use (especially if there are different requirements for first-time use or initialization), information on authenticator expiration, and what to do if the authenticator is lost or stolen.
 *  Availability of the authenticator: users need to remember or have their authenticator readily available.
 *  Whenever possible (based on AAL requirements), provide users with alternative authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternative authentication options also help address availability issues that may occur with a particular authenticator.
+
 *  Characteristics of user-facing text:
+
   *  Write user-facing text (e.g., instructions, prompts, notifications, error messages) in plain language for the intended audience. Avoid technical jargon and, typically, write for a 6th to 8th grade literacy level.
   *  Consider the legibility of user-facing and user-entered text, including font style, size, color, and contrast with surrounding background. Ilegible text contributes to user entry errors. To enhance legibility, consider the use of:
+  
     *  High contrast, the highest contrast is black on white.
     *  Sans serif fonts for electronic displays. Serif fonts for printed materials.
     *  Fonts that clearly distinguish between easily confusable characters (such as the capital letter "O" and the number "0").
     *  A minimum font size of 12 points as long as the text fits for display on the device.
+
 *  User experience during authenticator entry:
-  *  Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (such as tablets and smartphones) than on traditional desktop computers.
+
+ *  Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (such as tablets and smartphones) than on traditional desktop computers.
   *  Ensure that the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely).
   *  Provide clear, meaningful and actionable feedback on entry errors to reduce user confusion and frustration. Significant usability implications arise when users do not know they have entered text incorrectly.
   *  Allow at least 10 entry attempts for authenticators requiring the entry of the authenticator output by the user. The longer and more complex the entry text, the greater the likelihood of user entry errors.
   *  Provide clear, meaningful feedback on number of remaining allowed attempts. For rate limiting (throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.
+  
 *  Minimize the impact of form-factor constraints, such as limited touch and display areas on mobile devices:
+  
   *  Larger touch areas improve usability for text entry since typing on small devices is significantly more error prone and time consuming than typing on a full size keyboard. The smaller the onscreen keyboard, the more difficult it is to type, due to the size of the input mechanism (e.g., a finger) relative to the size of the on-screen target.
   *  Follow good user interface and information design for small displays.
 
