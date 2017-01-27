@@ -29,7 +29,7 @@ Guidelines and considerations are described from the users' perspective.
 Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans.
 
 
-### 10.1. Usability Considerations Common to Authenticators
+### <a name="usabilitycommon"></a> 10.1. Usability Considerations Common to Authenticators
 
 When selecting and implementing an authentication system, consider usability across the entire lifecycle of the selected authenticators (i.e., enrollment and distribution, typical use, and intermittent events), while being mindful of the combination of users, their goals, and context of use.
 
@@ -72,7 +72,7 @@ Usability considerations for intermittent events across authenticator types incl
 
 ### 10.2. Usability Considerations by Authenticator Type
 
-In addition to the previously described general usability considerations applicable to most authenticators (section 10.1.1), the following sections describe other usability considerations specific to specific authenticator types.
+In addition to the previously described general usability considerations applicable to most authenticators ([Section 10.1](#usabilitycommon)), the following sections describe other usability considerations specific to specific authenticator types.
 
 
 #### 10.2.1. Memorized Secrets
