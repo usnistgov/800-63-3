@@ -335,7 +335,7 @@ When the subscriber successfully authenticates, the verifier SHOULD disregard an
 
 For a variety of reasons, this document supports only limited use of biometrics for authentication. These include:
 
-- Biometric False Match Rates (FMR) and False Non-Match Rates (FNMR) do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR and FNMR do not account for spoofing attacks.
+- FMR and FNMR do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR and FNMR do not account for spoofing attacks.
 - Biometric matching is probabilistic, whereas the other authentication factors are deterministic.
 - Biometric template protection schemes provide a method for revoking biometric credentials that are comparable to other authentication factors (e.g., PKI certificates and passwords). However, the availability of such solutions is limited, and standards for testing these methods are under development.
 - Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from through objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
@@ -346,7 +346,7 @@ Biometrics SHALL be used with another authentication factor (something you have)
 
 An authenticated protected channel between sensor (or endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint authenticated **prior** to capturing the biometric sample from the claimant.
 
-Empirical testing of the biometric system to be deployed SHALL demonstrate an equal error rate of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with a false match rate of **1 in 1000** or better.
+Empirical testing of the biometric system to be deployed SHALL demonstrate an equal error rate of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with an FMR of **1 in 1000** or better.
 
 The biometric system SHOULD implement PAD. Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks.
 
