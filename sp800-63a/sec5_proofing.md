@@ -10,14 +10,14 @@ This section lists the steps a CSP SHALL follow to identity proof an individual 
 
 ## <a name="resolve"></a>5.1. Identity Resolution
 
-The goal of identity resolution is to uniquely distinquish an individual among a given population or context.  Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing transaction.  
+The goal of identity resolution is to uniquely distinguish an individual among a given population or context.  Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing transaction.  
   
 1.  Exact matches of information used in the proofing process could be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, authoritative records, and third party records. Matching algorithms and rules used SHOULD be available publicly or, at minimum, to the relevant community of interest. For example, they may be included as part of the written policy or practice statement referenced above.
 2.  Knowledge based verification (KBV) (sometimes referred to as knowledge based authentication (KBA)) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. 
 
 ## <a name="validate"></a>5.2. Identity Evidence Validation
 
-The goal of identity validation is to collect from the applicant the most appropriate identity evidence (e.g., a passport or drivers license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of three process steps: collecting the appropriate identity evidence, confirming the evidence is genuine and authentic, and confirming the data contained on the identity evidence is valid, current, and related to a real-life subject.
+The goal of identity validation is to collect from the applicant the most appropriate identity evidence (e.g., a passport or driver's license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of three process steps: collecting the appropriate identity evidence, confirming the evidence is genuine and authentic, and confirming the data contained on the identity evidence is valid, current, and related to a real-life subject.
 
 ### 5.2.1. Identity Evidence Characteristic Requirements
 
@@ -131,7 +131,7 @@ The following requirements apply to the identity verification steps for IAL2 and
 
 #### 5.3.3.2. Requirements for in-person proofing performed over remote channels
 
-It is possible for a CSP to achieve the security and confidence comparable to in-peson proofing over remote channels.  The following requirements establish comparability between in-person transactions where the enrollee in the same physical location as the CSP or when the enrollee is remote to the CSP.
+It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the enrollee in the same physical location as the CSP or when the enrollee is remote to the CSP.
 
 Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
