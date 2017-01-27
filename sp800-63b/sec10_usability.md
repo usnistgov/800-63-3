@@ -193,7 +193,7 @@ Usability considerations for typical usage include:
 *  Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users being faced with multiple similarly and ambiguously named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices (such as smartphones) may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
 *  Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor cryptographic device.
 
-#### 10.3. Summary of Usability Considerations
+### 10.3. Summary of Usability Considerations
 
 [Table 10-1](#t10-1) summarizes the usability considerations for typical usage and intermittent events for each authenticator type. Many of the usability considerations for typical usage apply to most of the authenticator types, as demonstrated in the rows. The table highlights common and divergent usability characteristics across the authenticator types. Each column allows readers to easily identify the usability attributes to address for each authenticator. Depending on users' goals and context of use, users may value certain usability attributes over others. Whenever possible, provide alternative authenticator types and allow users to choose between them.
 
@@ -202,9 +202,9 @@ It is important to note that multi-factor authenticators (e.g., multi-factor OTP
 
 <a name="t10-1"></a>
 <div class="text-center" markdown="1">
-![](sp800-63b/media/use.png)
-
 **Table 10-1 Usability Considerations Summary by Authenticator Type**
+
+![](sp800-63b/media/use.png)
 </div>
 
 
