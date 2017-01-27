@@ -2,6 +2,8 @@
 
 ## 11. References
 
+*This section is informative.*
+
 ***To be completed***
 
 ### 11.1. General References
