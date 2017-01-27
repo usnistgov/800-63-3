@@ -9,7 +9,7 @@ There is a variety of terms used in the area of authentication. While the defini
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Active Attack
-An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider (CSP), verifier, or RP. Examples of active attacks include man-in-the-middle, impersonation, and session hijacking.
+An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider (CSP), verifier, or RP. Examples of active attacks include man-in-the-middle (MitM), impersonation, and session hijacking.
 
 #### Approved
 Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
@@ -30,7 +30,7 @@ A party who acts with malicious intent to compromise an information system.
 A quality or characteristic ascribed to someone or something.
 
 #### Authenticated Protected Channel
-A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and man-in-the-middle protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
+A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. TLS [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
 
 #### Authentication
 The process of establishing confidence in the identity of users or information systems. Authentication of users (subscribers) implies confirmation of the subscriber's presence and intent to authenticate.
@@ -167,7 +167,7 @@ A characteristic of an authentication system or an authenticator that requires m
 The three authentication factors are something you know, something you have, and something you are.
 
 #### Network
-An open communications medium, typically the Internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, man-in-the-middle, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).
+An open communications medium, typically the Internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (i.e., impersonation, MitM, session hijacking) and passive (i.e., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP or RP).
 
 #### Nonce
 A value used in security protocols that is never repeated with the same key. For example, nonces used as challenges in challenge-response authentication protocols SHALL not be repeated until authentication keys are changed. Otherwise, there is a possibility of a replay attack. Using a nonce as a challenge is a different requirement than a random challenge, because a nonce is not necessarily unpredictable.
@@ -298,7 +298,7 @@ Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to
 An entity that verifies the claimant's identity by verifying the claimant's possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) and identity and check their status.
 
 #### Verifier Impersonation
-A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier. In previous editions of SP 800-63, authentication protocols that are resistant to verifier impersonation have been described as "strongly man-in-the-middle resistant".
+A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier. In previous editions of SP 800-63, authentication protocols that are resistant to verifier impersonation have been described as "strongly MitM resistant".
 
 #### Weakly Bound Credentials
 Credentials that are bound to a subscriber in a manner than can be modified without invalidating the credential.
