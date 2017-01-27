@@ -4,7 +4,7 @@
 
 Once an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in [800-63C](#sp800-63C.md), where the authentication event necessarily involves several components and parties coordinating across a network.
 
-To facilitate this behavior, a *session* MAY be started in response to an authentication event, and continue the session until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in [section 7.2](#sessionreauthn), wherein the user repeats some or all of the initial authentication event, thereby re-establishing the session.
+To facilitate this behavior, a *session* MAY be started in response to an authentication event, and continue the session until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in [Section 7.2](#sessionreauthn), wherein the user repeats some or all of the initial authentication event, thereby re-establishing the session.
 
 Session management is preferable over continual presentation of credentials as the usability requirements of continual presentation often create incentives for workarounds such as cached unlocking credentials, negating the freshness of the authentication event. 
 
@@ -22,7 +22,7 @@ Secrets used for session binding:
 - SHOULD be erased on the user endpoint when the user logs out or when the secret is deemed to have expired
 - SHOULD not be placed in insecure locations such as HTML5 Local Storage due to the potential exposure of local storage to cross-site scripting (XSS) attacks
 - SHALL be sent to and received from the device using an authenticated protected channel
-- SHALL time out and not be accepted after the times specified in sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL)
+- SHALL time out and not be accepted after the times specified in Sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL)
 - SHALL not be available to insecure communications between the host and user endpoint; authenticated sessions SHALL not fall back to an insecure transport, such as from https to http, following authentication.
 
 URLs or POST content SHALL contain a session identifier that SHALL be verified by the relying party to ensure that actions taken outside the session do not affect the protected session.
@@ -51,7 +51,7 @@ Other methods of secure device identification, including but not limited to mutu
 ### 7.2. <a name="sessionreauthn"></a>Reauthentication
 
 
-A session SHALL NOT be extended past the guidelines in sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL) based on presentation of the session secret alone.
+A session SHALL NOT be extended past the guidelines in Sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL) based on presentation of the session secret alone.
 
 When a session is terminated due to a time-out or other action, the user MAY reauthenticate using their primary authentication mechanism or an appropriate subset thereof, depending on the AAL.
 
