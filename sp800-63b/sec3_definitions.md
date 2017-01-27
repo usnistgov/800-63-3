@@ -9,7 +9,7 @@ There is a variety of terms used in the area of authentication. While the defini
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Active Attack
-An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider, verifier, or Relying Party. Examples of active attacks include man-in-the-middle, impersonation, and session hijacking.
+An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider, verifier, or RP. Examples of active attacks include man-in-the-middle, impersonation, and session hijacking.
 
 #### Approved
 Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
@@ -21,7 +21,7 @@ In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defi
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
-An attempt by an unauthorized individual to defeat security controls. For example, to fool a verifier or a Relying Party into believing that the unauthorized individual in question is the subscriber.
+An attempt by an unauthorized individual to defeat security controls. For example, to fool a verifier or an RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
 A party who acts with malicious intent to compromise an information system.
@@ -255,7 +255,7 @@ See *Transport Layer Security (TLS)*.
 A persistent interaction between a subscriber and an endpoint, either an RP or a CSP. A session begins with an authentication event and ends with a session termination event. A session is bound by use of a session secret that the subscriber's software (a browser, application, or OS) can present to the RP or CSP in lieu of the subscriber's authentication credentials.
 
 #### Session Hijack Attack
-An attack in which the attacker is able to insert himself or herself between a claimant and a verifier subsequent to a successful authentication exchange between the latter two parties. The attacker is able to pose as a subscriber to the verifier or vice versa to control session data exchange. Sessions between the claimant and the Relying Party can also be similarly compromised.
+An attack in which the attacker is able to insert himself or herself between a claimant and a verifier subsequent to a successful authentication exchange between the latter two parties. The attacker is able to pose as a subscriber to the verifier or vice versa to control session data exchange. Sessions between the claimant and the RP can also be similarly compromised.
 
 #### Shared Secret
 A secret used in authentication that is known to the claimant and the verifier.
