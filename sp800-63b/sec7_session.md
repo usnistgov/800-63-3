@@ -72,6 +72,6 @@ When a session is terminated due to a time-out or other action, the user MAY rea
 
 >Note: At AAL2, a memorized secret or biometric and not a physical authenticator is required because the session secret is *something you have*, and an additional authentication factor is required to continue the session.
 
-#### 7.2.1 Reauthentication from a federation or assertion
+#### 7.2.1. Reauthentication from a federation or assertion
 
 When using a [federation protocol](sp800-63c.html#sec4) to connect the CSP and RP, special consideration needs to be made for session management and reauthentication. Both the CSP and RP employ separate session management technologies, and there SHALL NOT be any assumption of correlation between these sessions. Consequently, when a session expires at an RP and reauthentication is required by the RP, it is entirely possible that the session at the CSP is not expired and a new assertion could be generated from this session at the CSP without reauthenticating the user. Therefore, an RP requiring reauthentication through a federation protocol SHALL indicate a maximum acceptable authentication age to the CSP (if possible within the protocol), and the CSP SHALL honor this request (if possible). The CSP in all cases SHALL communicate the primary authentication event time to the RP to allow the RP to decide if the assertion is sufficient for reauthentication or not.
