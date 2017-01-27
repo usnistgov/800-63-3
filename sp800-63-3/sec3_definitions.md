@@ -74,7 +74,7 @@ A trusted entity that issues or registers subscriber authenticators and issues e
 #### Cryptographic Key
 A value used to control cryptographic operations, such as decryption, encryption, signature generation or signature verification. For the purposes of this document, key requirements shall meet the minimum requirements stated in Table 2 of NIST SP 800-57 Part 1.
 
-See also Asymmetric keys, Symmetric key.
+See also Asymmetric Keys, Symmetric Key.
 
 #### Cryptographic Authenticator
 An authenticator where the secret is a cryptographic key.
@@ -100,7 +100,7 @@ FIPS documents are available online through the FIPS home page: <http://www.nist
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level
-An category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to an RP.
+A category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to an RP.
 
 #### Identity
 An attribute or set of attributes that uniquely describe a subject within a given context.
@@ -112,7 +112,7 @@ A category that conveys the degree of confidence that the applicant's claimed id
 The process by which a CSP and an RA collect and verify information about a person for the purpose of issuing credentials to that person.
 
 #### Memorized Secret
-A type of authenticator consisting of a character string that is intended to be memorized or memorizable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
+A type of authenticator consisting of a character string that is intended to be memorized or memorable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
 
 #### Multi-Factor
 A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. MFA can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
@@ -158,7 +158,7 @@ An entity that relies upon the subscriber's authenticator(s) and credentials or 
 > Note: Any information exchange across the Internet is considered remote.
 
 #### Risk Assessment
-The process of identifying, estimating, and prioritizing risks to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, and other organizations, resulting from the operation of an system. Part of risk management, incorporates threat and vulnerability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis.
+The process of identifying, estimating, and prioritizing risks to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, and other organizations, resulting from the operation of a system. Part of risk management, incorporates threat and vulnerability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis.
 
 #### Risk Management
 The program and supporting processes to manage information security risk to organizational operations (including mission, functions, image, reputation), organizational assets, individuals, other organizations, and includes: (i) establishing the context for risk-related activities; (ii) assessing risk; (iii) responding to risk once determined; and (iv) monitoring risk over time.

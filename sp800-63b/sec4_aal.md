@@ -59,18 +59,18 @@ AAL1 permits the use of any of the following authenticator types, which are defi
 * Memorized Secret
 * Look-up Secret
 * Out of Band
-* Single Factor OTP Device
-* Multi-Factor OTP Device
-* Single Factor Cryptographic Software
-* Single Factor Cryptographic Device
-* Multi-Factor Cryptographic Software
-* Multi-Factor Cryptographic Device
+* Single-factor One-Time Password (OTP) Device
+* Multi-factor OTP Device
+* Single-factor Cryptographic Software
+* Single-factor Cryptographic Device
+* Multi-factor Cryptographic Software
+* Multi-factor Cryptographic Device
 
 #### 4.1.2. Authenticator and Verifier Requirements
 
 Cryptographic authenticators used at AAL1 SHALL use approved cryptography. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD decline to operate when such a compromise is detected.
 
-Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
+Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
 Verifiers operated by government agencies at AAL1 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
@@ -96,17 +96,17 @@ At AAL2, it is required to have either a multi-factor authenticator or a combina
 
 When a multi-factor authenticator is used, any of the following may be used:
 
-* Multi-Factor OTP Device
-* Multi-Factor Cryptographic Software
-* Multi-Factor Cryptographic Device
+* Multi-factor OTP Device
+* Multi-factor Cryptographic Software
+* Multi-factor Cryptographic Device
 
 When a combination of two single-factor authenticators is used, it SHALL include a Memorized Secret authenticator and one possession-based ("something you have") authenticator from the following list:
 
 * Look-up Secret
 * Out of Band
-* Single Factor OTP Device
-* Single Factor Cryptographic Software
-* Single Factor Cryptographic Device
+* Single-factor OTP Device
+* Single-factor Cryptographic Software
+* Single-factor Cryptographic Device
 
 > Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use) the device has to be authenticated. Therefore, it is unnecessary to implement another factor with biometrics as the device is "something you have", which serves as a valid second factor of the authenticator. 
 
@@ -114,7 +114,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 Cryptographic authenticators used at AAL2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD decline to operate when such a compromise is detected. At least one authenticator used at AAL2 SHALL be replay resistant as described in Section [5.2.8](#replay). Authentication at AAL2 SHOULD demonstrate authentication intent from at least one authenticator as discussed in Section [5.2.9](#intent).
 
-Communication between the claimant and verifier (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks.
+Communication between the claimant and verifier (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
 Verifiers operated by government agencies at AAL2 SHALL be validated to meet the requirements of [[FIPS 140]](#FIPS140-2) Level 1.
 
@@ -140,12 +140,12 @@ AAL3 provides very high confidence that the claimant controls authenticator(s) r
 
 Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
 
-* Multi-Factor Cryptographic Device
-* Single-Factor Cryptographic Device used in conjunction with Memorized Secret
+* Multi-factor Cryptographic Device
+* Single-factor Cryptographic Device used in conjunction with Memorized Secret
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
-Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to man-in-the-middle attacks. All cryptographic device authenticators used at AAL3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.8](#replay). All authentication and reauthentication processes at AAL3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.9](#intent).
+Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks. All cryptographic device authenticators used at AAL3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.8](#replay). All authentication and reauthentication processes at AAL3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.9](#intent).
 
 Multi-factor authenticators used at AAL3 SHALL be hardware cryptographic modules validated at [[FIPS 140]](#FIPS140-2) Level 2 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL3 SHALL be validated at [[FIPS 140]](#FIPS140-2) Level 1 or higher overall with at least [[FIPS 140]](#FIPS140-2) Level 3 physical security.
 
@@ -198,7 +198,7 @@ Requirement | AAL1 | AAL2 | AAL3
 **FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; may use one authentication factor | 12 hours or 15 minutes inactivity; shall use both authentication factors
 **Security controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
-**MITM resistance** | Required | Required | Required |
+**MitM resistance** | Required | Required | Required |
 **Verifier impersonation resistance** | Not required | Not required | Required |
 **Verifier compromise resistance** | Not required | Not required | Required |
 **Replay resistance** | Not required | Required | Required |
