@@ -170,19 +170,19 @@ The verifier SHALL use approved encryption and an authenticated protected channe
 
 If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
 
-#### 5.1.5. Multi-Factor OTP Devices
+#### 5.1.5. Multi-factor OTP Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Multi-factor-otp-device.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A multi-factor (MF) OTP hardware device generates OTPs for use in authentication after activation through an additional authentication factor. The second factor of authentication may be achieved through some kind of integral entry pad, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). The OTP is displayed on the device and manually input to the verifier. For example, an OTP device may display 6 characters at a time, thereby proving possession and control of the device. The MF OTP device is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
+    <td>A multi-factor (MF) OTP hardware device generates OTPs for use in authentication after activation through an additional authentication factor. The second factor of authentication may be achieved through some kind of integral entry pad, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). The OTP is displayed on the device and manually input to the verifier. For example, an OTP device may display 6 characters at a time, thereby proving possession and control of the device. The multi-factor OTP device is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
   </tr>
   </table>
   </div>
 
 
-#### 5.1.5.1. Multi-Factor OTP Authenticators
+#### 5.1.5.1. Multi-factor OTP Authenticators
 
 Multi-factor OTP authenticators operate in a similar manner to single-factor OTP authenticators (see [Section 5.1.4.1](#sfotpa)), except that they require the entry of either a memorized secret or use of a biometric to obtain a password from the authenticator. Each use of the authenticator SHALL require the input of the additional factor.
 
@@ -263,7 +263,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 
 
 
-#### 5.1.8.1. Multi-Factor Cryptographic Software Authenticators
+#### 5.1.8.1. Multi-factor Cryptographic Software Authenticators
 
 Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, trusted execution environment).
 
@@ -273,23 +273,23 @@ Any memorized secret used by the authenticator for activation SHALL be at least 
 
 The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after an authentication transaction has taken place.
 
-#### 5.1.8.2. Multi-Factor Cryptographic Software Verifiers
+#### 5.1.8.2. Multi-factor Cryptographic Software Verifiers
 
 The requirements for a multi-factor cryptographic software verifier are identical to those for a multi-factor cryptographic device verifier, described in [Section 5.1.9.2](#mfcdv).
 
-#### 5.1.9. Multi-Factor Cryptographic Devices
+#### 5.1.9. Multi-factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Multi-factor-crypto-device.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A multi-factor cryptographic device is a hardware device that performs cryptographic operations using a protected cryptographic key(s) that require activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is provided by direct connection to the user endpoint and is highly dependent on the specific cryptographic device and protocol, but it is typically some type of signed message. The MF Cryptographic device is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
+    <td>A multi-factor cryptographic device is a hardware device that performs cryptographic operations using a protected cryptographic key(s) that require activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is provided by direct connection to the user endpoint and is highly dependent on the specific cryptographic device and protocol, but it is typically some type of signed message. The multi-factor cryptographic device is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
   </tr>
   </table>
   </div>
 
 
-#### 5.1.9.1. Multi-Factor Cryptographic Device Authenticators
+#### 5.1.9.1. Multi-factor Cryptographic Device Authenticators
 
 Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric.  The authenticator operates by signing a challenge nonce presented through a direct computer interface such as a USB port.  Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or manufacturer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
 
@@ -301,7 +301,7 @@ Any memorized secret used by the authenticator for activation SHALL be at least 
 
 The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be overwritten in memory immediately after an authentication transaction has taken place.
 
-#### <a name="mfcdv"></a>5.1.9.2. Multi-Factor Cryptographic Device Verifiers
+#### <a name="mfcdv"></a>5.1.9.2. Multi-factor Cryptographic Device Verifiers
 
 Multi-factor cryptographic device verifiers generate a challenge nonce, send it to the corresponding authenticator, and use the authenticator output to verify possession of the device and activation factor.
 
