@@ -37,7 +37,7 @@ Usability considerations for typical usage of all authenticators include:
 
 Provide users information on the use and maintenance of the authenticator. For example, instructions for use (especially if there are different requirements for first-time use or initialization), information on authenticator expiration, and what to do if the authenticator is lost or stolen.
 
-Availability of the authenticator: Users need to remember or have their authenticator readily available.
+Availability of the authenticator; Users need to remember or have their authenticator readily available.
 
 Whenever possible (based on AAL requirements), provide users with alternative authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternative authentication options also help address availability issues that may occur with a particular authenticator.
 
