@@ -9,7 +9,7 @@ There is a variety of terms used in the area of authentication. While the defini
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
 #### Active Attack
-An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider, verifier, or RP. Examples of active attacks include man-in-the-middle, impersonation, and session hijacking.
+An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider (CSP), verifier, or RP. Examples of active attacks include man-in-the-middle, impersonation, and session hijacking.
 
 #### Approved
 Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
