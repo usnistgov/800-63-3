@@ -101,7 +101,7 @@ The purpose of the secret is to securely bind the authentication operation on th
 
 The out-of-band authenticator SHALL establish a separate channel with the verifier in order to retrieve the out-of-band secret or authentication request. This channel is considered to be out-of-band with respect to the primary communication channel, even if it terminates on the same device, provided the device does not leak information from one to the other without the authorization of the claimant.
 
-The out-of-band device SHOULD be uniquely addressable and communication over the secondary channel SHALL be private. Methods that do not prove possession of a specific device, such as voice-over-ip (VOIP) or email, SHALL NOT be used for out-of-band authentication.
+The out-of-band device SHOULD be uniquely addressable and communication over the secondary channel SHALL be private. Methods that do not prove possession of a specific device, such as voice-over-IP (VOIP) or email, SHALL NOT be used for out-of-band authentication.
 
 The out-of-band authenticator SHALL uniquely authenticate itself in one of the following ways in communicating with the verifier:
 
@@ -119,7 +119,7 @@ If the out-of-band authenticator sends an approval message over the secondary co
 
 ##### 5.1.3.2. Out-of-Band Verifiers
 
-If out-of-band verification is to be made using the public switched telephone network (PSTN), the verifier SHALL verify that the pre-registered telephone number being used is associated to a physical device. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change. Verifiers SHALL use known and verifiable routes to deliver the secret. Verifiers SHOULD be aware of indicators such as device swap, SIM change, number porting, or other abnormal behavior *before* using the OOB channel to deliver the authentication secret.
+If out-of-band verification is to be made using the public switched telephone network (PSTN), the verifier SHALL verify that the pre-registered telephone number being used is associated with a physical device. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change. Verifiers SHALL use known and verifiable routes to deliver the secret. Verifiers SHOULD be aware of indicators such as device swap, SIM change, number porting, or other abnormal behavior *before* using the PSTN to deliver an out-of-band authentication secret.
 
 > Note: Out-of-band authentication using the PSTN (SMS or voice) is discouraged and is being considered for removal in future editions of this guideline.
 
