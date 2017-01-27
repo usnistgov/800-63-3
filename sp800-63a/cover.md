@@ -142,15 +142,15 @@ Email: dig-comments@nist.gov
 
 The Information Technology Laboratory (ITL) at the National Institute of
 Standards and Technology (NIST) promotes the U.S. economy and public
-welfare by providing technical leadership for the Nation’s measurement
+welfare by providing technical leadership for the Nation's measurement
 and standards infrastructure. ITL develops tests, test methods,
 reference data, proof of concept implementations, and technical analyses
 to advance the development and productive use of information technology.
-ITL’s responsibilities include the development of management,
+ITL's responsibilities include the development of management,
 administrative, technical, and physical standards and guidelines for the
 cost-effective security and privacy of other than national
 security-related information in Federal information systems. The Special
-Publication 800-series reports on ITL’s research, guidelines, and
+Publication 800-series reports on ITL's research, guidelines, and
 outreach efforts in information system security, and its collaborative
 activities with industry, government, and academic organizations.
 
@@ -207,13 +207,13 @@ The authors would also like to acknowledge the thought leadership and innovation
 
 </div>
 
-The terms “SHALL” and “SHALL NOT” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.
+The terms "SHALL" and "SHALL NOT" indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.
 
-The terms “SHOULD” and “SHOULD NOT” indicate that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.
+The terms "SHOULD" and "SHOULD NOT" indicate that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.
 
-The terms “MAY” and “NEED NOT” indicate a course of action permissible within the limits of the publication.
+The terms "MAY" and "NEED NOT" indicate a course of action permissible within the limits of the publication.
 
-The terms “CAN” and “CANNOT” indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
+The terms "CAN" and "CANNOT" indicate a possibility and capability, whether material, physical or causal or, in the negative, the absence of that possibility or capability.
 
 <div class="breaker"/>
 
@@ -230,7 +230,7 @@ The terms “CAN” and “CANNOT” indicate a possibility and capability, whet
 
 [5. Identity Resolution, Validation and Verification](#sec5)
 
-[6. Leveraging Antecedent Proofing Events](#sec6)
+[6. Derived Identity](#sec6)
 
 [7. Threats and Security Considerations](#sec7)
 

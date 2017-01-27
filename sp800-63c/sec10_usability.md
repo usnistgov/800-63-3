@@ -15,6 +15,7 @@ As stated in the usability sections in 800-63A and 800-63B, overall user experie
 The overall user experience with federated identity systems should be as smooth and easy as possible, by following usability standards (such as the ISO 25060 series of standards) and established best practices for user interaction design.
 
 
+
 ##### ASSUMPTIONS 
 In this section, the term "users" means "claimants" or "subscribers."
 Guidelines and considerations are described from the users' perspective.
@@ -49,6 +50,7 @@ Even when users are familiar with federated identity systems, there are differen
 
 Many properties of identity have implications for how users manage identities both within and among federations. Just as users manage multiple identities based on context outside of cyberspace, users must learn to manage their identity in a federated environment. Therefore, it must be clear to users how identity and context are used.
 
+
 * Provide users the requisite context and scope in order to distinguish among different user roles. For example, whether the user is acting on their own behalf, or on behalf of another, such as their employer.
 * Provide users unique, meaningful, and descriptive identifiers to distinguish among entities.
 * Provide users with information on data ownership and those authorized to make changes. Identities, and the data associated with them, can sometimes be updated and changed by multiple actors. For example, some healthcare data is updated and owned the patient, while some is only updated by a hospital or doctor's practice.
@@ -60,11 +62,13 @@ Many properties of identity have implications for how users manage identities bo
 
 #### 10.1.2. User Perspectives of Trust and Benefits
 
+
 Many factors can influence user adoption of federated identity systems. As with any technology, users may value some factors more than others. Users often weigh perceived benefits versus risks before making technology adoption decisions. It is critical that IdPs and RPs provide users with sufficient information to enable them to make informed adoption decisions. The concepts of trust, and tiers of trust, fundamental principles in federated identity systems, can drive user adoption. Finally, a positive user experience may also result in increased demand of federation by users, triggering increased adoption by RPs.
 
 This sub-section is focused primarily on user trust and user perceptions of benefits versus risks.
 
 To encourage user adoption, IdPs and RPs need to establish and build trust with users and provide them with an understanding of the benefits and risks of adoption.
+
 
 * Allow users to control their information disclosure and provide explicit consent through the appropriate use of notifications (see SP 800-63C, Section 9.2, Notice and Consent). Balancing the content, size, and frequency of notifications is necessary to avoid thoughtless user click-through.
 	* For attribute sharing, consider the following:
@@ -91,5 +95,6 @@ Assisting users in establishing good and complete mental models of federation al
 	* Provide prominent visual cues and information to users about redirection when an RP needs to redirect control from their site to an IdP. For example, display RP branding within the IdP user interface to inform users when they are logging in with their IdP for access to the destination RP.
 * Provide users with clear and usable ways (e.g., visual assurance) to determine the authenticity of the transacting  parties (e.g., RPs, IdPs, and brokers). This will also help to alleviate user concern over leaving one domain for another, especially if the root domain changes (e.g., .gov to .com). For example, display the URL of the IdP so that the user can verify that he or she is not being phished by a malicious site.
 * Provide users with clear information, including visual cues, regarding implicit logins and explicit logouts. Depending on the implementation, logging into a RP with an IdP account may authenticate users to both the IdP and RP. Users may not realize that ending their session with the RP will not necessarily end their session with the IdP; users will need to explicitly "logout" of the IdP. Users require clear information to remind them if explicit logouts are required to end their IdP sessions.
+
 
 
