@@ -217,7 +217,7 @@ It is important to note that multi-factor authenticators (e.g., multi-factor OTP
 
 ### <a name="biomusability"></a> 10.4. Biometrics Usability Considerations
 
-This section provides a high-level overview of biometrics general usability considerations. For a more detailed discussion of biometric usability, see [Usability & Biometrics, Ensuring Successful Biometric Systems](# use-and-bio).
+This section provides a high-level overview of biometrics general usability considerations. For a more detailed discussion of biometric usability, see [Usability & Biometrics, Ensuring Successful Biometric Systems](#use-and-bio).
 
 Although there are other biometric modalities, the following three biometric modalities are more commonly used for authentication: fingerprint, face and iris.
 
