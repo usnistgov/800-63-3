@@ -49,7 +49,7 @@ Prior to binding the new authenticator, the CSP SHALL first require the subscrib
 
 #### 6.1.2.3. Replacement of Lost Authentication Factor
 
-If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL 2 or 3, that subscriber SHALL repeat the identity proofing process. An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [SP 800-63A](sp800-63a.html) section 4.2. The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL 3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
+If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL 2 or 3, that subscriber SHALL repeat the identity proofing process. An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [SP 800-63A, Section 4.2](sp800-63a.html#genProofReqs). The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL 3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
 
 The CSP SHOULD send a notification of the event to the subscriber; this MAY be the same notice as is required as part of the proofing process.
 
@@ -57,7 +57,7 @@ The CSP SHOULD send a notification of the event to the subscriber; this MAY be t
 
 A subscriber MAY already possess authenticators suitable for authentication at a particular AAL. For example, he or she MAY have a two-factor authenticator from a social network provider, considered AAL 2 and IAL 1, and would like to use those credentials at a relying party that requires IAL 2.
 
-CSPs SHOULD, where practical, accommodate the use of subscriber-provided authenticators in order to relieve the burden to the subscriber of managing a large number of authenticators. Binding of these authenticators SHALL be done as described in section 6.1.2.1.
+CSPs SHOULD, where practical, accommodate the use of subscriber-provided authenticators in order to relieve the burden to the subscriber of managing a large number of authenticators. Binding of these authenticators SHALL be done as described in [Section 6.1.2.1](#post-enroll-bind).
 
 #### 6.1.4. Renewal
 
