@@ -196,9 +196,15 @@ Usability considerations for typical usage include:
 
 It is important to note that multi-factor authenticators (e.g., multi-factor OTP devices, multi-factor cryptographic software, and multi-factor cryptographic devices) also inherit their secondary factor's usability considerations. As biometrics are only allowed as an activation factor in multi-factor authentication solutions, usability considerations for biometrics are not included in Table 10-1 and are discussed in Section 10.4.
 
-<a name="t10-1"></a><div class="text-center" markdown="1">
+<a name="t10-1"></a>
+
+<div class="text-center" markdown="1">
+
 **Table 10-1 Usability Considerations Summary by Authenticator Type**
-![](sp800-63b/media/use.png)</div>
+
+![](sp800-63b/media/use.png)
+
+</div>
 
 ### <a name="biomusability"></a> 10.4. Biometrics Usability Considerations
 This section provides a high-level overview of biometrics general usability considerations. For a more detailed discussion of biometric usability, see *Usability & Biometrics, Ensuring Successful Biometric Systems* [[NIST Usability]](#use-and-bio).
