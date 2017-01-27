@@ -4,7 +4,7 @@
 
 _This section is informative._
 
-This document and its companion documents, [SP 800-63-3](sp800-63-3.html), [SP 800-63A](sp800-63a.html), and [SP 800-63C](sp800-63c.html), provide technical guidelines to agencies for the implementation of digital authentication.
+This document and its companion documents, [Special Publication (SP) 800-63-3](sp800-63-3.html), [SP 800-63A](sp800-63a.html), and [SP 800-63C](sp800-63c.html), provide technical guidelines to agencies for the implementation of digital authentication.
 
 <a name="sec2"></a>
 
