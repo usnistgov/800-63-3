@@ -25,7 +25,7 @@ Secrets used for session binding:
 - SHALL time out and not be accepted after the times specified in Sections [4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth) (depending on AAL).
 - SHALL not be available to insecure communications between the host and user endpoint; authenticated sessions SHALL not fall back to an insecure transport, such as from https to http, following authentication.
 
-URLs or POST content SHALL contain a session identifier that SHALL be verified by the relying party to ensure that actions taken outside the session do not affect the protected session.
+URLs or POST content SHALL contain a session identifier that SHALL be verified by the RP to ensure that actions taken outside the session do not affect the protected session.
 
 There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology.
 
