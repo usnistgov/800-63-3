@@ -22,11 +22,11 @@ This technical guideline applies to digital authentication of subjects to system
 
 The strength of an authentication transaction is characterized by an ordinal measurement known as the AAL. Stronger authentication (a higher AAL) requires a higher level of capabilities or resources on the part of an attacker in order to successfully authenticate, effectively reducing the risk of an authentication error.  A high-level summary of the technical requirements for each of the authenticator assurance levels is provided below; see [Section 4](#sec4) and [5](#sec5) of this document for specific normative requirements.
 
-**Authenticator Assurance Level 1** - AAL 1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL 1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
+**Authenticator Assurance Level 1** - AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
-**Authenticator Assurance Level 2** - AAL 2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL 2 and above.
+**Authenticator Assurance Level 2** - AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL2 and above.
 
-**Authenticator Assurance Level 3** - AAL 3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL 3 is based on proof of possession of a key through a cryptographic protocol. AAL 3 is like AAL 2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
+**Authenticator Assurance Level 3** - AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
 The following table states which sections of the document are normative and which are informative:
 
