@@ -192,7 +192,7 @@ Any memorized secret used by the authenticator for activation SHALL be at least 
 
 The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after a password has been generated.
 
-#### 5.1.5.2. Multi-Factor OTP Verifiers
+#### 5.1.5.2. Multi-factor OTP Verifiers
 
 Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but without the requirement that a second factor be provided. As such, the symmetric keys used by authenticators SHALL be strongly protected against compromise.
 
