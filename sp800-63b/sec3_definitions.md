@@ -94,7 +94,7 @@ A vulnerability that allows attackers to inject malicious code into an otherwise
 #### Cryptographic Key
 A value used to control cryptographic operations, such as decryption, encryption, signature generation or signature verification. For the purposes of this document, key requirements shall meet the minimum requirements stated in Table 2 of NIST SP 800-57 Part 1.
 
-See also Asymmetric keys, Symmetric key.
+See also Asymmetric Keys, Symmetric Key.
 
 #### Cryptographic Authenticator
 An authenticator where the secret is a cryptographic key. A hardware cryptographic authenticator is a cryptographic module containing one or more cryptographic keys.
