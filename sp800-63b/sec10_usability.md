@@ -161,6 +161,7 @@ Usability considerations for typical usage include:
 #### 10.2.6. Single Factor Cryptographic Software
 
 **_Typical Usage_**
+
 Users authenticate by proving possession and control of the cryptographic software key.
 
 Usability considerations for typical usage include:
@@ -170,6 +171,7 @@ Usability considerations for typical usage include:
 #### 10.2.7. Single Factor Cryptographic Device
 
 **_Typical Usage_**
+
 Users authenticate by proving possession of the single-factor cryptographic device.
 
 Usability considerations for typical usage include:
