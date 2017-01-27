@@ -22,7 +22,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 
 <div class="text-center" markdown="1">
 
-**Table 8-1.  Authenticator Threats**
+**Table 8-1  Authenticator Threats**
 
 </div>
 
