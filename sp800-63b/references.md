@@ -34,7 +34,6 @@
 
 <a name="use-and-bio">[NIST Usability]</a> National Institute and Standards and Technology, *Usability & Biometrics, Ensuring Successful Biometric Systems*, June 11, 2008, available at: <http://www.nist.gov/customcf/get_pdf.cfm?pub_id=152184>.
 
-[[UAX 15]](#UAX15)
 <a name="UAX15">[UAX 15]</a> Unicode Consortium, *Unicode Normalization Forms*, Unicode Standard Annex 15, Version 9.0.0, February, 2016, available at: <http://www.unicode.org/reports/tr15/>.
 
 <a name="shannon">[Shannon]</a> Shannon, Claude E. "A Mathematical Theory of Communication," *Bell System Technical Journal*, v. 27, pp. 379-423, 623-656, July, October, 1948.
