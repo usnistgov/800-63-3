@@ -173,9 +173,9 @@ CSPs SHALL NOT use or disclose information about authenticators for any purpose 
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
 
-1. The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of Personally Identifiable Information (PII) to issue or maintain authenticators triggers the requirements of the *Privacy Act of 1974* [[Privacy Act]](#PrivacyAct). 
+1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of Personally Identifiable Information (PII) to issue or maintain authenticators triggers the requirements of the *Privacy Act of 1974* [[Privacy Act]](#PrivacyAct). 
 * The agency SHALL publish a System of Records Notice (SORN) to cover such collections, as applicable. 
-* The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the *E-Government Act of 2002* [[E-Gov]](#E-Gov). 
+* The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to issue or maintain authenticators triggers the requirements of the *E-Government Act of 2002* [[E-Gov]](#E-Gov). 
 * The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
 ### 4.5. Summary of Requirements
