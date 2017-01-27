@@ -59,12 +59,12 @@ AAL1 permits the use of any of the following authenticator types, which are defi
 * Memorized Secret
 * Look-up Secret
 * Out of Band
-* Single Factor One-Time Password (OTP) Device
-* Multi-Factor OTP Device
-* Single Factor Cryptographic Software
-* Single Factor Cryptographic Device
-* Multi-Factor Cryptographic Software
-* Multi-Factor Cryptographic Device
+* Single-factor One-Time Password (OTP) Device
+* Multi-factor OTP Device
+* Single-factor Cryptographic Software
+* Single-factor Cryptographic Device
+* Multi-factor Cryptographic Software
+* Multi-factor Cryptographic Device
 
 #### 4.1.2. Authenticator and Verifier Requirements
 
@@ -96,17 +96,17 @@ At AAL2, it is required to have either a multi-factor authenticator or a combina
 
 When a multi-factor authenticator is used, any of the following may be used:
 
-* Multi-Factor OTP Device
-* Multi-Factor Cryptographic Software
-* Multi-Factor Cryptographic Device
+* Multi-factor OTP Device
+* Multi-factor Cryptographic Software
+* Multi-factor Cryptographic Device
 
 When a combination of two single-factor authenticators is used, it SHALL include a Memorized Secret authenticator and one possession-based ("something you have") authenticator from the following list:
 
 * Look-up Secret
 * Out of Band
-* Single Factor OTP Device
-* Single Factor Cryptographic Software
-* Single Factor Cryptographic Device
+* Single-factor OTP Device
+* Single-factor Cryptographic Software
+* Single-factor Cryptographic Device
 
 > Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use) the device has to be authenticated. Therefore, it is unnecessary to implement another factor with biometrics as the device is "something you have", which serves as a valid second factor of the authenticator. 
 
@@ -140,8 +140,8 @@ AAL3 provides very high confidence that the claimant controls authenticator(s) r
 
 Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
 
-* Multi-Factor Cryptographic Device
-* Single-Factor Cryptographic Device used in conjunction with Memorized Secret
+* Multi-factor Cryptographic Device
+* Single-factor Cryptographic Device used in conjunction with Memorized Secret
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
