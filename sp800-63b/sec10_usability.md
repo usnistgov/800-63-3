@@ -1,4 +1,7 @@
-<a name="sec10"></a><div class="breaker"></div>
+<a name="sec10">
+
+</a><div class="breaker"></div>
+
 ## 10. Usability Considerations
 
 _This section is informative._
