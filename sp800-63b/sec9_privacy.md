@@ -6,7 +6,7 @@
 
 ### 9.1. Privacy Risk Assessment	
 
-Subsections 4.1.6, 4.2.6, and 4.3.6 require the CSP to conduct a privacy risk assessment for records retention. Such a privacy risk assessment would include:
+Sections [4.1.5](#aal1records), [4.2.5](#aal2records), and [4.3.5](#aal3records) require the CSP to conduct a privacy risk assessment for records retention. Such a privacy risk assessment would include:
 
 1. The likelihood that the records retention could create a problem for the subscriber such as invasiveness or unauthorized access to the information
 2.  The impact if a problem did occur
