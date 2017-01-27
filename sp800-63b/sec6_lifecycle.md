@@ -45,7 +45,7 @@ Accordingly, CSPs SHOULD permit the binding of additional authenticators to a su
 
 If the subscriber's account has only one authentication factor bound to it (at IAL1/AAL1), and an additional authenticator of a different authentication factor is to be added, the subscriber MAY request that the account be upgraded to AAL2 (but still at IAL1). Once this has been done, the CSP SHALL no longer permit the subscriber to use single-factor authentication.
 
-Prior to binding the new authenticator, the CSP SHALL first require the subscriber to authenticate at AAL 1. The CSP SHOULD send a notification of the event to the subscriber.
+Prior to binding the new authenticator, the CSP SHALL first require the subscriber to authenticate at AAL1. The CSP SHOULD send a notification of the event to the subscriber.
 
 #### 6.1.2.3. Replacement of Lost Authentication Factor
 
