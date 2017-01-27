@@ -19,9 +19,9 @@ For the first use case above, the management of authenticators issued by derivin
 
 > Note: In some cases, like the PIV smartcard, the authenticator _and_ credential will be revoked.  The individual will typically surrender their authenticator (i.e. the PIV), but since the credential has also been revoked, the PIV is unusable regardless of whether the individual surrenders it or not.  In many consumer use cases, rendering the authenticator unusable is not a desirable outcome. The individual may provide their own authenticator(s), so the CSP will revoke the credential the authenticator is bound to, such that authentication is no longer possible with that CSP; but the authenticator will can be used by the individual at other CSPs.
 
-The following requirements detail how a CSP determines the existence of a enrolled, proofed identity record (i.e. the credential) prior to issuance of a secondary authenticator.  It also lists lifecycle management requirements to keep new authenticators in sync with the primary authenticator.
+The following requirements detail how a CSP determines the existence of an enrolled, proofed identity record (i.e. the credential) prior to issuance of a secondary authenticator.  It also lists lifecycle management requirements to keep new authenticators in sync with the primary authenticator.
 
-## 6.2. General Requirements
+## 6.1. General Requirements
 
 1. The IAL of the credential bound to the new authenticator SHALL be at or below the primary IAL. In most cases the IALs are expected to be the same in order to benefit from the reuse of the original identity proofing event(s).
 1. Before issuance, the CSP SHALL verify the primary authenticator status. The CSP SHALL NOT issue an additional authenticator if status indicates any type of termination, disablement, revocation, or expiration.
@@ -32,12 +32,12 @@ The following requirements detail how a CSP determines the existence of a enroll
 6. The new authenticator type MAY be any type allowable at any AAL, regardless of the AAL of the primary authenticator or the IAL of the bound credential.
 
 
-## 6.3. AAL 2 Requirements
+## 6.2. AAL 2 Requirements
 
 - The CSP SHOULD check the status of the primary authenticator weekly in order to keep all authenticators in sync.
 
 
-## <a name="dc-ial3"></a>6.4. AAL 3 Requirements
+## <a name="dc-ial3"></a>6.3. AAL 3 Requirements
 2. The CSP SHOULD verify in-person that a claimant possesses, controls and can successfully authenticate using the primary authenticator(s).
 1.  The CSP SHOULD perform in-person issuance. This is important if the CSP needs to explicitly provision the authenticator to a trusted device and in-person is the only mechanism to ensure delivery and assurance.
 2. The CSP SHOULD check the status of the primary authenticator daily in order to keep all authenticators in sync.
