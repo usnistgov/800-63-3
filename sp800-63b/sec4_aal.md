@@ -82,7 +82,7 @@ At AAL 1, reauthentication of the subscriber SHOULD be repeated at least once pe
 
 The CSP SHOULD employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
-#### 4.1.5. Records Retention
+#### <a name="aal1records"></a> 4.1.5. Records Retention
 
 The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained.
 
@@ -128,7 +128,7 @@ At AAL 2, authentication of the subscriber SHALL be repeated at least once per 1
 
 The CSP SHOULD employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
-#### 4.2.5. Records Retention
+#### <a name="aal2records"></a> 4.2.5. Records Retention
 
 CSPs shall comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained.
 
@@ -161,7 +161,7 @@ At AAL 3, authentication of the subscriber SHALL be repeated at least once per 1
 
 The CSP SHOULD employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
-#### 4.3.5. Records Retention
+#### <a name="aal3records"></a> 4.3.5. Records Retention
 
 The CSP SHALL comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained.
 
