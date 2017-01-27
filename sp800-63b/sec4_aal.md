@@ -180,7 +180,7 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 ### 4.5. Summary of Requirements
 
-*(Non-normative; refer to preceding sections for normative requirements)*
+*(Informative; refer to preceding sections for normative requirements)*
 
 [Table 4-3](#63bSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
 
