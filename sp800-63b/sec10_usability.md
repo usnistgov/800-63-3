@@ -176,6 +176,7 @@ Usability considerations for typical usage include:
 
 #### 10.2.9. Multi-Factor Cryptographic Device
 **_Typical Usage_**
+
 Users authenticate by proving possession of the multi-factor cryptographic device and control of the protected cryptographic key. The device is activated by a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
 
 Usability considerations for typical usage include:
