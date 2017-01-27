@@ -16,7 +16,7 @@ Digital identity is the unique representation of a subject engaged in an online 
 
 The ongoing authentication of subscribers is central to this process. Subscriber authentication is performed by verifying that the claimant controls one or more *authenticators* (called *tokens* in earlier editions of SP 800-63) associated with a given subscriber. A successful authentication results in the assertion of an identifier, either pseudonymous or non-pseudonymous, and optionally other identity information, to the relying party (RP).
 
-This document provides guidelines on types of authentication processes, including choices of authenticators, that may be used at various *Authenticator Assurance Levels* (AALs). It also provides guidelines on the lifecycle of authenticators, including revocation in the event of loss or theft.
+This document provides recommendations on types of authentication processes, including choices of authenticators, that may be used at various *Authenticator Assurance Levels* (AALs). It also provides recommendations on the lifecycle of authenticators, including revocation in the event of loss or theft.
 
 This technical guideline applies to digital authentication of subjects to systems over a network. It does not primarily address the authentication of a person who is physically present, for example, for access to buildings, although some credentials that are used remotely may also be used in local authentication. This technical guideline also establishes requirements that Federal systems and service providers participating in authentication protocols be authenticated to subscribers.
 
