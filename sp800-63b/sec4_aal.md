@@ -4,7 +4,7 @@
 
 _This section is normative._
 
-In order to satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier that MAY be pseudonymous and that SHALL be used each time that subscriber authenticates to that relying party. Optionally, other attributes that identify the subscriber as a unique subject may also be provided.
+In order to satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier that MAY be pseudonymous and that SHALL be used each time that subscriber authenticates to that RP. Optionally, other attributes that identify the subscriber as a unique subject may also be provided.
 
 Detailed normative requirements for authenticators and verifiers at each AAL are provided in Section 5.
 
