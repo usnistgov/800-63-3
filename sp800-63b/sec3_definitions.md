@@ -267,7 +267,7 @@ An attack enabled by leakage of information from a physical cryptosystem. Timing
 The act of deceiving an individual into revealing sensitive information by associating with the individual to gain confidence and trust.
 
 #### Special Publication (SP)
-A type of publication issued by NIST. Specifically, the Special Publication 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
+A type of publication issued by NIST. Specifically, the SP 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 
 #### Subscriber
 A party who has received a credential bound to an authenticator from a CSP.
