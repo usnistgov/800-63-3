@@ -59,7 +59,7 @@ AAL1 permits the use of any of the following authenticator types, which are defi
 * Memorized Secret
 * Look-up Secret
 * Out of Band
-* Single Factor OTP Device
+* Single Factor One-Time Password (OTP) Device
 * Multi-Factor OTP Device
 * Single Factor Cryptographic Software
 * Single Factor Cryptographic Device
