@@ -30,7 +30,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | **Authenticator Threats/Attacks**  | **Description**  | **Examples** |
 |------------------------------------|------------------|--------------|
 | Theft | A physical authenticator is stolen by an Attacker. | A hardware cryptographic device is stolen. |
-| | | A One-Time Password device is stolen. |
+| | | An OTP device is stolen. |
 | | | A look-up secret authenticator is stolen. |
 | | | A cell phone is stolen. |
 | Duplication | The subscriber's authenticator has been copied with or without their knowledge. | Passwords written on paper are disclosed.
@@ -52,7 +52,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | | A memorized secret is revealed by a subscriber in a telephone inquiry from an attacker masquerading as a system administrator. |
 | | | An out of band secret sent via SMS is received by an attacker who has convinced the mobile operator to redirect the victim's mobile phone to the attacker. |
 | Online guessing | The attacker connects to the verifier online and attempts to guess a valid authenticator output in the context of that verifier. | Online dictionary attacks are used to guess memorized secrets. |
-| | | Online guessing is used to guess authenticator outputs for a one-time password device registered to a legitimate claimant. |
+| | | Online guessing is used to guess authenticator outputs for an OTP device registered to a legitimate claimant. |
 | Endpoint compromise | Malicious code on the endpoint proxies remote access to a connected authenticator without user consent. | A cryptographic authenticator connected to the endpoint is used to authenticate remote attackers. |
 | | Malicious code on the endpoint causes authentication to other than the intended verifier. | Authentication is performed on behalf of an attacker rather than the subscriber.
 | | | A malicious app on the endpoint reads an out of band secret sent via SMS; the attacker uses the secret to authenticate.
@@ -75,7 +75,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.|
 | Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
-| | Maintain situational awareness when entering memorized secrets and one-time passwords to ensure that they cannot be observed by others.
+| | Maintain situational awareness when entering memorized secrets and OTPs to ensure that they cannot be observed by others.
 | | Authenticate over authenticated protected channels (observe lock icon in browser window, for example).
 | | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*.
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
