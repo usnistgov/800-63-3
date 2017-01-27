@@ -13,7 +13,7 @@ Integrating usability into the development process can lead to authentication so
 
 The impact of usability across digital systems needs to be considered as part of the risk assessment when deciding on the Authenticator Assurance Level (AAL) requirements. Authenticators with a higher AAL sometimes offer better usability, and should be allowed for use for lower AAL applications.
 
-Leveraging a federation for authentication can alleviate many of the usability issues, though such an approach has its own tradeoffs, as discussed in NIST SP 800-63C, Federation and Assertions.
+Leveraging a federation for authentication can alleviate many of the usability issues, though such an approach has its own tradeoffs, as discussed in [NIST SP 800-63C, Federation and Assertions](sp800-63c.html).
 
 This section provides general usability considerations and possible implementations, but does not recommend specific solutions. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. Furthermore, usability considerations and their implementation are sensitive to many factors that prevent a one-size-fits-all solution. For example, a font size that works in the desktop computing environment may force text to scroll off of a small OTP device screen. Performing a usability evaluation on the selected authenticator is a critical component of implementation; it's important to conduct evaluations with representative users, realistic goals and tasks, and appropriate contexts of use.
 
