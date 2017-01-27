@@ -14,7 +14,7 @@ Organizations need to be cognizant of the overall implications of their stakehol
 
 Integrating usability into the development process can lead to authentication solutions that are secure and usable while addressing users' authentication needs and organizations' business goals.
 
-The impact of usability across digital systems needs to be considered as part of the risk assessment when deciding on the Authenticator Assurance Level (AAL) requirements. Authenticators with a higher AAL sometimes offer better usability, and should be allowed for use for lower AAL applications.
+The impact of usability across digital systems needs to be considered as part of the risk assessment when deciding on the AAL requirements. Authenticators with a higher AAL sometimes offer better usability, and should be allowed for use for lower AAL applications.
 
 Leveraging a federation for authentication can alleviate many of the usability issues, though such an approach has its own tradeoffs, as discussed in [NIST SP 800-63C, Federation and Assertions](sp800-63c.html).
 
