@@ -42,18 +42,24 @@ Availability of the authenticator: Users need to remember or have their authenti
 Whenever possible (based on AAL requirements), provide users with alternative authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternative authentication options also help address availability issues that may occur with a particular authenticator.
 
 Characteristics of user-facing text:
-* Write user-facing text (e.g., instructions, prompts, notifications, error messages) in plain language for the intended audience. Avoid technical jargon and, typically, write for a 6th to 8th grade literacy level.
-* Consider the legibility of user-facing and user-entered text, including font style, size, color, and contrast with surrounding background. Ilegible text contributes to user entry errors. To enhance legibility, consider the use of:    
 
- *  High contrast, the highest contrast is black on white.  
- *  Sans serif fonts for electronic displays. Serif fonts for printed materials.  
- *  Fonts that clearly distinguish between easily confusable characters (such as the capital letter "O" and the number "0").
- *  A minimum font size of 12 points as long as the text fits for display on the device.
- 
+
+* Write user-facing text (e.g., instructions, prompts, notifications, error messages) in plain language for the intended audience. Avoid technical jargon and, typically, write for a 6th to 8th grade literacy level.
+* Consider the legibility of user-facing and user-entered text, including font style, size, color, and contrast with surrounding background. Ilegible text contributes to user entry errors. To enhance legibility, consider the use of:    
+
+
+ * High contrast, the highest contrast is black on white.  
+ * Sans serif fonts for electronic displays. Serif fonts for printed materials.  
+ * Fonts that clearly distinguish between easily confusable characters (such as the capital letter "O" and the number "0").
+ * A minimum font size of 12 points as long as the text fits for display on the device.
+
+
 User experience during authenticator entry:
-* Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (such as tablets and smartphones) than on traditional desktop computers.
-* Ensure that the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely).
-* Provide clear, meaningful and actionable feedback on entry errors to reduce user confusion and frustration. Significant usability implications arise when users do not know they have entered text incorrectly.
+
+
+* Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (such as tablets and smartphones) than on traditional desktop computers.
+* Ensure that the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely).
+* Provide clear, meaningful and actionable feedback on entry errors to reduce user confusion and frustration. Significant usability implications arise when users do not know they have entered text incorrectly.
 * Allow at least 10 entry attempts for authenticators requiring the entry of the authenticator output by the user. The longer and more complex the entry text, the greater the likelihood of user entry errors.
 * Provide clear, meaningful feedback on number of remaining allowed attempts. For rate limiting (throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.  
 
@@ -104,8 +110,9 @@ Users use the authenticator (physical or electronic record) to look up the appro
 
 Usability considerations for typical usage include:
 
-User experience during entry of look-up secrets.  
-* Consider the prompts' complexity and size. The larger the subset of secrets a user is prompted to look up, the greater the usability implications are, both the cognitive workload and physical difficulty during entry.
+User experience during entry of look-up secrets.
+
+* Consider the prompts' complexity and size. The larger the subset of secrets a user is prompted to look up, the greater the usability implications are, both the cognitive workload and physical difficulty during entry.
 
 #### 10.2.3. Out of Band
 **_Typical Usage_**
@@ -171,7 +178,7 @@ Users authenticate by proving possession of the multi-factor cryptographic devic
 
 Usability considerations for typical usage include:
 
-* Do not require users to keep multi-factor cryptographic devices connected following authentication. Users may forget to disconnect the multi-factor cryptographic device when they are done with it (e.g., forgetting a smartcard in the smartcard reader and walking away from the computer).  
+* Do not require users to keep multi-factor cryptographic devices connected following authentication. Users may forget to disconnect the multi-factor cryptographic device when they are done with it (e.g., forgetting a smartcard in the smartcard reader and walking away from the computer).  
 
  * Users need to be informed regarding whether the multi-factor cryptographic device is required to stay connected or not.  
 
@@ -230,5 +237,5 @@ Across all biometric modalities, usability considerations for intermittent event
 * An alternative authentication method must be available and functioning. In cases where biometrics do not work, allow users to use a memorized secret as an alternative second factor.
 
 Provisions for technical assistance:
-* Clearly communicate information on how and where to acquire technical assistance. For example, provide users information such as a link to online self-service feature and a phone number for help desk support. Ideally, provide sufficient information to enable users to recover from intermittent events on their own without outside intervention.
-* Inform users of factors that may affect the sensitivity of the biometric sensor (e.g., cleanliness of the sensor).
+* Clearly communicate information on how and where to acquire technical assistance. For example, provide users information such as a link to online self-service feature and a phone number for help desk support. Ideally, provide sufficient information to enable users to recover from intermittent events on their own without outside intervention.
+* Inform users of factors that may affect the sensitivity of the biometric sensor (e.g., cleanliness of the sensor).
