@@ -352,13 +352,13 @@ The biometric system SHOULD implement presentation attack protection (PAD). Test
 
 >Note: Presentation attack detection is being considered as a mandatory requirement in future editions of this guideline.
 
-The biometric system SHALL allow no more than 5 consecutive failed authentication attempts or 10 consecutive failed attempts if presentation attack detection meeting the above requirements is implemented. Once that limit has been reached, the biometric authenticator SHALL enforce either
+The biometric system SHALL allow no more than 5 consecutive failed authentication attempts or 10 consecutive failed attempts if presentation attack detection meeting the above requirements is implemented. Once that limit has been reached, the biometric authenticator SHALL either:
 
-a) an exponential increase of this delay, e.g. 1 minute after the 6th+ false attempt, 2 minutes after the 7th+ false attempt, 4 minutes after the 8th+, etc. 
+- Impose a delay of at least 30 seconds before the next attempt, increasing exponentially with each successive attempt, e.g., 1 minute before the following failed attempt, 2 minutes before the second following attempt, etc. 
 
 **OR**
 
-b) disabling the biometric user verification after the 5th (and subsequent) failed attempt and offering another factor (e.g. a different biometric or a PIN/Passcode if it is not already a required factor) if such alternative method is already implemented. 
+- Disable the biometric user verification and offer another factor (a different biometric modality or a PIN/Passcode if it is not already a required factor) if such an alternative method is already implemented. 
 
 Determination of sensor/endpoint performance, integrity, and authenticity can be accomplished in several different ways, any of which are acceptable under this guideline.  These include but are not limited to: authentication of the sensor or endpoint, certification by an approved accreditation authority, or runtime interrogation of signed metadata (e.g., attestation) as described in Section [5.2.4](#attestation).
 
