@@ -383,7 +383,7 @@ Attestation information MAY be used as part of a risk-based authentication decis
 
 #### <a name="verifimpers"></a>5.2.5. Verifier Impersonation Resistance
 
-Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and relying parties to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly man-in-the-middle resistant".
+Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and RPs to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly man-in-the-middle resistant".
 
 Authentication protocols that are verifier impersonation resistant SHALL authenticate the verifier and either:
 
