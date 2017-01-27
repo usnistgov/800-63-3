@@ -37,7 +37,7 @@ Usability considerations for typical usage of all authenticators include:
 
 Provide users information on the use and maintenance of the authenticator. For example, instructions for use (especially if there are different requirements for first-time use or initialization), information on authenticator expiration, and what to do if the authenticator is lost or stolen.
 
-Availability of the authenticator: users need to remember or have their authenticator readily available.
+Availability of the authenticator: Users need to remember or have their authenticator readily available.
 
 Whenever possible (based on AAL requirements), provide users with alternative authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternative authentication options also help address availability issues that may occur with a particular authenticator.
 
@@ -51,15 +51,15 @@ Characteristics of user-facing text:
  *  A minimum font size of 12 points as long as the text fits for display on the device.
  
 User experience during authenticator entry:
-*  Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (such as tablets and smartphones) than on traditional desktop computers.
-*  Ensure that the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely).
-*  Provide clear, meaningful and actionable feedback on entry errors to reduce user confusion and frustration. Significant usability implications arise when users do not know they have entered text incorrectly.
-*  Allow at least 10 entry attempts for authenticators requiring the entry of the authenticator output by the user. The longer and more complex the entry text, the greater the likelihood of user entry errors.
-*  Provide clear, meaningful feedback on number of remaining allowed attempts. For rate limiting (throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.  
+* Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (such as tablets and smartphones) than on traditional desktop computers.
+* Ensure that the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely).
+* Provide clear, meaningful and actionable feedback on entry errors to reduce user confusion and frustration. Significant usability implications arise when users do not know they have entered text incorrectly.
+* Allow at least 10 entry attempts for authenticators requiring the entry of the authenticator output by the user. The longer and more complex the entry text, the greater the likelihood of user entry errors.
+* Provide clear, meaningful feedback on number of remaining allowed attempts. For rate limiting (throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.  
 
 Minimize the impact of form-factor constraints, such as limited touch and display areas on mobile devices:  
-*  Larger touch areas improve usability for text entry since typing on small devices is significantly more error prone and time consuming than typing on a full size keyboard. The smaller the onscreen keyboard, the more difficult it is to type, due to the size of the input mechanism (e.g., a finger) relative to the size of the on-screen target.
-*  Follow good user interface and information design for small displays.
+* Larger touch areas improve usability for text entry since typing on small devices is significantly more error prone and time consuming than typing on a full size keyboard. The smaller the onscreen keyboard, the more difficult it is to type, due to the size of the input mechanism (e.g., a finger) relative to the size of the on-screen target.
+* Follow good user interface and information design for small displays.
 
 Intermittent events include events such as reauthentication, account lock-out, expiration, revocation, damage, loss, theft, and non-functional software.
 
@@ -90,12 +90,12 @@ User experience during entry of the memorized secret.
 
 Usability considerations for intermittent events include when users create and change memorized secrets:  
 
-*  Clearly communicate information on how to create and change memorized secrets.  
-*  Clearly communicate memorized secret requirements, as specified in [Section 5.1.1](#reqauthtype).  
-*  Allow at least 64 characters in length to support the use of passphrases. Encourage users to make memorized secrets as lengthy as they want, using any characters they like (including spaces), thus aiding memorization.  
-*  Do not impose other composition rules (e.g. mixtures of different character types) on memorized secrets.  
-*  Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See [Section 5.1.1](#reqauthtype) for additional information)  
-*  Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a "black list" of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
+* Clearly communicate information on how to create and change memorized secrets.  
+* Clearly communicate memorized secret requirements, as specified in [Section 5.1.1](#reqauthtype).  
+* Allow at least 64 characters in length to support the use of passphrases. Encourage users to make memorized secrets as lengthy as they want, using any characters they like (including spaces), thus aiding memorization.  
+* Do not impose other composition rules (e.g. mixtures of different character types) on memorized secrets.  
+* Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See [Section 5.1.1](#reqauthtype) for additional information)  
+* Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a "black list" of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
 
 #### 10.2.2. Look-up Secrets
 **_Typical Usage_**
@@ -105,7 +105,7 @@ Users use the authenticator (physical or electronic record) to look up the appro
 Usability considerations for typical usage include:
 
 User experience during entry of look-up secrets.  
-*  Consider the prompts' complexity and size. The larger the subset of secrets a user is prompted to look up, the greater the usability implications are, both the cognitive workload and physical difficulty during entry.
+* Consider the prompts' complexity and size. The larger the subset of secrets a user is prompted to look up, the greater the usability implications are, both the cognitive workload and physical difficulty during entry.
 
 #### 10.2.3. Out of Band
 **_Typical Usage_**
@@ -113,9 +113,9 @@ User experience during entry of look-up secrets. 
 Out of band authentication requires users have access to a primary and secondary communication channel.
 
 Usability considerations for typical usage:
-*  Notify users of the receipt of a secret on a locked device. However, if the user locked the out of band device, the user is required to authenticate to the device to access the secret (so that the secret is not displayed on a locked device screen).
-*  Depending on the implementation, consider form-factor constraints as they are particularly problematic when users must enter text on mobile devices. Providing larger touch areas will improve usability for entering secrets on mobile devices.
-*  A better usability option is to offer features that do not require text entry on mobile devices (e.g., a single tap on the screen, or a copy feature so users can copy and paste the out of band secrets). Providing users such features is particularly helpful when the primary and secondary channels are on the same device. For example, it is difficult for users to transfer the authentication secret on a smartphone because they must switch back and forth—potentially multiple times—between the out of band application and the primary channel.
+* Notify users of the receipt of a secret on a locked device. However, if the user locked the out of band device, the user is required to authenticate to the device to access the secret (so that the secret is not displayed on a locked device screen).
+* Depending on the implementation, consider form-factor constraints as they are particularly problematic when users must enter text on mobile devices. Providing larger touch areas will improve usability for entering secrets on mobile devices.
+* A better usability option is to offer features that do not require text entry on mobile devices (e.g., a single tap on the screen, or a copy feature so users can copy and paste the out of band secrets). Providing users such features is particularly helpful when the primary and secondary channels are on the same device. For example, it is difficult for users to transfer the authentication secret on a smartphone because they must switch back and forth—potentially multiple times—between the out of band application and the primary channel.
 
 #### 10.2.4. Single Factor OTP Device
 **_Typical Usage_**
@@ -128,8 +128,8 @@ Authenticator output allows at least one minute between changes, but ideally all
 
 Depending on the implementation, the following are additional usability considerations for implementers:
 
-*  If the single-factor OTP device supplies its output via an electronic interface such as USB, this is preferable since users do not have to manually enter the authenticator output. However, if a physical input (such as pressing a button) is required to operate, the location of the USB ports could pose usability difficulties. For example, the USB ports of some computers are located on the back of the computer and will be difficult for users to reach.
-*  Limited availability of a direct computer interface such as a USB port could pose usability difficulties. For example, the number of USB ports on laptop computers is often very limited; this may force users to unplug other USB peripherals in order to use the single-factor OTP device.
+* If the single-factor OTP device supplies its output via an electronic interface such as USB, this is preferable since users do not have to manually enter the authenticator output. However, if a physical input (such as pressing a button) is required to operate, the location of the USB ports could pose usability difficulties. For example, the USB ports of some computers are located on the back of the computer and will be difficult for users to reach.
+* Limited availability of a direct computer interface such as a USB port could pose usability difficulties. For example, the number of USB ports on laptop computers is often very limited; this may force users to unplug other USB peripherals in order to use the single-factor OTP device.
 
 #### 10.2.5. Multi-Factor OTP Device
 **_Typical Usage_**
@@ -137,16 +137,16 @@ Users access the one-time password generated by the multi-factor OTP device thro
 
 Usability considerations for typical usage include:User experience during manual entry of the authenticator output.  
 
-*  For time-based OTP, provide a grace period in addition to the time during which the OTP is displayed. For example, if the authenticator output changes every minute, allow users the full 2 minutes specified [Section 5.1.4.1](#sfotpa). Users need adequate time to enter the authenticator output (including looking back and forth between the multi-factor OTP device and the entry screen).  
-*  Consider form-factor constraints if users must unlock the multi-factor OTP device via an integral entry pad or enter the authenticator output on mobile devices. Typing on small devices is significantly more error prone and time-consuming than typing on a traditional keyboard. The smaller the integral entry pad and onscreen keyboard, the more difficult it is to type. Providing larger touch areas improves usability for unlocking the multi-factor OTP device or entering the authenticator output on mobile devices.  
-*  Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor OTP device.#### 
+* For time-based OTP, provide a grace period in addition to the time during which the OTP is displayed. For example, if the authenticator output changes every minute, allow users the full 2 minutes specified [Section 5.1.4.1](#sfotpa). Users need adequate time to enter the authenticator output (including looking back and forth between the multi-factor OTP device and the entry screen).  
+* Consider form-factor constraints if users must unlock the multi-factor OTP device via an integral entry pad or enter the authenticator output on mobile devices. Typing on small devices is significantly more error prone and time-consuming than typing on a traditional keyboard. The smaller the integral entry pad and onscreen keyboard, the more difficult it is to type. Providing larger touch areas improves usability for unlocking the multi-factor OTP device or entering the authenticator output on mobile devices.  
+* Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor OTP device.#### 
 
 10.2.6. Single Factor Cryptographic Software
 **_Typical Usage_**
 Users authenticate by proving possession and control of the cryptographic software key.
 
 Usability considerations for typical usage include:
-*  Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users from having to deal with multiple similarly- and ambiguously-named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
+* Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users from having to deal with multiple similarly- and ambiguously-named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
 
 #### 10.2.7. Single Factor Cryptographic Device
 **_Typical Usage_**
@@ -154,8 +154,8 @@ Usability considerations for typical usage include:
 Users authenticate by proving possession of the single-factor cryptographic device.
 
 Usability considerations for typical usage include:
-*  Requiring a physical input (such as pressing a button) to operate the single-factor cryptographic device could pose usability difficulties. For example, some USB ports are located on the back of computers, making it difficult for users to reach.
-*  Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the single-factor cryptographic device.
+* Requiring a physical input (such as pressing a button) to operate the single-factor cryptographic device could pose usability difficulties. For example, some USB ports are located on the back of computers, making it difficult for users to reach.
+* Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the single-factor cryptographic device.
 
 #### 10.2.8. Multi-Factor Cryptographic Software
 **_Typical Usage_**
@@ -163,8 +163,7 @@ Usability considerations for typical usage include:
 In order to authenticate, users prove possession and control of the cryptographic key stored on disk or some other "soft" media that requires activation. The activation is through the input of a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
 
 Usability considerations for typical usage include:
-
-*  Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users from having to deal with multiple similarly- and ambiguously-named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
+* Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users from having to deal with multiple similarly- and ambiguously-named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
 
 #### 10.2.9. Multi-Factor Cryptographic Device
 **_Typical Usage_**
@@ -172,10 +171,12 @@ Users authenticate by proving possession of the multi-factor cryptographic devic
 
 Usability considerations for typical usage include:
 
-*  Do not require users to keep multi-factor cryptographic devices connected following authentication. Users may forget to disconnect the multi-factor cryptographic device when they are done with it (e.g., forgetting a smartcard in the smartcard reader and walking away from the computer).  
- *  Users need to be informed regarding whether the multi-factor cryptographic device is required to stay connected or not.  
-*  Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users being faced with multiple similarly and ambiguously named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices (such as smartphones) may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
-*  Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor cryptographic device.
+* Do not require users to keep multi-factor cryptographic devices connected following authentication. Users may forget to disconnect the multi-factor cryptographic device when they are done with it (e.g., forgetting a smartcard in the smartcard reader and walking away from the computer).  
+
+ * Users need to be informed regarding whether the multi-factor cryptographic device is required to stay connected or not.  
+
+* Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users being faced with multiple similarly and ambiguously named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices (such as smartphones) may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
+* Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor cryptographic device.
 
 ### 10.3. Summary of Usability Considerations
 [Table 10-1](#t10-1) summarizes the usability considerations for typical usage and intermittent events for each authenticator type. Many of the usability considerations for typical usage apply to most of the authenticator types, as demonstrated in the rows. The table highlights common and divergent usability characteristics across the authenticator types. Each column allows readers to easily identify the usability attributes to address for each authenticator. Depending on users' goals and context of use, users may value certain usability attributes over others. Whenever possible, provide alternative authenticator types and allow users to choose between them.
@@ -193,11 +194,11 @@ Although there are other biometric modalities, the following three biometric mod
 
 **_Typical Usage_**
 
-*  For all modalities, user familiarity and practice with the device improves performance.
-*  Device affordances (i.e., properties of a device that allow a user to perform an action), feedback, and clear instructions are critical to a user's success with the biometric device. For example, provide clear instructions on the required actions for liveness detection.
-*  Ideally, users can select the modality they are most comfortable with for their second authentication factor. The user population may be more comfortable and familiar with—and accepting of—some biometric modalities than others.
-*  User experience with biometrics as an activation factor.
-*  Provide clear, meaningful feedback on number of remaining allowed attempts. For example, for rate limiting (throttling), inform users of the time period they have to wait until next attempt to reduce user confusion and frustration.
+* For all modalities, user familiarity and practice with the device improves performance.
+* Device affordances (i.e., properties of a device that allow a user to perform an action), feedback, and clear instructions are critical to a user's success with the biometric device. For example, provide clear instructions on the required actions for liveness detection.
+* Ideally, users can select the modality they are most comfortable with for their second authentication factor. The user population may be more comfortable and familiar with—and accepting of—some biometric modalities than others.
+* User experience with biometrics as an activation factor.
+* Provide clear, meaningful feedback on number of remaining allowed attempts. For example, for rate limiting (throttling), inform users of the time period they have to wait until next attempt to reduce user confusion and frustration.
 
 Fingerprint Usability Considerations:
 
@@ -207,26 +208,26 @@ Fingerprint Usability Considerations:
 
 Face Usability Considerations:
 
-*  Users have to remember whether they wore any artifacts, such as glasses, during enrollment because it affects facial recognition accuracy.
-*  Differences in environmental lighting conditions can affect facial recognition accuracy.
-*  Facial poses affect facial recognition accuracy (e.g., smiling versus neutral expression).  
+* Users have to remember whether they wore any artifacts, such as glasses, during enrollment because it affects facial recognition accuracy.
+* Differences in environmental lighting conditions can affect facial recognition accuracy.
+* Facial poses affect facial recognition accuracy (e.g., smiling versus neutral expression).  
 
 Iris Usability Considerations:
 
-*  Users wearing colored contacts may affect the iris recognition accuracy.
-*  Users who have had eye surgery may need to re-enroll post-surgery.
-*  Differences in environmental lighting conditions can affect iris recognition accuracy, especially for certain iris colors.
+* Users wearing colored contacts may affect the iris recognition accuracy.
+* Users who have had eye surgery may need to re-enroll post-surgery.
+* Differences in environmental lighting conditions can affect iris recognition accuracy, especially for certain iris colors.
 
 **_Intermittent Events_**
 
 As biometrics are only permitted as a second factor for multi-factor authentication, usability considerations for intermittent events with the primary factor still apply. Intermittent events with biometrics use include, but are not limited to, the following, which may affect recognition accuracy:
 
-*  If users injure their enrolled finger(s), fingerprint recognition may not work. Fingerprint authentication will be difficult for users with degraded fingerprints.
-*  The time elapsed between the time of facial recognition for authentication and the time of the initial enrollment can affect recognition accuracy as a user's face changes naturally over time. A user's weight change may also be a factor.
-*  Iris recognition may not work for people who had eye surgery, unless they re-enroll.
+* If users injure their enrolled finger(s), fingerprint recognition may not work. Fingerprint authentication will be difficult for users with degraded fingerprints.
+* The time elapsed between the time of facial recognition for authentication and the time of the initial enrollment can affect recognition accuracy as a user's face changes naturally over time. A user's weight change may also be a factor.
+* Iris recognition may not work for people who had eye surgery, unless they re-enroll.
 
 Across all biometric modalities, usability considerations for intermittent events include:
-*  An alternative authentication method must be available and functioning. In cases where biometrics do not work, allow users to use a memorized secret as an alternative second factor.
+* An alternative authentication method must be available and functioning. In cases where biometrics do not work, allow users to use a memorized secret as an alternative second factor.
 
 Provisions for technical assistance:
 * Clearly communicate information on how and where to acquire technical assistance. For example, provide users information such as a link to online self-service feature and a phone number for help desk support. Ideally, provide sufficient information to enable users to recover from intermittent events on their own without outside intervention.
