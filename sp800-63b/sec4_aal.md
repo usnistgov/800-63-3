@@ -10,7 +10,7 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
-[Table 4-1](#63bSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Authenticator Assurance Levels.
+[Table 4-1](#63bSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding AALs.
 
 <a name="63bSec4-Table1"></a>
 
@@ -182,7 +182,7 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 *(Informative; refer to preceding sections for normative requirements)*
 
-[Table 4-3](#63bSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
+[Table 4-3](#63bSec4-Table3) summarizes the requirements for each of the AALs:
 
 <a name="63bSec4-Table3"></a>
 
