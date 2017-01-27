@@ -1,73 +1,100 @@
 <div class="breaker"></div>
+
 <a name="sec10"></a>
 
 ## 10. Usability Considerations
 
-*This section is informative.*
+[ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use."  This definition focuses on users, goals, and context of use as key elements necessary for achieving effectiveness, efficiency and satisfaction. A holistic approach considering these key elements is necessary to achieve usability.
 
-[ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, goals, and context of use as key elements necessary for achieving effectiveness, efficiency and satisfaction. A holistic approach considering these key elements is necessary to achieve usability. This section addresses the usability considerations that have been identified with federated identity systems.   
+From the usability perspective, one of the major potential benefits of federated identity systems is to address the problem of user fatigue associated with managing multiple authenticators. While this has historically been a problem with usernames and passwords, as the market evolves, users having to manage many authenticators—whether physical or digital—presents a usability challenge.
 
-One of the major potential usability benefits of federated identity systems is to address the problem of individuals needing to maintain too many authenticators, such as multiple user names and passwords. While other authentication methods have been extensively researched and have well-established usability guidelines, federated identity is more nascent and therefore lacks deep and conclusive research findings. It is very much an active research topic in the usability domain. As the field matures, usability guidelines for federated identity systems will have stronger supporting data. 
+While many other approaches to authentication have been researched extensively and have well-established usability guidelines, federated identity is more nascent and therefore lacks the depth and conclusiveness of research findings. As ongoing usability research matures, usability guidelines for federated identity systems will have stronger supporting data.
+
+As stated in the usability sections in 800-63A and 800-63B, overall user experience is critical to the success of any authentication method. This is especially true for federated identity systems since federation is a less familiar user interaction paradigm for many users.  Users' prior authentication experience may influence their expectations.
+
+The overall user experience with federated identity systems should be as smooth and easy as possible, by following usability standards (such as the ISO 25060 series of standards) and established best practices for user interaction design.
 
 
-A well-planned and executed user experience is critical to the success of any authentication method. The overall user experience with federated identity systems should be as smooth and easy as possible, without undermining a user's ability to understand how their data are being treated and by whom. Federated identity systems should:  
-
--  Minimize user burden (e.g., frustration, learning curve).
--  Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms CSP and RP).
--  Provide clear, honest, and meaningful communications to users (e.g., notices of information flow should be explicit and easy to understand).
--  Use graphics and illustrations to help users form complete and accurate mental models of federated identity systems.
-
-To ensure success of federated identity systems from users' perspectives, it is imperative that iterative and continuous usability evaluations are performed with representative users and realistic tasks in an appropriate context.
 
 ##### ASSUMPTIONS 
+In this section, the term "users" means "claimants" or "subscribers."
+Guidelines and considerations are described from the users' perspective.
 
-In this section, the term "users" means "subscribers" or "claimants." This section describes usability themes from users' perspectives, as usability can only be considered from the users' perspective.
+Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans.
 
-Accessibility and usability differ significantly; accessibility is out of scope for this section. The organizations and agencies participating in the federation can address accessibility in its implementation plans and can consult other federal guidance for best practices. 
+### 10.1. General Usability Considerations 
 
-### 10.1. Considerations
+Federated identity systems should:
 
-The following sections provide recommended practices to enhance the user experience of federated identity systems.  The primary goal of these recommendations is to alleviate the potential for friction and user drop-off that could be caused by the possible confusion created when an RP needs to redirect control from their site to an IdP.  A good user experience may also result in increased demand of federation by users, triggering increased adoption by RPs. 
+* Minimize user burden (e.g., frustration, learning curve)
+	* Minimize the number of user actions required.
+	* Allow users to quickly and easily select among multiple accounts with a single IdP. For example, approaches such as [Account Chooser](#http://openid.net/wg/ac/) allow users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdP's.
+* Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms IdP and RP if the basic concepts are clearly explained).
+* Strive for a consistent and integrated user experience across the IdP and RP.
+* Help users establish an understanding of identity by providing resources to users such as graphics, illustrations, FAQs, tutorials and examples. Resources  should explain how users' information is treated and how transacting parties (e.g., RPs, IdPs, and brokers) relate to each other.
+* Provide clear, honest and meaningful communications to users (e.g., communications should be explicit and easy to understand).
+* Provide users online services independent of location and device.
+* Make trust relationships explicit to users to facilitate informed trust decisions. Trust relationships are often dynamic and context dependent. For example, users may be more likely to trust some IdPs and RPs with certain attributes or transactions more so than others. For example, users may be more hesitant to use federated identity systems on websites that contain valuable personal information (such as financial or health); and depending on the perceived sensitivity of users' personal data, users may be less comfortable with social network providers as IdPs since people are often concerned with the broadcasting nature of social networking implementations.
+* Follow the usability considerations specified in 800-63A, Section 9 for any user-facing information.
+* Clearly communicate how and where to acquire technical assistance. For example, provide users with information such as a link to an online self-service feature, chat sessions or a phone number for help desk support. Avoid redirecting users back and forth among transacting parties (e.g., RPs, IdPs, and brokers) to receive technical assistance.
+* Perform interative and continuous usability evaluations with representative users and realistic tasks in an appropriate context to ensure success of federated identity systems from the users' perspectives.
 
-This section is organized by the functional elements a user may encounter when interacting with a federated identity system.  These elements are:  
 
-1.	Authentication requests - the end-to-end process by which an RP requests that a user select and authenticate with an external IdP;
-2.	Choosing from multiple accounts - the scenario in which a user or group of users has multiple federated accounts from which to select;
-3.	Attribute Sharing - the specific user experience recommendations when the RP is requesting attributes;
-4.	Lifecycle Management - the functions available to the users to manage their account, consent, and relationships at the IdP.
+### 10.2. Specific Usability Considerations
 
-#### 10.1.1. Authentication Requests
+This section addresses the usability considerations that have been identified with federated identity systems. This section does not attempt to present exhaustive coverage of all usability factors related to federated identity systems; rather it is focused on the larger, more pervasive themes in the usability literature, primarily users' perspectives on identity, user adoption, trust, and perceptions of federated identity space. In some cases, implementation examples are provided. However, specific solutions are not prescribed. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. See standards for system design and coding, specifications, APIs, and current best practices (such as OpenID and OAuth) for additional examples. Implementations are sensitive to many factors that prevent a one-size-fits-all solution.  
 
-Federated identity systems typically redirect the user from the RP to the IdP, and back again. This could be jarring to users for various reasons.  They may think the redirects are the result of a malicious entity.  Or they may be concerned about leaving one domain for another, especially if the root domain changes (e.g., .gov to .com).  In addition, RPs may be concerned with branding and any friction that may keep a user from executing their intended transaction.  The following list considers tactics that can be employed to resolve negative user experience; in addition, these techniques could facilitate RP acceptance of temporarily turning control of the user experience to the IdP as the authentication request proceeds. Possible considerations include:  
+#### 10.1.1. User Perspectives on Online Identity
 
-1.	Users will benefit from a simple understanding of how federated identity works to make informed trust decisions. As with all user-facing text, clearly explaining to users in plain language that is easy to understand, and avoiding technical jargon - as specified in [800-63A, Section 9](sp800-63a.html#sec9) - will positively impact their decision-making process to proceed within a federated environment.
-2.	Leverage standards, specifications, and APIs that embed user experience considerations in, rather than those that shift user experience out of the technical integration between IdP and RP. For example, OpenID Connect requires user consent to release attributes and has accommodations for joint branding of the login and consent screen.
-3.	The IdP user interface (UI) should be as simple as possible, and leverage modern techniques to seamlessly appear to be part of the SP application.
-4. If the user does not have an account with any available IdPs, it could help to walk a user through the available options and help determine the most appropriate CSP for their needs. 
-4.	Display the URL of the IdP so that the user has visual assurance that he or she is not being phished by a malicious site.
-5.	Display RP branding within the IdP UI.  It is appealing to the users to have visual confirmation (via branding) to know they are logging in with their IdP (per #4 above) for access to the destination RP.  For example, a dialog box with the SP logo could read "You are authenticating to gain access to SP.gov."
+Even when users are familiar with federated identity systems, there are different approaches to federated identity, especially in terms of privacy and the sharing of information, that make it necessary to establish reliable expectations for how users' data are treated. Users and implementers have different concepts of identity. Users think of identity as logging in  and gaining access to their own private space. Implementers think of identity in terms of authenticators and assertions, assurance levels, and the necessary set of identity attributes to provide a service.  Given this disconnect between users' and implementers' concepts of identity, it is essential to help users form an accurate concept of identity as it applies to federated identity systems. A good model of identity provides users a foundation for understanding the benefits and risks of federated systems and encourage user adoption and trust of these systems.
 
-#### 10.1.2. Multiple Accounts
+Many properties of identity have implications for how users manage identities both within and among federations. Just as users manage multiple identities based on context outside of cyberspace, users must learn to manage their identity in a federated environment. Therefore, it must be clear to users how identity and context are used.
 
-It is possible that a user may maintain multiple accounts at a single IdP, or in some cases, have a shared household computer where multiple people have accounts at the same IdP. The IdP is encouraged to consider approaches such as [Account Chooser](http://openid.net/wg/ac/). Account chooser allows users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdPs.  Techniques such as this limit the burden on a user to select the correct account, and IdP, to use in each transaction.  This avoids unnecessary click-throughs for the user to ultimately select the IdP he or she wants as well as the account he or she wants to use for a given RP transaction.
 
-#### 10.1.3. Attribute Sharing
+* Provide users the requisite context and scope in order to distinguish among different user roles. For example, whether the user is acting on their own behalf, or on behalf of another, such as their employer.
+* Provide users unique, meaningful, and descriptive identifiers to distinguish among entities.
+* Provide users with information on data ownership and those authorized to make changes. Identities, and the data associated with them, can sometimes be updated and changed by multiple actors. For example, some healthcare data is updated and owned the patient, while some is only updated by a hospital or doctor's practice.
+* Provide users with the ability to easily verify, view and update attributes.  Identities and user roles are dynamic and not static, thus change over time, e.g., age, health, and financial data.
+* Provide users means for updating data even if the associated entity no longer exists.
+* Provide users means to delete their identities completely, removing all information about the user, to include transaction history.
+* Provide users appropriate anonymity and pseudonymity options and the ability to switch among such identity options as desired.
+* Provide means for users to manage each IdP to RP connection, to include complete separation as well as the removal of RP access to one or more attributes.
 
-In some cases, an RP will request user attributes from the IdP to provide access to certain pages or transactions.  Some considerations for attribute release include:  
+#### 10.1.2. User Perspectives of Trust and Benefits
 
-1.  To build trust, give users control of the disclosure of their information and ask for their explicit consent through the appropriate use of notifications (see [Section 9.2, Notice and Consent](#notice)).
-2. Collect information for constrained usage only, and minimize information disclosure (see [Section 9.3, Data Minimization](#minimization). Superfluous information collection and disclosure or user tracking may erode user trust.  
-3. Ask for user consent to which attributes and attribute values are released to ensure their veracity. Partial or complete masking of attribute values is required. It is recommended that the unmasking capability uses UI elements that encourage only temporary unmasking (for example, text that is available via a mouse hover or a context sensitive popup).  Unmasking on the same page as the masked data is discouraged (see [Section 6](#sec6)).
-4. Enable users to consent to a partial list of attributes, rather than an all or nothing approach.  Similarly, RPs are encouraged to allow some degree of online access even if the user does not consent to share all information.
-5. Base attribute sharing on the transaction being requested, not on all possible transactions a user may or may not access at the RP.
-6. Do not display system generated attributes such as a pairwise pseudonymous identifier (not to be confused with system derived attribute claims, such as 'older than' derived from 'date of birth'), to users, even if it is shared with the RP as part of the authentication response.  If these types of attributes are visible to the user, display them in a portion of the UI that is separated from actual user attributes such as name or email. Additionally, provide a user-friendly description of the attributes to avoid confusion. Toggle this information on/off, via a UI control such as a check box, with the default as 'off,' so the user has to explicitly select whether to review this information (see SP 800-53C [Section 6](#sec6) and [Section 9](#sec9)).
-7. Use standards, such as OAuth or OpenID Connect, that build attribute consent into the protocol - so they're not a feature external to the federated transaction.
-8. Provide easy to find redress methods (see [Section 6](#sec6) for more details) such that a user can recover from invalid attribute information claimed by the IdP.
-9. Limit the number of times a user will need to consent to the release of attributes. Upon first access it is normal to request consent; on subsequent access attempts to the same RP, consent is not needed, provided the IdP offers appropriate lifecycle management functions as discussed in [Section 10.1.4](#lifecycle).
 
-#### <a name="lifecycle"></a> 10.1.4. Lifecycle Management
+Many factors can influence user adoption of federated identity systems. As with any technology, users may value some factors more than others. Users often weigh perceived benefits versus risks before making technology adoption decisions. It is critical that IdPs and RPs provide users with sufficient information to enable them to make informed adoption decisions. The concepts of trust, and tiers of trust, fundamental principles in federated identity systems, can drive user adoption. Finally, a positive user experience may also result in increased demand of federation by users, triggering increased adoption by RPs.
 
-Users should be able to manage the relationship between their identity at an IdP and its linkage to an RP. An IdP may provide functionality to manage this relationship  as a simple and easy to use account setting - rather than something that is difficult to find or access, or requires phone or in-person interaction. An IdP should consider the following:  
+This sub-section is focused primarily on user trust and user perceptions of benefits versus risks.
 
-1.	Allows users to manage each IdP to RP connection, to include complete separation as well as the removal of RP access to one or more attributes.
-2. Allow users to delete their identities completely, removing all information about the user, to include transaction history.
+To encourage user adoption, IdPs and RPs need to establish and build trust with users and provide them with an understanding of the benefits and risks of adoption.
+
+
+* Allow users to control their information disclosure and provide explicit consent through the appropriate use of notifications (see SP 800-63C, Section 9.2, Notice and Consent). Balancing the content, size, and frequency of notifications is necessary to avoid thoughtless user click-through.
+	* For attribute sharing, consider the following:
+		* Provide a means for users to verify those attributes and attribute values that will be shared. Follow good security practices see [SP 800-63C, Section 6, Assertion Presentation](#sec6).
+		* Enable users to consent to a partial list of attributes, rather than an all or nothing approach. Allow users some degree of online access, even if the user does not consent to share all information.
+		* Allow users to update their consent to the list of attributes shared.
+		* Minimize unnecessary information presented to users. For example, do not display system generated attributes such as  pairwise pseudonymous identifiers, even if they are shared with the RP as part of the authentication response.
+		* Minimize user steps and navigation. For example, build attribute consent into the protocols—so they're not a feature external to the federated transaction. Examples can be found in standards such as OAuth or OpenID Connect.
+		* Provide effective and efficient redress methods such that a user can recover from invalid attribute information claimed by the IdP (see [Section 6. Assertion Presentation](# #sec6)).
+		* Minimize the number of times a user is required to consent to attribute sharing. Balancing the frequency of consent requests avoids user frustration with multiple requests to share the same attribute.
+* Collect information for constrained usage only, and minimize information disclosure see [SP 800-63C, Section 9.3, Data Minimization](#sec9). Unnecessary and superfluous information collection and disclosure or user tracking without explicit user consent erodes user trust. For example, only request attributes from the user that are relevant for the current transaction, not for all possible transactions a user may or may not access at the RP.
+* Clearly and honestly communicate potential benefits and risks of using federated identity to users. Benefits that users value include those such as time savings, ease of use, reduced number of passwords to manage, and increased convenience.
+
+User concern over risk can negatively influence willingness to adopt federated identity systems. Users may have trust concerns, privacy concerns, security concerns, and single-point-of-failure concerns. For example, users may be fearful of losing access to multiple accounts if a single IdP is unavailable, either temporarily or permanently. Additionally, users may be concerned or confused about learning a new authentication paradigm. User perception of benefits must outweigh risk perception in order to foster adoption of federated identity systems. 
+
+#### 10.1.3. User Models and Beliefs
+
+Users beliefs and perceptions predispose them to expect certain results and behave in certain ways. Such beliefs, perceptions, and predispositions are referred to in the social sciences as mental models. For example, people have a mental model of dining out which guides their behavior and expectations at each establishment, such as fast food restaurants, cafeterias, and more formal restaurants. Thus, it is not necessary to be familiar with every establishment to understand how to interact appropriately at each one.
+
+Assisting users in establishing good and complete mental models of federation allows users to generalize beyond a single specific implementation. If federated identity systems are not designed from the users' perspectives, users may form incorrect or incomplete mental models, hence impacting users' willingness for adoption.
+
+* Clearly explain the working relationship and information flow among the transacting parties (e.g., RPs, IdPs, and brokers) to avoid user misconceptions. Use the actual names of the entities in the explanation rather than using the generic terms IdPs and RPs.
+	* Provide prominent visual cues and information so that users understand why seemingly unrelated entities have a working relationship. For example, users may be concerned with mixing online personal activities with government services due to a lack of understanding of the information flow in federated identity systems.
+	* Provide prominent visual cues and information to users about redirection when an RP needs to redirect control from their site to an IdP. For example, display RP branding within the IdP user interface to inform users when they are logging in with their IdP for access to the destination RP.
+* Provide users with clear and usable ways (e.g., visual assurance) to determine the authenticity of the transacting  parties (e.g., RPs, IdPs, and brokers). This will also help to alleviate user concern over leaving one domain for another, especially if the root domain changes (e.g., .gov to .com). For example, display the URL of the IdP so that the user can verify that he or she is not being phished by a malicious site.
+* Provide users with clear information, including visual cues, regarding implicit logins and explicit logouts. Depending on the implementation, logging into a RP with an IdP account may authenticate users to both the IdP and RP. Users may not realize that ending their session with the RP will not necessarily end their session with the IdP; users will need to explicitly "logout" of the IdP. Users require clear information to remind them if explicit logouts are required to end their IdP sessions.
+
+
+
