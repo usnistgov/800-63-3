@@ -137,10 +137,9 @@ FIPS documents are available online through the FIPS home page: <http://www.nist
 #### Hash Function
 A function that maps a bit string of arbitrary length to a fixed length bit string. Approved hash functions satisfy the following properties:
 
-1. (One-way) It is computationally infeasible to find any input that
-                                                                                         maps to any pre-specified output, and
+1. One-way - It is computationally infeasible to find any input that maps to any pre-specified output; and
 
-2. (Collision resistant) It is computationally infeasible to find any two distinct inputs that map to the same output.
+2. Collision resistant - It is computationally infeasible to find any two distinct inputs that map to the same output.
 
 #### Identity
 A set of attributes that uniquely describe a person within a given context.
