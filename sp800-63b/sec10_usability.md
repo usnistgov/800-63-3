@@ -1,6 +1,6 @@
-<a name="sec10">
+<a name="sec10"></a>
 
-</a><div class="breaker"></div>
+<div class="breaker"></div>
 
 ## 10. Usability Considerations
 
