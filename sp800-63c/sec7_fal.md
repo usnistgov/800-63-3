@@ -16,7 +16,7 @@ This table presents different requirements depending on whether the assertion is
 <div class="text-center" markdown="1">
 
 
-**Table 7-1: Federation Assertion Levels**
+**Table 7-1. Federation Assertion Levels**
 
 </div>
 
@@ -38,7 +38,7 @@ If the RP is using a front-channel presentation mechanism (e.g., the OpenID Conn
 
 <div class="text-center" markdown="1">
 
-**Table 7-2: Legacy M-04-04 FAL Requirements**
+**Table 7-2. Legacy M-04-04 FAL Requirements**
 
 </div>
 
@@ -56,7 +56,7 @@ However, [Table 7-3](#63cSec7-Table3) shows the expanded set of FAL's that are a
 
 <div class="text-center" markdown="1">
 
-**Table 7-3: Recommended M-04-04 FAL Requirements**
+**Table 7-3. Recommended M-04-04 FAL Requirements**
 
 </div>
 
