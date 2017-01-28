@@ -19,7 +19,7 @@ In a federation protocol, a three-party relationship is formed between the subsc
 
 </div>
 
-The subscriber authenticates to the IdP as described in [SP 800-63B](sp800-63b.html), and then the result of that authentication event is asserted to the RP across the network. The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 5](#sec5).
+The subscriber authenticates to the IdP as described in [[SP 800-63B]](sp800-63b.html), and then the result of that authentication event is asserted to the RP across the network. The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 5](#sec5).
 
 ### 4.1. Federation Models
 
