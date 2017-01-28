@@ -32,7 +32,7 @@ It is permissible for the CSP to collect additional information in the process o
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
 
-[Table 4-1](#63aSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding Identity Assurance Levels.
+[Table 4-1](#63aSec4-Table1) lists strict adherence to M-04-04 LOAs, mapping the corresponding IALs.
 
 
 <a name="63aSec4-Table1"></a>
@@ -50,7 +50,7 @@ It is permissible for the CSP to collect additional information in the process o
 | 3 | 2 |
 | 4 | 3 |
 
-However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding IAL based on the impact of a proofing failure. Agencies SHALL consider the privacy risks of stronger identity proofing and SHALL NOT select an IAL that is higher than necessary for the business purpose of the digital service.
+However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IALs that are allowable to meet M-04-04 LOAs. Agencies SHALL select the corresponding IAL based on the impact of a proofing failure. Agencies SHALL consider the privacy risks of stronger identity proofing and SHALL NOT select an IAL that is higher than necessary for the business purpose of the digital service.
 
 <a name="63aSec4-Table2"></a>
 
@@ -74,7 +74,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 2. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
 
-3. Collection of personally identifiable information (PII) SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant providing identity evidence based on best available practices for appropriate identity resolution, validation, and verification.
+3. Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant providing identity evidence based on best available practices for appropriate identity resolution, validation, and verification.
 
 4. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether the such attributes are voluntary or mandatory in order to complete the identity proofing transactions and the consequences for not providing the attributes.
 
@@ -92,7 +92,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 	c) The schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
 
-9. All personally identifiable information (PII) collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
+9. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 
 10. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
 
@@ -102,13 +102,13 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 13. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
 
-	a) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.
+	a) The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.
 
- 	b) The agency SHALL publish a System of Records Notice to cover such collections, as applicable.
+ 	b) The agency SHALL publish a System of Records Notice (SORN) to cover such collections, as applicable.
 
- 	c) The agency SHALL consult with their Senior Agency Official for Privacy to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
+ 	c) The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
 
- 	d) The agency SHALL publish a Privacy Impact Assessment to cover such collections, as applicable.
+ 	d) The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collections, as applicable.
 
 ### 4.3. Identity Assurance Level 1
 
@@ -230,13 +230,14 @@ Remote proofing SHALL NOT be allowed.
 
 #### 4.5.7. Biometric Collection
 
-The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) the purposes of non-repudiation and re-proofing.  See [Section 5.2.3](#biometric_use) of SP 800-63B for more detail on biometric collection.
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) the purposes of non-repudiation and re-proofing.  See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
 #### 4.5.8. Security  Controls
 
 The CSP SHOULD employ appropriately tailored security controls from the High baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum requirements associated with the *high* baseline are satisfied.
 
 ### 4.6. Enrollment Code
+
 An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offers the applicant the ability to reestablish binding to their enrollment record.  Binding is not always completed in the same session as the original identity proofing transaction.  
 
 An enrollment code SHALL be comprised of one of the following:
@@ -246,8 +247,6 @@ An enrollment code SHALL be comprised of one of the following:
 
 
 ### 4.7. Summary of Requirements
-
-_This section is informative._
 
 [Table 4-3](#63aSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
 
