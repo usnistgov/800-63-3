@@ -32,16 +32,16 @@ The following requirements detail how a CSP determines the existence of an enrol
 6. The new authenticator type MAY be any type allowable at any AAL, regardless of the AAL of the primary authenticator or the IAL of the bound credential.
 
 
-## 6.2. AAL 2 Requirements
+## 6.2. AAL2 Requirements
 
 - The CSP SHOULD check the status of the primary authenticator weekly in order to keep all authenticators in sync.
 
 
-## <a name="dc-ial3"></a>6.3. AAL 3 Requirements
+## <a name="dc-aal3"></a>6.3. AAL3 Requirements
 2. The CSP SHOULD verify in-person that a claimant possesses, controls and can successfully authenticate using the primary authenticator(s).
 1.  The CSP SHOULD perform in-person issuance. This is important if the CSP needs to explicitly provision the authenticator to a trusted device and in-person is the only mechanism to ensure delivery and assurance.
 2. The CSP SHOULD check the status of the primary authenticator daily in order to keep all authenticators in sync.
-3. The CSP SHALL obtain and verify a copy of a biometric recorded when the primary authenticator was issued. An example of such a biometric is the signed biometric data object, however if the biometric reference is not available from the primary AAL 3 authenticator, it may be obtained elsewhere, as long as its authenticity is assured.
+3. The CSP SHALL obtain and verify a copy of a biometric recorded when the primary authenticator was issued. An example of such a biometric is the signed biometric data object, however if the biometric reference is not available from the primary AAL3 authenticator, it may be obtained elsewhere, as long as its authenticity is assured.
 4. The CSP SHALL compare a fresh biometric sample from the applicant to the reference biometric retained when the primary AAL3 authenticator was issued.
 5. The CSP SHALL determine that the primary authenticator meets all AAL3 requirements.
 

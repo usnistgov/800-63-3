@@ -98,7 +98,7 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
  
 ### 5.3. <a name="CYOA"></a>Selecting the Appropriate xAL
 
-Agency mission and risk tolerance will drive the most advantageous selection of xALs to minimize risk. This could include the selection of an IAL that is lower than the selected AAL. For example, suppose an agency establishes a "health tracker" application. In line with the terms of [EO 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement MFA at AAL 2 or 3. 
+Agency mission and risk tolerance will drive the most advantageous selection of xALs to minimize risk. This could include the selection of an IAL that is lower than the selected AAL. For example, suppose an agency establishes a "health tracker" application. In line with the terms of [EO 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement MFA at AAL2 or AAL3. 
 
 The EO also requires agencies employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know who the user actually is. Therefore, an 'effective proofing process' would be to not proof at all. In the past, an LOA3 assessment would equate to identity proofing the user at IAL2. This is no longer necessary and the agency is discouraged from performing any identity proofing, allowing the user of the health tracker system to be pseudonymous.
 
@@ -176,7 +176,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step2.png" alt="IAL Step 2"/></td>
   </tr>
   <tr>
-   <td>If personal information is needed, the RP needs to determine if validated and verified attributes are required, or if self-asserted attributes are acceptable. If even a single validated and verified attribute is needed, then the provider will need to accept attributes that have been IAL 2 or 3 proofed. Again, the selection of IAL can be short circuited to IAL1 if the agency can deliver the digital service with self-asserted attributes only.</td> 
+   <td>If personal information is needed, the RP needs to determine if validated and verified attributes are required, or if self-asserted attributes are acceptable. If even a single validated and verified attribute is needed, then the provider will need to accept attributes that have been IAL2 or IAL3 proofed. Again, the selection of IAL can be short circuited to IAL1 if the agency can deliver the digital service with self-asserted attributes only.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/ial-step3.png" alt="IAL Step 3"/></td>
