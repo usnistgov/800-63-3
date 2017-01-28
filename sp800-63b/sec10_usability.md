@@ -200,7 +200,7 @@ It is important to note that multi-factor authenticators (e.g., multi-factor OTP
 
 <div class="text-center" markdown="1">
 
-**Table 10-1 Usability Considerations Summary by Authenticator Type**
+**Table 10-1. Usability Considerations Summary by Authenticator Type**
 
 ![](sp800-63b/media/use.png)
 
