@@ -90,7 +90,7 @@ The subscriber SHALL receive explicit notice and be able to provide positive con
 
 ### <a name="privacy-reqs"></a> 4.2. Privacy Requirements
 
-Federation involves the transfer of personal attributes from a third party, the IdP, which is not otherwise involved in a transaction. Federation also potentially gives the IdP broad visibility into subscriber activities. Accordingly, there are specific privacy requirements associated with federation. 
+Federation involves the transfer of personal attributes from a third party, the IdP, that is not otherwise involved in a transaction. Federation also potentially gives the IdP broad visibility into subscriber activities. Accordingly, there are specific privacy requirements associated with federation. 
 
 Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with the privacy interests of subscribers. 
 
