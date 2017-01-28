@@ -9,7 +9,7 @@ Assertions MAY be presented in either a *back-channel* or *front-channel* manner
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
 
-### <a name="sec6-1"></a> 6.1. Back-channel presentation
+### <a name="sec6-1"></a> 6.1. Back-channel Presentation
 
 In the *back-channel* model, the subscriber is given an assertion reference to present to the RP, generally through the front channel. The assertion reference itself contains no information about the subscriber and SHALL be resistant to tampering and fabrication by an attacker. The RP presents the assertion reference to the IdP, usually along with authentication of the RP itself, to fetch the assertion.
 
@@ -18,7 +18,7 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 <div class="text-center" markdown="1">
 ![Figure 1: Back-channel presentation](sp800-63c/media/indirect.png)
 
-**Figure 6-1. Back-channel presentation**
+**Figure 6-1. Back-channel Presentation**
 
 </div>
 
