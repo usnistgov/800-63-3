@@ -405,7 +405,7 @@ In contrast, authenticators that involve the manual entry of an authenticator ou
 
 #### <a name="csp-verifier"></a>5.2.6. Verifier-CSP Communications
 
-In situations where the verifier and CSP are separate entities (as shown by the dotted line in [SP 800-63-3 Figure 4-1](sp800-63-3.html#63Sec4-Figure1)), communications between the verifier and CSP SHALL occur through a mutually-authenticated secure channel (such as a client-authenticated TLS connection) using approved cryptography.
+In situations where the verifier and CSP are separate entities (as shown by the dotted line in [[SP 800-63-3 Figure 4-1]](sp800-63-3.html#63Sec4-Figure1)), communications between the verifier and CSP SHALL occur through a mutually-authenticated secure channel (such as a client-authenticated TLS connection) using approved cryptography.
 
 #### <a name="verifier-secrets"></a>5.2.7. Verifier Compromise Resistance
 
