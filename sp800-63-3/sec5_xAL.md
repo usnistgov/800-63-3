@@ -34,8 +34,8 @@ A summary of each of the identity, authenticator, and federation assurance level
 | Identity Assurance Level |
 |:----------------------|
 | **IAL1** - At IAL1, attributes, if any, are self-asserted or should be treated as self-asserted.|
-| **IAL2** - IAL2 introduces the need for either remote or in-person identity proofing. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
-| **IAL3** - At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
+| **IAL2** - IAL2 introduces the need for either remote or in-person identity proofing. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [[SP 800-63A]](sp800-63a.html).|
+| **IAL3** - At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [[SP 800-63A]](sp800-63a.html).|
 
 |Authenticator Assurance Level|
 |:----------------------|
@@ -209,7 +209,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 #### <a name="FAL_CYOA"></a> 5.3.4. Selecting FAL
 
-All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [SP 800-63C](sp800-63c.html#sec5). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
+All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#sec5). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
 
 RPs should use a back-channel [presentation mechanism](sp800-63c.html#sec6) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. Since the assertion reference is presented by the RP directly to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Furthermore, since the assertion is fetched by the RP directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.
 
