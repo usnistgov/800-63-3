@@ -22,7 +22,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 
 <div class="text-center" markdown="1">
 
-**Table 8-1  Authenticator Threats**
+**Table 8-1.  Authenticator Threats**
 
 </div>
 
@@ -65,7 +65,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 
 <div class="text-center" markdown="1">
 
-**Table 8-2. - Mitigating Authenticator Threats**
+**Table 8-2. Mitigating Authenticator Threats**
 
 </div>
 
