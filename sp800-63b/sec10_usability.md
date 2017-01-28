@@ -21,9 +21,9 @@ Leveraging a federation for authentication can alleviate many of the usability i
 This section provides general usability considerations and possible implementations, but does not recommend specific solutions. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. Furthermore, usability considerations and their implementation are sensitive to many factors that prevent a one-size-fits-all solution. For example, a font size that works in the desktop computing environment may force text to scroll off of a small OTP device screen. Performing a usability evaluation on the selected authenticator is a critical component of implementation; it's important to conduct evaluations with representative users, realistic goals and tasks, and appropriate contexts of use.
 
 ##### ASSUMPTIONS
-In this section, the term "users" means "claimants" or "subscribers.
+In this section, the term "users" means "claimants" or "subscribers."
 
-"Guidelines and considerations are described from the users' perspective.
+Guidelines and considerations are described from the users' perspective.
 
 Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans.
 
@@ -36,13 +36,11 @@ Positive user authentication experiences are integral to the success of an organ
 
 Usability considerations that are applicable to most authenticators are described below. Subsequent sections describe usability considerations that are specific to a particular authenticator.
 
-Usability considerations for typical usage of all authenticators include:
+Usability considerations for typical usage of all authenticators include providing users information on the use and maintenance of the authenticator. For example, instructions for use (especially if there are different requirements for first-time use or initialization), information on authenticator expiration, and what to do if the authenticator is lost or stolen.
 
-Provide users information on the use and maintenance of the authenticator. For example, instructions for use (especially if there are different requirements for first-time use or initialization), information on authenticator expiration, and what to do if the authenticator is lost or stolen.
+Availability of the authenticator should also be considered; Users need to remember or have their authenticator readily available.
 
-Availability of the authenticator; Users need to remember or have their authenticator readily available.
-
-Whenever possible (based on AAL requirements), provide users with alternative authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternative authentication options also help address availability issues that may occur with a particular authenticator.
+Whenever possible (based on AAL requirements), users should be provided with alternative authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternative authentication options also help address availability issues that may occur with a particular authenticator.
 
 Characteristics of user-facing text:
 
