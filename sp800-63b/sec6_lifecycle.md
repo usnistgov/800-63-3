@@ -24,19 +24,19 @@ At IAL2 and above, identifying information is associated with the online identit
 
 Enrollment and binding MAY be broken up into a number of separate physical encounters or electronic transactions. Two electronic transactions are considered to be separate if they are not part of the same protected session. In these cases, the following methods SHALL be used to ensure that the same party acts as applicant throughout the processes:
 
-For remote transactions -
+1. For remote transactions -
 
-1. The applicant SHALL identify themselves in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the applicant's phone number, email address, or postal address of record.	
+  a) The applicant SHALL identify themselves in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the applicant's phone number, email address, or postal address of record.	
 
-2. Long-term authenticator secrets SHALL only be issued to the applicant within a protected session.
+  b) Long-term authenticator secrets SHALL only be issued to the applicant within a protected session.
 
-For physical transactions -
+2. For physical transactions -
 
-1. The applicant SHALL identify themselves in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.	
+  a) The applicant SHALL identify themselves in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.	
 
-2. Temporary secrets SHALL not be reused.
+  b) Temporary secrets SHALL not be reused.
 
-3. If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
+  c) If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
 
 
 #### <a name="post-enroll-bind"></a> 6.1.2. Post-Enrollment Binding
