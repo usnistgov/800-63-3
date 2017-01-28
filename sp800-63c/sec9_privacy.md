@@ -45,7 +45,7 @@ The following table illustrates a spectrum of blinding implementations used in p
 
 <div class="text-center" markdown="1">
 
-**Table 9-1: Federation Proxies**
+**Table 9-1. Federation Proxies**
 
 </div>
 
