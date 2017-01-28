@@ -95,7 +95,7 @@ User experience during entry of the memorized secret.
 
 **_Intermittent Events_**
 
-Usability considerations for intermittent events include when users create and change memorized secrets:  
+The use and changing of memorized secrets are intermittent events. Usability considerations for these events include:  
 
 * Clearly communicate information on how to create and change memorized secrets.  
 * Clearly communicate memorized secret requirements, as specified in [Section 5.1.1](#reqauthtype).  
