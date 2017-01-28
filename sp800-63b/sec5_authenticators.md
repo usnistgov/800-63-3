@@ -321,7 +321,7 @@ When required in the authenticator type descriptions under [Section 5.1](#reqaut
 
 Additional techniques MAY be used to prioritize authentication attempts that are likely to come from the subscriber over those that are more likely to come from an attacker:
 
-- Requiring the claimant to complete a Completely Automated Public Turing test to tell CAPTCHA before attempting authentication.
+- Requiring the claimant to complete a CAPTCHA before attempting authentication.
 
 - Requiring the claimant to wait following a failed attempt for a period of time that is increasing in intervals from, say, 30 seconds to an hour, as the account approaches its maximum allowance for consecutive failed attempts.
 
