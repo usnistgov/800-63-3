@@ -111,6 +111,10 @@ A category that conveys the degree of confidence that the applicant's claimed id
 #### Identity Proofing
 The process by which a CSP and an RA collect and verify information about a person for the purpose of issuing credentials to that person.
 
+#### Identity Provider (IdP)
+
+The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
+
 #### Memorized Secret
 A type of authenticator consisting of a character string that is intended to be memorized or memorizable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
 
