@@ -236,7 +236,7 @@ The CSP SHALL collect and record a biometric sample at the time of proofing (e.g
 
 The CSP SHOULD employ appropriately tailored security controls from the High baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum requirements associated with the *high* baseline are satisfied.
 
-### 4.6. Enrollment Code
+### <a name="enrollmentcode"></a> 4.6. Enrollment Code
 
 An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offers the applicant the ability to reestablish binding to their enrollment record.  Binding is not always completed in the same session as the original identity proofing transaction.  
 
