@@ -5,9 +5,8 @@ description: "Public Comment for Draft NIST Special Publication: SP 800-63-3 Dig
 ---
 <section class="home home-title" markdown="1">
 
-## It's Here!  
+# Digital Identity Guidelines: Public Comment Period
 
-# Digital Identity Guidelines: Public Comment Period  
 # January 30 - March 31, 2017
 
 </section>
