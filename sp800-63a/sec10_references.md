@@ -27,6 +27,8 @@ For The Federal Bridge Certification Authority (FBCA), Version 2.27 (December 2,
 
 <a name="ISO9241-11"></a>[ISO 9241-11] International Organization for Standardization, *Ergonomic requirements for office work with visual display terminals (VDTs) – Part 11: Guidance on Usability*, ISO 9241-11:1998, ISO: Geneva, Switzerland, 1998.
 
+<a name="Section508"></a>[Section 508] Section 508 Law and Related Laws and Policies (January 30, 2017), available at: <https://www.section508.gov/content/learn/laws-and-policies>.
+
 <a name="9397"></a>[EO 9397] *Executive Order 9397, NUMBERING SYSTEM FOR FEDERAL ACCOUNTS RELATING TO INDIVIDUAL PERSONS* (November 22, 1943), available at: <https://www.ssa.gov/foia/html/EO9397.htm>.
 
 <a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53, Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, August 2013 and Errata as of January 2015.
