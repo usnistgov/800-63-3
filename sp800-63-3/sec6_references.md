@@ -14,18 +14,18 @@
 
 <a name="ESIG"></a>[ESIG] Federal CIO Council, *Use of
 Electronic Signatures in Federal Organization Transactions* (January 25, 2013),
-available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf>
+available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf>.
 
 <a name="FISMA"></a>[FISMA] *Federal Information
-Security Management Act*, available at: <http://csrc.nist.gov/drivers/documents/FISMA-final.pdf>
+Security Management Act*, available at: <http://csrc.nist.gov/drivers/documents/FISMA-final.pdf>.
 
-<a name="HSPD-12"></a>[HSPD-12] Department of Homeland Security, *Homeland Security Presidential Directive 12: Policy for a Common Identification Standard for Federal Employees and Contractors* (August 27, 2004), available at: <https://www.dhs.gov/homeland-security-presidential-directive-12>
+<a name="HSPD-12"></a>[HSPD-12] Department of Homeland Security, *Homeland Security Presidential Directive 12: Policy for a Common Identification Standard for Federal Employees and Contractors* (August 27, 2004), available at: <https://www.dhs.gov/homeland-security-presidential-directive-12>.
 
 <a name="M-03-22"></a>[M-03-22] OMB Memorandum M-03-22, *OMB Guidance for Implementing
 the Privacy Provisions of the E-Government Act of 2002* (September 26,
 2003), available at: <http://www.whitehouse.gov/omb/memoranda/m03-22.html>.
 
-<a name="A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource* (July 28, 2016), available at: <https://www.whitehouse.gov/omb/circulars_default>
+<a name="A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource* (July 28, 2016), available at: <https://www.whitehouse.gov/omb/circulars_default>.
 
 <a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30, *Guide for Conducting
 Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf>.
@@ -42,10 +42,10 @@ Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistp
 
 <a name="eIDAS"></a>[eIDAS] European Union, *REGULATION (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL (23 July 2014)*, available at: <http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG>.
 
-<a name="ISO29115"></a>[ISO 29115] International Standards Organization, ISO/IEC 29115 *Information technology -- Security techniques -- Entity authentication assurance framework*, April 1, 2013, available from <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=45138>
+<a name="ISO29115"></a>[ISO 29115] International Standards Organization, ISO/IEC 29115 *Information technology -- Security techniques -- Entity authentication assurance framework*, April 1, 2013, available at: <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=45138>.
 
 <a name="ISO29003"></a>[ISO 29003] International Standards Organization, ISO/IEC DIS 29003 *Information technology -- Security techniques -- Identity proofing* (under development)
 
-<a name="Canada"></a>[Canada] Government of Canada, *Standard on Identity and Credential Assurance*, February 1, 2013, available at: <https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26776>
+<a name="Canada"></a>[Canada] Government of Canada, *Standard on Identity and Credential Assurance*, February 1, 2013, available at: <https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26776>.
 
 <a name="steiner"></a>[Steiner]Steiner, Peter. "On the Internet, nobody knows you're a dog". Cartoon. *The New Yorker* 5 July 1993.

@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-# 9. Usability Considerations
+## 9. Usability Considerations
 
 _This section is informative._
 
@@ -26,7 +26,7 @@ In this section, the term "users" means "applicants" or "subscribers."
 
 Guidelines and considerations are described from the users' perspective. 
 
-Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans. 
+Accessibility differs from usability and is out of scope for this document. [Section 508](#Section508) was enacted to eliminate barriers in information technology and require federal agencies to make their electronic and information technology public content accessible to people with disabilities. Refer to Section 508 law and standards for accessibility guidance.
 
 ### 9.1. General User Experience Considerations During Enrollment and Identity Proofing
 
@@ -92,13 +92,13 @@ Usability considerations specific to the enrollment session include:
     * Phrase KBV questions clearly, as ambiguity can lead to user errors. For example, when asking about a user's social security balance, clearly specify which time period as social security accounts fluctuate. 
 
  * Prior to being asked KBV questions, users must be informed of: 
-	    * The number of allowed attempts and remaining attempt(s).
-	    * The fact that KBV questions will change on subsequent attempts. 
-	    * During the KBV session, provide timeout inactivity warnings prior to timeout. 
+    * The number of allowed attempts and remaining attempt(s).
+    * The fact that KBV questions will change on subsequent attempts. 
+    * During the KBV session, provide timeout inactivity warnings prior to timeout. 
 *   If an enrollment code is issued:
     * Notify users in advance that they will receive an enrollment code, when to expect it, the length of time for which the code is valid, and how it will arrive (e.g., physical mail, SMS, landline telephone, email, or physical mailing address).
     * When an enrollment code is delivered to a user, include instructions on how to use the code, and the length of time for which the code is valid. This is especially important given the short validity timeframes specified in [Section 4.4.1.6](#4-4-1-6). 
-  * If issuing a machine readable optical label, such as a QR Code (see [Section 4.6](#)), provide users with information on how to obtain QR code scanning capabilities (e.g., acceptable QR code applications).
+  * If issuing a machine readable optical label, such as a QR Code (see [Section 4.6](#enrollmentcode)), provide users with information on how to obtain QR code scanning capabilities (e.g., acceptable QR code applications).
     * Inform users that they will be required to repeat the enrollment process if enrollment codes expire or are lost before use. 
 *   At the end of the enrollment session, 
     * If enrollment is successful, send users confirmation regarding the successful enrollment and information on next steps (e.g., when and where to pick up their authenticator, when it will arrive in the mail).
@@ -111,14 +111,20 @@ Usability considerations specific to the enrollment session include:
     * At the start of the enrollment session, inform users that they must not depart during the session, and that their actions must be visible throughout the session.
     * When biometrics are collected during the enrollment session, provide users clear instructions on how to complete the collection process just prior to the process. Verbal instructions with corrective feedback from a live operator are the most effective (e.g., instruct users where the biometric sensor is, when to start, how to interact with the sensor, and when the biometric collection is completed).
 
-* Since remote identity proofing is conducted online, follow general web usability principles. For example, design the user interface to walk users through the enrollment process; reduce users' memory load; make the interface consistent; clearly label sequential steps; make the starting point clear; design to support multiple platforms and device sizes; and make the navigation consistent, easy to find, and easy to follow. 
+* Since remote identity proofing is conducted online, follow general web usability principles. For example: 
+    * Design the user interface to walk users through the enrollment process.
+    * Reduce users' memory load.
+    * Make the interface consistent.
+    * Clearly label sequential steps.
+    * Make the starting point clear.
+    * Design to support multiple platforms and device sizes.
+    * Make the navigation consistent, easy to find, and easy to follow. 
       
 
-####  9.4. Post-Enrollment 
-Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see 800-63-3B, Sections 10.1 through 10.3). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
+###  9.4. Post-Enrollment 
+Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [800-63B, Sections 10.1 through 10.3](sp800-63b.html#usabilitycommon). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
 
 Usability considerations for post-enrollment include:
-
 *   Minimize the amount of time that users wait for their authenticator to arrive. Shorter wait times will allow users to access information systems and services more quickly. 
 *   Inform users whether they need to go to a physical location to pick up their authenticators. The previously identified usability considerations for appointments and reminders still apply. 
 *   Along with the authenticator, give users information relevant to the use and maintenance of the authenticator; this may include instructions for use, especially if there are different requirements for first-time use or initialization, information on authenticator expiration, and what to do if the authenticator is lost or stolen. 
