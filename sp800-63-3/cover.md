@@ -167,9 +167,26 @@ In addition, the authors would like to acknowledge the thought leadership and in
 
 </div>
 
-{::comment}
+
 
 ### Note to Reviewers
+
+The full set of Special Publication 800-63-3 guidelines is a significant update from past revisions.  We encourage a careful and thoughtful review the entire document set; however the following list details the most impactful updates to how agencies accept digital identities or deploy digital identity systems.
+
+1. Levels of Assurance (LOA) is decoupled into individual parts for agencies to select. SP800-63-3 provides guidance on how an agency can accomplish individual assurance level selection based on mission and risk.  The remaining document set details the requirements for each individual assurance level.
+2. Identity proofing, both remote and in-person, has been completely rewritten, adding many new requirements not present in past versions.
+3. Insecure authenticators have been removed, specifically pre-registered knowledge tokens and Out-of-band (OOB) One-time-passwords (OTP) sent to email.
+4. Added new requirements for OOB OTP sent via SMS and VOIP.  Our position remains the same, agencies should be careful about the use of SMS as it does not always prove possesion of something you have, and therefore may not be an appropriate second factor. We removed the term 'deprecated' due to concerns that this term implied 'no longer allowed'. This was not our intent.  Rather we want to signal to agencies that SMS is under serious consideration for removal in future versions - this remains the goal in the public draft version while staying away from terms that have inconsistent usage in industry and the public sector.
+5. Modernized password requirements and applied these requirements consistently across all assurance levels.
+6. Expanded options for use of biometrics while including new requirements when biometrics are used. 
+7. Introduced new authenticators allowable at the highest assurance levels.
+8. Added requirements for Verifier Compromise Resistance (i.e., is my secret safe?) and Authentication Intent (i.e., it really was me, not malware, attempting to authenticate)
+8. Modernized federated assertions, removed cookies as an allowable assertion type, and increased security requirements for assertions.
+9. Added privacy requirements and usability considerations to all assurance levels.
+
+We look forward to your comments and feedback.
+
+{::comment}
 
 ### Note to Readers
 
