@@ -32,6 +32,8 @@
 
 <a name="ISO9241-11"></a>[ISO 9241-11] International Organization for Standardization, *Ergonomic requirements for office work with visual display terminals (VDTs) – Part 11: Guidance on Usability*, ISO 9241-11:1998, ISO: Geneva, Switzerland, 1998.
 
+<a name="Section508"></a>[Section 508] Section 508 Law and Related Laws and Policies (January 30, 2017), available at: <https://www.section508.gov/content/learn/laws-and-policies>.
+
 <a name="use-and-bio"></a>[NIST Usability] National Institute and Standards and Technology, *Usability & Biometrics, Ensuring Successful Biometric Systems*, June 11, 2008, available at: <http://www.nist.gov/customcf/get_pdf.cfm?pub_id=152184>.
 
 <a name="UAX15"></a>[UAX 15] Unicode Consortium, *Unicode Normalization Forms*, Unicode Standard Annex 15, Version 9.0.0, February, 2016, available at: <http://www.unicode.org/reports/tr15/>.
