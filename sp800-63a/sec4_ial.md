@@ -248,6 +248,8 @@ An enrollment code SHALL be comprised of one of the following:
 
 ### 4.7. Summary of Requirements
 
+_This section is informative._
+
 [Table 4-3](#63aSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
 
 <a name="63aSec4-Table3"></a>
