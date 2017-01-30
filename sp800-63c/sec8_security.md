@@ -46,7 +46,7 @@ compromising the integrity or confidentiality of the assertion data. For the pur
 In
 some cases, the subscriber is
 issued some secret information so that they can be recognized by the RP. The knowledge of this information distinguishes the
-subscriber from attackers who wish to impersonate the them. In the
+subscriber from attackers who wish to impersonate them. In the
 case of holder-of-key assertions, this secret could already have been
 established with the IdP prior to the initiation of the assertion
 protocol. In other cases, the IdP will generate a temporary secret

@@ -37,7 +37,7 @@ Federated identity systems should:
 * Make trust relationships explicit to users to facilitate informed trust decisions. Trust relationships are often dynamic and context dependent. For example, users may be more likely to trust some IdPs and RPs with certain attributes or transactions more so than others. For example, users may be more hesitant to use federated identity systems on websites that contain valuable personal information (such as financial or health); and depending on the perceived sensitivity of users' personal data, users may be less comfortable with social network providers as IdPs since people are often concerned with the broadcasting nature of social networking implementations.
 * Follow the usability considerations specified in 800-63A, Section 9 for any user-facing information.
 * Clearly communicate how and where to acquire technical assistance. For example, provide users with information such as a link to an online self-service feature, chat sessions or a phone number for help desk support. Avoid redirecting users back and forth among transacting parties (e.g., RPs, IdPs, and brokers) to receive technical assistance.
-* Perform interative and continuous usability evaluations with representative users and realistic tasks in an appropriate context to ensure success of federated identity systems from the users' perspectives.
+* Perform integrative and continuous usability evaluations with representative users and realistic tasks in an appropriate context to ensure success of federated identity systems from the users' perspectives.
 
 
 ### 10.2. Specific Usability Considerations
@@ -72,21 +72,21 @@ To encourage user adoption, IdPs and RPs need to establish and build trust with 
 
 * Allow users to control their information disclosure and provide explicit consent through the appropriate use of notifications (see SP 800-63C, Section 9.2, Notice and Consent). Balancing the content, size, and frequency of notifications is necessary to avoid thoughtless user click-through.
 	* For attribute sharing, consider the following:
-		* Provide a means for users to verify those attributes and attribute values that will be shared. Follow good security practices see [SP 800-63C, Section 6, Assertion Presentation](#sec6).
+		* Provide a means for users to verify those attributes and attribute values that will be shared. Follow good security practices (see [Section 6](#sec6)).
 		* Enable users to consent to a partial list of attributes, rather than an all or nothing approach. Allow users some degree of online access, even if the user does not consent to share all information.
 		* Allow users to update their consent to the list of attributes shared.
 		* Minimize unnecessary information presented to users. For example, do not display system generated attributes such as  pairwise pseudonymous identifiers, even if they are shared with the RP as part of the authentication response.
 		* Minimize user steps and navigation. For example, build attribute consent into the protocols—so they're not a feature external to the federated transaction. Examples can be found in standards such as OAuth or OpenID Connect.
-		* Provide effective and efficient redress methods such that a user can recover from invalid attribute information claimed by the IdP (see [Section 6. Assertion Presentation](# #sec6)).
+		* Provide effective and efficient redress methods such that a user can recover from invalid attribute information claimed by the IdP (see [Section 6](#sec6)).
 		* Minimize the number of times a user is required to consent to attribute sharing. Balancing the frequency of consent requests avoids user frustration with multiple requests to share the same attribute.
-* Collect information for constrained usage only, and minimize information disclosure see [SP 800-63C, Section 9.3, Data Minimization](#sec9). Unnecessary and superfluous information collection and disclosure or user tracking without explicit user consent erodes user trust. For example, only request attributes from the user that are relevant for the current transaction, not for all possible transactions a user may or may not access at the RP.
-* Clearly and honestly communicate potential benefits and risks of using federated identity to users. Benefits that users value include those such as time savings, ease of use, reduced number of passwords to manage, and increased convenience.
+* Collect information for constrained usage only, and minimize information disclosure (see [Section 9.3](#sec9)). Unnecessary and superfluous information collection and disclosure or user tracking without explicit user consent erodes user trust. For example, only request attributes from the user that are relevant for the current transaction, not for all possible transactions a user may or may not access at the RP.
+* Clearly and honestly communicate potential benefits and risks of using federated identity to users. Benefits that users value include examples such as time savings, ease of use, reduced number of passwords to manage, and increased convenience.
 
 User concern over risk can negatively influence willingness to adopt federated identity systems. Users may have trust concerns, privacy concerns, security concerns, and single-point-of-failure concerns. For example, users may be fearful of losing access to multiple accounts if a single IdP is unavailable, either temporarily or permanently. Additionally, users may be concerned or confused about learning a new authentication paradigm. User perception of benefits must outweigh risk perception in order to foster adoption of federated identity systems. 
 
 #### 10.1.3. User Models and Beliefs
 
-Users beliefs and perceptions predispose them to expect certain results and behave in certain ways. Such beliefs, perceptions, and predispositions are referred to in the social sciences as mental models. For example, people have a mental model of dining out which guides their behavior and expectations at each establishment, such as fast food restaurants, cafeterias, and more formal restaurants. Thus, it is not necessary to be familiar with every establishment to understand how to interact appropriately at each one.
+Users' beliefs and perceptions predispose them to expect certain results and behave in certain ways. Such beliefs, perceptions, and predispositions are referred to in the social sciences as mental models. For example, people have a mental model of dining out which guides their behavior and expectations at each establishment, such as fast food restaurants, cafeterias, and more formal restaurants. Thus, it is not necessary to be familiar with every establishment to understand how to interact appropriately at each one.
 
 Assisting users in establishing good and complete mental models of federation allows users to generalize beyond a single specific implementation. If federated identity systems are not designed from the users' perspectives, users may form incorrect or incomplete mental models, hence impacting users' willingness for adoption.
 

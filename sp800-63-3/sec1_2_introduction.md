@@ -14,7 +14,7 @@ This recommendation and its companion documents, Special Publication (SP) 800-63
 
 *This section is informative.*
 
-Digital identity is the unique representation of a subject engaged in an online transaction. A digital identity is always unique in the context of a digital service, but does not necessarily need to uniquely identify the subject. In other words, accessing a digital service may not mean that the physical representation of the underlying subject is known. Identity proofing establishes that a subject is actually who they claim to be. Digital authentication is the process of determining the validity of one or more authenticators used to claim a digital identity. Authentication establishes a subject attempting to access a digital service is in control of the technologies used to authenticate.  For services in which return visits are applicable, successfully authenticating provides reasonable risk-based assurances that the subject that is accessing the service today is the same as that which accessed the service yesterday. Digital identity presents a technical challenge because this process often involves the proofing of individuals over an open network, and always involves the authentication of individual subjects over an open network to access digital government services. Of which exists multiple opportunities for impersonation and other attacks to fraudelently claim another subjects digital identity.
+Digital identity is the unique representation of a subject engaged in an online transaction. A digital identity is always unique in the context of a digital service, but does not necessarily need to uniquely identify the subject. In other words, accessing a digital service may not mean that the physical representation of the underlying subject is known. Identity proofing establishes that a subject is actually who they claim to be. Digital authentication is the process of determining the validity of one or more authenticators used to claim a digital identity. Authentication establishes a subject attempting to access a digital service is in control of the technologies used to authenticate.  For services in which return visits are applicable, successfully authenticating provides reasonable risk-based assurances that the subject that is accessing the service today is the same as that which accessed the service yesterday. Digital identity presents a technical challenge because this process often involves the proofing of individuals over an open network, and always involves the authentication of individual subjects over an open network to access digital government services. Of which exists multiple opportunities for impersonation and other attacks to fraudulently claim another subject's digital identity.
 
 This recommendation provides technical guidelines
 to agencies to allow a subject to remotely authenticate their identity to a Federal system. This recommendation also provides guidelines for credential service providers (CSPs), verifiers, and relying parties (RPs).
@@ -142,7 +142,7 @@ This document suite focuses on authenticators that are difficult to forge becaus
 
 ### 2.3. How to Use this Suite of SPs
 
-The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the requirements in [SP 800-63A](sp800-63a.html) and [SP 800-63B](sp800-63b.html).  If the CSP also participates in an identity federation, which is generally preferred over use of an RP acting as its own CSP, meeting the requirements of [SP 800-63C](sp800-63c.html) also applies.
+The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there is a significant benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the requirements in [[SP 800-63A]](sp800-63a.html) and [[SP 800-63B]](sp800-63b.html).  If the CSP also participates in an identity federation, which is generally preferred over use of an RP acting as its own CSP, meeting the requirements of [[SP 800-63C]](sp800-63c.html) also applies.
 
 ### 2.4. Relationship to Other Standards and Guidelines
 
@@ -159,10 +159,10 @@ This document has been written to satisfy the needs of federal agencies. However
 SP 800-63|[[eIDAS]](#eIDAS)|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115]](#ISO29115)|[[ISO 29003]](#ISO29003)|[[Canada]](#Canada)
 :---------:|:----:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
 N/A|N/A|N/A|Level 01|N/A|N/A|N/A|N/A
-AAL/IAL 1|Low|Level 1|Level 1|QAA Level 1|LoA 1|LoA 1|IAL/CAL 1
-AAL/IAL 1|Low|Level 2|Level 2|QAA Level 2|LoA 2|LoA 2|IAL/CAL 2
-AAL/IAL 2|Substantial|Level 3|Level 3|QAA Level 3|LoA 3|LoA 3|IAL/CAL 3
-AAL/IAL 3|High|Level 4|N/A2|QAA Level 4|LoA 4|LoA 4|IAL/CAL 4
+AAL/IAL1|Low|Level 1|Level 1|QAA Level 1|LoA 1|LoA 1|IAL/CAL 1
+AAL/IAL1|Low|Level 2|Level 2|QAA Level 2|LoA 2|LoA 2|IAL/CAL 2
+AAL/IAL2|Substantial|Level 3|Level 3|QAA Level 3|LoA 3|LoA 3|IAL/CAL 3
+AAL/IAL3|High|Level 4|N/A2|QAA Level 4|LoA 4|LoA 4|IAL/CAL 4
 
 ### 2.5. Change History
 
