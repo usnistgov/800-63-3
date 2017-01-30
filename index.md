@@ -8,7 +8,7 @@ description: "Public Comment for Draft NIST Special Publication: SP 800-63-3 Dig
 ## It's Here!  
 
 # Digital Identity Guidelines: Public Comment Period  
-# January 30 - March 24, 2017
+# January 30 - March 31, 2017
 
 </section>
 <section class="home home-about" markdown="1">
@@ -37,24 +37,25 @@ And, thanks to the feedback we received during the public preview, we also intro
 |:------:|:-----|
 |All Documents|Renamed SP 800-63 to "Digitial Identity Guidelines"|
 | SP 800-63-3 |Provided decision trees to assist agencies in the selection of assurance levels|
-|SP 800-63A| Included digital identity evidence to be supplied to prove physical identity|
-|SP 800-63B|1. Added Verifier Compromise Resistance (i.e., is my secret safe?)<br>2. Added Authentication Intent (i.e. it really was me, not malware, attempting to authenticate)<br>3. Refined biometrics requirements<br>4. Maintained position on SMS, yet clarified and improved requirements of SMS-based OTP |
-|SP 800-63C|Removed an FAL|
+|SP 800-63A| Included guidance for digital identity evidence to be supplied to prove physical identity|
+|SP 800-63B|1. Added Verifier Compromise Resistance (i.e., is my secret safe?)<br>2. Added Authentication Intent (i.e., it really was me, not malware, attempting to authenticate)<br>3. Refined biometrics requirements<br>4. Clarified and improved requirements and limitations of SMS-based OTP |
+|SP 800-63C|Reduced Federation Assurance Levels from 4 to 3|
 
 ## Why GitHub
 
-Ok, "Why GitHub?" you ask. For us, the choice was relatively straightforward. GitHub has been a mainstay of the development and standards communities for many years now, serving as a space for collaborative interaction, the epicenter for evolving open source software, and an essential component in every coder’s toolkit. It only seemed appropriate for us to engage where so much of our community already congregates and collaborates. 
+Ok, "Why GitHub?" you ask. GitHub has been a mainstay of the development and standards communities for many years now, serving as a space for collaborative interaction, the primary medium for evolving open source software, and an essential component in most coders' toolkits. It only seemed appropriate for us to engage where so much of our community already congregates and collaborates. 
 
-Second, as a platform, GitHub has many unique characteristics that make it attractive as a place to develop this special publication. From its ability to support broad engagement, to excellent version control, and multiple avenues for collecting and receiving input—it is a robust forum suited for drafting the 800-63-3 suite.
+Second, as a platform, GitHub has many unique characteristics that make it attractive as a place to develop this special publication. From its ability to support broad engagement, to excellent version control, and multiple avenues for collecting and receiving input, GitHub is a robust forum suited for drafting the 800-63-3 suite.
 
-Overall, GitHub is the right tool for the job. Agencies, the private sector, and individuals are **STRONGLY** encouraged to collaborate with the team and other public participants via GitHub issues. See [this page](comment_help.html) for details on how to submit a comment to us.  We want to maintain a lean approach, so we are discouraging email and Excel files during this phase. We thank you in advance for your efforts to keep this process streamlined for the editors.
+Overall, NIST believes GitHub is the right tool for the job. Agencies, the private sector, other organizatoins, and individuals are **STRONGLY** encouraged to collaborate with the team and other public participants via GitHub issues. See [this page](comment_help.html) for details on how to submit a comment to us.  We want collaboration to occur in the open to the greatest extent possible. While we appreciate and will accept email, comment matrices, and general feedback during this phase, we prefer specific recommendations through GitHub on how we can improve the product. We thank you in advance for your efforts to keep this process streamlined for the editors.
 
-That said, our use of GitHub is additive to the existing open and transparent process that NIST already follows. If you don't have access to GitHub, or just don't want to use it, fear not.  We will maintain our tradition of offering PDF versions, a comment matrix, and email-based comments - see [this page](http://csrc.nist.gov/publications/PubsDrafts.html#800-63-3) for more details.  However, GitHub remains where we will do our work, so any comments sent to our [email address](mailto:dig-comments@nist.gov) will be posted online, retaining organizational attribution.  This allows us to manage the documents in a single place and remain transparent with the entire community.
+That said, our use of GitHub is additive to the existing open and transparent process that NIST already follows. If you don't have access to GitHub, or just don't want to use it, fear not.  We will maintain our tradition of offering PDF versions, a comment matrix, and email-based comments - see [this page](http://csrc.nist.gov/publications/PubsDrafts.html#800-63-3) for more details.  However, GitHub remains where we will do our work, so any comments sent to our [email address](mailto:dig-comments@nist.gov) will be posted online with organizational attribution.  This allows us to manage the documents in a single place and remain transparent with the entire community.
 
-So have at it!  We're really excited about the changes we've made - we think you will be too!
+So have at it!  We're really excited about the changes we've made and we hope you will be too!
 
 Source information, current standards, and public comments received through May 2015 can be found [here](http://csrc.nist.gov/groups/ST/eauthentication/sp800-63-2_call-comments.html).
 
+You can find links to each volume of draft SP 800-63-3 below.
 
 <ul class="audiences">
 <li>
