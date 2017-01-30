@@ -1,4 +1,4 @@
-## Public Draft Comment Period Now Open!  
+## Public Comment Period Now Open!  
 
 # Digital Identity Guidelines: Public Comment Period  
 # January 31 - March 31, 2017
