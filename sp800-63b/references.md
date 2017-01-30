@@ -46,6 +46,8 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-53">[SP 800-53]</a> NIST Special Publication 800-53, Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, August 2013 and Errata as of January 2015.
 
+<a name="SP800-57P1">[SP 800-57 Part 1]</a> NIST Special Publication 800-57 Part 1, Revision 4, *Recommendation for Key Management, Part 1: General*, January 2016.
+
 <a name="SP800-63C">[SP 800-63C]</a> NIST Special Publication 800-63C, *Assertions and Federation*. ***To be updated at publication***
 
 <a name="SP800-131A">[SP 800-131A]</a> NIST Special Publication 800-131A , *Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths*, Revision 1, November 2015.

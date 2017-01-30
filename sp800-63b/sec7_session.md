@@ -2,9 +2,9 @@
 
 ## 7. Session Management
 
-Once an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in [800-63C](sp800-63c.html), where the authentication event necessarily involves several components and parties coordinating across a network.
+Once an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in [[SP 800-63C]](sp800-63c.html)), where the authentication event necessarily involves several components and parties coordinating across a network.
 
-To facilitate this behavior, a *session* MAY be started in response to an authentication event, and continue the session until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in [Section 7.2](#sessionreauthn), wherein the user repeats some or all of the initial authentication event, thereby re-establishing the session.
+To facilitate this behavior, a *session* MAY be started in response to an authentication event, and continue the session until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in [Section 7.2](#sessionreauthn)), wherein the user repeats some or all of the initial authentication event, thereby re-establishing the session.
 
 Session management is preferable over continual presentation of credentials as the usability requirements of continual presentation often create incentives for workarounds such as cached unlocking credentials, negating the freshness of the authentication event. 
 
