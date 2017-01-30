@@ -147,6 +147,9 @@ A set of attributes that uniquely describe a person within a given context.
 #### Identity Assurance Level (IAL)
 A metric describing degree of confidence that the Applicant's Claimed Identity is their real identity.
 
+#### Identity Provider (IdP)
+The party that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
+
 #### Kerberos
 A widely used authentication protocol developed at MIT. In "classic" Kerberos, users share a secret password with a Key Distribution Center (KDC). The user, Alice, who wishes to communicate with another user, Bob, authenticates to the KDC and is furnished a "ticket" by the KDC to use to authenticate with Bob.
 
@@ -161,8 +164,8 @@ A cryptographic checksum on data that uses a symmetric key to detect both accide
 #### Mobile Code
 Executable code that is normally transferred from its source to another computer system for execution. This transfer is often through the network (e.g., JavaScript embedded in a web page) but may transfer through physical media as well.
 
-#### Multi-factor
-A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+#### Multi-factor Authentication (MFA)
+An authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
 
