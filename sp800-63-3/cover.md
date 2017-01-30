@@ -162,11 +162,9 @@ In addition, the authors would like to acknowledge the thought leadership and in
 
 ### Conformance Testing
 
-</div>
-
-
-
 ### Note to Reviewers
+
+</div>
 
 The Special Publication 800-63-3 suite is a significant update from past revisions.  We encourage a careful and thoughtful review the entire document set; however the following list details the most impactful updates to how agencies accept digital identities or deploy digital identity systems.
 
