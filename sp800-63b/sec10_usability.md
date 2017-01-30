@@ -25,7 +25,7 @@ In this section, the term "users" means "claimants" or "subscribers."
 
 Guidelines and considerations are described from the users' perspective.
 
-Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans.
+Accessibility differs from usability and is out of scope for this document. [Section 508](#Section508) was enacted to eliminate barriers in information technology and require federal agencies to make their electronic and information technology public content accessible to people with disabilities. Refer to Section 508 law and standards for accessibility guidance.
 
 ### <a name="usabilitycommon"></a> 10.1. Usability Considerations Common to Authenticators
 When selecting and implementing an authentication system, consider usability across the entire lifecycle of the selected authenticators (i.e., enrollment and distribution, typical use, and intermittent events), while being mindful of the combination of users, their goals, and context of use.

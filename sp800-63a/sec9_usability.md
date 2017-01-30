@@ -26,7 +26,7 @@ In this section, the term "users" means "applicants" or "subscribers."
 
 Guidelines and considerations are described from the users' perspective. 
 
-Accessibility is out of scope for this section, and can be addressed in an organization's implementation plans. 
+Accessibility differs from usability and is out of scope for this document. [Section 508](#Section508) was enacted to eliminate barriers in information technology and require federal agencies to make their electronic and information technology public content accessible to people with disabilities. Refer to Section 508 law and standards for accessibility guidance.
 
 ### 9.1. General User Experience Considerations During Enrollment and Identity Proofing
 
