@@ -184,7 +184,7 @@ The Special Publication 800-63-3 suite is a significant update from past revisio
 8. Modernized federated assertions, removed cookies as an allowable assertion type, and increased security requirements for assertions.
 9. Added privacy requirements and usability considerations to all assurance levels.
 
-We look forward to your comments and feedback regarding the above, as well as any other areas that may need enhancing.  Our priority remains to offer agencies as many options and techniques as possible to manage risk and offer valuable digital services.
+We look forward to your comments and feedback regarding the above, as well as any other areas that may need improvement or changes.  Our priority remains to offer agencies as many options and techniques as possible to manage risk and offer valuable digital services.
 
 {::comment}
 
