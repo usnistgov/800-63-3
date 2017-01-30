@@ -150,7 +150,7 @@ passwords; PKI.
 
 </div>
 
-The authors gratefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all documents in the suite of SP 800-63-3 guidelines.
+The authors gratefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all documents in the SP 800-63-3 suite.
 
 In addition, the authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 
@@ -164,9 +164,26 @@ In addition, the authors would like to acknowledge the thought leadership and in
 
 </div>
 
-{::comment}
+
 
 ### Note to Reviewers
+
+The Special Publication 800-63-3 suite is a significant update from past revisions.  We encourage a careful and thoughtful review the entire document set; however the following list details the most impactful updates to how agencies accept digital identities or deploy digital identity systems.
+
+1. Levels of Assurance (LOA) is decoupled into individual parts for agencies to select. SP 800-63-3 provides guidance on how an agency can accomplish individual assurance level selection based on mission and risk.  The other documents in the suite detail the requirements for each of the relevant assurance levels.
+2. Identity proofing, both remote and in-person, has been completely rewritten, adding many new requirements not present in past versions.
+3. Insecure authenticators have been removed, specifically pre-registered knowledge tokens and out-of-band (OOB) one-time-passwords (OTP) sent to email.
+4. Added new requirements for OOB OTP sent via SMS and VOIP.  NIST's position remains the same: agencies should be careful about the use of SMS as it does not always prove possesion of something you have, and therefore may not be an appropriate second factor. We removed the term 'deprecated' due to our experience of stakeholders misinterpreting this term to mean 'no longer allowed'. This was not our intent.  Rather, we want to signal to agencies that SMS is under serious consideration for removal in future versions. This public draft avoids the term deprecation for which uses differ in differing contexts, but the upshot of the guideline is unchanged.
+5. Modernized password requirements and applied these requirements consistently across all assurance levels.
+6. Expanded options for use of biometrics while including new requirements when biometrics are used. 
+7. Introduced new authenticators allowable at the highest assurance levels.
+8. Added requirements for Verifier Compromise Resistance (i.e., is my secret safe?) and Authentication Intent (i.e., it really was me, not malware, attempting to authenticate)
+8. Modernized federated assertions, removed cookies as an allowable assertion type, and increased security requirements for assertions.
+9. Added privacy requirements and usability considerations to all assurance levels.
+
+We look forward to your comments and feedback regarding the above, as well as any other areas that may need improvement or changes.  Our priority remains to offer agencies as many options and techniques as possible to manage risk and offer valuable digital services.
+
+{::comment}
 
 ### Note to Readers
 
