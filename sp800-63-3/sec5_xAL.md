@@ -81,7 +81,7 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
 
 <div class="text-center" markdown="1">
 
-**Table 5-2. Acceptable combinations of IAL and AAL**
+**Table 5-2. Acceptable Combinations of IAL and AAL**
 
 </div>
 
@@ -126,7 +126,7 @@ The AAL selection does not mean the digital service provider will need to issue 
 <div class="text-center" markdown="1">
 <img src="sp800-63-3/media/AAL_CYOA.png" alt="AAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
 
-**Figure 5-1 - Selecting AAL**
+**Figure 5-1. Selecting AAL**
 </div>
 
 <div class="text-left" markdown="1">
@@ -160,7 +160,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 <div class="text-center" markdown="1">
 <img src="sp800-63-3/media/IAL_CYOA.png" alt="IAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
 
-**Figure 5-2 - Selecting IAL**
+**Figure 5-2. Selecting IAL**
 </div>
 
 

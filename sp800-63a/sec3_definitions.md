@@ -2,11 +2,11 @@
 
 <div class="breaker"></div>
 
-# 3. Definitions and Abbreviations
+## 3. Definitions and Abbreviations
 
 _This section is informative._
 
-There is a wide variety of terms used in the area of digital identity. While the definitions of many terms are consistent with earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted.
+There is a wide variety of terms used in the area of digital identity. While the definitions of many terms are consistent with earlier versions of Special Publication (SP) 800-63, some have changed in this revision. Since there is no single, consistent definition of many of these terms, careful attention to how the terms are defined here is warranted.
 
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document family for additional definitions and abbreviations specific to their content.
 
@@ -100,7 +100,7 @@ The process by which a CSP collects and verifies information about a person for 
 #### Issuing Source
 An authority that is responsible for the generation of data or documents that can be used as identity evidence.
 
-#### Knowledge Based Verification
+#### Knowledge Based Verification (KBV)
 Identity verification method based on knowledge of private information associated with the claimed identity. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
 
 #### Network

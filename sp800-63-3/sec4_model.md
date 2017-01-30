@@ -51,7 +51,7 @@ As noted above, a CSP maintains status information about the credentials it issu
 <div class="text-center" markdown="1">
 ![](sp800-63-3/media/model.png)
 
-**Figure 4-1 - Digital Identity Model**
+**Figure 4-1. Digital Identity Model**
 </div>
 
 ### 4.2. Enrollment and Identity Proofing
