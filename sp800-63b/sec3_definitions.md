@@ -187,8 +187,11 @@ An attack in which an attacker performs repeated logon trials by guessing possib
 #### Passive Attack
 An attack against an authentication protocol where the attacker intercepts data traveling along the network between the claimant and verifier, but does not alter the data (i.e., eavesdropping).
 
+#### Passphrase
+A passphrase is a memorized secret consisting of a sequence of words or other text that a claimant uses to authenticate their identity. A passphrase is similar to a password in usage, but is generally longer for added security.
+
 #### Password
-A secret that a claimant memorizes and uses to authenticate his or her identity. Passwords are typically character strings.
+A secret that a claimant memorizes and uses to authenticate their identity. Passwords are typically character strings.
 
 #### Personal Identification Number (PIN)
 A password consisting only of decimal digits.
