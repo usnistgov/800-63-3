@@ -256,11 +256,11 @@ For services in which return visits are applicable, a successful authentication 
 
 The three AALs define the subsets of options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of an authenticator and accessing agencies' systems. The AALs are as follows:
 
-**AAL1** - Provides some assurance that the claimant controls the authenticator registered to a subscriber. AAL1 requires at least single-factor authentication using a wide range of available authentication technologies. Successful authentication requires a secure authentication protocol through which the claimant demonstrates possession and control of the authenticator(s).
+**AAL1** - AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
-**AAL2** - Provides high confidence that the claimant controls authenticators registered to a subscriber. In addition to requirements of AAL1, two different authentication factors are required. Approved cryptographic techniques are required at AAL2 and above.
+**AAL2** - Provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through secure authentication protocol(s). Approved cryptographic techniques are required at AAL2 and above.
 
-**AAL3** - Provides very high confidence that the claimant controls the authenticator registered to a subscriber. In addition to requirements for AAL2, authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
+**AAL3** - AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
 [**SP 800-63C Federation and Assertions**](https://pages.nist.gov/800-63-3/sp800-63c.html)
 
