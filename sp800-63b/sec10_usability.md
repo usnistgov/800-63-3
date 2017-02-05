@@ -85,13 +85,13 @@ Usability considerations for typical usage include:
 **_Intermittent Events_**
 
 Usability considerations for intermittent events include:
-  
+
 * When users create and change memorized secrets:
   * Clearly communicate information on how to create and change memorized secrets.  
   * Clearly communicate memorized secret requirements, as specified in [Section 5.1.1](#reqauthtype).  
   * Allow at least 64 characters in length to support the use of passphrases. Encourage users to make memorized secrets as lengthy as they want, using any characters they like (including spaces), thus aiding memorization.  
   * Do not impose other composition rules (e.g. mixtures of different character types) on memorized secrets.  
-  * Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See [Section 5.1.1](#reqauthtype) for additional information)  
+  * Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See [Section 5.1.1](#reqauthtype) for additional information).
 * Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a "black list" of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
 
 #### 10.2.2. Look-up Secrets
