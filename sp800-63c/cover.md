@@ -10,6 +10,7 @@ Paul A. Grassi
 Justin P. Richer  
 Sarah K. Squire  
 James L. Fenton  
+Ellen M. Nadeau  
 
 Privacy Authors:  
 Naomi B. Lefkovitz    
@@ -18,8 +19,7 @@ Jamie M. Danker
 Usability Authors:  
 Yee-Yin Choong      
 Kristen K. Greene      
-Mary F. Theofanos   
-Ellen M. Nadeau    
+Mary F. Theofanos
 
 {::comment}
 
@@ -40,6 +40,7 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 ### Federation and Assertions
 
 Paul A. Grassi  
+Ellen M. Nadeau  
 *Applied Cybersecurity Division  
 Information Technology Laboratory*
 
@@ -71,10 +72,6 @@ Yee-Yin Choong
 Kristen K. Greene  
 Mary F. Theofanos  
 *Information Access Division  
-Information Technology Laboratory*  
-
-Ellen M. Nadeau  
-*Applied Cybersecurity Division  
 Information Technology Laboratory*  
 
 {::comment}
