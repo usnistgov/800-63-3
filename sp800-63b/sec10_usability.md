@@ -43,9 +43,9 @@ Usability considerations for typical usage of all authenticators include:
 * Whenever possible (based on AAL requirements), users should be provided with alternative authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternative authentication options also help address availability issues that may occur with a particular authenticator.
 * Characteristics of user-facing text:
   * Write user-facing text (e.g., instructions, prompts, notifications, error messages) in plain language for the intended audience. Avoid technical jargon and, typically, write for a 6th to 8th grade literacy level.
-  * Consider the legibility of user-facing and user-entered text, including font style, size, color, and contrast with surrounding background. Illegible text contributes to user entry errors. To enhance legibility, consider the use of:    
-    * High contrast, the highest contrast is black on white.  
-    * Sans serif fonts for electronic displays. Serif fonts for printed materials.  
+  * Consider the legibility of user-facing and user-entered text, including font style, size, color, and contrast with surrounding background. Illegible text contributes to user entry errors. To enhance legibility, consider the use of:
+    * High contrast, the highest contrast is black on white.
+    * Sans serif fonts for electronic displays. Serif fonts for printed materials.
     * Fonts that clearly distinguish between easily confusable characters (such as the capital letter "O" and the number "0").
     * A minimum font size of 12 points as long as the text fits for display on the device.
 * User experience during authenticator entry:
@@ -53,8 +53,8 @@ Usability considerations for typical usage of all authenticators include:
   * Ensure that the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely).
   * Provide clear, meaningful and actionable feedback on entry errors to reduce user confusion and frustration. Significant usability implications arise when users do not know they have entered text incorrectly.
   * Allow at least 10 entry attempts for authenticators requiring the entry of the authenticator output by the user. The longer and more complex the entry text, the greater the likelihood of user entry errors.
-  * Provide clear, meaningful feedback on number of remaining allowed attempts. For rate limiting (throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.  
-* Minimize the impact of form-factor constraints, such as limited touch and display areas on mobile devices:  
+  * Provide clear, meaningful feedback on number of remaining allowed attempts. For rate limiting (throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.
+* Minimize the impact of form-factor constraints, such as limited touch and display areas on mobile devices:
   * Larger touch areas improve usability for text entry since typing on small devices is significantly more error prone and time consuming than typing on a full size keyboard. The smaller the onscreen keyboard, the more difficult it is to type, due to the size of the input mechanism (e.g., a finger) relative to the size of the on-screen target.
   * Follow good user interface and information design for small displays.
 
@@ -87,10 +87,10 @@ Usability considerations for typical usage include:
 Usability considerations for intermittent events include:
 
 * When users create and change memorized secrets:
-  * Clearly communicate information on how to create and change memorized secrets.  
-  * Clearly communicate memorized secret requirements, as specified in [Section 5.1.1](#reqauthtype).  
-  * Allow at least 64 characters in length to support the use of passphrases. Encourage users to make memorized secrets as lengthy as they want, using any characters they like (including spaces), thus aiding memorization.  
-  * Do not impose other composition rules (e.g. mixtures of different character types) on memorized secrets.  
+  * Clearly communicate information on how to create and change memorized secrets.
+  * Clearly communicate memorized secret requirements, as specified in [Section 5.1.1](#reqauthtype).
+  * Allow at least 64 characters in length to support the use of passphrases. Encourage users to make memorized secrets as lengthy as they want, using any characters they like (including spaces), thus aiding memorization.
+  * Do not impose other composition rules (e.g. mixtures of different character types) on memorized secrets.
   * Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See [Section 5.1.1](#reqauthtype) for additional information).
 * Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a "black list" of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
 
@@ -134,11 +134,11 @@ Usability considerations for typical usage include:
 
 Users access the OTP generated by the multi-factor OTP device through a second authentication factor. The OTP is typically displayed on the device and the user manually enters it for the verifier. The second authentication factor may be achieved through some kind of integral entry pad to enter a memorized secret, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). Usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
 
-Usability considerations for typical usage include: 
+Usability considerations for typical usage include:
 
-* User experience during manual entry of the authenticator output.  
-  * For time-based OTP, provide a grace period in addition to the time during which the OTP is displayed. For example, if the authenticator output changes every minute, allow users the full 2 minutes specified in [Section 5.1.4.1](#sfotpa). Users need adequate time to enter the authenticator output (including looking back and forth between the multi-factor OTP device and the entry screen).  
-  * Consider form-factor constraints if users must unlock the multi-factor OTP device via an integral entry pad or enter the authenticator output on mobile devices. Typing on small devices is significantly more error prone and time-consuming than typing on a traditional keyboard. The smaller the integral entry pad and onscreen keyboard, the more difficult it is to type. Providing larger touch areas improves usability for unlocking the multi-factor OTP device or entering the authenticator output on mobile devices.  
+* User experience during manual entry of the authenticator output.
+  * For time-based OTP, provide a grace period in addition to the time during which the OTP is displayed. For example, if the authenticator output changes every minute, allow users the full 2 minutes specified in [Section 5.1.4.1](#sfotpa). Users need adequate time to enter the authenticator output (including looking back and forth between the multi-factor OTP device and the entry screen).
+  * Consider form-factor constraints if users must unlock the multi-factor OTP device via an integral entry pad or enter the authenticator output on mobile devices. Typing on small devices is significantly more error prone and time-consuming than typing on a traditional keyboard. The smaller the integral entry pad and onscreen keyboard, the more difficult it is to type. Providing larger touch areas improves usability for unlocking the multi-factor OTP device or entering the authenticator output on mobile devices.
   * Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor OTP device.
 
 #### 10.2.6. Single-factor Cryptographic Software
@@ -176,9 +176,9 @@ Users authenticate by proving possession of the multi-factor cryptographic devic
 
 Usability considerations for typical usage include:
 
-* Do not require users to keep multi-factor cryptographic devices connected following authentication. Users may forget to disconnect the multi-factor cryptographic device when they are done with it (e.g., forgetting a smartcard in the smartcard reader and walking away from the computer).  
+* Do not require users to keep multi-factor cryptographic devices connected following authentication. Users may forget to disconnect the multi-factor cryptographic device when they are done with it (e.g., forgetting a smartcard in the smartcard reader and walking away from the computer).
 
-  * Users need to be informed regarding whether the multi-factor cryptographic device is required to stay connected or not.  
+  * Users need to be informed regarding whether the multi-factor cryptographic device is required to stay connected or not.
 
 * Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users being faced with multiple similarly and ambiguously named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices (such as smartphones) may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
 * Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor cryptographic device.
@@ -217,7 +217,7 @@ Although there are other biometric modalities, the following three biometric mod
 * Face Usability Considerations:
   * Users have to remember whether they wore any artifacts, such as glasses, during enrollment because it affects facial recognition accuracy.
   * Differences in environmental lighting conditions can affect facial recognition accuracy.
-  * Facial poses affect facial recognition accuracy (e.g., smiling versus neutral expression).  
+  * Facial poses affect facial recognition accuracy (e.g., smiling versus neutral expression).
 * Iris Usability Considerations:
   * Users wearing colored contacts may affect the iris recognition accuracy.
   * Users who have had eye surgery may need to re-enroll post-surgery.
