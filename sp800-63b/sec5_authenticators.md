@@ -342,7 +342,7 @@ For a variety of reasons, this document supports only limited use of biometrics 
 
 Therefore, the use of biometrics for authentication is supported with the following requirements and guidelines:
 
-Biometrics SHALL be used only as part of a multi-factor authentication with a physical authenticator (something you have).
+Biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator (something you have).
 
 An authenticated protected channel between sensor (or endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint authenticated **prior** to capturing the biometric sample from the claimant.
 
