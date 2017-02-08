@@ -158,6 +158,9 @@ When Kerberos authentication is based on passwords, the protocol is known to be 
 #### Man-in-the-Middle Attack (MitM)
 An attack on the authentication protocol in which the attacker positions himself or herself in between the claimant and verifier so that he or she can intercept and/or alter data traveling between them.
 
+#### Memorized Secret
+A secret shared between the user and the party issuing credentials.  Memorized Secrets are typically character strings (e.g. passwords, passphrases) or numerical strings (e.g. PINs.)
+
 #### Message Authentication Code (MAC)
 A cryptographic checksum on data that uses a symmetric key to detect both accidental and intentional modifications of the data. MACs provide authenticity and integrity protection, but not non-repudiation protection.
 
