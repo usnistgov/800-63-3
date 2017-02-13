@@ -17,6 +17,6 @@
 
 <a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
 
-<a name="RFC4120"></a>[RFC 4120]  IETF, *The Kerberos Network Authentication Service (V5)*, available at: <https://tools.ietf.org/html/rfc4120/>.
+<a name="RFC4120"></a>[RFC 4120] IETF, *The Kerberos Network Authentication Service (V5)*, available at: <https://tools.ietf.org/html/rfc4120/>.
 
 <a name="SAML"></a>[SAML] OASIS, *Security Assertion Markup Language (SAML) V2.0 Technical Overview*, available at: <http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html>.
