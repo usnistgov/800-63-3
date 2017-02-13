@@ -46,7 +46,7 @@ Verifiers SHALL implement a throttling mechanism that effectively limits the num
 
 Verifiers SHOULD NOT impose other composition rules (e.g., mixtures of different character types) on memorized secrets. Verifiers SHOULD NOT require memorized secrets to be changed arbitrarily (e.g., periodically). However, verifiers SHALL force a change if there is evidence of compromise of the authenticator.
 
-Verifiers SHOULD permit claimants to use "paste" functionality when entering a memorized secret; this facilitates the use of password managers. While this guideline does not endorse the use of password managers, it is recognized that they are widely used and in many cases allow users to choose stronger memorized secrets.
+Verifiers SHOULD permit claimants to use "paste" functionality when entering a memorized secret. This facilitates the use of password managers as it is recognized that they are widely used and in many cases allow users to choose stronger memorized secrets.
 
 In order to assist the claimant in entering a memorized secret successfully, the verifier SHOULD offer an option to display the secret (rather than a series of dots or asterisks, typically) until it is entered. This allows the claimant to verify their entry if they are in a location where their screen is unlikely to be observed. The verifier MAY also permit the user's device to display individual entered characters for a short time after each character is typed to verify correct entry, particularly on mobile devices. 
 
