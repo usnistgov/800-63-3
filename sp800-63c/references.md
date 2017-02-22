@@ -19,4 +19,6 @@
 
 <a name="RFC4120"></a>[RFC 4120] IETF, *The Kerberos Network Authentication Service (V5)*, available at: <https://tools.ietf.org/html/rfc4120/>.
 
+<a name="RFC6113"></a>[RFC 6113] IETF, *A Generalized Framework for Kerberos Pre-Authentication*, available at: <https://tools.ietf.org/html/rfc6113/>.
+
 <a name="SAML"></a>[SAML] OASIS, *Security Assertion Markup Language (SAML) V2.0 Technical Overview*, available at: <http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html>.
