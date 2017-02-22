@@ -67,6 +67,12 @@ and uses a key it shares with the RP to generate a ticket corresponding
 to the new session key. The subscriber decrypts the session key and uses
 the ticket and the new session key together to authenticate to the RP.
 
+When Kerberos authentication is based on passwords, the protocol is known to
+be vulnerable to offline dictionary attacks by eavesdroppers who capture the
+initial user-to-KDC exchange. Longer password length and complexity provide
+some mitigation to this vulnerability, although sufficiently long passwords
+tend to be cumbersome for users.
+
 ### 11.3. OpenID Connect
 
 OpenID Connect is an internet-scale federated identity and authentication protocol built on top of the OAuth 2.0 authorization framework and the JSON Object Signing and Encryption (JOSE) cryptographic system. As of this writing, the latest specification is version 1.0 with errata, dated November 8, 2014. 
