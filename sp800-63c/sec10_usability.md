@@ -45,7 +45,7 @@ Federated identity systems should:
 
 This section addresses the usability considerations that have been identified with federated identity systems. This section does not attempt to present exhaustive coverage of all usability factors related to federated identity systems; rather it is focused on the larger, more pervasive themes in the usability literature, primarily users' perspectives on identity, user adoption, trust, and perceptions of federated identity space. In some cases, implementation examples are provided. However, specific solutions are not prescribed. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. See standards for system design and coding, specifications, APIs, and current best practices (such as OpenID and OAuth) for additional examples. Implementations are sensitive to many factors that prevent a one-size-fits-all solution.
 
-#### 10.1.1. User Perspectives on Online Identity
+#### 10.2.1. User Perspectives on Online Identity
 
 Even when users are familiar with federated identity systems, there are different approaches to federated identity, especially in terms of privacy and the sharing of information, that make it necessary to establish reliable expectations for how users' data are treated. Users and implementers have different concepts of identity. Users think of identity as logging in  and gaining access to their own private space. Implementers think of identity in terms of authenticators and assertions, assurance levels, and the necessary set of identity attributes to provide a service.  Given this disconnect between users' and implementers' concepts of identity, it is essential to help users form an accurate concept of identity as it applies to federated identity systems. A good model of identity provides users a foundation for understanding the benefits and risks of federated systems and encourage user adoption and trust of these systems.
 
@@ -61,7 +61,7 @@ Many properties of identity have implications for how users manage identities bo
 * Provide users appropriate anonymity and pseudonymity options and the ability to switch among such identity options as desired.
 * Provide means for users to manage each IdP to RP connection, to include complete separation as well as the removal of RP access to one or more attributes.
 
-#### 10.1.2. User Perspectives of Trust and Benefits
+#### 10.2.2. User Perspectives of Trust and Benefits
 
 
 Many factors can influence user adoption of federated identity systems. As with any technology, users may value some factors more than others. Users often weigh perceived benefits versus risks before making technology adoption decisions. It is critical that IdPs and RPs provide users with sufficient information to enable them to make informed adoption decisions. The concepts of trust, and tiers of trust, fundamental principles in federated identity systems, can drive user adoption. Finally, a positive user experience may also result in increased demand of federation by users, triggering increased adoption by RPs.
@@ -85,7 +85,7 @@ To encourage user adoption, IdPs and RPs need to establish and build trust with 
 
 User concern over risk can negatively influence willingness to adopt federated identity systems. Users may have trust concerns, privacy concerns, security concerns, and single-point-of-failure concerns. For example, users may be fearful of losing access to multiple accounts if a single IdP is unavailable, either temporarily or permanently. Additionally, users may be concerned or confused about learning a new authentication paradigm. User perception of benefits must outweigh risk perception in order to foster adoption of federated identity systems. 
 
-#### 10.1.3. User Models and Beliefs
+#### 10.2.3. User Models and Beliefs
 
 Users' beliefs and perceptions predispose them to expect certain results and behave in certain ways. Such beliefs, perceptions, and predispositions are referred to in the social sciences as mental models. For example, people have a mental model of dining out which guides their behavior and expectations at each establishment, such as fast food restaurants, cafeterias, and more formal restaurants. Thus, it is not necessary to be familiar with every establishment to understand how to interact appropriately at each one.
 
