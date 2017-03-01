@@ -44,7 +44,7 @@ If the chosen secret is found in the list, the CSP or verifier SHALL advise the 
 
 Verifiers SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
 
-Verifiers SHOULD NOT impose other composition rules (e.g., mixtures of different character types) on memorized secrets. Verifiers SHOULD NOT require memorized secrets to be changed arbitrarily (e.g., periodically). However, verifiers SHALL force a change if there is evidence of compromise of the authenticator.
+Verifiers SHOULD NOT impose other composition rules (e.g., mixtures of different character types or blocking two repeated characters) on memorized secrets. Verifiers SHOULD NOT require memorized secrets to be changed arbitrarily (e.g., periodically). However, verifiers SHALL force a change if there is evidence of compromise of the authenticator.
 
 Verifiers SHOULD permit claimants to use "paste" functionality when entering a memorized secret. This facilitates the use of password managers as it is recognized that they are widely used and in many cases allow users to choose stronger memorized secrets.
 
