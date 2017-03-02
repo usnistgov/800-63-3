@@ -102,6 +102,9 @@ Month TBD 2017
 
 ![](sp800-63-3/media/commerce_logo.png)
 
+U.S. Department of Commerce  
+*Wilbur L. Ross, Jr., Secretary*  
+
 National Institute of Standards and Technology  
 *Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
