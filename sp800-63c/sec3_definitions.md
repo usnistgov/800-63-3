@@ -38,6 +38,9 @@ A defined sequence of messages between a claimant and a verifier that demonstrat
 #### Back-Channel Communication
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
 
+#### Bearer Assertion
+An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion. 
+
 #### Federation
 A process that allows for the conveyance of identity and authentication information across a set of networked systems. These systems are often run and controlled by disparate parties in different network and security domains.
 

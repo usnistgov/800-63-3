@@ -107,9 +107,7 @@ described in the last subsection.
     following mechanisms are used:
 
 	1.  The assertion is sent over a protected session to an
-    authenticated RP. Note that, in order to protect assertions against
-    both disclosure and manufacture/modification using a protected
-    session, both the RP and the IdP need to be validated. 
+    authenticated RP. Audience restrictions are used to restrict the assertion to the intended RP.  The IdP also signs the assertion.
 
 	2.  Assertions are signed by the IdP and encrypted for
     a specific RP.  It should be
