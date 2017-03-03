@@ -39,7 +39,7 @@ A defined sequence of messages between a claimant and a verifier that demonstrat
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
 
 #### Bearer Assertion
-A bearer assertion can be presented by any party as proof of the bearer’s identity. Any party in possession of the assertion can use use it as if it were their own. This type of assertion does not require the bearer to prove possession of cryptographic key material (i.e. proof-of-possession or holder-of-key).
+An assertion presented by a party as proof of its identity, where proof of the assertion itself is sufficient proof of identity for the bearer of the assertion. Any party in possession of the assertion can use use it as if it were their own. This type of assertion does not require the bearer to prove possession of cryptographic key material (i.e. proof-of-possession or holder-of-key).
 
 #### Federation
 A process that allows for the conveyance of identity and authentication information across a set of networked systems. These systems are often run and controlled by disparate parties in different network and security domains.
