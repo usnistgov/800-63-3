@@ -68,7 +68,7 @@ AAL1 permits the use of any of the following authenticator types, which are defi
 
 #### 4.1.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL1 SHALL use approved cryptography. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD decline to operate when such a compromise is detected.
+Cryptographic authenticators used at AAL1 SHALL use approved cryptography. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise (e.g., by malware) of the user endpoint in which they are running and SHOULD decline to operate when such a compromise is detected.
 
 Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
@@ -84,7 +84,7 @@ The CSP SHOULD employ appropriately tailored security controls from the low base
 
 #### <a name="aal1records"></a> 4.1.5. Records Retention
 
-The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained.
+The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
 ### 4.2. Authenticator Assurance Level 2
 
@@ -130,7 +130,7 @@ The CSP SHOULD employ appropriately tailored security controls from the moderate
 
 #### <a name="aal2records"></a> 4.2.5. Records Retention
 
-CSPs shall comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained.
+CSPs shall comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
 ### 4.3. Authenticator Assurance Level 3
 
@@ -163,7 +163,7 @@ The CSP SHOULD employ appropriately tailored security controls from the high bas
 
 #### <a name="aal3records"></a> 4.3.5. Records Retention
 
-The CSP SHALL comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained.
+The CSP SHALL comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
 ### <a name="aal_privacy"></a>4.4. Privacy Requirements
 
