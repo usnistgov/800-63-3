@@ -13,7 +13,7 @@ The definition of derived in this section does *not* imply that an authenticator
 There are two specific use cases for deriving identity:
 
 1. A _claimant_ seeks to obtain a secondary authenticator, bound to a proofed identity record, for use only within the limits and authorizations of the primary authenticator.  For example, this could be a derived PIV credential in federal use cases. *This section covers this use case.*
-2. An _applicant_ seeks to obtain an authenticator, bound to a proofed identity record, from a CSP the individual does not have a pre-existing relationship. For example, if an applicant wants to switch CSPs and/or have another authenticator at a new CSP for other uses (e.g. basic browsing vs. financial). *This use case is covered by allowable identity evidence in [Section 5.2](#validate).*
+2. An _applicant_ seeks to obtain an authenticator, bound to a proofed identity record, from a CSP with which the individual does not have a pre-existing relationship. For example, if an applicant wants to switch CSPs and/or have another authenticator at a new CSP for other uses (e.g. basic browsing vs. financial). *This use case is covered by allowable identity evidence in [Section 5.2](#validate).*
 
 For the first use case above, the management of authenticators issued by deriving identity is similar to that described in [Section 6.1.2. Post-Enrollment Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#post-enroll-bind); however,  authenticators considered in this section are only issued to a subject that is authorized to have a primary authenticator.  Once the primary authenticator has been revoked, it is possible that all authenticators bound to the identity will also be revoked.
 
