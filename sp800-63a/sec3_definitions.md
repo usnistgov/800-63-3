@@ -34,6 +34,9 @@ A statement asserting a property of a subscriber without necessarily containing 
 #### Attribute Value
 A complete statement asserting a property of a subscriber, independent of format. For example, for the attribute 'birthday', a value could be '12/1/1980' or 'December 1, 1980'.
 
+#### Authenticated Protected Channel
+A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) [[BCP 195]](#bcp195) is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
+
 #### Authentication
 The process of establishing confidence in the identity of users or information systems.
 
