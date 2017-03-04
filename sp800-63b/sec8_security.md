@@ -37,6 +37,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | | Passwords stored in an electronic file are copied. |
 | | | Software PKI authenticator (private key) copied. |
 | | | Look-up secret authenticator copied. |
+| | | Counterfeit biometric authenticator manufactured. |
 | Eavesdropping | The authenticator secret or authenticator output is revealed to the attacker as the subscriber is authenticating. | Memorized secrets are obtained by watching keyboard entry. |
 | | | Memorized secrets or authenticator outputs are intercepted by keystroke logging software. |
 | | | A PIN is captured from PIN pad device. |
@@ -92,7 +93,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | | Provide secure display of identity of verifier and RP.
 | | Maintain software-based keys in restricted-access storage.
 
-There are several other strategies that may be applied to mitigate the threats described in Table 5:
+There are several other strategies that may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
 
 - *Multiple factors* make successful attacks more difficult to accomplish. If an attacker needs to both steal a cryptographic authenticator and guess a memorized secret, then the work to discover both factors may be too high.
 
