@@ -54,7 +54,7 @@ Many properties of identity have implications for how users manage identities bo
 
 * Provide users the requisite context and scope in order to distinguish among different user roles. For example, whether the user is acting on their own behalf, or on behalf of another, such as their employer.
 * Provide users unique, meaningful, and descriptive identifiers to distinguish among entities.
-* Provide users with information on data ownership and those authorized to make changes. Identities, and the data associated with them, can sometimes be updated and changed by multiple actors. For example, some healthcare data is updated and owned the patient, while some is only updated by a hospital or doctor's practice.
+* Provide users with information on data ownership and those authorized to make changes. Identities, and the data associated with them, can sometimes be updated and changed by multiple actors. For example, some healthcare data is updated and owned by the patient, while some is only updated by a hospital or doctor's practice.
 * Provide users with the ability to easily verify, view and update attributes.  Identities and user roles are dynamic and not static, thus change over time, e.g., age, health, and financial data.
 * Provide users means for updating data even if the associated entity no longer exists.
 * Provide users means to delete their identities completely, removing all information about the user, to include transaction history.
