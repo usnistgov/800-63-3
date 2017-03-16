@@ -291,8 +291,10 @@ These guidelines are agnostic to the vast array of identity services architectur
 
 [4. Digital Identity Model](#sec4)
 
-[5. Determining IAL, AAL, and FAL](#sec5)
+[5. Digital Identity Risk Management](#sec5)
 
-[6. References](#references)
+[6. Determining IAL, AAL, and FAL](#sec6)
+
+[7. References](#references)
 
  
