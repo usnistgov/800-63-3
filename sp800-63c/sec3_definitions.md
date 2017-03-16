@@ -33,7 +33,7 @@ A communication channel that uses approved encryption where the initiator of the
 The process of establishing confidence in the identity of users or information systems.
 
 #### Authentication Protocol
-A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish his/her identity. Secure authentication protocols also demonstrate to the claimant that he or she is communicating with the intended verifier.
+A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish their identity. Secure authentication protocols also demonstrate to the claimant that they are communicating with the intended verifier.
 
 #### Back-Channel Communication
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.

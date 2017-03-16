@@ -5,7 +5,7 @@
 
 *This section is informative.*
 
-IdPs, RPs, subscribers, and parties outside of a typical assertions transaction may be malicious or become compromised. An attacker might have an interest in modifying or replacing an assertion to obtain a greater level of access to a resource or service provided by an
+IdPs, RPs, subscribers, and parties outside of a typical assertion transaction may be malicious or become compromised. An attacker might have an interest in modifying or replacing an assertion to obtain a greater level of access to a resource or service provided by an
 RP. They might be interested in obtaining or modifying
 assertions and assertion references to impersonate a subscriber or
 access unauthorized data or services. Furthermore, it is possible that
