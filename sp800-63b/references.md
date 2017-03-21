@@ -4,8 +4,6 @@
 
 *This section is informative.*
 
-***To be completed***
-
 ### 11.1. General References
 
 <a name="M-03-22"></a>[OMB M-03-22] OMB Memorandum M-03-22, *OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002*, September 26, 2003, available at: <http://www.whitehouse.gov/omb/memoranda/m03-22.html>.
@@ -40,9 +38,13 @@
 
 <a name="shannon"></a>[Shannon] Shannon, Claude E. "A Mathematical Theory of Communication," *Bell System Technical Journal*, v. 27, pp. 379-423, 623-656, July, October, 1948.
 
+<a name="balloon"></a>[BALLOON] Boneh, Dan, Corrigan-Gibbs, Henry,  and Stuart Schechter, "Balloon Hashing: A Memory-Hard Function Providing Provable Protection Against Sequential Attacks," *Asiacrypt 2016*, October, 2016, available at: <https://eprint.iacr.org/2016/027>.
+
 ### 11.2. NIST Special Publications
 
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
+
+<a name="SP800-38B"></a>[SP 800-38B] NIST Special Publication 800-38B, *Recommendation for Block Cipher Modes of Operation: the CMAC Mode for Authentication*, October, 2016.
 
 <a name="SP800-52"></a>[SP 800-52] NIST Special Publication 800-52, Revision 1, *Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations*, April, 2014.
 
@@ -52,9 +54,13 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Assertions and Federation*. ***To be updated at publication***
 
+<a name="SP800-107"></a>[SP 800-107] NIST Special Publication 800-107, Revision 1, *Recommendation for Applications Using Approved Hash Algorithms*, August 2012.
+
 <a name="SP800-131A"></a>[SP 800-131A] NIST Special Publication 800-131A , *Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths*, Revision 1, November 2015.
 
 <a name="SP800-132"></a>[SP 800-132] NIST Special Publication 800-132, *Recommendation for Password-Based Key Derivation*, December 2010.
+
+<a name="SP800-185"></a>[SP 800-185] NIST Special Publication 800-185, *SHA-3 Derived Functions: cSHAKE, KMAC, TupleHash, and ParallelHash*, December, 2016.
 
 ### 11.3. Federal Information Processing Standards
 
@@ -65,6 +71,8 @@ FIPS can be found at: http://csrc.nist.gov/publications/fips/.
 <a name="FIPS198-1"></a>[FIPS 198-1] Federal Information Processing Standard Publication 198-1, *The Keyed-Hash Message Authentication Code (HMAC)*, July 2008.
 
 <a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, available at: <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
+
+<a name="FIPS202"></a>[FIPS 202] Federal Information Processing Standard Publication 202, *SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions*, August 2015.
 
 ### 11.4. Legislation
 
