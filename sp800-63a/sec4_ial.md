@@ -101,9 +101,9 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 13. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
 
 	a) The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.  
-	b) The agency SHALL publish a System of Records Notice (SORN) to cover such collections, as applicable.  
+	b) The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
 	c) The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
-	d) The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collections, as applicable.
+	d) The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
 ### 4.3. Identity Assurance Level 1
 
