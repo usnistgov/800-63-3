@@ -4,6 +4,48 @@
 
 ## 6. Digital Identity Risk Management
 
+
+
+OMB guidance outlines a five-step process by which agencies should meet
+their authentication assurance requirements:
+
+1.  *Conduct a risk assessment of the government system* - No specific
+    risk assessment methodology is prescribed for this purpose;
+    however, NIST [[SP 800-30]](#SP800-30) offers a general
+    process for risk assessment and risk mitigation, and NIST [[SP 800-37]](#SP800-37) Revision 1 provides recommendations on the selection and specification of security controls for a system as part of an organization-wide information security program. This guideline supports the identification of risk to the organization or to individuals associated with the operation of a system.
+
+2.  *Map identified risks to the appropriate assurance level* - Section
+    2.2 of OMB M-04-04 provides the guidance necessary for agencies to
+    perform this mapping.
+
+3.  *Select technology based on digital authentication technical guidance* -
+    After the appropriate assurance level has been determined, OMB
+    guidance states that agencies should select technologies that meet
+    the corresponding technical requirements, as specified by
+    this document suite. Some agencies may possess existing
+    digital authentication technology. Agencies should verify that any
+    existing technology meets the requirements specified in
+    this document suite.
+
+4.  *Validate that the implemented system has met the required assurance
+    level* - As some implementations may create or compound particular
+    risks, agencies should conduct a final validation to confirm that
+    the system achieves the required assurance level for the
+    user-to-agency process. NIST [[SP 800-53A]](#SP800-53A)
+    provides requirements for the assessment of the implemented system
+    during the validation process. Validation should be performed as
+    part of a security authorization process as described in NIST [[SP 800-37]](#SP800-37), Revision 1.
+
+5.  *Periodically reassess the system to determine
+    technology refresh requirements* - The agency shall periodically
+    reassess the system to ensure that the identity
+    authentication requirements continue to be satisfied. NIST [[SP 800-37]](#SP800-37), Revision 1 provides recommendations on
+    the frequency, depth and breadth of periodic reassessments. As with
+    the initial validation process, agencies should follow the
+    assessment requirements specified in [[SP 800-53A]](#SP800-53A) for conducting the security assessment.
+
+
+
 ### 6.1. Summary
 
 This guidance requires agencies to review new and existing electronic transactions to ensure that authentication processes provide the appropriate level of assurance. It establishes and describes four levels of identity assurance for electronic transactions requiring authentication. Assurance levels also provide a basis for assessing Credential Service Providers (CSPs) on behalf of Federal agencies. This document will assist agencies in determining their e-government authentication needs. Agency business-process owners bear the primary responsibility to identify assurance levels and strategies for providing them. This responsibility extends to electronic authentication systems.Agencies should determine assurance levels using the following steps, described in Section 2.3:1. Conduct a risk assessment of the e-government system.2. Map identified risks to the applicable assurance level.3. Select technology based on e-authentication technical guidance.4. Validate that the implemented system has achieved the required assurance level.5. Periodically reassess the system to determine technology refresh requirements.
@@ -16,9 +58,7 @@ This guidance applies to remote authentication of human users of Federal agency 
 
 This document provides agencies with guidance on electronic authentication (e-authentication). The National Research Council report, “Who Goes There? Authentication Through the Lens of Privacy”3 defines e-authentication as the process of establishing confidence in user identities electronically presented to an information system. It defines individual authentication as the process of establishing an understood level of confidence that an identifier refers to a specific individual.Authentication focuses on confirming a person’s identity, based on the reliability of his or her credential. Authorization focuses on identifying the person’s user permissions.To successfully implement a government service electronically (or e-government), Federal agencies must determine the required level of assurance in the authentication for each transaction. This is accomplished through a risk assessment for each transaction. The assessment identifies:a) risks, andb) their likelihood of occurrence.OMB Circular A-130, Management of Federal Information Resources, states that agencies must prepare and update a strategy that identifies and mitigates risks associated with each information system. This guidance will help agencies map identified risks to corresponding assurance levels.
 
-### 6.4. Applicability
 
-Not all Federal electronic transactions4 require authentication; however, this guidance applies to all such transactions for which authentication is required, regardless of the constituency (e.g. individual user, business, or government entity).Transactions not covered by this guidance include those that are associated with national security systems as defined in 44 U.S.C. § 3542(b)(2). Private-sector organizations and state, local, and tribal governments whose electronic processes require varying levels of assurance may consider the use of these standards where appropriate.There are two types of individual authentication:a) Identity authentication—confirming a person’s unique identity.b) Attribute authentication—confirming that the person belongs to a particular group (such as military veterans or U.S. citizens).Attribute authentication is the process of establishing an understood level of confidence that an individual possesses a specific attribute. If the attribute does not provide ties to the user’s identity; it would be considered an anonymous credential (discussed further in Section 4.2). Attribute authentication is not specifically addressed in this document, however agencies may accept ‘anonymous credentials’ in certain contexts.
 
 ### 6.5. Risk and Impacts
 
@@ -41,5 +81,11 @@ Determining Assurance Level:Compare the impact profile from the risk assessment
 |Civil or criminal violations|N/A|Low/Mod|High|
 
 In analyzing potential risks, the agency must consider all of the potential direct and indirect results of an authentication failure, including the possibility that there will be more than one failure, or harms to more than one person. The definitions of potential impacts contain some relative terms, like "serious" or "minor," whose meaning will depend on context. The agency should consider the context and the nature of the persons or entities affected to decide the relative significance of these harms. Over time, the meaning of these terms will become more definite as agencies gain practical experience with these issues. The analysis of harmsto agency programs or other public interests depends strongly on the context; the agency should consider these issues with care.In some cases (as shown in Table 1), impact may correspond to multiple assurance levels. For example, Table 1 shows that a moderate risk of financial loss corresponds to assurance levels 2 and 3. In such cases, agencies should use the context to determine the appropriate assurance level.
+
+2.3. Determining Assurance Levels and selecting authentication solutions using Risk AssessmentAgencies shall use the following steps to determine the appropriate assurance level:Step 1: Conduct a risk assessment of the e-government system. Guidance for agencies in conducting risk assessments is available in A-130, Section 5 of OMB’s GPEA guidance and existing NIST guidance. The risk assessment will measure the relative severity of the potential harm and likelihood of occurrence of a wide range of impacts (to any party) associated with the e-government system in the event of an identity authentication error.Note: An E-government system may have multiple categories or types of transactions, which may require separate analysis within the overall risk assessment. An E-government system may also span multiple agencies whose activities may require separate consideration.Risk analysis is to some extent a subjective process, in which agencies must consider harms that might result from, among other causes, technical failures, malevolent third parties, public misunderstandings, and human error. Agencies should consider a wide range of possible scenarios in seeking to determine what potential harms are associated with their business process. It is better to be over-inclusive than under-inclusive in conducting this analysis. Once risks have been identified, there may also be ways to adjust the business process to mitigate particular risks by reducing the likelihood that they will occur (see Step 4).Step 2: Map identified risks to the required assurance level. The risk assessment should be summarized in terms of the potential impact categories in Section 2.2.To determine the required assurance level, agencies should initially identify risks inherent in the transaction process, regardless of its authentication technology. Agencies should then tie the potential impact category outcomes to the authentication level, choosing the lowest level of authentication that will cover all of potential impacts identified. Thus, if five categories of potential impact are appropriate for Level 1, and one category of potential impact is appropriate for Level 2, the transaction would require a Level 2 authentication. For example, if the misuse of a user’s electronic identity/credentials during a medical procedure presents a risk of serious injury or death, map to the risk profile identified under Level 4, even if other consequences are minimal.Step 3: Select technology based on the NIST e-authentication technical guidance. After determining the assurance level, the agency should refer to the NIST e-authentication
+
+technical guidance to identify and implement the appropriate technical requirements.Step 4: After implementation, validate that the information system has operationally achieved the required assurance level. Because some implementations may create or compound particular risks, conduct a final validation to confirm that the system achieves the required assurance level for the user-to-agency process. The agency should validate that the authentication process satisfies the systems’s authentication requirements as part of required security procedures (e.g., certification and accreditation).Step 5: Periodically reassess the information system to determine technology refresh requirements. The agency must periodically reassess the information system to ensure that the identity authentication requirements continue to be valid as a result of technology changes or changes to the agency’s business processes. Annual information security assessment requirements provide an excellent opportunity for this. Agencies may adjust the identity credential’s level of assurance using additional risk mitigation measures. Easing identity credential assurance level requirements may increase the size of the enabled customer pool, but agencies must ensure that this does not corrupt the system’s choice of the appropriate assurance level.
+
+**Need new level definitions:**  • Level 1: Little or no confidence in the asserted identity’s validity.• Level 2: Some confidence in the asserted identity’s validity.• Level 3: High confidence in the asserted identity’s validity.• Level 4: Very high confidence in the asserted identity’s validity.
 
 
