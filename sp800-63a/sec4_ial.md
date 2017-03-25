@@ -86,10 +86,8 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 8. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
 
-	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;
-
-	b) The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and
-
+	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
+	b) The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
 	c) The schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
 
 9. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
@@ -100,15 +98,12 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 12. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.
 
-13. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:
+13. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
 
-	a) The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.
-
- 	b) The agency SHALL publish a System of Records Notice (SORN) to cover such collections, as applicable.
-
- 	c) The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.
-
- 	d) The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collections, as applicable.
+	a) The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.  
+	b) The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
+	c) The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
+	d) The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
 ### 4.3. Identity Assurance Level 1
 
