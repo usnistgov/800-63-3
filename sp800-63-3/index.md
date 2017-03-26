@@ -21,6 +21,6 @@ This document is broken up into sections as follows:
 
 [5. Digital Identity Risk Management](sec5_DIRM.html)
 
-[6. A New Approach to LOA ](sec6_xAL.html)
+[6. Federation Considerations](sec6_xAL.html)
 
 [7. References](sec7_references.html)

@@ -49,3 +49,5 @@ Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistp
 <a name="Canada"></a>[Canada] Government of Canada, *Standard on Identity and Credential Assurance*, February 1, 2013, available at: <https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26776>.
 
 <a name="steiner"></a>[Steiner]Steiner, Peter. "On the Internet, nobody knows you're a dog". Cartoon. *The New Yorker* 5 July 1993.
+
+<a name="NIST-RMF"></a>[NIST RMF] Risk Management Framework Overview, available at <http://csrc.nist.gov/groups/SMA/fisma/framework.html>.
