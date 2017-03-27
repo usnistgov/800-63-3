@@ -131,7 +131,7 @@ activities with industry, government, and academic organizations.
 These guidelines provide technical requirements for Federal agencies
 implementing digital identity services and are not intended to constrain
 the development or use of standards outside of this purpose. The
-guidelines cover remote authentication of users (such as employees,
+guidelines cover identity proofing and authentication of users (such as employees,
 contractors, or private individuals) interacting with government IT
 systems over open networks. They define technical requirements in each of the areas of identity proofing,
 registration, authenticators, management processes, authentication protocols and
