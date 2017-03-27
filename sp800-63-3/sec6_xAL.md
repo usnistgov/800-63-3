@@ -24,6 +24,3 @@ The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes 
 * Access to the service only requires at least one attribute claim.
 * Agency is not the authoritative source or issuing source for required attributes.  
 * Attributes are only required temporarily during use (such as to make an access decision), such that agency does not need to locally persist the data.
-
-
-
