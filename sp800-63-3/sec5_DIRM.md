@@ -21,7 +21,7 @@ As such, agencies SHALL assess the risk of proofing, authentication, and federat
 
 [Section 5.3](#section5-3) provides impact categories specific to digital identity to assist in the overall application of the RMF.
 
-Risk assessments determine the extent to which risk must be mitigated by the identity proofing, authentiation, and federation processes. These determinations drive the relevant choices of applicable technologies and mitigation strategies, rather than the desire for any given technology driving risk determinations. Once an agency has completed the overall risk assessment; selected individual assurance levels for identity proofing, authentication, and federation (if applicable); and determined the processes and technologies they will will employ to meet each assurance level, agencies SHALL develop a "Digital Identity Practice Statement", in accordance with NIST 800-53r5 IA-1 a.1. See [Section 5.4.](#dips) for more detail on the necessary content of the Digital Identity Practice Statement.
+Risk assessments determine the extent to which risk must be mitigated by the identity proofing, authentiation, and federation processes. These determinations drive the relevant choices of applicable technologies and mitigation strategies, rather than the desire for any given technology driving risk determinations. Once an agency has completed the overall risk assessment; selected individual assurance levels for identity proofing, authentication, and federation (if applicable); and determined the processes and technologies they will will employ to meet each assurance level, agencies SHALL develop a "Digital Identity Acceptance Statement", in accordance with NIST 800-53r5 IA-1 a.1. See [Section 5.5.](#daps) for more detail on the necessary content of the Digital Identity Acceptance Statement.
 
 ### 5.2. <a name="5-2"></a> Assurance Levels
 
@@ -127,19 +127,21 @@ _The potential impact of civil or criminal violations is:_
 - Moderate—at worst, a risk of civil or criminal violations that may be subject to enforcement efforts.
 - High—a risk of civil or criminal violations that are of special importance to enforcement programs.
 
-
-### <a name="dips"></a> 5.4. Digital Identity Practice Statement
-
-**TBD** 
-
-Agencies can determine what and how to comply with IA-1.  The following is the minimum required.
- 
-Agencies SHALL demonstrate comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented. 
-
-### 5.5. Risk Acceptance and Compensating Controls
+### 5.4. Risk Acceptance and Compensating Controls
 
 The 800-63 suite specifies baseline requirements for digital identity services based on assurance level.  Agencies SHOULD implement identity services per the requirements in these guidelines and are encouraged to consider additional techniques and technologies to further secure and privacy-enhance their services.  
 
-Agencies MAY determine to partially implement the NIST recommended guidance based on their mission risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.  Agencies SHALL demonstrate comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented. That said, agencies SHALL conduct a risk assessment and SHALL NOT alter the assessed value based on agency capabilities. Rather, the agency MAY adjust implementation of solutions based the agency's ability to mitigate risk via means not explicitly addressed by 800-63 requirements. The agency SHALL implement prodecures to document both the justification for any departure from normative requirements and detail the compensating control employed.
+Agencies MAY determine to partially implement the NIST recommended guidance based on their mission risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.  Agencies SHALL demonstrate comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented. That said, agencies SHALL NOT alter the assessed value based on agency capabilities. Rather, the agency MAY adjust implementation of solutions based the agency's ability to mitigate risk via means not explicitly addressed by 800-63 requirements. The agency SHALL implement prodecures to document both the justification for any departure from normative requirements and detail the compensating control employed.
 
 This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, “Risk Management Guide for Information Technology Systems”](#SP800-30) recommends a general methodology for managing risk in federal systems. 
+
+### <a name="daps"></a> 5.5. Digital Identity Acceptance Statement
+
+Shall include at a minimum:
+
+1. Assessed xAL.
+2. Implemented xAL.
+3. Rationale (if 1/2 different).
+4. Comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented.
+5. If not accepting federated identities, rationale.
+

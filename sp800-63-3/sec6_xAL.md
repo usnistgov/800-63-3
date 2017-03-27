@@ -7,18 +7,67 @@
 _This section is informative._
 The results of the risk assessment are the primary factor in selecting the most appropriate levels. This section details how to apply the results of the risk assessment with additional factors unrelated to risk to determine the most advantageous xAL selection.
 
-First, compare the impact profile from the risk assessment to the impact profiles associated with each assurance level, as shown in Table 1 below. To determine the required assurance level, find the lowest level whose impact profile meets or exceeds the potential impact for every category analyzed in the risk assessment (as noted in step 2 below).
+First, compare the impact profile from the risk assessment to the impact profiles associated with each assurance level, as shown in [Table 6-1](#63Sec6-Table6-1) below. To determine the required assurance level, find the lowest level whose impact profile meets or exceeds the potential impact for every category analyzed in the risk assessment.
 
-**Insert new table 1 here - May need to switch to HTML to get cell spanning**
+<a name="63Sec6-Table6-1"></a>
+<div class="text-center" markdown="1">
+**Table 6-1. Maximum Potential Impacts for Each Assurance Level**
+</div>
 
-|Potential Impact Categories|1|2|3|
-|:--------------------------|:-:|:-:|:-:|
-|Inconvenience, distress or damage to standing or reputation|Low|Mod|High|
-|Financial loss or agency liability|Low|Mod|High|
-|Harm to agency programs or public interests|N/A|Low/Mod|High|
-|Unauthorized release of sensitive information|N/A|Low/Mod|High|
-|Personal Safety|N/A|Low|Mod/High|
-|Civil or criminal violations|N/A|Low/Mod|High|
+<table>
+
+ <tr>
+
+ <td></td>
+    <td style="text-align: center" colspan="3"><strong>Assurance Level</strong></td>
+  </tr>
+  <tr>
+
+  <th>Impact Categories</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+  </tr>
+  <tr>
+    <td>Inconvenience, distress or damage to standing or reputation</td>
+    <td>Low</td>
+    <td>Mod</td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td>Financial loss or agency liability</td>
+    <td>Low</td>
+    <td>Mod</td>
+    <td>High</td>
+  </tr>
+   <tr>
+    <td>Harm to agency programs or public interests</td>
+    <td>N/A</td>
+    <td>Low/Mod</td>
+    <td>High</td>
+  <tr>
+  <tr>
+    <td>Unauthorized release of sensitive information</td>
+    <td>N/A</td>
+    <td>Low/Mod</td>
+    <td>High</td>
+  </tr>
+ 
+    <td>Personal Safety</td>
+    <td>N/A</td>
+    <td>Low</td>
+    <td>Mod/High</td>
+  </tr>
+  
+  </tr>
+  <tr>
+    <td>Civil or criminal violations</td>
+    <td>N/A</td>
+    <td>Low/Mod</td>
+    <td>High</td>
+  </tr>
+ 
+</table>
 
 In analyzing risks, the agency SHALL consider all of the potential direct and indirect results of an authentication failure, including the possibility that there will be more than one failure, or harms to more than one person. The definitions of potential impacts contain some relative terms, like "serious" or "minor," whose meaning will depend on context. The agency SHOULD consider the context and the nature of the persons or entities affected to decide the relative significance of these harms. Over time, the meaning of these terms will become more definite as agencies gain practical experience with these issues. The analysis of harms to agency programs or other public interests depends strongly on the context; the agency SHOULD consider these issues with care.
 
