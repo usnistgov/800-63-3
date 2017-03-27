@@ -10,10 +10,14 @@ This document is broken up into sections as follows:
 
 [1. Purpose and 2. Introduction](sec1_2_introduction.md)
 
-[3. Definitions and Abbreviations ](sec3_definitions.md)
+[3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. E-Authentication Model](sec4_model.md)
+[4. Digital Identity Model](sec4_model.md)
 
-[4. A New Approach to LOA ](sec5_xAL.md)
+[5. Digital Identity Risk Management](sec5_DIRM.md)
 
-[6. References](sec6_references.md)
+[6. Selecting Assurance Levels](sec6_xal.md)
+
+[7. Federation Considerations](sec7_DIRM.md)
+
+[8. References](sec8_references.md)
