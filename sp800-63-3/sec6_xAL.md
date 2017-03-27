@@ -2,8 +2,9 @@
 
 <div class="breaker"></div>
 
-### 5.4. <a name="CYOA"></a>Selecting Assurance Levels
+## 6. <a name="CYOA"></a>Selecting Assurance Levels
 
+_This section is informative._
 The results of the risk assessment are the primary factor in selecting the most appropriate levels. This section details how to apply the results of the risk assessment with additional factors unrelated to risk to determine the most advantageous xAL selection.
 
 First, compare the impact profile from the risk assessment to the impact profiles associated with each assurance level, as shown in Table 1 below. To determine the required assurance level, find the lowest level whose impact profile meets or exceeds the potential impact for every category analyzed in the risk assessment (as noted in step 2 below).
@@ -23,7 +24,7 @@ In analyzing risks, the agency SHALL consider all of the potential direct and in
 
 It is possible that the assurance levels may differ across IAL, AAL, and FAL. For example, suppose an agency establishes a "health tracker" application in which user submit personal informatin in form of personal health information (PHI). In line with the terms of [EO 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement MFA at AAL2 or AAL3. 
 
-The EO also requires agencies employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an 'effective proofing process' would be to not proof at all. This allows the user of the health tracker system to be pseudonymous.
+EO 13681 also requires agencies employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an 'effective proofing process' would be to not proof at all. This allows the user of the health tracker system to be pseudonymous.
 
 Despite the user being pseudonymous, the agency should still protect the application wiith AAL2 or AAL3 because a malicous actor could gain access to the users PHI by compromising the account. If it is a targeted attack, the malicious actor may know the users identity, creating the same negative impact to the user as if the agency has identity proofed.
 
@@ -31,19 +32,19 @@ Despite the user being pseudonymous, the agency should still protect the applica
 
 <!---->
 
-> Note: The upshot of potentially having a different IAL, AAL, and FAL withing a single applicaition stems from the fact that this document no longer supports the notion of an overall LOA. The 'low watermark' approach to determining LOA no longer applies. An application with IAL1 and AAL2 should not be considered any less secure or privacy enhancing than an application with IAL2 and AAL2. The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
+> Note: The upshot of potentially having a different IAL, AAL, and FAL withing a single application stems from the fact that this document no longer supports the notion of an overall LOA. The 'low watermark' approach to determining LOA no longer applies. An application with IAL1 and AAL2 should not be considered any less secure or privacy enhancing than an application with IAL2 and AAL2. The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
 
-#### <a name="IAL_CYOA"></a> 5.4.1. Selecting IAL
+#### <a name="IAL_CYOA"></a> 6.1. Selecting IAL
 
-The IAL decision tree in [Figure 5-1](#63Sec5-Figure1) combines the results from the risk assessment with additional considerations related to identity proofing services to allow agencies to select the most appropriate identity proofing requirements for their digital service offering.
+The IAL decision tree in [Figure 6-1](#63Sec6-Figure1) combines the results from the risk assessment with additional considerations related to identity proofing services to allow agencies to select the most appropriate identity proofing requirements for their digital service offering.
 
-The IAL selection does not mean the digital service provider will need to perform the proofing themselves. More information on whether an agency can federate is provided in [Section 6](#toFedorNotToFed). 
+The IAL selection does not mean the digital service provider will need to perform the proofing themselves. More information on whether an agency can federate is provided in [Section 7](#toFedorNotToFed). 
 
-<a name="63Sec5-Figure1"></a>
+<a name="63Sec6-Figure1"></a>
 <div class="text-center" markdown="1">
 <img src="sp800-63-3/media/IAL_CYOA.png" alt="IAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
 
-**Figure 5-1. Selecting IAL**
+**Figure 6-1. Selecting IAL**
 </div>
 
 
@@ -91,17 +92,17 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 
  
-#### <a name="AAL_CYOA"></a> 5.4.2. Selecting AAL
+#### <a name="AAL_CYOA"></a> 6.2. Selecting AAL
 
-The AAL decision tree in [Figure 5-2](#63Sec5-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements  for their digital service offering. 
+The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements  for their digital service offering. 
 
-The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information of whether the agency can federate or not is provided in [Section 6](#toFedorNotToFed). 
+The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information of whether the agency can federate is provided in [Section 7](#toFedorNotToFed). 
 
-<a name="63Sec5-Figure2"></a>
+<a name="63Sec6-Figure2"></a>
 <div class="text-center" markdown="1">
 <img src="sp800-63-3/media/AAL_CYOA.png" alt="AAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
 
-**Figure 5-2. Selecting AAL**
+**Figure 6-2. Selecting AAL**
 </div>
 
 <div class="text-left" markdown="1">
@@ -126,7 +127,7 @@ The AAL selection does not mean the digital service provider will need to issue 
 
 
 
-#### <a name="FAL_CYOA"></a> 5.4.3. Selecting FAL
+#### <a name="FAL_CYOA"></a> 6.3. Selecting FAL
 
 All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#sec5). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
 
@@ -139,33 +140,17 @@ FAL3 further requires that the subscriber prove possession of a key in addition 
 Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL2 and FAL3 and subscriber keys additionally need to be managed at FAL3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
 
 
-### <a name="dips"></a> 5.5. Digital Identity Practice Statement
-
-**TBD** 
-
-Agencies can determine what and how to comply with IA-1.  The following is the minimum required.
- 
-Agencies SHALL demonstrate comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented. 
-
-### 5.6. Risk Acceptance and Compensating Controls
-
-The 800-63 suite specifies baseline requirements for digital identity services based on assurance level.  Agencies SHOULD implement identity services per the requirements in these guidelines and are encouraged to consider additional techniques and technologies to further secure and privacy-enhance their services.  
-
-Agencies MAY determine to partially implement the NIST recommended guidance based on their mission risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.  Agencies SHALL demonstrate comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented. That said, agencies SHALL conduct a risk assessment and SHALL NOT alter the assessed value based on agency capabilities. Rather, the agency MAY adjust implementation of solutions based the agency's ability to mitigate risk via means not explicitly addressed by 800-63 requirements. The agency SHALL implement prodecures to document both the justification for any departure from normative requirements and detail the compensating control employed.
-
-This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, “Risk Management Guide for Information Technology Systems”](#SP800-30) recommends a general methodology for managing risk in federal systems. 
-
-### 5.7. Combining xALs 
+### 6.4. Combining xALs 
 
 This guideline introduces a model where individual xALs can be selected without requiring parity to each other. While options exist to select varying xALs for a system, in many instances the same level will be chosen for all xALs.
 
-The ability to combine varying xALs offers significant flexibility to agencies, but not all combinations are possible due to the nature of the data collected from an individual and the authenticators to protect that data. [Table 5-2](#63sec5-Table2) details valid combinations of IAL and AAL to ensure personal information remains protected by MFA.
+The ability to combine varying xALs offers significant flexibility to agencies, but not all combinations are possible due to the nature of the data collected from an individual and the authenticators to protect that data. [Table 6-2](#63sec6-Table2) details valid combinations of IAL and AAL to ensure personal information remains protected by MFA.
 
-<a name="63sec5-Table2"></a>
+<a name="63sec6-Table2"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 5-2. Acceptable Combinations of IAL and AAL**
+**Table 6-2. Acceptable Combinations of IAL and AAL**
 
 </div>
 
