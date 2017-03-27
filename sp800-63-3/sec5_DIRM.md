@@ -97,11 +97,11 @@ _Potential impact of inconvenience, distress, or damage to standing or reputatio
 - Moderate—at worst, serious short-term or limited long-term inconvenience, distress, or damage to the standing or reputation of any party.
 - High—severe or serious long-term inconvenience, distress, or damage to the standing or reputation of any party. This is ordinarily reserved for situations with particularly severe effects or which potentially affect many individuals.
 
-_Potential impact of financial loss:_ **[MG: I've always had an issue with this one as financial losses are always recoverable. Can we remove that term?]**
+_Potential impact of financial loss:_
 
-- Low—at worst, an insignificant or inconsequential unrecoverable financial loss to any party, or at worst, an insignificant or inconsequential agency liability.
-- Moderate—at worst, a serious unrecoverable financial loss to any party, or a serious agency liability.
-- High—severe or catastrophic unrecoverable financial loss to any party, or severe or catastrophic agency liability.
+- Low—at worst, an insignificant or inconsequential financial loss to any party, or at worst, an insignificant or inconsequential agency liability.
+- Moderate—at worst, a serious financial loss to any party, or a serious agency liability.
+- High—severe or catastrophic financial loss to any party, or severe or catastrophic agency liability.
 
 _Potential impact of harm to agency programs or public interests:_
 
