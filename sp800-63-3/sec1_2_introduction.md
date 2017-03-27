@@ -33,7 +33,7 @@ The components of identity assurance detailed in these guidelines are as follows
 
 As such, SP 800-63 is organized as a suite of documents as follows:
 
-- SP 800-63-3 *Digital Identity Guidelines* - Provides the risk assessment methodology as well as an overview of general identity frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains only informative material._
+- SP 800-63-3 *Digital Identity Guidelines* - Provides the risk assessment methodology as well as an overview of general identity frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains both normative and informative material._
 
 - SP 800-63A *Enrollment and Identity Proofing* - Addresses how applicants can prove their identities and become enrolled as valid subjects within an identity system. It provides requirements for processes by which applicants can both proof and enroll at one of three different levels of risk mitigation in both remote and physically-present scenarios. _This document contains both normative and informative material._
 
