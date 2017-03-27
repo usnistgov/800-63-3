@@ -1,10 +1,10 @@
-<a name="sec5"></a>
+<a name="sec7"></a>
 
 <div class="breaker"></div>
 
-## 6. <a name="toFedorNotToFed"></a> Federation Considerations
+## 7. <a name="toFedorNotToFed"></a> Federation Considerations
 
-*This section is informative.*
+_This section is informative._
 
 The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes are agnostic to the authentication and identity proofing architecture an agency selects. However, there are scenarios an agency may encounter which make identity federation potentially more attractive than establishing identity services local to the agency or individual applications. The following list details the scenarios where an agency may consider federation as a viable option. This list does not factor in any economic benefits or weaknesses of federation vs. localized identity architectures.
 
