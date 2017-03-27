@@ -276,7 +276,9 @@ These guidelines are agnostic to the vast array of identity services architectur
 
 [5. Digital Identity Risk Management](#sec5)
 
-[6. Federation Considerations](#sec6)
+[6. Selecting Assurance Levels](#sec6)
+
+[6. Federation Considerations](#sec7)
 
 [7. References](#references)
 
