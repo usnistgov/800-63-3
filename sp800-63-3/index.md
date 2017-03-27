@@ -11,7 +11,7 @@ This is a working draft of NIST Special Publication 800-63-3 *Digital Authentica
 
 This document is broken up into sections as follows:
 
-[Front matter](cover.html)
+[Front matter](cover.html) **should these all be .md links?**
 
 [1. Purpose and 2. Introduction](sec1_2_introduction.html)
 
