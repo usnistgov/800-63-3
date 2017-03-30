@@ -58,7 +58,7 @@ When described generically or bundled, this guideline will refer to the combinat
 
 This section provides details on the impact categories that SHALL be assessed to determine IAL, AAL, and FAL. 
 
-Potential Impact Categories: To determine the appropriate level of assurance in the user’s asserted identity, agencies SHALL assess the potential risks, and identify measures to minimize their impact. 
+Potential Impact Categories: To determine the appropriate level of assurance in the user's asserted identity, agencies SHALL assess the potential risks, and identify measures to minimize their impact. 
 
 Authentication, proofing, and federation errors with potentially worse consequences require higher levels of assurance. Business process, policy, and technology may help reduce risk.
 
@@ -71,7 +71,7 @@ Categories of harm and impact include:
 - Personal safety
 - Civil or criminal violations
 
-Required assurance levels for digital transactions are determined by assessing the potential impact of each of the above categories using the potential impact values described in Federal Information Processing Standard (FIPS) 199, “Standards for Security Categorization of Federal Information and Information Systems.” 
+Required assurance levels for digital transactions are determined by assessing the potential impact of each of the above categories using the potential impact values described in Federal Information Processing Standard (FIPS) 199, "Standards for Security Categorization of Federal Information and Information Systems." 
 
 The three potential impact values are:
 
@@ -133,7 +133,7 @@ The 800-63 suite specifies baseline requirements for digital identity services b
 
 Agencies MAY determine to partially implement the NIST recommended guidance based on their mission risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.  Agencies SHALL demonstrate comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented. That said, agencies SHALL NOT alter the assessed value based on agency capabilities. Rather, the agency MAY adjust implementation of solutions based the agency's ability to mitigate risk via means not explicitly addressed by 800-63 requirements. The agency SHALL implement prodecures to document both the justification for any departure from normative requirements and detail the compensating control employed.
 
-This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, “Risk Management Guide for Information Technology Systems”](#SP800-30) recommends a general methodology for managing risk in federal systems. 
+This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, "Risk Management Guide for Information Technology Systems"](#SP800-30) recommends a general methodology for managing risk in federal systems. 
 
 ### <a name="daps"></a> 5.5. Digital Identity Acceptance Statement
 
