@@ -278,8 +278,8 @@ These guidelines are agnostic to the vast array of identity services architectur
 
 [6. Selecting Assurance Levels](#sec6)
 
-[6. Federation Considerations](#sec7)
+[7. Federation Considerations](#sec7)
 
-[7. References](#references)
+[8. References](#references)
 
  
