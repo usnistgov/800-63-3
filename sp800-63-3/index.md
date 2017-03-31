@@ -21,6 +21,8 @@ This document is broken up into sections as follows:
 
 [5. Digital Identity Risk Management](sec5_DIRM.html)
 
-[6. Federation Considerations](sec6_xAL.html)
+[6. Selecting Assurance Levels](sec6_xAL.html)
 
-[7. References](sec7_references.html)
+[7. Federation Considerations](sec7_tofedornottofed.html)
+
+[8. References](sec8_references.html)

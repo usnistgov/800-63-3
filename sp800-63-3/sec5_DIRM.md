@@ -137,11 +137,13 @@ This guidance addresses only those risks associated with authentication and iden
 
 ### <a name="daps"></a> 5.5. Digital Identity Acceptance Statement
 
-Shall include at a minimum:
+Agencies SHOULD include this information in existing artifacts required to achieve Authorization and Accreditation (A&A).
+
+The statement SHALL include, at a minimum:
 
 1. Assessed xAL.
 2. Implemented xAL.
-3. Rationale (if 1/2 different).
-4. Comparability of compensating controls when the complete set of applicable 800-63 requirements are not implemented.
+3. Rationale, if implemented xAL differs from assessed xAL
+4. Comparability demonstration of compensating controls when the complete set of applicable 800-63 requirements are not implemented.
 5. If not accepting federated identities, rationale.
 
