@@ -49,7 +49,7 @@ As noted above, a CSP maintains status information about the credentials it issu
 
 <a name="63Sec4-Figure1"></a>
 <div class="text-center" markdown="1">
-![](sp800-63-3/media/model.png)
+<img src="sp800-63-3/media/model.png" alt="Digital Identity Model" style="width:1000px;height:528px;;min-width: 1000px;min-height: 528px;"/>
 
 **Figure 4-1. Digital Identity Model**
 </div>
