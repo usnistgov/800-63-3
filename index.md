@@ -42,7 +42,7 @@ For those unable to provide comments online, a PDF and comment matrix is availab
 You can find links to the other volumes of draft SP 800-63-3 below.
 
 <ul class="audiences">
-
+<li>
   <div>
     <a href="sp800-63a.html"><img src="assets/63a.png" alt="SP 800-63A" width="150px" height="150px"></a>
   </div>
