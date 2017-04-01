@@ -10,42 +10,6 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
-[Table 4-1](#63bSec4-Table1) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding AALs.
-
-<a name="63bSec4-Table1"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 4-1.  Legacy M-04-04 AAL Requirements**
-
-</div>
-
-
-| M-04-04 Level of Assurance (LOA) |  Authenticator Assurance Level (AAL) |
-|:------------------:|:-----------------------------:|
-| 1 |  1| 
-| 2 |  2 or 3 |
-| 3 |  2 or 3 |
-| 4 |  3 |
-
-However, [Table 4-2](#63bSec4-Table2) shows the expanded set of AALs that are allowable to meet M-04-04 Levels of Assurance. Agencies SHALL select the corresponding AAL based on the impact of an authentication failure. 
-
-<a name="63bSec4-Table2"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 4-2.  Recommended M-04-04 AAL Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance | Authenticator Assurance Level
-|:------------------:|:-----------------------------:
-| 1, without making personal data available | 1, 2 or 3 
-| 1, making personal data available | 2 or 3
-| 2 | 2 or 3
-| 3 | 2 or 3 
-| 4 | 3 
-
 At IAL1, it is possible that attributes are collected and made available by the digital service.  Any personal data, whether self-asserted or validated, requires multi-factor authentication; therefore agencies SHALL select a minimum of AAL2 when self-asserted personal data, collected at IAL1, is made available online.
 
 ### 4.1. Authenticator Assurance Level 1
@@ -182,13 +146,13 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 *(Informative; refer to preceding sections for normative requirements)*
 
-[Table 4-3](#63bSec4-Table3) summarizes the requirements for each of the AALs:
+[Table 4-1](#63bSec4-Table1) summarizes the requirements for each of the AALs:
 
-<a name="63bSec4-Table3"></a>
+<a name="63bSec4-Table1"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 4-3.  AAL Summary of Requirements**
+**Table 4-1.  AAL Summary of Requirements**
 
 </div>
 

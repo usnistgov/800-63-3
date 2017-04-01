@@ -6,7 +6,7 @@
 
 *This section is informative.*
 
-There is a wide variety of terms used in the area of authentication. While the definitions of many terms are consistent with the earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition for many of these terms, careful attention to how the terms are defined here is warranted.
+A wide variety of terms are used in the area of digital identity. While the definitions of many terms are consistent with the earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition for many of these terms, careful attention to how the terms are defined here is warranted.
 
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document suite for additional definitions and abbreviations specific to their content.
 
@@ -20,7 +20,7 @@ A subject undergoing the processes of registration and identity proofing.
 A statement from a verifier to an RP that contains identity information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assurance
-In the context of [[OMB M-04-04]](#M-04-04) and this document, assurance is defined as 1) the degree of confidence in the vetting process used to establish the identity of a claimant to whom a credential was, or credentials were, issued, and 2) the degree of confidence that the claimant who uses the credential is the same as the subscriber to whom the credential was issued.
+The degree of confidence in the vetting process used to establish the identity of a claimant to whom a credential was, or credentials were, issued, and the degree of confidence that the claimant who uses the credential is the same as the subscriber to whom the credential was issued.
 
 #### Asymmetric Keys
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
@@ -113,7 +113,7 @@ The process by which a CSP and an RA collect and verify information about a pers
 
 #### Identity Provider (IdP)
 
-The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
+The party that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
 
 #### Memorized Secret
 A type of authenticator consisting of a character string that is intended to be memorized or memorable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.

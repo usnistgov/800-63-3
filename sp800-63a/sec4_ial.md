@@ -32,41 +32,6 @@ It is permissible for the CSP to collect additional information in the process o
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
 
-[Table 4-1](#63aSec4-Table1) lists strict adherence to M-04-04 LOAs, mapping the corresponding IALs.
-
-
-<a name="63aSec4-Table1"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 4-1. Legacy M-04-04 IAL Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance (LOA) | Identity Assurance Level (IAL)|
-|:------------------:|:-----------------------------:|
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 2 |
-| 4 | 3 |
-
-However, [Table 4-2](#63aSec4-Table2) shows the expanded set of IALs that are allowable to meet M-04-04 LOAs. Agencies SHALL select the corresponding IAL based on the impact of a proofing failure. Agencies SHALL consider the privacy risks of stronger identity proofing and SHALL NOT select an IAL that is higher than necessary for the business purpose of the digital service.
-
-<a name="63aSec4-Table2"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 4-2. Recommended M-04-04 IAL Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance | Identity Assurance Level
-|:------------------:|:-----------------------------:
-| 1 | 1
-| 2 | 1 or 2
-| 3 | 1 or 2
-| 4 | 1, 2 or 3
-
 
 The following requirements apply to any CSP performing identity proofing at IAL2 or 3.
 
@@ -245,13 +210,13 @@ An enrollment code SHALL be comprised of one of the following:
 
 _This section is informative._
 
-[Table 4-3](#63aSec4-Table3) summarizes the requirements for each of the authenticator assurance levels:
+[Table 4-1](#63aSec4-Table1) summarizes the requirements for each of the authenticator assurance levels:
 
-<a name="63aSec4-Table3"></a>
+<a name="63aSec4-Table1"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 4-3. IAL Requirements Summary**
+**Table 4-1. IAL Requirements Summary**
 
 </div>
 
