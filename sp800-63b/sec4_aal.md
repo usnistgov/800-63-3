@@ -80,7 +80,7 @@ At AAL1, reauthentication of the subscriber SHOULD be repeated at least once per
 
 #### 4.1.4. Security Controls
 
-The CSP SHOULD employ appropriately tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
+The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
 #### <a name="aal1records"></a> 4.1.5. Records Retention
 
