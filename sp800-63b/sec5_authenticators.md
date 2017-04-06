@@ -14,7 +14,7 @@ This section provides the detailed requirements specific for each type of authen
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Memorized-secret.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A Memorized Secret authenticator (commonly referred to as a <i>password</i> or, if numeric, a <i>PIN</i>) is a secret value that is intended to be chosen and memorable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value.</td>
+    <td>A Memorized Secret authenticator (commonly referred to as a <i>password</i> or, if numeric, a <i>PIN</i>) is a secret value that is intended to be chosen and memorable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value. A memorized secret is <i>something you know</i>.</td>
   </tr>
   </table>
   </div>
@@ -66,7 +66,7 @@ In addition, verifiers SHOULD perform an additional iteration of a password stre
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Look-up-secrets.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A look-up secret authenticator is a physical or electronic record that stores a set of secrets shared between the claimant and the CSP. The claimant uses the authenticator to look up the appropriate secret(s) needed to respond to a prompt from the verifier. For example, a claimant may be asked by the verifier to provide a specific subset of the numeric or character strings printed on a card in table format. A common application of look-up secrets is the use of "recovery keys" stored by the subscriber for use in the event another authenticator is lost or malfunctions.</td>
+    <td>A look-up secret authenticator is a physical or electronic record that stores a set of secrets shared between the claimant and the CSP. The claimant uses the authenticator to look up the appropriate secret(s) needed to respond to a prompt from the verifier. For example, a claimant may be asked by the verifier to provide a specific subset of the numeric or character strings printed on a card in table format. A common application of look-up secrets is the use of "recovery keys" stored by the subscriber for use in the event another authenticator is lost or malfunctions. A look-up secret is <i>something you have</i>.</td>
   </tr>
   </table>
   </div>
@@ -92,7 +92,9 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Out-of-band-OOB.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>An out-of-band authenticator is a physical device that is uniquely addressable and can communicate securely with the verifier over a distinct communications channel, referred to as the secondary channel. The device is possessed and controlled by the claimant and supports private communication over this secondary channel that is separate from the primary channel for e-authentication. The out-of-band authenticator can operate in one of the following ways: <br><br>
+    <td>An out-of-band authenticator is a physical device that is uniquely addressable and can communicate securely with the verifier over a distinct communications channel, referred to as the secondary channel. The device is possessed and controlled by the claimant and supports private communication over this secondary channel that is separate from the primary channel for e-authentication. An out-of-band authenticator is <i>something you have</i>.<br><br>
+    
+The out-of-band authenticator can operate in one of the following ways: <br><br>
 
 - The claimant transfers a secret received by the out-of-band device via the secondary channel to the verifier using the primary channel. For example, the claimant may receive the secret on their mobile device and type it (typically a 6-digit code) into their authentication session.<br><br>
 
