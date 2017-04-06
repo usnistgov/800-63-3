@@ -143,7 +143,7 @@ Depending on the type of out-of-band authenticator, one of the following SHALL t
 
 * Verification of secrets by claimant - The verifier SHALL display a random authentication secret to the claimant via the primary channel, and SHALL send the same secret to the out-of-band authenticator via the secondary channel for presentation to the claimant. It SHALL then wait for an approval (or disapproval) message via the secondary channel.
 
-In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes. In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
+In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
 
 The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator. If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
 
@@ -176,7 +176,7 @@ Single-factor OTP verifiers effectively duplicate the process of generating the 
 
 When a single-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography.
 
-The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes. In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
+The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
 
 If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
 
@@ -214,7 +214,7 @@ Multi-factor OTP verifiers effectively duplicate the process of generating the O
 
 When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single-factor, in accordance with [Section 5.1.4](#singlefactorOTP).
 
-The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in [Section 5.2.7](#verifier-secrets), verifiers SHALL accept a given time-based OTP only once during the validity period.
+The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
 
 If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
