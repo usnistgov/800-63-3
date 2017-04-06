@@ -349,7 +349,7 @@ When the subscriber successfully authenticates, the verifier SHOULD disregard an
 
 #### <a name="biometric_use"></a>5.2.3. Use of Biometrics
 
-For a variety of reasons, this document supports only limited use of biometrics for authentication. These include:
+For a variety of reasons, this document supports only limited use of biometrics (*something you are*) for authentication. These include:
 
 - Biometric False Match Rates (FMR) and False Non-Match Rates (FNMR) do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR and FNMR do not account for spoofing attacks.
 - Biometric matching is probabilistic, whereas the other authentication factors are deterministic.
