@@ -356,7 +356,7 @@ For a variety of reasons, this document supports only limited use of biometrics 
 - Biometric template protection schemes provide a method for revoking biometric credentials that are comparable to other authentication factors (e.g., PKI certificates and passwords). However, the availability of such solutions is limited, and standards for testing these methods are under development.
 - Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
 
-Therefore, the use of biometrics for authentication is supported with the following requirements and guidelines:
+Therefore, the limited use of biometrics for authentication is supported with the following requirements and guidelines:
 
 Biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator (something you have).
 
