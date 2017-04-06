@@ -8,7 +8,7 @@ During the lifecycle of an authenticator bound to a subscriber's identity, a num
 
 ### <a name="binding"></a>6.1. Authenticator Binding
 
-Authenticators MAY be issued (provided) by a CSP as part of a process such as enrollment; in other cases, the subscriber MAY provide their own, such as software or hardware cryptographic modules. For this reason, this guideline refers to the *binding* of an authenticator rather than the issuance, but this does not exclude the possibility that an authenticator is issued as well.
+Authenticators MAY be issued (provided) by CSPs as part of enrollment or other processes. In other cases, subscribers MAY provide their own authenticators, such as software or hardware cryptographic modules. Therefore, this guideline refers to the *binding* rather than the issuance of an authenticator. This does not exclude the possibility that an authenticator could be issued at the time of binding as well.
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with the identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
 
