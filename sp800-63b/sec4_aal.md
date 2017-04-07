@@ -50,7 +50,7 @@ At IAL1, it is possible that attributes are collected and made available by the 
 
 ### 4.1. Authenticator Assurance Level 1
 
-AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
+AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
 #### 4.1.1. Permitted Authenticator Types
 
