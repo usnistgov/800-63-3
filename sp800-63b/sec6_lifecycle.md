@@ -22,7 +22,7 @@ At IAL2, the CSP SHALL bind at least one, and SHOULD bind at least two, authenti
 
 At IAL2 and above, identifying information is associated with the online identity and the subscriber has undergone an identity proofing process as described in SP 800-63A. As a result, authenticators at the same AAL as the desired IAL SHALL be bound to the account. For example, if the subscriber has successfully completed proofing at IAL2, AAL2 or AAL3 authenticators are appropriate to bind to the IAL2 identity. While a CSP MAY bind an AAL1 authenticator to an IAL2 identity, if the subscriber is authenticated at AAL1, the CSP SHALL NOT expose personal information, even if self-asserted, to the subscriber. As above, the availability of additional authenticators provides backup methods of authentication if an authenticator is damaged, lost, or stolen.
 
-Enrollment and binding MAY be broken up into a number of separate physical encounters or electronic transactions. Two electronic transactions are considered to be separate if they are not part of the same protected session. In these cases, the following methods SHALL be used to ensure that the same party acts as applicant throughout the processes:
+Enrollment and binding MAY be broken up into a number of separate physical encounters or electronic transactions. Two electronic transactions are considered to be separate if they are not part of the same protected session. In these cases, the following methods SHALL be used to ensure that the same party acts as the applicant throughout the processes:
 
 1. For remote transactions -
 
