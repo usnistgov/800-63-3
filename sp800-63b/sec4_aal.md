@@ -94,7 +94,7 @@ AAL2 provides high confidence that the claimant controls authenticator(s) regist
 
 At AAL2, it is required to have either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
 
-When a multi-factor authenticator is used, any of the following may be used:
+When a multi-factor authenticator is used, any of the following MAY be used:
 
 * Multi-factor OTP Device
 * Multi-factor Cryptographic Software
