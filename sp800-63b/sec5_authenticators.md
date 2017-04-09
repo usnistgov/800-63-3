@@ -401,7 +401,7 @@ Attestation is information conveyed to the verifier regarding a directly connect
 
 If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication).
 
-Attestation information MAY be used as part of a risk-based authentication decision.
+Attestation information MAY be used as part of a verifier's risk-based authentication decision.
 
 #### <a name="verifimpers"></a>5.2.5. Verifier Impersonation Resistance
 
