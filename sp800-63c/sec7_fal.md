@@ -32,41 +32,6 @@ Regardless of what is requested or required by the protocol, the FAL in use is e
 
 If the RP is using a front-channel presentation mechanism (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHOULD require FAL2 or greater in order to protect the information in the assertion from the browser or other parties in the transaction.
 
-[Table 7-2](#63cSec7-Table2) lists strict adherence to M-04-04 Level of Assurance, mapping the corresponding FALs.
-
-<a name="63cSec7-Table2"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 7-2. Legacy M-04-04 FAL Requirements**
-
-</div>
-
-
-| M-04-04 Level of Assurance (LOA) |  Federation Assurance Level (FAL)
-|:------------------:|:-----------------------------:
-| 1 | 1
-| 2 | 2
-| 3 | 2
-| 4 | 3
-
-However, [Table 7-3](#63cSec7-Table3) shows the expanded set of FAL's that are allowable to meet M-04-04 Level of Assurance. Agencies SHALL select the corresponding FAL based on the assessed M-04-04 LOA.
-
-<a name="63cSec7-Table3"></a>
-
-<div class="text-center" markdown="1">
-
-**Table 7-3. Recommended M-04-04 FAL Requirements**
-
-</div>
-
-| M-04-04 Level of Assurance | Federation Assurance Level
-|:------------------:|:-----------------------------:
-| 1 | 1, 2, or 3
-| 2 | 2, or 3
-| 3 | 2, or 3
-| 4 | 3
-
 ### 7.1. Key Management
 
 At any FAL, the IdP SHALL ensure that an RP is unable to impersonate the IdP at another RP by protecting the assertion with a signature and key using approved cryptography. If the assertion is protected by a digital signature using an asymmetric key, the IdP MAY use the same public and private key pair to sign assertions to multiple RPs. The IdP MAY publish its public key in a verifiable fashion, such as at an HTTPS-protected URL at a well-known location. If the assertion is protected by a MAC using a shared key, the IdP SHALL use a different shared key for each RP.
