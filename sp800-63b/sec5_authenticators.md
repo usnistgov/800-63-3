@@ -14,14 +14,14 @@ This section provides the detailed requirements specific for each type of authen
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Memorized-secret.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A Memorized Secret authenticator (commonly referred to as a <i>password</i> or, if numeric, a <i>PIN</i>) is a secret value that is intended to be chosen and memorable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value.</td>
+    <td>A Memorized Secret authenticator (commonly referred to as a <i>password</i> or, if numeric, a <i>PIN</i>) is a secret value that is intended to be chosen and memorable by the user. Memorized secrets need to be of sufficient complexity and secrecy that it would be impractical for an attacker to guess or otherwise discover the correct secret value. A memorized secret is <i>something you know</i>.</td>
   </tr>
   </table>
   </div>
 
 #### 5.1.1.1. Memorized Secret Authenticators
 
-Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  If the CSP or verifier disallows a chosen memorized secret based on its appearance on a blacklist of compromised values, the subscriber SHALL choose a different memorized secret. No other complexity requirements for memorized secrets SHOULD be imposed; a rationale for this is presented in [Appendix A](#appA).
+Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber; memorized secrets chosen randomly by the CSP or verifier SHALL be at least 6 characters in length and MAY be entirely numeric.  If the CSP or verifier disallows a chosen memorized secret based on its appearance on a blacklist of compromised values, the subscriber SHALL be required to choose a different memorized secret. No other complexity requirements for memorized secrets SHOULD be imposed; a rationale for this is presented in [Appendix A](#appA).
 
 #### <a name="memsecretver"></a> 5.1.1.2. Memorized Secret Verifiers
 
@@ -42,7 +42,7 @@ When processing requests to establish and change memorized secrets, verifiers SH
 
 If the chosen secret is found in the list, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
 
-Verifiers SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
+Verifiers SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
 Verifiers SHOULD NOT impose other composition rules (e.g., mixtures of different character types or blocking two repeated characters) on memorized secrets. Verifiers SHOULD NOT require memorized secrets to be changed arbitrarily (e.g., periodically). However, verifiers SHALL force a change if there is evidence of compromise of the authenticator.
 
@@ -54,7 +54,7 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 
 Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks. Memorized secrets SHALL be “salted” and hashed using a suitable one-way password stretching function.  Password stretching functions take as inputs a password, a salt and a cost factor and output a password hash.  Their purpose is to make each password guessing trial by an attacker who has obtained a password hash file expensive and therefore cost of  a guessing attack high or prohibitive.  Examples of suitable password stretching functions include PBKDF2 [[SP 800-132]](#SP800-132) and Balloon [[BALLOON]](#balloon); the use of a memory-hard function is encouraged because it increases the cost of an attack. The password stretching function SHALL use an approved one-way function such as HMAC [[FIPS 198-1]](#FIPS198-1), [[SP 800-107]](#SP800-107) (using any approved hash function), SHA-3 [[FIPS 202]](#FIPS202), CMAC [[SP 800-38B]](#SP800-38B) or KMAC, cSHAKE or ParallelHash [[SP 800-185]](#SP800-185).
 
-The salt SHALL be at least 32 in bits in length, arbitrarily chosen so as to minimize salt value collisions among stored hashes.
+The salt SHALL be at least 32 in bits in length, arbitrarily chosen so as to minimize salt value collisions among stored hashes. Both the salt value and the resulting hash SHALL be stored for each subscriber using a memorized secret authenticator.
 
 For PBKDF2, the cost factor is an iteration count – the more times the PBKDF2 function is iterated the longer it takes to compute the password hash.  The iteration count should be as large as verification server performance will allow, typically at least 10,000 iterations.
 
@@ -66,7 +66,7 @@ In addition, verifiers SHOULD perform an additional iteration of a password stre
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Look-up-secrets.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A look-up secret authenticator is a physical or electronic record that stores a set of secrets shared between the claimant and the CSP. The claimant uses the authenticator to look up the appropriate secret(s) needed to respond to a prompt from the verifier. For example, a claimant may be asked by the verifier to provide a specific subset of the numeric or character strings printed on a card in table format. A common application of look-up secrets is the use of "recovery keys" stored by the subscriber for use in the event another authenticator is lost or malfunctions.</td>
+    <td>A look-up secret authenticator is a physical or electronic record that stores a set of secrets shared between the claimant and the CSP. The claimant uses the authenticator to look up the appropriate secret(s) needed to respond to a prompt from the verifier. For example, a claimant may be asked by the verifier to provide a specific subset of the numeric or character strings printed on a card in table format. A common application of look-up secrets is the use of "recovery keys" stored by the subscriber for use in the event another authenticator is lost or malfunctions. A look-up secret is <i>something you have</i>.</td>
   </tr>
   </table>
   </div>
@@ -82,7 +82,7 @@ Verifiers of look-up secrets SHALL prompt the claimant for the next secret from 
 
 Verifiers SHALL store look-up secrets in a form that is resistant to offline attacks. Secrets SHALL be hashed with a *salt* value using an approved hash function as described in [[SP 800-132]](#SP800-132). The salt value SHALL be a 128-bit or longer random value generated by an approved random bit generator that is stored along with the hash result. A keyed hash function (e.g., HMAC [[FIPS198-1]](#FIPS198-1)), with the key stored separately from the hashed authenticators (e.g., in a hardware security module) SHOULD be used to further resist dictionary attacks against the stored hashed authenticators.
 
-Look-up secrets SHALL be generated using an approved random bit generator and SHALL have at least 20 bits of entropy. When look-up secrets have less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
+Look-up secrets SHALL be generated using an approved random bit generator and SHALL have at least 20 bits of entropy. When look-up secrets have less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when requesting look-up secrets in order to provide resistance to eavesdropping and MitM attacks.
 
@@ -92,7 +92,9 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Out-of-band-OOB.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>An out-of-band authenticator is a physical device that is uniquely addressable and can communicate securely with the verifier over a distinct communications channel, referred to as the secondary channel. The device is possessed and controlled by the claimant and supports private communication over this secondary channel that is separate from the primary channel for e-authentication. The out-of-band authenticator can operate in one of the following ways: <br><br>
+    <td>An out-of-band authenticator is a physical device that is uniquely addressable and can communicate securely with the verifier over a distinct communications channel, referred to as the secondary channel. The device is possessed and controlled by the claimant and supports private communication over this secondary channel that is separate from the primary channel for e-authentication. An out-of-band authenticator is <i>something you have</i>.<br><br>
+    
+The out-of-band authenticator can operate in one of the following ways: <br><br>
 
 - The claimant transfers a secret received by the out-of-band device via the secondary channel to the verifier using the primary channel. For example, the claimant may receive the secret on their mobile device and type it (typically a 6-digit code) into their authentication session.<br><br>
 
@@ -141,9 +143,9 @@ Depending on the type of out-of-band authenticator, one of the following SHALL t
 
 * Verification of secrets by claimant - The verifier SHALL display a random authentication secret to the claimant via the primary channel, and SHALL send the same secret to the out-of-band authenticator via the secondary channel for presentation to the claimant. It SHALL then wait for an approval (or disapproval) message via the secondary channel.
 
-In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes. In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
+In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
 
-The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator. If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
+The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator. If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
 #### <a name="singlefactorOTP"></a> 5.1.4. Single-factor OTP Device
 
@@ -174,9 +176,9 @@ Single-factor OTP verifiers effectively duplicate the process of generating the 
 
 When a single-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography.
 
-The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes. In order to provide replay resistance as described in Section [5.2.7](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
+The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
 
-If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle).
+If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
 #### 5.1.5. Multi-factor OTP Devices
 
@@ -210,11 +212,11 @@ The unencrypted secret key and activation secret or biometric sample (and any bi
 
 Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but without the requirement that a second factor be provided. As such, the symmetric keys used by authenticators SHALL be strongly protected against compromise.
 
-When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat it the authenticator as single-factor, in accordance with [Section 5.1.4](#singlefactorOTP).
+When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat the authenticator as single-factor, in accordance with [Section 5.1.4](#singlefactorOTP).
 
-The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in [Section 5.2.7](#verifier-secrets), verifiers SHALL accept a given time-based OTP only once during the validity period.
+The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
 
-If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a throttling mechanism that effectively limits the number of failed authentication attempts an attacker can make on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
+If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
 #### 5.1.6. Single-factor Cryptographic Software
 
@@ -270,7 +272,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Multi-factor-software-crypto.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A multi-factor software cryptographic authenticator is a cryptographic key is stored on disk or some other "soft" media that requires activation through a second factor of authentication. Authentication is accomplished by proving possession and control of the key. The authenticator output is highly dependent on the specific cryptographic protocol, but it is generally some type of signed message. The multi-factor software cryptographic authenticator is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
+    <td>A multi-factor software cryptographic authenticator is a cryptographic key that is stored on disk or some other "soft" media that requires activation through a second factor of authentication. Authentication is accomplished by proving possession and control of the key. The authenticator output is highly dependent on the specific cryptographic protocol, but it is generally some type of signed message. The multi-factor software cryptographic authenticator is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
   </tr>
   </table>
   </div>
@@ -297,7 +299,7 @@ The requirements for a multi-factor cryptographic software verifier are identica
 <table style="width:100%">
   <tr>
     <td><img src="sp800-63b/media/Multi-factor-crypto-device.png" alt="authenticator" style="width: 100px;height: 100px;min-width:100px;min-height:100px;"/></td>
-    <td>A multi-factor cryptographic device is a hardware device that performs cryptographic operations using a protected cryptographic key(s) that require activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is provided by direct connection to the user endpoint and is highly dependent on the specific cryptographic device and protocol, but it is typically some type of signed message. The multi-factor cryptographic device is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
+    <td>A multi-factor cryptographic device is a hardware device that performs cryptographic operations using one or more protected cryptographic keys that requires activation through a second authentication factor. Authentication is accomplished by proving possession of the device and control of the key. The authenticator output is provided by direct connection to the user endpoint and is highly dependent on the specific cryptographic device and protocol, but it is typically some type of signed message. The multi-factor cryptographic device is <i>something you have</i>, and it SHALL be activated by either <i>something you know</i> or <i>something you are</i>.</td>
   </tr>
   </table>
   </div>
@@ -347,14 +349,14 @@ When the subscriber successfully authenticates, the verifier SHOULD disregard an
 
 #### <a name="biometric_use"></a>5.2.3. Use of Biometrics
 
-For a variety of reasons, this document supports only limited use of biometrics for authentication. These include:
+For a variety of reasons, this document supports only limited use of biometrics (*something you are*) for authentication. These include:
 
 - Biometric False Match Rates (FMR) and False Non-Match Rates (FNMR) do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR and FNMR do not account for spoofing attacks.
 - Biometric matching is probabilistic, whereas the other authentication factors are deterministic.
 - Biometric template protection schemes provide a method for revoking biometric credentials that are comparable to other authentication factors (e.g., PKI certificates and passwords). However, the availability of such solutions is limited, and standards for testing these methods are under development.
-- Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from through objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
+- Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
 
-Therefore, the use of biometrics for authentication is supported with the following requirements and guidelines:
+Therefore, the limited use of biometrics for authentication is supported with the following requirements and guidelines:
 
 Biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator (something you have).
 
@@ -399,7 +401,7 @@ Attestation is information conveyed to the verifier regarding a directly connect
 
 If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication).
 
-Attestation information MAY be used as part of a risk-based authentication decision.
+Attestation information MAY be used as part of a verifier's risk-based authentication decision.
 
 #### <a name="verifimpers"></a>5.2.5. Verifier Impersonation Resistance
 
