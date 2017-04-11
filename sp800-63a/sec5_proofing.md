@@ -131,7 +131,7 @@ The following requirements apply to the identity verification steps for IAL2 and
 
 #### 5.3.3.2. Requirements for In-person Proofing Performed Over Remote Channels
 
-It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the enrollee in the same physical location as the CSP or when the enrollee is remote to the CSP.
+It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
 
 Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
