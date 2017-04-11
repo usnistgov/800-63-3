@@ -1,4 +1,4 @@
-<a name="appA"></a>
+<a name="appA"/>
 
 ## Appendix A: Strength of Memorized Secrets
 
