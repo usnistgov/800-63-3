@@ -1,4 +1,4 @@
-<a name="def-and-acr"
+<a name="def-and-acr"/>
 
 ## Appendix A: Definitions and Acronyms
 
