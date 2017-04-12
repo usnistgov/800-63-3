@@ -19,7 +19,7 @@ The validated and verified location (physical or digital) where an individual ca
 #### Applicant
 A subject undergoing the processes of registration and identity proofing.
 
-#### Approved
+#### Approved Cryptography
 Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
 
 #### Assertion
