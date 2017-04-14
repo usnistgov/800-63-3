@@ -53,7 +53,7 @@ A complete statement asserting a property of a subscriber, independent of format
 A communication channel that uses approved encryption where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) BCP 195 is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator.
 
 #### Authentication
-Process of determining the validity of one or more credentials used to claim a digital identity.
+Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system.
 
 #### Authentication Factor
 The three types of authentication factors are *something you know*, *something you have*, and *something you are*. Every authenticator has one or more authentication factors.
