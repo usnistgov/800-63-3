@@ -23,7 +23,7 @@ A subject undergoing the processes of registration and identity proofing.
 Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
 
 #### Assertion
-A statement from a verifier to an RP that contains identity information about a subscriber. Assertions may also contain verified attributes.
+A statement from a verifier to an RP that contains information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assertion Reference
 A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier.
@@ -267,6 +267,14 @@ A passphrase is a memorized secret consisting of a sequence of words or other te
 
 #### Password
 See *memorized secret*.
+
+#### Personal Data
+
+See *Personally Identifiable Information*.
+
+#### Personal Information
+
+See *Personally Identifiable Information*.
 
 #### Personal Identification Number (PIN)
 A memorized secret typically consisting only of decimal digits.

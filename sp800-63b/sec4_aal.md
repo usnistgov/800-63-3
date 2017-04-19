@@ -10,6 +10,8 @@ Detailed normative requirements for authenticators and verifiers at each AAL are
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
+At IAL1, it is possible that attributes are collected and made available by the digital service. Any PII, whether self-asserted or validated, requires multi-factor authentication; therefore agencies SHALL select a minimum of AAL2 when self-asserted PII is made available online.
+
 ### 4.1. Authenticator Assurance Level 1
 
 AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
