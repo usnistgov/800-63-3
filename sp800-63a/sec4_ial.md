@@ -109,7 +109,7 @@ At a minimum, the applicant must be verified by a process that is able to achiev
 
 #### 4.4.1.5. Presence Requirements
 
-The CSP SHOULD perform identity proofing in-person. The CSP MAY perform remote identity proofing. The CSP SHOULD offer both in-person and remote proofing.
+In-person and remote identity proofing are allowed. The CSP SHOULD offer both in-person and remote proofing.
 
 #### <a name="4-4-1-6"></a> 4.4.1.6. Address Confirmation
 
