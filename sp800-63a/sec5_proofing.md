@@ -19,9 +19,9 @@ The goal of identity resolution is to uniquely distinguish an individual among a
 
 The goal of identity validation is to collect from the applicant the most appropriate identity evidence (e.g., a passport or driver's license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of three process steps: collecting the appropriate identity evidence, confirming the evidence is genuine and authentic, and confirming the data contained on the identity evidence is valid, current, and related to a real-life subject.
 
-#### 5.2.1. Identity Evidence Characteristic Requirements
+#### 5.2.1. Identity Evidence Quality Requirements
 
-This section provides requirements on the properties and qualities of identity evidence at a given IAL.
+This section provides quality requirements for identity evidence.
 
 #### 5.2.1.1. Scoring of Identity Evidence
 
@@ -31,11 +31,11 @@ This section provides requirements on the properties and qualities of identity e
 
 <div class="text-center" markdown="1">
 
-**Table 5-1.  Properties of Identity Evidence**
+**Table 5-1.  Qualities of Identity Evidence**
 
 </div> 
 
-|Strength|Properties of Identity Evidence|
+|Strength|Qualities of Identity Evidence|
 |:---:|:------------------------------| 
 |Unacceptable|No compliance identity evidence provided. |
 |Weak|- The issuing source of the evidence did not perform identity proofing.<br><br>- The issuing process for the evidence means that it can reasonably be assumed to have been delivered into the possession of a subject.<br><br>- The evidence contains at least one reference number that uniquely identifies itself or the subject to whom it relates.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;- The issued Identity Evidence contains a photograph, image, or biometric of the person to whom it relates.|
