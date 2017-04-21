@@ -19,9 +19,9 @@ The goal of identity resolution is to uniquely distinguish an individual among a
 
 The goal of identity validation is to collect from the applicant the most appropriate identity evidence (e.g., a passport or driver's license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of three process steps: collecting the appropriate identity evidence, confirming the evidence is genuine and authentic, and confirming the data contained on the identity evidence is valid, current, and related to a real-life subject.
 
-#### 5.2.1. Identity Evidence Characteristic Requirements
+#### 5.2.1. Identity Evidence Quality Requirements
 
-This section provides requirements on the properties and qualities of identity evidence at a given IAL.
+This section provides quality requirements for identity evidence.
 
 #### 5.2.1.1. Scoring of Identity Evidence
 
@@ -31,13 +31,13 @@ This section provides requirements on the properties and qualities of identity e
 
 <div class="text-center" markdown="1">
 
-**Table 5-1.  Properties of Identity Evidence**
+**Table 5-1.  Qualities of Identity Evidence**
 
 </div> 
 
-|Strength|Properties of Identity Evidence|
+|Strength|Qualities of Identity Evidence|
 |:---:|:------------------------------| 
-|Unacceptable|No compliance identity evidence provided. |
+|Unacceptable|No acceptable identity evidence provided. |
 |Weak|- The issuing source of the evidence did not perform identity proofing.<br><br>- The issuing process for the evidence means that it can reasonably be assumed to have been delivered into the possession of a subject.<br><br>- The evidence contains at least one reference number that uniquely identifies itself or the subject to whom it relates.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;- The issued Identity Evidence contains a photograph, image, or biometric of the person to whom it relates.|
 |Fair|- The issuing source of the evidence confirmed the claimed identity through an identity proofing process.<br><br>- The issuing process for the evidence means that it can reasonably be assumed to have been delivered into the possession of the subject to whom it relates.<br><br>- The evidence:<br>&nbsp;&nbsp;&nbsp;&nbsp;- contains at least one reference number that uniquely identifies the subject to whom it relates. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- contains a photograph, image, or biometric of the person to whom it relates.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- can have ownership confirmed through KBV.<br><br>- Where the evidence includes digital information, that information is protected using cryptographic or proprietary methods, or both, and those methods ensure the integrity of the information and enable the authenticity of the claimed issuing source to be confirmed. <br><br>- Where the evidence includes physical security features, it requires proprietary knowledge to be able to reproduce it.<br><br> - The issued evidence is unexpired.|
 |Strong|- The issuing source of the evidence confirmed the claimed identity through written procedures designed to enable it to form a reasonable belief that it knows the true identity of the subject. Such procedures shall be subject to recurring oversight by regulatory or publicly accountable institutions. For example, the Customer Identification Program guidelines established in response to the USA PATRIOT Act of 2001 or the [Red Flags Rule](#rfr), under Section 114 of the Fair and Accurate Credit Transaction Act of 2003 (FACT Act)<br><br>- The issuing process for the evidence ensured that it was delivered into the possession of the subject to whom it relates.<br><br>  - The issued evidence contains at least one reference number that uniquely identifies the subject to whom it relates.<br><br>- The applicant's full name on the issued evidence must be the name that the identity was officially known at the time of issuance. Pseudonyms, aliases, and initials for first given name and surname are not permitted.<br><br>- The issued evidence contains a photograph, image, or biometric of the person to whom it relates.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>- The applicant proves possession of an AAL2 authenticator bound to an IAL2 identity, at a minimum.<br><br>- Where the issued evidence includes digital information, that information is protected using cryptographic or proprietary methods, or both, and those methods ensure the integrity of the information and enable the authenticity of the claimed issuing source to be confirmed.<br><br>  - Where the issued evidence contains physical security features, it requires proprietary knowledge and proprietary equipment to be able to reproduce it.<br><br>- The evidence is unexpired.|
@@ -131,14 +131,14 @@ The following requirements apply to the identity verification steps for IAL2 and
 
 #### 5.3.3.2. Requirements for In-person Proofing Performed Over Remote Channels
 
-It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the enrollee in the same physical location as the CSP or when the enrollee is remote to the CSP.
+It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
 
 Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
 3. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to be clearly visible to the remote operator. The operator SHALL direct the applicant, as required, to remove any doubt in the proofing process.
-4. The CSP SHALL require that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors that are in the entire field of view of the camera and the remote, live operator.
+4. The CSP SHALL require that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors.
 5. The CSP SHALL require operators to have undergone a training program to detect potential fraud and to properly perform a virtual in-process proofing session.
 6. A CSP MAY have an attendant participate in-person, at the same physical location as the applicant, for the entirety of the enrollment and identity proofing session.
 7. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as the concourse of a shopping mall.
