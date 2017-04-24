@@ -136,9 +136,9 @@ In-person proofing can be satisfied in two ways:
 
 #### <a name="supervised"></a> 5.3.3.2. Requirements for Remote, Supervised In-person Proofing 
 
-It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
+It is possible for a CSP remotely to achieve the security and confidence comparable to in-person proofing .  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
 
-Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
+Remote, supervised identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
