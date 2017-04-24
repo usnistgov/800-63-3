@@ -59,7 +59,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 10. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
 
-11. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g. cryptography).
+11. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in unsupervised remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g. cryptography).
 
 12. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.
 
@@ -76,7 +76,7 @@ The CSP SHALL NOT proof applicants.  Applicants MAY self-assert zero or more att
 
 ### 4.4. Identity Assurance Level 2
 
-IAL2 allows for **remote** or **in-person** identity proofing.  IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant. A CSP MAY exceed these requirements.
+IAL2 allows for **unsupervised remote** or **in-person** identity proofing.  IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant. A CSP MAY exceed these requirements.
 
 A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.4.2](#referee).
 
@@ -109,7 +109,7 @@ At a minimum, the applicant must be verified by a process that is able to achiev
 
 #### 4.4.1.5. Presence Requirements
 
-In-person and remote identity proofing are allowed. The CSP SHOULD offer both in-person and remote proofing.
+In-person and unsupervised remote identity proofing are allowed. The CSP SHOULD offer both in-person and unsupervised remote proofing.
 
 #### <a name="4-4-1-6"></a> 4.4.1.6. Address Confirmation
 
@@ -179,7 +179,7 @@ See [Section 5.3, Identity Verification](#verify) for more information on accept
 
 All identity proofing steps SHALL be performed in person. See [Section 5.3.3](#vip) for more details.
 
-Remote proofing SHALL NOT be allowed.
+Unsupervised remote proofing SHALL NOT be allowed.
 
 #### 4.5.6. Address Confirmation
 
