@@ -123,13 +123,18 @@ The following requirements apply to the identity verification steps for IAL2 and
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
+In-person proofing can be satisfied in two ways:
+
+- A physical encounter of the applicant, supervised by an operator
+- An remote encounter of the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).
+
 #### 5.3.3.1. General Requirements
 
 1.	The CSP SHALL have the operator view the biometric source (e.g., fingers, face) for presence of non-natural materials and perform such inspections as part of the proofing process.
 
 2.	The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use) apply.
 
-#### 5.3.3.2. Requirements for In-person Proofing Performed Over Remote Channels
+#### <a name="supervised"></a> 5.3.3.2. Requirements for Remote, Supervised In-person Proofing 
 
 It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
 

@@ -118,13 +118,13 @@ In-person and remote identity proofing are allowed. The CSP SHOULD offer both in
 
 - Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
 
-- **If CSP performed in-person proofing:**  
+- **If CSP performed in-person proofing (physical or supervised remote):**  
 
 	- The CSP SHOULD send a notification of proofing to the address of record.
 	- The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.
 	- The enrollment code SHALL be valid for a maximum of 7 days
 
-- **If the CSP performed remote proofing:**  
+- **If the CSP performed remote proofing (unsupervised):**  
   
 	- The CSP SHALL send an enrollment code to an address of record of the applicant.
 	- The applicant SHALL present a valid enrollment code to complete the identity proofing process.
