@@ -72,7 +72,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 ### 4.3. Identity Assurance Level 1
 
-The CSP SHALL NOT proof applicants.  Applicants MAY self-assert zero or more attributes to the CSP.
+A CSP that supports only IAL1 SHALL NOT proof applicants.  Applicants MAY self-assert zero or more attributes to the CSP. An IAL2 or IAL3 CSP SHOULD support RPs that only require IAL only if the user consents.
 
 ### 4.4. Identity Assurance Level 2
 
