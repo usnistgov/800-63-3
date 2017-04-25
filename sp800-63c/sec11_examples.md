@@ -5,7 +5,7 @@
 
 *This section is informative.*
 
-Three types of assertion technologies will be discussed: SAML assertions, Kerberos tickets, and OpenID Connect tokens. 
+Three types of assertion technologies are discussed below: SAML assertions, Kerberos tickets, and OpenID Connect tokens. This list is not inclusive of all possible assertion technologies, but does represent those that are commonly used in federated identity systems.
 
 ### 11.1. Security Assertion Markup Language (SAML)
 
