@@ -86,17 +86,17 @@ A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#nor
 
 Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context.  See [Section 5.1](#resolve) for general resolution requirements.
 
-#### 4.4.1.2. Evidence Requirements
+#### 4.4.1.2. Evidence Collection Requirements
 
-See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
-- One (1) piece of SUPERIOR or STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
+- One (1) piece of SUPERIOR or STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence **AND** the CSP validates the evidence directly with the issuing source; **OR**
 - Two (2) pieces of STRONG evidence; **OR**
 - One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence.
 
 #### 4.4.1.3. Validation Requirements
 
-See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for more information on validating identity evidence.
 
 - Each piece of evidence SHALL be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL NOT be used for more than one piece of presented identity evidence.
@@ -154,17 +154,17 @@ IAL3 adds additional rigor to the steps required at IAL2, to include providing f
 Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.1](#resolve) for general resolution requirements.
 
 
-#### 4.5.2. Evidence Requirements
+#### 4.5.2. Evidence Collection Requirements
 
-See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
 - Two (2) or more pieces of SUPERIOR evidence; **OR**
-- One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence; **OR**
+- One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence **if** the issuing source of the evidence, during its identity proofing event, confirmed the claimed identity by collecting two (2) or more forms of SUPERIOR or STRONG evidence **AND** the CSP validates the evidence directly with the issuing source; **OR**
 - Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence.
 
 #### 4.5.3. Validation Requirements  
 
-See [Section 5.2, Identity Evidence Validation](#validate) for more information on acceptable identity evidence.
+See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for more information on validating identity evidence.
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
