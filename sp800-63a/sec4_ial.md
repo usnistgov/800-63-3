@@ -131,7 +131,7 @@ In-person and unsupervised remote identity proofing are allowed. The CSP SHOULD 
 	- The CSP SHOULD send the enrollment code to the physical mailing address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
 	- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
 	- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. Postal Service.  
-	- If delivery of the enrollment code was sent to an address of record that is not physical mail, the CSP SHALL send notification of proofing to a different address of record than the destination of the enrollment code. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the physical address in records or obtained from validated and verified evidence, such as a driver's license.
+	- The CSP SHALL ensure the enrollment code and notification of proofing are sent by  different means. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the physical address in records or obtained from validated and verified evidence, such as a driver’s license.
 
 #### 4.4.1.7. Biometric Collection
 
@@ -164,7 +164,7 @@ See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) f
 
 #### 4.5.3. Validation Requirements  
 
-See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for more information on validating identity evidence.
+See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for more information on validating identity evidence
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
