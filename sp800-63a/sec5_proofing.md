@@ -118,7 +118,7 @@ The following requirements apply to the identity verification steps for IAL2 and
 	- The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.
 	- The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.
 	- The CSP SHALL NOT use KBV questions for which the answers do not change regularly over a period of time (e.g., What was your first car?).
-	- The CSP SHALL ensure that any KBV approach does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.
+	- The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.
 	- The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed session.
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
