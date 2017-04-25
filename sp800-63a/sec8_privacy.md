@@ -14,7 +14,9 @@ Section 4.2, requirement (3) permits only the collection of PII necessary to val
 
 #### 8.1.1. Social Security Numbers
 
-Section 4.2, requirement (2) does not permit the CSP to collect the SSN unless it is necessary for performing identity resolution because it cannot be accomplished by collection of another attribute or combination of attributes.  Unnecessary use of the SSN may be particularly vulnerable to misuse and can place the applicant at risk of harm such as through identity theft. The SSN may serve to achieve identity resolution for RPs, in particular federal agencies, that use SSNs to correlate a subscriber to existing records.  Thus, this document recognizes the role of the SSN as an identifier and makes appropriate allowance for its use.  Note though that evidence requirements at the higher IALs preclude the usage of the SSN or the Social Security Card as acceptable identity evidence.  
+Section 4.2, requirement (2) does not permit the CSP to collect the SSN unless it is necessary for performing identity resolution because it cannot be accomplished by collection of another attribute or combination of attributes.  Unnecessary use of the SSN may be particularly vulnerable to misuse and can place the applicant at risk of harm such as through identity theft. The SSN may serve to achieve identity resolution for RPs, in particular federal agencies, that use SSNs to correlate a subscriber to existing records.  Thus, this document recognizes the role of the SSN as an identifier and makes appropriate allowance for its use.  
+
+> Note: Evidence requirements at the higher IALs preclude the usage of the SSN or the Social Security Card as acceptable identity evidence.  
 
 The initial requirement in [Executive Order (EO) 9397](#9397) for all federal agencies to use the SSN as a primary means of identification for individuals working for, with, or conducting business with their agency, has since been eliminated. Accordingly, EO 9397 cannot be referenced as the sole authority establishing the collection of the SSN as necessary. 
 
