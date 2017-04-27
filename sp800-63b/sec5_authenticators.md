@@ -362,7 +362,7 @@ Biometrics SHALL be used only as part of multi-factor authentication with a phys
 
 An authenticated protected channel between sensor (or endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint authenticated **prior** to capturing the biometric sample from the claimant.
 
-Empirical testing of the biometric system to be deployed SHALL demonstrate an EER of **1 in 1000** or better with respect to matching performance. The biometric system SHALL operate with an FMR of **1 in 1000** or better.
+The biometric system SHALL operate with a false match rate (FMR) of **1 in 1000** or better. The false non-match rate (FNMR) SHOULD be low enough that the claimant has a good chance of authenticating successfully within the consecutive failed authentication attempt limits listed below.
 
 The biometric system SHOULD implement PAD. Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks.
 
