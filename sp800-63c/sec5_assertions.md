@@ -34,7 +34,10 @@ Although details vary based on the exact federation protocol in use, an assertio
 
 ### 5.1. Assertion Binding
 
-An assertion can be classified based on whether presentation by a claimant of an assertion reference or the assertion itself is sufficient for establishing the binding between the subscriber and the assertion, or if a stronger binding is required.
+ Assertion binding can be classified based on whether:
+ - presentation by a claimant of an assertion reference; or
+ - the assertion itself is sufficient for binding the subscriber to the assertion; or
+ - if a stronger binding is required.
 
 #### 5.1.1. Bearer Assertions
 
@@ -74,7 +77,7 @@ When encrypting assertions the IdP SHALL encrypt the contents of the assertion u
 
 All encryption of assertions SHALL use approved cryptography.
 
-When assertions are passed through third parties, such as a browser, the actual assertion SHALL be encrypted. For example, the XML SAML assertion using XML-Encryption.  For assertions that are passed directly between IDP and RP, the actual assertion MAY be encrypted. If it is not, the assertion SHALL be sent over an authenticated protected channel. 
+When assertions are passed through third parties, such as a browser, the actual assertion SHALL be encrypted. For example, the XML SAML assertion using XML-Encryption.  For assertions that are passed directly between IDP and RP, the actual assertion MAY be encrypted. If it is not, the assertion SHALL be sent over an authenticated protected channel.
 
 > Note: Assertion encryption is required at FAL2 and FAL3.
 
