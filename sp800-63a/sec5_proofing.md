@@ -130,11 +130,11 @@ In-person proofing can be satisfied in two ways:
 
 2.	The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use) apply.
 
-#### <a name="supervised"></a> 5.3.3.2. Requirements for Remote, Supervised In-person Proofing 
+#### <a name="supervised"></a> 5.3.3.2. Requirements for Supervised Remote In-person Proofing 
 
-It is possible for a CSP remotely to achieve the security and confidence comparable to in-person proofing .  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
+It is possible for a CSP remotely to achieve the security and confidence comparable to in-person proofing.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
 
-Remote, supervised identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
+Supervised remote identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
