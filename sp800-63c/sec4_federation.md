@@ -33,7 +33,7 @@ IdPs and RPs MAY act as their own authorities of who to federate with or MAY ext
 
 Protocols requiring the transfer of keying information SHALL use a secure method to exchange keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
-Federation relationships SHALL establish parameters regarding expected and acceptable identity assurance level (IAL) and authentication assurance level (AAL) in connection with the federated relationship.
+Federation relationships SHALL establish parameters regarding expected and acceptable identity assurance level(s) (IAL) and authentication assurance level(s) (AAL) in connection with the federated relationship.
 
 #### <a name="dynamic-registration"></a> 4.1.2. Dynamic Registration
 
@@ -76,23 +76,23 @@ Where proxies are used, they function as an IdP on one side and an RP on the oth
 **Figure 4-2. Federation Proxy**
 </div>
 
-A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 4.2](#privacy-reqs) below. 
+A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 4.2](#privacy-reqs) below.
 
 See [Section 9.5](#blinding) for further information on blinding techniques, their uses, and limitations.
- 
+
 #### 4.1.5. <a name="runtime-decisions"></a>Runtime Decisions
 
 The fact that parties have federated SHALL NOT be interpreted as permission to pass information. Federated parties MAY establish whitelists of other federated parties who authenticate subscribers or pass information about them without runtime authorization from the subscriber. Federated parties MAY also establish blacklists of other federated parties who are not allowed to pass information about subscribers at all. Every party that is not on a whitelist or a blacklist SHALL be placed by default in a gray area where runtime authorization decisions will be made by an authorized party, often the subscriber.
 
 To mitigate the risk of unauthorized exposure of sensitive information (e.g., shoulder surfing), the IdP SHALL, by default, mask sensitive information displayed to the subscriber.  The IdP SHALL provide mechanisms for the subscriber to temporarily unmask such information in order for the subscriber to view full values. The IdP SHALL provide effective mechanisms for redress of applicant complaints or problems (e.g., subscriber identifies an inaccurate attribute value). For more details on masking and redress, please see [Section 10](#sec10) on usability considerations.
 
-The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation, consistent with [Section 9.2](#notice). If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. An IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP. 
+The subscriber SHALL receive explicit notice and be able to provide positive confirmation before any attributes about the subscriber are transmitted to any RP. At a minimum, the notice SHOULD be provided by the party in the position to provide the most effective notice and obtain confirmation, consistent with [Section 9.2](#notice). If the protocol in use allows for optional attributes, the subscriber SHALL be given the option to decide whether to transmit those attributes to the RP. An IdP MAY employ mechanisms to remember and re-transmit the exact attribute bundle to the same RP.
 
 ### <a name="privacy-reqs"></a> 4.2. Privacy Requirements
 
-Federation involves the transfer of personal attributes from a third party, the IdP, that is not otherwise involved in a transaction. Federation also potentially gives the IdP broad visibility into subscriber activities. Accordingly, there are specific privacy requirements associated with federation. 
+Federation involves the transfer of personal attributes from a third party, the IdP, that is not otherwise involved in a transaction. Federation also potentially gives the IdP broad visibility into subscriber activities. Accordingly, there are specific privacy requirements associated with federation.
 
-Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with the privacy interests of subscribers. 
+Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with the privacy interests of subscribers.
 
 The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request for the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in [Section 5.2.5](#ppi) or privacy-enhancing cryptographic protocols, to provide unlinkability and discourage subscriber activity tracking and profiling.
 
@@ -110,8 +110,8 @@ The following requirements apply specifically to agencies:
 
 ### 4.3. <a name="federation-session"></a> Reauthentication and Session Requirements in Federated Environments
 
-In a federated environment, the RP manages its sessions separately from any sessions at the IdP. The session at the RP starts when the RP processes the federation protocol from the IdP. At the time of a federated login, the subscriber MAY have an existing session at the IdP which MAY be used as part of the authentication process to the RP. The IdP SHALL communicate any information it has regarding the time of the latest authentication event at the IdP, and the RP MAY use this information in determining its access policies. Depending on the capabilities of the federation protocol in use, the IdP SHOULD allow the RP to request that the subscriber re-authenticate at the IdP as part of a federation request. 
+In a federated environment, the RP manages its sessions separately from any sessions at the IdP. The session at the RP starts when the RP processes the federation protocol from the IdP. At the time of a federated login, the subscriber MAY have an existing session at the IdP which MAY be used as part of the authentication process to the RP. The IdP SHALL communicate any information it has regarding the time of the latest authentication event at the IdP, and the RP MAY use this information in determining its access policies. Depending on the capabilities of the federation protocol in use, the IdP SHOULD allow the RP to request that the subscriber re-authenticate at the IdP as part of a federation request.
 
 Due to the distributed nature of a federated system, the subscriber is capable of terminating sessions with the IdP and RP independently of one another. The RP SHALL NOT assume that the subscriber has an active session at the IdP past the establishment of the federated log in. The IdP SHALL NOT assume that termination of the subscriber's session at the IdP will propagate to any sessions that subscriber would have at downstream RPs.
 
-See [Section 7 of 800-63B](sp800-63b.html#sec7) for more information about session management requirements. 
+See [Section 7 of 800-63B](sp800-63b.html#sec7) for more information about session management requirements.
