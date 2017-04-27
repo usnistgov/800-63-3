@@ -5,7 +5,7 @@
 
 *This section is normative.*
 
-An assertion used for authentication is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein. 
+An assertion used for authentication is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein.
 
 Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute claims regarding the subscriber.
 
@@ -70,9 +70,13 @@ The assertion signature SHALL either be a digital signature using asymmetric key
 
 #### 5.2.3. Encrypted Assertion
 
-Assertions MAY be encrypted so as to allow only the intended audience to decrypt the contents. The IdP SHALL encrypt the contents of the assertion using either the RP's public key or a shared symmetric key. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for encryption MAY be fetched by the IdP in a secure fashion at runtime, such as through an HTTPS URL hosted by the RP.
+When encrypting assertions the IdP SHALL encrypt the contents of the assertion using either the RP's public key or a shared symmetric key. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for encryption MAY be fetched by the IdP in a secure fashion at runtime, such as through an HTTPS URL hosted by the RP.
 
 All encryption of assertions SHALL use approved cryptography.
+
+When assertions are passed through third parties, such as a browser, the actual assertion SHALL be encrypted. For example, the XML SAML assertion using XML-Encryption.  For assertions that are passed directly between IDP and RP, the actual assertion MAY be encrypted. If it is not, the assertion SHALL be sent over an authenticated protected channel. 
+
+> Note: Assertion encryption is required at FAL2 and FAL3.
 
 #### 5.2.4. Audience Restriction
 
