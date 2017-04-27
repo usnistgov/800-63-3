@@ -32,3 +32,5 @@ For The Federal Bridge Certification Authority (FBCA), Version 2.27 (December 2,
 <a name="9397"></a>[EO 9397] *Executive Order 9397, NUMBERING SYSTEM FOR FEDERAL ACCOUNTS RELATING TO INDIVIDUAL PERSONS* (November 22, 1943), available at: <https://www.ssa.gov/foia/html/EO9397.htm>.
 
 <a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53, Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, August 2013 and Errata as of January 2015.
+
+<a name="dmf"></a>[DMF] National Technical Information Service, *Social Security Death Master File*, available at: <https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1>.

@@ -59,7 +59,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 10. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
 
-11. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in unsupervised remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g. cryptography).
+11. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in unsupervised remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the Death Master File [[DMF]](#dmf), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g. cryptography).
 
 12. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.
 
@@ -118,20 +118,20 @@ In-person and unsupervised remote identity proofing are allowed. The CSP SHOULD 
 
 - Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
 
-- **If CSP performed in-person proofing (physical or supervised remote):**  
+- **If CSP performs in-person proofing (physical or supervised remote):**  
 
 	- The CSP SHOULD send a notification of proofing to the address of record.
 	- The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.
 	- The enrollment code SHALL be valid for a maximum of 7 days
 
-- **If the CSP performed remote proofing (unsupervised):**  
+- **If the CSP performs remote proofing (unsupervised):**  
   
 	- The CSP SHALL send an enrollment code to an address of record of the applicant.
 	- The applicant SHALL present a valid enrollment code to complete the identity proofing process.
 	- The CSP SHOULD send the enrollment code to the physical mailing address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
 	- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
 	- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. Postal Service.  
-	- The CSP SHALL ensure the enrollment code and notification of proofing are sent by  different means. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the physical address in records or obtained from validated and verified evidence, such as a driver’s license.
+	- The CSP SHALL ensure the enrollment code and notification of proofing are sent by different means. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the physical address in records or obtained from validated and verified evidence, such as a driver's license.
 
 #### 4.4.1.7. Biometric Collection
 
@@ -164,7 +164,7 @@ See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) f
 
 #### 4.5.3. Validation Requirements  
 
-See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for more information on validating identity evidence
+See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 - Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
