@@ -79,6 +79,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | | Maintain situational awareness when entering memorized secrets and OTPs to ensure that they cannot be observed by others.
 | | Authenticate over authenticated protected channels (observe lock icon in browser window, for example).
 | | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*.
+| | Use authentication endpoints that employ trusted input and trusted display capabilities.
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
 | | Store memorized secrets in a salted, hashed form, including a keyed hash.
 | Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.
