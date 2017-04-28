@@ -57,7 +57,7 @@ Federation authorities SHALL establish parameters regarding expected and accepta
 
 Federation authorities MAY assist the technical connection and configuration process between members, such as by publishing configuration data for IdPs or issuing software statements for RPs.
 
-Most federations managed through authorities have a simple membership model: either parties are in the federation or they are not. However, more sophisticated federations MAY have multiple tiers of membership which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers, and RPs MAY decide to accept certain information only from IdPs in higher tiers. The nature and structure of such a multi-tiered system is outside the scope of this document.
+Most federations managed through authorities have a simple membership model: either parties are in the federation or they are not. However, more sophisticated federations MAY have multiple tiers of membership which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers, and RPs MAY decide to accept certain information only from IdPs in higher tiers.
 
 #### <a name="proxied"></a> 4.1.4. Proxied Federation
 
