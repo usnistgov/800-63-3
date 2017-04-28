@@ -115,7 +115,7 @@ The out-of-band device SHOULD be uniquely addressable and communication over the
 
 The out-of-band authenticator SHALL uniquely authenticate itself in one of the following ways in communicating with the verifier:
 
-- Establish an authenticated protected channel to the verifier using approved cryptography. The key used SHALL be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, secure element).
+- Establish an authenticated protected channel to the verifier using approved cryptography. The key used SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, secure element).
 
 - Authenticate to a public mobile telephone network using a SIM card or equivalent that uniquely identifies the device. This method SHALL only be used if a secret is being sent from the verifier to the out-of-band device via the telephone network (SMS or voice).
 
@@ -233,7 +233,7 @@ If the authenticator output or activation secret has less than 64 bits of entrop
 
 #### 5.1.6.1. Single-factor Cryptographic Software Authenticators
 
-Single-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+Single-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
 
 #### 5.1.6.2. Single-factor Cryptographic Software Verifiers
 
@@ -281,7 +281,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 
 #### 5.1.8.1. Multi-factor Cryptographic Software Authenticators
 
-Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in the most secure storage available on the device (e.g., keychain storage, trusted platform module, trusted execution environment).
+Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, trusted execution environment). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
 
 Each authentication operation using the authenticator SHALL require the input of both factors.
 
