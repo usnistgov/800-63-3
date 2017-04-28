@@ -5,11 +5,11 @@
 
 *This section is normative.*
 
-This section defines allowable Federation Assurance Levels, or FAL. The FAL describes aspects of the assertion and federation protocol used in a given transaction. These levels can be requested by an RP or required by configuration of both RP and IdP for a given transaction. 
+This section defines allowable Federation Assurance Levels, or FAL. The FAL describes requirements for how assertions and constructed and secured for a given transaction. These levels can be requested by an RP or required by configuration of both RP and IdP for a given transaction. 
 
-The FAL combines aspects of [assertion protection](#sec5) and [assertion presentation](#sec6) into an ordinal measurement scale applicable across different [federation models](#sec4). All assertions SHALL comply with the requirements in [Section 5](#sec5). While many other combinations of factors are possible, this list is intended to provide clear implementation recommendations representing increasingly secure deployment choices. Combinations of aspects not found in the FAL table are possible but outside the scope of this document.
+All assertions SHALL comply with the detailed requirements in [Section 5](#sec5). While many other combinations of factors are possible, this list is intended to provide clear implementation recommendations representing increasingly secure deployment choices. Combinations of aspects not found in the FAL table are possible but outside the scope of this document.
 
-This table presents different requirements depending on whether the assertion is presented through either the front channel or the back channel (via an assertion reference). Each successive level subsumes and fulfills all requirements of lower levels. Federations presented through a proxy SHALL be represented by the lowest level used during the proxied transaction.
+This table presents different requirements for each FAL. Each successive level subsumes and fulfills all requirements of lower levels. Federations presented through a proxy SHALL be represented by the lowest level used during the proxied transaction.
 
 <a name="63cSec7-Table1"></a>
 
