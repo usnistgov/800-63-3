@@ -206,7 +206,7 @@ If the nonce used to generate the authenticator output is based on a real-time c
 
 A memorized secret used by the authenticator for activation SHALL be a randomly-chosen numeric secret at least 6 decimal digits in length or other memorized secret of comparable complexity as described in [Section 5.1.1.2](#memsecretver) and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
-The unencrypted secret key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after a password has been generated.
+The unencrypted secret key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after a password has been generated.
 
 #### 5.1.5.2. Multi-factor OTP Verifiers
 
@@ -287,7 +287,7 @@ Each authentication operation using the authenticator SHALL require the input of
 
 Any memorized secret used by the authenticator for activation SHALL be at least 6 decimal digits in length or of equivalent complexity and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), and SHALL include limits on the allowable number of consecutive authentication failures.
 
-The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after an authentication transaction has taken place.
+The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after an authentication transaction has taken place.
 
 #### 5.1.8.2. Multi-factor Cryptographic Software Verifiers
 
@@ -386,7 +386,7 @@ If matching is performed centrally:
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
-Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be erased from memory immediately after any training or research data has been derived.
+Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after any training or research data has been derived.
 
 Biometrics are also used in some cases to prevent repudiation of registration and to verify that the same individual participates in all phases of the registration process as described in SP 800-63A.
 
