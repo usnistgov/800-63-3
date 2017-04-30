@@ -117,6 +117,8 @@ Multi-factor authenticators used at AAL3 SHALL be hardware cryptographic modules
 
 Verifiers at AAL3 SHALL be validated at [FIPS 140](#FIPS140-2) Level 1 or higher.
 
+Verifiers at AAL3 SHALL be verifier compromise resistant as described in [Section 5.2.7](#verifier-secrets) with respect to at least one authentication factor.
+
 When a device such a smartphone is used in the authentication process (presuming that the device is able to meet the requirements above), the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered to satisfy one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked, nor whether the unlock process met the requirements for the relevant authenticator type.
 
 When a biometric factor is used in authentication at AAL3, the verifier SHALL make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in Section [5.2.3](#biometric_use).
