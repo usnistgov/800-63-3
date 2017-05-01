@@ -264,7 +264,7 @@ Single-factor cryptographic device verifiers generate a challenge nonce, send it
 
 The verifier has either symmetric or asymmetric cryptographic keys corresponding to each authenticator. While both types of keys SHALL be protected against modification, symmetric keys SHALL additionally be strongly protected against unauthorized disclosure.
 
-The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator).
+The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator). The verification operation SHALL use approved cryptography.
 
 #### 5.1.8. Multi-factor Cryptographic Software
 
@@ -291,7 +291,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 #### 5.1.8.2. Multi-factor Cryptographic Software Verifiers
 
-The requirements for a multi-factor cryptographic software verifier are identical to those for a multi-factor cryptographic device verifier, described in [Section 5.1.9.2](#mfcdv).
+The requirements for a multi-factor cryptographic software verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv). By its nature, verification of the output from a multi-factor cryptographic software authenticator proves use of the activation factor.
 
 #### 5.1.9. Multi-factor Cryptographic Devices
 
@@ -319,11 +319,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 #### <a name="mfcdv"></a>5.1.9.2. Multi-factor Cryptographic Device Verifiers
 
-Multi-factor cryptographic device verifiers generate a challenge nonce, send it to the corresponding authenticator, and use the authenticator output to verify possession of the device and activation factor.
-
-The verifier has either symmetric or asymmetric cryptographic keys corresponding to each authenticator. While both types of keys SHALL be protected against modification, symmetric keys SHALL additionally be strongly protected against unauthorized disclosure.
-
-The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator). The verification operation SHALL use approved cryptography.
+The requirements for a multi-factor cryptographic device verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv). By its nature, verification of the authenticator output from a multi-factor cryptographic device proves use of the activation factor.
 
 #### 5.2. General Authenticator Requirements
 
