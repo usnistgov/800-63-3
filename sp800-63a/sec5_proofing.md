@@ -15,23 +15,21 @@ The goal of identity resolution is to uniquely distinguish an individual among a
 1.  Exact matches of information used in the proofing process could be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, authoritative records, and third party records. Matching algorithms and rules used SHOULD be available publicly or, at minimum, to the relevant community of interest. For example, they may be included as part of the written policy or practice statement referenced above.
 2.  KBV (sometimes referred to as KBA) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. 
 
-### <a name="validate"></a>5.2. Identity Evidence Validation
+### <a name="validate"></a>5.2. Identity Evidence Collection and Validation
 
 The goal of identity validation is to collect from the applicant the most appropriate identity evidence (e.g., a passport or driver's license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of three process steps: collecting the appropriate identity evidence, confirming the evidence is genuine and authentic, and confirming the data contained on the identity evidence is valid, current, and related to a real-life subject.
 
-#### 5.2.1. Identity Evidence Quality Requirements
+#### <a name="evidence-quality"></a> 5.2.1. Identity Evidence Quality Requirements
 
-This section provides quality requirements for identity evidence.
+This section provides quality requirements for identity evidence collected during identity proofing.
 
-#### 5.2.1.1. Scoring of Identity Evidence
-
-[Table 5-1](#63aSec5-Table1) lists qualities, ranging from unacceptable to superior, of identity evidence that is collected to establish a valid identity. Unless otherwise noted, to achieve a given strength the evidence SHALL, at a minimum, meet all the properties listed.
+[Table 5-1](#63aSec5-Table1) lists strengths, ranging from unacceptable to superior, of identity evidence that is collected to establish a valid identity. Unless otherwise noted, to achieve a given strength the evidence SHALL, at a minimum, meet all the qualities listed.
 
 <a name="63aSec5-Table1"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 5-1.  Qualities of Identity Evidence**
+**Table 5-1.  Strengths of Identity Evidence**
 
 </div> 
 
@@ -44,7 +42,7 @@ This section provides quality requirements for identity evidence.
 |Superior|- The issuing source of the evidence confirmed the claimed identity by following written procedures designed to enable it to have high confidence that the source knows the true identity of the subject. Such procedures shall be subject to recurring oversight by regulatory or publicly accountable institutions.<br><br>- The issuing source visually identified the applicant and performed further checks to confirm the existence of that identity. <br><br>- The issuing process for the evidence ensured that it was delivered into the possession of the subject to whom it relates.<br><br>- The evidence contains at least one reference number that uniquely identifies subject to whom it relates.<br><br>- The applicant's name on the evidence must be the name that the identity was officially known at the time of issuance. Pseudonyms, aliases, or initials for first given or surname are not permitted.<br><br>- The evidence contains a photograph/image of the person to whom it relates.<br><br>- The evidence contains a biometric of the person to whom it relates.<br><br>- The evidence includes digital information, the information is protected using proprietary cryptographic methods, or both, and those methods ensure the integrity of the information and enable the authenticity of the issuing source to be confirmed.<br><br>- The evidence includes physical security features that requires proprietary knowledge and proprietary equipment to be able to reproduce it.<br><br>- The evidence is unexpired.|
 
 
-#### 5.2.2. Validating Identity Evidence
+#### <a name="evidence_validation"></a> 5.2.2. Validating Identity Evidence
 
 Once identity evidence is obtained by the CSP, the accuracy, authenticity, and integrity of the evidence and related information is checked against authoritative sources in order to determine that the presented evidence is:  
 
@@ -52,9 +50,7 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 * The information is correct.  
 * The information relates to a real-life subject.  
 
-#### 5.2.2.1. Methods to Perform Identity Evidence Validation
-
-[Table 5-2](#63aSec5-Table2) lists qualities, ranging from unacceptable to superior, of identity validation that is performed by the CSP to validate the evidence presented for the current proofing session and the information contained therein. 
+[Table 5-2](#63aSec5-Table2) lists strengths, ranging from unacceptable to superior, of identity validation that is performed by the CSP to validate the evidence presented for the current proofing session and the information contained therein. 
 
 <a name="63aSec5-Table2"></a>
 
@@ -68,9 +64,9 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 |:---:|:------------------------------| 
 |Unacceptable|Evidence validation was not performed, or validation of the evidence failed.|
 |Weak|All personal details from the evidence have been confirmed as valid by comparison with information held or published by an authoritative source.|
-|Fair|- The evidence:<br>&nbsp;&nbsp;&nbsp;&nbsp;- details have been confirmed as valid by comparison with information held or published by the issuing source.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- has been confirmed as genuine using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The evidence has been confirmed as genuine by trained personnel. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The issued evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.|
-|Strong|- The evidence has been confirmed as genuine:<br>&nbsp;&nbsp;&nbsp;&nbsp;- using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by trained personnel and appropriate equipment, confirming the integrity of the physical security features and lack of fraudulent modification<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by confirmation of the integrity of cryptographic security features.<br><br> - All personal details and evidence details have been confirmed as valid by comparison with information held or published by the issuing source.|
-|Superior|- The evidence has been confirmed as genuine by trained personnel and appropriate equipment including the integrity of any physical and cryptographic security features.<br><br>- All personal details and evidence details from the evidence have been confirmed as valid by comparison with information held or published by the issuing source.|
+|Fair|- The evidence:<br>&nbsp;&nbsp;&nbsp;&nbsp;- details have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- has been confirmed as genuine using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The evidence has been confirmed as genuine by trained personnel. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The issued evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.|
+|Strong|- The evidence has been confirmed as genuine:<br>&nbsp;&nbsp;&nbsp;&nbsp;- using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by trained personnel and appropriate equipment, confirming the integrity of the physical security features and lack of fraudulent modification<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by confirmation of the integrity of cryptographic security features.<br><br> - All personal details and evidence details have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).|
+|Superior|- The evidence has been confirmed as genuine by trained personnel and appropriate equipment including the integrity of any physical and cryptographic security features.<br><br>- All personal details and evidence details from the evidence have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).|
 
 ### 5.3. <a name="verify"></a> Identity Verification
 
@@ -123,17 +119,22 @@ The following requirements apply to the identity verification steps for IAL2 and
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
+In-person proofing can be satisfied in two ways:
+
+- A physical encounter of the applicant, supervised by an operator
+- An remote encounter of the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).
+
 #### 5.3.3.1. General Requirements
 
 1.	The CSP SHALL have the operator view the biometric source (e.g., fingers, face) for presence of non-natural materials and perform such inspections as part of the proofing process.
 
 2.	The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use) apply.
 
-#### 5.3.3.2. Requirements for In-person Proofing Performed Over Remote Channels
+#### <a name="supervised"></a> 5.3.3.2. Requirements for Supervised Remote In-person Proofing 
 
-It is possible for a CSP to achieve the security and confidence comparable to in-person proofing over remote channels.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
+It is possible for a CSP remotely to achieve the security and confidence comparable to in-person proofing.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
 
-Virtual in-person identity proofing and enrollment transaction SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
+Supervised remote identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
 1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
