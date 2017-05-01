@@ -10,14 +10,14 @@ This document is broken up into sections as follows:
 
 [1. Purpose and 2. Introduction](sec1_2_introduction.md)
 
-[3. Digital Identity Model](sec4_model.md)
+[3. Definitions and Abbreviations](sec3_definitions.md)
 
-[4. Digital Identity Risk Management](sec5_DIRM.md)
+[4. Digital Identity Model](sec4_model.md)
 
-[5. Selecting Assurance Levels](sec6_xal.md)
+[5. Digital Identity Risk Management](sec5_DIRM.md)
 
-[6. Federation Considerations](sec7_DIRM.md)
+[6. Selecting Assurance Levels](sec6_xal.md)
 
-[7. References](sec8_references.md)
+[7. Federation Considerations](sec7_DIRM.md)
 
-[Appendix A. Definitions and Abbreviations](definitions.md)
+[8. References](sec8_references.md)

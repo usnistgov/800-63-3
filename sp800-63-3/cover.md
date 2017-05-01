@@ -179,9 +179,9 @@ Digital identity is the online persona of a subject, and a single definition is 
 
 For these guidelines, digital identity is the unique representation of a subject engaged in an online transaction. A digital identity is always unique in the context of a digital service, but does not necessarily need to uniquely identify the subject. In other words, accessing a digital service may not mean that the physical representation of the underlying subject is known. Identity proofing establishes that a subject is actually who they claim to be. Digital authentication establishes that a subject attempting to access a digital service is in control of one or more valid authenticators associated with that subject's digital identity. For services in which return visits are applicable, successfully authenticating provides reasonable risk-based assurances that the subject that is accessing the service today is the same as that which accessed the service yesterday. Digital identity presents a technical challenge because this process often involves the proofing of individuals over an open network, and always involves the authentication of individual subjects over an open network to access digital government services. The processes and technologies to establish and use digital identities offer multiple opportunities for impersonation and other attacks.
 
-These technical guidelines supersede NIST Special Publication (SP) 800-63-1 and SP 800-63-2. Once the agency completes the digital identity risk assessment of its service(s), these guidelines provide mitigations of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included.
+These technical guidelines supersede NIST Special Publication (SP) 800-63-1 and SP 800-63-2. Once the agency completes the digital identity risk assessment of its service(s), these guidelines provide mitigations of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included. 
 
-These guidelines retire the concept of traditional LOA as a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system.
+These guidelines retire the concept of traditional LOA as a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system. 
 
 The components of identity assurance detailed in these guidelines are as follows:
 
@@ -250,14 +250,16 @@ These guidelines are agnostic to the vast array of identity services architectur
 
 [2. Introduction](#sec2)
 
-[3. Digital Identity Model](#sec4)
+[3. Definitions and Abbreviations](#sec3)
 
-[4. Digital Identity Risk Management](#sec5)
+[4. Digital Identity Model](#sec4)
 
-[5. Selecting Assurance Levels](#sec6)
+[5. Digital Identity Risk Management](#sec5)
 
-[6. Federation Considerations](#sec7)
+[6. Selecting Assurance Levels](#sec6)
 
-[7. References](#references)
+[7. Federation Considerations](#sec7)
+
+[8. References](#references)
 
 [Appendix A. Definitions and Abbreviations](#def-and-acr)

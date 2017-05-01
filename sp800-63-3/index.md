@@ -15,14 +15,16 @@ This document is broken up into sections as follows:
 
 [1. Purpose and 2. Introduction](sec1_2_introduction.html)
 
-[3. E-Authentication Model](sec4_model.html)
+[3. Definitions and Abbreviations ](sec3_definitions.html)
 
-[4. Digital Identity Risk Management](sec5_DIRM.html)
+[4. E-Authentication Model](sec4_model.html)
 
-[5. Selecting Assurance Levels](sec6_xAL.html)
+[5. Digital Identity Risk Management](sec5_DIRM.html)
 
-[6. Federation Considerations](sec7_tofedornottofed.html)
+[6. Selecting Assurance Levels](sec6_xAL.html)
 
-[7. References](sec8_references.html)
+[7. Federation Considerations](sec7_tofedornottofed.html)
+
+[8. References](sec8_references.html)
 
 [Appendix A. Definitions and Abbreviations](definitions.html)
