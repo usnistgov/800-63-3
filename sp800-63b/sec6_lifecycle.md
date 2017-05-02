@@ -8,9 +8,14 @@ During the lifecycle of an authenticator bound to a subscriber's identity, a num
 
 ### <a name="binding"></a>6.1. Authenticator Binding
 
-Authenticators MAY be issued (provided) by CSPs as part of enrollment or other processes. In other cases, subscribers MAY provide their own authenticators, such as software or hardware cryptographic modules. Therefore, this guideline refers to the *binding* rather than the issuance of an authenticator. This does not exclude the possibility that an authenticator could be issued at the time of binding as well.
+Authenticators SHALL be bound to subscriber accounts by either:
 
-Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with each identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2.
+- issuance by the CSP as part of enrollment, binding, or other processes, or
+- an authenticator acceptable to the CSP being provided by the subscriber.
+
+This guideline refers to the *binding* rather than the issuance of an authenticator in order to accommodate both these options.
+
+Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with each identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2. The CSP SHALL also verify the type of user-provided authenticator (e.g., single-factor cryptographic device vs. multi-factor cryptographic device) so that verifiers can determine compliance with requirements at at each AAL.
 
 The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address and any device identifier associated with the enrollment. If available, the record SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
 
@@ -55,7 +60,7 @@ Prior to binding the new authenticator, the CSP SHALL first require the subscrib
 
 #### 6.1.2.3. Replacement of Lost Authentication Factor
 
-If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL2 or IAL3, that subscriber SHALL repeat the identity proofing process. An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [[SP 800-63A, Section 4.2]](sp800-63a.html#genProofReqs). The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL3 SHALL be done in person and SHALL verify the biometric collected during the proofing process.
+If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL2 or IAL3, that subscriber SHALL repeat the identity proofing process. An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [[SP 800-63A, Section 4.2]](sp800-63a.html#genProofReqs). The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL3 SHALL be done in person or through a supervised remote process as described in [SP 800-63A Section 5.3.3.2](sp800-63a.html#supervised) and SHALL verify the biometric collected during the proofing process.
 
 The CSP SHOULD send a notification of the event to the subscriber; this MAY be the same notice as is required as part of the proofing process.
 
