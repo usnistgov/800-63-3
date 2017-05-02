@@ -17,7 +17,7 @@ The overall user experience with federated identity systems should be as smooth 
 
 
 ##### ASSUMPTIONS 
-In this section, the term "users" means "claimants" or "subscribers." The terms “entity” and “entities” refer to the parties of federated systems.
+In this section, the term "users" means "claimants" or "subscribers." The terms "entity" and "entities" refer to the parties of federated systems.
 
 Guidelines and considerations are described from the users' perspective.
 
@@ -76,7 +76,7 @@ Many properties of identity have implications for how users manage identities bo
 
 * Provide users clear, easy to find, site/application data retention policy information.
 
-* Provide users appropriate anonymity and pseudonymity options and the ability to switch among such identity options as desired, in accordance with an organization’s data access policies.
+* Provide users appropriate anonymity and pseudonymity options and the ability to switch among such identity options as desired, in accordance with an organization's data access policies.
 
 * Provide means for users to manage each IdP to RP connection, including complete separation as well as the removal of RP access to one or more attributes.
 
