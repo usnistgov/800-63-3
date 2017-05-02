@@ -233,7 +233,10 @@ Although there are other biometric modalities, the following three biometric mod
 * Face Usability Considerations:
 	* Users have to remember whether they wore any artifacts, such as glasses, during enrollment because it affects facial recognition accuracy.
 	* Differences in environmental lighting conditions can affect facial recognition accuracy.
-	* Facial expressions affect facial recognition accuracy (e.g., smiling versus neutral expression).	* Facial poses affect facial recognition accuracy (e.g., looking down or away from the camera).* Iris Usability Considerations:
+	* Facial expressions affect facial recognition accuracy (e.g., smiling versus neutral expression).
+	* Facial poses affect facial recognition accuracy (e.g., looking down or away from the camera).
+
+* Iris Usability Considerations:
 	* Users wearing colored contacts may affect the iris recognition accuracy.
 	* Users who have had eye surgery may need to re-enroll post-surgery.
 	* Differences in environmental lighting conditions can affect iris recognition accuracy, especially for certain iris colors.

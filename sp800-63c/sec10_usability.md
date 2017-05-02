@@ -17,7 +17,7 @@ The overall user experience with federated identity systems should be as smooth 
 
 
 ##### ASSUMPTIONS 
-In this section, the term "users" means "claimants" or "subscribers." The terms “entity” and “entities” refer to the parties of federated systems. 
+In this section, the term "users" means "claimants" or "subscribers." The terms “entity” and “entities” refer to the parties of federated systems.
 
 Guidelines and considerations are described from the users' perspective.
 
@@ -30,7 +30,7 @@ Federated identity systems should:
 * Minimize user burden (e.g., frustration, learning curve)
 	* Minimize the number of user actions required.
 	* Allow users to quickly and easily select among multiple accounts with a single IdP. For example, approaches such as [Account Chooser](#http://openid.net/wg/ac/) allow users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdP's.
-	* Balance minimizing user burden with the need to provide sufficient information to enable users to make informed decisions. 
+	* Balance minimizing user burden with the need to provide sufficient information to enable users to make informed decisions.
 
 * Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms IdP and RP if the basic concepts are clearly explained).
 
@@ -72,7 +72,9 @@ Many properties of identity have implications for how users manage identities bo
 
 * Provide users means for updating data even if the associated entity no longer exists.
 
-* Provide users means to delete their identities completely, removing all information about the user, including transaction history. Consider applicable audit, legal, or policy constraints that preclude such action. In certain cases, full deactivation is more appropriate than deletion.* Provide users clear, easy to find, site/application data retention policy information.
+* Provide users means to delete their identities completely, removing all information about the user, including transaction history. Consider applicable audit, legal, or policy constraints that preclude such action. In certain cases, full deactivation is more appropriate than deletion.
+
+* Provide users clear, easy to find, site/application data retention policy information.
 
 * Provide users appropriate anonymity and pseudonymity options and the ability to switch among such identity options as desired, in accordance with an organization’s data access policies.
 
