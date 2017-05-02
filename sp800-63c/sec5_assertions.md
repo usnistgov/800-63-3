@@ -5,7 +5,7 @@
 
 *This section is normative.*
 
-An assertion is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time.
+An assertion is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. This guideline does not restrict the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein. 
 
 Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute claims regarding the subscriber. 
 
@@ -38,21 +38,22 @@ An assertion can be classified based on whether presentation by a claimant of an
 
 #### 5.1.1. Bearer Assertions
 
-A bearer assertion can be presented by any party as proof of the bearer's identity. If an attacker is able to capture or manufacture a valid assertion or assertion reference representing a subscriber, and that attacker is able to successfully present that assertion or reference to the RP, then the attacker MAY be able to impersonate the subscriber at that RP. 
+A bearer assertion can be presented by any party as proof of the bearer's identity. If an attacker is able to capture or manufacture a valid assertion or assertion reference representing a subscriber, and that attacker is able to successfully present that assertion or reference to the RP, then the attacker could be able to impersonate the subscriber at that RP. 
 
 Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 6.1](#sec6-1)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
 
 #### 5.1.2. Holder-of-Key Assertions
+A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP.  Note that the reference to the key is asserted (and signed) by the issuer of the assertion.
 
-A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber, and the subscriber SHALL prove possession of that key in addition to presentation of the assertion itself. The key MAY be a symmetric key or a public key that corresponds to a private key. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion by the RP.
+In proving possession of the subscriber's secret, the claimant also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well.
 
-The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP. This key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
-
-In proving possession of the subscriber's secret, the claimant also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well. 
-
-Note that the reference to the key is asserted (and signed) by the issuer of the assertion; reference to a given key SHALL be trusted at the same level as all other information within the assertion.
-
-The assertion SHALL NOT include an unencrypted private or symmetric key to be used with holder-of-key presentation. The RP MAY verify the claimant's possession of the key in conjunction with the IdP, for example, by requesting that the IdP verify a signature or MAC calculated by the claimant in response to a cryptographic challenge.
+- The key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
+- The key MAY be a symmetric key or a public key that corresponds to a private key. 
+- The subscriber SHALL prove possession of that key in addition to presentation of the assertion itself. 
+- An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion by the RP.
+- Reference to a given key SHALL be trusted at the same level as all other information within the assertion.
+- The assertion SHALL NOT include an unencrypted private or symmetric key to be used with holder-of-key presentation. 
+- The RP MAY verify the claimant's possession of the key in conjunction with the IdP, for example, by requesting that the IdP verify a signature or MAC calculated by the claimant in response to a cryptographic challenge.
 
 ### 5.2. Assertion Protection
 
