@@ -39,17 +39,17 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 2. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
 
-3. Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant providing identity evidence based on best available practices for appropriate identity resolution, validation, and verification.
+3. Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant providing identity evidence for appropriate identity resolution, validation, and verification.
 
 4. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether such attributes are voluntary or mandatory in order to complete the identity proofing transactions and the consequences for not providing the attributes.
 
-5. The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, authorization or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent a condition of the service.
+5. The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent a condition of the service.
 
 6. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access.
 
 7. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities.
 
-8. The CSP SHALL maintain a record of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
+8. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
 
 	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
 	b) The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
@@ -59,7 +59,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 10. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
 
-11. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in unsupervised remote identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the Death Master File [[DMF]](#dmf), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g. cryptography).
+11. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein and the CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g. cryptography), and be document per requirement 4.2 (7) above.
 
 12. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.
 
@@ -72,7 +72,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 ### 4.3. Identity Assurance Level 1
 
-The CSP SHALL NOT proof applicants.  Applicants MAY self-assert zero or more attributes to the CSP.
+A CSP that supports only IAL1 SHALL NOT proof applicants.  Applicants MAY self-assert zero or more attributes to the CSP. An IAL2 or IAL3 CSP SHOULD support RPs that only require IAL1 only if the user consents.
 
 ### 4.4. Identity Assurance Level 2
 
@@ -84,7 +84,7 @@ A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#nor
 
 #### 4.4.1.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context.  See [Section 5.1](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context.  This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
 #### 4.4.1.2. Evidence Collection Requirements
 
@@ -151,7 +151,7 @@ IAL3 adds additional rigor to the steps required at IAL2, to include providing f
 
 #### 4.5.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  See [Section 5.1](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
 
 #### 4.5.2. Evidence Collection Requirements
