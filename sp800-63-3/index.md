@@ -26,3 +26,5 @@ This document is broken up into sections as follows:
 [7. Federation Considerations](sec7_tofedornottofed.html)
 
 [8. References](sec8_references.html)
+
+[Appendix A. Definitions and Abbreviations](definitions.html)

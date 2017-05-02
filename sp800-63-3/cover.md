@@ -262,4 +262,4 @@ These guidelines are agnostic to the vast array of identity services architectur
 
 [8. References](#references)
 
- 
+[Appendix A. Definitions and Abbreviations](#def-and-acr)
