@@ -34,10 +34,7 @@ Although details vary based on the exact federation protocol in use, an assertio
 
 ### 5.1. Assertion Binding
 
- Assertion binding can be classified based on whether:
- - presentation by a claimant of an assertion reference; or
- - the assertion itself is sufficient for binding the subscriber to the assertion; or
- - if a stronger binding is required.
+ Assertion binding can be classified based on whether presentation by a claimant of an assertion or an assertion reference is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
 
 #### 5.1.1. Bearer Assertions
 

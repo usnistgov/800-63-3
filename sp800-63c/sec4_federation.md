@@ -114,4 +114,4 @@ In a federated environment, the RP manages its sessions separately from any sess
 
 Due to the distributed nature of a federated system, the subscriber is capable of terminating sessions with the IdP and RP independently of one another. The RP SHALL NOT assume that the subscriber has an active session at the IdP past the establishment of the federated log in. The IdP SHALL NOT assume that termination of the subscriber's session at the IdP will propagate to any sessions that subscriber would have at downstream RPs.
 
-See [Section 7 of 800-63B](sp800-63b.html#sec7) for more information about session management requirements.
+See [SP 800-63B Section 7](sp800-63b.html#sec7) for more information about session management requirements.

@@ -44,7 +44,7 @@ A party who acts with malicious intent to compromise a system.
 A quality or characteristic ascribed to someone or something.
 
 #### Attribute Bundle
-A packaged set of attributes, usually contained within an assertion.  Attribute bundles offer relying parties a simple way to retrieve the most relevant attributes they need from Identity Providers.  Attribute bundles are synonymous with OpenID Connect scopes. See [OpenID Connect Core 1.0](http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims).
+A packaged set of attributes, usually contained within an assertion.  Attribute bundles offer relying parties a simple way to retrieve the most relevant attributes they need from identity providers.  Attribute bundles are synonymous with OpenID Connect scopes. See [OpenID Connect Core 1.0](http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims).
 
 #### Attribute Claim
 A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute 'birthday', a claim could be 'older than 18' or 'born in December'.
