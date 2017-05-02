@@ -13,7 +13,7 @@ description: "Public Comment for Draft NIST Special Publication: SP 800-63-3 Dig
 <section class="home home-about" markdown="1">
 <div class="section-container" markdown="1">
 
-#### March 2, 2017
+#### May 2, 2017
 
 The Trusted Identities Group (TIG) thanks all that contributed to the public comment period.  We are now in the process of final edits. Please stay tuned for a final version in the near future. Thanks!!!!
 
