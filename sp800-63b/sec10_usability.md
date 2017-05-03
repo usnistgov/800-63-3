@@ -226,20 +226,20 @@ Although there are other biometric modalities, the following three biometric mod
 * Provide clear, meaningful feedback on the number of remaining allowed attempts. For example, for rate limiting (throttling), inform users of the time period they have to wait until next attempt to reduce user confusion and frustration.
 
 * Fingerprint Usability Considerations:
-	* Users have to remember which finger(s) they used for initial enrollment.
-	* The amount of moisture on the finger(s) affects the sensor's ability for successful capture.
-	* Additional factors influencing fingerprint capture quality include age, gender, and occupation (e.g., users handling chemicals or working extensively with their hands may have degraded friction ridges).
+  * Users have to remember which finger(s) they used for initial enrollment.
+  * The amount of moisture on the finger(s) affects the sensor's ability for successful capture.
+  * Additional factors influencing fingerprint capture quality include age, gender, and occupation (e.g., users handling chemicals or working extensively with their hands may have degraded friction ridges).
 
 * Face Usability Considerations:
-	* Users have to remember whether they wore any artifacts, such as glasses, during enrollment because it affects facial recognition accuracy.
-	* Differences in environmental lighting conditions can affect facial recognition accuracy.
-	* Facial expressions affect facial recognition accuracy (e.g., smiling versus neutral expression).
-	* Facial poses affect facial recognition accuracy (e.g., looking down or away from the camera).
+  * Users have to remember whether they wore any artifacts, such as glasses, during enrollment because it affects facial recognition accuracy.
+  * Differences in environmental lighting conditions can affect facial recognition accuracy.
+  * Facial expressions affect facial recognition accuracy (e.g., smiling versus neutral expression).
+  * Facial poses affect facial recognition accuracy (e.g., looking down or away from the camera).
 
 * Iris Usability Considerations:
-	* Users wearing colored contacts may affect the iris recognition accuracy.
-	* Users who have had eye surgery may need to re-enroll post-surgery.
-	* Differences in environmental lighting conditions can affect iris recognition accuracy, especially for certain iris colors.
+  * Users wearing colored contacts may affect the iris recognition accuracy.
+  * Users who have had eye surgery may need to re-enroll post-surgery.
+  * Differences in environmental lighting conditions can affect iris recognition accuracy, especially for certain iris colors.
 
 **_Intermittent Events_**
 
@@ -253,5 +253,5 @@ Across all biometric modalities, usability considerations for intermittent event
 
 * An alternative authentication method must be available and functioning. In cases where biometrics do not work, allow users to use a memorized secret as an alternative second factor.
 * Provisions for technical assistance:
-	* Clearly communicate information on how and where to acquire technical assistance. For example, provide users information such as a link to online self-service feature and a phone number for help desk support. Ideally, provide sufficient information to enable users to recover from intermittent events on their own without outside intervention.
-	* Inform users of factors that may affect the sensitivity of the biometric sensor (e.g., cleanliness of the sensor).
+  * Clearly communicate information on how and where to acquire technical assistance. For example, provide users information such as a link to online self-service feature and a phone number for help desk support. Ideally, provide sufficient information to enable users to recover from intermittent events on their own without outside intervention.
+  * Inform users of factors that may affect the sensitivity of the biometric sensor (e.g., cleanliness of the sensor).

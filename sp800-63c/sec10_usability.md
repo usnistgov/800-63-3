@@ -28,9 +28,9 @@ Accessibility differs from usability and is out of scope for this document. [Sec
 Federated identity systems should:
 
 * Minimize user burden (e.g., frustration, learning curve)
-	* Minimize the number of user actions required.
-	* Allow users to quickly and easily select among multiple accounts with a single IdP. For example, approaches such as [Account Chooser](#http://openid.net/wg/ac/) allow users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdP's.
-	* Balance minimizing user burden with the need to provide sufficient information to enable users to make informed decisions.
+  * Minimize the number of user actions required.
+  * Allow users to quickly and easily select among multiple accounts with a single IdP. For example, approaches such as [Account Chooser](#http://openid.net/wg/ac/) allow users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdP's.
+  * Balance minimizing user burden with the need to provide sufficient information to enable users to make informed decisions.
 
 * Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms IdP and RP if the basic concepts are clearly explained).
 
@@ -91,14 +91,14 @@ To encourage user adoption, IdPs and RPs need to establish and build trust with 
 
 
 * Allow users to control their information disclosure and provide explicit consent through the appropriate use of notifications (see SP 800-63C, Section 9.2, Notice and Consent). Balancing the content, size, and frequency of notifications is necessary to avoid thoughtless user click-through.
-	* For attribute sharing, consider the following:
-		* Provide a means for users to verify those attributes and attribute values that will be shared. Follow good security practices (see [Section 6](#sec6)).
-		* Enable users to consent to a partial list of attributes, rather than an all or nothing approach. Allow users some degree of online access, even if the user does not consent to share all information.
-		* Allow users to update their consent to the list of attributes shared.
-		* Minimize unnecessary information presented to users. For example, do not display system generated attributes such as  pairwise pseudonymous identifiers, even if they are shared with the RP as part of the authentication response.
-		* Minimize user steps and navigation. For example, build attribute consent into the protocols—so they're not a feature external to the federated transaction. Examples can be found in standards such as OAuth or OpenID Connect.
-		* Provide effective and efficient redress methods such that a user can recover from invalid attribute information claimed by the IdP (see [Section 6](#sec6)).
-		* Minimize the number of times a user is required to consent to attribute sharing. Balancing the frequency of consent requests avoids user frustration with multiple requests to share the same attribute.
+  * For attribute sharing, consider the following:
+    * Provide a means for users to verify those attributes and attribute values that will be shared. Follow good security practices (see [Section 6](#sec6)).
+    * Enable users to consent to a partial list of attributes, rather than an all or nothing approach. Allow users some degree of online access, even if the user does not consent to share all information.
+    * Allow users to update their consent to the list of attributes shared.
+    * Minimize unnecessary information presented to users. For example, do not display system generated attributes such as  pairwise pseudonymous identifiers, even if they are shared with the RP as part of the authentication response.
+    * Minimize user steps and navigation. For example, build attribute consent into the protocols—so they're not a feature external to the federated transaction. Examples can be found in standards such as OAuth or OpenID Connect.
+    * Provide effective and efficient redress methods such that a user can recover from invalid attribute information claimed by the IdP (see [Section 6](#sec6)).
+    * Minimize the number of times a user is required to consent to attribute sharing. Balancing the frequency of consent requests avoids user frustration with multiple requests to share the same attribute.
 
 * Collect information for constrained usage only, and minimize information disclosure (see [Section 9.3](#sec9)). Unnecessary and superfluous information collection and disclosure or user tracking without explicit user consent erodes user trust. For example, only request attributes from the user that are relevant for the current transaction, not for all possible transactions a user may or may not access at the RP.
 
@@ -113,8 +113,8 @@ Users' beliefs and perceptions predispose them to expect certain results and beh
 Assisting users in establishing good and complete mental models of federation allows users to generalize beyond a single specific implementation. If federated identity systems are not designed from the users' perspectives, users may form incorrect or incomplete mental models, hence impacting users' willingness for adoption.
 
 * Clearly explain the working relationship and information flow among the transacting parties (e.g., RPs, IdPs, and brokers) to avoid user misconceptions. Use the actual names of the entities in the explanation rather than using the generic terms IdPs and RPs.
-	* Provide prominent visual cues and information so that users understand why seemingly unrelated entities have a working relationship. For example, users may be concerned with mixing online personal activities with government services due to a lack of understanding of the information flow in federated identity systems.
-	* Provide prominent visual cues and information to users about redirection when an RP needs to redirect control from their site to an IdP. For example, display RP branding within the IdP user interface to inform users when they are logging in with their IdP for access to the destination RP.
+  * Provide prominent visual cues and information so that users understand why seemingly unrelated entities have a working relationship. For example, users may be concerned with mixing online personal activities with government services due to a lack of understanding of the information flow in federated identity systems.
+  * Provide prominent visual cues and information to users about redirection when an RP needs to redirect control from their site to an IdP. For example, display RP branding within the IdP user interface to inform users when they are logging in with their IdP for access to the destination RP.
 
 * Provide users with clear and usable ways (e.g., visual assurance) to determine the authenticity of the transacting  parties (e.g., RPs, IdPs, and brokers). This will also help to alleviate user concern over leaving one domain for another, especially if the root domain changes (e.g., .gov to .com). For example, display the URL of the IdP so that the user can verify that they are not being phished by a malicious site.
 
