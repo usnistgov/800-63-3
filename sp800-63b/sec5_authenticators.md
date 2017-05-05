@@ -131,7 +131,7 @@ If the out-of-band authenticator sends an approval message over the secondary co
 
 If out-of-band verification is to be made using the public switched telephone network (PSTN), the verifier SHALL verify that the pre-registered telephone number being used is associated with a physical device. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change. Verifiers SHALL use known and verifiable routes to deliver the secret, for example, by using Class 2 SMS. Verifiers SHOULD be aware of indicators such as device swap, SIM change, number porting, or other abnormal behavior *before* using the PSTN to deliver an out-of-band authentication secret.
 
-> Note: Out-of-band authentication using the PSTN (SMS or voice) is discouraged and is being considered for removal in future editions of this guideline.
+> Note: Out-of-band authentication using the PSTN (SMS or voice) as an out-of-band channel is discouraged and is being considered for removal in future editions of this guideline.
 
 If out-of-band verification is to be made using a secure application, such as on a smart phone, the verifier MAY send a push notification to that device. The verifier then waits for the establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as use of an approved hash function or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator.
 
