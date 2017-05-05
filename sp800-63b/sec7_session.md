@@ -27,7 +27,7 @@ Secrets used for session binding:
 
 URLs or POST content SHALL contain a session identifier that SHALL be verified by the RP to ensure that actions taken outside the session do not affect the protected session.
 
-There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology.
+There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology. Additional non-normative guidance is available in the OWASP *Session Management Cheat Sheet* [[OWASP-session]](#OWASP-session).
 
 #### 7.1.1. Browser Cookies
 

@@ -28,6 +28,8 @@
 
 <a name="OWASP-XSS-prevention"></a>[OWASP-XSS-prevention] Open Web Application Security Project, *XSS (Cross Site Scripting) Prevention Cheat Sheet*, available at: <https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet>.
 
+<a name="OWASP-session"></a>[OWASP-session] Open Web Application Security Project, *Session Management Cheat Sheet*, available at: <https://www.owasp.org/index.php/Session_Management_Cheat_Sheet>.
+
 <a name="ISO9241-11"></a>[ISO 9241-11] International Organization for Standardization, *Ergonomic requirements for office work with visual display terminals (VDTs) – Part 11: Guidance on Usability*, ISO 9241-11:1998, ISO: Geneva, Switzerland, 1998.
 
 <a name="Section508"></a>[Section 508] Section 508 Law and Related Laws and Policies (January 30, 2017), available at: <https://www.section508.gov/content/learn/laws-and-policies>.
