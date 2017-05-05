@@ -8,6 +8,8 @@ During the lifecycle of an authenticator bound to a subscriber's identity, a num
 
 ### <a name="binding"></a>6.1. Authenticator Binding
 
+*Authenticator binding* refers to an association that is established providing the ability for a given authenticator to be used, possibly in conjunction with others, to authenticate to a given subscriber account.
+
 Authenticators SHALL be bound to subscriber accounts by either:
 
 - issuance by the CSP as part of enrollment, binding, or other processes, or
