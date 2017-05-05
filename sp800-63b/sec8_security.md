@@ -75,7 +75,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
 | | Maintain situational awareness when entering memorized secrets and OTPs to ensure that they cannot be observed by others.
-| | Avoid use of non-trusted wireless networks as secondary out-of-band authentication channels.
+| | Avoid use of non-trusted wireless networks as unencrypted secondary out-of-band authentication channels.
 | | Authenticate over authenticated protected channels (observe lock icon in browser window, for example).
 | | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*.
 | | Use authentication endpoints that employ trusted input and trusted display capabilities.
