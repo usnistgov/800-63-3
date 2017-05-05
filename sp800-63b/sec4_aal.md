@@ -34,13 +34,13 @@ AAL1 permits the use of any of the following authenticator types, which are defi
 
 Cryptographic authenticators used at AAL1 SHALL use approved cryptography. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise (e.g., by malware) of the user endpoint in which they are running and SHOULD not complete the operation when such a compromise is detected.
 
-Communication between the claimant and channel (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
+Communication between the claimant and verifier (using the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
 Verifiers operated by government agencies at AAL1 SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1.
 
 #### <a name="aal1reauth"></a>4.1.3. Reauthentication
 
-At AAL1, reauthentication of the subscriber SHOULD be repeated at least once per 30 days during an extended usage session, regardless of user activity. The session SHOULD be terminated (logged out) when this time limit is reached.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL1, reauthentication of the subscriber SHOULD be repeated at least once per 30 days during an extended usage session, regardless of user activity. The session SHOULD be terminated (logged out) when this time limit is reached.
 
 #### 4.1.4. Security Controls
 
@@ -88,7 +88,7 @@ When a biometric factor is used in authentication at AAL2, the verifier SHOULD m
 
 #### <a name="aal2reauth"></a>4.2.3. Reauthentication
 
-At AAL2, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 30 minutes of session inactivity. Reauthentication MAY use a single authentication factor. The verifier MAY prompt the user to cause activity just before the inactivity timeout, if desired. The session SHALL be terminated (logged out) when either of these time limits is reached.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL2, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 30 minutes of session inactivity. Reauthentication MAY use a single authentication factor. The verifier MAY prompt the user to cause activity just before the inactivity timeout, if desired. The session SHALL be terminated (logged out) when either of these time limits is reached.
 
 #### 4.2.4. Security Controls
 
@@ -111,7 +111,7 @@ Authentication Assurance Level 3 requires the use of one of two kinds of hardwar
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
-Communication between the claimant and channel SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks. All cryptographic device authenticators used at AAL3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.8](#replay). All authentication and reauthentication processes at AAL3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.9](#intent).
+Communication between the claimant and verifier SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks. All cryptographic device authenticators used at AAL3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.8](#replay). All authentication and reauthentication processes at AAL3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.9](#intent).
 
 Multi-factor authenticators used at AAL3 SHALL be hardware cryptographic modules validated at [FIPS 140](#FIPS140-2) Level 2 or higher overall with at least [FIPS 140](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL3 SHALL be validated at [FIPS 140](#FIPS140-2) Level 1 or higher overall with at least [FIPS 140](#FIPS140-2) Level 3 physical security.
 
@@ -125,7 +125,7 @@ When a biometric factor is used in authentication at AAL3, the verifier SHALL ma
 
 #### <a name="aal3reauth"></a>4.3.3. Reauthentication
 
-At AAL3, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 15 minutes of session inactivity. Reauthentication SHALL use both authentication factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout. The session SHALL be terminated (logged out) when either of these time limits is reached.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL3, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity, as described in [Section 7.2](#sessionreauthn). Reauthentication of the subscriber SHALL be repeated following any period of no more than 15 minutes of session inactivity. Reauthentication SHALL use both authentication factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout. The session SHALL be terminated (logged out) when either of these time limits is reached.
 
 #### 4.3.4. Security Controls
 

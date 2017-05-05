@@ -61,6 +61,9 @@ Verifying the identity of a user, process, or device, often as a prerequisite to
 #### Authentication Factor
 The three types of authentication factors are *something you know*, *something you have*, and *something you are*. Every authenticator has one or more authentication factors.
 
+#### Authentication Intent
+The process of confirming the intent of the claimant to authenticate or reauthenticate by including a process requiring user intervention in the authentication flow. Some authenticators (e.g., OTP devices) establish authentication intent as part of their operation, others require a specific step, such as pressing a button, to establish intent. Authentication intent is a countermeasure against use by malware of the endpoint as a proxy for authenticating an attacker without the subscriber's knowledge.
+
 #### Authentication Protocol
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish their identity, and, optionally, demonstrates that the claimant is communicating with the intended verifier.
 
@@ -342,6 +345,9 @@ An entity that relies upon the subscriber's authenticator(s) and credentials or 
 
 #### Replay Attack
 An attack in which the attacker is able to replay previously captured messages (between a legitimate claimant and a verifier) to masquerade as that claimant to the verifier or vice versa.
+
+#### Replay Resistance
+The property of an authentication process to resist replay attacks, typically by use of an authenticator output that is valid only for a specific authentication.
 
 #### Risk Assessment
 The process of identifying, estimating, and prioritizing risks to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, and other organizations, resulting from the operation of a system. Part of risk management, incorporates threat and vulnerability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis.
