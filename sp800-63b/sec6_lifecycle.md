@@ -19,7 +19,7 @@ This guideline refers to the *binding* rather than the issuance of an authentica
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with each identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2. The CSP SHALL also verify the type of user-provided authenticator (e.g., single-factor cryptographic device vs. multi-factor cryptographic device) so that verifiers can determine compliance with requirements at at each AAL.
 
-The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address and any device identifier associated with the enrollment. If available, the record SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
+The record created by the CSP SHALL contain the date and time the authenticator was bound to the account. The record SHOULD include information about the source of the binding, such as the IP address and device identifier of any device associated with the enrollment. If available, the record SHOULD also contain information about the source of unsuccessful authentications attempted with the authenticator.
 
 #### 6.1.1. Enrollment
 
