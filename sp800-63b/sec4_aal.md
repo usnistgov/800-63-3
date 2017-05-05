@@ -40,7 +40,7 @@ Verifiers operated by government agencies at AAL1 SHALL be validated to meet the
 
 #### <a name="aal1reauth"></a>4.1.3. Reauthentication
 
-At AAL1, reauthentication of the subscriber SHOULD be repeated at least once per 30 days during an extended usage session, regardless of user activity. The session SHOULD be terminated (logged out) when this time limit is reached.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL1, reauthentication of the subscriber SHOULD be repeated at least once per 30 days during an extended usage session, regardless of user activity. The session SHOULD be terminated (logged out) when this time limit is reached.
 
 #### 4.1.4. Security Controls
 
@@ -88,7 +88,7 @@ When a biometric factor is used in authentication at AAL2, the verifier SHOULD m
 
 #### <a name="aal2reauth"></a>4.2.3. Reauthentication
 
-At AAL2, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 30 minutes of session inactivity. Reauthentication MAY use a single authentication factor. The verifier MAY prompt the user to cause activity just before the inactivity timeout, if desired. The session SHALL be terminated (logged out) when either of these time limits is reached.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL2, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 30 minutes of session inactivity. Reauthentication MAY use a single authentication factor. The verifier MAY prompt the user to cause activity just before the inactivity timeout, if desired. The session SHALL be terminated (logged out) when either of these time limits is reached.
 
 #### 4.2.4. Security Controls
 
@@ -125,7 +125,7 @@ When a biometric factor is used in authentication at AAL3, the verifier SHALL ma
 
 #### <a name="aal3reauth"></a>4.3.3. Reauthentication
 
-At AAL3, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 15 minutes of session inactivity. Reauthentication SHALL use both authentication factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout. The session SHALL be terminated (logged out) when either of these time limits is reached.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL3, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity, as described in [Section 7.2](#sessionreauthn). Reauthentication of the subscriber SHALL be repeated following any period of no more than 15 minutes of session inactivity. Reauthentication SHALL use both authentication factors. The verifier MAY prompt the user to cause activity just before the inactivity timeout. The session SHALL be terminated (logged out) when either of these time limits is reached.
 
 #### 4.3.4. Security Controls
 

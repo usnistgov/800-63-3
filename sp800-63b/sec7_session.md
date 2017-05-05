@@ -50,6 +50,7 @@ Other methods of secure device identification, including but not limited to mutu
 
 ### 7.2. <a name="sessionreauthn"></a>Reauthentication
 
+Periodic reauthentication of sessions SHALL be performed to confirm the continued presence of the subscriber at an authenticated session (i.e., that the subscriber has not walked away without logging out).
 
 A session SHALL NOT be extended past the guidelines in Sections [4.1.3](#aal1reauth), [4.2.3](#aal2reauth), and [4.3.3](#aal3reauth) (depending on AAL) based on presentation of the session secret alone.
 
