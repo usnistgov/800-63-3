@@ -143,7 +143,7 @@ Depending on the type of out-of-band authenticator, one of the following SHALL t
 
 * Verification of secrets by claimant - The verifier SHALL display a random authentication secret to the claimant via the primary channel, and SHALL send the same secret to the out-of-band authenticator via the secondary channel for presentation to the claimant. It SHALL then wait for an approval (or disapproval) message via the secondary channel.
 
-In all cases, the authentication SHALL be considered invalid if not completed within 5 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
+In all cases, the authentication SHALL be considered invalid if not completed within 10 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
 
 The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator. If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
