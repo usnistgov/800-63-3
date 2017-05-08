@@ -68,6 +68,10 @@ If a subscriber loses all authenticators of a factor necessary to complete multi
 
 The CSP SHOULD send a notification of the event to the subscriber; this MAY be the same notice as is required as part of the proofing process.
 
+Replacement of a lost (forgotten) memorized secret is problematic because it is very common. Additional "backup" memorized secrets do not mitigate this because they are at least as likely to also have been forgotten. If a biometric is bound to the account, the biometric and associated physical authenticator SHOULD be used to establish a new memorized secret.
+
+As an alternative to the above re-proofing process when there is no biometric bound to the account, the CSP may bind a new memorized secret with authentication using two physical authenticators provided that a notification is made to one of the subscriber's addresses of record. The notice SHALL contain instructions for the subscriber to cancel the activation of the new authenticator in the event of mis-issuance (e.g., if both authenticators were stolen). The CSP SHOULD delay activation of the new memorized secret to allow for delivery time and reasonable notice to the subscriber, particularly if notice is provided by postal mail.
+
 #### 6.1.3. Binding to a Subscriber-provided Authenticator
 
 A subscriber MAY already possess authenticators suitable for authentication at a particular AAL. For example, he or she MAY have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at an RP that requires IAL2.
