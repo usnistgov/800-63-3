@@ -38,7 +38,7 @@ Two related keys, consisting of a public key and a private key, that are used to
 An attempt by an unauthorized entity to fool a verifier or an RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
-A party who acts with malicious intent to compromise a system.
+A party, including an insider, who acts with malicious intent to compromise a system.
 
 #### Attribute
 A quality or characteristic ascribed to someone or something.
