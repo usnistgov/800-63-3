@@ -19,7 +19,7 @@ This guideline refers to the *binding* rather than the issuance of an authentica
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with each identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2. The CSP SHALL also verify the type of user-provided authenticator (e.g., single-factor cryptographic device vs. multi-factor cryptographic device) so that verifiers can determine compliance with requirements at at each AAL.
 
-The record created by the CSP SHALL contain the date and time the authenticator was bound to the account and SHOULD include information about the binding, such as the IP address and any device identifier associated with the enrollment. If available, the record SHOULD also contain information about unsuccessful authentications attempted with the authenticator.
+The record created by the CSP SHALL contain the date and time the authenticator was bound to the account. The record SHOULD include information about the source of the binding, such as the IP address and device identifier of any device associated with the enrollment. If available, the record SHOULD also contain information about the source of unsuccessful authentications attempted with the authenticator.
 
 #### 6.1.1. Enrollment
 
@@ -88,7 +88,7 @@ Loss, theft, damage to, and unauthorized duplication of an authenticator are han
 
 Suspense, revocation, or destruction of compromised authenticators SHOULD occur as promptly as practical following detection. Agencies MAY establish time limits for this process.
 
-To facilitate secure reporting of the loss, theft, or damage to an authenticator, the CSP SHOULD provide the subscriber a method to authenticate to the CSP using a backup or alternate authenticator. This backup authenticator could be a memorized secret or a physical authenticator MAY be used for this purpose and either MAY be used for this purpose with only one authentication factor required. Alternatively, the subscriber MAY establish an authenticated protected channel to the CSP and verify information collected during the proofing process. As an option, the CSP MAY choose to verify an address of record (i.e., email, telephone, postal) and suspend authenticator(s) reported to have been compromised. The suspension SHALL be reversible if the subscriber successfully authenticates to the CSP and requests reactivation of an authenticator suspended in this manner.
+To facilitate secure reporting of the loss, theft, or damage to an authenticator, the CSP SHOULD provide the subscriber a method to authenticate to the CSP using a backup or alternate authenticator. This backup authenticator could be a memorized secret or a physical authenticator MAY be used for this purpose and either MAY be used for this purpose with only one authentication factor required. Alternatively, the subscriber MAY establish an authenticated protected channel to the CSP and verify information collected during the proofing process. As an option, the CSP MAY choose to verify an address of record (i.e., email, telephone, postal) and suspend authenticator(s) reported to have been compromised. The suspension SHALL be reversible if the subscriber successfully authenticates to the CSP using a valid (not suspended) authenticator and requests reactivation of an authenticator suspended in this manner. The CSP MAY set a time limit after which a suspended authenticator can no longer be reactivated.
 
 ### 6.3. Expiration
 
@@ -98,9 +98,10 @@ The CSP SHALL require subscribers to surrender or prove destruction of any physi
 
 ### 6.4. Revocation and Termination
 
-Revocation of an authenticator (sometimes referred to as termination, especially in the context of PIV credentials) refers to removal of the binding between an authenticator and a credential the CSP maintains. 
+Revocation of an authenticator (sometimes referred to as termination, especially in the context of PIV credentials) refers to removal of the binding between an authenticator and a credential the CSP maintains.
+
 CSPs SHALL revoke the binding of authenticators promptly when an online identity ceases to exist (e.g., subscriber's death, discovery of a fraudulent subscriber), when requested by the subscriber, or when the CSP determines that the subscriber no longer meets its eligibility requirements.
 
-The CSP SHALL require subscribers to surrender or certify destruction of any physical authenticator containing certified attributes signed by the CSP as soon as practical after revocation or termination takes place.
+The CSP SHALL require subscribers to surrender or certify destruction of any physical authenticator containing certified attributes signed by the CSP as soon as practical after revocation or termination takes place. This is necessary to block the use of the authenticator's certified attributes in offline situations between revocation/termination and expiration of the certification.
 
 Further requirements on the termination of PIV credentials are found in [[FIPS 201]](#FIPS201).
