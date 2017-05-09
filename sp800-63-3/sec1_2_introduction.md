@@ -210,5 +210,6 @@ Other areas of update to SP 800-63-2 include:
 -	Clarification on the use of independent channels and devices as "something you have".
 -	Removal of pre-registered knowledge tokens (authenticators), with the recognition that they are special cases of (often very weak) passwords.
 -	Requirements regarding account recovery in the event of loss or theft of an authenticator.
+-	Removal of email as a valid channel for one-time-passwords.
 -   Expanded discussion of reauthentication and session management.
 -   Expanded discussion of identity federation; restructuring of assertions in the context of federation.
