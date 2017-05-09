@@ -1,4 +1,4 @@
-<a name="def-and-acr"/>
+<a name="def-and-acr"></a>
 
 ## Appendix A: Definitions and Acronyms
 
@@ -226,7 +226,7 @@ When Kerberos authentication is based on passwords, the protocol is known to be 
 Identity verification method based on knowledge of private information associated with the claimed identity. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
 
 #### Man-in-the-Middle Attack (MitM)
-An attack on the authentication protocol in which the attacker positions himself or herself in between the claimant and verifier so that he or she can intercept and/or alter data traveling between them.
+An attack in which an attacker is positioned between two communicating parties in order to intercept and/or alter data traveling between them. In the context of authentication, the attacker would be positioned between claimant and verifier, between registrant and CSP during enrollment, or between subscriber and CSP during authenticator binding.
 
 #### Memorized Secret
 A type of authenticator consisting of a character string that is intended to be memorized or memorable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
@@ -401,7 +401,7 @@ See *Authenticator Secret*.
 An authentication and security protocol widely implemented in browsers and web servers. TLS is defined by RFC 5246. TLS is similar to the older SSL protocol, and TLS 1.0 is effectively SSL version 3.1. NIST SP 800-52, *Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations* specifies how TLS is to be used in government applications.
 
 #### Trust Anchor
-A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate).
+A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate). A trust anchor may have name or policy constraints limiting its scope.
 
 #### Usability
 Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.
