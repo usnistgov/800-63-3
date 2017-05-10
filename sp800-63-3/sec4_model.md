@@ -60,7 +60,7 @@ Normative requirements can be found in [[SP 800-63A]](sp800-63a.html), *Enrollme
 
 The previous section introduced the different participants in the conceptual digital identity model. This section provides additional details regarding the relationships and responsibilities of the participants involved with enrollment and identity proofing.
 
-An individual, referred to as an *applicant* at this stage, requests credentials from a CSP. If the applicant is successfully proofed and a credential is created by a CSP and authenticator(s) are bound to it, the individual is then termed a subscriber of that CSP.
+An individual, referred to as an *applicant* at this stage, selects to be identity proofed by a CSP. If the applicant is successfully proofed, the individual is then termed a subscriber of that CSP.
 
 The CSP establishes a mechanism to uniquely identify each subscriber, register the subscriber's credentials, and track the authenticators issued to that subscriber. The subscriber may be given authenticators at the time of enrollment, the CSP may bind authenticators the subscriber already has, or they may be generated later as needed. Subscribers have a duty to maintain control of their authenticators and comply with their responsibilities to the CSP. The CSP maintains enrollment records for each subscriber to allow recovery of authenticators, for example, when they are lost or stolen.
 
