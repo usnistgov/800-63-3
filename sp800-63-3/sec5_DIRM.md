@@ -15,7 +15,7 @@ In today's digital services, combining proofing, authenticator, and federation r
 This guideline details requirements to assist agencies in avoiding:
 
 1. authentication errors (i.e., a false claimant using a credential that is not rightfully theirs);
-2. identity proofing errors (i.e., a false claimant claiming an identity that is not rightfully theirs); and
+2. identity proofing errors (i.e., a false applicant claiming an identity that is not rightfully theirs); and
 3. federation errors (an identity assertion is compromised). 
 
 From the perspective of an identity proofing failure, there are two dimensions of potential failure:
