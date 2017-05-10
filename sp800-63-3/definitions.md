@@ -397,6 +397,10 @@ See *Authenticator Output*.
 #### Token Secret
 See *Authenticator Secret*.
 
+#### Transaction
+
+A discrete event between a user and a system that supports a business or programmatic purpose. A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall digital identity risk assessment.
+
 #### Transport Layer Security (TLS)
 An authentication and security protocol widely implemented in browsers and web servers. TLS is defined by RFC 5246. TLS is similar to the older SSL protocol, and TLS 1.0 is effectively SSL version 3.1. NIST SP 800-52, *Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations* specifies how TLS is to be used in government applications.
 

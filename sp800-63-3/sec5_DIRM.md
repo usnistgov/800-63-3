@@ -12,10 +12,16 @@ This section, and the corresponding risk assessment guidance, supplements the [N
 
 In today's digital services, combining proofing, authenticator, and federation requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden upon the implementing organization. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. To this end, the 800-63 suite recognizes that an authentication error is not a singleton that drives all requirements. 
 
-This guideline details requirements to assist agencies in avoiding (1) authentication errors (i.e., a false claimant using a credential that is not rightfully theirs), (2) identity proofing errors (i.e., a false claimant claiming an identity that is not rightfully theirs), and (3) federation errors (an identity assertion is compromised). From the perspective of an identity proofing failure, there are two dimensions of potential failure:
+This guideline details requirements to assist agencies in avoiding:
 
-*  The impact of providing a service to the wrong subject (e.g., an attacker successfully proofs as someone else).
-*  The impact of excessive identity proofing (i.e., collecting and securely storing more information about a person than is required to successfully provide the digital service).
+1. authentication errors (i.e., a false claimant using a credential that is not rightfully theirs);
+2. identity proofing errors (i.e., a false applicant claiming an identity that is not rightfully theirs); and
+3. federation errors (an identity assertion is compromised). 
+
+From the perspective of an identity proofing failure, there are two dimensions of potential failure:
+
+1. The impact of providing a service to the wrong subject (e.g., an attacker successfully proofs as someone else).
+2. The impact of excessive identity proofing (i.e., collecting and securely storing more information about a person than is required to successfully provide the digital service).
 
 As such, agencies SHALL assess the risk of proofing, authentication, and federation errors separately to determine the required assurance level for each transaction. 
 
