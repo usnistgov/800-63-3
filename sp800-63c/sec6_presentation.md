@@ -41,7 +41,7 @@ Claims within the assertion SHALL be validated including issuer verification, si
 
 Conveyance of the assertion reference from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP as well as the assertion from the IdP to the RP SHALL be made over an authenticated protected channel.
 
-Presentation of the assertion reference at the IdP SHOULD require authentication of the RP before an assertion is issued.
+When assertion references are presented, the IdP SHALL verify that the party presenting the assertion reference is the same party that requested the authentication. The IdP can do this by requiring the RP to authenticate itself when presenting the assertion reference to the IdP or through other similar means.
 
 ### 6.2. Front-channel Presentation
 
