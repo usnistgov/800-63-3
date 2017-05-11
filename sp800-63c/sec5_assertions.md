@@ -32,11 +32,11 @@ Assertions MAY include additional attributes. Refer to [Section 6](#sec6) for pr
 
 Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) by the RP comes into play; the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion. See [Section 4.3](#federation-session) for more information.
 
-The lifetime of the assertion is the time between its issuance and its expiration. This lifetime needs to be long enough to allow the RP to process the assertion and create a local application session for the subscriber, but should not be longer than necessary for such establishment. Long-lived assertions have a greater risk of being stolen or replayed.
+The lifetime of the assertion is the time between its issuance and its expiration. This lifetime needs to be long enough to allow the RP to process the assertion and create a local application session for the subscriber, but should not be longer than necessary for such establishment. Long-lived assertions have a greater risk of being stolen or replayed, and a short assertion lifetime mitigates this risk. Assertion lifetimes SHALL NOT be used to limit the session at the RP. See [Section 4.3](#federation-session) for more information.
 
 ### 5.1. Assertion Binding
 
- Assertion binding can be classified based on whether presentation by a claimant of an assertion or an assertion reference is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
+Assertion binding can be classified based on whether presentation by a claimant of an assertion or an assertion reference is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
 
 #### 5.1.1. Bearer Assertions <a name="bearer"></a>
 
