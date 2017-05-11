@@ -22,7 +22,7 @@ All assertions SHALL include the following assertion metadata:
 
 Assertions MAY also include the following information:
 
-1. Key binding - Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion.
+1. Key binding - Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion described in [Section 5.1.2](#holderofkey).
 2. Attribute values and attribute claims - Information about the subscriber.
 3. Attribute metadata - Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112).
 
@@ -38,21 +38,23 @@ The lifetime of the assertion is the time between its issuance and its expiratio
 
  Assertion binding can be classified based on whether presentation by a claimant of an assertion or an assertion reference is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
 
-#### 5.1.1. Bearer Assertions
+#### 5.1.1. Bearer Assertions <a name="bearer"></a>
 
 A bearer assertion can be presented by any party as proof of the bearer's identity. If an attacker is able to capture or manufacture a valid assertion or assertion reference representing a subscriber, and that attacker is able to successfully present that assertion or reference to the RP, then the attacker could be able to impersonate the subscriber at that RP.
 
 Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 6.1](#sec6-1)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
 
-#### 5.1.2. Holder-of-Key Assertions
+#### 5.1.2. Holder-of-Key Assertions <a name="holderofkey"></a>
 A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP.  Note that the reference to the key is asserted (and signed) by the issuer of the assertion.
 
-In proving possession of the subscriber's secret, the claimant also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well.
+When the RP receives the holder-of-key assertion, the subscriber proves possession of the key referenced in the assertion directly to the RP. While the subscriber could also have used a key-based means of authenticating to the IdP, the primary authentication at the IdP and the federated authentication at the RP are considered separately and are not assumed to use the same keys or related sessions.
+
+In proving possession of the subscriber's key to the RP, the claimant also proves with a certain degree of assurance that they are the rightful subject of the assertion. It is more difficult for an attacker to use a stolen holder-of-key assertion issued to a subscriber, since the attacker would need to steal the referenced key material as well.
 
 The following requirements apply to all holder-of-key assertions:
 
-1. The subscriber SHALL prove possession of that key in addition to presentation of the assertion itself.
-2. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a bearer assertion by the RP.
+1. The subscriber SHALL prove possession of that key to the RP in addition to presentation of the assertion itself.
+2. An assertion containing a reference to a key held by the subscriber for which key possession has not been proven SHALL be considered a [bearer assertion](#bearer) by the RP.
 3. Reference to a given key SHALL be trusted at the same level as all other information within the assertion.
 4. The assertion SHALL NOT include an unencrypted private or symmetric key to be used with holder-of-key presentation.
 5. The key MAY be distinct from any key used by the subscriber to authenticate to the IdP.
