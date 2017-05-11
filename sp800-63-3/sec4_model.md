@@ -34,7 +34,7 @@ The various entities and interactions that comprise the digital identity model u
 
 Other sequences are less common, but could also achieve the same functional requirements.
 
-The right side of [Figure 4-1](#63Sec4-Figure1) shows the entities and the interactions related to using an authenticator to perform digital authentication. When the subscriber needs to authenticate to perform a transaction, he or she becomes a claimant to a verifier. The interactions are as follows:
+The right side of [Figure 4-1](#63Sec4-Figure1) shows the entities and the interactions related to using an authenticator to perform digital authentication. A subscriber is referred to as a claimant when he or she needs to authenticate to a verifier. The interactions are as follows:
 
 1.	The claimant proves possession and control of the authenticator(s) to the verifier through an authentication protocol.
 2.	The verifier interacts with the CSP to validate the credential that binds the subscriber's identity to their authenticator and to optionally obtain claimant attributes.
