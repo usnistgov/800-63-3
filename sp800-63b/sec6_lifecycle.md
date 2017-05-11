@@ -25,7 +25,7 @@ The record created by the CSP SHALL contain the date and time the authenticator 
 
 The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in [[SP 800-63A]](sp800-63a.html).
 
-The CSP SHALL bind at least one, and SHOULD bind at least two, physical ("something you have") authenticators to the subscriber's online identity in addition to a memorized secret and/or one or more biometrics. Binding of multiple authenticators is preferred in order to recover from the loss or theft of the subscriber's primary authenticator.
+The CSP SHALL bind at least one, and SHOULD bind at least two, physical ("something you have") authenticators to the subscriber's online identity in addition to a memorized secret or one or more biometrics. Binding of multiple authenticators is preferred in order to recover from the loss or theft of the subscriber's primary authenticator.
 
 While at IAL1 all identifying information is self-asserted, creation of online material or an online reputation makes it undesirable to lose control of an account due to the loss of an authenticator. The second authenticator makes it possible to securely recover from the loss of an authenticator. For this reason, a CSP SHOULD bind at least two physical authenticators to the subscriber's credential at IAL1 as well.
 
