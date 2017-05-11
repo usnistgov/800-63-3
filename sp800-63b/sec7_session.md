@@ -27,7 +27,7 @@ Secrets used for session binding:
 
 URLs or POST content SHALL contain a session identifier that SHALL be verified by the RP to ensure that actions taken outside the session do not affect the protected session.
 
-There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology. Additional informative guidance is available in the OWASP *Session Management Cheat Sheet* [[OWASP-session]](#OWASP-session).
+There are several different mechanisms for managing a session over time. The following sections give different examples along with additional requirements and considerations particular to each example technology. Additional informative guidance is available in the OWASP *Session Management Cheat Sheet* [[OWASP-session]](#OWASP-session).
 
 #### 7.1.1. Browser Cookies
 
@@ -40,9 +40,9 @@ Cookies:
 - SHOULD be tagged to be inaccessible via JavaScript (HttpOnly).
 - SHOULD be tagged to expire at or soon after the validity period of the session. This requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.
 
-#### 7.1.2. OAuth Tokens
+#### 7.1.2. Access Tokens
 
-An OAuth access token is be used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token (and any associated refresh tokens) MAY be valid long after the authentication session has ended and the user has left the application.
+An access token, such as found in OAuth, is used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token (and any associated refresh tokens) MAY be valid long after the authentication session has ended and the user has left the application.
 
 #### 7.1.3. Device Identification
 
