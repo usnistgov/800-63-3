@@ -25,7 +25,16 @@ The strength of the authentication process is described by an ordinal measuremen
 
 As part of authentication, mechanisms such as device identity or geo-location may be used to identify or prevent possible authentication false positives. While these mechanisms do not directly increase the AAL, they can aid in enforcing security policies and mitigate risks. In many cases, the authentication process and services will be shared by many applications and agencies. However, it is the individual agency or application acting as the RP that shall make the decision to grant access or process a transaction based on the specific application requirements.
 
-The various entities and interactions that comprise the digital identity model used here are illustrated below in [Figure 4-1](#63Sec4-Figure1). The left side of the diagram shows the enrollment, credential issuance, lifecycle management activities, and various states of an identity proofing and authentication process. The usual sequence of interactions is as follows:
+The various entities and interactions that comprise the digital identity model used here are illustrated in [Figure 4-1](#63Sec4-Figure1). 
+
+<a name="63Sec4-Figure1"></a>
+<div class="text-center" markdown="1">
+<img src="sp800-63-3/media/model.png" alt="Digital Identity Model" style="width:1000px;height:528px;;min-width: 1000px;min-height: 528px;"/>
+
+**Figure 4-1. Digital Identity Model**
+</div>
+
+The left side of the diagram shows the enrollment, credential issuance, lifecycle management activities, and various states of an identity proofing and authentication process. The usual sequence of interactions is as follows:
 
 1.	An applicant applies to a CSP through an enrollment process.
 2.	The CSP identity proofs that applicant. Upon successful proofing, the applicant becomes a subscriber.
@@ -46,13 +55,6 @@ In all cases, the RP should request the attributes it requires from a CSP prior 
 In some cases, the verifier does not need to communicate in real time with the CSP to complete the authentication activity (e.g., some uses of digital certificates). Therefore, the dashed line between the verifier and the CSP represents a logical link between the two entities rather than a physical link. In some implementations, the verifier, RP, and CSP functions may be distributed and separated as shown in [Figure 4-1](#63Sec4-Figure1); however, if these functions reside on the same platform, the interactions between the components are local messages between applications running on the same system rather than protocols over shared, untrusted networks.
 
 As noted above, a CSP maintains status information about the credentials it issues. CSPs will generally assign a finite lifetime when issuing credentials to limit the maintenance period. When the status changes, or when the credentials near expiration, credentials may be renewed or re-issued; or, the credential may be revoked and destroyed. Typically, the subscriber authenticates to the CSP using his or her existing, unexpired authenticator and credential in order to request issuance of a new authenticator and credential. If the subscriber fails to request authenticator and credential re-issuance prior to their expiration or revocation, he or she may be required to repeat the enrollment process to obtain a new authenticator and credential. Alternatively, the CSP may choose to accept a request during a grace period after expiration.
-
-<a name="63Sec4-Figure1"></a>
-<div class="text-center" markdown="1">
-<img src="sp800-63-3/media/model.png" alt="Digital Identity Model" style="width:1000px;height:528px;;min-width: 1000px;min-height: 528px;"/>
-
-**Figure 4-1. Digital Identity Model**
-</div>
 
 ### 4.2. Enrollment and Identity Proofing
 
