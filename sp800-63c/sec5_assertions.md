@@ -86,7 +86,7 @@ When assertions are passed through third parties, such as a browser, the actual 
 
 #### 5.2.4. Audience Restriction
 
-Assertions SHALL use audience restriction techniques to allow an RP to recognize whether or not it is the intended target of an issued assertion. All RPs SHALL check the audience of an assertion, if provided, to prevent the injection and replay of an assertion generated for one RP at another RP.
+Assertions SHALL use audience restriction techniques to allow an RP to recognize whether or not it is the intended target of an issued assertion. All RPs SHALL check that the audience of an assertion contains an identifer for their RP to prevent the injection and replay of an assertion generated for one RP at another RP.
 
 #### <a name="ppi"></a> 5.2.5. Pairwise Pseudonymous Identifiers
 
