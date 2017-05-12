@@ -23,7 +23,7 @@ The subscriber authenticates to the IdP as described in [[SP 800-63B]](sp800-63b
 
 ### 4.1. Federation Models
 
-This section provides an overview of and requirements for common identity federation models currently in use. In each model, relationships are established between members of the federation in several different ways.
+IdPs that provide authentication services and RPs that consume those services are known as members of a federation. From an IdP's perspective, the federation consists of the RPs that it services. From an RP's perspective, the federation consists of the IdPs that it uses. This section provides an overview of and requirements for common identity federation models currently in use. In each model, relationships are established between members of the federation.
 
 #### <a name="manual-registration"></a> 4.1.1. Manual Registration
 
@@ -37,7 +37,7 @@ Federation relationships SHALL establish parameters regarding expected and accep
 
 #### <a name="dynamic-registration"></a> 4.1.2. Dynamic Registration
 
-In the dynamic registration model of federation, it is possible for relationships between members of the federation to be negotiated at the time of a transaction. This process allows components to be connected together without manually establishing a connection between components. IdPs that support dynamic registration SHALL make their configuration information (such as dynamic registration endpoints) available in such a way as to minimize system administrator involvement.
+In the dynamic registration model of federation, it is possible for relationships between members of the federation to be negotiated at the time of a transaction. This process allows IdPs and RPs to be connected together without manually establishing a connection between them using [manual registration](#manual-registration). IdPs that support dynamic registration SHALL make their configuration information (such as dynamic registration endpoints) available in such a way as to minimize system administrator involvement.
 
 Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
