@@ -27,7 +27,7 @@ This section provides an overview of and requirements for common identity federa
 
 #### <a name="manual-registration"></a> 4.1.1. Manual Registration
 
-In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing services to transfer information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information.
+In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing these RPs to receive authentication and attribute information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information.
 
 IdPs and RPs MAY act as their own authorities of who to federate with or MAY externalize those authority decisions to an external party as in [Section 4.1.3](#authorities).
 
