@@ -373,6 +373,9 @@ A secret used in authentication that is known to the subscriber and the verifier
 #### Side Channel Attack
 An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, electromagnetic and acoustic emissions are examples of characteristics that could be exploited in a side-channel attack.
 
+#### Single-factor
+A characteristic of an authentication system or an authenticator that requires only one authentication factor (something you know, something you have, or something you are) for successful authentication.
+
 #### Social Engineering
 The act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust.
 
