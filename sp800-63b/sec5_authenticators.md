@@ -8,7 +8,7 @@ This section provides the detailed requirements specific for each type of authen
 
 ### <a name="reqauthtype"></a> 5.1. Requirements by Authenticator Type
 
-#### 5.1.1. Memorized Secrets
+#### <a name="memsecret"></a> 5.1.1. Memorized Secrets
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -88,7 +88,7 @@ Look-up secrets SHALL be generated using an approved random bit generator and SH
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when requesting look-up secrets in order to provide resistance to eavesdropping and MitM attacks.
 
-#### <a name="out-of-band"></a>5.1.3. Out-of-Band Devices
+#### <a name="out-of-band"></a> 5.1.3. Out-of-Band Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -182,7 +182,7 @@ The verifier SHALL use approved encryption and an authenticated protected channe
 
 If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
-#### 5.1.5. Multi-factor OTP Devices
+#### <a name="multifactorOTP"></a> 5.1.5. Multi-factor OTP Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -220,7 +220,7 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 
 If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
-#### 5.1.6. Single-factor Cryptographic Software
+#### <a name="sfcs"></a> 5.1.6. Single-factor Cryptographic Software
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -241,7 +241,7 @@ Single-factor software cryptographic authenticators encapsulate a secret key tha
 
 The requirements for a single-factor cryptographic software verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv).
 
-#### 5.1.7. Single-factor Cryptographic Devices
+#### <a name="sfcd"></a> 5.1.7. Single-factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -268,7 +268,7 @@ The verifier has either symmetric or asymmetric cryptographic keys corresponding
 
 The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator). The verification operation SHALL use approved cryptography.
 
-#### 5.1.8. Multi-factor Cryptographic Software
+#### <a name="mfcs"></a> 5.1.8. Multi-factor Cryptographic Software
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -295,7 +295,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 The requirements for a multi-factor cryptographic software verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv). By its nature, verification of the output from a multi-factor cryptographic software authenticator proves use of the activation factor.
 
-#### 5.1.9. Multi-factor Cryptographic Devices
+#### 5.1.9. <a name="mfcd"></a> Multi-factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">

@@ -20,15 +20,15 @@ AAL1 provides some assurance that the claimant controls an authenticator registe
 
 AAL1 permits the use of any of the following authenticator types, which are defined in Section 5:
 
-* Memorized Secret
-* Look-up Secret
-* Out of Band
-* Single-factor One-Time Password (OTP) Device
-* Multi-factor OTP Device
-* Single-factor Cryptographic Software
-* Single-factor Cryptographic Device
-* Multi-factor Cryptographic Software
-* Multi-factor Cryptographic Device
+* Memorized Secret ([Section 5.1.1](#memsecret))
+* Look-up Secret ([Section 5.1.2](#lookupsecrets))
+* Out-of-Band Devices ([Section 5.1.3](#out-of-band))
+* Single-factor One-Time Password (OTP) Device ([Section 5.1.4](#singlefactorOTP))
+* Multi-factor OTP Device ([Section 5.1.5](#multifactorOTP))
+* Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
+* Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
+* Multi-factor Cryptographic Software ([Section 5.1.8](#mfcs))
+* Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
 
 #### 4.1.2. Authenticator and Verifier Requirements
 
@@ -60,19 +60,19 @@ At AAL2, it is required to have either a multi-factor authenticator or a combina
 
 When a multi-factor authenticator is used, any of the following MAY be used:
 
-* Multi-factor OTP Device
-* Multi-factor Cryptographic Software
-* Multi-factor Cryptographic Device
+* Multi-factor OTP Device ([Section 5.1.5](#multifactorOTP))
+* Multi-factor Cryptographic Software ([Section 5.1.8](#mfcs))
+* Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
 
-When a combination of two single-factor authenticators is used, it SHALL include a Memorized Secret authenticator and one possession-based ("something you have") authenticator from the following list:
+When a combination of two single-factor authenticators is used, it SHALL include a Memorized Secret authenticator ([Section 5.1.1](#memsecret)) and one possession-based ("something you have") authenticator from the following list:
 
-* Look-up Secret
-* Out of Band
-* Single-factor OTP Device
-* Single-factor Cryptographic Software
-* Single-factor Cryptographic Device
+* Look-up Secret ([Section 5.1.2](#lookupsecrets))
+* Out-of-Band Device ([Section 5.1.3](#out-of-band))
+* Single-factor OTP Device ([Section 5.1.4](#singlefactorOTP))
+* Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
+* Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
 
-> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use) the device has to be authenticated. Therefore, it is unnecessary to implement another factor with biometrics as the device is the "something you have", which serves as a valid second factor of the authenticator. 
+> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated. Therefore, it is unnecessary to use another factor with biometrics because that device is the "something you have", which serves as a valid second factor of the authentication. 
 
 #### 4.2.2. Authenticator and Verifier Requirements
 
@@ -108,8 +108,8 @@ AAL3 provides very high confidence that the claimant controls authenticator(s) r
 
 Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
 
-* Multi-factor Cryptographic Device
-* Single-factor Cryptographic Device used in conjunction with Memorized Secret
+* Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
+* Single-factor Cryptographic Device ([Section 5.1.7](#sfcd)) used in conjunction with Memorized Secret ([Section 5.1.1](#memsecret))
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
