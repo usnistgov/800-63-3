@@ -43,6 +43,8 @@ Conveyance of the assertion reference from the IdP to the subscriber as well as 
 
 When assertion references are presented, the IdP SHALL verify that the party presenting the assertion reference is the same party that requested the authentication. The IdP can do this by requiring the RP to authenticate itself when presenting the assertion reference to the IdP or through other similar means (see [[RFC 7636](#RFC7636)] for one protocol's method of RP identification).
 
+Note that in a [federation proxy](#proxied), the IdP audience restricts the assertion reference and assertion to the proxy, and the proxy restricts any newly-created assertion references or assertions to the downstream RP.
+
 ### 6.2. Front-channel Presentation
 
 In the *front-channel* model, the IdP creates an assertion and sends it to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP, often through mechanisms within the subscriber's browser.
@@ -67,6 +69,8 @@ The RP SHALL protect itself against injection of manufactured or captured assert
 Claims within the assertion SHALL be validated including issuer verification, signature validation, expiration, and audience restriction.
 
 Conveyance of the assertion from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
+
+Note that in a [federation proxy](#proxied), the IdP audience restricts the assertion to the proxy, and the proxy restricts any newly-created assertions to the downstream RP.
 
 ### <a name="sec6-3"></a> 6.3. Protecting Information
 
