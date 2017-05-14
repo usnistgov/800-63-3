@@ -97,7 +97,7 @@ described in the last subsection.
     checks the digital signature to verify that it was issued by a
     legitimate IdP.
 
-	2.  The assertion is sent over a protected session such as TLS. In
+	2.  The assertion is sent over an authenticated protected channel such as TLS. In
     order to protect the integrity of assertions from malicious attack,
     the IdP is authenticated.
 
@@ -106,16 +106,16 @@ described in the last subsection.
 -   *Assertion disclosure* - To mitigate this threat, one of the
     following mechanisms are used:
 
-	1.  The assertion is sent over a protected session to an
+	1.  The assertion is sent over an authenticated protected channel to an
     authenticated RP. Audience restrictions are used to restrict the assertion to the intended RP.  The IdP also signs the assertion.
 
 	2.  Assertions are signed by the IdP and encrypted for
     a specific RP.  It should be
     noted that this provides all the same guarantees as a mutually
-    authenticated protected session, and may therefore be
+    authenticated protected channel, and may therefore be
     considered equivalent. The general requirement for protecting
     against both assertion disclosure and assertion
-    manufacture or modification may therefore be described as a mutually authenticated protected session or equivalent between the IdP
+    manufacture or modification may therefore be described as a mutually authenticated protected channel or equivalent between the IdP
     and the RP. 
 
 -   *Assertion repudiation by the IdP* - To mitigate this threat,
@@ -165,7 +165,7 @@ described in the last subsection.
 
 	1.  In order to protect the secondary authenticator while it is in
     transit between the IdP and the subscriber, the secondary
-    authenticator is sent via a protected session established
+    authenticator is sent via an authenticated protected channel established
     during the primary authentication of the subscriber. 
 
 	2.  In order to protect the secondary authenticator from capture as it
@@ -174,7 +174,7 @@ described in the last subsection.
     man-in-the-middle attacks.
 
 	3.  In order to protect the secondary authenticator after it has been
-    used, it is never transmitted over an unprotected session or to
+    used, it is never transmitted over an unprotected channel or to
     an unauthenticated party while it is still valid.
     
 -   *Assertion substitution* - To mitigate this threat, one of the

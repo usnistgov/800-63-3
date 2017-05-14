@@ -21,13 +21,13 @@ In a federation protocol, a three-party relationship is formed between the subsc
 
 The subscriber authenticates to the IdP as described in [[SP 800-63B]](sp800-63b.html), and then the result of that authentication event is asserted to the RP across the network. The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 5](#sec5).
 
-### 4.1. Federation Models
+### <a name="federation-model"></a> 4.1. Federation Models
 
-This section provides an overview of and requirements for common identity federation models currently in use. In each model, relationships are established between members of the federation in several different ways.
+IdPs that provide authentication services and RPs that consume those services are known as members of a federation. From an IdP's perspective, the federation consists of the RPs that it services. From an RP's perspective, the federation consists of the IdPs that it uses. This section provides an overview of and requirements for common identity federation models currently in use. In each model, relationships are established between members of the federation.
 
 #### <a name="manual-registration"></a> 4.1.1. Manual Registration
 
-In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing services to transfer information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information.
+In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing these RPs to receive authentication and attribute information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require runtime decisions (see [Section 4.1.5](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information.
 
 IdPs and RPs MAY act as their own authorities of who to federate with or MAY externalize those authority decisions to an external party as in [Section 4.1.3](#authorities).
 
@@ -37,11 +37,11 @@ Federation relationships SHALL establish parameters regarding expected and accep
 
 #### <a name="dynamic-registration"></a> 4.1.2. Dynamic Registration
 
-In the dynamic registration model of federation, it is possible for relationships between members of the federation to be negotiated at the time of a transaction. This process allows components to be connected together without manually establishing a connection between components. IdPs that support dynamic registration SHALL make their configuration information (such as dynamic registration endpoints) available in such a way as to minimize system administrator involvement.
+In the dynamic registration model of federation, it is possible for relationships between members of the federation to be negotiated at the time of a transaction. This process allows IdPs and RPs to be connected together without manually establishing a connection between them using manual registration (See [Section 4.1.1](#manual-registration)). IdPs that support dynamic registration SHALL make their configuration information (such as dynamic registration endpoints) available in such a way as to minimize system administrator involvement.
 
 Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
-IdPs SHALL require appropriate [runtime decisions](#runtime-decisions) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit which IdPs it is willing to accept identity information from.
+IdPs SHALL require runtime decisions (see [Section 4.1.5](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit which IdPs it is willing to accept identity information from.
 
 Frequently, parties in a dynamic registration model do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [Section 4.1.3](#authorities), or another trusted party). This cryptographically verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [[RFC 7591]](#RFC7591) Section 2.3 for more information on one protocol's implementation of software statements.)
 
@@ -82,7 +82,11 @@ See [Section 9.5](#blinding) for further information on blinding techniques, the
 
 #### 4.1.5. <a name="runtime-decisions"></a>Runtime Decisions
 
-The fact that parties have federated SHALL NOT be interpreted as permission to pass information. Federated parties MAY establish whitelists of other federated parties who authenticate subscribers or pass information about them without runtime authorization from the subscriber. Federated parties MAY also establish blacklists of other federated parties who are not allowed to pass information about subscribers at all. Every party that is not on a whitelist or a blacklist SHALL be placed by default in a gray area where runtime authorization decisions will be made by an authorized party, often the subscriber.
+The fact that parties have federated SHALL NOT be interpreted as permission to pass information. The decision of whether an authentication can occur or attributes are passed can be determined by the use of a whitelist, a blacklist, or a runtime decision by an authorized party.
+
+IdPs MAY establish whitelists of RPs that are authorized to receive authentication and attributes from the IdP, without runtime decision from the subscriber. IdPs MAY also establish blacklists of RPs who are not authorized to receive authentication or attributes from the IdP, even when requested by the subscriber. Both whitelists and blacklists identify RPs by their domain or other sufficiently unique identifier, depending on the federation protocol in use. Every RP that is not on a whitelist or a blacklist SHALL be placed by default in a gray area where runtime authorization decisions will be made by an authorized party, usually the subscriber.
+
+RPs MAY establish whitelists of IdPs that are authorized to send authentication and attributes to the RP, without runtime decision from the subscriber. RPs MAY also establish blacklists of IdPs who are not authorized to send authentication or attributes to the RP, even when requested by the subscriber. Both whitelists and blacklists identify IdPs by their domain or other sufficiently unique identifier, depending on the federation protocol in use. Every IdP that is not on a whitelist or a blacklist SHALL be placed by default in a gray area where runtime authorization decisions will be made by an authorized party, usually the subscriber.
 
 To mitigate the risk of unauthorized exposure of sensitive information (e.g., shoulder surfing), the IdP SHALL, by default, mask sensitive information displayed to the subscriber.  The IdP SHALL provide mechanisms for the subscriber to temporarily unmask such information in order for the subscriber to view full values. The IdP SHALL provide effective mechanisms for redress of applicant complaints or problems (e.g., subscriber identifies an inaccurate attribute value). For more details on masking and redress, please see [Section 10](#sec10) on usability considerations.
 
