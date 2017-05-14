@@ -37,7 +37,7 @@ In the back-channel method, there are more network transactions required, but th
 
 The RP SHALL protect itself against injection of manufactured or captured assertion references by use of cross-site scripting protection or other accepted techniques. 
 
-Claims within the assertion SHALL be validated by the RP including:
+Elements within the assertion SHALL be validated by the RP including:
 
  - *issuer verification*: ensuring the assertion was issued by the IdP the RP expects it to be from
  - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP the assertion is from
@@ -71,7 +71,7 @@ Since the assertion is under the control of the subscriber, the front-channel pr
 
 The RP SHALL protect itself against injection of manufactured or captured assertions by use of cross-site scripting protection or other accepted techniques. 
 
-Claims within the assertion SHALL be validated by the RP including:
+Elements within the assertion SHALL be validated by the RP including:
 
  - *issuer verification*: ensuring the assertion was issued by the IdP the RP expects it to be from
  - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP the assertion is from
@@ -90,5 +90,5 @@ Note that the IdP may have access to information that may be useful to the RP in
 
 Additional attributes about the user MAY be included outside of the assertion itself as part of a separate authorized request from the RP to the IdP. The authorization for access to these attributes MAY be issued alongside the assertion itself. Splitting user information in this manner can aid in protecting user privacy and allow for limited disclosure of identifying attributes on top of the essential information in the authentication assertion itself.
 
-The RP SHALL, where feasible, request attribute claims rather than full attribute values. The IdP SHALL support attribute claims.  
+The RP SHALL, where feasible, request attribute references rather than full attribute values. The IdP SHALL support attribute references.  
 

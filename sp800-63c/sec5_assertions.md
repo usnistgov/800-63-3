@@ -5,9 +5,9 @@
 
 *This section is normative.*
 
-An assertion used for authentication is a packaged set of attribute values or attribute claims about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute claims about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein.
+An assertion used for authentication is a packaged set of attribute values or attribute references about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute references about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein.
 
-Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute claims regarding the subscriber.
+Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute references regarding the subscriber.
 
 All assertions SHALL include the following assertion metadata:
 
@@ -23,10 +23,10 @@ All assertions SHALL include the following assertion metadata:
 Assertions MAY also include the following information:
 
 1. Key binding - Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion described in [Section 5.1.2](#holderofkey).
-2. Attribute values and attribute claims - Information about the subscriber.
+2. Attribute values and attribute references - Information about the subscriber.
 3. Attribute metadata - Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112).
 
-Assertions SHOULD specify the AAL when an authentication event is being asserted and IAL when identity proofed attributes or claims based thereon are being asserted. If not specified, the RP SHALL NOT assign any specific IAL or AAL to the assertion.
+Assertions SHOULD specify the AAL when an authentication event is being asserted and IAL when identity proofed attributes or references based thereon are being asserted. If not specified, the RP SHALL NOT assign any specific IAL or AAL to the assertion.
 
 An RP SHALL treat subject identifiers as not inherently globally unique. Instead, the value of the subject identifier of the assertion is usually in a namespace under the control of the issuer of the assertion. This allows an RP to talk to multiple IdPs without incorrectly conflating subjects from different IdPs.
 
