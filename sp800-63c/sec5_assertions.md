@@ -36,7 +36,7 @@ Although details vary based on the exact federation protocol in use, an assertio
 
 The lifetime of the assertion is the time between its issuance and its expiration. This lifetime needs to be long enough to allow the RP to process the assertion and create a local application session for the subscriber, but should not be longer than necessary for such establishment. Long-lived assertions have a greater risk of being stolen or replayed, and a short assertion lifetime mitigates this risk. Assertion lifetimes SHALL NOT be used to limit the session at the RP. See [Section 4.3](#federation-session) for more information.
 
-### 5.1. Assertion Binding
+### 5.1. Assertion Binding <a name="assertion-binding"></a>
 
 Assertion binding can be classified based on whether presentation by a claimant of an assertion or an assertion reference is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
 
@@ -66,7 +66,7 @@ The following requirements apply to all holder-of-key assertions:
 
 ### 5.2. Assertion Protection
 
-Independent of the binding mechanism (discussed above) or the federation model used to obtain them (described in [Section 4](#sec4)), assertions SHALL include an appropriate set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs.
+Independent of the binding mechanism (discussed in [Section 5.1](#assertion-binding)) or the federation model used to obtain them (described in [Section 4.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
 
 #### 5.2.1. Assertion Identifier
 
