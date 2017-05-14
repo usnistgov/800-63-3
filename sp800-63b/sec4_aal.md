@@ -88,7 +88,9 @@ When a biometric factor is used in authentication at AAL2, the verifier SHOULD m
 
 #### <a name="aal2reauth"></a>4.2.3. Reauthentication
 
-Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL2, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 30 minutes of session inactivity. Reauthentication MAY use a single authentication factor. The verifier MAY prompt the user to cause activity just before the inactivity timeout, if desired. The session SHALL be terminated (logged out) when either of these time limits is reached.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL2, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity. Reauthentication of the subscriber SHALL be repeated following any period of no more than 30 minutes of session inactivity. The session SHALL be terminated (logged out) when either of these time limits is reached.
+
+Reauthentication of a session that has not yet reached its time limit MAY require only a memorized secret or a biometric in conjunction with the still-valid session secret. The verifier MAY prompt the user to cause activity just before the inactivity timeout, if desired. 
 
 #### 4.2.4. Security Controls
 
