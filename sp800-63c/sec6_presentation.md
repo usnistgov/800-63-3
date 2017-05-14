@@ -31,13 +31,18 @@ The assertion reference:
 
 In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
-This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed.
+This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed without sending the user back to the IdP. This query occurs using an authorization credential issued alongside the assertion, as described in [Section 5](#sec5).
 
 In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced and it is more difficult to inject assertions directly into the RP.
 
 The RP SHALL protect itself against injection of manufactured or captured assertion references by use of cross-site scripting protection or other accepted techniques. 
 
-Claims within the assertion SHALL be validated including issuer verification, signature validation, and audience restriction.
+Claims within the assertion SHALL be validated by the RP including:
+
+ - *issuer verification*: ensuring the assertion was issued by the IdP the RP expects it to be from
+ - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP the assertion is from
+ - *time validation*: ensuring the expiration and issue times are within acceptable limits of the current timestamp
+ - *audience restriction*: ensuring this RP is the intended recipient of the assertion
 
 Conveyance of the assertion reference from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP as well as the assertion from the IdP to the RP SHALL be made over an authenticated protected channel.
 
@@ -66,7 +71,12 @@ Since the assertion is under the control of the subscriber, the front-channel pr
 
 The RP SHALL protect itself against injection of manufactured or captured assertions by use of cross-site scripting protection or other accepted techniques. 
 
-Claims within the assertion SHALL be validated including issuer verification, signature validation, expiration, and audience restriction.
+Claims within the assertion SHALL be validated by the RP including:
+
+ - *issuer verification*: ensuring the assertion was issued by the IdP the RP expects it to be from
+ - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP the assertion is from
+ - *time validation*: ensuring the expiration and issue times are within acceptable limits of the current timestamp
+ - *audience restriction*: ensuring this RP is the intended recipient of the assertion
 
 Conveyance of the assertion from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
 
