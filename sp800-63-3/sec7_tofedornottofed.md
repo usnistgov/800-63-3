@@ -21,6 +21,6 @@ The technical guidelines detailed in NIST SP 800-63-3 and its companion volumes 
 
 * Pseudonymity is required, necessary, feasible, or important to stakeholders accessing the service.
 * Access to the service only requires a partial attribute list.
-* Access to the service only requires at least one attribute claim.
+* Access to the service only requires at least one attribute reference.
 * Agency is not the authoritative source or issuing source for required attributes.  
 * Attributes are only required temporarily during use (such as to make an access decision), such that agency does not need to locally persist the data.
