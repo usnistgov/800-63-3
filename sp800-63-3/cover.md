@@ -45,6 +45,9 @@ Month TBD 2017
 
 ![](sp800-63-3/media/commerce_logo.png)
 
+U.S. Department of Commerce  
+*Wilbur L. Ross, Jr., Secretary*  
+
 National Institute of Standards and Technology  
 *Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
@@ -128,7 +131,7 @@ activities with industry, government, and academic organizations.
 These guidelines provide technical requirements for Federal agencies
 implementing digital identity services and are not intended to constrain
 the development or use of standards outside of this purpose. The
-guidelines cover remote authentication of users (such as employees,
+guidelines cover identity proofing and authentication of users (such as employees,
 contractors, or private individuals) interacting with government IT
 systems over open networks. They define technical requirements in each of the areas of identity proofing,
 registration, authenticators, management processes, authentication protocols and
@@ -156,41 +159,6 @@ In addition, the authors would like to acknowledge the thought leadership and in
 
 <div class="text-center" markdown="1">
 
-### Audience
-
-### Compliance with NIST Standards and Guidelines
-
-### Conformance Testing
-
-### Note to Reviewers
-
-</div>
-
-The Special Publication 800-63-3 suite is a significant update from past revisions.  We encourage a careful and thoughtful review the entire document set; however the following list details the most impactful updates to how agencies accept digital identities or deploy digital identity systems.
-
-1. Levels of Assurance (LOA) is decoupled into individual parts for agencies to select. SP 800-63-3 provides guidance on how an agency can accomplish individual assurance level selection based on mission and risk.  The other documents in the suite detail the requirements for each of the relevant assurance levels.
-2. Identity proofing, both remote and in-person, has been completely rewritten, adding many new requirements not present in past versions.
-3. Insecure authenticators have been removed, specifically pre-registered knowledge tokens and out-of-band (OOB) one-time-passwords (OTP) sent to email.
-4. Added new requirements for OOB OTP sent via SMS and VOIP.  NIST's position remains the same: agencies should be careful about the use of SMS as it does not always prove possesion of something you have, and therefore may not be an appropriate second factor. We removed the term 'deprecated' due to our experience of stakeholders misinterpreting this term to mean 'no longer allowed'. This was not our intent.  Rather, we want to signal to agencies that SMS is under serious consideration for removal in future versions. This public draft avoids the term deprecation for which uses differ in differing contexts, but the upshot of the guideline is unchanged.
-5. Modernized password requirements and applied these requirements consistently across all assurance levels.
-6. Expanded options for use of biometrics while including new requirements when biometrics are used. 
-7. Introduced new authenticators allowable at the highest assurance levels.
-8. Added requirements for Verifier Compromise Resistance (i.e., is my secret safe?) and Authentication Intent (i.e., it really was me, not malware, attempting to authenticate)
-8. Modernized federated assertions, removed cookies as an allowable assertion type, and increased security requirements for assertions.
-9. Added privacy requirements and usability considerations to all assurance levels.
-
-We look forward to your comments and feedback regarding the above, as well as any other areas that may need improvement or changes.  Our priority remains to offer agencies as many options and techniques as possible to manage risk and offer valuable digital services.
-
-{::comment}
-
-### Note to Readers
-
-### Trademark Information
-
-{:/comment}
-
-<div class="text-center" markdown="1">
-
 ### <a name="notation"></a> Requirements Notation and Conventions
 
 </div>
@@ -207,15 +175,13 @@ The terms "CAN" and "CANNOT" indicate a possibility and capability, whether mate
 
 ## Executive Summary
 
-Digital identity is the online persona of a subject, and a single definition is widely debated internationally. The term persona is apropos as a subject can represent themselves online in many ways. An individual may have a digital identity for email, and another one for personal finances.  A personal laptop can be someone's streaming music server yet also be a worker-bot in a distributed network of computers performing complex genome calculations.  Without context, it is difficult to land on a single definition that satisfies all.  Digital identity as a legal identity further complicates the definition and ability to use digital identities across a range of social and economic use cases.  Digital identity is hard.  Proving someone is who they say they are, remotely, via a digital service, is fraught with vulnerabilities of impersonation.  After proving yourself, repeatedly proving it is you logging in is just as complicated and vulnerable as the original claim and proof of identity.  As correctly captured by [Peter Steiner in The New Yorker](#steiner), "On the internet, nobody knows you're a dog." These guidelines provide mitigations to the vulnerabilities inherent online, while recognizing and encouraging that when accessing some, low-risk digital services, 'being a dog' is just fine, while other high-risk services need a level of confidence that the digital identity accessing the service is the legitimate proxy to the real life subject.  
+Digital identity is the online persona of a subject, and a single definition is widely debated internationally. The term persona is apropos as a subject can represent themselves online in many ways. An individual may have a digital identity for email, and another one for personal finances.  A personal laptop can be someone's streaming music server yet also be a worker-bot in a distributed network of computers performing complex genome calculations.  Without context, it is difficult to land on a single definition that satisfies all.  Digital identity as a legal identity further complicates the definition and ability to use digital identities across a range of social and economic use cases.  Digital identity is hard.  Proving someone is who they say they are, especially remotely, via a digital service, is fraught with opportunities for an attacker to successfully impersonate someone. As correctly captured by [Peter Steiner in The New Yorker](#steiner), "On the internet, nobody knows you're a dog." These guidelines provide mitigations to the vulnerabilities inherent online, while recognizing and encouraging that when accessing some, low-risk digital services, 'being a dog' is just fine, while other high-risk services need a level of confidence that the digital identity accessing the service is the legitimate proxy to the real life subject.  
 
 For these guidelines, digital identity is the unique representation of a subject engaged in an online transaction. A digital identity is always unique in the context of a digital service, but does not necessarily need to uniquely identify the subject. In other words, accessing a digital service may not mean that the physical representation of the underlying subject is known. Identity proofing establishes that a subject is actually who they claim to be. Digital authentication establishes that a subject attempting to access a digital service is in control of one or more valid authenticators associated with that subject's digital identity. For services in which return visits are applicable, successfully authenticating provides reasonable risk-based assurances that the subject that is accessing the service today is the same as that which accessed the service yesterday. Digital identity presents a technical challenge because this process often involves the proofing of individuals over an open network, and always involves the authentication of individual subjects over an open network to access digital government services. The processes and technologies to establish and use digital identities offer multiple opportunities for impersonation and other attacks.
 
-These technical guidelines supplement OMB guidance, *E-Authentication Guidance for Federal Agencies* [[OMB M-04-04]](#M-04-04) and supersede NIST Special Publication (SP) 800-63-1 and SP 800-63-2. The OMB guidance defines the required "level of identity assurance", herein referred to as "level of assurance", or LOA, best suited to avoid an authentication error. As the consequences of an authentication error become more serious, the required LOA increases. The OMB guidance provides agencies with possible impacts that could result from the risk of authentication errors for applications and transactions. OMB M-04-04 defines four LOAs, Levels 1 to 4, in terms of the confidence that an agency can attain that an authentication error may or may not occur. Level 1 is the lowest assurance level and is used primarily for low risk applications, while Level 4 is the highest used for those online government digital services for which risk is highest.
+These technical guidelines supersede NIST Special Publication (SP) 800-63-1 and SP 800-63-2. Once the agency completes the digital identity risk assessment of its service(s), these guidelines provide mitigations of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included. 
 
-These guidelines support the mitigation of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included. 
-
-These guidelines do not view LOA in the context of a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies are encouraged to consider IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system. [Section 5](#sec5) provides options that support agency selection of the appropriate IAL, AAL and FAL combinations while adhering to OMB M-04-04 to protect government digital services.
+These guidelines retire the concept of traditional LOA as a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system. 
 
 The components of identity assurance detailed in these guidelines are as follows:
 
@@ -235,7 +201,7 @@ These guidelines are organized as follows:
 
 **SP 800-63-3 Digital Identity Guidelines** (This document)
 
-SP 800-63-3 provides an overview of general identity frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains only informative material._
+SP 800-63-3 provides an overview of general identity frameworks, using authenticators, credentials, and assertions together in a digital system, and a risk-based process of selecting assurance levels. _This document contains both normative and informative material._
 
 [**SP 800-63A Enrollment and Identity Proofing**](https://pages.nist.gov/800-63-3/sp800-63a.html)
 
@@ -288,8 +254,12 @@ These guidelines are agnostic to the vast array of identity services architectur
 
 [4. Digital Identity Model](#sec4)
 
-[5. Determining IAL, AAL, and FAL](#sec5)
+[5. Digital Identity Risk Management](#sec5)
 
-[6. References](#references)
+[6. Selecting Assurance Levels](#sec6)
 
- 
+[7. Federation Considerations](#sec7)
+
+[8. References](#references)
+
+[Appendix A. Definitions and Abbreviations](#def-and-acr)

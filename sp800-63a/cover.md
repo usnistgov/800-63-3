@@ -77,6 +77,9 @@ Month TBD 2017
 
 ![](sp800-63-3/media/commerce_logo.png)
 
+U.S. Department of Commerce  
+*Wilbur L. Ross, Jr., Secretary*  
+
 National Institute of Standards and Technology  
 *Kent Rochford, Acting Under Secretary of Commerce for Standards and
 Technology and Director*
@@ -179,26 +182,6 @@ The authors would like to acknowledge the contributions and guidance of our inte
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 
 <div class="text-center" markdown="1">
-
-### Audience
-
-### Compliance with NIST Standards and Guidelines
-
-### Conformance Testing
-
-</div>
-
-{::comment}
-
-### Note to Reviewers
-
-### Note to Readers
-
-{:/comment}
-
-<div class="text-center" markdown="1">
-
-### Trademark Information
 
 ### Requirements Notation and Conventions
 

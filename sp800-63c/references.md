@@ -9,6 +9,8 @@
 
 <a name="RFC7591"></a>[RFC 7591] IETF, *OAuth 2.0 Dynamic Client Registration Protocol*, available at: <https://tools.ietf.org/html/rfc7591/>.
 
+<a name="RFC7636"></a>[RFC 7636] IETF, *Proof Key For Code Exchange*, available at: <https://tools.ietf.org/html/rfc7636/>.
+
 <a name="nistir8112"></a>[NISTIR 8112] NIST Internal Report 8112, *Attribute Metadata*, available at: <https://pages.nist.gov/NISTIR-8112/NISTIR-8112.html>.
 
 <a name="ISO9241-11"></a>[ISO 9241-11] International Organization for Standardization, *Ergonomic requirements for office work with visual display terminals (VDTs) – Part 11: Guidance on Usability*, ISO 9241-11:1998, ISO: Geneva, Switzerland, 1998.

@@ -10,11 +10,9 @@ An attacker who can gain control of an authenticator will often be able to masqu
 
 - *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through offline attacks on a password database maintained by the verifier.
 
-- *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner's computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated.
+- *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner's computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated. Out-of-band secrets may be intercepted by an attacker and used to authenticate their own session.
     
 - *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber's fingerprint and construct a replica.
-
-- *Out of band* secrets may be intercepted. An attacker may receive a challenge or response by eavesdropping on the primary or secondary communications channel. The attacker might then authenticate their own channel or save the message for later replay.
 
 This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
 
@@ -37,6 +35,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | | Passwords stored in an electronic file are copied. |
 | | | Software PKI authenticator (private key) copied. |
 | | | Look-up secret authenticator copied. |
+| | | Counterfeit biometric authenticator manufactured. |
 | Eavesdropping | The authenticator secret or authenticator output is revealed to the attacker as the subscriber is authenticating. | Memorized secrets are obtained by watching keyboard entry. |
 | | | Memorized secrets or authenticator outputs are intercepted by keystroke logging software. |
 | | | A PIN is captured from PIN pad device. |
@@ -73,11 +72,14 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
 |---------------------------------|----------------------------------|
 | Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.|
+| | Use a combination of authenticators that includes a memorized secret or biometric.
 | Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
 | | Maintain situational awareness when entering memorized secrets and OTPs to ensure that they cannot be observed by others.
+| | Avoid use of non-trusted wireless networks as unencrypted secondary out-of-band authentication channels.
 | | Authenticate over authenticated protected channels (observe lock icon in browser window, for example).
 | | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*.
+| | Use authentication endpoints that employ trusted input and trusted display capabilities.
 | Offline cracking | Use an authenticator with a high entropy authenticator secret.
 | | Store memorized secrets in a salted, hashed form, including a keyed hash.
 | Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.
@@ -92,7 +94,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | | Provide secure display of identity of verifier and RP.
 | | Maintain software-based keys in restricted-access storage.
 
-There are several other strategies that may be applied to mitigate the threats described in Table 5:
+There are several other strategies that may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
 
 - *Multiple factors* make successful attacks more difficult to accomplish. If an attacker needs to both steal a cryptographic authenticator and guess a memorized secret, then the work to discover both factors may be too high.
 

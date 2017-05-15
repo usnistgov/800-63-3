@@ -27,7 +27,7 @@ Secrets used for session binding:
 
 URLs or POST content SHALL contain a session identifier that SHALL be verified by the RP to ensure that actions taken outside the session do not affect the protected session.
 
-There are several different mechanisms for managing a session over time. The following sections give three examples, along with additional requirements and considerations particular to each example technology.
+There are several different mechanisms for managing a session over time. The following sections give different examples along with additional requirements and considerations particular to each example technology. Additional informative guidance is available in the OWASP *Session Management Cheat Sheet* [[OWASP-session]](#OWASP-session).
 
 #### 7.1.1. Browser Cookies
 
@@ -40,20 +40,28 @@ Cookies:
 - SHOULD be tagged to be inaccessible via JavaScript (HttpOnly).
 - SHOULD be tagged to expire at or soon after the validity period of the session. This requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.
 
-#### 7.1.2. OAuth Tokens
+#### 7.1.2. Access Tokens
 
-An OAuth access token is be used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token (and any associated refresh tokens) MAY be valid long after the authentication session has ended and the user has left the application.
+An access token, such as found in OAuth, is used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token (and any associated refresh tokens) MAY be valid long after the authentication session has ended and the user has left the application.
 
 #### 7.1.3. Device Identification
 
 Other methods of secure device identification, including but not limited to mutual TLS, token binding, or other mechanisms, MAY be used to enact a session between a user and a service. 
 
-### 7.2. <a name="sessionreauthn"></a>Reauthentication
+### 7.2. <a name="sessionreauthn"></a>Reauthentication 
 
+Continuity of authenticated sessions SHALL be based upon the possession of a session secret issued by the verifier at the time of authentication and optionally refreshed during the session. The nature of a session depends on the application, including:
 
-A session SHALL NOT be extended past the guidelines in Sections [4.1.3](#aal1reauth), [4.2.3](#aal2reauth), and [4.3.3](#aal3reauth) (depending on AAL) based on presentation of the session secret alone.
+1. A web browser session with a "session" cookie, or
+2. An instance of a mobile application that retains a session secret
 
-When a session is terminated due to a time-out or other action, the user MAY reauthenticate using their primary authentication mechanism or an appropriate subset thereof, depending on the AAL.
+Session secrets SHALL be non-persistent, i.e., they SHALL not be retained across a restart of the associated application or a reboot of the host device.
+
+Periodic reauthentication of sessions SHALL be performed to confirm the continued presence of the subscriber at an authenticated session (i.e., that the subscriber has not walked away without logging out).
+
+A session SHALL NOT be extended past the guidelines in Sections [4.1.3](#aal1reauth), [4.2.3](#aal2reauth), and [4.3.3](#aal3reauth) (depending on AAL) based on presentation of the session secret alone. Prior to session expiration, the reauthentication time limit SHALL be extended by prompting the subscriber for the authentication factor(s) specified in [Table 7-1](#63bSec7-Table1).
+
+When a session has been terminated due to a time-out or other action, the user SHALL be required to establish a new session by authenticating again.
 
 <a name="63bSec7-Table1"></a>
 
@@ -72,6 +80,6 @@ When a session is terminated due to a time-out or other action, the user MAY rea
 
 >Note: At AAL2, a memorized secret or biometric and not a physical authenticator is required because the session secret is *something you have*, and an additional authentication factor is required to continue the session.
 
-#### 7.2.1. Reauthentication from a federation or assertion
+#### 7.2.1. Reauthentication from a Federation or Assertion
 
-When using a [federation protocol](sp800-63c.html#sec4) to connect the CSP and RP, special consideration needs to be made for session management and reauthentication. Both the CSP and RP employ separate session management technologies, and there SHALL NOT be any assumption of correlation between these sessions. Consequently, when a session expires at an RP and reauthentication is required by the RP, it is entirely possible that the session at the CSP is not expired and a new assertion could be generated from this session at the CSP without reauthenticating the user. Therefore, an RP requiring reauthentication through a federation protocol SHALL indicate a maximum acceptable authentication age to the CSP (if possible within the protocol), and the CSP SHALL honor this request (if possible). The CSP in all cases SHALL communicate the primary authentication event time to the RP to allow the RP to decide if the assertion is sufficient for reauthentication or not.
+When using a federation protocol as described in [SP 800-63C Section 4](sp800-63c.html#sec4) to connect the CSP and RP, special consideration needs to be made for session management and reauthentication. The federation protocol communicates an authentication event between the CSP and the RP but establishes no session between them. The CSP and RP may employ separate session management technologies; there SHALL NOT be any assumption of correlation between these sessions. Consequently, when a session expires at an RP and reauthentication is required by the RP, it is entirely possible that the session at the CSP is not expired and a new assertion could be generated from this session at the CSP without reauthenticating the user. Therefore, an RP requiring reauthentication through a federation protocol SHALL indicate a maximum acceptable authentication age to the CSP (if possible within the protocol), and the CSP SHALL honor this request (if possible). The CSP in all cases SHALL communicate the primary authentication event time to the RP to allow the RP to decide if the assertion is sufficient for reauthentication or not.
