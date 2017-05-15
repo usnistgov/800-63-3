@@ -133,7 +133,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step6.png" alt="IAL Step 6"/></td>
   </tr>
   <tr>
-   <td>If the agency has reached Step 6, claims should be used. This step identifies the digital service as an excellent candidate for accepting federated attribute claims from a CSP (or multiple CSPs), since it has been determined that complete attribute values are not needed to deliver the digital service.</td> 
+   <td>If the agency has reached Step 6, claims should be used. This step identifies the digital service as an excellent candidate for accepting federated attribute references from a CSP (or multiple CSPs), since it has been determined that complete attribute values are not needed to deliver the digital service.</td> 
   </tr>
   </table>
 </div>
