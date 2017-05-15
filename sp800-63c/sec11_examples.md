@@ -39,7 +39,7 @@ SAML Assertions are encoded in an XML schema and can carry up to three types of 
 
 Authorization statements are beyond the scope of this document and will not be discussed.
 
-### 11.2. Kerberos Tickets
+### 11.2. Kerberos Tickets <a name="kerberos"></a>
 
 The Kerberos Network Authentication Service \[[RFC 4120](#RFC4120)\] was designed to provide strong authentication for client/server applications using symmetric-key cryptography on a local, shared network. Extensions to Kerberos can support the use of public key cryptography for selected steps of the protocol. Kerberos also supports confidentiality and integrity protection of session data between the subscriber and the RP. Even though Kerberos uses assertions, since it is designed for use on shared networks it is not truly a federation protocol. 
 
