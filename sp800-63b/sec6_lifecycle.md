@@ -54,13 +54,13 @@ Enrollment and binding MAY be broken up into a number of separate physical encou
 
 CSPs and verifiers SHOULD encourage subscribers to maintain at least two valid authenticators of each factor that they will be using, with the exception of memorized secrets. For example, a subscriber that usually uses an OTP device as a physical authenticator MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged. See [Section 6.1.2.3](#replacement) for more information on replacement of memorized secret authenticators.
 
-Accordingly, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. Before adding the new authenticator, the CSP SHALL first require the subscriber to authenticate at the AAL (or a higher AAL) at which the new authenticator will be used. When an authenticator is added, the CSP SHOULD send a notification to the subscriber. The CSP MAY limit the number of authenticators that may be bound in this manner.
+Accordingly, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. Before adding the new authenticator, the CSP SHALL first require the subscriber to authenticate at the AAL (or a higher AAL) at which the new authenticator will be used. When an authenticator is added, the CSP SHOULD send a notification to the subscriber via a mechanism that is independent of the transaction binding the new authenticator. The CSP MAY limit the number of authenticators that may be bound in this manner.
 
 #### 6.1.2.2. Adding an Additional Factor to a One-factor Account
 
 If the subscriber's account has only one authentication factor bound to it (at IAL1/AAL1), and an additional authenticator of a different authentication factor is to be added, the subscriber MAY request that the account be upgraded to AAL2 (but still at IAL1). Once this has been done, the CSP SHALL no longer permit the subscriber to use single-factor authentication.
 
-Prior to binding the new authenticator, the CSP SHALL first require the subscriber to authenticate at AAL1. The CSP SHOULD send a notification of the event to the subscriber.
+Prior to binding the new authenticator, the CSP SHALL first require the subscriber to authenticate at AAL1. The CSP SHOULD send a notification of the event to the subscriber via a mechanism that is independent of the transaction binding the new authenticator.
 
 #### 6.1.2.3. <a name="replacement"></a> Replacement of Lost Authentication Factor
 
