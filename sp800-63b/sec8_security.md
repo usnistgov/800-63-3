@@ -72,6 +72,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
 |---------------------------------|----------------------------------|
 | Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.|
+| | Use a combination of authenticators that includes a memorized secret or biometric.
 | Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
 | | Maintain situational awareness when entering memorized secrets and OTPs to ensure that they cannot be observed by others.

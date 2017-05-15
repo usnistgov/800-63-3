@@ -5,7 +5,7 @@
 
 *This section is normative.*
 
-This section defines allowable Federation Assurance Levels, or FAL. The FAL describes requirements for how assertions and constructed and secured for a given transaction. These levels can be requested by an RP or required by configuration of both RP and IdP for a given transaction. 
+This section defines allowable Federation Assurance Levels, or FAL. The FAL describes requirements for how assertions and constructed and secured for a given transaction. These levels can be requested by an RP or required by the configuration of both the RP and the IdP for a given transaction. 
 
 All assertions SHALL comply with the detailed requirements in [Section 5](#sec5). While many other federation implementation options are possible, this list is intended to provide clear implementation recommendations representing increasingly secure deployment choices. Combinations of aspects not found in the FAL table are possible but outside the scope of this document.
 
@@ -26,7 +26,7 @@ This table presents different requirements for each FAL. Each successive level s
 |2|Bearer assertion, signed by IdP and encrypted to RP.|
 |3|Holder of key assertion, signed by IdP and encrypted to RP.|
 
-For example, FAL1 maps to the OpenID Connect Basic Client profile or SAML (Security Assertion Markup Language) Web SSO Artifact Binding profile, with no additional features. FAL2 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL3 requires the presentation of an additional key bound to the assertion (e.g., the use of a cryptographic authenticator) along with all requirements of FAL2. Note that the additional key presented at FAL3 need not be the same key used by the subscriber to authenticate to the IdP.
+For example, FAL1 maps to the OpenID Connect Basic Client profile or SAML (Security Assertion Markup Language) Web SSO Artifact Binding profile, with no additional features. FAL2 additionally requires that the OpenID Connect ID Token or SAML Assertion be encrypted to a public key representing the RP in question. FAL3 requires the subscriber cryptographically prove possession of a key bound to the assertion (e.g., the use of a cryptographic authenticator) along with all requirements of FAL2. Note that the additional key presented at FAL3 need not be the same key used by the subscriber to authenticate to the IdP.
 
 Regardless of what is requested or required by the protocol, the FAL in use is easily detected by the RP by observing the nature of the assertion as it is presented as part of the federation protocol. Therefore, the RP is responsible for determining which FALs it is willing to accept for a given authentication transaction and ensuring that the transaction meets the requirements of that FAL.
 

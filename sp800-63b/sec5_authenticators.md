@@ -347,12 +347,14 @@ When the subscriber successfully authenticates, the verifier SHOULD disregard an
 
 #### <a name="biometric_use"></a>5.2.3. Use of Biometrics
 
-For a variety of reasons, this document supports only limited use of biometrics (*something you are*) for authentication. These include:
+The use of biometrics (*something you are*) in authentication includes both measurement of physical characteristics (e.g., fingerprint, iris, facial characteristics) and behavioral characteristics (e.g., typing cadence). Both classes are considered biometric modalities, although different modalities may differ in the extent to which they establish authentication intent as described in [Section 5.2.9](#intent).
+
+For a variety of reasons, this document supports only limited use of biometrics for authentication. These include:
 
 - Biometric False Match Rates (FMR) and False Non-Match Rates (FNMR) do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR and FNMR do not account for spoofing attacks.
 - Biometric matching is probabilistic, whereas the other authentication factors are deterministic.
 - Biometric template protection schemes provide a method for revoking biometric credentials that are comparable to other authentication factors (e.g., PKI certificates and passwords). However, the availability of such solutions is limited, and standards for testing these methods are under development.
-- Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
+- Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor and/or biometric processing is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
 
 Therefore, the limited use of biometrics for authentication is supported with the following requirements and guidelines:
 
@@ -448,3 +450,5 @@ In contrast, memorized secrets are not considered replay resistant because the a
 An authentication process requires intent if it requires the subject to explicitly respond to each authentication or reauthentication request. The goal of authentication intent is to make it more difficult for directly connected physical authenticators (cryptographic devices) to be used without the subject's knowledge, such as by malware on the endpoint. Authentication intent SHALL be established by the authenticator itself, although multi-factor cryptographic devices MAY establish intent by reentry of the other authentication factor on the endpoint with which the authenticator is used.
 
 Authentication intent MAY be established in a number of ways. Authentication processes that require intervention of the subject, e.g., to enter an authenticator output on their endpoint from an OTP device, establish intent by their very nature.  Cryptographic devices that require user action (e.g., pushing a button or reinsertion) for each authentication or reauthentication operation are also considered to establish intent.
+
+Depending on the modality, presentation of a biometric may or may not establish authentication intent. Presentation of a fingerprint would normally establish intent, while observation of the claimant face using a camera normally would not by itself. Behavioral biometrics similarly are less likely to establish authentication intent because they do not require a specific action on the part of the claimant.

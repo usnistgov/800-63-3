@@ -102,14 +102,17 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a hardware-based cryptographic authenticator that provides verifier impersonation resistance. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
+AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device may fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
 
 #### 4.3.1. Permitted Authenticator Types
 
-Authentication Assurance Level 3 requires the use of one of two kinds of hardware devices:
+Authentication Assurance Level 3 requires the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
 
 * Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
 * Single-factor Cryptographic Device ([Section 5.1.7](#sfcd)) used in conjunction with Memorized Secret ([Section 5.1.1](#memsecret))
+* Multi-factor OTP device ([Section 5.1.5](#multifactor OTP)) used in conjunction with a Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))(or Software ([Section 5.1.6](#sfcs)) if OTP is hardware)
+* Single-factor OTP device (hardware only) ([Section 5.1.4](#singlefactorOTP)) used in conjunction with a Multi-factor Cryptographic Software authenticator ([Section 5.1.8](#mfcs))
+* Single-factor OTP device (hardware only) ([Section 5.1.4](#singlefactorOTP)) used in conjunction with a Single-factor Cryptographic Software authenticator ([Section 5.1.6](#sfcs))  and a Memorized Secret ([Section 5.1.1](#memsecret))
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
@@ -166,7 +169,7 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 Requirement | AAL1 | AAL2 | AAL3
 ------------|-------|-------|-------
-**Permitted authenticator types** | Memorized Secret;<br />Look-up Secret;<br />Out of Band;<br />SF OTP Device;<br />MF OTP Device;<br />SF Crypto Software;<br />SF Crypto Device;<br />MF Crypto Software;<br />MF Crypto Device<br /> | MF OTP Device;<br />MF Crypto Software;<br />MF Crypto Device;<br />or memorized secret plus:<br />&nbsp;&bull;&nbsp;Look-up Secret<br />&nbsp;&bull;&nbsp;Out of Band<br />&nbsp;&bull;&nbsp;SF OTP Device<br />&nbsp;&bull;&nbsp;SF Crypto Software<br />&nbsp;&bull;&nbsp;SF Crypto Device<br /> | MF Crypto Device<br />SF Crypto Device plus &nbsp;&nbsp;Memorized Secret
+**Permitted authenticator types** | Memorized Secret;<br />Look-up Secret;<br />Out of Band;<br />SF OTP Device;<br />MF OTP Device;<br />SF Crypto Software;<br />SF Crypto Device;<br />MF Crypto Software;<br />MF Crypto Device<br /> | MF OTP Device;<br />MF Crypto Software;<br />MF Crypto Device;<br />or memorized secret plus:<br />&nbsp;&bull;&nbsp;Look-up Secret<br />&nbsp;&bull;&nbsp;Out of Band<br />&nbsp;&bull;&nbsp;SF OTP Device<br />&nbsp;&bull;&nbsp;SF Crypto Software<br />&nbsp;&bull;&nbsp;SF Crypto Device<br /> | MF Crypto Device;<br />SF Crypto Device plus &nbsp;&nbsp;Memorized Secret;<br />SF OTP Device plus MF Crypto Device or Software;<br />SF OTP Device plus SF Crypto Software plus Memorized Secret
 **FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; MAY use one authentication factor | 12 hours or 15 minutes inactivity; SHALL use both authentication factors
 **Security controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
