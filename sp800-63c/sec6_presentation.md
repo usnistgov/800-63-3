@@ -1,5 +1,5 @@
 <div class="breaker"></div>
-<a name="sec6"></a>
+<a name="presentation"></a>
 
 ## 6. Assertion Presentation
 
@@ -9,7 +9,7 @@ Assertions MAY be presented in either a *back-channel* or *front-channel* manner
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
 
-### <a name="sec6-1"></a> 6.1. Back-channel Presentation
+### <a name="back-channel"></a> 6.1. Back-channel Presentation
 
 In the *back-channel* model, the subscriber is given an assertion reference to present to the RP, generally through the front channel. The assertion reference itself contains no information about the subscriber and SHALL be resistant to tampering and fabrication by an attacker. The RP presents the assertion reference to the IdP, usually along with authentication of the RP itself, to fetch the assertion.
 
@@ -31,7 +31,7 @@ The assertion reference:
 
 In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
-This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed without sending the user back to the IdP. This query occurs using an authorization credential issued alongside the assertion, as described in [Section 5](#sec5).
+This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed without sending the user back to the IdP. This query occurs using an authorization credential issued alongside the assertion, as described in [Section 5](#assertions).
 
 In the back-channel method, there are more network transactions required, but the information is limited to the parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced. Consequently, it is more difficult to inject assertions directly into the RP.
 
@@ -50,7 +50,7 @@ When assertion references are presented, the IdP SHALL verify that the party pre
 
 Note that in a [federation proxy](#proxied), the IdP audience restricts the assertion reference and assertion to the proxy, and the proxy restricts any newly-created assertion references or assertions to the downstream RP.
 
-### 6.2. Front-channel Presentation
+### <a name="front-channel"></a> 6.2. Front-channel Presentation
 
 In the *front-channel* model, the IdP creates an assertion and sends it to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP, often through mechanisms within the subscriber's browser.
 
@@ -82,7 +82,7 @@ Conveyance of the assertion from the IdP to the subscriber as well as from the s
 
 Note that in a [federation proxy](#proxied), the IdP audience restricts the assertion to the proxy, and the proxy restricts any newly-created assertions to the downstream RP.
 
-### <a name="sec6-3"></a> 6.3. Protecting Information
+### <a name="protecting-information"></a> 6.3. Protecting Information
 
 Communications between the IdP and the RP SHALL be protected in transit using an authenticated protected channel. Communications between the subscriber and either the IdP or the RP (usually through a browser) SHALL be made using an authenticated protected channel.
 

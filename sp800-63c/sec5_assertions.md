@@ -1,5 +1,5 @@
 <div class="breaker"></div>
-<a name="sec5"></a>
+<a name="assertions"></a>
 
 ## 5. Assertions
 
@@ -30,7 +30,7 @@ Assertions SHOULD specify the AAL when an authentication event is being asserted
 
 An RP SHALL treat subject identifiers as not inherently globally unique. Instead, the value of the subject identifier of the assertion is usually in a namespace under the control of the issuer of the assertion. This allows an RP to talk to multiple IdPs without incorrectly conflating subjects from different IdPs.
 
-Assertions MAY include additional attributes. Refer to [Section 6](#sec6) for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in one or more separate transactions using an authorization credential issued alongside the original assertion. The ability to successfully fetch such additional attributes SHALL NOT be treated as equivalent to processing of the assertion.
+Assertions MAY include additional attributes. Refer to [Section 6](#presentation) for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in one or more separate transactions using an authorization credential issued alongside the original assertion. The ability to successfully fetch such additional attributes SHALL NOT be treated as equivalent to processing of the assertion.
 
 Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) by the RP comes into play; the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion. See [Section 4.3](#federation-session) for more information.
 
@@ -44,7 +44,7 @@ Assertion binding can be classified based on whether presentation by a claimant 
 
 A bearer assertion can be presented by any party as proof of the bearer's identity. If an attacker is able to capture or manufacture a valid assertion or assertion reference representing a subscriber, and that attacker is able to successfully present that assertion or reference to the RP, then the attacker could be able to impersonate the subscriber at that RP.
 
-Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 6.1](#sec6-1)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
+Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 6.1](#back-channel)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
 
 #### 5.1.2. Holder-of-Key Assertions <a name="holderofkey"></a>
 A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP.  Note that the reference to the key is asserted (and signed) by the issuer of the assertion.

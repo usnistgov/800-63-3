@@ -1,5 +1,5 @@
 <div class="breaker"></div>
-<a name="sec3"></a>
+<a name="definitions"></a>
 
 ## 3. Definitions and Abbreviations
 
