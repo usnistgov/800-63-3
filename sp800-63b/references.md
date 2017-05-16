@@ -22,6 +22,8 @@
 
 <a name="ICAM"></a>[ICAM] National Security Systems and Identity, Credential and Access Management Sub-Committee Focus Group, Federal CIO Council, *ICAM Lexicon*, Version 0.5, March 2011.
 
+<a name="ISOIEC2382-37"></a>[ISO/IEC 2382-37] International Standards Organization, *Information technology — Vocabulary — Part 37: Biometrics*, 2017, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c066693_ISO_IEC_2382-37_2017.zip>.
+
 <a name="ISOIEC10646"></a>[ISO/IEC 10646] International Standards Organization, *Universal Coded Character Set*, 2014, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c063182_ISO_IEC_10646_2014.zip>.
 
 <a name="ISO24745"></a>[ISO/IEC 24745] International Standards Organization, *Information technology -- Security techniques -- Biometric information protection*, 2011, available at: <http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=52946>.
