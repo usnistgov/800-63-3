@@ -220,7 +220,7 @@ An authority that is responsible for the generation of data, digital evidence (s
 #### Kerberos
 A widely used authentication protocol developed at MIT. In "classic" Kerberos, users share a secret password with a Key Distribution Center (KDC). The user, Alice, who wishes to communicate with another user, Bob, authenticates to the KDC and is furnished a "ticket" by the KDC to use to authenticate with Bob.
 
-When Kerberos authentication is based on passwords, the protocol is known to be vulnerable to offline dictionary attacks by eavesdroppers who capture the initial user-to-KDC exchange. Longer password length and complexity provide some mitigation to this vulnerability, although sufficiently long passwords tend to be cumbersome for users.
+See [SP 800-63C Section 11.2](sp800-63c.html#kerberos) for more information.
 
 #### Knowledge Based Verification (KBV)
 Identity verification method based on knowledge of private information associated with the claimed identity. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
