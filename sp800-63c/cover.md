@@ -199,13 +199,13 @@ The terms "CAN" and "CANNOT" indicate a possibility and capability, whether mate
 
 [3. Definitions and Abbreviations](#definitions)
 
-[4. Federation](#federation)
+[4. Federation Assurance Levels](#fal)
 
-[5. Assertions](#assertions)
+[5. Federation](#federation)
 
-[6. Assertion Presentation](#presentation)
+[6. Assertions](#assertions)
 
-[7. Federation Assurance Levels](#fal)
+[7. Assertion Presentation](#presentation)
 
 [8. Security](#security)
 
