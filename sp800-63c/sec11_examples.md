@@ -14,7 +14,7 @@ SAML is an XML-based framework for creating and exchanging authentication and at
 The building blocks of SAML include:
 
 - The Assertions XML schema which defines the structure of the assertion.
-- The SAML Protocols which are used to request assertions and artifacts (the assertion references used in the indirect model described in [Section 6.1](#back-channel)).
+- The SAML Protocols which are used to request assertions and artifacts (the assertion references used in the indirect model described in [Section 7.1](#back-channel)).
 - The Bindings that define the underlying communication protocols (such as HTTP or SOAP) and can be used to transport the SAML assertions. 
 
 The three components above define a SAML profile that corresponds to a particular use case such as "Web Browser SSO".

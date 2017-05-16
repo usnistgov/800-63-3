@@ -93,12 +93,12 @@ To encourage user adoption, IdPs and RPs need to establish and build trust with 
 * Allow users to control their information disclosure and provide explicit consent through the appropriate use of notifications (see SP 800-63C, Section 9.2, Notice and Consent). Balancing the content, size, and frequency of notifications is necessary to avoid thoughtless user click-through.
 
 * For attribute sharing, consider the following:
-  * Provide a means for users to verify those attributes and attribute values that will be shared. Follow good security practices (see [Section 6](#presentation)).
+  * Provide a means for users to verify those attributes and attribute values that will be shared. Follow good security practices (see [Section 7](#presentation)).
   * Enable users to consent to a partial list of attributes, rather than an all or nothing approach. Allow users some degree of online access, even if the user does not consent to share all information.
   * Allow users to update their consent to the list of attributes shared.
   * Minimize unnecessary information presented to users. For example, do not display system generated attributes such as  pairwise pseudonymous identifiers, even if they are shared with the RP as part of the authentication response.
   * Minimize user steps and navigation. For example, build attribute consent into the protocols—so they're not a feature external to the federated transaction. Examples can be found in standards such as OAuth or OpenID Connect.
-  * Provide effective and efficient redress methods such that a user can recover from invalid attribute information claimed by the IdP (see [Section 6](#presentation)).
+  * Provide effective and efficient redress methods such that a user can recover from invalid attribute information claimed by the IdP (see [Section 7](#presentation)).
   * Minimize the number of times a user is required to consent to attribute sharing. Balancing the frequency of consent requests avoids user frustration with multiple requests to share the same attribute.
 
 * Collect information for constrained usage only, and minimize information disclosure (see [Section 9.3](#minimization)). Unnecessary and superfluous information collection and disclosure or user tracking without explicit user consent erodes user trust. For example, only request attributes from the user that are relevant for the current transaction, not for all possible transactions a user may or may not access at the RP.
