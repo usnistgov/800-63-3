@@ -18,7 +18,7 @@ AAL1 provides some assurance that the claimant controls an authenticator registe
 
 #### 4.1.1. Permitted Authenticator Types
 
-AAL1 permits the use of any of the following authenticator types, which are defined in Section 5:
+AAL1 authentication SHALL be effected by the use of any of the following authenticator types, which are defined in [Section 5](#sec5):
 
 * Memorized Secret
 * Look-up Secret
@@ -56,7 +56,7 @@ AAL2 provides high confidence that the claimant controls authenticator(s) regist
 
 #### 4.2.1. Permitted Authenticator Types
 
-At AAL2, it is required to have either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
+At AAL2, authentication SHALL use either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
 
 When a multi-factor authenticator is used, any of the following MAY be used:
 
@@ -106,7 +106,7 @@ AAL3 provides very high confidence that the claimant controls authenticator(s) r
 
 #### 4.3.1. Permitted Authenticator Types
 
-Authentication Assurance Level 3 requires the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
+AAL3 authentication SHALL be effected through the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
 
 * Multi-factor Cryptographic Device
 * Single-factor Cryptographic Device used in conjunction with memorized secret
