@@ -56,6 +56,8 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Assertions and Federation*. ***To be updated at publication***
 
+<a name="SP800-90Ar1></a>[SP 800-90Ar1] NIST Special Publication 800-90A revision 1, *Recommendation for Random Number Generation Using Deterministic Random Bit Generators*, June 2015.
+
 <a name="SP800-107"></a>[SP 800-107] NIST Special Publication 800-107, Revision 1, *Recommendation for Applications Using Approved Hash Algorithms*, August 2012.
 
 <a name="SP800-131A"></a>[SP 800-131A] NIST Special Publication 800-131A , *Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths*, Revision 1, November 2015.
