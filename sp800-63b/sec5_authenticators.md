@@ -343,7 +343,7 @@ Additional techniques MAY be used to prioritize authentication attempts that are
 
 - Leveraging other risk-based or adaptive authentication techniques to identify user behavior that falls within, or out of, typical norms.
 
-When the subscriber successfully authenticates, the verifier SHOULD disregard any previous failed attempts from the same IP address.
+When the subscriber successfully authenticates, the verifier SHOULD disregard any previous failed attempts for that user from the same IP address.
 
 #### <a name="biometric_use"></a>5.2.3. Use of Biometrics
 
