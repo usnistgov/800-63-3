@@ -76,8 +76,10 @@ FIPS can be found at: http://csrc.nist.gov/publications/fips/.
 
 <a name="FIPS202"></a>[FIPS 202] Federal Information Processing Standard Publication 202, *SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions*, August 2015.
 
-### 11.4. Legislation
+### 11.4. Legislation and Executive
 
 <a name="PrivacyAct"></a>[Privacy Act] *Privacy Act of 1974* (P.L. 93-579), December 1974, available at: <http://www.justice.gov/opcl/privacy-act-1974>.
 
 <a name="E-Gov"></a>[E-Gov] *E-Government Act* \[includes FISMA] (P.L. 107-347), December 2002, available at: <http://www.gpo.gov/fdsys/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf>.
+
+<a name="EO13681"></a>[EO 13681] Executive Order 13681, *Improving the Security of Consumer Financial Transactions*, October 17, 2014, available at: <https://obamawhitehouse.archives.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions>.

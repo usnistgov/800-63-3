@@ -23,7 +23,7 @@ The record created by the CSP SHALL contain the date and time the authenticator 
 
 #### 6.1.1. Binding at Enrollment
 
-The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in [[SP 800-63A]](sp800-63a.html).
+The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in [[SP 800-63A]](sp800-63a.html). Since Executive Order 13681 [[EO 13681]](#EO13681) requires the use of two-factor authentication for the release of any personal data, it is important that authenticators be bound to subscriber accounts at enrollment enabling access to personal data, including that established by identity proofing.
 
 The CSP SHALL bind at least one, and SHOULD bind at least two, physical ("something you have") authenticators to the subscriber's online identity in addition to a memorized secret or one or more biometrics. Binding of multiple authenticators is preferred in order to recover from the loss or theft of the subscriber's primary authenticator.
 
