@@ -333,7 +333,7 @@ CSPs SHALL provide subscriber instructions on how to appropriately  protect the 
 
 When required in the authenticator type descriptions under [Section 5.1](#reqauthtype), the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to no more than 100 consecutive failed attempts on a single account.
 
-Additional techniques MAY be used to prioritize authentication attempts that are likely to come from the subscriber over those that are more likely to come from an attacker:
+Additional techniques MAY be used to reduce the likelihood that an attacker will lock the legitimate claimant out as a result of rate limiting. These include:
 
 - Requiring the claimant to complete a CAPTCHA before attempting authentication.
 
