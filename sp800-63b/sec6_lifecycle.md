@@ -21,7 +21,7 @@ Throughout the online identity lifecycle, CSPs SHALL maintain a record of all au
 
 The record created by the CSP SHALL contain the date and time the authenticator was bound to the account. The record SHOULD include information about the source of the binding, such as the IP address and device identifier of any device associated with the enrollment. If available, the record SHOULD also contain information about the source of unsuccessful authentications attempted with the authenticator.
 
-#### 6.1.1. Enrollment
+#### 6.1.1. Binding at Enrollment
 
 The following requirements apply when an authenticator is bound to an identity as a result of a successful identity proofing transaction, as described in [[SP 800-63A]](sp800-63a.html).
 
