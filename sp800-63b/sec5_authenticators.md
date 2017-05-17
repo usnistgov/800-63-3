@@ -376,7 +376,11 @@ The biometric system SHALL allow no more than 5 consecutive failed authenticatio
 
 - Disable the biometric user verification and offer another factor (a different biometric modality or a PIN/Passcode if it is not already a required factor) if such an alternative method is already implemented. 
 
-Determination of sensor/endpoint performance, integrity, and authenticity can be accomplished in several different ways, any of which are acceptable under this guideline.  These include but are not limited to: authentication of the sensor or endpoint, certification by an approved accreditation authority, or runtime interrogation of signed metadata (e.g., attestation) as described in [Section 5.2.4](#attestation).
+The verifier SHALL make a determination of sensor/endpoint performance, integrity, and authenticity. Acceptable methods for making this determination include, but are not limited to:
+
+* Authentication of the sensor or endpoint
+* Certification by an approved accreditation authority
+* Runtime interrogation of signed metadata (e.g., attestation) as described in [Section 5.2.4](#attestation).
 
 Biometric matching SHOULD be performed locally on claimant's device or MAY be performed at a central verifier.
 
