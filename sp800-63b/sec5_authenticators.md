@@ -360,9 +360,9 @@ Therefore, the limited use of biometrics for authentication is supported with th
 
 Biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator (something you have).
 
-An authenticated protected channel between sensor (or endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint authenticated **prior** to capturing the biometric sample from the claimant.
+An authenticated protected channel between sensor (or endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint authenticated prior to capturing the biometric sample from the claimant.
 
-The biometric system SHALL operate with a false match rate (FMR) [[ISO/IEC 2382-37]](#ISOIEC2382-37) of **1 in 1000** or better.
+The biometric system SHALL operate with a false match rate (FMR) [[ISO/IEC 2382-37]](#ISOIEC2382-37) of 1 in 1000 or better.
 
 The biometric system SHOULD implement PAD. Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks.
 
