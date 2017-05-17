@@ -4,7 +4,7 @@
 
 *This section is normative.*
 
-During the lifecycle of an authenticator bound to a subscriber's identity, a number of events can occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions that SHALL be taken in response to those events.
+During the lifecycle of an authenticator bound to a subscriber's identity, a number of events can occur that affect the use of that authenticator. These events include binding, loss, theft, unauthorized duplication, expiration, and revocation. This section describes the actions to be taken in response to those events.
 
 ### <a name="binding"></a>6.1. Authenticator Binding
 
