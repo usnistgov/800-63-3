@@ -19,13 +19,13 @@ In a federation protocol, a three-party relationship is formed between the subsc
 
 </div>
 
-The subscriber authenticates to the IdP as described in [[SP 800-63B]](sp800-63b.html), and then the result of that authentication event is asserted to the RP across the network. The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 6](#assertions).
+The subscriber authenticates to the IdP, and then the result of that authentication event is asserted to the RP across the network. In this transaction, the IdP acts as the verifier for the credential as described in [[SP 800-63B]](sp800-63b.html). The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 6](#assertions). Additional attributes MAY be made available through a secondary protocol protected by an authorized credential.
 
 ### <a name="federation-model"></a> 5.1. Federation Models
 
 IdPs that provide authentication services and RPs that consume those services are known as members of a federation. From an IdP's perspective, the federation consists of the RPs that it services. From an RP's perspective, the federation consists of the IdPs that it uses. This section provides an overview of and requirements for common identity federation models currently in use. In each model, relationships are established between members of the federation.
 
-#### <a name="manual-registration"></a> 45.1.1. Manual Registration
+#### <a name="manual-registration"></a> 5.1.1. Manual Registration
 
 In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing these RPs to receive authentication and attribute information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information.
 

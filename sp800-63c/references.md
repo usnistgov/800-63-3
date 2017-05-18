@@ -25,4 +25,4 @@
 
 <a name="SAML"></a>[SAML] OASIS, *Security Assertion Markup Language (SAML) V2.0 Technical Overview*, available at: <http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html>.
 
-<a name="OIDC"><a>[OIDC] OpenID Foundation, *OpenID Connect Core 1.0*, available at: <http://openid.net/specs/openid-connect-core-1_0.html>.
+<a name="OIDC"><a>[OIDC] OpenID Foundation, *OpenID Connect Core 1.0 incorporating errata set 1*, available at: <http://openid.net/specs/openid-connect-core-1_0.html>.

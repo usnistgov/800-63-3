@@ -32,7 +32,7 @@ An RP SHALL treat subject identifiers as not inherently globally unique. Instead
 
 Assertions MAY include additional attributes. Refer to [Section 7](#presentation) for privacy requirements on presenting attributes in assertions. The RP MAY fetch additional identity attributes from the IdP in one or more separate transactions using an authorization credential issued alongside the original assertion. The ability to successfully fetch such additional attributes SHALL NOT be treated as equivalent to processing of the assertion.
 
-Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, [session management](sp800-63b.html#sec7) by the RP comes into play; the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion. See [Section 5.3](#federation-session) for more information.
+Although details vary based on the exact federation protocol in use, an assertion SHOULD be used only to represent a single login event at the RP. After the RP consumes the assertion, session management by the RP comes into play (see [SP 800-63B Section 7](sp800-63b.html#sec7)); the assertion SHALL NOT be used past the expiration time contained therein. However, the expiration of the session at the RP MAY occur prior to the expiration of the assertion. See [Section 5.3](#federation-session) for more information.
 
 The lifetime of the assertion is the time between its issuance and its expiration. This lifetime needs to be long enough to allow the RP to process the assertion and create a local application session for the subscriber, but should not be longer than necessary for such establishment. Long-lived assertions have a greater risk of being stolen or replayed, and a short assertion lifetime mitigates this risk. Assertion lifetimes SHALL NOT be used to limit the session at the RP. See [Section 5.3](#federation-session) for more information.
 
@@ -92,7 +92,7 @@ When assertions are passed through third parties, such as a browser, the actual 
 
 Assertions SHALL use audience restriction techniques to allow an RP to recognize whether or not it is the intended target of an issued assertion. All RPs SHALL check that the audience of an assertion contains an identifer for their RP to prevent the injection and replay of an assertion generated for one RP at another RP.
 
-#### <a name="ppi"></a> 5.3. Pairwise Pseudonymous Identifiers
+#### <a name="ppi"></a>6.3. Pairwise Pseudonymous Identifiers
 
 In some circumstances, it is desirable to prevent the subscriber's account at the IdP from being easily linked at multiple RPs through use of a common identifier.
 
