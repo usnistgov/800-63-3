@@ -74,7 +74,7 @@ As an alternative to the above re-proofing process when there is no biometric bo
 
 #### 6.1.3. Binding to a Subscriber-provided Authenticator
 
-A subscriber MAY already possess authenticators suitable for authentication at a particular AAL. For example, he or she MAY have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at an RP that requires IAL2.
+A subscriber may already possess authenticators suitable for authentication at a particular AAL. For example, he or she may have a two-factor authenticator from a social network provider, considered AAL2 and IAL1, and would like to use those credentials at an RP that requires IAL2.
 
 CSPs SHOULD, where practical, accommodate the use of subscriber-provided authenticators in order to relieve the burden to the subscriber of managing a large number of authenticators. Binding of these authenticators SHALL be done as described in [Section 6.1.2.1](#post-enroll-bind). In situations where the authenticator strength is not self-evident (e.g., between single-factor and multi-factor authenticators of a given type), the CSP SHOULD assume the use of the weaker authenticator unless it is able to establish that the stronger authenticator is in fact being used (e.g., by verification with the issuer or manufacturer of the authenticator).
 
