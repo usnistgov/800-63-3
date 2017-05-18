@@ -41,7 +41,7 @@ If enrollment and binding cannot be completed in a single physical encounter or 
 
 2. For physical transactions -
 
-  a) The applicant SHALL identify themselves in person by either using a secret as described above, or through the use of a biometric that was recorded during a prior encounter.	
+  a) The applicant SHALL identify themselves in person by either using a secret as described in 1(a) above, or through the use of a biometric that was recorded during a prior encounter.	
 
   b) Temporary secrets SHALL not be reused.
 
