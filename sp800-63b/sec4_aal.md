@@ -72,7 +72,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 * Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
 * Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
 
-> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated. Therefore, it is unnecessary to use another factor with biometrics because that device is the "something you have", which serves as a valid second factor of the authentication. 
+> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device SHALL be authenticated; a biometric is not recognized as an authenticator type by itself. Therefore, it is unnecessary to use another factor with biometrics because the associated device is the "something you have", which serves as a valid second factor of the authentication. 
 
 #### 4.2.2. Authenticator and Verifier Requirements
 

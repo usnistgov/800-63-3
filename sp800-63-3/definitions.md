@@ -78,6 +78,9 @@ These are further divided into *short-term authentication secrets*, which are on
 #### Authenticator
 Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
+#### Authenticator Type
+A category of authenticators having common characteristics. Some authenticator types provide one authentication factor; others provide two.
+
 #### Authenticator Assurance Level (AAL)
 A category describing the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
 
