@@ -38,7 +38,7 @@ When processing requests to establish and change memorized secrets, verifiers SH
 * Passwords obtained from previous breach corpuses.
 * Dictionary words.
 * Repetitive or sequential characters (e.g. 'aaaaaa', '1234abcd').
-* Context specific words, such as the name of the service, the username, and derivatives thereof.
+* Context-specific words, such as the name of the service, the username, and derivatives thereof.
 
 If the chosen secret is found in the list, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
 
@@ -392,7 +392,7 @@ Biometrics are also used in some cases to prevent repudiation of registration an
 
 #### <a name="attestation"></a>5.2.4. Attestation
 
-Attestation is information conveyed to the verifier regarding a directly connected authenticator or the endpoint involved in an authentication operation. Information conveyed by attestation MAY include, but is not limited to:
+Attestation is information conveyed to the verifier regarding a directly-connected authenticator or the endpoint involved in an authentication operation. Information conveyed by attestation MAY include, but is not limited to:
 
 * The provenance (manufacturer or supplier certification), health, and integrity of the authenticator and/or endpoint.
 * Security features of the authenticator.
@@ -405,7 +405,7 @@ Attestation information MAY be used as part of a verifier's risk-based authentic
 
 #### <a name="verifimpers"></a>5.2.5. Verifier Impersonation Resistance
 
-Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and RPs to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly MitM resistant".
+Verifier-impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and RPs to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier-impersonation attacks were also referred to as "strongly MitM resistant".
 
 Authentication protocols that are verifier impersonation resistant SHALL authenticate the verifier and either:
 
@@ -413,9 +413,9 @@ Authentication protocols that are verifier impersonation resistant SHALL authent
 
 2. Determine whether the verifier's authenticated hostname or domain name is on a list of trusted verifiers, and release the authenticator output only to a verifier on that list.
 
-One example of the former class of verifier impersonation resistant authentication protocols is client-authenticated TLS, because the client signs the authenticator output along with earlier messages from the protocol that are unique to the particular TLS connection being negotiated. Other protocols that MAY be used are techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by a fraudulent verifier (the attacker) if proxied to the intended verifier.
+One example of the former class of verifier-impersonation-resistant authentication protocols is client-authenticated TLS, because the client signs the authenticator output along with earlier messages from the protocol that are unique to the particular TLS connection being negotiated. Other protocols that MAY be used are techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by a fraudulent verifier (the attacker) if proxied to the intended verifier.
 
-The latter class of verifier impersonation resistant protocols relies on access control to release the authenticator output only to trusted verifiers.
+The latter class of verifier-impersonation-resistant protocols relies on access control to release the authenticator output only to trusted verifiers.
 
 In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and OTP authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
 
@@ -435,19 +435,19 @@ Verifier compromise resistance can be achieved in different ways, for example:
 
 In order to be considered verifier compromise resistant, public keys stored by the verifier SHALL use approved cryptography and SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication).
 
-Other verifier compromise resistant secrets SHALL use approved hash algorithms and the underlying secrets SHALL have at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). Secrets (such as memorized secrets) having lower complexity SHALL NOT be considered verifier compromise resistant when hashed because of the potential to defeat the hashing process through dictionary lookup or exhaustive search.
+Other verifier-compromise-resistant secrets SHALL use approved hash algorithms and the underlying secrets SHALL have at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). Secrets (such as memorized secrets) having lower complexity SHALL NOT be considered verifier compromise resistant when hashed because of the potential to defeat the hashing process through dictionary lookup or exhaustive search.
 
 #### <a name="replay"></a>5.2.8. Replay Resistance
 
-An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. Replay resistance is in addition to the replay resistant nature of authenticated protected channel protocols, since the output could be stolen prior to entry into the protected channel. Protocols that use nonces or challenges to prove the "freshness" of the transaction are resistant to replay attacks since the verifier will easily detect that the old protocol messages replayed do not contain the appropriate nonces or timeliness data related to the current authentication session.
+An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. Replay resistance is in addition to the replay-resistant nature of authenticated protected channel protocols, since the output could be stolen prior to entry into the protected channel. Protocols that use nonces or challenges to prove the "freshness" of the transaction are resistant to replay attacks since the verifier will easily detect that the old protocol messages replayed do not contain the appropriate nonces or timeliness data related to the current authentication session.
 
-Examples of replay resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
+Examples of replay-resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
 
 In contrast, memorized secrets are not considered replay resistant because the authenticator output (the secret itself) is provided for each authentication.
 
 #### <a name="intent"></a>5.2.9. Authentication Intent
 
-An authentication process requires intent if it requires the subject to explicitly respond to each authentication or reauthentication request. The goal of authentication intent is to make it more difficult for directly connected physical authenticators (cryptographic devices) to be used without the subject's knowledge, such as by malware on the endpoint. Authentication intent SHALL be established by the authenticator itself, although multi-factor cryptographic devices MAY establish intent by reentry of the other authentication factor on the endpoint with which the authenticator is used.
+An authentication process requires intent if it requires the subject to explicitly respond to each authentication or reauthentication request. The goal of authentication intent is to make it more difficult for directly-connected physical authenticators (cryptographic devices) to be used without the subject's knowledge, such as by malware on the endpoint. Authentication intent SHALL be established by the authenticator itself, although multi-factor cryptographic devices MAY establish intent by reentry of the other authentication factor on the endpoint with which the authenticator is used.
 
 Authentication intent MAY be established in a number of ways. Authentication processes that require intervention of the subject, e.g., to enter an authenticator output on their endpoint from an OTP device, establish intent by their very nature.  Cryptographic devices that require user action (e.g., pushing a button or reinsertion) for each authentication or reauthentication operation are also considered to establish intent.
 
