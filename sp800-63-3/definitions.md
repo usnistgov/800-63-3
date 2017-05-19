@@ -97,7 +97,10 @@ An entity that has access to, or verified copies of, accurate information from a
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
 
 #### Bearer Assertion
-An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion. 
+An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion.
+
+#### Binding
+An association between elements of subscriber identity or of a given subscriber session. Examples include the binding of authenticators to a subscriber identity (see _credential_) and the binding of multiple interactions into a session.
 
 #### Biometrics
 Automated recognition of individuals based on their behavioral and biological characteristics.
