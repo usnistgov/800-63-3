@@ -33,15 +33,15 @@ At IAL2 and above, identifying information is associated with the online identit
 
 If enrollment and binding cannot be completed in a single physical encounter or electronic transaction (within a single protected session), the following methods SHALL be used to ensure that the same party acts as the applicant throughout the processes:
 
-1. For remote transactions -
+For remote transactions -
 
   a) The applicant SHALL identify themselves in each new transaction by presenting a temporary secret which was established during a prior transaction or encounter, or sent to the applicant's phone number, email address, or postal address of record.	
 
   b) Long-term authenticator secrets SHALL only be issued to the applicant within a protected session.
 
-2. For physical transactions -
+For physical transactions -
 
-  a) The applicant SHALL identify themselves in person by either using a secret as described in 1(a) above, or through the use of a biometric that was recorded during a prior encounter.	
+  a) The applicant SHALL identify themselves in person by either using a secret as described in remote transaction (a) above, or through the use of a biometric that was recorded during a prior encounter.	
 
   b) Temporary secrets SHALL not be reused.
 
