@@ -241,12 +241,12 @@ A cryptographic checksum on data that uses a symmetric key to detect both accide
 Executable code that is normally transferred from its source to another computer system for execution. This transfer is often through the network (e.g., JavaScript embedded in a web page) but may transfer through physical media as well.
 
 #### Multi-factor
-A characteristic of an authentication system or an authenticator that requires more than one [authentication factor](#af) for successful authentication. MFA can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+A characteristic of an authentication system or an authenticator that requires more than one distinct [authentication factor](#af) for successful authentication. MFA can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
 
 #### Multi-factor Authentication (MFA)
-An authentication system or an authenticator that requires more than one [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+An authentication system or an authenticator that requires more than one distinct [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
 
