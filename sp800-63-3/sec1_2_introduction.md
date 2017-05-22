@@ -120,7 +120,7 @@ AAL/IAL3|High|Level 4|N/A2|QAA Level 4|LoA 4|LoA 4|IAL/CAL 4
 #### 2.6.1. SP 800-63-1
 
 NIST SP 800-63-1 updated NIST SP 800-63 to reflect current authenticator (then referred to as token)
-technologies and restructured to provide a better understanding of the
+technologies and restructured it to provide a better understanding of the
 digital authentication architectural model used here. Additional (minimum)
 technical requirements were specified for the CSP, protocols utilized to
 transport authentication information, and assertions if implemented
