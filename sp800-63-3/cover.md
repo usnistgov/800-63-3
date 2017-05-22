@@ -181,7 +181,7 @@ For these guidelines, digital identity is the unique representation of a subject
 
 These technical guidelines supersede NIST Special Publication (SP) 800-63-1 and SP 800-63-2. Once the agency completes the digital identity risk assessment of its service(s), these guidelines provide mitigations of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included. 
 
-These guidelines retire the concept of traditional LOA as a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system. 
+These guidelines retire the concept of a level of assurance (LOA) as a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this not a requirement and agencies should not assume they will be the same in any given system. 
 
 The components of identity assurance detailed in these guidelines are as follows:
 
