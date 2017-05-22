@@ -344,8 +344,6 @@ An entity that relies upon the subscriber's authenticator(s) and credentials or 
 #### Remote
 (*In the context of remote authentication or remote transaction*) An information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls.
 
-> Note: Any information exchange across the Internet is considered remote.
-
 #### Replay Attack
 An attack in which the attacker is able to replay previously captured messages (between a legitimate claimant and a verifier) to masquerade as that claimant to the verifier or vice versa.
 
