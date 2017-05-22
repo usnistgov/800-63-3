@@ -27,7 +27,7 @@ These guidelines do not expect a composite level of assurance (LOA) in the conte
 
 The components of identity assurance detailed in these guidelines are as follows:
 
-* **IAL** refers to the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific subscriber.
+* **IAL** refers to the identity proofing process.
 * **AAL** refers to the authentication process itself.
 * **FAL** refers to the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to a RP.
 
@@ -37,7 +37,7 @@ As such, SP 800-63 is organized as a suite of documents as follows:
 
 - SP 800-63A *Enrollment and Identity Proofing* - Addresses how applicants can prove their identities and become enrolled as valid subjects within an identity system. It provides requirements for processes by which applicants can both proof and enroll at one of three different levels of risk mitigation in both remote and physically-present scenarios. _This document contains both normative and informative material._
 
-- SP 800-63B *Authentication and Lifecycle Management* - Addresses how an individual can securely authenticate to a CSP to access a digital service or set of digital services.  _This document contains both normative and informative material._
+- SP 800-63B *Authentication and Lifecycle Management* - Addresses how an individual can securely authenticate to a CSP to access a digital service or set of digital services. This volume also describes the process of binding an authenticator to an identity. _This document contains both normative and informative material._
 
 - SP 800-63C *Federation and Assertions* - Provides requirements on the use of federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, this guideline offers privacy enhancing techniques to share information about a valid, authenticated subject, as well as describing methods that allow for strong multi-factor authentication (MFA) while the subject remains pseudonymous to the digital service. _This document contains both normative and informative material._
 
