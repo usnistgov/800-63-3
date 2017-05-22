@@ -4,7 +4,8 @@
 
 ## 6. <a name="CYOA"></a>Selecting Assurance Levels
 
-_This section is informative._
+_This section is normative._  
+
 The results of the risk assessment are the primary factor in selecting the most appropriate levels. This section details how to apply the results of the risk assessment with additional factors unrelated to risk to determine the most advantageous xAL selection.
 
 First, compare the impact profile from the risk assessment to the impact profiles associated with each assurance level, as shown in [Table 6-1](#63Sec6-Table6-1) below. To determine the required assurance level, find the lowest level whose impact profile meets or exceeds the potential impact for every category analyzed in the risk assessment.

@@ -43,6 +43,19 @@ As such, SP 800-63 is organized as a suite of documents as follows:
 
 NIST anticipates that individual documents in this suite will be revised asynchronously with each other and with this document. At any given time, the most recent revision of each should be used (e.g., if at a time in the future SP 800-63A-1 and SP 800-63B-2 are the most recent revisions of each document, they should be used together even though the revision numbers do not match).
 
+The following table states which sections of the document are normative and which are informative:
+
+|Section Name|Normative/Informative|
+|----|:--:|
+|1. Purpose|Informative|
+|2. Introduction|Informative|
+|3. Definitions and Abbreviations|Informative|
+|4. Digital Identity Model|Informative|
+|5. Digital Identity Risk Management|Normative|
+|6. Selecting Assurance Levels|Normative|
+|7. Federation Considerations|Informative|
+|8. References|Informative|
+
 ### 2.1. Applicability
 
 Not all digital services require authentication or identity proofing; however, this guidance applies to all such transactions for which authentication is required, regardless of the constituency (e.g. citizens, business partners, or government entities).
