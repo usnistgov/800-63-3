@@ -137,7 +137,7 @@ An object or data structure that authoritatively binds an identity, via an ident
 While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber's authenticator(s) and identity.
 
 #### Credential Service Provider (CSP)
-A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. The CSP may encompass Registration Authorities (RAs) and verifiers that it operates. A CSP may be an independent third party, or may issue credentials for its own use.
+A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. A CSP may be an independent third party, or may issue credentials for its own use.
 
 #### Cross-site Request Forgery (CSRF)
 An attack in which a subscriber who is currently authenticated to a RP and connected through a secure session, browses to an attacker's website which causes the subscriber to unknowingly invoke unwanted actions at the RP.
@@ -177,7 +177,7 @@ An attack in which an attacker listens passively to the authentication protocol 
 See *Digital Authentication*.
 
 #### Enrollment
-The process through which an applicant applies to become a subscriber of a CSP and an RA validates the identity of the applicant on behalf of the CSP.
+The process through which an applicant applies to become a subscriber of a CSP and the CSP validates the identity of the applicant.
 
 #### Entropy
 A measure of the amount of uncertainty that an attacker faces to determine the value of a secret. Entropy is usually stated in bits. A value having *n* bits of entropy has the same degree of uncertainty as a uniformly-distributed *n*-bit random value.
@@ -216,7 +216,7 @@ An attribute or set of attributes that uniquely describe a subject within a give
 A category that conveys the degree of confidence that the applicant's claimed identity is their real identity.
 
 #### Identity Proofing
-The process by which a CSP and an RA collect and verify information about a person for the purpose of issuing credentials to that person.
+The process by which a CSP collects, validates, and verifies information about a person.
 
 #### Identity Provider (IdP)
 The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
