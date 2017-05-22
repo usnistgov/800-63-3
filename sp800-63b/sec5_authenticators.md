@@ -8,7 +8,7 @@ This section provides the detailed requirements specific for each type of authen
 
 ### <a name="reqauthtype"></a> 5.1. Requirements by Authenticator Type
 
-#### 5.1.1. Memorized Secrets
+#### <a name="memsecret"></a> 5.1.1. Memorized Secrets
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -88,7 +88,7 @@ Look-up secrets SHALL be generated using an approved random bit generator and SH
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when requesting look-up secrets in order to provide resistance to eavesdropping and MitM attacks.
 
-#### <a name="out-of-band"></a>5.1.3. Out-of-Band Devices
+#### <a name="out-of-band"></a> 5.1.3. Out-of-Band Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -166,7 +166,7 @@ Single-factor OTP devices are similar to look-up secret authenticators with the 
 
 Single-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or is based on a real-time clock.
 
-The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime.
+The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime. OTP authenticators, particularly software-based OTP generators, SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 The authenticator output is obtained by using an approved block cipher or hash function to combine the key and nonce in a secure manner. The authenticator output MAY be truncated to as few as 6 decimal digits (approximately 20 bits of entropy).
 
@@ -182,7 +182,7 @@ The verifier SHALL use approved encryption and an authenticated protected channe
 
 If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
-#### 5.1.5. Multi-factor OTP Devices
+#### <a name="multifactorOTP"></a> 5.1.5. Multi-factor OTP Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -200,7 +200,7 @@ Multi-factor OTP authenticators operate in a similar manner to single-factor OTP
 
 In addition to activation information, multi-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or is based on a real-time clock.
 
-The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime.
+The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime. OTP authenticators, particularly software-based OTP generators, SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 The authenticator output is obtained by using an approved block cipher or hash function to combine the key and nonce in a secure manner. The authenticator output MAY be truncated to as few as 6 decimal digits (approximately 20 bits of entropy).
 
@@ -220,7 +220,7 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 
 If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
-#### 5.1.6. Single-factor Cryptographic Software
+#### <a name="sfcs"></a> 5.1.6. Single-factor Cryptographic Software
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -235,13 +235,13 @@ If the authenticator output or activation secret has less than 64 bits of entrop
 
 #### 5.1.6.1. Single-factor Cryptographic Software Authenticators
 
-Single-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+Single-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access. Single-factor cryptographic software authenticators SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 #### 5.1.6.2. Single-factor Cryptographic Software Verifiers
 
 The requirements for a single-factor cryptographic software verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv).
 
-#### 5.1.7. Single-factor Cryptographic Devices
+#### <a name="sfcd"></a> 5.1.7. Single-factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -268,7 +268,7 @@ The verifier has either symmetric or asymmetric cryptographic keys corresponding
 
 The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator). The verification operation SHALL use approved cryptography.
 
-#### 5.1.8. Multi-factor Cryptographic Software
+#### <a name="mfcs"></a> 5.1.8. Multi-factor Cryptographic Software
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -283,7 +283,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 
 #### 5.1.8.1. Multi-factor Cryptographic Software Authenticators
 
-Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, trusted execution environment). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, trusted execution environment). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.  Multi-factor cryptographic software authenticators SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 Each authentication operation using the authenticator SHALL require the input of both factors.
 
@@ -295,7 +295,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 The requirements for a multi-factor cryptographic software verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv). By its nature, verification of the output from a multi-factor cryptographic software authenticator proves use of the activation factor.
 
-#### 5.1.9. Multi-factor Cryptographic Devices
+#### 5.1.9. <a name="mfcd"></a> Multi-factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
