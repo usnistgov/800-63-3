@@ -16,8 +16,7 @@
 Electronic Signatures in Federal Organization Transactions* (January 25, 2013),
 available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf>.
 
-<a name="FISMA"></a>[FISMA] *Federal Information
-Security Management Act*, available at: <http://csrc.nist.gov/drivers/documents/FISMA-final.pdf>.
+<a name="FISMA"></a>[FISMA] *Federal Information Security Modernization Act of 2014*, available at: <https://www.congress.gov/bill/113th-congress/senate-bill/2521>.
 
 <a name="HSPD-12"></a>[HSPD-12] Department of Homeland Security, *Homeland Security Presidential Directive 12: Policy for a Common Identification Standard for Federal Employees and Contractors* (August 27, 2004), available at: <https://www.dhs.gov/homeland-security-presidential-directive-12>.
 

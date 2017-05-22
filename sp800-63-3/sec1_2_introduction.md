@@ -70,9 +70,7 @@ Transactions* [[ESIG]](#ESIG) for additional information on legal risks, especia
 
 Additionally, Federal agencies implementing these guidelines should
 adhere to the requirements of Title III of the E-Government Act,
-entitled the *Federal Information Security Management Act*
-\[[FISMA](#FISMA)\], and related NIST standards and guidelines.
-FISMA directs Federal agencies to develop, document, and implement
+entitled the [Federal Information Security Modernization Act](#FISMA), and related NIST standards and guidelines. FISMA directs Federal agencies to develop, document, and implement
 agency-wide programs to provide information security for the information
 and systems that support the operations and assets of the
 agency. This includes the security authorization of IT systems that support

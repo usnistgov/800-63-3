@@ -180,9 +180,6 @@ Under the Information Technology Management Reform Act (Public Law 104-106), the
 
 FIPS documents are available online through the FIPS home page: <http://www.nist.gov/itl/fips.cfm>
 
-#### Federal Information Security Management Act (FISMA)
-Title III of the E-Government Act requiring each federal agency to develop, document, and implement an agency-wide program to provide information security for the information and systems that support the operations and assets of the agency, including those provided or managed by another agency, contractor, or other source.
-
 #### Federation
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
