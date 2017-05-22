@@ -58,7 +58,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 |**FAL2** - FAL2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
 |**FAL3** - FAL3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
-When described generically or bundled, this guideline will refer to the combination of IAL, AAL, and FAL as **_xAL_**.
+When described generically or bundled, these guidelines will refer to IAL, AAL, and FAL as **_xAL_**.
 
 ### <a name="section5-3"></a> 5.3. Risk and Impacts
 
