@@ -18,7 +18,7 @@ AAL1 provides some assurance that the claimant controls an authenticator registe
 
 #### 4.1.1. Permitted Authenticator Types
 
-AAL1 permits the use of any of the following authenticator types, which are defined in Section 5:
+AAL1 authentication SHALL occur by the use of any of the following authenticator types, which are defined in [Section 5](#sec5):
 
 * Memorized Secret ([Section 5.1.1](#memsecret))
 * Look-up Secret ([Section 5.1.2](#lookupsecrets))
@@ -32,7 +32,7 @@ AAL1 permits the use of any of the following authenticator types, which are defi
 
 #### 4.1.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL1 SHALL use approved cryptography. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise (e.g., by malware) of the user endpoint in which they are running and SHOULD not complete the operation when such a compromise is detected.
+Cryptographic authenticators used at AAL1 SHALL use approved cryptography. Software-based authenticators that operate within the context of an operating system MAY, where applicable, attempt to detect compromise (e.g., by malware) of the user endpoint in which they are running and SHOULD not complete the operation when such a compromise is detected.
 
 Communication between the claimant and verifier (using the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
@@ -56,7 +56,7 @@ AAL2 provides high confidence that the claimant controls authenticator(s) regist
 
 #### 4.2.1. Permitted Authenticator Types
 
-At AAL2, it is required to have either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
+At AAL2, authentication SHALL occur by the use of either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
 
 When a multi-factor authenticator is used, any of the following MAY be used:
 
@@ -72,11 +72,11 @@ When a combination of two single-factor authenticators is used, it SHALL include
 * Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
 * Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
 
-> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated. Therefore, it is unnecessary to use another factor with biometrics because that device is the "something you have", which serves as a valid second factor of the authentication. 
+> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated; a biometric is not recognized as an authenticator type by itself. Therefore, it is unnecessary to use another factor with biometrics because the associated device is the "something you have", which serves as a valid second factor of the authentication. 
 
 #### 4.2.2. Authenticator and Verifier Requirements
 
-Cryptographic authenticators used at AAL2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of a general purpose operating system MAY, where practical, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD not complete the operation when such a compromise is detected. At least one authenticator used at AAL2 SHALL be replay resistant as described in Section [5.2.8](#replay). Authentication at AAL2 SHOULD demonstrate authentication intent from at least one authenticator as discussed in Section [5.2.9](#intent).
+Cryptographic authenticators used at AAL2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of an operating system MAY, where applicable, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD not complete the operation when such a compromise is detected. At least one authenticator used at AAL2 SHALL be replay resistant as described in Section [5.2.8](#replay). Authentication at AAL2 SHOULD demonstrate authentication intent from at least one authenticator as discussed in Section [5.2.9](#intent).
 
 Communication between the claimant and verifier (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
@@ -94,7 +94,7 @@ Reauthentication of a session that has not yet reached its time limit MAY requir
 
 #### 4.2.4. Security Controls
 
-The CSP SHOULD employ appropriately tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+The CSP SHOULD employ appropriately-tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
 #### <a name="aal2records"></a> 4.2.5. Records Retention
 
@@ -102,11 +102,11 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device may fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
+AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
 
 #### 4.3.1. Permitted Authenticator Types
 
-Authentication Assurance Level 3 requires the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
+AAL3 authentication SHALL occur by the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
 
 * Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
 * Single-factor Cryptographic Device ([Section 5.1.7](#sfcd)) used in conjunction with Memorized Secret ([Section 5.1.1](#memsecret))
@@ -134,7 +134,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.3.4. Security Controls
 
-The CSP SHOULD employ appropriately tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHOULD employ appropriately-tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
 #### <a name="aal3records"></a> 4.3.5. Records Retention
 
@@ -142,7 +142,7 @@ The CSP SHALL comply with their respective records retention policies in accorda
 
 ### <a name="aal_privacy"></a>4.4. Privacy Requirements
 
-The CSP SHALL employ appropriately tailored privacy controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard.
+The CSP SHALL employ appropriately-tailored privacy controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard.
 
 CSPs SHALL NOT use or disclose information about subscribers for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. Care SHALL be taken to ensure that use of such information is limited to its original purpose for collection. If the use of such information does not fall within uses related to authentication or to comply with law or legal process, the CSP SHALL provide notice and obtain consent from the subscriber.  This notice SHOULD follow the same principles as described in *Notice and Consent* in [[SP 800-63A Section 8.2]](sp800-63a.html#consent) and SHOULD not be rolled up into a legalistic privacy policy or general terms and conditions. Rather, if there are uses outside the bounds of these explicit purposes, the subscriber SHOULD be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.
 
@@ -169,7 +169,7 @@ Regardless of whether the CSP is an agency or private sector provider, the follo
 
 Requirement | AAL1 | AAL2 | AAL3
 ------------|-------|-------|-------
-**Permitted authenticator types** | Memorized Secret;<br />Look-up Secret;<br />Out of Band;<br />SF OTP Device;<br />MF OTP Device;<br />SF Crypto Software;<br />SF Crypto Device;<br />MF Crypto Software;<br />MF Crypto Device<br /> | MF OTP Device;<br />MF Crypto Software;<br />MF Crypto Device;<br />or memorized secret plus:<br />&nbsp;&bull;&nbsp;Look-up Secret<br />&nbsp;&bull;&nbsp;Out of Band<br />&nbsp;&bull;&nbsp;SF OTP Device<br />&nbsp;&bull;&nbsp;SF Crypto Software<br />&nbsp;&bull;&nbsp;SF Crypto Device<br /> | MF Crypto Device;<br />SF Crypto Device plus &nbsp;&nbsp;Memorized Secret;<br />SF OTP Device plus MF Crypto Device or Software;<br />SF OTP Device plus SF Crypto Software plus Memorized Secret
+**Permitted authenticator types** | Memorized Secret;<br />Look-up Secret;<br />Out of Band;<br />SF OTP Device;<br />MF OTP Device;<br />SF Crypto Software;<br />SF Crypto Device;<br />MF Crypto Software;<br />MF Crypto Device<br /> | MF OTP Device;<br />MF Crypto Software;<br />MF Crypto Device;<br />or Memorized Secret plus:<br />&nbsp;&bull;&nbsp;Look-up Secret<br />&nbsp;&bull;&nbsp;Out of Band<br />&nbsp;&bull;&nbsp;SF OTP Device<br />&nbsp;&bull;&nbsp;SF Crypto Software<br />&nbsp;&bull;&nbsp;SF Crypto Device<br /> | MF Crypto Device;<br />SF Crypto Device plus &nbsp;&nbsp;Memorized Secret;<br />SF OTP Device plus MF Crypto Device or Software;<br />SF OTP Device plus SF Crypto Software plus Memorized Secret
 **FIPS 140 verification** | Level 1 (Government agency verifiers) | Level 1 (Government agency authenticators and verifiers) | Level 2 overall (MF authenticators)<br />Level 1 overall (verifiers and SF Crypto Devices)<br />Level 3 physical security (all authenticators)
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; MAY use one authentication factor | 12 hours or 15 minutes inactivity; SHALL use both authentication factors
 **Security controls**|[[SP 800-53]](#SP800-53) Low Baseline (or equivalent)|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)

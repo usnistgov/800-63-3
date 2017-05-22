@@ -78,6 +78,9 @@ These are further divided into *short-term authentication secrets*, which are on
 #### Authenticator
 Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
+#### Authenticator Type
+A category of authenticators having common characteristics. Some authenticator types provide one authentication factor; others provide two.
+
 #### Authenticator Assurance Level (AAL)
 A category describing the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
 
@@ -97,7 +100,10 @@ An entity that has access to, or verified copies of, accurate information from a
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
 
 #### Bearer Assertion
-An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion. 
+An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion.
+
+#### Binding
+An association between a subscriber identity and an authenticator or a given subscriber session.
 
 #### Biometrics
 Automated recognition of individuals based on their behavioral and biological characteristics.

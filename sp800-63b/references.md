@@ -22,6 +22,8 @@
 
 <a name="ICAM"></a>[ICAM] National Security Systems and Identity, Credential and Access Management Sub-Committee Focus Group, Federal CIO Council, *ICAM Lexicon*, Version 0.5, March 2011.
 
+<a name="ISOIEC2382-37"></a>[ISO/IEC 2382-37] International Standards Organization, *Information technology — Vocabulary — Part 37: Biometrics*, 2017, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c066693_ISO_IEC_2382-37_2017.zip>.
+
 <a name="ISOIEC10646"></a>[ISO/IEC 10646] International Standards Organization, *Universal Coded Character Set*, 2014, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c063182_ISO_IEC_10646_2014.zip>.
 
 <a name="ISO24745"></a>[ISO/IEC 24745] International Standards Organization, *Information technology -- Security techniques -- Biometric information protection*, 2011, available at: <http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=52946>.
@@ -56,6 +58,8 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Assertions and Federation*. ***To be updated at publication***
 
+<a name="SP800-90Ar1></a>[SP 800-90Ar1] NIST Special Publication 800-90A revision 1, *Recommendation for Random Number Generation Using Deterministic Random Bit Generators*, June 2015.
+
 <a name="SP800-107"></a>[SP 800-107] NIST Special Publication 800-107, Revision 1, *Recommendation for Applications Using Approved Hash Algorithms*, August 2012.
 
 <a name="SP800-131A"></a>[SP 800-131A] NIST Special Publication 800-131A , *Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths*, Revision 1, November 2015.
@@ -76,8 +80,10 @@ FIPS can be found at: http://csrc.nist.gov/publications/fips/.
 
 <a name="FIPS202"></a>[FIPS 202] Federal Information Processing Standard Publication 202, *SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions*, August 2015.
 
-### 11.4. Legislation
+### 11.4. Legislation and Executive Orders
 
 <a name="PrivacyAct"></a>[Privacy Act] *Privacy Act of 1974* (P.L. 93-579), December 1974, available at: <http://www.justice.gov/opcl/privacy-act-1974>.
 
 <a name="E-Gov"></a>[E-Gov] *E-Government Act* \[includes FISMA] (P.L. 107-347), December 2002, available at: <http://www.gpo.gov/fdsys/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf>.
+
+<a name="EO13681"></a>[EO 13681] Executive Order 13681, *Improving the Security of Consumer Financial Transactions*, October 17, 2014, available at: <https://obamawhitehouse.archives.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions>.
