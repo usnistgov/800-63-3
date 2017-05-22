@@ -10,6 +10,10 @@ There is a wide variety of terms used in the area of authentication. While the d
 
 The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63 document suite for additional definitions and abbreviations specific to their content.
 
+#### <a name="access"></a> Access
+
+To make contact with one or more discrete functions of an online, digital service.
+
 #### Active Attack
 An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider (CSP), verifier, or Relying Party (RP). Examples of active attacks include man-in-the-middle (MitM), impersonation, and session hijacking.
 
@@ -52,10 +56,13 @@ A statement asserting a property of a subscriber without necessarily containing 
 #### Attribute Value
 A complete statement asserting a property of a subscriber, independent of format. For example, for the attribute 'birthday', a value could be '12/1/1980' or 'December 1, 1980'.
 
+#### Authenticate
+See [Authentication](#authentication).
+
 #### Authenticated Protected Channel
 An encrypted communication channel that uses approved cryptography where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) BCP 195 is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the authentication of the client by the server.
 
-#### Authentication
+#### <a name="authentication"></a> Authentication
 Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system.
 
 #### <a name="af"></a> Authentication Factor
@@ -92,6 +99,9 @@ The property that data originated from its purported source.
 
 #### Authoritative Source
 An entity that has access to, or verified copies of, accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by a policy decision of the agency or CSP before they can be used in the validation phase of identity proofing.
+
+#### Authorize
+A decision to grant [access](#access), typically automated by evaluating a subject's attributes.
 
 #### Back-Channel Communication
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
