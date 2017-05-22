@@ -33,7 +33,7 @@ Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistp
 
 <a name="SP800-53A"></a>[SP 800-53A] NIST Special Publication 800-53A, *Assessing Security and Privacy Controls in Federal Information Systems and Organizations, Building Effective Assessment Plans* (December 2014), available at: <http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53Ar4.pdf>.
 
-<a name="GPG44"></a>[GPG 45] UK Cabinet Office, Good Practice Guide 44, *Authentication and Credentials for use with HMG Online Services*, August 8, 2016, available at: <https://www.ncsc.gov.uk/guidance/authentication-and-credentials-use-hmg-online-services-gpg-44>.
+<a name="GPG44"></a>[GPG 44] UK Cabinet Office, Good Practice Guide 44, *Authentication and Credentials for use with HMG Online Services*, August 8, 2016, available at: <https://www.ncsc.gov.uk/guidance/authentication-and-credentials-use-hmg-online-services-gpg-44>.
 
 <a name="GPG45"></a>[GPG 45] UK Cabinet Office, Good Practice Guide 45, *Identity proofing and verification of an individual*, November 3, 2014, available at: <https://www.gov.uk/government/publications/identity-proofing-and-verification-of-an-individual>.
 

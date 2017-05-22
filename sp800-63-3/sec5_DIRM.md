@@ -139,13 +139,13 @@ The 800-63 suite specifies baseline requirements for digital identity services b
 
 Agencies MAY determine alternatives to the NIST recommended guidance, for the assessed xALs, based on their mission, risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.
 
-Agencies SHALL demonstrate comparability of any chosen alternative, to include any compensating controls, when the complete set of applicable 800-63 requirements is not implemented. For example, an agency may choose a National Information Assurance Partnership (NIAP) protection profile over FIPS, where the profile is equivalent (or stronger) than the FIPS requirements. That said, agencies SHALL NOT alter the assessed xAL based on agency capabilities. Rather, the agency MAY adjust implementation of solutions based on the agency's ability to mitigate risk via means not explicitly addressed by 800-63 requirements. The agency SHALL implement procedures to document both the justification for any departure from normative requirements and detail the compensating control employed.
+Agencies SHALL demonstrate comparability of any chosen alternative, to include any compensating controls, when the complete set of applicable 800-63 requirements is not implemented. For example, an agency may choose a National Information Assurance Partnership (NIAP) protection profile over FIPS, where the profile is equivalent (or stronger) than the FIPS requirements. That said, agencies SHALL NOT alter the assessed xAL based on agency capabilities. Rather, the agency MAY adjust their implementation of solutions based on the agency's ability to mitigate risk via means not explicitly addressed by 800-63 requirements. The agency SHALL implement procedures to document both the justification for any departure from normative requirements and detail the compensating control employed.
 
 This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, "Risk Management Guide for Information Technology Systems"](#SP800-30) recommends a general methodology for managing risk in federal systems. 
 
 ### <a name="daps"></a> 5.5. Digital Identity Acceptance Statement
 
-Agencies SHOULD include this information in existing artifacts required to achieve A&A.
+Agencies SHOULD include this information in existing artifacts required to achieve SA&A.
 
 The statement SHALL include, at a minimum:
 
