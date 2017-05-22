@@ -58,7 +58,7 @@ An encrypted communication channel that uses approved cryptography where the ini
 #### Authentication
 Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system.
 
-#### Authentication Factor
+#### <a name="af"></a> Authentication Factor
 The three types of authentication factors are *something you know*, *something you have*, and *something you are*. Every authenticator has one or more authentication factors.
 
 #### Authentication Intent
@@ -238,12 +238,12 @@ A cryptographic checksum on data that uses a symmetric key to detect both accide
 Executable code that is normally transferred from its source to another computer system for execution. This transfer is often through the network (e.g., JavaScript embedded in a web page) but may transfer through physical media as well.
 
 #### Multi-factor
-A characteristic of an authentication system or an authenticator that requires more than one authentication factor for successful authentication. MFA can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+A characteristic of an authentication system or an authenticator that requires more than one [authentication factor](#af) for successful authentication. MFA can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
 
 #### Multi-factor Authentication (MFA)
-An authentication system or an authenticator that requires more than one authentication factor for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+An authentication system or an authenticator that requires more than one [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
 
@@ -373,7 +373,7 @@ A secret used in authentication that is known to the subscriber and the verifier
 #### Side Channel Attack
 An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, electromagnetic and acoustic emissions are examples of characteristics that could be exploited in a side-channel attack.
 
-#### Single-factor
+#### <a name="sf"></a> Single-factor
 A characteristic of an authentication system or an authenticator that requires only one authentication factor (something you know, something you have, or something you are) for successful authentication.
 
 #### Social Engineering
