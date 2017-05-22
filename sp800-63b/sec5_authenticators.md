@@ -388,7 +388,7 @@ If matching is performed centrally:
 
 Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after any training or research data has been derived.
 
-Biometrics are also used in some cases to prevent repudiation of registration and to verify that the same individual participates in all phases of the registration process as described in SP 800-63A.
+Biometrics are also used in some cases to prevent repudiation of enrollment and to verify that the same individual participates in all phases of the enrollment process as described in SP 800-63A.
 
 #### <a name="attestation"></a>5.2.4. Attestation
 
