@@ -173,7 +173,7 @@ An attack in which an attacker listens passively to the authentication protocol 
 #### Electronic Authentication (E-Authentication)
 See *Digital Authentication*.
 
-#### Enrollment
+#### <a name="enroll"></a> Enrollment
 The process through which an applicant applies to become a subscriber of a CSP and the CSP validates the identity of the applicant.
 
 #### Entropy
@@ -340,7 +340,7 @@ A set of policies, processes, server platforms, software and workstations used f
 The process of confirming the subscriber's continued presence and intent to be authenticated during an extended usage session.
 
 #### Registration
-The process through which an applicant applies to become a subscriber of a CSP and has their identity validated by the CSP.
+See [Enrollment](#enroll).
 
 #### Relying Party (RP)
 An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant's identity, typically to process a transaction or grant access to information or a system.
