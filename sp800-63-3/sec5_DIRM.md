@@ -70,20 +70,20 @@ Authentication, proofing, and federation errors with potentially worse consequen
 
 Categories of harm and impact include:  
 
-- Inconvenience, distress, or damage to standing or reputation
-- Financial loss or agency liability
-- Harm to agency programs or public interests
-- Unauthorized release of sensitive information
-- Personal safety
-- Civil or criminal violations
+1. Inconvenience, distress, or damage to standing or reputation
+2. Financial loss or agency liability
+3. Harm to agency programs or public interests
+4. Unauthorized release of sensitive information
+5. Personal safety
+6. Civil or criminal violations
 
 Required assurance levels for digital transactions are determined by assessing the potential impact of each of the above categories using the potential impact values described in Federal Information Processing Standard (FIPS) 199, "Standards for Security Categorization of Federal Information and Information Systems." 
 
 The three potential impact values are:
 
-- Low impact
-- Moderate impact
-- High impact
+1. Low impact
+2. Moderate impact
+3. High impact
 
 #### 5.3.1. Business Process vs. Online Transaction
 
