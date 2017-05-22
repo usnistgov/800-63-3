@@ -78,7 +78,7 @@ and systems that support the operations and assets of the
 agency. This includes the security authorization of IT systems that support
 digital authentication. It is recommended that non-Federal entities
 implementing these guidelines follow equivalent standards of security
-management, certification and accreditation to ensure the secure
+management, security authorization and accreditation (A&A) to ensure the secure
 operations of their digital systems.
 
 ### 2.3. A Few Limitations
