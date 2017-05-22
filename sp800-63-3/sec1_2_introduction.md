@@ -53,11 +53,9 @@ These guidelines primarily focus on agency services that interact with the non-f
 
 ### 2.2. Considerations, Other Requirements, and Flexibilities
 
-Within a given LOA, agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Agencies may consider partitioning the
-functionality of a digital service to allow less
+Agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Agencies may consider partitioning the functionality of a digital service to allow less
 sensitive functions to be available at a lower level of authentication
-and identity assurance, while more sensitive functions are available
-only at a higher LOA.
+and identity assurance.
 
 Agencies may determine based on their risk
 analysis that additional measures are appropriate in certain contexts.
