@@ -39,7 +39,7 @@ SAML Assertions are encoded in an XML schema and can carry up to three types of 
 
 Authorization statements are beyond the scope of this document and will not be discussed.
 
-### 11.2. Kerberos Tickets
+### 11.2. Kerberos Tickets <a name="kerberos"></a>
 
 The Kerberos Network Authentication Service \[[RFC 4120](#RFC4120)\] was designed to provide strong authentication for client/server applications using symmetric-key cryptography on a local, shared network. Extensions to Kerberos can support the use of public key cryptography for selected steps of the protocol. Kerberos also supports confidentiality and integrity protection of session data between the subscriber and the RP. Even though Kerberos uses assertions, since it is designed for use on shared networks it is not truly a federation protocol. 
 
@@ -55,7 +55,9 @@ subscriber, or in the PKINIT variant of Kerberos, a public key
 certificate. It should be noted that most variants of Kerberos based on
 a shared secret key between the subscriber and IdP derive this key
 from a user generated password. As such, they are vulnerable to offline
-dictionary attack by a passive eavesdropper. 
+dictionary attack by a passive eavesdropper unless Flexible Authentication
+Secure Tunneling (FAST) \[[RFC 6113](#RFC6113)\] or some other tunneling and
+armoring mechanism is used.
 
 In addition to delivering the session key to the subscriber, the AS also
 issues a ticket using a key it shares with the Ticket Granting Server
@@ -66,6 +68,15 @@ session key in the TGT to encrypt a new session key for the subscriber
 and uses a key it shares with the RP to generate a ticket corresponding
 to the new session key. The subscriber decrypts the session key and uses
 the ticket and the new session key together to authenticate to the RP.
+
+When Kerberos authentication is based on passwords, the protocol is known to
+be vulnerable to offline dictionary attacks by eavesdroppers who capture the
+initial user-to-KDC exchange. Longer password length and complexity provide
+some mitigation to this vulnerability, although sufficiently long passwords
+tend to be cumbersome for users.  However, when Kerberos password-based
+authentication is used in a FAST (or similar) tunnel, a successful
+Man-in-the-Middle attack is additionally required in order to perform the
+dictionary attack.
 
 ### 11.3. OpenID Connect
 

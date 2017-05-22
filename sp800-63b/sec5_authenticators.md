@@ -8,7 +8,7 @@ This section provides the detailed requirements specific for each type of authen
 
 ### <a name="reqauthtype"></a> 5.1. Requirements by Authenticator Type
 
-#### 5.1.1. Memorized Secrets
+#### <a name="memsecret"></a> 5.1.1. Memorized Secrets
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -38,7 +38,7 @@ When processing requests to establish and change memorized secrets, verifiers SH
 * Passwords obtained from previous breach corpuses.
 * Dictionary words.
 * Repetitive or sequential characters (e.g. 'aaaaaa', '1234abcd').
-* Context specific words, such as the name of the service, the username, and derivatives thereof.
+* Context-specific words, such as the name of the service, the username, and derivatives thereof.
 
 If the chosen secret is found in the list, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
 
@@ -88,7 +88,7 @@ Look-up secrets SHALL be generated using an approved random bit generator  [[SP 
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when requesting look-up secrets in order to provide resistance to eavesdropping and MitM attacks.
 
-#### <a name="out-of-band"></a>5.1.3. Out-of-Band Devices
+#### <a name="out-of-band"></a> 5.1.3. Out-of-Band Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -166,7 +166,7 @@ Single-factor OTP devices are similar to look-up secret authenticators with the 
 
 Single-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or is based on a real-time clock.
 
-The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime.
+The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime. OTP authenticators, particularly software-based OTP generators, SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 The authenticator output is obtained by using an approved block cipher or hash function to combine the key and nonce in a secure manner. The authenticator output MAY be truncated to as few as 6 decimal digits (approximately 20 bits of entropy).
 
@@ -182,7 +182,7 @@ The verifier SHALL use approved encryption and an authenticated protected channe
 
 If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
-#### 5.1.5. Multi-factor OTP Devices
+#### <a name="multifactorOTP"></a> 5.1.5. Multi-factor OTP Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -200,7 +200,7 @@ Multi-factor OTP authenticators operate in a similar manner to single-factor OTP
 
 In addition to activation information, multi-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or is based on a real-time clock.
 
-The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime.
+The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime. OTP authenticators, particularly software-based OTP generators, SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 The authenticator output is obtained by using an approved block cipher or hash function to combine the key and nonce in a secure manner. The authenticator output MAY be truncated to as few as 6 decimal digits (approximately 20 bits of entropy).
 
@@ -220,7 +220,7 @@ The verifier SHALL use approved encryption and SHALL utilize an authenticated pr
 
 If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
-#### 5.1.6. Single-factor Cryptographic Software
+#### <a name="sfcs"></a> 5.1.6. Single-factor Cryptographic Software
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -235,13 +235,13 @@ If the authenticator output or activation secret has less than 64 bits of entrop
 
 #### 5.1.6.1. Single-factor Cryptographic Software Authenticators
 
-Single-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+Single-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access. Single-factor cryptographic software authenticators SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 #### 5.1.6.2. Single-factor Cryptographic Software Verifiers
 
 The requirements for a single-factor cryptographic software verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv).
 
-#### 5.1.7. Single-factor Cryptographic Devices
+#### <a name="sfcd"></a> 5.1.7. Single-factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -268,7 +268,7 @@ The verifier has either symmetric or asymmetric cryptographic keys corresponding
 
 The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the lifetime of the authenticator or statistically unique (generated using an approved random bit generator [[SP 800-90Ar1]](SP800-90Ar1)). The verification operation SHALL use approved cryptography.
 
-#### 5.1.8. Multi-factor Cryptographic Software
+#### <a name="mfcs"></a> 5.1.8. Multi-factor Cryptographic Software
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -283,7 +283,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 
 #### 5.1.8.1. Multi-factor Cryptographic Software Authenticators
 
-Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, trusted execution environment). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, trusted execution environment). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.  Multi-factor cryptographic software authenticators SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
 Each authentication operation using the authenticator SHALL require the input of both factors.
 
@@ -295,7 +295,7 @@ The unencrypted key and activation secret or biometric sample (and any biometric
 
 The requirements for a multi-factor cryptographic software verifier are identical to those for a single-factor cryptographic device verifier, described in [Section 5.1.7.2](#sfcdv). By its nature, verification of the output from a multi-factor cryptographic software authenticator proves use of the activation factor.
 
-#### 5.1.9. Multi-factor Cryptographic Devices
+#### 5.1.9. <a name="mfcd"></a> Multi-factor Cryptographic Devices
 
 <div class="text-left" markdown="1">
 <table style="width:100%">
@@ -386,7 +386,7 @@ Biometric matching SHOULD be performed locally on claimant's device or MAY be pe
 
 If matching is performed centrally:
 
-* Use of the biometric SHALL be limited to one or more specific devices that are identified using approved cryptography.
+* Use of the biometric SHALL be limited to one or more specific devices that are identified using approved cryptography. Since the biometric has not yet unlocked the main authentication key, a separate key SHALL be used for identifying the device.
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
@@ -396,7 +396,7 @@ Biometrics are also used in some cases to prevent repudiation of registration an
 
 #### <a name="attestation"></a>5.2.4. Attestation
 
-Attestation is information conveyed to the verifier regarding a directly connected authenticator or the endpoint involved in an authentication operation. Information conveyed by attestation MAY include, but is not limited to:
+Attestation is information conveyed to the verifier regarding a directly-connected authenticator or the endpoint involved in an authentication operation. Information conveyed by attestation MAY include, but is not limited to:
 
 * The provenance (manufacturer or supplier certification), health, and integrity of the authenticator and/or endpoint.
 * Security features of the authenticator.
@@ -409,7 +409,7 @@ Attestation information MAY be used as part of a verifier's risk-based authentic
 
 #### <a name="verifimpers"></a>5.2.5. Verifier Impersonation Resistance
 
-Verifier impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and RPs to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier impersonation attacks were also referred to as "strongly MitM resistant".
+Verifier-impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and RPs to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier-impersonation attacks were also referred to as "strongly MitM resistant".
 
 Authentication protocols that are verifier impersonation resistant SHALL authenticate the verifier and either:
 
@@ -417,9 +417,9 @@ Authentication protocols that are verifier impersonation resistant SHALL authent
 
 2. Determine whether the verifier's authenticated hostname or domain name is on a list of trusted verifiers, and release the authenticator output only to a verifier on that list.
 
-One example of the former class of verifier impersonation resistant authentication protocols is client-authenticated TLS, because the client signs the authenticator output along with earlier messages from the protocol that are unique to the particular TLS connection being negotiated. Other protocols that MAY be used are techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by a fraudulent verifier (the attacker) if proxied to the intended verifier.
+One example of the former class of verifier-impersonation-resistant authentication protocols is client-authenticated TLS, because the client signs the authenticator output along with earlier messages from the protocol that are unique to the particular TLS connection being negotiated. Other protocols that MAY be used are techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by a fraudulent verifier (the attacker) if proxied to the intended verifier.
 
-The latter class of verifier impersonation resistant protocols relies on access control to release the authenticator output only to trusted verifiers.
+The latter class of verifier-impersonation-resistant protocols relies on access control to release the authenticator output only to trusted verifiers.
 
 In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and OTP authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
 
@@ -439,19 +439,19 @@ Verifier compromise resistance can be achieved in different ways, for example:
 
 In order to be considered verifier compromise resistant, public keys stored by the verifier SHALL be associated with the use of approved cryptographic algorithms and SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication).
 
-Other verifier compromise resistant secrets SHALL use approved hash algorithms and the underlying secrets SHALL have at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). Note that secrets (such as memorized secrets) having lower complexity SHALL NOT be considered verifier compromise resistant when hashed because of the potential to defeat the hashing process through dictionary lookup or exhaustive search.
+Other verifier-compromise-resistant secrets SHALL use approved hash algorithms and the underlying secrets SHALL have at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). Secrets (such as memorized secrets) having lower complexity SHALL NOT be considered verifier compromise resistant when hashed because of the potential to defeat the hashing process through dictionary lookup or exhaustive search.
 
 #### <a name="replay"></a>5.2.8. Replay Resistance
 
-An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. Replay resistance is in addition to the replay resistant nature of authenticated protected channel protocols, since the output could be stolen prior to entry into the protected channel. Protocols that use nonces or challenges to prove the "freshness" of the transaction are resistant to replay attacks since the verifier will easily detect that the old protocol messages replayed do not contain the appropriate nonces or timeliness data related to the current authentication session.
+An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message. Replay resistance is in addition to the replay-resistant nature of authenticated protected channel protocols, since the output could be stolen prior to entry into the protected channel. Protocols that use nonces or challenges to prove the "freshness" of the transaction are resistant to replay attacks since the verifier will easily detect that the old protocol messages replayed do not contain the appropriate nonces or timeliness data related to the current authentication session.
 
-Examples of replay resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
+Examples of replay-resistant authenticators are OTP devices, cryptographic authenticators, and look-up secrets.
 
 In contrast, memorized secrets are not considered replay resistant because the authenticator output (the secret itself) is provided for each authentication.
 
 #### <a name="intent"></a>5.2.9. Authentication Intent
 
-An authentication process requires intent if it requires the subject to explicitly respond to each authentication or reauthentication request. The goal of authentication intent is to make it more difficult for directly connected physical authenticators (cryptographic devices) to be used without the subject's knowledge, such as by malware on the endpoint. Authentication intent SHALL be established by the authenticator itself, although multi-factor cryptographic devices MAY establish intent by reentry of the other authentication factor on the endpoint with which the authenticator is used.
+An authentication process requires intent if it requires the subject to explicitly respond to each authentication or reauthentication request. The goal of authentication intent is to make it more difficult for directly-connected physical authenticators (cryptographic devices) to be used without the subject's knowledge, such as by malware on the endpoint. Authentication intent SHALL be established by the authenticator itself, although multi-factor cryptographic devices MAY establish intent by reentry of the other authentication factor on the endpoint with which the authenticator is used.
 
 Authentication intent MAY be established in a number of ways. Authentication processes that require intervention of the subject, e.g., to enter an authenticator output on their endpoint from an OTP device, establish intent by their very nature.  Cryptographic devices that require user action (e.g., pushing a button or reinsertion) for each authentication or reauthentication operation are also considered to establish intent.
 

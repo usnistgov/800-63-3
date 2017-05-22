@@ -78,6 +78,9 @@ These are further divided into *short-term authentication secrets*, which are on
 #### Authenticator
 Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
+#### Authenticator Type
+A category of authenticators having common characteristics. Some authenticator types provide one authentication factor; others provide two.
+
 #### Authenticator Assurance Level (AAL)
 A category describing the authentication process proving that the claimant is in control of a given subscriber's authenticator(s).
 
@@ -97,7 +100,10 @@ An entity that has access to, or verified copies of, accurate information from a
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
 
 #### Bearer Assertion
-An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion. 
+An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion.
+
+#### Binding
+An association between elements of subscriber identity or of a given subscriber session. Examples include the binding of authenticators to a subscriber identity (see _credential_) and the binding of multiple interactions into a session.
 
 #### Biometrics
 Automated recognition of individuals based on their behavioral and biological characteristics.
@@ -220,7 +226,7 @@ An authority that is responsible for the generation of data, digital evidence (s
 #### Kerberos
 A widely used authentication protocol developed at MIT. In "classic" Kerberos, users share a secret password with a Key Distribution Center (KDC). The user, Alice, who wishes to communicate with another user, Bob, authenticates to the KDC and is furnished a "ticket" by the KDC to use to authenticate with Bob.
 
-When Kerberos authentication is based on passwords, the protocol is known to be vulnerable to offline dictionary attacks by eavesdroppers who capture the initial user-to-KDC exchange. Longer password length and complexity provide some mitigation to this vulnerability, although sufficiently long passwords tend to be cumbersome for users.
+See [SP 800-63C Section 11.2](sp800-63c.html#kerberos) for more information.
 
 #### Knowledge Based Verification (KBV)
 Identity verification method based on knowledge of private information associated with the claimed identity. This is often referred to as knowledge based authentication (KBA) or knowledge based proofing (KBP).
@@ -372,6 +378,9 @@ A secret used in authentication that is known to the subscriber and the verifier
 
 #### Side Channel Attack
 An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, electromagnetic and acoustic emissions are examples of characteristics that could be exploited in a side-channel attack.
+
+#### Single-factor
+A characteristic of an authentication system or an authenticator that requires only one authentication factor (something you know, something you have, or something you are) for successful authentication.
 
 #### Social Engineering
 The act of deceiving an individual into revealing sensitive information, obtaining unauthorized access, or committing fraud by associating with the individual to gain confidence and trust.
