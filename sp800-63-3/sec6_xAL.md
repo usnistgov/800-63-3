@@ -145,7 +145,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements  for their digital service offering. 
 
-The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information of whether the agency can federate is provided in [Section 7](#toFedorNotToFed). 
+The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information on whether the agency can federate is provided in [Section 7](#toFedorNotToFed). 
 
 <a name="63Sec6-Figure2"></a>
 <div class="text-center" markdown="1">
