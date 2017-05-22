@@ -314,6 +314,9 @@ A participant is said to be *authenticated* if, during the session, they prove p
 #### Pseudonym
 A name other than a legal name.
 
+#### Pseudonymity
+The use of a pseudonym to identify a subject.
+
 #### Pseudonymous Identifier
 A meaningless but unique number that does not allow the RP to infer anything regarding the subscriber but which does permit the RP to associate multiple interactions with the subscriber's claimed identity.
 
