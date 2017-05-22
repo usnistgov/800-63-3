@@ -23,7 +23,7 @@ A subject undergoing the processes of registration and identity proofing.
 Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
 
 #### Assertion
-A statement from a verifier to an RP that contains information about a subscriber. Assertions may also contain verified attributes.
+A statement from a verifier to a RP that contains information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assertion Reference
 A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier.
@@ -35,7 +35,7 @@ In the context of OMB M-04-04 and this document, assurance is defined as 1) the 
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
-An attempt by an unauthorized entity to fool a verifier or an RP into believing that the unauthorized individual in question is the subscriber.
+An attempt by an unauthorized entity to fool a verifier or a RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
 A party, including an insider, who acts with malicious intent to compromise a system.
@@ -130,7 +130,7 @@ While common usage often assumes that the credential is maintained by the subscr
 A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. The CSP may encompass Registration Authorities (RAs) and verifiers that it operates. A CSP may be an independent third party, or may issue credentials for its own use.
 
 #### Cross-site Request Forgery (CSRF)
-An attack in which a subscriber who is currently authenticated to an RP and connected through a secure session, browses to an attacker's website which causes the subscriber to unknowingly invoke unwanted actions at the RP.
+An attack in which a subscriber who is currently authenticated to a RP and connected through a secure session, browses to an attacker's website which causes the subscriber to unknowingly invoke unwanted actions at the RP.
 
 For example, if a bank website is vulnerable to a CSRF attack, it may be possible for a subscriber to unintentionally authorize a large money transfer, merely by viewing a malicious link in a webmail message while a connection to the bank is open in another browser window.
 
@@ -187,7 +187,7 @@ Title III of the E-Government Act requiring each federal agency to develop, docu
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level (FAL)
-A category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to an RP.
+A category describing the assertion protocol utilized by the federation to communicate authentication and attribute information (if applicable) to a RP.
 
 #### Federation Proxy
 A component that acts as a logical RP to a set of IdPs and a logical IdP to a set of RPs, bridging the two systems with a single component. These are sometimes referred to as "brokers".
@@ -362,7 +362,7 @@ A non-secret value that is used in a cryptographic process, usually to ensure th
 See *Transport Layer Security (TLS)*.
 
 #### Session
-A persistent interaction between a subscriber and an endpoint, either an RP or a CSP. A session begins with an authentication event and ends with a session termination event. A session is bound by use of a session secret that the subscriber's software (a browser, application, or OS) can present to the RP or CSP in lieu of the subscriber's authentication credentials.
+A persistent interaction between a subscriber and an endpoint, either a RP or a CSP. A session begins with an authentication event and ends with a session termination event. A session is bound by use of a session secret that the subscriber's software (a browser, application, or OS) can present to the RP or CSP in lieu of the subscriber's authentication credentials.
 
 #### Session Hijack Attack
 An attack in which the attacker is able to insert himself or herself between a claimant and a verifier subsequent to a successful authentication exchange between the latter two parties. The attacker is able to pose as a subscriber to the verifier or vice versa to control session data exchange. Sessions between the claimant and the RP can also be similarly compromised.
