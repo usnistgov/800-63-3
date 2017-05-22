@@ -85,7 +85,7 @@ Despite the user being pseudonymous, the agency should still protect the applica
 
 #### <a name="IAL_CYOA"></a> 6.1. Selecting IAL
 
-The IAL decision tree in [Figure 6-1](#63Sec6-Figure1) combines the results from the risk assessment with additional considerations related to identity proofing services to allow agencies to select the most appropriate identity proofing requirements for their digital service offering.
+The IAL decision tree in [Figure 6-1](#63Sec6-Figure1) combines the results from the risk assessment with additional considerations related to identity proofing services to allow agencies to select the most appropriate identity proofing requirements for their digital service offering. 
 
 The IAL selection does not mean the digital service provider will need to perform the proofing themselves. More information on whether an agency can federate is provided in [Section 7](#toFedorNotToFed). 
 
@@ -139,7 +139,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 </div>
 
 
-
+> Note: Agencies should also consider the demographics of their constituents when selecting the most appropriate proofing process. While not a function of IAL selection, certain proofing process(es)  may be more appropriate for some demographics than others. Agencies will benefit from this type of analysis to ensure the greatest opportunity for their constituents to be proofed successfully.
  
 #### <a name="AAL_CYOA"></a> 6.2. Selecting AAL
 
