@@ -195,7 +195,7 @@ In today's environment, an organization's identity solution need not be a monoli
 
 Each document has adopted verbs that are internationally recognized in standards organizations as normative and requirements-based. When used in a normative statement in this publication, they are CAPITALIZED for ease of identification.  For example, the use of SHALL is used to denote a mandatory requirement, while the use of SHOULD refers to a technique, technology, or process that is recommended but not mandatory.  For more details on the definitions of these terms see the [Requirements Notation and Conventions](#notation) at the beginning of each document.
 
-These documents may inform, but does not restrict or constrain, the development or use of standards for application outside of the Federal government, such as e-commerce transactions.
+These documents may inform, but do not restrict or constrain, the development or use of standards for application outside of the Federal government, such as e-commerce transactions.
 
 These guidelines are organized as follows:
 
