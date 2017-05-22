@@ -198,7 +198,7 @@ clarifications.
 
 NIST SP 800-63-3 is a substantial update and restructuring of SP 800-63-2. 800-63-3 introduces individual components of digital authentication assurance - AAL, IAL, and FAL - to support the growing need for independent treatment of authentication strength and confidence in an individuals claimed identity (for example, in strong pseudonymous authentication). A risk assessment methodology and its application to IAL, AAL, and FAL has been included in this guideline. It also moves the whole of digital identity guidance covered under 800-63 from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
 
-Other areas of update to SP 800-63-2 include:
+Other areas updated in 800-63-3 include:
 
 - Renamed to "Digital Identity Guidelines" to properly represent the scope to include identity proofing and federation, as well as support expansion of scope to device identity, or machine-to-machine authentication, in future revisions.
 - Terminology changes, primarily the use of *authenticator* in place of *token* to avoid conflicting use of the word *token* in assertion technologies.
