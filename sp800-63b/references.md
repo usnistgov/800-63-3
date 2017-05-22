@@ -80,7 +80,7 @@ FIPS can be found at: http://csrc.nist.gov/publications/fips/.
 
 <a name="FIPS202"></a>[FIPS 202] Federal Information Processing Standard Publication 202, *SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions*, August 2015.
 
-### 11.4. Legislation and Executive
+### 11.4. Legislation and Executive Orders
 
 <a name="PrivacyAct"></a>[Privacy Act] *Privacy Act of 1974* (P.L. 93-579), December 1974, available at: <http://www.justice.gov/opcl/privacy-act-1974>.
 

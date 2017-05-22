@@ -18,7 +18,7 @@ AAL1 provides some assurance that the claimant controls an authenticator registe
 
 #### 4.1.1. Permitted Authenticator Types
 
-AAL1 authentication SHALL be effected by the use of any of the following authenticator types, which are defined in [Section 5](#sec5):
+AAL1 authentication SHALL occur by the use of any of the following authenticator types, which are defined in [Section 5](#sec5):
 
 * Memorized Secret ([Section 5.1.1](#memsecret))
 * Look-up Secret ([Section 5.1.2](#lookupsecrets))
@@ -56,7 +56,7 @@ AAL2 provides high confidence that the claimant controls authenticator(s) regist
 
 #### 4.2.1. Permitted Authenticator Types
 
-At AAL2, authentication SHALL use either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
+At AAL2, authentication SHALL occur by the use of either a multi-factor authenticator or a combination of two single-factor authenticators. Authenticator requirements are specified in [Section 5](#sec5).
 
 When a multi-factor authenticator is used, any of the following MAY be used:
 
@@ -72,7 +72,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 * Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
 * Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
 
-> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device SHALL be authenticated; a biometric is not recognized as an authenticator type by itself. Therefore, it is unnecessary to use another factor with biometrics because the associated device is the "something you have", which serves as a valid second factor of the authentication. 
+> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated; a biometric is not recognized as an authenticator type by itself. Therefore, it is unnecessary to use another factor with biometrics because the associated device is the "something you have", which serves as a valid second factor of the authentication. 
 
 #### 4.2.2. Authenticator and Verifier Requirements
 
@@ -106,7 +106,7 @@ AAL3 provides very high confidence that the claimant controls authenticator(s) r
 
 #### 4.3.1. Permitted Authenticator Types
 
-AAL3 authentication SHALL be effected through the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
+AAL3 authentication SHALL occur by the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
 
 * Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
 * Single-factor Cryptographic Device ([Section 5.1.7](#sfcd)) used in conjunction with Memorized Secret ([Section 5.1.1](#memsecret))

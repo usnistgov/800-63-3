@@ -103,7 +103,7 @@ Communication between two systems that relies on a direct connection (allowing f
 An assertion presented by a party as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the bearer of the assertion.
 
 #### Binding
-An association between elements of subscriber identity or of a given subscriber session. Examples include the binding of authenticators to a subscriber identity (see _credential_) and the binding of multiple interactions into a session.
+An association between a subscriber identity and an authenticator or a given subscriber session.
 
 #### Biometrics
 Automated recognition of individuals based on their behavioral and biological characteristics.
