@@ -87,7 +87,7 @@ These technical guidelines do not address the
 authentication of a person who is physically present, for example, for
 access to buildings, even though some authenticators that are used
 remotely may also be used for local authentication. In addition, these guidelines do not yet specifically address
-machine-to-machine (such as router-to-router) authentication or specific guidance for authentication and authorization of interconnected devices, commonly referred to as the "internet of things (IoT)". Also excluded are specific requirements for issuing authenticators to devices when they are used in
+device identity, often referred to as machine-to-machine (such as router-to-router) authentication or interconnected devices, commonly referred to as the "internet of things (IoT)". Also excluded are specific requirements for issuing authenticators to devices when they are used in
 authentication protocols with people. 
 
 This document suite focuses on authenticators that are difficult to forge because they contain some type of secret information that is not available to unauthorized parties and that is preferably not used in unrelated contexts. Biometric authentication uses human characteristics that, in some cases, may be available to an attacker. Accordingly, the use of biometrics for authentication is limited to activation of a specific physical authenticator to which it is strongly bound, and the number of consecutive activation failures is limited, beyond which another activation factor or authenticator is required. This document suite also supports the use of biometrics to prevent repudiation of registration, and to verify that the same individual participates in all phases of the registration process.
