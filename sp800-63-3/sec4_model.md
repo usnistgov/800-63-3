@@ -20,8 +20,6 @@ Authentication establishes confidence that the claimant has possession of an aut
 
 The strength of the authentication process is described by an ordinal measurement called the AAL. AAL1 requires single-factor authentication and is permitted with a variety of different authenticator types. At AAL2, authentication requires two authentication factors for additional security. Authentication at the highest level, AAL3, requires the use of a hardware-based authenticator and one other factor.
 
-As part of authentication, mechanisms such as device identity or geo-location may be used to identify or prevent possible authentication false positives. While these mechanisms do not directly increase the AAL, they can aid in enforcing security policies and mitigate risks. In many cases, the authentication process and services will be shared by many applications and agencies. However, it is the individual agency or application acting as the RP that shall make the decision to grant access or process a transaction based on the specific application requirements.
-
 The various entities and interactions that comprise the digital identity model used here are illustrated in [Figure 4-1](#63Sec4-Figure1). 
 
 <a name="63Sec4-Figure1"></a>
