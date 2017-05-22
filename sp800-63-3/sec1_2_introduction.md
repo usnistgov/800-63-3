@@ -23,7 +23,7 @@ This document suite describes the risk management processes for selecting approp
 
 These guidelines support the mitigation of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included.  [Section 5, Digital Identity Risk Management](#sec5) provides details on the risk assessment process. [Section 6, Selecting Assurance Levels](#sec6) combines the results of the risk assessment with additional context to support agency selection of the appropriate IAL, AAL and FAL combinations based on risk.
 
-These guidelines do not expect a composite level of assurance (LOA) in the context of a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate risk management for business, security, and privacy side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options. Specifically, this document does not recognize the four LOA model previously used by federal agencies, instead requiring agencies to individually select levels corresponding to each function being performed. While many systems will have the same numerical level for each of IAL, AAL, and FAL, this is not a requirement and agencies should not assume they will be the same in any given system or application. 
+These guidelines do not expect a composite level of assurance (LOA) in the context of a single ordinal that drives all implementation specific requirements.  Rather, by combining appropriate risk management for business, security, and privacy side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options. Specifically, this document does not recognize the four LOA model previously used by federal agencies, instead requiring agencies to individually select levels corresponding to each function being performed. While many systems will have the same numerical level for each of IAL, AAL, and FAL, this is not a requirement and agencies should not assume they will be the same in any given system or application.
 
 The components of identity assurance detailed in these guidelines are as follows:
 
@@ -86,7 +86,7 @@ authentication of a person who is physically present, for example, for
 access to buildings, even though some authenticators that are used
 remotely may also be used for local authentication. In addition, these guidelines do not yet specifically address
 device identity, often referred to as machine-to-machine (such as router-to-router) authentication or interconnected devices, commonly referred to as the "internet of things (IoT)". Also excluded are specific requirements for issuing authenticators to devices when they are used in
-authentication protocols with people. 
+authentication protocols with people.
 
 
 ### 2.4. How to Use this Suite of SPs
@@ -105,13 +105,13 @@ This document has been written to satisfy the needs of federal agencies. However
 
 </div>
 
-SP 800-63|[[eIDAS]](#eIDAS)|[[GPG 45]](#GPG45)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115]](#ISO29115)|[[Canada]](#Canada)
-:---------:|:----:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
-N/A|N/A|N/A|Level 01|N/A|N/A|N/A
-AAL/IAL1|Low|Level 1|Level 1|QAA Level 1|LoA 1|IAL/CAL 1
-N/A|N/A|Level 2|Level 2|QAA Level 2|LoA 2|IAL/CAL 2
-AAL/IAL2|Substantial|Level 3|Level 3|QAA Level 3|LoA 3|IAL/CAL 3
-AAL/IAL3|High|Level 4|N/A2|QAA Level 4|LoA 4|IAL/CAL 4
+SP 800-63|[[eIDAS]](#eIDAS)|[[GPG 45]](#GPG45)|[[GPG 44]](#GPG44)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115]](#ISO29115)|[[Canada]](#Canada)
+:---------:|:----:|:----:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
+AAL/IAL1|Low|Level 1|Level 1|Level 1|QAA Level 1|LoA 1|IAL/CAL 1
+AAL/IAL2|Substantial|Level 3|Level 2|Level 3|QAA Level 3|LoA 3|IAL/CAL 3
+AAL/IAL3|High|Level 4|Level 3 (see note)|N/A2|QAA Level 4|LoA 4|IAL/CAL 4
+
+> Note: GPG44 Level 3 allows for software cryptographic modules, which is not allowed at AAL3.
 
 ### 2.6. Change History
 
