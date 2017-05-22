@@ -73,7 +73,7 @@ In analyzing risks, the agency SHALL consider all of the expected direct and ind
 
 It is possible that the assurance levels may differ across IAL, AAL, and FAL. For example, suppose an agency establishes a "health tracker" application in which user submit personal informatin in form of personal health information (PHI). In line with the terms of [EO 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement MFA at AAL2 or AAL3. 
 
-EO 13681 also requires agencies employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an 'effective proofing process' would be to not proof at all. This allows the user of the health tracker system to be pseudonymous.
+EO 13681 also requires agencies employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an 'effective proofing process' would be to not proof at all, therefore the agency would select IAL1. This allows the user of the health tracker system to be pseudonymous.
 
 Despite the user being pseudonymous, the agency should still protect the application wiith AAL2 or AAL3 because a malicous actor could gain access to the users PHI by compromising the account. If it is a targeted attack, the malicious actor may know the users identity, creating the same negative impact to the user as if the agency has identity proofed.
 
@@ -145,7 +145,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements  for their digital service offering. 
 
-The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information of whether the agency can federate is provided in [Section 7](#toFedorNotToFed). 
+The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information on whether the agency can federate is provided in [Section 7](#toFedorNotToFed). 
 
 <a name="63Sec6-Figure2"></a>
 <div class="text-center" markdown="1">
@@ -178,9 +178,9 @@ The AAL selection does not mean the digital service provider will need to issue 
 
 #### <a name="FAL_CYOA"></a> 6.3. Selecting FAL
 
-All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
+All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that a RP will not accept an assertion created for a different system. 
 
-RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. Since the assertion reference is presented by the RP directly to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Furthermore, since the assertion is fetched by the RP directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.
+RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. Since the assertion reference is presented by the RP directly to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Furthermore, since the assertion is fetched by the RP directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into a RP.
 
 FAL2 and higher require the assertion itself to be encrypted such that the intended RP is the only party that can decrypt it. This method not only improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion), but also increases privacy protection by protecting the assertion message itself in addition to having it be passed along authenticated protected channels. RPs that allow front-channel presentation of assertions should require at least FAL2 to protect the content of the assertion, since the assertion can be seen by the subscriber and handled by the subscriber's browser.
 
