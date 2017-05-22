@@ -1,5 +1,5 @@
 <div class="breaker"></div>
-<a name="sec1"></a>
+<a name="purpose"></a>
 
 ## 1. Purpose
 
@@ -10,7 +10,7 @@ This recommendation and its companion documents, [[SP 800-63-3]](sp800-63-3.html
 This document, SP 800-63C, provides requirements to identity providers (IdPs) and relying parties (RPs) of federated identity systems. Federation allows a given IdP to provide authentication and (optionally) subscriber attributes to a number of separately administered RPs through the use of assertions. Similarly, RPs may use more than one IdP.
 
 <div class="breaker"></div>
-<a name="sec2"></a>
+<a name="introduction"></a>
 
 ## 2. Introduction
 

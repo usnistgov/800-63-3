@@ -1,5 +1,5 @@
 <div class="breaker"></div>
-<a name="sec8"></a>
+<a name="security"></a>
 
 ## 8. Security
 

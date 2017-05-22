@@ -1,7 +1,7 @@
 <div class="breaker"></div>
-<a name="sec11"></a>
+<a name="examples"></a>
 
-## 11. Assertion Examples
+## 11. Examples
 
 *This section is informative.*
 
@@ -14,7 +14,7 @@ SAML is an XML-based framework for creating and exchanging authentication and at
 The building blocks of SAML include:
 
 - The Assertions XML schema which defines the structure of the assertion.
-- The SAML Protocols which are used to request assertions and artifacts (the assertion references used in the indirect model described in [Section 6.1](#sec6-1)).
+- The SAML Protocols which are used to request assertions and artifacts (the assertion references used in the indirect model described in [Section 7.1](#back-channel)).
 - The Bindings that define the underlying communication protocols (such as HTTP or SOAP) and can be used to transport the SAML assertions. 
 
 The three components above define a SAML profile that corresponds to a particular use case such as "Web Browser SSO".
@@ -80,7 +80,7 @@ dictionary attack.
 
 ### 11.3. OpenID Connect
 
-OpenID Connect is an internet-scale federated identity and authentication protocol built on top of the OAuth 2.0 authorization framework and the JSON Object Signing and Encryption (JOSE) cryptographic system. As of this writing, the latest specification is version 1.0 with errata, dated November 8, 2014. 
+OpenID Connect [[OIDC]](#OIDC) is an internet-scale federated identity and authentication protocol built on top of the OAuth 2.0 authorization framework and the JSON Object Signing and Encryption (JOSE) cryptographic system.
 
 OpenID Connect builds on top of the OAuth 2.0 authorization protocol to enable the subscriber to authorize the RP to access the subscriber's identity and authentication information. The RP in both OpenID Connect and OAuth 2.0 is known as the client.
 
