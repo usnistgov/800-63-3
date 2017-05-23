@@ -135,7 +135,7 @@ _The potential impact of civil or criminal violations is:_
 
 ### 5.4. Risk Acceptance and Compensating Controls
 
-The 800-63 suite specifies baseline requirements for digital identity services based on assurance level.  Agencies SHOULD implement identity services per the requirements in these guidelines SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services. 
+The 800-63 suite specifies baseline requirements for digital identity services based on assurance level.  Agencies SHOULD implement identity services per the requirements in these guidelines and SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services. 
 
 Agencies MAY determine alternatives to the NIST recommended guidance, for the assessed xALs, based on their mission, risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.
 
