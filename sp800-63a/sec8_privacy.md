@@ -10,7 +10,7 @@ These privacy considerations provide information regarding the General Requireme
 
 ### 8.1. Collection and Data Minimization 
 
-Section 4.2, requirement (3) permits only the collection of PII necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant, based on best available practices for appropriate identity resolution, validation, and verification. Collection of unnecessary PII can create confusion as to why information is being collected if it is not being used for the identity proofing service and leads to concerns about invasiveness or overreach which can lead to loss of applicant trust. In addition, the retention of any PII can become vulnerable to unauthorized access or use. Data minimization reduces the amount of PII vulnerable to unauthorized access or use and encourages trust in the identity proofing process.
+Section 4.2, requirement (3) permits only the collection of PII necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant, based on best available practices for appropriate identity resolution, validation, and verification. Collection of unnecessary PII can create confusion as to why information is being collected if it is not being used for the identity proofing service. This leads to concerns about invasiveness or overreach which can lead to loss of applicant trust. In addition, the retention of any PII can become vulnerable to unauthorized access or use. Data minimization reduces the amount of PII vulnerable to unauthorized access or use and encourages trust in the identity proofing process.
 
 #### 8.1.1. Social Security Numbers
 
