@@ -46,7 +46,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
-#### <a name="aal1records"></a> 4.1.5. Records Retention
+#### <a name="aal1records"></a> 4.1.5. Records Retention Policy
 
 The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
@@ -96,7 +96,7 @@ Reauthentication of a session that has not yet reached its time limit MAY requir
 
 The CSP SHOULD employ appropriately-tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
-#### <a name="aal2records"></a> 4.2.5. Records Retention
+#### <a name="aal2records"></a> 4.2.5. Records Retention Policy
 
 CSPs shall comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
@@ -136,7 +136,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 The CSP SHOULD employ appropriately-tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
-#### <a name="aal3records"></a> 4.3.5. Records Retention
+#### <a name="aal3records"></a> 4.3.5. Records Retention Policy
 
 The CSP SHALL comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
@@ -178,6 +178,9 @@ Requirement | AAL1 | AAL2 | AAL3
 **Verifier compromise resistance** | Not required | Not required | Required |
 **Replay resistance** | Not required | Required | Required |
 **Authentication intent** | Not required | Recommended | Required |
+**Records Retention Policy** | Required | Required | Required |
+**Privacy Controls** | Required | Required | Required |
+
 
 
 
