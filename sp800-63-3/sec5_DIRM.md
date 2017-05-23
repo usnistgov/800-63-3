@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This section, and the corresponding risk assessment guidance, supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies.  Rather, requirements contained herein provide specific guidance related to digital identity risk that agencies SHALL apply while executing all relevant RMF lifecycle phases.
+This section, and the corresponding risk assessment guidance, supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies.  Rather, requirements contained herein provide specific guidance related to digital identity risk that agency RPs SHALL apply while executing all relevant RMF lifecycle phases.
 
 ### <a name="5-1-overview"></a> 5.1. Overview
 
@@ -14,8 +14,8 @@ In today's digital services, combining proofing, authenticator, and federation r
 
 This guideline details requirements to assist agencies in avoiding:
 
-1. authentication errors (i.e., a false claimant using a credential that is not rightfully theirs);
-2. identity proofing errors (i.e., a false applicant claiming an identity that is not rightfully theirs); and
+1. identity proofing errors (i.e., a false applicant claiming an identity that is not rightfully theirs); and
+2. authentication errors (i.e., a false claimant using a credential that is not rightfully theirs); and
 3. federation errors (an identity assertion is compromised). 
 
 From the perspective of an identity proofing failure, there are two dimensions of potential failure:
@@ -31,7 +31,7 @@ Risk assessments determine the extent to which risk must be mitigated by the ide
 
 ### 5.2. <a name="5-2"></a> Assurance Levels
 
-The individual assurance levels that will be selected based on risk are as as follows:
+An agency RP SHALL select, based on risk, the following individual assurance levels:
 
 * IAL - The robustness of the identity proofing process to confidently determine the identity of an individual. IAL is selected to mitigate potential identity proofing errors.
 * AAL - The robustness of the authentication process itself, and the binding between an authenticator and the identifier of a specific individual. AAL is selected to to mitigate potential authentication errors (i.e., a false claimant using a credential that is not rightfully theirs). 
@@ -58,11 +58,11 @@ A summary of each of the identity, authenticator, and federation assurance level
 |**FAL2** - FAL2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
 |**FAL3** - FAL3 requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
-When described generically or bundled, this guideline will refer to the combination of IAL, AAL, and FAL as **_xAL_**.
+When described generically or bundled, these guidelines will refer to IAL, AAL, and FAL as **_xAL_**.
 
 ### <a name="section5-3"></a> 5.3. Risk and Impacts
 
-This section provides details on the impact categories that SHALL be assessed to determine IAL, AAL, and FAL. 
+This section provides details on the impact categories used to determine IAL, AAL, and FAL. 
 
 Potential Impact Categories: To determine the appropriate level of assurance in the user's asserted identity, agencies SHALL assess the potential risks, and identify measures to minimize their impact. 
 
@@ -87,7 +87,7 @@ The three potential impact values are:
 
 #### 5.3.1. Business Process vs. Online Transaction
 
-The assurance level determination is only based on transactions that are part of a digital system. An online transaction may not be equivalent to a complete business process that requires offline processing, or online processing in a completely segmented system. In selecting the appropriate assurance levels, the agency should assess the risk associated with online transactions they are offering via the digital service, not the entire business process associated with the provided benefit or service. For example, in an online survey, sensitive PII may be collected, but it is never made available online to the person after the information is submitted. In this instance, it is important for the information to be carefully protected in backend systems, but there is no reason to identity proof or even authenticate the user providing the information for the purposes of their own access to the system or its associated benefits. The online transaction is solely a submission of the data. The entire business process may require a significant amount of data validation, without ever needing to know if the correct person submitted the information. In this scenario, there is no need for any identity proofing nor authentication.
+The assurance level determination is only based on transactions that are part of a digital system. An online transaction may not be equivalent to a complete business process that requires offline processing, or online processing in a completely segmented system. In selecting the appropriate assurance levels, the agency should assess the risk associated with online transactions they are offering via the digital service, not the entire business process associated with the provided benefit or service. For example, in an online survey, sensitive PII may be collected, but it is never made available online to the submitter after the information is saved. In this instance, it is important for the information to be carefully protected in backend systems, but there is no reason to identity proof or even authenticate the user providing the information for the purposes of their own access to the system or its associated benefits. The online transaction is solely a submission of the data. The entire business process may require a significant amount of data validation, without ever needing to know if the correct person submitted the information. In this scenario, there is no need for any identity proofing nor authentication.
 
 Another example where the assessed risk could differ if the agency evaluated the entire business process rather than the online transaction requirements is a digital service that accepts resumes to apply for open job postings. In this use case, the digital service allows--or at least does not restrict--an individual to submit a resume on behalf of anyone else, and in subsequent visits to the site, access the resume for various purposes. Since the resume information is available to the user in later sessions, and is likely to contain PII, the agency must select an AAL that requires MFA, even though the user self-asserted the PII. In this case, the requirements of [EO 13681](#eo13681) apply and the application must provide at least AAL2. However, the identity proofing requirements remain unclear. The entire business process of examining a resume and ultimately hiring and onboarding a person requires a significant amount of identity proofing. The agency needs a high level of confidence that the job applicant is in fact the subject of the resume submitted online if a decision to hire is made. Yet this level of proofing is not required to submit the resume online. Identity proofing is not required to complete the digital portion of the transaction successfully. Identity proofing the submitter would create more risk than required in the online system as excess personal information would be collected when no such information is needed for the portion of the hiring process served by the digital job application portal and may reduce usability. Therefore, the most appropriate IAL selection would be 1. There is no need to identity proof the user to successfully complete the online transaction. This decision for the online portal itself is independent of a seemlingly obvious identiy proofing requirement for the entire business process, lest a job be offered to a fraudulent applicant.
 
@@ -135,7 +135,7 @@ _The potential impact of civil or criminal violations is:_
 
 ### 5.4. Risk Acceptance and Compensating Controls
 
-The 800-63 suite specifies baseline requirements for digital identity services based on assurance level.  Agencies SHOULD implement identity services per the requirements in these guidelines and are encouraged to consider additional techniques and technologies to further secure and privacy-enhance their services. 
+The 800-63 suite specifies baseline requirements for digital identity services based on assurance level.  Agencies SHOULD implement identity services per the requirements in these guidelines and SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services. 
 
 Agencies MAY determine alternatives to the NIST recommended guidance, for the assessed xALs, based on their mission, risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.
 

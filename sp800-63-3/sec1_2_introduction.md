@@ -27,7 +27,7 @@ These guidelines do not expect a composite level of assurance (LOA) in the conte
 
 The components of identity assurance detailed in these guidelines are as follows:
 
-* **IAL** refers to the identity proofing process and the binding between one or more authenticators and the records pertaining to a specific subscriber.
+* **IAL** refers to the identity proofing process.
 * **AAL** refers to the authentication process itself.
 * **FAL** refers to the assertion protocol utilized in a federated environment to communicate authentication and attribute information (if applicable) to a RP.
 
@@ -37,11 +37,24 @@ As such, SP 800-63 is organized as a suite of documents as follows:
 
 - SP 800-63A *Enrollment and Identity Proofing* - Addresses how applicants can prove their identities and become enrolled as valid subjects within an identity system. It provides requirements for processes by which applicants can both proof and enroll at one of three different levels of risk mitigation in both remote and physically-present scenarios. _This document contains both normative and informative material._
 
-- SP 800-63B *Authentication and Lifecycle Management* - Addresses how an individual can securely authenticate to a CSP to access a digital service or set of digital services.  _This document contains both normative and informative material._
+- SP 800-63B *Authentication and Lifecycle Management* - Addresses how an individual can securely authenticate to a CSP to access a digital service or set of digital services. This volume also describes the process of binding an authenticator to an identity. _This document contains both normative and informative material._
 
 - SP 800-63C *Federation and Assertions* - Provides requirements on the use of federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, this guideline offers privacy enhancing techniques to share information about a valid, authenticated subject, as well as describing methods that allow for strong multi-factor authentication (MFA) while the subject remains pseudonymous to the digital service. _This document contains both normative and informative material._
 
 NIST anticipates that individual documents in this suite will be revised asynchronously with each other and with this document. At any given time, the most recent revision of each should be used (e.g., if at a time in the future SP 800-63A-1 and SP 800-63B-2 are the most recent revisions of each document, they should be used together even though the revision numbers do not match).
+
+The following table states which sections of the document are normative and which are informative:
+
+|Section Name|Normative/Informative|
+|----|:--:|
+|1. Purpose|Informative|
+|2. Introduction|Informative|
+|3. Definitions and Abbreviations|Informative|
+|4. Digital Identity Model|Informative|
+|5. Digital Identity Risk Management|Normative|
+|6. Selecting Assurance Levels|Normative|
+|7. Federation Considerations|Informative|
+|8. References|Informative|
 
 ### 2.1. Applicability
 
@@ -53,11 +66,9 @@ These guidelines primarily focus on agency services that interact with the non-f
 
 ### 2.2. Considerations, Other Requirements, and Flexibilities
 
-Within a given LOA, agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Agencies may consider partitioning the
-functionality of a digital service to allow less
+Agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Agencies may consider partitioning the functionality of a digital service to allow less
 sensitive functions to be available at a lower level of authentication
-and identity assurance, while more sensitive functions are available
-only at a higher LOA.
+and identity assurance.
 
 Agencies may determine based on their risk
 analysis that additional measures are appropriate in certain contexts.
@@ -91,7 +102,7 @@ authentication protocols with people.
 
 ### 2.4. How to Use this Suite of SPs
 
-The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there may be a significant security benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital authentication model.  Each document stands alone.  However, it is expected that all CSPs, even componentized, will be required to meet the requirements in [[SP 800-63A]](sp800-63a.html) and [[SP 800-63B]](sp800-63b.html).  If the CSP also participates in an identity federation, which is generally preferred over use of a RP acting as its own CSP, meeting the requirements of [[SP 800-63C]](sp800-63c.html) also applies.
+The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released.  Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities.  In addition, there may be a significant security benefit to the use of strong authenticators even if no identity proofing is required.  Therefore, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital identity model.
 
 ### 2.5. Relationship to Other Standards and Guidelines
 
@@ -194,7 +205,7 @@ clarifications.
 
 #### 2.6.3. SP 800-63-3
 
-NIST SP 800-63-3 is a substantial update and restructuring of SP 800-63-2. 800-63-3 introduces individual components of digital authentication assurance - AAL, IAL, and FAL - to support the growing need for independent treatment of authentication strength and confidence in an individuals claimed identity (for example, in strong pseudonymous authentication). A risk assessment methodology and its application to IAL, AAL, and FAL has been included in this guideline. It also moves the whole of digital identity guidance covered under 800-63 from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
+NIST SP 800-63-3 is a substantial update and restructuring of SP 800-63-2. 800-63-3 introduces individual components of digital authentication assurance - AAL, IAL, and FAL - to support the growing need for independent treatment of authentication strength and confidence in an individual's claimed identity (for example, in strong pseudonymous authentication). A risk assessment methodology and its application to IAL, AAL, and FAL has been included in this guideline. It also moves the whole of digital identity guidance covered under 800-63 from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
 
 Other areas updated in 800-63-3 include:
 
