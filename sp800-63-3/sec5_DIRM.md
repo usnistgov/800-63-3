@@ -31,7 +31,7 @@ Risk assessments determine the extent to which risk must be mitigated by the ide
 
 ### 5.2. <a name="5-2"></a> Assurance Levels
 
-The individual assurance levels that will be selected based on risk are as as follows:
+An agency RP SHALL select, based on risk, the following individual assurance levels:
 
 * IAL - The robustness of the identity proofing process to confidently determine the identity of an individual. IAL is selected to mitigate potential identity proofing errors.
 * AAL - The robustness of the authentication process itself, and the binding between an authenticator and the identifier of a specific individual. AAL is selected to to mitigate potential authentication errors (i.e., a false claimant using a credential that is not rightfully theirs). 
