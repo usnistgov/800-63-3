@@ -150,7 +150,7 @@ The CSP MAY use trusted referees, such as notaries, legal guardians, medical pro
 
 The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements. 
 
-The CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant. 
+The CSP SHALL proof the trusted referee at the IAL of the applicant. In addition, the CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant. 
 
 The CSP MAY perform re-proofing of the subscriber on a regular basis, as defined by CSP policy, with the goal of satisfying the requirements of [Section 4.4.1](#normal). 
 
