@@ -113,8 +113,9 @@ In-person and remote identity proofing are allowed. The CSP SHOULD offer both in
 
 #### <a name="4-4-1-6"></a> 4.4.1.6. Address Confirmation
 
-- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence.
+- The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant, not contained on any supplied, valid piece of identity evidence.
 
+> Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, physical or digital.
 
 - Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
 
@@ -128,9 +129,9 @@ In-person and remote identity proofing are allowed. The CSP SHOULD offer both in
 
 	- The CSP SHALL send an enrollment code to an address of record of the applicant.
 	- The applicant SHALL present a valid enrollment code to complete the identity proofing process.
-	- The CSP SHOULD send the enrollment code to the physical mailing address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
+	- The CSP SHOULD send the enrollment code to the postal address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
 	- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
-	- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. Postal Service.  
+	- Enrollment codes sent by means other than postal mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. Postal Service.  
 	- The CSP SHALL ensure the enrollment code and notification of proofing are sent by different means. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the physical address in records or obtained from validated and verified evidence, such as a driver's license.
 
 #### 4.4.1.7. Biometric Collection
@@ -183,7 +184,7 @@ Unsupervised remote proofing SHALL NOT be allowed.
 
 #### 4.5.6. Address Confirmation
 
-- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence.
+- The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant, not contained on any supplied, valid piece of identity evidence.
 - Self-asserted address data SHALL NOT be used for confirmation.
 - A notification of proofing SHALL be sent to the confirmed address of record.
 - The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time. The enrollment code SHALL be valid for a maximum of 7 days.
