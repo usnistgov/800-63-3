@@ -33,4 +33,6 @@ For The Federal Bridge Certification Authority (FBCA), Version 2.27 (December 2,
 
 <a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53, Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, August 2013 and Errata as of January 2015.
 
+<a name="SP800-157"></a>[SP 800-157] NIST Special Publication 800-157, *Guidelines for Derived Personal Identity Verification (PIV) Credentials*, December 2014.
+
 <a name="dmf"></a>[DMF] National Technical Information Service, *Social Security Death Master File*, available at: <https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1>.
