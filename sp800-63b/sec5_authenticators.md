@@ -382,7 +382,7 @@ The verifier SHALL make a determination of sensor/endpoint performance, integrit
 * Certification by an approved accreditation authority
 * Runtime interrogation of signed metadata (e.g., attestation) as described in [Section 5.2.4](#attestation).
 
-Biometric matching SHOULD be performed locally on claimant's device or MAY be performed at a central verifier.
+Biometric matching can be performed locally on claimant's device or at a central verifier. Because of the potential for attacks on a larger scale at central verifiers, local matching is preferred.
 
 If matching is performed centrally:
 
