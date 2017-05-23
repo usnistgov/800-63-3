@@ -23,12 +23,11 @@ It is permissible for the CSP to collect additional information in the process o
 <a name="63aSec4-Figure1"></a>
 
 <div class="text-center" markdown="1">
-
-![](sp800-63a/media/ProofingProcess.png)
+<img src="sp800-63a/media/ProofingProcess.png" alt="Identity Proofing Process" style="width:1000px;height:800px;;min-width: 1000px;min-height: 800px;"/>
 
 **Figure 4-1. The Identity Proofing Process**
-
 </div>
+
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
 
