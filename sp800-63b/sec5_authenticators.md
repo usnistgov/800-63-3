@@ -386,7 +386,7 @@ Biometric comparison can be performed locally on claimant's device or at a centr
 
 If comparison is performed centrally:
 
-* Use of the biometric SHALL be limited to one or more specific devices that are identified using approved cryptography. Since the biometric has not yet unlocked the main authentication key, a separate key SHALL be used for identifying the device.
+* Use of the biometric as an authentication factor SHALL be limited to one or more specific devices that are identified using approved cryptography. Since the biometric has not yet unlocked the main authentication key, a separate key SHALL be used for identifying the device.
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
