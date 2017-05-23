@@ -6,9 +6,7 @@
 
 *This section is informative.*
 
-<a name="EO13681"></a>[EO 13681] *Executive Order 13681, Improving the Security of Consumer Financial Transactions* (October 17, 2014), available at: <https://www.whitehouse.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions>.
-
-<a name="M-04-04"></a>[M-04-04] *OMB Memorandum M-04-04, E-Authentication Guidance for Federal Agencies* (December 16, 2003), available at: <https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf>.
+<a name="EO13681"></a>[EO 13681] Executive Order 13681, *Improving the Security of Consumer Financial Transactions*, October 17, 2014, available at: <https://obamawhitehouse.archives.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions>.
 
 <a name="theNSTIC"></a>[NSTIC] *National Strategy for Trusted Identities in Cyberspace* (April, 2011), available at: <https://www.nist.gov/sites/default/files/documents/2016/12/08/nsticstrategy.pdf>.
 
@@ -20,11 +18,11 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 
 <a name="HSPD-12"></a>[HSPD-12] Department of Homeland Security, *Homeland Security Presidential Directive 12: Policy for a Common Identification Standard for Federal Employees and Contractors* (August 27, 2004), available at: <https://www.dhs.gov/homeland-security-presidential-directive-12>.
 
-<a name="M-03-22"></a>[M-03-22] OMB Memorandum M-03-22, *OMB Guidance for Implementing
-the Privacy Provisions of the E-Government Act of 2002* (September 26,
-2003), available at: <http://www.whitehouse.gov/omb/memoranda/m03-22.html>.
+<a name="M-03-22"></a>[M-03-22] OMB Memorandum M-03-22, *OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002*, September 26, 2003, available at: <https://georgewbush-whitehouse.archives.gov/omb/memoranda/m03-22.html>.
 
-<a name="A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource* (July 28, 2016), available at: <https://www.whitehouse.gov/omb/circulars_default>.
+<a name="M-04-04"></a>[M-04-04] OMB Memorandum M-04-04, *E-Authentication Guidance for Federal Agencies*, December 16, 2003, available at: <https://georgewbush-whitehouse.archives.gov/omb/memoranda/fy04/m04-04.pdf>.
+
+<a name="A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource*, July 28, 2016, available at: <https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf>.
 
 <a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30, *Guide for Conducting
 Risk Assessments* (September 2012), available at: <http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf>.

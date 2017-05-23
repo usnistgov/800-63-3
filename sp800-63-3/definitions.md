@@ -319,6 +319,9 @@ A session wherein messages between two participants are encrypted and integrity 
 
 A participant is said to be *authenticated* if, during the session, they prove possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
+#### Presentation Attack Detection (PAD)
+The use of one or more sensors and associated processing to determine that a biometric sample is coming from a live individual. Sometimes referred to as *liveness detection*.
+
 #### Pseudonym
 A name other than a legal name.
 

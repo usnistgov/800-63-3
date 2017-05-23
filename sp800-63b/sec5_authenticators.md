@@ -176,7 +176,7 @@ If the nonce used to generate the authenticator output is based on a real-time c
 
 Single-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator. As such, the symmetric keys used by authenticators are also present in the verifier, and SHALL be strongly protected against compromise.
 
-When a single-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography.
+When a single-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL generate and exchange or obtain secrets required to duplicate the authenticator output using approved cryptography.
 
 The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
 
@@ -214,7 +214,7 @@ The unencrypted secret key and activation secret or biometric sample (and any bi
 
 Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but without the requirement that a second factor be provided. As such, the symmetric keys used by authenticators SHALL be strongly protected against compromise.
 
-When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL obtain secrets required to duplicate the authenticator output from the authenticator source (typically its manufacturer) using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat the authenticator as single-factor, in accordance with [Section 5.1.4](#singlefactorOTP).
+When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL generate and exchange or obtain secrets required to duplicate the authenticator output using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat the authenticator as single-factor, in accordance with [Section 5.1.4](#singlefactorOTP).
 
 The verifier SHALL use approved encryption and SHALL utilize an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs SHALL have a lifetime of less than 2 minutes.  In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period. Verifiers MAY warn a claimant whose authentication is denied because of duplicate use of an OTP of that event in case an attacker has been able to authenticate in advance. Verifiers MAY also warn an existing session of the attempted duplicate use of an OTP that such an attempt has occurred.
 
@@ -352,7 +352,7 @@ The use of biometrics (*something you are*) in authentication includes both meas
 For a variety of reasons, this document supports only limited use of biometrics for authentication. These include:
 
 - Biometric False Match Rates (FMR) do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR does not account for spoofing attacks.
-- Biometric matching is probabilistic, whereas the other authentication factors are deterministic.
+- Biometric comparison is probabilistic, whereas the other authentication factors are deterministic.
 - Biometric template protection schemes provide a method for revoking biometric credentials that are comparable to other authentication factors (e.g., PKI certificates and passwords). However, the availability of such solutions is limited, and standards for testing these methods are under development.
 - Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor and/or biometric processing is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
 
@@ -364,7 +364,7 @@ An authenticated protected channel between sensor (or endpoint containing a sens
 
 The biometric system SHALL operate with a false match rate (FMR) [[ISO/IEC 2382-37]](#ISOIEC2382-37) of 1 in 1000 or better.
 
-The biometric system SHOULD implement PAD. Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks.
+The biometric system SHOULD implement PAD. Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks. The PAD decision MAY be made either locally on the claimant's device or at a central verifier.
 
 >Note: PAD is being considered as a mandatory requirement in future editions of this guideline.
 
@@ -382,15 +382,15 @@ The verifier SHALL make a determination of sensor/endpoint performance, integrit
 * Certification by an approved accreditation authority
 * Runtime interrogation of signed metadata (e.g., attestation) as described in [Section 5.2.4](#attestation).
 
-Biometric matching SHOULD be performed locally on claimant's device or MAY be performed at a central verifier.
+Biometric comparison can be performed locally on claimant's device or at a central verifier. Because of the potential for attacks on a larger scale at central verifiers, local comparison is preferred.
 
-If matching is performed centrally:
+If comparison is performed centrally:
 
-* Use of the biometric SHALL be limited to one or more specific devices that are identified using approved cryptography. Since the biometric has not yet unlocked the main authentication key, a separate key SHALL be used for identifying the device.
+* Use of the biometric as an authentication factor SHALL be limited to one or more specific devices that are identified using approved cryptography. Since the biometric has not yet unlocked the main authentication key, a separate key SHALL be used for identifying the device.
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
-Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after any training or research data has been derived.
+Biometric samples collected in the authentication process MAY be used to train comparison algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after any training or research data has been derived.
 
 Biometrics are also used in some cases to prevent repudiation of enrollment and to verify that the same individual participates in all phases of the enrollment process as described in SP 800-63A.
 
