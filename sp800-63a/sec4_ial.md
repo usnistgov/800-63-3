@@ -25,7 +25,7 @@ It is permissible for the CSP to collect additional information in the process o
 <div class="text-center" markdown="1">
 <img src="sp800-63a/media/ProofingProcess.png" alt="Identity Proofing Process" style="width:1000px;height:800px;;min-width: 1000px;min-height: 800px;"/>
 
-**Figure 4-1. The Identity Proofing Process**
+**Figure 4-1. The Identity Proofing User Journey**
 </div>
 
 
