@@ -201,7 +201,7 @@ An enrollment code allows the CSP to confirm that the applicant controls an addr
 
 An enrollment code SHALL be comprised of one of the following:
 
-* Minimally, a random six character alphanumeric. For example, a code generated using a secure random cryptographic algorithm or a serial number for a physical hardware authenticator.
+* Minimally, a random six character alphanumeric. For example, a code generated using an approved random number generator or a serial number for a physical hardware authenticator.
 * A machine readable optical label, such as a QR Code, that contains data of similar or higher entropy as a random six character alphanumeric.
 
 
