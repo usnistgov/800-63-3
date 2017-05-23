@@ -74,7 +74,8 @@ The goal of identity verification is to confirm and establish a linkage between 
 
 #### 5.3.1. Identity Verification Methods
 
-[Table 5-3](#63aSec5-Table3) details the verification methods necessary to achieve a given identity verification strength.  
+[Table 5-3](#63aSec5-Table3) details the verification methods necessary to achieve a given identity verification strength. The CSP SHALL adhere to the requirements in [Section 5.3.2](#kbv) if KBV is used to verify an identity. 
+
 
 <a name="63aSec5-Table3"></a>
 
@@ -92,7 +93,6 @@ The goal of identity verification is to confirm and establish a linkage between 
 |Strong|- The applicant's ownership of the claimed identity has been confirmed by: <br>&nbsp;&nbsp;&nbsp;&nbsp;- physical comparison, using appropriate equipment, to a photograph or image, on all applicable evidence. Physical comparison performed remotely SHALL include presentation attack detection as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison, using appropriate equipment, of the applicant to the strongest piece of identity evidence. Biometric comparison performed remotely SHALL adhere to the appropriate requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use).|
 |Superior|- The applicant's ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest pieces of identity evidence, using appropriate equipment. Biometric comparison performed remotely SHALL adhere to the appropriate requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use).|
 
-The CSP MAY use KBV to verify the identity of an applicant provided the requirements in [Section 5.3.2](#kbv) are met. 
 
 #### <a name="kbv"></a>5.3.2. Knowledge Based Verification Requirements
 
