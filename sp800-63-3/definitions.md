@@ -216,6 +216,9 @@ An attribute or set of attributes that uniquely describe a subject within a give
 #### Identity Assurance Level (IAL)
 A category that conveys the degree of confidence that the applicant's claimed identity is their real identity.
 
+#### Identity Evidence
+Information or documentation that is provided by the Applicant to support the claimed identity. Identity evidence may be physical (i.e. a driver license) or digital (i.e. an assertion generated and issued by a CSP based on the applicant successfully authenticating to the CSP).
+
 #### Identity Proofing
 The process by which a CSP collects, validates, and verifies information about a person.
 
