@@ -42,7 +42,7 @@ The right side of [Figure 4-1](#63Sec4-Figure1) shows the entities and the inter
 
 1.	The claimant proves possession and control of the authenticator(s) to the verifier through an authentication protocol.
 2.	The verifier interacts with the CSP to validate the credential that binds the subscriber's identity to their authenticator and to optionally obtain claimant attributes.
-3.	In a federated identity architecture, the CSP or verifier provides an assertion about the subscriber to the RP, which may use the information in the assertion to make an authorization decision.
+3.	The CSP or verifier provides an assertion about the subscriber to the RP, which may use the information in the assertion to make an authorization decision.
 4.	An authenticated session is established between the subscriber and the RP.
 
 In all cases, the RP should request the attributes it requires from a CSP prior to authentication of the claimant.  In addition, the claimant should be requested to consent to the release of those attributes prior to generation and release of an assertion.
