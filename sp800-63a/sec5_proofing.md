@@ -12,7 +12,7 @@ This section lists the steps a CSP SHALL follow to identity proof an individual 
 
 The goal of identity resolution is to uniquely distinguish an individual among a given population or context.  Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing transaction.  
   
-1.  Exact matches of information used in the proofing process could be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, authoritative records, and third party records. Matching algorithms and rules used SHOULD be available publicly or, at minimum, to the relevant community of interest. For example, they may be included as part of the written policy or practice statement referenced above.
+1.  Exact matches of information used in the proofing process could be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, issuing sources, and authoritative sources. Matching algorithms and rules used SHOULD be available publicly or, at minimum, to the relevant community of interest. For example, they may be included as part of the written policy or practice statement referenced above.
 2.  KBV (sometimes referred to as KBA) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity. 
 
 ### <a name="validate"></a>5.2. Identity Evidence Collection and Validation
@@ -101,7 +101,7 @@ The following requirements apply to the identity verification steps for IAL2 and
 - KBV SHALL NOT be used if the CSP is not, or does not maintain a relationship with, an authoritative source. 
 - The CSP SHALL only use information that is expected to be known only to the applicant and the source, to include any information needed to begin the KBV process. Information accessible freely or for any fee in the public domain SHALL NOT be used. 
 - The CSP SHALL allow a resolved, validated, or verified identity to opt-out of KBV and leverage another process for verification.
-- KBV SHOULD be based on multiple data sources.
+- KBV SHOULD be based on multiple authoritative sources.
 
 
 - The CSP SHOULD perform KBV by verifying knowledge of recent transactional history that the CSP is a participant in.  The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater. 

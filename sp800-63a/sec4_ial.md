@@ -99,7 +99,6 @@ See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) f
 See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for more information on validating identity evidence.
 
 - Each piece of evidence SHALL be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
-- Validation against a third party data service SHALL NOT be used for more than one piece of presented identity evidence.
 
 #### 4.4.1.4. Verification Requirements
 
@@ -168,7 +167,6 @@ See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) f
 See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence
 
 - Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
-- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.
 
 #### 4.5.4. Verification Requirements
 
@@ -226,7 +224,7 @@ Requirement | IAL1 | IAL2 | IAL3
 Presence|No requirements|In-person and remote|In-person
 Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution. KBV may be used for added confidence.||
 Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>**OR**<br>One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence|One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence<br>**OR**<br>Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence
-Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.<br><br>- Validation against a third party data service SHALL only be used for one piece of presented identity evidence.|Same as IAL2.
+Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.|Same as IAL2.
 Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
 Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the direct reach of the U.S. postal service.  <br> - The CSP SHALL ensure the enrollment code and notification of proofing are sent by different means.|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. - A notification of proofing SHALL be sent to the confirmed address of record.
 Biometric Collection|No|Yes|Yes|
