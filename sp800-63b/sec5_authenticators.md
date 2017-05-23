@@ -352,7 +352,7 @@ The use of biometrics (*something you are*) in authentication includes both meas
 For a variety of reasons, this document supports only limited use of biometrics for authentication. These include:
 
 - Biometric False Match Rates (FMR) do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR does not account for spoofing attacks.
-- Biometric matching is probabilistic, whereas the other authentication factors are deterministic.
+- Biometric comparison is probabilistic, whereas the other authentication factors are deterministic.
 - Biometric template protection schemes provide a method for revoking biometric credentials that are comparable to other authentication factors (e.g., PKI certificates and passwords). However, the availability of such solutions is limited, and standards for testing these methods are under development.
 - Biometric characteristics do not constitute secrets.  They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies such as liveness detection can mitigate the risk of these types of attacks, additional trust in the sensor and/or biometric processing is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
 
@@ -382,15 +382,15 @@ The verifier SHALL make a determination of sensor/endpoint performance, integrit
 * Certification by an approved accreditation authority
 * Runtime interrogation of signed metadata (e.g., attestation) as described in [Section 5.2.4](#attestation).
 
-Biometric matching can be performed locally on claimant's device or at a central verifier. Because of the potential for attacks on a larger scale at central verifiers, local matching is preferred.
+Biometric comparison can be performed locally on claimant's device or at a central verifier. Because of the potential for attacks on a larger scale at central verifiers, local comparison is preferred.
 
-If matching is performed centrally:
+If comparison is performed centrally:
 
 * Use of the biometric SHALL be limited to one or more specific devices that are identified using approved cryptography. Since the biometric has not yet unlocked the main authentication key, a separate key SHALL be used for identifying the device.
 * Biometric revocation, referred to as biometric template protection in [ISO/IEC 24745](#ISO24745), SHALL be implemented.
 * All transmission of biometrics shall be over the authenticated protected channel.
 
-Biometric samples collected in the authentication process MAY be used to train matching algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after any training or research data has been derived.
+Biometric samples collected in the authentication process MAY be used to train comparison algorithms or, with user consent, for other research purposes. Biometric samples (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after any training or research data has been derived.
 
 Biometrics are also used in some cases to prevent repudiation of enrollment and to verify that the same individual participates in all phases of the enrollment process as described in SP 800-63A.
 
