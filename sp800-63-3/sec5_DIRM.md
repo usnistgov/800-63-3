@@ -62,7 +62,7 @@ When described generically or bundled, these guidelines will refer to IAL, AAL, 
 
 ### <a name="section5-3"></a> 5.3. Risk and Impacts
 
-This section provides details on the impact categories that SHALL be assessed to determine IAL, AAL, and FAL. 
+This section provides details on the impact categories used to determine IAL, AAL, and FAL. 
 
 Potential Impact Categories: To determine the appropriate level of assurance in the user's asserted identity, agencies SHALL assess the potential risks, and identify measures to minimize their impact. 
 
