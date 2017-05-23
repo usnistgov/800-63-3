@@ -189,7 +189,7 @@ Unsupervised remote proofing SHALL NOT be allowed.
 
 #### 4.5.7. Biometric Collection
 
-The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) the purposes of non-repudiation and re-proofing.  See [[Section 5.2.3 of SP 800-63B]](sp800-63b.html#biometric_use) for more detail on biometric collection.
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing.  See [[Section 5.2.3 of SP 800-63B]](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
 #### 4.5.8. Security  Controls
 
