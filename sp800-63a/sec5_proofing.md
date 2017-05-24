@@ -112,7 +112,7 @@ The following requirements apply to the identity verification steps for IAL2 and
 	e. The CSP SHALL NOT present the majority of KBV questions as diversionary.  For example, answers to KBV questions that include 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.  
 	f. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
 	g. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.  
-	h. The CSP SHALL NOT use KBV questions for which the answers do not change regularly over a period of time (e.g., What was your first car?).  
+	h. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., What was your first car?).  
 	i. The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.  
 	j. The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed session.  
 
@@ -147,7 +147,7 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 1. The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.
 2. The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements.
 3. The CSP SHALL proof the trusted referee at the IAL of the applicant. In addition, the CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant.
-4. The CSP SHOULD perform re-proofing of the subscriber on a regular basis, as defined by CSP policy, with the goal of satisfying the requirements of [Section 4.4.1](#normal).
+4. The CSP SHOULD perform re-proofing of the subscriber on a regular interval defined in the written policy specified in requirement 1, with the goal of satisfying the requirements of [Section 4.4.1](#normal).
 
 #### Considerations for Minors
 
