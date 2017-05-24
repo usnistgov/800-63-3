@@ -115,15 +115,16 @@ In-person and remote identity proofing are allowed. The CSP SHOULD offer both in
 
 #### <a name="4-4-1-6"></a> 4.4.1.6. Address Confirmation
 
-1. The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant, not contained on any supplied, valid piece of identity evidence.
-2. Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
-3. **If CSP performs in-person proofing (physical or supervised remote):**  
+1. Valid records to confirm address SHALL be issuing source(s) or authoritative source(s).
+2. The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant, not contained on any supplied, valid piece of identity evidence.
+3. Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
+4. **If CSP performs in-person proofing (physical or supervised remote):**  
 
 	a. The CSP SHOULD send a notification of proofing to the address of record.  
 	b. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.  
 	c. The enrollment code SHALL be valid for a maximum of 7 days.  
 
-4. **If the CSP performs remote proofing (unsupervised):**  
+5. **If the CSP performs remote proofing (unsupervised):**  
 
 	a. The CSP SHALL send an enrollment code to an address of record of the applicant.  
 	b. The applicant SHALL present a valid enrollment code to complete the identity proofing process.  
