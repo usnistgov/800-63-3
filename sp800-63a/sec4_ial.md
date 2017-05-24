@@ -104,7 +104,7 @@ See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for mor
 
 See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
-At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.
+At IAL2, at least one piece of STRONG identity evidence is required. At a minimum, the applicant's binding to the STRONG identity evidence must be verified by a process that is able to achieve a strength of STRONG.
 
 #### 4.4.1.5. Presence Requirements
 
@@ -172,7 +172,7 @@ See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more
 
 See [Section 5.3, Identity Verification](#verify) for more information on acceptable identity evidence.
 
-- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.
+- At IAL3, when SUPERIOR identity evidence is collected, the applicant's binding to the SUPERIOR identity evidence must be verified by a process that is able to achieve a strength of SUPERIOR. If the CSP only collects two pieces of STRONG identity evidence, the applicant's binding to *both* pieces of STRONG identity evidence must be verified by a process that is able to achieve a strength of STRONG.
 
 #### 4.5.5. Presence Requirements
 
