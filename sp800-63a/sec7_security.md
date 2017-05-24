@@ -6,7 +6,7 @@
 
 _This section is informative._
 
-There are two general categories of threats to the enrollment process: impersonation and either compromise or malfeasance of the infrastructure (CSPs). This section focuses on addressing impersonation threats. Infrastructure threats are addressed by normal computer security controls (e.g., separation of duties, record keeping, independent audits) and are outside the scope of this document.
+There are two general categories of threats to the enrollment process: impersonation and either compromise or malfeasance of the infrastructure provider. This section focuses on addressing impersonation threats. Infrastructure threats are addressed by normal computer security controls (e.g., intrusion protection, record keeping, independent audits) and are outside the scope of this document.
 
 The threats to the enrollment process include impersonation attacks and threats to the transport mechanisms for identity proofing, authenticator binding, and credential issuance. [Table 7-1](#63aSec7-Table1) lists the threats related to enrollment and identity proofing.
 
@@ -55,8 +55,8 @@ to the enrollment and issuance processes.
 | | | Verify Applicant-provided non-government issued documentation (e.g., electricity bills in the name of the applicant with the current address of the applicant printed on the bill, or a credit card bill) to help in achieving a higher level of confidence in the identity of the applicant. |
 | | Repudiation of enrollment | Have the applicant sign a form acknowledging participation in the enrollment activity. |
 ||Social engineering|Duplicate records check.
-| Issuance | Disclosure | Issue the authenticator in person, physically mail it in a sealed envelope to a secure location, or use a protected session to send the authenticator electronically.
-| | Tampering | Issue credentials in person, physically mailing storage media in a sealed envelope, or through the use of a communication protocol that protects the integrity of the session data.
+| Issuance | Disclosure | Issue the authenticator in person, physically mail it in a tamper-resistant sealed envelope to a secure location, or use a protected session to send the authenticator electronically.
+| | Tampering | Issue credentials in person, physically mailing storage media in a tamper-resistant sealed envelope, or through the use of a communication protocol that protects the integrity of the session data.
 | | | Establish a procedure that allows the Subscriber to authenticate the CSP as the source of any authenticator and credential data that he or she may receive.
 | | Unauthorized issuance/Social engineering | Establish procedures to ensure that the individual who receives the authenticator is the same individual who participated in the enrollment procedure.
 | | | Implement a dual-control issuance process that ensures two independent individuals shall cooperate in order to issue an authenticator.

@@ -27,7 +27,7 @@ The following table states which sections of the document are normative and whic
 |3. Definitions and Abbreviations|Informative|
 |4. Identity Assurance Level Requirements|Normative|
 |5. Identity Resolution, Validation, and Verification|Normative|
-|6. Derived Identity|Normative|
+|6. Derived Credentials|Normative|
 |7. Threats and Security Considerations|Informative|
 |8. Privacy Considerations|Informative|
 |9. Usability Considerations|Informative|

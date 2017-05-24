@@ -210,7 +210,7 @@ The terms "CAN" and "CANNOT" indicate a possibility and capability, whether mate
 
 [5. Identity Resolution, Validation and Verification](#sec5)
 
-[6. Derived Identity](#sec6)
+[6. Derived Credentials](#sec6)
 
 [7. Threats and Security Considerations](#sec7)
 
