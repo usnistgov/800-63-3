@@ -11,7 +11,7 @@ This document describes the common pattern in which a subject (referred to as an
 The only outcome of identity proofing is to ensure that the applicant is who they claim to be. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  As an example, such attributes, to the extent they are the minimum necessary, could include:  
 
 1. Full name
-2. Date of birth
+2. Date-of-birth
 3. Home address
 
 It is permissible for the CSP to collect additional information in the process of identity proofing an applicant, provided validation and verification follow the requirements contained herein, and the applicant explicitly consents to the CSP collecting and storing the attributes.  
@@ -28,6 +28,26 @@ It is permissible for the CSP to collect additional information in the process o
 **Figure 4-1. The Identity Proofing User Journey**
 </div>
 
+The following provides a sample of how a CSP and an applicant interact during the identity proofing process:
+
+1. Resolution
+
+	a. The CSP collects PII from the user, such as name, address, date-of-birth, email, and phone number.  
+	b. The CSP also collects two forms of identity evidence, such as a driver license and a passport. For example, using the camera of a laptop, the CSP can capture a photo of both sides of both pieces of identity evidence.  
+	c. The CSP asks the applicant for a photo of themselves to match to the license and passport.
+	
+2. Validation
+
+	a. The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information suppled by the applicant matches their records.  
+	b. The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.  
+	c. The CSP queries the issuing sources for the license and passport and validates the information matches.
+	
+3. Verification
+
+	a. The CSP matches the pictures on the license and the passport to the applicant picture and determines they match.    
+	b. The CSP sends an enrollment code to the validated phone number of the applicant, the user provides the enrollment code to the CSP, and the CSP confirms they match, verifying the user is possession and control of the validated phone number.  
+	c. The applicant has been successfully proofed.
+	
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
 
