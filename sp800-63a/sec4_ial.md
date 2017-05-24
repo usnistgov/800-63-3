@@ -50,9 +50,9 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 8. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
 
-	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
-	b) The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal, state, local, territorial, or tribal government and private sector organization requirements may apply; and
-	c) The schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
+	a. Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
+	b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal, state, local, territorial, or tribal government and private sector organization requirements may apply; and
+	c. The schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
 
 
 9. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
@@ -65,10 +65,10 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 13. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
 
-	a) The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.  
-	b) The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
-	c) The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
-	d) The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
+	a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.  
+	b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
+	c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
+	d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
 ### 4.3. Identity Assurance Level 1
 
@@ -117,18 +117,18 @@ In-person and remote identity proofing are allowed. The CSP SHOULD offer both in
 2. Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
 3. **If CSP performs in-person proofing (physical or supervised remote):**  
 
-	a. The CSP SHOULD send a notification of proofing to the address of record.
-	b. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.
-	c. The enrollment code SHALL be valid for a maximum of 7 days
+	a. The CSP SHOULD send a notification of proofing to the address of record.  
+	b. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.  
+	c. The enrollment code SHALL be valid for a maximum of 7 days.  
 
 4. **If the CSP performs remote proofing (unsupervised):**  
 
-	a. The CSP SHALL send an enrollment code to an address of record of the applicant.
-	b. The applicant SHALL present a valid enrollment code to complete the identity proofing process.
-	c The CSP SHOULD send the enrollment code to the postal address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.
-	d. If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.
-	e. Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the Contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.
-	f. The CSP SHALL ensure the enrollment code and notification of proofing are sent by different means. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the physical address in records or obtained from validated and verified evidence, such as a driver's license.
+	a. The CSP SHALL send an enrollment code to an address of record of the applicant.  
+	b. The applicant SHALL present a valid enrollment code to complete the identity proofing process.  
+	c The CSP SHOULD send the enrollment code to the postal address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.  
+	d. If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.  
+	e. Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the Contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.  
+	f. The CSP SHALL ensure the enrollment code and notification of proofing are sent by different means. For example, if the CSP sends an enrollment code to a mobile phone of record, a notification of proofing will be sent to the physical address in records or obtained from validated and verified evidence, such as a driver's license.  
 	
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, physical or digital.
 
