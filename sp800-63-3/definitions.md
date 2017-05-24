@@ -450,3 +450,61 @@ Overwrite a memory location with data consisting entirely of bits with the value
 A password based authentication protocol that allows a claimant to authenticate to a verifier without revealing the password to the verifier. Examples of such protocols are EKE, SPEKE and SRP.
 
 ### A.2. Acronyms
+
+|Acronym|Expansion|
+|:-----|:---------|
+|ABAC|Attribute Based Access Control|
+|AS|Authentication Server|
+|AAL|Authenticator Assurance Level|
+|CAPTCHA|Completely Automated Public Turing test to tell Computer and Humans Apart|
+|CSP|Credential Service Provider|
+|CSRF|Cross-site Request Forgery|
+|XSS|Cross-site Scripting|
+|DNS|Domain Name Service|
+|EO|Executive Order|
+|FACT Act|Fair and Accurate Credit Transaction Act of 2003|
+|FMR|False Match Rate|
+|FNMR|False Non-Match Rate|
+|FIPS|Federal Information Processing Standard|
+|FISMA|Federal Information Security Modernization Act|
+|FAL|Federation Assurance Level|
+|IAL|Identity Assurance Level|
+|IM|Identity Manager|
+|IdP|Identity Provider|
+|IoT|Internet of Things|
+|JSON|JavaScript Object Notation |
+|JOSE|JSON Object Signing and Encryption|
+|JWT|JSON Web Token|
+|KDC|Key Distribution Center|
+|KBA|Knowledge Based Authentication|
+|KBV|Knowledge Based Verification|
+|LOA|Level of Assurance|
+|MitM|Man-in-the-Middle|
+|MitMA|Man-in-the-Middle Attack|
+|MAC|Message Authentication Code|
+|MFA|Multi-factor Authentication|
+|NARA|National Archives and Records Administration|
+|N/A|Not Applicable|
+|OMB|Office of Management and Budget|
+|OTP|One-Time Password|
+|PHI|Personal Health Information|
+|PII|Personal Identifiable Information|
+|PIN|Personal Identification Number|
+|PAD|Presentation Attack Detection|
+|PIA|Privacy Impact Assessment |
+|PKI|Public Key Infrastructure |
+|PL|Public Law|
+|PSTN|Public Switched Telephone Network|
+|RA|Registration Authority|
+|RP|Relying Party|
+|RMF|Risk Management Framework|
+|SSL|Secure Sockets Layer|
+|SAML|Security Assertion Markup Language|
+|SA&A|Security Authorization & Accreditation|
+|SAOP|Senior Agency Official for Privacy|
+|SP|Special Publication|
+|SORN|System of Records Notice|
+|TGS|Ticket Granting Server|
+|TGT|Ticket Granting Ticket|
+|TLS|Transport Layer Security|
+|Voice-over-IP|VOIP|
