@@ -98,24 +98,23 @@ The goal of identity verification is to confirm and establish a linkage between 
 
 The following requirements apply to the identity verification steps for IAL2 and 3. There are no restrictions for the use of KBV for identity resolution.
 
-- KBV SHALL NOT be used if the CSP is not, or does not maintain a relationship with, an authoritative source.
-- The CSP SHALL only use information that is expected to be known only to the applicant and the source, to include any information needed to begin the KBV process. Information accessible freely or for any fee in the public domain SHALL NOT be used.
-- The CSP SHALL allow a resolved, validated, or verified identity to opt-out of KBV and leverage another process for verification.
-- KBV SHOULD be based on multiple authoritative sources.
+1. KBV SHALL NOT be used if the CSP is not, or does not maintain a relationship with, an authoritative source.
+2. The CSP SHALL only use information that is expected to be known only to the applicant and the source, to include any information needed to begin the KBV process. Information accessible freely or for any fee in the public domain SHALL NOT be used.
+3. The CSP SHALL allow a resolved, validated, or verified identity to opt-out of KBV and leverage another process for verification.
+4. KBV SHOULD be based on multiple authoritative sources.
+5. The CSP SHOULD perform KBV by verifying knowledge of recent transactional history that the CSP is a participant in.  The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
+6. The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
 
-
-- The CSP SHOULD perform KBV by verifying knowledge of recent transactional history that the CSP is a participant in.  The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
-- The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
-	- The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.
-	- The CSP SHOULD require a free form response to a KBV question.  The CSP MAY allow multiple choice answers, however, if multiple choice answer are provided, the CSP SHALL require a minimum of four answer options per question.
-	- The CSP SHOULD allow two attempts for an applicant to complete the KBV.  A CSP SHALL NOT allow more than three attempts to complete the KBV.
-	- The CSP MAY use KBV to verify an applicant's identity against only one piece of validated identity evidence.  
-	- The CSP SHALL NOT present the majority of KBV questions as diversionary.  For example, answers to KBV questions that include 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.
-	- The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.
-	- The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.
-	- The CSP SHALL NOT use KBV questions for which the answers do not change regularly over a period of time (e.g., What was your first car?).
-	- The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.
-	- The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed session.
+	a. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.
+	b. The CSP SHOULD require a free form response to a KBV question.  The CSP MAY allow multiple choice answers, however, if multiple choice answer are provided, the CSP SHALL require a minimum of four answer options per question.
+	c. The CSP SHOULD allow two attempts for an applicant to complete the KBV.  A CSP SHALL NOT allow more than three attempts to complete the KBV.
+	d. The CSP MAY use KBV to verify an applicant's identity against only one piece of validated identity evidence.  
+	e. The CSP SHALL NOT present the majority of KBV questions as diversionary.  For example, answers to KBV questions that include 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.
+	f. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.
+	g. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.
+	h. The CSP SHALL NOT use KBV questions for which the answers do not change regularly over a period of time (e.g., What was your first car?).
+	i. The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.
+	j. The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed session.
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
@@ -126,9 +125,8 @@ In-person proofing can be satisfied in two ways:
 
 #### 5.3.3.1. General Requirements
 
-1.	The CSP SHALL have the operator view the biometric source (e.g., fingers, face) for presence of non-natural materials and perform such inspections as part of the proofing process.
-
-2.	The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use) apply.
+1. The CSP SHALL have the operator view the biometric source (e.g., fingers, face) for presence of non-natural materials and perform such inspections as part of the proofing process.
+2. The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [[SP 800-63B, Section 5.2.3]](sp800-63b.html/#biometric_use) apply.
 
 #### <a name="supervised"></a> 5.3.3.2. Requirements for Supervised Remote In-person Proofing
 
@@ -146,21 +144,16 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 
 #### <a name="trustref"></a> 5.3.4. Trusted Referee Requirements
 
-The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.  
-
-The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements.
-
-The CSP SHALL proof the trusted referee at the IAL of the applicant. In addition, the CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant.
-
-The CSP MAY perform re-proofing of the subscriber on a regular basis, as defined by CSP policy, with the goal of satisfying the requirements of [Section 4.4.1](#normal).
+1. The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.
+2. The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements.
+3. The CSP SHALL proof the trusted referee at the IAL of the applicant. In addition, the CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant.
+4. The CSP SHOULD perform re-proofing of the subscriber on a regular basis, as defined by CSP policy, with the goal of satisfying the requirements of [Section 4.4.1](#normal).
 
 #### Considerations for Minors
 
-The CSP SHALL give special consideration to the legal restrictions of interacting with minors unable to meet the evidence requirements of identity proofing to ensure compliance with the [Children's Online Privacy Protection Act of 1998](#COPPA), and other laws, as applicable.
-
-Minors under age 13 require additional special considerations under COPPA, and other laws, to which the CSP SHALL ensure compliance, as applicable.
-
-The CSP SHOULD involve a parent or legal adult guardian as a trusted referee for an applicant that is a minor, as described elsewhere in this section.
+1. The CSP SHALL give special consideration to the legal restrictions of interacting with minors unable to meet the evidence requirements of identity proofing to ensure compliance with the [Children's Online Privacy Protection Act of 1998](#COPPA), and other laws, as applicable.
+2. Minors under age 13 require additional special considerations under COPPA, and other laws, to which the CSP SHALL ensure compliance, as applicable.
+3. The CSP SHOULD involve a parent or legal adult guardian as a trusted referee for an applicant that is a minor, as described elsewhere in this section.
 
 ### 5.4. Binding Requirements
 
