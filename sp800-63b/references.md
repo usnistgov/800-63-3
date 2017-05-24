@@ -28,6 +28,10 @@
 
 <a name="ISO24745"></a>[ISO/IEC 24745] International Standards Organization, *Information technology -- Security techniques -- Biometric information protection*, 2011, available at: <http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=52946>.
 
+<a name="ISOIEC30107-1"></a>[ISO/IEC 30107-1] International Standards Organization, *Information technology — Biometric presentation attack detection — Part 1: Framework*, 2016, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c053227_ISO_IEC_30107-1_2016.zip>.
+
+<a name="ISOIEC30107-3"></a>[ISO/IEC 30107-3] International Standards Organization, *Information technology — Biometric presentation attack detection — Part 3: Testing and reporting*, 2017.
+
 <a name="OWASP-XSS-prevention"></a>[OWASP-XSS-prevention] Open Web Application Security Project, *XSS (Cross Site Scripting) Prevention Cheat Sheet*, available at: <https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet>.
 
 <a name="OWASP-session"></a>[OWASP-session] Open Web Application Security Project, *Session Management Cheat Sheet*, available at: <https://www.owasp.org/index.php/Session_Management_Cheat_Sheet>.

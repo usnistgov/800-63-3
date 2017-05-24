@@ -84,7 +84,7 @@ Verifiers operated by government agencies at AAL2 SHALL be validated to meet the
 
 When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked, nor whether the unlock process met the requirements for the relevant authenticator type.
 
-When a biometric factor is used in authentication at AAL2, the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in Section [5.2.3](#biometric_use).
+When a biometric factor is used in authentication at AAL2, the performance requirements stated in Section [5.2.3](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
 
 #### <a name="aal2reauth"></a>4.2.3. Reauthentication
 

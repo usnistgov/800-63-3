@@ -362,9 +362,9 @@ Biometrics SHALL be used only as part of multi-factor authentication with a phys
 
 An authenticated protected channel between sensor (or endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint authenticated prior to capturing the biometric sample from the claimant.
 
-The biometric system SHALL operate with a false match rate (FMR) [[ISO/IEC 2382-37]](#ISOIEC2382-37) of 1 in 1000 or better.
+The biometric system SHALL operate with a false match rate (FMR) [[ISO/IEC 2382-37]](#ISOIEC2382-37) of 1 in 1000 or better. This FMR SHALL be achieved under conditions of a conformant attack (zero-effort impostor attempt) as defined in [[ISO/IEC 30107-1]](#ISOIEC30107-1).
 
-The biometric system SHOULD implement PAD. Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks. The PAD decision MAY be made either locally on the claimant's device or at a central verifier.
+The biometric system SHOULD implement PAD. Testing of the biometric system to be deployed SHOULD demonstrate at least 90% resistance to presentation attacks for each relevant attack type (aka species), where resistance is defined as the number of thwarted presentation attacks divided by the number of trial presentation attacks. Testing of presentation attack resistance SHALL be in accordance with Clause 12 of [[ISO/IEC 30107-3]](#ISOIEC30107-3). The PAD decision MAY be made either locally on the claimant's device or at a central verifier.
 
 >Note: PAD is being considered as a mandatory requirement in future editions of this guideline.
 
