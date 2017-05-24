@@ -447,3 +447,10 @@ Overwrite a memory location with data consisting entirely of bits with the value
 A password based authentication protocol that allows a claimant to authenticate to a verifier without revealing the password to the verifier. Examples of such protocols are EKE, SPEKE and SRP.
 
 ### A.2. Acronyms
+
+|Acronym|Expansion|
+|:-----|:---------|
+|RP|Relying Party|
+|||
+|||
+|||
