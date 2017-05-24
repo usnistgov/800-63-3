@@ -98,23 +98,23 @@ The goal of identity verification is to confirm and establish a linkage between 
 
 The following requirements apply to the identity verification steps for IAL2 and 3. There are no restrictions for the use of KBV for identity resolution.
 
-1. KBV SHALL NOT be used if the CSP is not, or does not maintain a relationship with, an authoritative source.
-2. The CSP SHALL only use information that is expected to be known only to the applicant and the source, to include any information needed to begin the KBV process. Information accessible freely or for any fee in the public domain SHALL NOT be used.
-3. The CSP SHALL allow a resolved and validated identity to opt-out of KBV and leverage another process for verification.
-4. KBV SHOULD be based on multiple authoritative sources.
-5. The CSP SHOULD perform KBV by verifying knowledge of recent transactional history that the CSP is a participant in.  The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
-6. The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
+1. The CSP SHALL NOT use KBV to verify an applicant's identity against more than one piece of validated identity evidence.
+2. KBV SHALL NOT be used if the CSP is not, or does not maintain a relationship with, an authoritative source.
+3. The CSP SHALL only use information that is expected to be known only to the applicant and the source, to include any information needed to begin the KBV process. Information accessible freely or for any fee in the public domain SHALL NOT be used.
+4. The CSP SHALL allow a resolved and validated identity to opt-out of KBV and leverage another process for verification.
+5. KBV SHOULD be based on multiple authoritative sources.
+6. The CSP SHOULD perform KBV by verifying knowledge of recent transactional history that the CSP is a participant in.  The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
+7. The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
 
 	a. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.  
 	b. The CSP SHOULD require a free form response to a KBV question.  The CSP MAY allow multiple choice answers, however, if multiple choice answer are provided, the CSP SHALL require a minimum of four answer options per question.  
 	c. The CSP SHOULD allow two attempts for an applicant to complete the KBV.  A CSP SHALL NOT allow more than three attempts to complete the KBV.  
-	d. The CSP MAY use KBV to verify an applicant's identity against only one piece of validated identity evidence.  
-	e. The CSP SHALL NOT present the majority of KBV questions as diversionary.  For example, answers to KBV questions that include 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.  
-	f. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
-	g. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.  
-	h. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., What was your first car?).  
-	i. The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.  
-	j. The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed session.  
+	d. The CSP SHALL NOT present the majority of KBV questions as diversionary.  For example, answers to KBV questions that include 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.  
+	e. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
+	f. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.  
+	g. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., What was your first car?).  
+	h. The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.  
+	i. The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed session.  
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
