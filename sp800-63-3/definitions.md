@@ -453,13 +453,11 @@ A password based authentication protocol that allows a claimant to authenticate 
 |ABAC|Attribute Based Access Control|
 |AS|Authentication Server|
 |AAL|Authenticator Assurance Level|
-|A&A|Authorization and Accreditation|
 |CAPTCHA|Completely Automated Public Turing test to tell Computer and Humans Apart|
 |CSP|Credential Service Provider|
 |CSRF|Cross-site Request Forgery|
 |XSS|Cross-site Scripting|
 |DNS|Domain Name Service|
-|E-Authentication|Electronic Authentication|
 |EO|Executive Order|
 |FACT Act|Fair and Accurate Credit Transaction Act of 2003|
 |FMR|False Match Rate|
@@ -470,7 +468,6 @@ A password based authentication protocol that allows a claimant to authenticate 
 |IAL|Identity Assurance Level|
 |IM|Identity Manager|
 |IdP|Identity Provider|
-|ITL|Information Technology Laboratory |
 |IoT|Internet of Things|
 |JSON|JavaScript Object Notation |
 |JOSE|JSON Object Signing and Encryption|
@@ -484,7 +481,6 @@ A password based authentication protocol that allows a claimant to authenticate 
 |MAC|Message Authentication Code|
 |MFA|Multi-factor Authentication|
 |NARA|National Archives and Records Administration|
-|NIST|National Institute of Standards and Technology|
 |N/A|Not Applicable|
 |OMB|Office of Management and Budget|
 |OTP|One-Time Password|
@@ -501,6 +497,7 @@ A password based authentication protocol that allows a claimant to authenticate 
 |RMF|Risk Management Framework|
 |SSL|Secure Sockets Layer|
 |SAML|Security Assertion Markup Language|
+|SA&A|Security Authorization & Accreditation|
 |SAOP|Senior Agency Official for Privacy|
 |SP|Special Publication|
 |SORN|System of Records Notice|
