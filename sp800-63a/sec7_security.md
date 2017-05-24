@@ -55,8 +55,8 @@ to the enrollment and issuance processes.
 | | | Verify Applicant-provided non-government issued documentation (e.g., electricity bills in the name of the applicant with the current address of the applicant printed on the bill, or a credit card bill) to help in achieving a higher level of confidence in the identity of the applicant. |
 | | Repudiation of enrollment | Have the applicant sign a form acknowledging participation in the enrollment activity. |
 ||Social engineering|Duplicate records check.
-| Issuance | Disclosure | Issue the authenticator in person, physically mail it in a tamper resistant sealed envelope to a secure location, or use a protected session to send the authenticator electronically.
-| | Tampering | Issue credentials in person, physically mailing storage media in a tamper resistant sealed envelope, or through the use of a communication protocol that protects the integrity of the session data.
+| Issuance | Disclosure | Issue the authenticator in person, physically mail it in a tamper-resistant sealed envelope to a secure location, or use a protected session to send the authenticator electronically.
+| | Tampering | Issue credentials in person, physically mailing storage media in a tamper-resistant sealed envelope, or through the use of a communication protocol that protects the integrity of the session data.
 | | | Establish a procedure that allows the Subscriber to authenticate the CSP as the source of any authenticator and credential data that he or she may receive.
 | | Unauthorized issuance/Social engineering | Establish procedures to ensure that the individual who receives the authenticator is the same individual who participated in the enrollment procedure.
 | | | Implement a dual-control issuance process that ensures two independent individuals shall cooperate in order to issue an authenticator.
