@@ -35,7 +35,7 @@ The following table states which sections of the document are normative and whic
 
 ## 2.1. Expected Outcomes of Identity Proofing
 
-The objective of identity proofing is to:  
+When a subject is identity proofed, the expected outcomes are:  
 
 * Resolve a claimed identity to a single, unique identity within the context of the population of users the CSP serves.
 * Validate that all supplied evidence is correct and genuine (e.g., not counterfeit or misappropriated).
