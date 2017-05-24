@@ -144,7 +144,7 @@ The CSP SHOULD employ appropriately tailored security controls from the moderate
 
 #### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
 
-In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the enrollee.  See [Section 5.3.4.](#trustref) for more details.
+In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the applicant.  See [Section 5.3.4.](#trustref) for more details.
 
 ### <a name="ial3-requirements"></a> 4.5. Identity Assurance Level 3
 
