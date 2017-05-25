@@ -213,7 +213,6 @@ See [Section 5.3, Identity Verification](#verify) for more information on accept
 
 The CSP SHALL perform all identity proofing steps with the applicant in-person. See [Section 5.3.3](#vip) for more details.
 
-Unsupervised remote proofing SHALL NOT be allowed.
 
 #### 4.5.6. Address Confirmation
 
