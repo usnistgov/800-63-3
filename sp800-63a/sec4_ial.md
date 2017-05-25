@@ -66,7 +66,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 6. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access.
 
-7. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities.
+7. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternative (i.e. in-person if remote fails), or fraud counter-measures when anomolies are detected.
 
 8. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
 
@@ -89,7 +89,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 	b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
 	c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
 	d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
-
+	
 ### 4.3. Identity Assurance Level 1
 
 1. A CSP that supports only IAL1 CSP SHALL NOT validate and verify attributes.
