@@ -16,7 +16,7 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 <a name="63cSec7-Figure1"></a>
 
 <div class="text-center" markdown="1">
-![Figure 1: Back-channel presentation](sp800-63c/media/indirect.png)
+![Figure 1: Back-channel presentation](sp800-63c/media/back-channel.png)
 
 **Figure 7-1. Back-channel Presentation**
 
