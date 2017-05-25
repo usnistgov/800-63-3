@@ -167,7 +167,7 @@ The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofi
 
 #### 4.4.1.8. Security Controls
 
-The CSP SHOULD employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard and SHOULD ensure that the minimum requirements associated with the *moderate* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard and SHOULD ensure that the minimum requirements associated with the *moderate* baseline are satisfied.
 
 #### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
 
@@ -228,7 +228,7 @@ The CSP SHALL collect and record a biometric sample at the time of proofing (e.g
 
 #### 4.5.8. Security  Controls
 
-The CSP SHOULD employ appropriately tailored security controls, to include control enhancements, from the High baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the High baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum requirements associated with the *high* baseline are satisfied.
 
 ### <a name="enrollmentcode"></a> 4.6. Enrollment Code
 
