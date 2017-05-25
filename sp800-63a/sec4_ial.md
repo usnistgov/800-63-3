@@ -11,7 +11,7 @@ This document describes the common pattern in which a subject (referred to as an
 The only outcome of identity proofing is to ensure that the applicant is who they claim to be. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  As an example, such attributes, to the extent they are the minimum necessary, could include:  
 
 1. Full name
-2. Date-of-birth
+2. Date of birth
 3. Home address
 
 It is permissible for the CSP to collect additional information in the process of identity proofing an applicant, provided validation and verification follow the requirements contained herein, and the applicant explicitly consents to the CSP collecting and storing the attributes.  
@@ -32,13 +32,13 @@ The following provides a sample of how a CSP and an applicant interact during th
 
 1. Resolution
 
-	a. The CSP collects PII from the user, such as name, address, date-of-birth, email, and phone number.  
+	a. The CSP collects PII from the user, such as name, address, date of birth, email, and phone number.  
 	b. The CSP also collects two forms of identity evidence, such as a driver license and a passport. For example, using the camera of a laptop, the CSP can capture a photo of both sides of both pieces of identity evidence.  
 	c. The CSP asks the applicant for a photo of themselves to match to the license and passport.
 	
 2. Validation
 
-	a. The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information suppled by the applicant matches their records.  
+	a. The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information supplied by the applicant matches their records.  
 	b. The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.  
 	c. The CSP queries the issuing sources for the license and passport and validates the information matches.
 	
@@ -94,7 +94,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 1. A CSP that supports only IAL1 CSP SHALL NOT validate and verify attributes.
 2. The CSP MAY request zero or more self-asserted attributes from the applicant to support their service offering.
-3. An IAL2 or IAL3 CSP SHOULD support RPs that only require IAL1 only, if the user consents.
+3. An IAL2 or IAL3 CSP SHOULD support RPs that only require IAL1, if the user consents.
 
 ### 4.4. Identity Assurance Level 2
 
@@ -118,7 +118,7 @@ See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) f
 
 #### 4.4.1.3. Validation Requirements
 
-See [Section 5.2.2. Validating Identity Evidence](#evidence_validation") for more information on validating identity evidence.
+See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence.
 
 Each piece of evidence SHALL be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
 
