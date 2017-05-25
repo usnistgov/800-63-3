@@ -101,7 +101,7 @@ The goal of identity verification is to confirm and establish a linkage between 
 The following requirements apply to the identity verification steps for IAL2 and 3. There are no restrictions for the use of KBV for identity resolution.
 
 1. The CSP SHALL NOT use KBV to verify an applicant's identity against more than one piece of validated identity evidence.
-2. The CSP SHALL only use information that is expected to be known only to the applicant and the source, to include any information needed to begin the KBV process. Information accessible freely or for any fee in the public domain SHALL NOT be used.
+2. The CSP SHALL only use information that is expected to be known only to the applicant and the authoritative source, to include any information needed to begin the KBV process. Information accessible freely, for a fee in the public domain, or via the black market  SHALL NOT be used.
 3. The CSP SHALL allow a resolved and validated identity to opt-out of KBV and leverage another process for verification.
 4. KBV SHOULD be based on multiple authoritative sources.
 5. The CSP SHOULD perform KBV by verifying knowledge of recent transactional history that the CSP is a participant in.  The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
