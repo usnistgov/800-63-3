@@ -58,7 +58,7 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 <a name="63cSec7-Figure2"></a>
 
 <div class="text-center" markdown="1">
-![Figure 2: Front-channel presentation](sp800-63c/media/direct.png)
+![Figure 2: Front-channel presentation](sp800-63c/media/front-channel.png)
 
 
 **Figure 7-2. Front-channel Presentation**
