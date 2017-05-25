@@ -29,6 +29,15 @@ IdPs that provide authentication services and RPs that consume those services ar
 
 In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing these RPs to receive authentication and attribute information as part of the authentication transaction. In such cases where an RP is not whitelisted, the IdP SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information.
 
+<a name="63cSec5-Figure2"></a>
+
+<div class="text-center" markdown="1">
+![Figure 2: Manual Registration](sp800-63c/media/manual.png)
+
+**Figure 5-2. Manual Registration**
+
+</div>
+
 IdPs and RPs MAY act as their own authorities of who to federate with or MAY externalize those authority decisions to an external party as in [Section 5.1.3](#authorities).
 
 Protocols requiring the transfer of keying information SHALL use a secure method to exchange keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
@@ -39,12 +48,12 @@ Federation relationships SHALL establish parameters regarding expected and accep
 
 In the dynamic registration model of federation, it is possible for relationships between members of the federation to be negotiated at the time of a transaction. This process allows IdPs and RPs to be connected together without manually establishing a connection between them using manual registration (See [Section 5.1.1](#manual-registration)). IdPs that support dynamic registration SHALL make their configuration information (such as dynamic registration endpoints) available in such a way as to minimize system administrator involvement.
 
-<a name="63cSec5-Figure2"></a>
+<a name="63cSec5-Figure3"></a>
 
 <div class="text-center" markdown="1">
-![Figure 2: Dynamic Registration](sp800-63c/media/dynamic.png)
+![Figure 3: Dynamic Registration](sp800-63c/media/dynamic.png)
 
-**Figure 5-2. Dynamic Registration**
+**Figure 5-3. Dynamic Registration**
 
 </div>
 
@@ -61,12 +70,12 @@ Some federated parties defer to an authority known as a *federation authority* t
 
 Federation authorities SHALL establish parameters regarding expected and acceptable IALs and AALs in connection with the federated relationships they enable. Federation authorities SHALL individually vet each participant in the federation to determine that they adhere to their expected security, identity, and privacy standards. 
 
-<a name="63cSec5-Figure3"></a>
+<a name="63cSec5-Figure4"></a>
 
 <div class="text-center" markdown="1">
-![Figure 3: Federation Authority](sp800-63c/media/authority.png)
+![Figure 4: Federation Authority](sp800-63c/media/authority.png)
 
-**Figure 5-3. Federation Authority**
+**Figure 5-4. Federation Authority**
 
 </div>
 
@@ -89,12 +98,12 @@ In a proxied federation, communication between the IdP and the RP is intermediat
 
 Where proxies are used, they function as an IdP on one side and an RP on the other side. Therefore, all normative requirements that apply to IdPs and RPs SHALL apply to proxies in their respective roles.
 
-<a name="63cSec5-Figure4"></a>
+<a name="63cSec5-Figure5"></a>
 
 <div class="text-center" markdown="1">
-![Figure 4: Federation Proxy](sp800-63c/media/broker.png)
+![Figure 5: Federation Proxy](sp800-63c/media/broker.png)
 
-**Figure 5-4. Federation Proxy**
+**Figure 5-5. Federation Proxy**
 </div>
 
 A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 5.2](#privacy-reqs) below.
