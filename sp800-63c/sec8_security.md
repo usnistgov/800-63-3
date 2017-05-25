@@ -53,7 +53,7 @@ protocol. In other cases, the IdP will generate a temporary secret
 and transmit it to the authenticated subscriber for this purpose. When this secret is used to authenticate to the RP, this temporary secret will be referred to as a secondary
 authenticator. Secondary authenticators include assertions in the front-channel
 model, session keys in Kerberos, assertion references in the back-channel
-model, and cookies used for authentication. The threats to the secondary
+model, and cookies used for session management. The threats to the secondary
 authenticator are as follows:
 
 -   *Secondary authenticator manufacture* - An attacker may attempt to
