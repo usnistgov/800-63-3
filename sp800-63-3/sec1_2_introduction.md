@@ -80,8 +80,7 @@ Privacy Provisions of the E-Government Act of 2002* [[M-03-22]](#M-03-22). See t
 Transactions* [[ESIG]](#ESIG) for additional information on legal risks, especially those that are related to the need to satisfy legal standards of proof and prevent repudiation.
 
 Additionally, Federal agencies implementing these guidelines should
-adhere to the requirements of Title III of the E-Government Act,
-entitled the *Federal Information Security Modernization Act* [[FISMA]](#FISMA), and related NIST standards and guidelines. FISMA directs Federal agencies to develop, document, and implement
+adhere to the requirements of the *Federal Information Security Modernization Act* [[FISMA]](#FISMA), and related NIST standards and guidelines. FISMA directs Federal agencies to develop, document, and implement
 agency-wide programs to provide information security for the information
 and systems that support the operations and assets of the
 agency. This includes the security authorization of IT systems that support
