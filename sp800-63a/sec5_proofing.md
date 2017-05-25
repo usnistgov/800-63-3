@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This section lists the steps a CSP SHALL follow to identity proof an individual to meet the requirements for each IAL. The requirements are intended to ensure the claimed identity is the actual identity of the subject attempting to enroll with the CSP and that scalable attacks affecting a large population of enrolled individuals require a greater time and cost than the value of the resources the system is protecting.
+This section lists the requirements to resolve, validate, and verify an identity and any supplied identity evidence. The requirements are intended to ensure the claimed identity is the actual identity of the subject attempting to enroll with the CSP and that scalable attacks affecting a large population of enrolled individuals require a greater time and cost than the value of the resources the system is protecting.
 
 ### <a name="resolve"></a>5.1. Identity Resolution
 
