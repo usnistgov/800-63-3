@@ -466,6 +466,7 @@ A password based authentication protocol that allows a claimant to authenticate 
 |DNS|Domain Name Service|
 |EO|Executive Order|
 |FACT Act|Fair and Accurate Credit Transaction Act of 2003|
+|FEDRAMP|Federal Risk and Authorization Management Program|
 |FMR|False Match Rate|
 |FNMR|False Non-Match Rate|
 |FIPS|Federal Information Processing Standard|
