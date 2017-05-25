@@ -68,6 +68,8 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 |Strong|- The evidence has been confirmed as genuine:<br>&nbsp;&nbsp;&nbsp;&nbsp;- using appropriate equipment, confirming the integrity of physical security features and lack of fraudulent modification. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by trained personnel and appropriate equipment, confirming the integrity of the physical security features and lack of fraudulent modification<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by confirmation of the integrity of cryptographic security features.<br><br> - All personal details and evidence details have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).|
 |Superior|- The evidence has been confirmed as genuine by trained personnel and appropriate equipment including the integrity of any physical and cryptographic security features.<br><br>- All personal details and evidence details from the evidence have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).|
 
+Training requirements for personnel validating evidence SHALL be based on the policies, guidelines, or requirements of the CSP or the RP. 
+
 ### 5.3. <a name="verify"></a> Identity Verification
 
 The goal of identity verification is to confirm and establish a linkage between the claimed identity and the real-life existence of the subject presenting the evidence.
