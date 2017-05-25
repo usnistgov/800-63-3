@@ -111,12 +111,12 @@ The following requirements apply to the identity verification steps for IAL2 and
 	a. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.  
 	b. The CSP SHOULD require a free form response to a KBV question.  The CSP MAY allow multiple choice answers, however, if multiple choice answer are provided, the CSP SHALL require a minimum of four answer options per question.  
 	c. The CSP SHOULD allow two attempts for an applicant to complete the KBV.  A CSP SHALL NOT allow more than three attempts to complete the KBV.  
-	d. The CSP SHALL NOT present the majority of KBV questions as diversionary.  For example, answers to KBV questions that include 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.  
-	e. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
-	f. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.  
-	g. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., What was your first car?).  
-	h. The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.  
-	i. The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed session.  
+	d. The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed attempt.  
+	e. The CSP SHALL NOT present the majority of KBV questions as diversionary.  For example, answers to KBV questions that include 'None of the Above', 'Not Applicable (N/A)', or similar to be regarded as correct.  
+	f. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
+	g. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.  
+	h. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., What was your first car?).  
+	i. The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.   
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
