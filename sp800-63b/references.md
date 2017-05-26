@@ -48,6 +48,10 @@
 
 <a name="balloon"></a>[BALLOON] Boneh, Dan, Corrigan-Gibbs, Henry,  and Stuart Schechter, "Balloon Hashing: A Memory-Hard Function Providing Provable Protection Against Sequential Attacks," *Asiacrypt 2016*, October, 2016, available at: <https://eprint.iacr.org/2016/027>.
 
+<a name="blacklists"></a>[Blacklists] Habib, H., Colnago, J., Melicher, W., Ur, B., Segreti, S., Bauer, L., Christin, N., and L. Cranor. *Password Creation in the Presence of Blacklists*. USEC 2017, February 26, 2017, San Diego, CA. Available at: <https://www.internetsociety.org/sites/default/files/usec2017_01_3_Habib_paper.pdf>
+
+<a name="meters"></a>[Meters] de Carné de Carnavalet, Xavier and Mohammad Mannan. *From Very Weak to Very Strong: Analyzing Password-Strength Meters*. In Proceedings of the Network and Distributed System Security Symposium (NDSS), 2014. Available at: <http://www.internetsociety.org/sites/default/files/06_3_1.pdf>
+
 ### 11.2. NIST Special Publications
 
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
