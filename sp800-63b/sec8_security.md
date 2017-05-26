@@ -14,7 +14,7 @@ An attacker who can gain control of an authenticator will often be able to masqu
     
 - *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber's fingerprint and construct a replica.
 
-This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
+This document assumes that the subscriber is not colluding with an attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
 
 <a name="63bSec8-Table1"></a>
 
@@ -100,7 +100,7 @@ There are several other strategies that may be applied to mitigate the threats d
 
 - *Physical security mechanisms* may be employed to protect a stolen authenticator from duplication. Physical security mechanisms can provide tamper evidence, detection, and response.
 
-- *Requiring the use of long memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
+- *Requiring the use of long, memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
 
 - *System and network security controls* may be employed to prevent an attacker from gaining access to a system or installing malicious software.
 
@@ -116,6 +116,6 @@ In order to maintain the integrity of the authentication factors, it is essentia
 
 ### 8.4. Session Attacks
 
-The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks, such as XSS. In addition, it is important to sanitize all information to be displayed [[OWASP-XSS-prevention]](#OWASP-XSS-prevention) to ensure that it does not contain executable content. These guidelines also recommend that session secrets be made inaccessible to mobile code in order to provide extra protection against exfiltration of session secrets should it be possible to inject malicious mobile code.
+The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks, such as XSS. In addition, it is important to sanitize all information to be displayed [[OWASP-XSS-prevention]](#OWASP-XSS-prevention) to ensure that it does not contain executable content. These guidelines also recommend that session secrets be made inaccessible to mobile code in order to provide extra protection against exfiltration of session secrets, should it be possible to inject malicious mobile code.
 
 Another post-authentication threat, CSRF, takes advantage of users' tendency to have multiple sessions active at the same time. It is important to embed and verify a session identifier into web requests to prevent the ability for a valid URL or request to be unintentionally or maliciously activated.
