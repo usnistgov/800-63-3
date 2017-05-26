@@ -64,7 +64,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 5. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access.
 
-6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternative (i.e. in-person if remote fails), or fraud counter-measures when anomolies are detected.
+6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (i.e. in-person if remote fails), or fraud counter-measures when anomolies are detected.
 
 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
 
