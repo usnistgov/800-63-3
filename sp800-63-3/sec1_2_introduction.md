@@ -117,44 +117,25 @@ NIST SP 800-63-1 updated NIST SP 800-63 to reflect current authenticator (then r
 
 -   Emphasis that the document is aimed at Federal IT systems;
 
--   Recognition of different models, including a broader
-    digital authentication model (in contrast to the simpler model common
-    among Federal IT systems shown in Figure 1) and an additional
-    assertion model, the Proxy Model, presented in Figure 6;
+-   Recognition of different models, including a broader digital authentication model (in contrast to the simpler model common among Federal IT systems shown in Figure 1) and an additional assertion model, the Proxy Model, presented in Figure 6;
 
 -   Clarification of differences between Levels 3 and 4 in Table 12; and
 
--   New guidelines that permit leveraging existing credentials to issue
-    derived credentials.
+-   New guidelines that permit leveraging existing credentials to issue derived credentials.
 
 The subsequent sections of NIST SP 800-63-1 presented a series of recommendations for the secure implementation of RAs, CSPs, Verifiers,
 and RPs. It should be noted that secure implementation of any one of these can only provide the desired LOA if the others are also implemented securely. Therefore, the following assumptions were made in NIST SP 800-63-1:
 
--   RAs, CSPs, and Verifiers are trusted entities. Agencies implementing
-    any of the above trusted entities have some assurance that all other
-    trusted entities with which the agency interacts are also
-    implemented appropriately for the desired security level.
+-   RAs, CSPs, and Verifiers are trusted entities. Agencies implementing any of the above trusted entities have some assurance that all other trusted entities with which the agency interacts are also implemented appropriately for the desired security level.
 
--   The RP is not considered a trusted entity. However, in some
-    authentication systems the Verifier maintains a relationship with
-    the RP to facilitate secure communications and may employ security
-    controls which only attain their full value when the RP
-    acts responsibly. The subscriber also trusts the RP to properly
-    perform the requested service and to follow all relevant
-    privacy policy.
+-   The RP is not considered a trusted entity. However, in some authentication systems the Verifier maintains a relationship with the RP to facilitate secure communications and may employ security controls which only attain their full value when the RP acts responsibly. The subscriber also trusts the RP to properly perform the requested service and to follow all relevant privacy policy.
 
--   It is assumed that there exists a process of certification through
-    which agencies can obtain the above assurance for trusted entities
-    which they do not implement themselves.
+-   It is assumed that there exists a process of certification through which agencies can obtain the above assurance for trusted entities which they do not implement themselves.
 
--   A trusted entity is considered to be implemented appropriately if it
-    complies with the recommendations in this document and does not
-    behave maliciously.
+-   A trusted entity is considered to be implemented appropriately if it complies with the recommendations in this document and does not behave maliciously.
 
--   While it is generally assumed that trusted entities will not behave
-    maliciously, this document does contain some recommendations to
-    reduce and isolate any damage done by a malicious or negligent
-    trusted entity.
+-   While it is generally assumed that trusted entities will not behave maliciously, this document does contain some recommendations to
+    reduce and isolate any damage done by a malicious or negligent trusted entity.
 
 #### 2.6.2. SP 800-63-2
 
