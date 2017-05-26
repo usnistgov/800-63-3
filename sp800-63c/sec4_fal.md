@@ -32,7 +32,7 @@ Regardless of what is requested or required by the protocol, the FAL in use is e
 
 If the RP is using a front-channel presentation mechanism as defined in [Section 7.2](#front-channel) (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHOULD require FAL2 or greater in order to protect the information in the assertion from disclosure to the browser or other parties in the transaction other than the intended RP.
 
-In addition, the CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard.
+In addition, the IdP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard.
 
 ### 4.1. Key Management
 
