@@ -330,6 +330,9 @@ Presentation to the biometric data capture subsystem with the goal of interferin
 #### Presentation Attack Detection (PAD)
 Automated determination of a presentation attack. A subset of presentation attack determination methods, referred to as *liveness detection*, involve measurement and analysis of anatomical characteristics or involuntary or voluntary reactions, in order to determine if a biometric sample is being captured from a living subject present at the point of capture.
 
+#### Protected Session
+A session established on an authenticated protected channel.
+
 #### Pseudonym
 A name other than a legal name.
 
