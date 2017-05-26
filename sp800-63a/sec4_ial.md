@@ -14,7 +14,7 @@ The only outcome of identity proofing is to ensure that the applicant is who the
 2. Date of birth
 3. Home address
 
-It is permissible for the CSP to collect additional information in the process of identity proofing an applicant, provided validation and verification follow the requirements contained herein, and the applicant explicitly consents to the CSP collecting and storing the attributes.  
+This document also provides requirements for CSPs that will collect additional information used for purposes other than identity proofing.
 
 ### 4.1. Process Flow
 
