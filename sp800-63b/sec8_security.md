@@ -56,6 +56,7 @@ This document assumes that the subscriber is not colluding with the attacker who
 | | Malicious code on the endpoint causes authentication to other than the intended verifier. | Authentication is performed on behalf of an attacker rather than the subscriber.
 | | | A malicious app on the endpoint reads an out of band secret sent via SMS; the attacker uses the secret to authenticate.
 | | Malicious code on the endpoint compromises a multi-factor software cryptographic authenticator. | Malicious code proxies authentication or exports authenticator keys from the endpoint.
+| Unauthorized binding | Attacker is able to cause an authenticator under their control to be bound to subscriber account. | Attacker intercepts authenticator or provisioning key en route to subscriber.
 
 ### 8.2. Threat Mitigation Strategies
 Related mechanisms that assist in mitigating the threats identified above are summarized in [Table 8-2](#63bSec8-Table2).
@@ -93,6 +94,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Endpoint compromise | Use hardware authenticators that require physical action by the subscriber.
 | | Provide secure display of identity of verifier and RP.
 | | Maintain software-based keys in restricted-access storage.
+| Unauthorized binding | Use MitM-resistant protocols for provisioning of authenticators and associated keys.
 
 There are several other strategies that may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
 
