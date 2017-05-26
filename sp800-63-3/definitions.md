@@ -171,6 +171,9 @@ The process of establishing confidence in user identities presented digitally to
 #### Digital Signature
 An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation but not confidentiality protection.
 
+####Diversionary
+In regards to KBV, a multiple-choice question for which all answers provided are incorrect, requiring the applicant to select an option similar to 'none of the above'.
+
 #### Eavesdropping Attack
 An attack in which an attacker listens passively to the authentication protocol to capture information which can be used in a subsequent active attack to masquerade as the claimant.
 
@@ -463,6 +466,7 @@ A password based authentication protocol that allows a claimant to authenticate 
 |DNS|Domain Name Service|
 |EO|Executive Order|
 |FACT Act|Fair and Accurate Credit Transaction Act of 2003|
+|FEDRAMP|Federal Risk and Authorization Management Program|
 |FMR|False Match Rate|
 |FNMR|False Non-Match Rate|
 |FIPS|Federal Information Processing Standard|
