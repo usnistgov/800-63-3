@@ -35,19 +35,19 @@ The following provides a sample of how a CSP and an applicant interact during th
 	a. The CSP collects PII from the user, such as name, address, date of birth, email, and phone number.  
 	b. The CSP also collects two forms of identity evidence, such as a driver license and a passport. For example, using the camera of a laptop, the CSP can capture a photo of both sides of both pieces of identity evidence.  
 	c. The CSP asks the applicant for a photo of themselves to match to the license and passport.
-	
+
 2. Validation
 
 	a. The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information supplied by the applicant matches their records.  
 	b. The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.  
 	c. The CSP queries the issuing sources for the license and passport and validates the information matches.
-	
+
 3. Verification
 
 	a. The CSP matches the pictures on the license and the passport to the applicant picture and determines they match.    
 	b. The CSP sends an enrollment code to the validated phone number of the applicant, the user provides the enrollment code to the CSP, and the CSP confirms they match, verifying the user is possession and control of the validated phone number.  
 	c. The applicant has been successfully proofed.
-	
+
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
 
@@ -87,9 +87,9 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 	b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
 	c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
 	d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
-	
+
 13. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
-	
+
 ### 4.3. Identity Assurance Level 1
 
 1. A CSP that supports only IAL1 CSP SHALL NOT validate and verify attributes.
@@ -158,7 +158,7 @@ The CSP SHALL support In-person or remote identity proofing. The CSP SHOULD offe
 	d. If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.  
 	e. Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the Contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.  
 	f. The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a notification of proofing will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver license.  
-	
+
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, physical or digital.
 
 #### 4.4.1.7. Biometric Collection
@@ -255,11 +255,11 @@ _This section is informative._
 
 Requirement | IAL1 | IAL2 | IAL3
 ------------|-------|-------|-------
-Presence|No requirements|In-person and remote|In-person
-Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution. KBV may be used for added confidence.||
-Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>**OR**<br>One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence|One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence<br>**OR**<br>Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence
-Validation|No validation of evidence is required|- Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented; For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.|Same as IAL2.
-Verification| No verification of identity is required |- At a minimum, the applicant must be verified by a process that is able to achieve a strength of STRONG.|- At a minimum, the applicant must be verified by a process that is able to achieve a strength of SUPERIOR.<br>
-Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random alphanumeric characters SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the Contiguous United States.  <br> - The CSP SHALL ensure the enrollment code and notification of proofing are sent by different means.|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. - A notification of proofing SHALL be sent to the confirmed address of record.
-Biometric Collection|No|Yes|Yes|
-Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
+Presence|No requirements|In-person and unsupervised remote|In-person
+Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution<br><br>KBV may be used for added confidence| Same as IAL2
+Evidence|No identity evidence is collected| - One (1) piece of SUPERIOR or STRONG evidence depending on strength of original proof and validation occurs with issuing source; or<br><br>- Two (2) pieces of STRONG evidence, or <br><br> - One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence|- Two (2) pieces of SUPERIOR evidence, or<br><br> - One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br> - Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence
+Validation|No validation|Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented|Same as IAL2
+Verification| No verification |Verified by a process that is able to achieve a strength of STRONG.|Verified by a process that is able to achieve a strength of SUPERIOR.<br>
+Address Confirmation|No requirements for address confirmation|Required. Enrollment code sent to any address of record.  Notification sent by means different from enrollment code.|Required. Notification of proofing to postal address.
+Biometric Collection|No|Optional|Mandatory
+Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent federal or industry standard)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent federal or industry standard)
