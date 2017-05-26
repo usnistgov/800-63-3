@@ -413,19 +413,13 @@ Attestation information MAY be used as part of a verifier's risk-based authentic
 
 Verifier-impersonation attacks, sometimes referred to as "phishing attacks", refer to attempts by fraudulent verifiers and RPs to fool an unwary claimant into authenticating to an impostor website. In previous editions of SP 800-63, protocols that are resistant to verifier-impersonation attacks were also referred to as "strongly MitM resistant".
 
-Authentication protocols that are verifier impersonation resistant SHALL authenticate the verifier and either:
+An authentication protocol that is verifier impersonation resistant SHALL establish an authenticated protected channel with the verifier. It SHALL then  strongly and irreversibly bind a channel identifier that was negotiated in establishing the authenticated protected channel to the authenticator output, e.g., by signing the two values together using a private key controlled by the claimant for which the public key is known to the verifier. The verifier SHALL validate the signature or other information used to prove verifier-impersonation resistance. This prevents an impostor verifier, even one that has obtained a certificate representing the actual verifier, from replaying that authentication on a different authenticated protected channel.
 
-1. Strongly and irreversibly bind the authenticator output to the public key of the certificate presented by the verifier to which it is sent, or to that verifier's authenticated hostname or domain name; or
+Approved cryptographic algorithms SHALL be used to establish verifier impersonation resistance where it is required. Keys used for this purpose SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication).
 
-2. Determine whether the verifier's authenticated hostname or domain name is on a list of trusted verifiers, and release the authenticator output only to a verifier on that list.
+One example of a verifier-impersonation-resistant authentication protocol is client-authenticated TLS, because the client signs the authenticator output along with earlier messages from the protocol that are unique to the particular TLS connection being negotiated.
 
-One example of the former class of verifier-impersonation-resistant authentication protocols is client-authenticated TLS, because the client signs the authenticator output along with earlier messages from the protocol that are unique to the particular TLS connection being negotiated. Other protocols that MAY be used are techniques that irreversibly include the verifier's hostname or domain in the generation of the authenticator output, making that authenticator output unusable by a fraudulent verifier (the attacker) if proxied to the intended verifier.
-
-The latter class of verifier-impersonation-resistant protocols relies on access control to release the authenticator output only to trusted verifiers.
-
-Authentication of the hostname or domain name of the verifier MAY use a certificate chain or other certification path leading to a trusted root.
-
-In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and OTP authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
+In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and OTP authenticators, SHALL NOT be considered verifier impersonation resistant because the manual entry does not bind the authenticator output to the specific session being authenticated. An impostor (MitM) verifier could then replay the OTP authenticator output to the verifier and authenticate itself.
 
 #### <a name="csp-verifier"></a>5.2.6. Verifier-CSP Communications
 
