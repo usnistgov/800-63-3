@@ -65,10 +65,11 @@ Frequently, parties in a dynamic registration model do not know each other ahead
 
 #### <a name="authorities"></a> 5.1.3. Federation Authorities
 
-Some federated parties defer to an authority known as a *federation authority* to assist in making federation decisions and to establish the working relationship between parties. In this model, the federation authority generally conducts some level of vetting on each party in the federation to verify compliance with predetermined security and integrity standards, but the level of vetting, if it occurs at all, is unique to the use cases and models employed within the federation.
+Some federated parties defer to an authority known as a *federation authority* to assist in making federation decisions and to establish the working relationship between parties. In this model, the federation authority generally conducts some level of vetting on each party in the federation to verify compliance with predetermined security and integrity standards, but the level of vetting, if it occurs at all, is unique to the use cases and models employed within the federation. This vetting is depicted in the left side of [Figure 5-4](#63cSec5-Figure4).
 
+Federation authorities approve identity providers to operate at certain IALs, AALs, and FALs. This information is used by relying parties as shown in the right side of [Figure 5-4](#63cSec5-Figure4) to determine which identity providers meet their requirements.
 
-Federation authorities SHALL establish parameters regarding expected and acceptable IALs and AALs in connection with the federated relationships they enable. Federation authorities SHALL individually vet each participant in the federation to determine that they adhere to their expected security, identity, and privacy standards. 
+Federation authorities SHALL establish parameters regarding expected and acceptable IALs, AALs, and FALs in connection with the federated relationships they enable. Federation authorities SHALL individually vet each participant in the federation to determine that they adhere to their expected security, identity, and privacy standards. 
 
 <a name="63cSec5-Figure4"></a>
 
