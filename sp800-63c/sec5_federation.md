@@ -38,6 +38,15 @@ In the manual registration model, the IdP and RP manually provision configuratio
 
 </div>
 
+As shown in [Figure 5-2](#63cSec5-Figure2), manual registration involves three steps: 
+
+1. The system administrator of the RP shares the RP's attributes with the system administrator the IdP, who associates those attributes with the RP.
+
+2. The system administrator of the IdP shares the IdP's attributes with the system administrator the RP, who associates those attributes with the IdP.
+
+3. The IdP and RP communicate using a standard federation protocol.
+
+
 IdPs and RPs MAY act as their own authorities of who to federate with or MAY externalize those authority decisions to an external party as in [Section 5.1.3](#authorities).
 
 Protocols requiring the transfer of keying information SHALL use a secure method to exchange keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
