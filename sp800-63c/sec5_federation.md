@@ -57,6 +57,16 @@ In the dynamic registration model of federation, it is possible for relationship
 
 </div>
 
+As shown in [Figure 5-3](#63cSec5-Figure3), dynamic registration involves four steps: 
+
+1. Discover. The RP goes to a well-known location at the IdP to find the IdP's metadata.
+
+2. Validate. The RP and IdP determine each other's validity. This can be accomplished through keying information, metadata, software statements, or other means.
+
+3. Register RP attributes. The RP sends its attributes to the IdP. The IdP associates those attributes with the RP.
+
+4. Federation Protocol. The IdP and RP communicate using a standard federation protocol.
+
 Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
 IdPs SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit which IdPs it is willing to accept identity information from.
