@@ -56,7 +56,7 @@ A complete statement asserting a property of a subscriber, independent of format
 See [Authentication](#authentication).
 
 #### Authenticated Protected Channel
-An encrypted communication channel that uses approved cryptography where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) BCP 195 is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the authentication of the client by the server.
+An encrypted communication channel that uses approved cryptography where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) BCP 195 is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the authentication of the client by the server. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
 
 #### <a name="authentication"></a> Authentication
 Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system.

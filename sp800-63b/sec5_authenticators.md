@@ -421,6 +421,8 @@ One example of the former class of verifier-impersonation-resistant authenticati
 
 The latter class of verifier-impersonation-resistant protocols relies on access control to release the authenticator output only to trusted verifiers.
 
+Authentication of the hostname or domain name of the verifier MAY use a certificate chain or other certification path leading to a trusted root.
+
 In contrast, authenticators that involve the manual entry of an authenticator output, such as out of band and OTP authenticators, SHALL NOT be considered verifier impersonation resistant because they assume the vigilance of the claimant to determine that they are communicating with the intended verifier.
 
 #### <a name="csp-verifier"></a>5.2.6. Verifier-CSP Communications
