@@ -48,7 +48,7 @@ The CSP SHOULD employ appropriately-tailored security controls from the low base
 
 #### <a name="aal1records"></a> 4.1.5. Records Retention Policy
 
-The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
 ### 4.2. Authenticator Assurance Level 2
 
@@ -98,7 +98,7 @@ The CSP SHOULD employ appropriately-tailored security controls from the moderate
 
 #### <a name="aal2records"></a> 4.2.5. Records Retention Policy
 
-CSPs shall comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy. 
 
 ### 4.3. Authenticator Assurance Level 3
 
@@ -138,7 +138,7 @@ The CSP SHOULD employ appropriately-tailored security controls from the high bas
 
 #### <a name="aal3records"></a> 4.3.5. Records Retention Policy
 
-The CSP SHALL comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy. 
 
 ### <a name="aal_privacy"></a>4.4. Privacy Requirements
 
