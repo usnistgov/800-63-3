@@ -16,6 +16,8 @@
 
 <a name="RFC5280"></a>[RFC 5280] IETF, *Internet X.509 Public Key Infrastructure Certificate and CRL Profile*, available at: <https://tools.ietf.org/html/rfc5280/>.
 
+<a name="RFC6238"></a>[RFC 6238] IETF, *TOTP: Time-Based One-Time Password Algorithm*, available at: <https://tools.ietf.org/html/rfc6238>.
+
 <a name="RFC6960"></a>[RFC 6960] IETF, *X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP*, available at: <https://tools.ietf.org/html/rfc6960/>.
 
 <a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
