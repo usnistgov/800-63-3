@@ -32,9 +32,9 @@ An effective notice will take into account user experience design standards and 
 
 ### 8.3. Use Limitation
 
-Section 4.2, requirement (5) does not permit the CSP to use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, authorization or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses.
+Section 4.2, requirement (5) does not permit the CSP to use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, authorization or attribute assertions, related fraud mitigation, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses.
 
-Agencies should consult their SAOP if there are questions about whether proposed agency uses fall within the scope of these uses. This notice should follow the same principles as described in [Section 8.2. Notice and Consent](#consent) and should not be rolled up into a legalistic privacy policy or general terms and conditions.  Rather if there are uses outside the bounds of these explicit purposes, the subscriber should be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.  The CSP cannot make acceptance by the subscriber of additional uses a condition of providing identity proofing services. 
+Consult your SAOP if there are questions about whether proposed uses fall within the scope of these permitted uses. This notice should follow the same principles as described in [Section 8.2. Notice and Consent](#consent) and should not be rolled up into a legalistic privacy policy or general terms and conditions.  Rather if there are uses outside the bounds of these explicit purposes, the subscriber should be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.  The CSP cannot make acceptance by the subscriber of additional uses a condition of providing identity proofing services. 
 
 ### 8.4. Redress
 
