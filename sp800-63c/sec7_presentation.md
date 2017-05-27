@@ -90,5 +90,5 @@ Note that the IdP may have access to information that may be useful to the RP in
 
 Additional attributes about the user MAY be included outside of the assertion itself as part of a separate authorized request from the RP to the IdP. The authorization for access to these attributes MAY be issued alongside the assertion itself. Splitting user information in this manner can aid in protecting user privacy and allow for limited disclosure of identifying attributes on top of the essential information in the authentication assertion itself.
 
-The RP SHALL, where feasible, request attribute references rather than full attribute values. The IdP SHALL support attribute references.  
+The RP SHALL, where feasible, request attribute references rather than full attribute values. The IdP SHALL support attribute references. See Section 9.3 for further privacy considerations about these requirements.
 
