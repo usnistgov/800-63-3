@@ -14,15 +14,16 @@ Section 4.2, requirement (3) permits only the collection of PII necessary to val
 
 #### 8.1.1. Social Security Numbers
 
-Section 4.2, requirement (2) does not permit the CSP to collect the SSN unless it is necessary for performing identity resolution because it cannot be accomplished by collection of another attribute or combination of attributes.  Unnecessary use of the SSN may be particularly vulnerable to misuse and can place the applicant at risk of harm such as through identity theft. The SSN may serve to achieve identity resolution for RPs, in particular federal agencies, that use SSNs to correlate a subscriber to existing records.  Thus, this document recognizes the role of the SSN as an identifier and makes appropriate allowance for its use.  
+Section 4.2, requirement (2) does not permit the CSP to collect the SSN unless it is necessary for performing identity resolution because it cannot be accomplished by collection of another attribute or combination of attributes.  Overreliance on the SSN can contribute to misuse and place the applicant at risk of harm such as through identity theft. Nonetheless, the SSN may serve to achieve identity resolution for RPs, in particular federal agencies, that use SSNs to correlate a subscriber to existing records.  Thus, this document recognizes the role of the SSN as an identifier and makes appropriate allowance for its use.  
 
 > Note: Evidence requirements at the higher IALs preclude the usage of the SSN or the Social Security Card as acceptable identity evidence.  
 
-The initial requirement in [Executive Order (EO) 9397](#9397) for all federal agencies to use the SSN as a primary means of identification for individuals working for, with, or conducting business with their agency, has since been eliminated. Accordingly, EO 9397 cannot be referenced as the sole authority establishing the collection of the SSN as necessary. 
+Prior to collecting the SSN for identity proofing, organizations need to consider any legal obligation to collect the SSN, the necessity of using the SSN for interoperability with third party processes and systems, or operational requirements. Operational requirements can be demonstrated by an inability to alter systems, processes, or forms due to cost or unacceptable levels of risk. Operational necessity is not justified by ease of use or unwillingness to change.
 
-Prior to collecting the SSN for identity proofing, organizations should consider any legal obligation to collect the SSN, the necessity of using the SSN for interoperability with third party processes and systems, or operational requirements. Operational requirements should be demonstrated by an inability to alter systems, processes, or forms due to cost or unacceptable levels of risk. Operational necessity should not be justified by ease of use or unwillingness to change. 
+For federal agencies, the initial requirement in [Executive Order (EO) 9397](#9397) to use the SSN as a primary means of identification for individuals working for, with, or conducting business with their agency, has since been eliminated. Accordingly, EO 9397 cannot be referenced as the sole authority establishing the collection of the SSN as necessary. 
+ 
 
-Federal agencies should review any decision to collect the SSN relative to their obligation to reduce the collection and unnecessary use of SSNs under Office of Management and Budget policy.  
+Federal agencies need to review any decision to collect the SSN relative to their obligation to reduce the collection and unnecessary use of SSNs under Office of Management and Budget policy.  
 
 ### <a name="consent"></a>8.2. Notice and Consent
 
