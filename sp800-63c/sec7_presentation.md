@@ -22,6 +22,12 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 
 </div>
 
+As shown in [Figure 7-1](#63cSec7-Figure1), the back-channel presentation model consists of three steps:
+
+1. The IdP sends an assertion reference to the subscriber through the front channel.
+2. The subscriber sends the assertion reference to the RP through the front channel.
+3. The RP presents the assertion reference and its RP credentials to the IdP through the back channel. The IdP validates the credentials and returns the assertion.
+
 The assertion reference:
 
  1. SHALL be limited to use by a single RP.
