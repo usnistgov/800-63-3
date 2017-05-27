@@ -86,9 +86,9 @@ Note that in a federation proxy described in [Section 5.1.4](#proxied), the IdP 
 
 Communications between the IdP and the RP SHALL be protected in transit using an authenticated protected channel. Communications between the subscriber and either the IdP or the RP (usually through a browser) SHALL be made using an authenticated protected channel.
 
-Note that the IdP may have access to information that may be useful to the RP in enforcing security policies, such as device identity, location, system health checks, and configuration management. If so, it may be a good idea to pass this information along to the RP within the bounds of the subscriber's privacy preferences.
+Note that the IdP may have access to information that may be useful to the RP in enforcing security policies, such as device identity, location, system health checks, and configuration management. If so, it may be a good idea to pass this information along to the RP within the bounds of the subscriber's privacy preferences described in [Section 9.2](#notice).
 
 Additional attributes about the user MAY be included outside of the assertion itself as part of a separate authorized request from the RP to the IdP. The authorization for access to these attributes MAY be issued alongside the assertion itself. Splitting user information in this manner can aid in protecting user privacy and allow for limited disclosure of identifying attributes on top of the essential information in the authentication assertion itself.
 
-The RP SHALL, where feasible, request attribute references rather than full attribute values. The IdP SHALL support attribute references.  
+The RP SHALL, where feasible, request attribute references rather than full attribute values as described in [Section 9.3](#minimization). The IdP SHALL support attribute references.  
 
