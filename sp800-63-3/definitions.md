@@ -56,7 +56,7 @@ A complete statement asserting a property of a subscriber, independent of format
 See [Authentication](#authentication).
 
 #### Authenticated Protected Channel
-An encrypted communication channel that uses approved cryptography where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) BCP 195 is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the authentication of the client by the server.
+An encrypted communication channel that uses approved cryptography where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) BCP 195 is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the authentication of the client by the server. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
 
 #### <a name="authentication"></a> Authentication
 Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system.
@@ -329,6 +329,9 @@ Presentation to the biometric data capture subsystem with the goal of interferin
 
 #### Presentation Attack Detection (PAD)
 Automated determination of a presentation attack. A subset of presentation attack determination methods, referred to as *liveness detection*, involve measurement and analysis of anatomical characteristics or involuntary or voluntary reactions, in order to determine if a biometric sample is being captured from a living subject present at the point of capture.
+
+#### Protected Session
+A session established on an authenticated protected channel.
 
 #### Pseudonym
 A name other than a legal name.
