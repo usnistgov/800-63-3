@@ -22,7 +22,7 @@ The initial requirement in [Executive Order (EO) 9397](#9397) for all federal ag
 
 Prior to collecting the SSN for identity proofing, organizations should consider any legal obligation to collect the SSN, the necessity of using the SSN for interoperability with third party processes and systems, or operational requirements. Operational requirements should be demonstrated by an inability to alter systems, processes, or forms due to cost or unacceptable levels of risk. Operational necessity should not be justified by ease of use or unwillingness to change. 
 
-Federal agencies should review any decision to collect the SSN relative to their obligation to reduce the collection and unnecessary use of SSNs under Office of Management and Budget Memorandum M-07-16, "Safeguarding Against and Responding to the Breach of Personally Identifiable Information," May 22, 2007, which requires agencies to review their use of social security numbers in agency systems and programs to identify instances in which collection or use of the social security number is superfluous.  
+Federal agencies should review any decision to collect the SSN relative to their obligation to reduce the collection and unnecessary use of SSNs under Office of Management and Budget policy.  
 
 ### <a name="consent"></a>8.2. Notice and Consent
 
