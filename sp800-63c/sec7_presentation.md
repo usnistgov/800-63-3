@@ -16,11 +16,17 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 <a name="63cSec7-Figure1"></a>
 
 <div class="text-center" markdown="1">
-![Figure 1: Back-channel presentation](sp800-63c/media/indirect.png)
+![Figure 1: Back-channel presentation](sp800-63c/media/back-channel.png)
 
 **Figure 7-1. Back-channel Presentation**
 
 </div>
+
+As shown in [Figure 7-1](#63cSec7-Figure1), the back-channel presentation model consists of three steps:
+
+1. The IdP sends an assertion reference to the subscriber through the front channel.
+2. The subscriber sends the assertion reference to the RP through the front channel.
+3. The RP presents the assertion reference and its RP credentials to the IdP through the back channel. The IdP validates the credentials and returns the assertion.
 
 The assertion reference:
 
@@ -58,7 +64,7 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 <a name="63cSec7-Figure2"></a>
 
 <div class="text-center" markdown="1">
-![Figure 2: Front-channel presentation](sp800-63c/media/direct.png)
+![Figure 2: Front-channel presentation](sp800-63c/media/front-channel.png)
 
 
 **Figure 7-2. Front-channel Presentation**
