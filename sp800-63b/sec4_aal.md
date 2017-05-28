@@ -46,9 +46,9 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
-#### <a name="aal1records"></a> 4.1.5. Records Retention
+#### <a name="aal1records"></a> 4.1.5. Records Retention Policy
 
-The CSP shall comply with their respective records retention policies in accordance with applicable laws and regulations. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
 ### 4.2. Authenticator Assurance Level 2
 
@@ -96,9 +96,9 @@ Reauthentication of a session that has not yet reached its time limit MAY requir
 
 The CSP SHALL employ appropriately-tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
-#### <a name="aal2records"></a> 4.2.5. Records Retention
+#### <a name="aal2records"></a> 4.2.5. Records Retention Policy
 
-CSPs SHALL comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy. 
 
 ### 4.3. Authenticator Assurance Level 3
 
@@ -136,15 +136,15 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 The CSP SHALL employ appropriately-tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
-#### <a name="aal3records"></a> 4.3.5. Records Retention
+#### <a name="aal3records"></a> 4.3.5. Records Retention Policy
 
-The CSP SHALL comply with their respective records retention policies in accordance with whatever laws and regulations apply to those entities. If the CSP opts to retain records in the absence of any legal requirements, the CSP SHALL conduct a privacy risk assessment to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy. 
 
 ### <a name="aal_privacy"></a>4.4. Privacy Requirements
 
 The CSP SHALL employ appropriately-tailored privacy controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard.
 
-CSPs SHALL NOT use or disclose information about subscribers for any purpose other than conducting authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. Care SHALL be taken to ensure that use of such information is limited to its original purpose for collection. If the use of such information does not fall within uses related to authentication or to comply with law or legal process, the CSP SHALL provide notice and obtain consent from the subscriber.  This notice SHOULD follow the same principles as described in *Notice and Consent* in [[SP 800-63A Section 8.2]](sp800-63a.html#consent) and SHOULD not be rolled up into a legalistic privacy policy or general terms and conditions. Rather, if there are uses outside the bounds of these explicit purposes, the subscriber SHOULD be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.
+CSPs SHALL NOT use or disclose information about subscribers for any purpose other than conducting authentication, related fraud mitigation, or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs MAY NOT make consent a condition of the service. Care SHALL be taken to ensure that use of such information is limited to its original purpose for collection. If the use of such information does not fall within uses related to authentication or to comply with law or legal process, the CSP SHALL provide notice and obtain consent from the subscriber.  This notice SHOULD follow the same principles as described in *Notice and Consent* in [[SP 800-63A Section 8.2]](sp800-63a.html#consent) and SHOULD not be rolled up into a legalistic privacy policy or general terms and conditions. Rather, if there are uses outside the bounds of these explicit purposes, the subscriber SHOULD be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.
 
 Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the authentication service:
 
@@ -178,6 +178,9 @@ Requirement | AAL1 | AAL2 | AAL3
 **Verifier compromise resistance** | Not required | Not required | Required |
 **Replay resistance** | Not required | Required | Required |
 **Authentication intent** | Not required | Recommended | Required |
+**Records Retention Policy** | Required | Required | Required |
+**Privacy Controls** | Required | Required | Required |
+
 
 
 
