@@ -97,7 +97,7 @@ described in the last subsection.
     checks the digital signature to verify that it was issued by a
     legitimate IdP. The key used is stored in suitably secure storage available to the application 
 	(e.g., keychain storage, trusted platform module, secure element) and is communicated to the RP in 
-	a secure manner (e.g., through a trusted out-of-band mechanism or delivery over a secure protected channel).
+	a secure manner (e.g., through a trusted out-of-band mechanism or delivery over an authenticated protected channel).
 
 	2.  The assertion is sent over an authenticated protected channel such as TLS. In
     order to protect the integrity of assertions from malicious attack,
@@ -112,7 +112,7 @@ described in the last subsection.
     authenticated RP. Audience restrictions are used to restrict the assertion to the intended RP.  The IdP also signs the assertion.
 	The key used is stored in suitably secure storage available to the application 
 	(e.g., keychain storage, trusted platform module, secure element) and is communicated to the RP in 
-	a secure manner (e.g., through a trusted out-of-band mechanism or delivery over a secure protected channel).
+	a secure manner (e.g., through a trusted out-of-band mechanism or delivery over an authenticated protected channel).
 
 	2.  Assertions are signed by the IdP and encrypted for
     a specific RP.  It should be
@@ -123,9 +123,9 @@ described in the last subsection.
     manufacture or modification may therefore be described as a mutually authenticated protected channel or equivalent between the IdP
     and the RP. The keys used are stored in suitably secure storage available to the application 
 	(e.g., keychain storage, trusted platform module, secure element), the IdP's key is communicated to the RP in a secure manner
-    (e.g., through a trusted out-of-band mechanism or delivery over a secure protected channel)
+    (e.g., through a trusted out-of-band mechanism or delivery over an authenticated protected channel)
  	and the RP's key is communicated to the IdP in 
-	a secure manner (e.g., through a trusted out-of-band mechanism or delivery over a secure protected channel).
+	a secure manner (e.g., through a trusted out-of-band mechanism or delivery over an authenticated protected channel).
 
 
 -   *Assertion repudiation by the IdP* - To mitigate this threat,
