@@ -16,6 +16,8 @@
 
 <a name="RFC5280"></a>[RFC 5280] IETF, *Internet X.509 Public Key Infrastructure Certificate and CRL Profile*, available at: <https://tools.ietf.org/html/rfc5280/>.
 
+<a name="RFC6238"></a>[RFC 6238] IETF, *TOTP: Time-Based One-Time Password Algorithm*, available at: <https://tools.ietf.org/html/rfc6238>.
+
 <a name="RFC6960"></a>[RFC 6960] IETF, *X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP*, available at: <https://tools.ietf.org/html/rfc6960/>.
 
 <a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
@@ -48,11 +50,20 @@
 
 <a name="shannon"></a>[Shannon] Shannon, Claude E. "A Mathematical Theory of Communication," *Bell System Technical Journal*, v. 27, pp. 379-423, 623-656, July, October, 1948.
 
-<a name="balloon"></a>[BALLOON] Boneh, Dan, Corrigan-Gibbs, Henry,  and Stuart Schechter, "Balloon Hashing: A Memory-Hard Function Providing Provable Protection Against Sequential Attacks," *Asiacrypt 2016*, October, 2016, available at: <https://eprint.iacr.org/2016/027>.
+<a name="balloon"></a>[BALLOON] Boneh, Dan, Corrigan-Gibbs, Henry,  and Stuart Schechter, "Balloon Hashing: A Memory-Hard Function Providing Provable Protection Against Sequential Attacks," *Asiacrypt 2016*, October, 2016. Available at: <https://eprint.iacr.org/2016/027>.
 
-<a name="blacklists"></a>[Blacklists] Habib, H., Colnago, J., Melicher, W., Ur, B., Segreti, S., Bauer, L., Christin, N., and L. Cranor. *Password Creation in the Presence of Blacklists*. USEC 2017, February 26, 2017, San Diego, CA. Available at: <https://www.internetsociety.org/sites/default/files/usec2017_01_3_Habib_paper.pdf>
+<a name="blacklists"></a>[Blacklists] Habib, Hana, Jessica Colnago, William Melicher, Blase Ur, Sean Segreti, Lujo Bauer, Nicolas Christin, and Lorrie Cranor. "Password Creation in the Presence of Blacklists," 2017. Available at: <https://www.internetsociety.org/sites/default/files/usec2017_01_3_Habib_paper.pdf>
+ 
+<a name="composition"></a>[Composition] Komanduri, Saranga, Richard Shay, Patrick Gage Kelley, Michelle L Mazurek, Lujo Bauer, Nicolas Christin, Lorrie Faith Cranor, and Serge Egelman. “Of Passwords and People: Measuring the Effect of Password-Composition Policies.” In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 2595–2604. ACM, 2011. Available at: <https://www.ece.cmu.edu/~lbauer/papers/2011/chi2011-passwords.pdf>.
 
-<a name="meters"></a>[Meters] de Carné de Carnavalet, Xavier and Mohammad Mannan. *From Very Weak to Very Strong: Analyzing Password-Strength Meters*. In Proceedings of the Network and Distributed System Security Symposium (NDSS), 2014. Available at: <http://www.internetsociety.org/sites/default/files/06_3_1.pdf>
+<a name="meters"></a>[Meters] de Carné de Carnavalet, Xavier and Mohammad Mannan. "From Very Weak to Very Strong: Analyzing Password-Strength Meters." In Proceedings of the Network and Distributed System Security Symposium (NDSS), 2014. Available at: <http://www.internetsociety.org/sites/default/files/06_3_1.pdf>
+
+<a name="persistence"></a>[Persistence] herley, cormac, and Paul van Oorschot. "A Research Agenda Acknowledging the Persistence of Passwords," IEEE Security&Privacy Magazine, 2012. Available at: <http://research.microsoft.com/apps/pubs/default.aspx?id=154077>.
+
+<a name="policies"></a>[Policies] Weir, Matt, Sudhir Aggarwal, Michael Collins, and Henry Stern. "Testing Metrics for Password Creation Policies by Attacking Large Sets of Revealed Passwords." In Proceedings of the 17th ACM Conference on Computer and Communications Security, 162–175. CCS ’10. New York, NY, USA: ACM, 2010. doi:10.1145/1866307.1866327.
+
+<a name="strength"></a>[Strength] Kelley, Patrick Gage, Saranga Komanduri, Michelle L Mazurek, Richard Shay, Timothy Vidas, Lujo Bauer, Nicolas Christin, Lorrie Faith Cranor, and Julio Lopez. “Guess Again (and Again and Again): Measuring Password Strength by Simulating Password-Cracking Algorithms.” In Security and Privacy (SP), 2012 IEEE Symposium On, 523–537. IEEE, 2012. Available at: <http://ieeexplore.ieee.org/iel5/6233637/6234400/06234434.pdf>.
+
 
 ### 11.2. NIST Special Publications
 
