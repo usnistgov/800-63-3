@@ -44,7 +44,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.1.4. Security Controls
 
-The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
+The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
 #### <a name="aal1records"></a> 4.1.5. Records Retention Policy
 
@@ -84,7 +84,7 @@ Verifiers operated by government agencies at AAL2 SHALL be validated to meet the
 
 When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked, nor whether the unlock process met the requirements for the relevant authenticator type.
 
-When a biometric factor is used in authentication at AAL2, the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in Section [5.2.3](#biometric_use).
+When a biometric factor is used in authentication at AAL2, the performance requirements stated in Section [5.2.3](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
 
 #### <a name="aal2reauth"></a>4.2.3. Reauthentication
 
@@ -94,7 +94,7 @@ Reauthentication of a session that has not yet reached its time limit MAY requir
 
 #### 4.2.4. Security Controls
 
-The CSP SHOULD employ appropriately-tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the moderate baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
 
 #### <a name="aal2records"></a> 4.2.5. Records Retention Policy
 
@@ -134,7 +134,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.3.4. Security Controls
 
-The CSP SHOULD employ appropriately-tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
 #### <a name="aal3records"></a> 4.3.5. Records Retention Policy
 

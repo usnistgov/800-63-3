@@ -27,7 +27,7 @@ The following table states which sections of the document are normative and whic
 |3. Definitions and Abbreviations|Informative|
 |4. Identity Assurance Level Requirements|Normative|
 |5. Identity Resolution, Validation, and Verification|Normative|
-|6. Derived Identity|Normative|
+|6. Derived Credentials|Normative|
 |7. Threats and Security Considerations|Informative|
 |8. Privacy Considerations|Informative|
 |9. Usability Considerations|Informative|
@@ -35,7 +35,7 @@ The following table states which sections of the document are normative and whic
 
 ## 2.1. Expected Outcomes of Identity Proofing
 
-The objective of identity proofing is to:  
+When a subject is identity proofed, the expected outcomes are:  
 
 * Resolve a claimed identity to a single, unique identity within the context of the population of users the CSP serves.
 * Validate that all supplied evidence is correct and genuine (e.g., not counterfeit or misappropriated).
@@ -46,7 +46,7 @@ The objective of identity proofing is to:
 
 Assurance in a subscriber's identity is described using one of three IALs: 
 
-**IAL1** - There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as self-asserted.
+**IAL1** - There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as self-asserted. Self-asserted attributes are neither validated or verified.
 
 **IAL2** - Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity. IAL2 introduces the need for either remote or physically-present identity proofing. Attributes could be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes. A CSP that supports IAL2 can support IAL1 transactions if the user consents.
 

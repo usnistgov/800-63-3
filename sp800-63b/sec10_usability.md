@@ -119,7 +119,7 @@ Out of band authentication requires users have access to a primary and secondary
 
 Usability considerations for typical usage:
 
-* Notify users of the receipt of a secret on a locked device. However, if the user locked the out of band device, the user is required to authenticate to the device to access the secret (so that the secret is not displayed on a locked device screen).
+* Notify users of the receipt of a secret on a locked device. However, if the out of band device is locked, authentication to the device should be required to access the secret (so that the secret is not displayed on a locked device screen).
 
 * Depending on the implementation, consider form-factor constraints as they are particularly problematic when users must enter text on mobile devices. Providing larger touch areas will improve usability for entering secrets on mobile devices.
 

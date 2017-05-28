@@ -22,11 +22,17 @@
 
 <a name="ICAM"></a>[ICAM] National Security Systems and Identity, Credential and Access Management Sub-Committee Focus Group, Federal CIO Council, *ICAM Lexicon*, Version 0.5, March 2011.
 
+<a name="FEDRAMP"></a>[FEDRAMP] General Services Administration, *Federal Risk and Authorization Management Program*, available at: <https://www.fedramp.gov/>.
+
 <a name="ISOIEC2382-37"></a>[ISO/IEC 2382-37] International Standards Organization, *Information technology — Vocabulary — Part 37: Biometrics*, 2017, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c066693_ISO_IEC_2382-37_2017.zip>.
 
 <a name="ISOIEC10646"></a>[ISO/IEC 10646] International Standards Organization, *Universal Coded Character Set*, 2014, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c063182_ISO_IEC_10646_2014.zip>.
 
 <a name="ISO24745"></a>[ISO/IEC 24745] International Standards Organization, *Information technology -- Security techniques -- Biometric information protection*, 2011, available at: <http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=52946>.
+
+<a name="ISOIEC30107-1"></a>[ISO/IEC 30107-1] International Standards Organization, *Information technology — Biometric presentation attack detection — Part 1: Framework*, 2016, available at: <http://standards.iso.org/ittf/PubliclyAvailableStandards/c053227_ISO_IEC_30107-1_2016.zip>.
+
+<a name="ISOIEC30107-3"></a>[ISO/IEC 30107-3] International Standards Organization, *Information technology — Biometric presentation attack detection — Part 3: Testing and reporting*, 2017.
 
 <a name="OWASP-XSS-prevention"></a>[OWASP-XSS-prevention] Open Web Application Security Project, *XSS (Cross Site Scripting) Prevention Cheat Sheet*, available at: <https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet>.
 
@@ -43,6 +49,10 @@
 <a name="shannon"></a>[Shannon] Shannon, Claude E. "A Mathematical Theory of Communication," *Bell System Technical Journal*, v. 27, pp. 379-423, 623-656, July, October, 1948.
 
 <a name="balloon"></a>[BALLOON] Boneh, Dan, Corrigan-Gibbs, Henry,  and Stuart Schechter, "Balloon Hashing: A Memory-Hard Function Providing Provable Protection Against Sequential Attacks," *Asiacrypt 2016*, October, 2016, available at: <https://eprint.iacr.org/2016/027>.
+
+<a name="blacklists"></a>[Blacklists] Habib, H., Colnago, J., Melicher, W., Ur, B., Segreti, S., Bauer, L., Christin, N., and L. Cranor. *Password Creation in the Presence of Blacklists*. USEC 2017, February 26, 2017, San Diego, CA. Available at: <https://www.internetsociety.org/sites/default/files/usec2017_01_3_Habib_paper.pdf>
+
+<a name="meters"></a>[Meters] de Carné de Carnavalet, Xavier and Mohammad Mannan. *From Very Weak to Very Strong: Analyzing Password-Strength Meters*. In Proceedings of the Network and Distributed System Security Symposium (NDSS), 2014. Available at: <http://www.internetsociety.org/sites/default/files/06_3_1.pdf>
 
 ### 11.2. NIST Special Publications
 
