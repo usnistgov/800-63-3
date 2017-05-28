@@ -36,6 +36,8 @@ If the RP is using a front-channel presentation mechanism as defined in [Section
 
 At any FAL, the IdP SHALL ensure that an RP is unable to impersonate the IdP at another RP by protecting the assertion with a signature and key using approved cryptography. If the assertion is protected by a digital signature using an asymmetric key, the IdP MAY use the same public and private key pair to sign assertions to multiple RPs. The IdP MAY publish its public key in a verifiable fashion, such as at an HTTPS-protected URL at a well-known location. If the assertion is protected by a MAC using a shared key, the IdP SHALL use a different shared key for each RP.
 
+Keys used for signing or encrypting assertions SHALL be protected by mechanisms validated at [[FIPS 140]](#FIPS140) Level 1 or higher.
+
 ### 4.2. <a name="runtime-decisions"></a>Runtime Decisions
 
 The fact that parties have federated SHALL NOT be interpreted as permission to pass information. The decision of whether an authentication can occur or attributes are passed can be determined by the use of a whitelist, a blacklist, or a runtime decision by an authorized party.
