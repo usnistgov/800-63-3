@@ -20,7 +20,9 @@ This recommendation provides agencies technical guidelines to allow a subject to
 
 This document suite describes the risk management processes for selecting appropriate digital identity services, and the details for implementing identity assurance, authenticator assurance, and federation assurance levels based on risk. Risk assessment guidance in this 800-63 suite supplements the *NIST Risk Management Framework* [[NIST RMF]](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies. Rather, requirements contained herein provide specific guidance related to digital identity risk while executing all relevant RMF lifecycle phases.
 
-These guidelines support the mitigation of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included.  [Section 5, Digital Identity Risk Management](#sec5) provides details on the risk assessment process. [Section 6, Selecting Assurance Levels](#sec6) combines the results of the risk assessment with additional context to support agency selection of the appropriate IAL, AAL, and FAL combinations based on risk.
+Digital authentication supports privacy protection by mitigating risks to unauthorized access to individuals' information. At the same time, because identity proofing, authentication, authorization, and federation involve the processing of individuals' information, these functions can also create privacy risks. These guidelines therefore include privacy requirements and considerations to help mitigate potential privacy risks arising from these activities.
+
+These guidelines support the mitigation of the negative impacts induced by an authentication error by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, a third component, *Federation Assurance Level (FAL)*, is included.  [Section 5, Digital Identity Risk Management](#sec5) provides details on the risk assessment process. [Section 6, Selecting Assurance Levels](#sec6) combines the results of the risk assessment with additional context to support agency selection of the appropriate IAL, AAL and FAL combinations based on risk.
 
 These guidelines do not expect a composite level of assurance (LOA) in the context of a single ordinal that drives all implementation-specific requirements. Rather, by combining appropriate risk management for business, security, and privacy side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options. Specifically, this document does not recognize the four LOA model previously used by federal agencies, instead requiring agencies to individually select levels corresponding to each function being performed. While many systems will have the same numerical level for each IAL, AAL, and FAL, this is not a requirement, and agencies should not assume they will be the same in any given system or application.
 
@@ -65,7 +67,29 @@ These guidelines primarily focus on agency services that interact with the non-f
 
 ### 2.2. Considerations, Other Requirements, and Flexibilities
 
-Agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy of the selected assurance levels. Agencies may consider partitioning the functionality of a digital service to allow less sensitive functions to be available at a lower level of authentication and identity assurance.
+Agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy protections of the selected assurance levels. Agencies may consider partitioning the functionality of a digital service to allow less
+sensitive functions to be available at a lower level of authentication
+and identity assurance.
+
+Agencies may determine based on their risk
+analysis that additional measures are appropriate in certain contexts.
+In particular, privacy requirements and legal risks may lead agencies to
+determine that additional authentication measures or other process
+safeguards are appropriate. When developing digital authentication processes
+and systems, agencies should consult *OMB Guidance for Implementing the
+Privacy Provisions of the E-Government Act of 2002* [[M-03-22]](#M-03-22). See the *Use of Electronic Signatures in Federal Organization
+Transactions* [[ESIG]](#ESIG) for additional information on legal risks, especially those that are related to the need to satisfy legal standards of proof and prevent repudiation.
+
+Additionally, Federal agencies implementing these guidelines should
+adhere to the requirements of Title III of the E-Government Act,
+entitled the *Federal Information Security Modernization Act* [[FISMA]](#FISMA), and related NIST standards and guidelines. FISMA directs Federal agencies to develop, document, and implement
+agency-wide programs to provide information security for the information
+and systems that support the operations and assets of the
+agency. This includes the security authorization of IT systems that support
+digital authentication. It is recommended that non-Federal entities
+implementing these guidelines follow equivalent standards of security
+management, security authorization and accreditation (SA&A) to ensure the secure
+operations of their digital systems.
 
 Agencies may determine based on their risk analysis that additional measures are appropriate in certain contexts. In particular, privacy requirements and legal risks may lead agencies to determine that additional authentication measures or other process safeguards are appropriate. When developing digital authentication processes and systems, agencies should consult *OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002* [[M-03-22]](#M-03-22). See the *Use of Electronic Signatures in Federal Organization Transactions* [[ESIG]](#ESIG) for additional information on legal risks, especially those related to the need to satisfy legal standards of proof and prevent repudiation.
 
