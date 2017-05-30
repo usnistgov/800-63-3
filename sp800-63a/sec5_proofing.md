@@ -70,16 +70,16 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 |Strength|Method(s) performed by the CSP|
 |:---:|:------------------------------|
 |Unacceptable|Evidence validation was not performed, or validation of the evidence failed.|
-|Weak|All personal details from the evidence have been confirmed as valid by comparison with information held or published by an authoritative source.|
-|Fair|- The evidence:<br>&nbsp;&nbsp;&nbsp;&nbsp;- details have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- has been confirmed as genuine using appropriate technologies, confirming the integrity of physical security features and lack of fraudulent modification.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The evidence has been confirmed as genuine by trained personnel. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The issued evidence has been confirmed as genuine by confirmation of the integrity of cryptographic security features.|
+|Weak|All personal details from the evidence have been confirmed as valid by comparison with information held or published by the issuing or authoritative source(s).|
+|Fair|- The evidence:<br>&nbsp;&nbsp;&nbsp;&nbsp;- details have been confirmed as valid by comparison with information held or published by the issuing or authoritative source(s).<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- has been confirmed as genuine using appropriate technologies, confirming the integrity of physical security features and lack of fraudulent modification.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The evidence has been confirmed as genuine by trained personnel. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR** <br>&nbsp;&nbsp;&nbsp;&nbsp;- The issued evidence has been confirmed as genuine through cryptographic security features.|
 |Strong|- The evidence has been confirmed as genuine:<br>&nbsp;&nbsp;&nbsp;&nbsp;- using appropriate technologies, confirming the integrity of physical security features and lack of fraudulent modification. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by trained personnel and appropriate technologies, confirming the integrity of the physical security features and lack of fraudulent modification<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- by confirmation of the integrity of cryptographic security features.<br><br> - All personal details and evidence details have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).|
-|Superior|- The evidence has been confirmed as genuine by trained personnel and appropriate technologies including the integrity of any physical and cryptographic security features.<br><br>- All personal details and evidence details from the evidence have been confirmed as valid by comparison with information held or published by the issuing source or authoritative source(s).|
+|Superior|- The evidence has been confirmed as genuine by trained personnel and appropriate technologies including the integrity of any physical and cryptographic security features.<br><br>- All personal and evidence details have been confirmed as valid by comparison with information held or published by the issuing or authoritative source(s).|
 
 Training requirements for personnel validating evidence SHALL be based on the policies, guidelines, or requirements of the CSP or the RP.
 
 ### 5.3. <a name="verify"></a> Identity Verification
 
-The goal of identity verification is to confirm and establish a linkage between the claimed identity and the real-life existence of the subject presenting the evidence.
+The goal of identity verification is to confirm and establish a linkage between the claimed identity and the real-life existence of the applicant presenting the evidence.
 
 #### 5.3.1. Identity Verification Methods
 
@@ -96,7 +96,7 @@ The goal of identity verification is to confirm and establish a linkage between 
 
 |Strength|Identity Verification Methods|
 |:---:|:------------------------------|
-|Unacceptable|Evidence verification was not performed or verification of the evidence failed. Unable to confirm that the applicant is the owner of the claimed identity.|
+|Unacceptable|Evidence verification was not performed or verification of the evidence failed. The CSP is unable to confirm that the applicant is the owner of the claimed identity.|
 |Weak|The applicant has been confirmed as having access to the evidence provided to support the claimed identity.|
 |Fair|- The applicant's ownership of the claimed identity has been confirmed by:<br>&nbsp;&nbsp;&nbsp;&nbsp;- KBV.  See [Section 5.3.2](#kbv) for more details. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- a physical comparison of the applicant to the identity evidence. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison of the applicant to the identity evidence. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). |
 |Strong|- The applicant's ownership of the claimed identity has been confirmed by: <br>&nbsp;&nbsp;&nbsp;&nbsp;- physical comparison, using appropriate technologies, to a photograph, on all applicable evidence. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison, using appropriate technologies, of the applicant to the strongest piece of identity evidence. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use).|
@@ -108,28 +108,28 @@ The goal of identity verification is to confirm and establish a linkage between 
 The following requirements apply to the identity verification steps for IAL2 and 3. There are no restrictions for the use of KBV for identity resolution.
 
 1. The CSP SHALL NOT use KBV to verify an applicant's identity against more than one piece of validated identity evidence.
-2. The CSP SHALL only use information that is expected to be known only to the applicant and the authoritative source, to include any information needed to begin the KBV process. Information accessible freely, for a fee in the public domain, or via the black market  SHALL NOT be used.
+2. The CSP SHALL use information that is expected to be known only to the applicant and the authoritative source, to include any information needed to begin the KBV process. Information that is freely accessible, for a fee in the public domain, or via the black market SHALL NOT be used.
 3. The CSP SHALL allow a resolved and validated identity to opt-out of KBV and leverage another process for verification.
 4. KBV SHOULD be based on multiple authoritative sources.
-5. The CSP SHOULD perform KBV by verifying knowledge of recent transactional history that the CSP is a participant in.  The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
+5. The CSP SHOULD perform KBV by verifying the applicant's knowledge of recent transactional history in which the CSP is a participant. The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
 6. The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
 
 	a. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.  
-	b. The CSP SHOULD require a free form response to a KBV question.  The CSP MAY allow multiple choice answers, however, if multiple choice answer are provided, the CSP SHALL require a minimum of four answer options per question.  
-	c. The CSP SHOULD allow two attempts for an applicant to complete the KBV.  A CSP SHALL NOT allow more than three attempts to complete the KBV.  
-	d. The CSP SHALL time out KBV sessions after two minutes of inactivity per question.  In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed attempt.  
+	b. The CSP SHOULD require a free form response to a KBV question. The CSP MAY allow multiple choice answers, however, if multiple choice answers are provided, the CSP SHALL require a minimum of four answer options per question.  
+	c. The CSP SHOULD allow two attempts for an applicant to complete the KBV. A CSP SHALL NOT allow more than three attempts to complete the KBV.  
+	d. The CSP SHALL time out KBV sessions after two minutes of inactivity per question. In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed attempt.  
 	e. The CSP SHALL NOT present a majority of diversionary KBV questions (i.e., those where "none of the above" is the correct answer).  
 	f. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
-	g. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question in a single session or a subsequent session after a failed attempt.  
+	g. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question. This applies to a single session or a subsequent session after a failed attempt.  
 	h. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., "What was your first car?").  
-	i. The CSP SHALL ensure that any KBV question does not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.   
+	i. The CSP SHALL ensure that KBV questions do not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.   
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
 In-person proofing can be satisfied in two ways:
 
 - A physical encounter of the applicant, supervised by an operator
-- An remote encounter of the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).
+- A remote encounter of the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).
 
 #### 5.3.3.1. General Requirements
 
@@ -138,30 +138,30 @@ In-person proofing can be satisfied in two ways:
 
 #### <a name="supervised"></a> 5.3.3.2. Requirements for Supervised Remote In-person Proofing
 
-It is possible for a CSP remotely to achieve the security and confidence comparable to in-person proofing.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
+Remote processes for proofing can be employed by CSPs to achieve comparable levels of confidence and security to in-person events. The following requirements establish comparability between in-person transactions where the applicant is in the same physical as the CSP to those where the applicant is remote.
 
-Supervised remote identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
+In addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements), supervised remote identity proofing and enrollment transactions SHALL meet the following requirements:
 
-1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by a continuous high-resolution video transmission of the applicant.
-2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
-3. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to be clearly visible to the remote operator. The operator SHALL direct the applicant, as required, to remove any doubt in the proofing process.
+1. The CSP SHALL monitor the entire identity proofing session, from which the applicant SHALL NOT depart. For example, by a continuous high-resolution video transmission of the applicant.
+2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing session.
+3. The CSP SHALL require all actions taken by the applicant during the identity proofing session to be clearly visible to the remote operator. The operator SHALL direct the applicant, as required, to remove any doubt in the proofing process.
 4. The CSP SHALL require that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors.
-5. The CSP SHALL require operators to have undergone a training program to detect potential fraud and to properly perform a virtual in-process proofing session.
-6. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as the concourse of a shopping mall.
+5. The CSP SHALL require all remote operators undergo training to detect potential fraud and to properly perform a supervised remote identity proofing session.
+6. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area requires less tamper resistance and detection than one that is located in a semi-public area, such as the concourse of a shopping mall.
 7. The CSP SHALL ensure that all communications take place over a mutually authenticated protected channel.
 
 #### <a name="trustref"></a> 5.3.4. Trusted Referee Requirements
 
-1. The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.
-2. The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements.
+1. The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals, that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.
+2. The CSP SHALL establish written policies and procedures as to how status as a trusted referee is determined and the lifecycle by which that status is maintained, to include any restrictions, as well as any revocation and suspension requirements.
 3. The CSP SHALL proof the trusted referee at the IAL of the applicant. In addition, the CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant.
-4. The CSP SHOULD perform re-proofing of the subscriber regular intervals defined in the written policy specified in requirement 1, with the goal of satisfying the requirements of [Section 4.4.1](#normal).
+4. The CSP SHOULD perform re-proofing of the subscriber at regular intervals defined in the written policy specified in requirement 1, with the goal of satisfying the requirements of [Section 4.4.1](#normal).
 
 #### Considerations for Minors
 
-1. The CSP SHALL give special consideration to the legal restrictions of interacting with minors unable to meet the evidence requirements of identity proofing to ensure compliance with the [Children's Online Privacy Protection Act of 1998](#COPPA), and other laws, as applicable.
-2. Minors under age 13 require additional special considerations under COPPA, and other laws, to which the CSP SHALL ensure compliance, as applicable.
-3. The CSP SHOULD involve a parent or legal adult guardian as a trusted referee for an applicant that is a minor, as described elsewhere in this section.
+1. The CSP SHALL give special consideration to the legal restrictions placed on interactions with minors. CSPs SHALL be compliant with the [Children's Online Privacy Protection Act of 1998](#COPPA), and other applicable laws. This may mean minors are unable to meet the evidence requirements of identity proofing.
+2. Minors under age 13 require additional special considerations under COPPA, and other applicable laws, to which the CSP SHALL ensure compliance.
+3. The CSP SHOULD involve a parent or legal adult guardian as a trusted referee for an applicant that is a minor.
 
 ### 5.4. Binding Requirements
 
