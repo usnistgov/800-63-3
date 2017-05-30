@@ -66,7 +66,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 <a name="4.2-r6"></a> 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (i.e. in-person if remote fails), or fraud counter-measures when anomalies are detected.
 
-<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine:
+<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessements of privacy and security risks to determine:
 
 	a. Any steps that it will take to verify the identity of the applicant beyond the mandatory requirements specified herein;  
 	b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
@@ -87,7 +87,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 	c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the E-Government Act of 2002.  
 	d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
-<a name="4.2-r13"></a> 
+<a name="4.2-r13"></a>
 13. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
 
 ### 4.3. Identity Assurance Level 1
