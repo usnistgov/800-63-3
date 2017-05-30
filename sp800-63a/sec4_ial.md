@@ -101,7 +101,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 <a name="4.2-r6"></a> 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (i.e. in-person if remote fails), or fraud counter-measures when anomolies are detected.
 
-<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine:
+<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessments of privacy and security risks to determine:
 >>>>>>> refs/remotes/usnistgov/post-public-comment
 
 	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
@@ -129,7 +129,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 <<<<<<< HEAD
 =======
-<a name="4.2-r13"></a> 
+<a name="4.2-r13"></a>
 >>>>>>> refs/remotes/usnistgov/post-public-comment
 13. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
 
