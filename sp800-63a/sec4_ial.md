@@ -85,6 +85,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 <a name="4.2-r4"></a> 4. The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent a condition of the service.
 
+<<<<<<< HEAD
 <a name="4.2-r5"></a> 5. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access.
 >>>>>>> refs/remotes/usnistgov/post-public-comment
 
@@ -95,13 +96,27 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 	a. Any steps that it will take to verify the identity of the applicant beyond the mandatory requirements specified herein;  
 	b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific Federal, state, local, territorial, or tribal government and private sector organization requirements may apply; and
 	c. The schedule of retention for these records. Note: Specific National Archives and Records Administration (NARA) records retention schedules may apply.  
+=======
+<a name="4.2-r5"></a> 5. The CSP SHALL provide mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and use. The CSP SHALL assess the mechanisms for their efficacy in achieving resolution of complaints or problems.
 
+<a name="4.2-r6"></a> 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (i.e. in-person if remote fails), or fraud counter-measures when anomolies are detected.
+
+<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine:
+>>>>>>> refs/remotes/usnistgov/post-public-comment
+
+	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
+	b) The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
+	c) The schedule of retention for these records. Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.  
 
 8. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 
 9. The entire identity proofing process, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
 
+<<<<<<< HEAD
 10. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. The CSP SHALL conduct a privacy risk assessment of these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice) or technological mitigations (e.g. cryptography), and be documented per requirement 4.2 (7) above.
+=======
+10. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. In the event the CSP uses fraud mitigation measures, the CSP SHALL conduct a privacy risk assessment for these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice, etc.) or other technological mitigations (e.g. cryptography), and be document per requirement 4.2 (7) above.
+>>>>>>> refs/remotes/usnistgov/post-public-comment
 
 11. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or protecting that data from unauthorized access for the duration of retention.
 
