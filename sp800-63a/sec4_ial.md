@@ -8,13 +8,21 @@ _This section is normative._
 
 This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. A CSP may then bind these attributes to an authenticator (described in [[SP 800-63B]](sp800-63b.html)).
 
+<<<<<<< HEAD
 The only outcome of identity proofing is to ensure that the applicant is who they claim to be. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing. As an example, such attributes could include:  
+=======
+The only outcome of identity proofing is to ensure that the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  As an example, such attributes, to the extent they are the minimum necessary, could include:  
+>>>>>>> refs/remotes/usnistgov/post-public-comment
 
 1. Full name
 2. Date of birth
 3. Home address
 
+<<<<<<< HEAD
 The CSP may collect additional information in the process of identity proofing an applicant, provided validation and verification follow the requirements contained herein, and the applicant explicitly consents to the CSP collecting and storing the attributes.  
+=======
+This document also provides requirements for CSPs that will collect additional information used for purposes other than identity proofing.
+>>>>>>> refs/remotes/usnistgov/post-public-comment
 
 ### 4.1. Process Flow
 
@@ -44,9 +52,15 @@ The following provides a sample of how a CSP and an applicant interact during th
 
 3. Verification
 
+<<<<<<< HEAD
 	a. The CSP matches the pictures on the license and the passport to the applicant's picture and determines they match.    
 	b. The CSP sends an enrollment code to the validated phone number of the applicant, the applicant provides the enrollment code to the CSP, and the CSP confirms they match, verifying the applicant is in possession and control of the validated phone number.  
 	c. The applicant has been successfully identity proofed.
+=======
+	a. The CSP matches the pictures on the license and the passport to the applicant picture and determines they match.    
+	b. The CSP sends an enrollment code to the validated phone number of the applicant, the user provides the enrollment code to the CSP, and the CSP confirms they match, verifying the user is possession and control of the validated phone number.  
+	c. The applicant has been successfully proofed.
+>>>>>>> refs/remotes/usnistgov/post-public-comment
 
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
@@ -56,6 +70,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 1. Identity proofing SHALL NOT be performed to determine suitability or entitlement to gain access to services or benefits.
 
+<<<<<<< HEAD
 2. Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant. This MAY include attributes that correlate identity evidence to authoritative sources.
 
 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing. This SHALL include whether such attributes are voluntary or mandatory in order to complete the identity proofing process and the consequences for not providing the attributes.
@@ -63,10 +78,19 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 4. The CSP SHALL NOT use attributes collected and maintained for the identity proofing process for any purpose other than identity proofing, authentication, attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the applicant for additional uses. CSPs SHALL NOT make such consent a condition of the service.
 
 5. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing process. These mechanisms SHALL be easy for applicants to find and access.
+=======
+<a name="4.2-r2"></a> 2. Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant providing identity evidence for appropriate identity resolution, validation, and verification. This MAY include attributes that correlate identity evidence to authoritative sources and to provide RPs with attributes used to make authorization decisions.
+
+<a name="4.2-r3"></a> 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether such attributes are voluntary or mandatory to complete the identity proofing process, and the consequences for not providing the attributes.
+
+<a name="4.2-r4"></a> 4. The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent a condition of the service.
+
+<a name="4.2-r5"></a> 5. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and access.
+>>>>>>> refs/remotes/usnistgov/post-public-comment
 
 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (i.e. in-person if remote fails), or fraud counter-measures when anomalies are detected.
 
-7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
+<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a privacy risk assessment to determine:
 
 	a. Any steps that it will take to verify the identity of the applicant beyond the mandatory requirements specified herein;  
 	b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific Federal, state, local, territorial, or tribal government and private sector organization requirements may apply; and
@@ -81,13 +105,17 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 11. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or protecting that data from unauthorized access for the duration of retention.
 
-12. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
+<a name="4.2-r12"></a> 12. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
 
 	a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the Privacy Act.  
 	b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
 	c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the E-Government Act of 2002.  
 	d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
+<<<<<<< HEAD
+=======
+<a name="4.2-r13"></a> 
+>>>>>>> refs/remotes/usnistgov/post-public-comment
 13. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
 
 ### 4.3. Identity Assurance Level 1
@@ -100,7 +128,11 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 IAL2 allows for **remote** or **in-person** identity proofing. IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant.
 
+<<<<<<< HEAD
 CSPs SHOULD implement identity proofing in accordance with [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.4.2](#referee).
+=======
+A CSP SHALL proof according to the requirements in [Section 4.4.1](#normal or [Section 4.4.2](#referee). A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.4.2](#referee).
+>>>>>>> refs/remotes/usnistgov/post-public-comment
 
 #### <a name="normal"></a>4.4.1. IAL2 Conventional Proofing Requirements
 
@@ -255,6 +287,7 @@ _This section is informative._
 
 Requirement | IAL1 | IAL2 | IAL3
 ------------|-------|-------|-------
+<<<<<<< HEAD
 Presence|No requirements|In-person and remote|In-person
 Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution. KBV may be used for added confidence.||
 Evidence|Identity evidence is not required|Two (2) pieces of STRONG evidence<br>**OR**<br>One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence|One (1) piece of SUPERIOR evidence plus one (1) piece of STRONG evidence<br>**OR**<br>Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence
@@ -263,3 +296,13 @@ Verification| No verification of identity is required |- At a minimum, the appli
 Address Confirmation|No requirements for address confirmation|- Self-asserted address data SHALL NOT be used for confirmation.<br>- An enrollment code consisting of at least 6 random digits SHALL be included in address confirmation.<br>- May be sent to a mobile telephone (SMS or voice), landline telephone, email, or physical mailing address obtained from records.<br>- If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.<br>- Enrollment codes sent by means other than physical mail SHALL be valid for a maximum of 10 minutes; those sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the Contiguous United States.  <br> - The CSP SHALL ensure the enrollment code and notification of proofing are sent by different means.|- The CSP SHALL confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. - Self-asserted address data SHALL NOT be used for confirmation. <br>- A notification of proofing SHALL be sent to the confirmed address of record.
 Biometric Collection|No|Yes|Yes|
 Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent)
+=======
+Presence|No requirements|In-person and unsupervised remote|In-person and supervised remote
+Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution<br><br>KBV may be used for added confidence| Same as IAL2
+Evidence|No identity evidence is collected| - One (1) piece of SUPERIOR or STRONG evidence depending on strength of original proof and validation occurs with issuing source; or<br><br>- Two (2) pieces of STRONG evidence, or <br><br> - One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence|- Two (2) pieces of SUPERIOR evidence, or<br><br> - One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br> - Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence
+Validation|No validation|Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented|Same as IAL2
+Verification| No verification |Verified by a process that is able to achieve a strength of STRONG.|Verified by a process that is able to achieve a strength of SUPERIOR.<br>
+Address Confirmation|No requirements for address confirmation|Required. Enrollment code sent to any address of record.  Notification sent by means different from enrollment code.|Required. Notification of proofing to postal address.
+Biometric Collection|No|Optional|Mandatory
+Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent federal or industry standard)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent federal or industry standard)
+>>>>>>> refs/remotes/usnistgov/post-public-comment
