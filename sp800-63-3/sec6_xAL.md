@@ -6,9 +6,9 @@
 
 _This section is normative._  
 
-The results of the risk assessment are the primary factor in selecting the most appropriate levels. This section details how to apply the results of the risk assessment with additional factors unrelated to risk to determine the most advantageous xAL selection.
+The risk assessment results are the primary factor in selecting the most appropriate levels. This section details how to apply the results of the risk assessment with additional factors unrelated to risk to determine the most advantageous xAL selection.
 
-First, compare the impact profile from the risk assessment to the impact profiles associated with each assurance level, as shown in [Table 6-1](#63Sec6-Table6-1) below. To determine the required assurance level, find the lowest level whose impact profile meets or exceeds the potential impact for every category analyzed in the risk assessment.
+First, compare the risk assessment impact profile to the impact profiles associated with each assurance level, as shown in [Table 6-1](#63Sec6-Table6-1) below. To determine the required assurance level, find the lowest level whose impact profile meets or exceeds the potential impact for every category analyzed in the risk assessment.
 
 <a name="63Sec6-Table6-1"></a>
 <div class="text-center" markdown="1">
@@ -70,19 +70,19 @@ First, compare the impact profile from the risk assessment to the impact profile
  
 </table>
 
-In analyzing risks, the agency SHALL consider all of the expected direct and indirect results of an authentication failure, including the possibility that there will be more than one failure, or harms to more than one person. The definitions of potential impacts contain some relative terms, like "serious" or "minor," whose meaning will depend on context. The agency SHOULD consider the context and the nature of the persons or entities affected to decide the relative significance of these harms. Over time, the meaning of these terms will become more definite as agencies gain practical experience with these issues. The analysis of harms to agency programs or other public interests depends strongly on the context; the agency SHOULD consider these issues with care.
+In analyzing risks, the agency SHALL consider all of the expected direct and indirect results of an authentication failure, including the possibility that there will be more than one failure, or harms to more than one person. The definitions of potential impacts contain some relative terms, like "serious" or "minor", whose meaning will depend on context. The agency SHOULD consider the context and the nature of the persons or entities affected to decide the relative significance of these harms. Over time, the meaning of these terms will become more definite as agencies gain practical experience with these issues. The analysis of harms to agency programs or other public interests depends strongly on the context; the agency SHOULD consider these issues with care.
 
-It is possible that the assurance levels may differ across IAL, AAL, and FAL. For example, suppose an agency establishes a "health tracker" application in which user submit personal informatin in form of personal health information (PHI). In line with the terms of [EO 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement MFA at AAL2 or AAL3. 
+It is possible that the assurance levels may differ across IAL, AAL, and FAL. For example, suppose an agency establishes a "health tracker" application in which user submit personal information in the form of personal health information (PHI). In line with the terms of [EO 13681](#EO13681) requiring "...that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication...", the agency is required to implement MFA at AAL2 or AAL3. 
 
-EO 13681 also requires agencies employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an 'effective proofing process' would be to not proof at all, therefore the agency would select IAL1. This allows the user of the health tracker system to be pseudonymous.
+EO 13681 also requires agencies to employ "...an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an "effective proofing process" would be to not proof at all, therefore the agency would select IAL1. This allows the user of the health tracker system to be pseudonymous.
 
-Despite the user being pseudonymous, the agency should still protect the application wiith AAL2 or AAL3 because a malicous actor could gain access to the users PHI by compromising the account. If it is a targeted attack, the malicious actor may know the users identity, creating the same negative impact to the user as if the agency has identity proofed.
+Despite the user being pseudonymous, the agency should still protect the application with AAL2 or AAL3 because a malicous actor could gain access to the users PHI by compromising the account. If it is a targeted attack, the malicious actor may know the users identity, creating the same negative impact to the user as if the agency has identity proofed.
 
 > Note: An agency can accept a higher assurance level than those required in the table above. For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2. The same holds true for authenticators; stronger authenticators can be used at RPs that have lower authenticator requirements. However, RPs will have to ensure that this only occurs in federated scenarios with appropriate privacy protections by the CSP such that only attributes that have been requested by the RP and authorized by the subscriber are provided to the RP and that excessive personal information does not leak from the credential or an assertion. See [privacy requirements](./sp800-63c.html#privacy) in SP 800-63C for more details.
 
 <!---->
 
-> Note: The upshot of potentially having a different IAL, AAL, and FAL withing a single application stems from the fact that this document no longer supports the notion of an overall LOA. The 'low watermark' approach to determining LOA no longer applies. An application with IAL1 and AAL2 should not be considered any less secure or privacy enhancing than an application with IAL2 and AAL2. The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
+> Note: The upshot of potentially having a different IAL, AAL, and FAL within a single application stems from the fact that this document no longer supports the notion of an overall LOA. The "low watermark" approach to determining LOA no longer applies. An application with IAL1 and AAL2 should not be considered any less secure or privacy enhancing than an application with IAL2 and AAL2. The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
 
 #### <a name="IAL_CYOA"></a> 6.1. Selecting IAL
 
@@ -104,7 +104,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step1.png" alt="IAL Step 1"/></td>
   </tr>
   <tr>
-   <td>The risk assessment and selection of IAL can be short circuited by answering this question first. If the service does not require any personal information to execute any digital transactions, the system can operate at IAL1.</td> 
+   <td>The risk assessment and IAL selection can be short circuited by answering this question first. If the service does not require any personal information to execute any digital transactions, the system can operate at IAL1.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/ial-step2.png" alt="IAL Step 2"/></td>
@@ -116,7 +116,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step3.png" alt="IAL Step 3"/></td>
   </tr>
   <tr>
-   <td>At this point, the agency understands that some level of proofing is required. Step 3 is intended to look at the potential impacts of an identity proofing failure to determine if IAL2 or IAL3 is the most appropriate selection. The primary identity proofing failure an agency may encounter is accepting a falsified identity as true, therefore providing a service or benefit to the wrong or ineligible person. In addition, proofing, when not required, or collecting more information than needed, is a risk in and of itself. Hence, obtaining verified attribute information when not needed is also considered an identity proofing failure. This step should identify if the agency answered Step 1 and 2 incorrectly, realizing they do not need personal information to deliver the service. Risk should be considered from the perspective of the organization and to the user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence beginning with this step.</td> 
+   <td>At this point, the agency understands that some level of proofing is required. Step 3 is intended to look at the potential impacts of an identity proofing failure to determine if IAL2 or IAL3 is the most appropriate selection. The primary identity proofing failure an agency may encounter is accepting a falsified identity as true, therefore providing a service or benefit to the wrong or ineligible person. In addition, proofing, when not required, or collecting more information than needed, is a risk in and of itself. Hence, obtaining verified attribute information when not needed is also considered an identity proofing failure. This step should identify if the agency answered Step 1 and 2 incorrectly, realizing they do not need personal information to deliver the service. Risk should be considered from the perspective of the organization and to the user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/ial-step4.png" alt="IAL Step 4"/></td>
@@ -128,7 +128,7 @@ The IAL selection does not mean the digital service provider will need to perfor
     <td><img src="sp800-63-3/media/ial-step5.png" alt="IAL Step 5"/></td>
   </tr>
   <tr>
-   <td>Step 5 focuses on whether the digital service can be provided without having access to full attribute values. This does not mean all attributes must be delivered as claims, but this step does ask the agency to look at each personal attribute they have determined they need, and identify which ones can suffice as claims and which ones need to be complete values. A federated environment is best suited for receiving claims, as the digital service provider is not in control of the attribute information to start with. If the application also performs all required identity proofing, claims may not make sense since full values are already under control of the digital service provider.</td> 
+   <td>Step 5 focuses on whether the digital service can be provided without having access to full attribute values. This does not mean all attributes must be delivered as claims, but this step does ask the agency to look at each personal attribute they have deemed necessary, and identify which can suffice as claims and which need to be complete values. A federated environment is best suited for receiving claims, as the digital service provider is not in control of the attribute information to start with. If the application also performs all required identity proofing, claims may not make sense since full values are already under the digital service provider's control.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/ial-step6.png" alt="IAL Step 6"/></td>
@@ -139,8 +139,7 @@ The IAL selection does not mean the digital service provider will need to perfor
   </table>
 </div>
 
-
-> Note: Agencies should also consider the demographics of their constituents when selecting the most appropriate proofing process. While not a function of IAL selection, certain proofing process(es)  may be more appropriate for some demographics than others. Agencies will benefit from this type of analysis to ensure the greatest opportunity for their constituents to be proofed successfully.
+> Note: Agencies should also consider their constituents' demographics when selecting the most appropriate proofing process. While not a function of IAL selection, certain proofing process(es) may be more appropriate for some demographics than others. Agencies will benefit as this type of analysis ensures the greatest opportunity for their constituents to be proofed successfully.
  
 #### <a name="AAL_CYOA"></a> 6.2. Selecting AAL
 
@@ -161,34 +160,31 @@ The AAL selection does not mean the digital service provider will need to issue 
     <td><img src="sp800-63-3/media/aal-step1.png" alt="AAL Step 1"/></td>
   </tr>
   <tr>
-   <td>Step 1 asks agencies to look at the potential impacts of an authentication failure. In other words, what would occur if an unauthorized user accessed one or more valid user accounts? Risk should be considered from the perspective of the organization and to a valid user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence beginning with this step.</td> 
+   <td>Step 1 asks agencies to look at the potential impacts of an authentication failure. In other words, what would occur if an unauthorized user accessed one or more valid user accounts? Risk should be considered from the perspective of the organization and to a valid user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/aal-step2.png" alt="AAL Step 2"/></td>
   </tr>
   <tr>
 
-   <td>MFA is required when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question regarding personal information is only raised at this point. That said, personal information release at all AALs should be considered when performing the risk assessment. An important point at this step is that the collection of personal information, if not made available online, does not need to be validated or verified to require an AAL of 2 or higher. Release of even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. As such, self-asserted data must be protected appropriately.</td> 
+   <td>MFA is required when any personal information is made available online. Since the other paths in this decision tree already drive the agency to an AAL that requires MFA, the question of personal information is only raised at this point. That said, personal information release at all AALs should be considered when performing the risk assessment. An important point at this step is that the collection of personal information, if not made available online, does not need to be validated or verified to require an AAL of 2 or higher. Release of even self-asserted personal information requires account protection via MFA. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. As such, self-asserted data must be protected appropriately.</td> 
 
   </tr>
   
   </table>
 </div>
 
-
-
 #### <a name="FAL_CYOA"></a> 6.3. Selecting FAL
 
 All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that a RP will not accept an assertion created for a different system. 
 
-RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. Since the assertion reference is presented by the RP directly to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Furthermore, since the assertion is fetched by the RP directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into a RP.
+RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into a RP.
 
-FAL2 and higher require the assertion itself to be encrypted such that the intended RP is the only party that can decrypt it. This method not only improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion), but also increases privacy protection by protecting the assertion message itself in addition to having it be passed along authenticated protected channels. RPs that allow front-channel presentation of assertions should require at least FAL2 to protect the content of the assertion, since the assertion can be seen by the subscriber and handled by the subscriber's browser.
+FAL2 and higher require the assertion itself be encrypted such that the intended RP is the only party that can decrypt it. This method improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion) and increases privacy protection by protecting the assertion message itself beyond having it be passed along authenticated protected channels. RPs that allow front-channel assertion presentation should require at least FAL2 to protect the content of the assertion, since the assertion can be seen by the subscriber and handled by the subscriber's browser.
 
-FAL3 further requires that the subscriber prove possession of a key in addition to the ability to present an assertion or assertion reference. This method allows the RP to strongly verify the binding of the assertion to the subscriber by means of a key held by the subscriber. This key is referenced in the assertion and represents the subscriber.
+FAL3 further requires the subscriber prove possession of a key in addition to the ability to present an assertion or assertion reference. This allows the RP to strongly verify the binding of the assertion to the subscriber by means of a subscriber-held key. This key is referenced in the assertion and represents the subscriber.
 
-Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL2 and FAL3 and subscriber keys additionally need to be managed at FAL3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
-
+Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL2 and FAL3, and subscriber keys need to be managed at FAL3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
 
 ### 6.4. Combining xALs 
 
