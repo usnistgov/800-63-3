@@ -16,11 +16,17 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 <a name="63cSec7-Figure1"></a>
 
 <div class="text-center" markdown="1">
-![Figure 1: Back-channel presentation](sp800-63c/media/indirect.png)
+![Figure 1: Back-channel presentation](sp800-63c/media/back-channel.png)
 
 **Figure 7-1. Back-channel Presentation**
 
 </div>
+
+As shown in [Figure 7-1](#63cSec7-Figure1), the back-channel presentation model consists of three steps:
+
+1. The IdP sends an assertion reference to the subscriber through the front channel.
+2. The subscriber sends the assertion reference to the RP through the front channel.
+3. The RP presents the assertion reference and its RP credentials to the IdP through the back channel. The IdP validates the credentials and returns the assertion.
 
 The assertion reference:
 
@@ -58,7 +64,7 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 <a name="63cSec7-Figure2"></a>
 
 <div class="text-center" markdown="1">
-![Figure 2: Front-channel presentation](sp800-63c/media/direct.png)
+![Figure 2: Front-channel presentation](sp800-63c/media/front-channel.png)
 
 
 **Figure 7-2. Front-channel Presentation**
@@ -86,9 +92,9 @@ Note that in a federation proxy described in [Section 5.1.4](#proxied), the IdP 
 
 Communications between the IdP and the RP SHALL be protected in transit using an authenticated protected channel. Communications between the subscriber and either the IdP or the RP (usually through a browser) SHALL be made using an authenticated protected channel.
 
-Note that the IdP may have access to information that may be useful to the RP in enforcing security policies, such as device identity, location, system health checks, and configuration management. If so, it may be a good idea to pass this information along to the RP within the bounds of the subscriber's privacy preferences.
+Note that the IdP may have access to information that may be useful to the RP in enforcing security policies, such as device identity, location, system health checks, and configuration management. If so, it may be a good idea to pass this information along to the RP within the bounds of the subscriber's privacy preferences described in [Section 9.2](#notice).
 
 Additional attributes about the user MAY be included outside of the assertion itself as part of a separate authorized request from the RP to the IdP. The authorization for access to these attributes MAY be issued alongside the assertion itself. Splitting user information in this manner can aid in protecting user privacy and allow for limited disclosure of identifying attributes on top of the essential information in the authentication assertion itself.
 
-The RP SHALL, where feasible, request attribute references rather than full attribute values. The IdP SHALL support attribute references.  
+The RP SHALL, where feasible, request attribute references rather than full attribute values as described in [Section 9.3](#minimization). The IdP SHALL support attribute references.  
 
