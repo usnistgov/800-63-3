@@ -45,7 +45,7 @@ The following provides a sample of how a CSP and an applicant interact during th
 3. Verification
 
 	a. The CSP matches the pictures on the license and the passport to the applicant's picture and determines they match.    
-	b. The CSP sends an enrollment code to the validated phone number of the applicant, the applicant provides the enrollment code to the CSP, and the CSP confirms they match, verifying the applicant is in possession and control of the validated phone number.  
+	b. The CSP sends an enrollment code to the validated phone number of the applicant, the applicant provides the enrollment code to the CSP, and the CSP confirms they match, verifying that the applicant is in possession and control of the validated phone number.  
 	c. The applicant has been successfully identity proofed.
 
 
@@ -60,13 +60,13 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 <a name="4.2-r3"></a> 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing. This SHALL include whether such attributes are voluntary or mandatory in order to complete the identity proofing process and the consequences for not providing the attributes.
 
-<a name="4.2-r4"></a> 4. The CSP SHALL NOT use attributes collected and maintained for the identity proofing process for any purpose other than identity proofing, authentication, attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the applicant for additional uses. CSPs SHALL NOT make such consent a condition of the service.
+<a name="4.2-r4"></a> 4. The CSP SHALL NOT use attributes collected and maintained for the identity proofing process for any purpose other than identity proofing, authentication, assertion of attributes, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the applicant for additional uses. CSPs SHALL NOT make such consent a condition of the service.
 
 <a name="4.2-r5"></a> 5. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing process. These mechanisms SHALL be easy for applicants to find and access.
 
-<a name="4.2-r6"></a> 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (i.e. in-person if remote fails), or fraud counter-measures when anomalies are detected.
+<a name="4.2-r6"></a> 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  These errors might include the number of retries allowed, use of alternative proofing (i.e., in-person if remote fails), or fraud countermeasures applied when anomalies are detected.
 
-<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessements of privacy and security risks to determine:
+<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessments of privacy and security risks to determine:
 
 	a. Any steps that it will take to verify the identity of the applicant beyond the mandatory requirements specified herein;  
 	b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
@@ -74,9 +74,9 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 8. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 
-9. The entire identity proofing process, including transactions that involve a third party, SHALL occur over an Authenticated Protected Channel.
+9. The entire identity proofing process, including transactions that involve a third party, SHALL occur over an authenticated protected channel.
 
-10. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. In the event the CSP uses fraud mitigation measures, the CSP SHALL conduct a privacy risk assessment for these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice) or technological mitigations (e.g. cryptography), and be documented per requirement 4.2 (7) above.
+10. <a name="gr13"></a>The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures, for example inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, or checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. In the event the CSP uses fraud mitigation measures, the CSP SHALL conduct a privacy risk assessment for these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice) or technological mitigations (e.g., cryptography), and be documented per requirement 4.2 (7) above.
 
 11. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or protecting that data from unauthorized access for the duration of retention.
 
@@ -167,7 +167,7 @@ The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofi
 
 #### 4.4.1.8. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the *moderate* or *high* baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent Federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum requirements associated with the *moderate* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls, to include control enhancements, from the *moderate* or *high* baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g., [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum requirements associated with the *moderate* baseline are satisfied.
 
 #### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
 
@@ -227,7 +227,7 @@ The CSP SHALL collect and record a biometric sample at the time of proofing (e.g
 
 #### 4.5.8. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the *high* baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent Federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls, to include control enhancements, from the *high* baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g., [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum requirements associated with the *high* baseline are satisfied.
 
 ### <a name="enrollmentcode"></a> 4.6. Enrollment Code
 
