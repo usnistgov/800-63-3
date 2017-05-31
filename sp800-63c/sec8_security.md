@@ -97,7 +97,7 @@ described in the last subsection.
     checks the digital signature to verify that it was issued by a
     legitimate IdP.
 
-	2.  The assertion is sent over an authenticated protected channel such as TLS. In
+	2.  The assertion is sent over an authenticated protected channel, such as TLS. In
     order to protect the integrity of assertions from malicious attack,
     the IdP is authenticated.
 
