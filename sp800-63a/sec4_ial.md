@@ -23,7 +23,7 @@ This document also provides requirements for CSPs that will collect additional i
 <a name="63aSec4-Figure1"></a>
 
 <div class="text-center" markdown="1">
-<img src="sp800-63a/media/ProofingProcess.png" alt="Identity Proofing Process" style="width:1000px;height:800px;;min-width: 1000px;min-height: 800px;"/>
+<img src="sp800-63a/media/ProofingProcess.png" alt="Identity Proofing Process" style="width:1074px;height:496px;;min-width: 1074px;min-height: 496px;"/>
 
 **Figure 4-1. The Identity Proofing User Journey**
 </div>
