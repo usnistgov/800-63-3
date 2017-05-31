@@ -154,9 +154,9 @@ The CSP SHALL support In-person or remote identity proofing. The CSP SHOULD offe
 
 	a. The CSP SHALL send an enrollment code to an address of record of the applicant.  
 	b. The applicant SHALL present a valid enrollment code to complete the identity proofing process.  
-	c The CSP SHOULD send the enrollment code to the postal address that has been verified in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.  
+	c The CSP SHOULD send the enrollment code to the postal address that has been validated in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been validated in records.  
 	d. If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.  
-	e. Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 7 days but MAY be made valid up to 21 days via an exception process to accommodate addresses outside the Contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.  
+	e. Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 10 days but MAY be made valid up to 30 days via an exception process to accommodate addresses outside the Contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.  
 	f. The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a notification of proofing will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver license.  
 
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, physical or digital.
@@ -167,7 +167,7 @@ The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofi
 
 #### 4.4.1.8. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard and SHOULD ensure that the minimum requirements associated with the *moderate* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard.
 
 #### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
 
@@ -227,7 +227,7 @@ The CSP SHALL collect and record a biometric sample at the time of proofing (e.g
 
 #### 4.5.8. Security  Controls
 
-The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the High baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the High baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard.
 
 ### <a name="enrollmentcode"></a> 4.6. Enrollment Code
 
