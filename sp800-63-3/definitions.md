@@ -513,4 +513,4 @@ A password based authentication protocol that allows a claimant to authenticate 
 |TGS|Ticket Granting Server|
 |TGT|Ticket Granting Ticket|
 |TLS|Transport Layer Security|
-|Voice-over-IP|VOIP|
+|VOIP|Voice-over-IP|
