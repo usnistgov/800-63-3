@@ -3,4 +3,4 @@
 
 ## 3. Definitions and Abbreviations
 
-See [Appendix A](https://pages.nist.gov/800-63-3/sp800-63-3.html#def-and-acr) for a complete set of definitions and abbreviations.
+See [Appendix A](#def-and-acr) for a complete set of definitions and abbreviations.

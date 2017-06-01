@@ -103,7 +103,7 @@ FIPS can be found at: http://csrc.nist.gov/publications/fips/.
 
 ### 11.4. Legislation and Executive Orders
 
-<a name="PrivacyAct"></a>[Privacy Act] *Privacy Act of 1974* (P.L. 93-579), December 1974, available at: <http://www.justice.gov/opcl/privacy-act-1974>.
+<a name="PrivacyAct"></a>[Privacy Act] *Privacy Act of 1974* (P.L. 93-579), December 1974, available at: <https://www.justice.gov/opcl/privacy-act-1974>.
 
 <a name="E-Gov"></a>[E-Gov] *E-Government Act* \[includes FISMA] (P.L. 107-347), December 2002, available at: <http://www.gpo.gov/fdsys/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf>.
 

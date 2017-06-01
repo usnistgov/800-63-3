@@ -456,7 +456,9 @@ A password based authentication protocol that allows a claimant to authenticate 
 
 ### A.2. Acronyms
 
-|Acronym|Expansion|
+Selected acronyms in this paper are defined below.
+
+|Acronym|Term|
 |:-----|:---------|
 |ABAC|Attribute Based Access Control|
 |AS|Authentication Server|
