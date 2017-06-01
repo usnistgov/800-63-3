@@ -29,7 +29,7 @@ Federated identity systems should:
 
 * Minimize user burden (e.g., frustration, learning curve)
   * Minimize the number of user actions required.
-  * Allow users to quickly and easily select among multiple accounts with a single IdP. For example, approaches such as [Account Chooser](#http://openid.net/wg/ac/) allow users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdP's.
+  * Allow users to quickly and easily select among multiple accounts with a single IdP. For example, approaches such as [Account Chooser](http://openid.net/wg/ac/) allow users to select from a list of accounts they have accessed in the recent past, rather than start the federation process by selecting their IdP from a list of potential IdP's.
   * Balance minimizing user burden with the need to provide sufficient information to enable users to make informed decisions.
 
 * Minimize the use of unfamiliar technical jargon and details (e.g., users do not need to know the terms IdP and RP if the basic concepts are clearly explained).

@@ -25,7 +25,7 @@ Federal agencies need to review any decision to collect the SSN relative to thei
 
 ### <a name="consent"></a>8.2. Notice and Consent
 
-[Section 4.2, requirement (3)](4.2-r3) requires the CSP to provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing. This SHALL include whether such attributes are voluntary or mandatory in order to complete the identity proofing process and the consequences for not providing the attributes.
+[Section 4.2, requirement (3)](#4.2-r3) requires the CSP to provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing. This SHALL include whether such attributes are voluntary or mandatory in order to complete the identity proofing process and the consequences for not providing the attributes.
 
 An effective notice will take into account user experience design standards and research, as well as an assessment of privacy risks that may arise from the collection. There are various factors that should be considered, for example, incorrectly inferring that applicants understand why attributes are collected or that collected information may be combined with other data sources. It is important to note that an effective notice is never only a pointer that leads to a complex, legalistic privacy policy or general terms and conditions that applicants are unlikely to read or understand.
 

@@ -15,7 +15,7 @@ CSPs should be able to reasonably justify any response they take to identified p
 
 ### 9.2. Privacy Controls
 
-[Section 4.4](#aal_privacy) encourages CSPs to employ appropriately-tailored privacy controls. NIST [[SP 800-53]](#sp800-53) provides a set of privacy controls for CSPs to consider when deploying authentication mechanisms. These controls cover notices, redress, and other important considerations for successful and trustworthy deployments. 
+[Section 4.4](#aal_privacy) encourages CSPs to employ appropriately-tailored privacy controls. NIST [[SP 800-53]](#SP800-53) provides a set of privacy controls for CSPs to consider when deploying authentication mechanisms. These controls cover notices, redress, and other important considerations for successful and trustworthy deployments. 
 
 ### 9.3. Use Limitation
 

@@ -31,12 +31,12 @@ The following table states which sections of the document are normative and whic
 |1. Purpose|Informative|
 |2. Introduction|Informative|
 |3. Definitions and Abbreviations|Informative|
-|4. Federation|Normative|
-|5. Assertion|Normative|
-|6. Assertion Presentation|Normative|
-|7. Federation Assurance Level (FAL)|Normative|
+|4. Federation Assurance Level (FAL)|Normative|
+|5. Federation|Normative|
+|6. Assertion|Normative|
+|7. Assertion Presentation|Normative|
 |8. Security|Informative|
 |9. Privacy Considerations|Informative|
 |10. Usability Considerations|Informative|
-|11. Assertion Examples|Informative|
+|11. Examples|Informative|
 |12. References|Informative|

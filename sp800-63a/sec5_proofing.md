@@ -91,9 +91,9 @@ The goal of identity verification is to confirm and establish a linkage between 
 |:---:|:------------------------------|
 |Unacceptable|Evidence verification was not performed or verification of the evidence failed. The CSP is unable to confirm that the applicant is the owner of the claimed identity.|
 |Weak|The applicant has been confirmed as having access to the evidence provided to support the claimed identity.|
-|Fair|- The applicant's ownership of the claimed identity has been confirmed by:<br>&nbsp;&nbsp;&nbsp;&nbsp;- KBV.  See [Section 5.3.2](#kbv) for more details. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- a physical comparison of the applicant to the identity evidence. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison of the applicant to the identity evidence. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). |
-|Strong|- The applicant's ownership of the claimed identity has been confirmed by: <br>&nbsp;&nbsp;&nbsp;&nbsp;- physical comparison, using appropriate technologies, to a photograph, on all applicable evidence. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison, using appropriate technologies, of the applicant to the strongest piece of identity evidence. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use).|
-|Superior|- The applicant's ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest pieces of identity evidence, using appropriate technologies. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use).|
+|Fair|- The applicant's ownership of the claimed identity has been confirmed by:<br>&nbsp;&nbsp;&nbsp;&nbsp;- KBV.  See [Section 5.3.2](#kbv) for more details. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- a physical comparison of the applicant to the strongest piece of identity evidence provided to support the claimed identity. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison of the applicant to the identity evidence. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). |
+|Strong|- The applicant's ownership of the claimed identity has been confirmed by: <br>&nbsp;&nbsp;&nbsp;&nbsp;- physical comparison, using appropriate technologies, to a photograph, on the strongest piece of identity evidence provided to support the claimed identity. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison, using appropriate technologies, of the applicant to the strongest piece of identity evidence provided to support the claimed identity. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use).|
+|Superior|- The applicant's ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest piece of identity evidence provided to support the claimed identity, using appropriate technologies. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use).|
 
 
 #### <a name="kbv"></a>5.3.2. Knowledge Based Verification Requirements
@@ -103,26 +103,26 @@ The following requirements apply to the identity verification steps for IAL2 and
 1. The CSP SHALL NOT use KBV to verify an applicant's identity against more than one piece of validated identity evidence.
 2. The CSP SHALL use information that is expected to be known only to the applicant and the authoritative source, to include any information needed to begin the KBV process. Information that is freely accessible, for a fee in the public domain, or via the black market SHALL NOT be used.
 3. The CSP SHALL allow a resolved and validated identity to opt-out of KBV and leverage another process for verification.
-4. KBV SHOULD be based on multiple authoritative sources.
-5. The CSP SHOULD perform KBV by verifying the applicant's knowledge of recent transactional history in which the CSP is a participant. The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
-6. The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
+4. The CSP SHOULD perform KBV by verifying the applicant's knowledge of recent transactional history in which the CSP is a participant. The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
+5. The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
 
-	a. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.  
-	b. The CSP SHOULD require a free form response to a KBV question. The CSP MAY allow multiple choice answers, however, if multiple choice answers are provided, the CSP SHALL require a minimum of four answer options per question.  
-	c. The CSP SHOULD allow two attempts for an applicant to complete the KBV. A CSP SHALL NOT allow more than three attempts to complete the KBV.  
-	d. The CSP SHALL time out KBV sessions after two minutes of inactivity per question. In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed attempt.  
-	e. The CSP SHALL NOT present a majority of diversionary KBV questions (i.e., those where "none of the above" is the correct answer).  
-	f. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
-	g. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question. This applies to a single session or a subsequent session after a failed attempt.  
-	h. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., "What was your first car?").  
-	i. The CSP SHALL ensure that KBV questions do not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.   
+	a. KBV SHOULD be based on multiple authoritative sources.
+  b. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.  
+	c. The CSP SHOULD require free form response KBV questions. The CSP MAY allow multiple choice answers, however, if multiple choice answers are provided, the CSP SHALL require a minimum of four answer options per question.  
+	d. The CSP SHOULD require free form response KBV questions.  The CSP MAY allow multiple choice questions, however, if multiple choice questions are provided, the CSP SHALL require a minimum of four answer options per question.  
+	e. The CSP SHALL time out KBV sessions after two minutes of inactivity per question. In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed attempt.  
+	f. The CSP SHALL NOT present a majority of diversionary KBV questions (i.e., those where "none of the above" is the correct answer).  
+	g. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
+	h. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question. This applies to a single session or a subsequent session after a failed attempt.  
+	i. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., "What was your first car?").  
+	j. The CSP SHALL ensure that KBV questions do not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.   
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
 In-person proofing can be satisfied in two ways:
 
-- A physical encounter of the applicant, supervised by an operator
-- A remote encounter of the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).
+- A physical interaction of the applicant, supervised by an operator
+- A remote interaction of the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).
 
 #### 5.3.3.1. General Requirements
 
@@ -137,7 +137,7 @@ In addition to the IAL3 validation and verification requirements specified in [S
 
 1. The CSP SHALL monitor the entire identity proofing session, from which the applicant SHALL NOT depart. For example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing session.
-3. The CSP SHALL require all actions taken by the applicant during the identity proofing session to be clearly visible to the remote operator. The operator SHALL direct the applicant, as required, to remove any doubt in the proofing process.
+3. The CSP SHALL require all actions taken by the applicant during the identity proofing session to be clearly visible to the remote operator. 
 4. The CSP SHALL require that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors.
 5. The CSP SHALL require all remote operators undergo training to detect potential fraud and to properly perform a supervised remote identity proofing session.
 6. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area requires less tamper resistance and detection than one that is located in a semi-public area, such as the concourse of a shopping mall.
