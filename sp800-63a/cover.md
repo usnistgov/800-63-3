@@ -171,7 +171,7 @@ implementing digital identity services and are not intended to constrain the dev
 
 </div>
 
-authentication; credential service provider; electronic authentication; digital authentication; electronic credentials; digital credentials; identity proofing.
+authentication; credential service provider; electronic authentication; digital authentication; electronic credentials; digital credentials; identity proofing; federation.
 
 <div class="text-center" markdown="1">
 
