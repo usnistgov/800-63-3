@@ -6,7 +6,7 @@
 
 _This section is informative._
 
-There are two general categories of threats to the enrollment process: impersonation and either compromise or malfeasance of the infrastructure provider. This section focuses on addressing impersonation threats. Infrastructure threats are addressed by traditional computer security controls (e.g., intrusion protection, record keeping, independent audits) and are outside the scope of this document. For more information on security controls, see [[SP 800-53]](#SP800-53), *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*.
+There are two general categories of threats to the enrollment process: impersonation and either compromise or malfeasance of the infrastructure provider. This section focuses on addressing impersonation threats. Infrastructure threats are addressed by traditional computer security controls (e.g., intrusion protection, record keeping, independent audits) and are outside the scope of this document. For more information on security controls, see [SP 800-53](#SP800-53), *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*.
 
 The threats to the enrollment process include impersonation attacks and threats to the transport mechanisms for identity proofing, authenticator binding, and credential issuance. [Table 7-1](#63aSec7-Table1) lists the threats related to enrollment and identity proofing.
 
@@ -57,7 +57,7 @@ to the enrollment and issuance processes.
 ||Social engineering|Duplicate records check.
 | Issuance | Disclosure | Issue the authenticator in person, physically mail it in a tamper-resistant sealed envelope to a secure location, or use a protected session to send the authenticator electronically.
 | | Tampering | Issue credentials in person, physically mailing storage media in a tamper-resistant sealed envelope, or through the use of a communication protocol that protects the integrity of the session data.
-| | | Establish a procedure that allows the Subscriber to authenticate the CSP as the source of any authenticator and credential data that he or she may receive.
+| | | Establish a procedure that allows the subscriber to authenticate the CSP as the source of any authenticator and credential data that he or she may receive.
 | | Unauthorized issuance/Social engineering | Establish procedures to ensure that the individual who receives the authenticator is the same individual who participated in the enrollment procedure.
 | | | Implement a dual-control issuance process that ensures two independent individuals shall cooperate in order to issue an authenticator.
 
