@@ -72,7 +72,7 @@ Independent of the binding mechanism (discussed in [Section 6.1](#assertion-bind
 
 Assertions SHALL be sufficiently unique to permit unique identification by the target RP. Assertions MAY accomplish this by use of an embedded nonce, issuance timestamp, assertion identifier, or a combination of these or other techniques.
 
-#### 6.2.2. Signed Assertion
+#### 6.2.2. <a name="signed-assertion">Signed Assertion
 
 Assertions SHALL be cryptographically signed by the issuer (IdP). The RP SHALL validate the digital signature or MAC of each such assertion based on the issuer's key. This signature SHALL cover the entire assertion, including its identifier, issuer, audience, subject, and expiration.
 
