@@ -48,7 +48,7 @@ The following provides a sample of how a CSP and an applicant interact during th
 	b. The CSP sends an enrollment code to the validated phone number of the applicant, the applicant provides the enrollment code to the CSP, and the CSP confirms they match, verifying that the applicant is in possession and control of the validated phone number.  
 	c. The applicant has been successfully identity proofed.
 
-> Note: The identity proofing process can be fulfilled by multiple parties. It is not expected that a single organization, process, technique, or technology will deliver these process steps.
+> Note: The identity proofing process can be delivered by multiple service providers. It is possible, but not expected, that a single organization, process, technique, or technology will fulfill these process steps.
 
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
