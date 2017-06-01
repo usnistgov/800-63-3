@@ -42,9 +42,9 @@ to the enrollment and issuance processes.
 </div>
 
 
-| **Activity** | **Threat/Attack** | **Mitigation Strategy** |**Normative Reference(s)|
+| **Activity** | **Threat/Attack** | **Mitigation Strategy** |**Normative Reference(s)**|
 |--------------|-------------------|-------------------------|------------------------|
 | Enrollment | Falsified identity proofing evidence | CSP validates physical security features of presented evidence.|[4.4.1.3](#4-4-1-3), [4.5.3](#4-5-3), [5.2.2](#evidence_validation)|
 | | | CSP validates personal details in the evidence with the issuer or other authoritative source.|[4.4.1.3](#4-4-1-3), [4.5.3](#4-5-3), [4.5.6](#4-5-6) [5.2.2](#evidence_validation)|
-| | Fraudulent use of another's identity | CSP verifies identity evidence or biometric of applicant against information on evidence or obtained from issuer or other authoritative source.|[4.4.1.7](#), [4.5.7](#4-5-7), [5.3](#verify)|
-| | Repudiation of enrollment | CSP saves a biometric of the subscriber. |[4.4.1.7](4-4-1-7), [4.5.7](4-5-7)
+| | Fraudulent use of another's identity | CSP verifies identity evidence or biometric of applicant against information on evidence or obtained from issuer or other authoritative source.|[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7), [5.3](#verify)|
+| | Repudiation of enrollment | CSP saves a biometric of the subscriber. |[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7)
