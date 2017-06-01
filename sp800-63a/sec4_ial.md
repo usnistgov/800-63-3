@@ -118,7 +118,7 @@ The CSP SHALL collect the following from the applicant:
 
 See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
-#### 4.4.1.3. Validation Requirements
+#### <a name="4-4-1-3"></a> 4.4.1.3. Validation Requirements
 
 The CSP SHALL validate identity evidence as follows:
 
@@ -161,7 +161,7 @@ The CSP SHALL support In-person or remote identity proofing. The CSP SHOULD offe
 
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, physical or digital.
 
-#### 4.4.1.7. Biometric Collection
+#### <a name="4-4-1-7"></a> 4.4.1.7. Biometric Collection
 
 The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [[Section 5.2.3 of SP 800-63B]](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
@@ -192,7 +192,7 @@ The CSP SHALL collect the following from the applicant:
 
 See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
-#### 4.5.3. Validation Requirements  
+#### <a name="4-5-3"></a> 4.5.3. Validation Requirements  
 
 The CSP SHALL validate identity evidence as follows:
 
@@ -214,14 +214,14 @@ See [Section 5.3, Identity Verification](#verify) for more information on accept
 The CSP SHALL perform all identity proofing steps with the applicant in-person. See [Section 5.3.3](#vip) for more details.
 
 
-#### 4.5.6. Address Confirmation
+#### <a name="4-5-6"></a> 4.5.6. Address Confirmation
 
 1. The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant, not contained on any supplied, valid piece of identity evidence.
 2. Self-asserted address data SHALL NOT be used for confirmation.
 3. A notification of proofing SHALL be sent to the confirmed address of record.
 4. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time. The enrollment code SHALL be valid for a maximum of 7 days.
 
-#### 4.5.7. Biometric Collection
+#### <a name="4-5-7"></a> 4.5.7. Biometric Collection
 
 The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing.  See [[Section 5.2.3 of SP 800-63B]](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
