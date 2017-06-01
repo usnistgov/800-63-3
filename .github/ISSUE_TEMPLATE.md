@@ -1,16 +1,5 @@
-### All Fields Are Required
-**Organization Name (N/A, if individual):**
+## SP 800-63-3 Public Comment Period has closed!
 
-**Organization Type (see below for codes)**:
- 
-**Document (63-3, 63A, 63B, or 63C)**:
+The editorial team is in the process of incorporating responses to the comments and completing editing of the documents. All further issues received will be automatically closed.
 
-**Reference (Include section and paragraph number)**:
- 
-**Comment (Include rationale for comment)**:
- 
-**Suggested Change**:
- 
----
- 
-Organization Type: 1 = Federal, 2 = Industry, 3 = Academia, 4 = Self, 5 = Other
+Thank you for your interest in supporting and improving NIST SP 800-63-3.
