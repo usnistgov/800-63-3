@@ -34,7 +34,7 @@ If the RP is using a front-channel presentation mechanism as defined in [Section
 
 In addition, the IdP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard.
 
-### 4.1. Key Management
+### <a name="key-mgmt"></a>4.1. Key Management
 
 At any FAL, the IdP SHALL ensure that an RP is unable to impersonate the IdP at another RP by protecting the assertion with a signature and key using approved cryptography. If the assertion is protected by a digital signature using an asymmetric key, the IdP MAY use the same public and private key pair to sign assertions to multiple RPs. The IdP MAY publish its public key in a verifiable fashion, such as at an HTTPS-protected URL at a well-known location. If the assertion is protected by a MAC using a shared key, the IdP SHALL use a different shared key for each RP.
 

@@ -7,7 +7,7 @@
 
 Since the federated authentication process involves coordination between multiple components, including the CSP which now acts as an IdP, there are additional opportunities for attackers to compromise federated identity transactions. This section summarizes many of the attacks and their mitigations that are applicable when federation is being used.
 
-###8.1. Federation Threats
+### 8.1. Federation Threats
 
 As in non-federated authentication, the motivation of attackers is typically to gain access (or a greater level of access) to a resource or service provided by an RP. Attackers may also attempt to impersonate a subscriber. Rogue or compromised IdPs, RPs, user agents (e.g., browsers), and parties outside of a typical federation transaction are potential attackers. To accomplish their attack, they might intercept or modify assertions and assertion references. Furthermore, two or more entities may attempt to subvert federation protocols by directly compromising the integrity or confidentiality of the assertion data. For the purpose of these types of threats, any authorized parties who attempt to exceed their privileges are considered attackers.
 
@@ -42,23 +42,23 @@ Mechanisms that assist in mitigating the threats identified above are identified
 
 </div>
 
-| **Federation Threat/Attack** | **Threat Mitigation Mechanisms** |
-|------------------------------|----------------------------------|
-| Assertion Manufacture or Modification | Cryptographically sign the assertion at IdP and verify at RP |
-| | Send assertion over an authenticated protected channel authenticating the IdP |
-| | Include a non-guessable random identifier in the assertion |
-| Assertion disclosure | Send assertion over an authenticated protected channel authenticating the RP |
-| | Encrypt assertion for a specific RP (may be accomplished by use of a mutually authenticated protected channel) |
+| **Federation Threat/Attack** | **Threat Mitigation Mechanisms** | **Normative Reference(s)** |
+|------------------------------|----------------------------------|---|
+| Assertion Manufacture or Modification | Cryptographically sign the assertion at IdP and verify at RP | [4.1](#key-mgmt), [6](#assertions) |
+| | Send assertion over an authenticated protected channel authenticating the IdP | [7.1](#back-channel), [7.2](#front-channel) |
+| | Include a non-guessable random identifier in the assertion | [6.2.1](#assertion-id) |
+| Assertion disclosure | Send assertion over an authenticated protected channel authenticating the RP | [7.1](#back-channel), [7.2](#front-channel) |
+| | Encrypt assertion for a specific RP (may be accomplished by use of a mutually authenticated protected channel) | [6.2.3](#encrypted-assertion) |
 | Assertion repudiation by the IdP | Cryptographically sign the assertion at the IdP with a key that supports non-repudiation; verify signature at RP |
-| Assertion repudiation by the subscriber | Issue holder-of-key assertions; proof of possession of presented key verifies subscriber's participation |
-| Assertion redirect | Include identity of the RP for which the assertion is issued in its signed content; RP verifies that they are intended recipient |
-| Assertion reuse | Include a timestamp with short validity period in the signed content of the assertion; RP verifies validity |
+| Assertion repudiation by the subscriber | Issue holder-of-key assertions; proof of possession of presented key verifies subscriber's participation | [6.1.2](#holderofkey) |
+| Assertion redirect | Include identity of the RP ("audience") for which the assertion is issued in its signed content; RP verifies that they are intended recipient | [6](#assertions), [7.1](#back-channel), [7.2](#front-channel) |
+| Assertion reuse | Include an issuance timestamp with short validity period in the signed content of the assertion; RP verifies validity | [6](#assertions), [7.1](#back-channel), [7.2](#front-channel) |
 | | RP keeps track of assertions consumed within a configurable time window to ensure that a given assertion is not used more than once. |
 | Secondary authenticator manufacture | Ensure that secondary authenticator has sufficient entropy to resist manufacture |
 | | Include timely assertion data signed by the IdP |
 | Secondary authenticator capture | Send secondary authenticator using an authenticated protected channel established between the IdP and subscriber at primary authentication time |
 | | Use the secondary authenticator in an authentication protocol that protects against eavesdropping and MitM attacks |
 | | Never send a secondary authenticator over an unprotected channel or to an unauthenticated party while still valid |
-| Assertion substitution | Ensure that assertion responses contain a reference to the assertion request or some other nonce that was cryptographically bound to the request by the RP |
-| | Send assertion responses in the same authentication protected channel as the request, such as in the back-channel model |
+| Assertion substitution | Ensure that assertions contain a reference to the assertion request or some other nonce that was cryptographically bound to the request by the RP | [6](#assertions) |
+| | Send assertions in the same authenticated protected channel as the request, such as in the back-channel model |
 

@@ -46,7 +46,7 @@ A bearer assertion can be presented by any party as proof of the bearer's identi
 
 Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 7.1](#back-channel)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
 
-#### 6.1.2. Holder-of-Key Assertions <a name="holderofkey"></a>
+#### 6.1.2. <a name="holderofkey"></a>Holder-of-Key Assertions
 A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP.  Note that the reference to the key is asserted (and signed) by the issuer of the assertion.
 
 When the RP receives the holder-of-key assertion, the subscriber proves possession of the key referenced in the assertion directly to the RP. While the subscriber could also have used a key-based means of authenticating to the IdP, the primary authentication at the IdP and the federated authentication at the RP are considered separately and are not assumed to use the same keys or related sessions.
@@ -68,7 +68,7 @@ The following requirements apply to all holder-of-key assertions:
 
 Independent of the binding mechanism (discussed in [Section 6.1](#assertion-binding)) or the federation model used to obtain them (described in [Section 5.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
 
-#### 6.2.1. Assertion Identifier
+#### <a name="assertion-id"></a>6.2.1. Assertion Identifier
 
 Assertions SHALL be sufficiently unique to permit unique identification by the target RP. Assertions MAY accomplish this by use of an embedded nonce, issuance timestamp, assertion identifier, or a combination of these or other techniques.
 
@@ -78,7 +78,7 @@ Assertions SHALL be cryptographically signed by the issuer (IdP). The RP SHALL v
 
 The assertion signature SHALL either be a digital signature using asymmetric keys or a MAC using a symmetric key shared between the RP and issuer. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for verification of digital signatures MAY be fetched by the RP in a secure fashion at runtime, such as through an HTTPS URL hosted by the IdP. Approved cryptography SHALL be used.
 
-#### 6.2.3. Encrypted Assertion
+#### 6.2.3. <a name="encrypted-assertion"></a>Encrypted Assertion
 
 When encrypting assertions the IdP SHALL encrypt the contents of the assertion using either the RP's public key or a shared symmetric key. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for encryption MAY be fetched by the IdP in a secure fashion at runtime, such as through an HTTPS URL hosted by the RP.
 
