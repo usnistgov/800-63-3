@@ -52,7 +52,7 @@ For physical transactions -
 
 #### <a name="post-enroll-bind"></a> 6.1.2. Post-Enrollment Binding
 
-#### 6.1.2.1. Binding of Additional Authenticator at Existing AAL
+#### <a name="bindexisting"></a>6.1.2.1. Binding of Additional Authenticator at Existing AAL
 
 CSPs and verifiers SHOULD encourage subscribers to maintain at least two valid authenticators of each factor that they will be using, with the exception of memorized secrets. For example, a subscriber that usually uses an OTP device as a physical authenticator MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged. See [Section 6.1.2.3](#replacement) for more information on replacement of memorized secret authenticators.
 

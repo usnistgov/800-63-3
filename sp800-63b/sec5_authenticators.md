@@ -73,7 +73,7 @@ In addition, verifiers SHOULD perform an additional iteration of a key derivatio
   </table>
   </div>
 
-#### 5.1.2.1. Look-up Secret Authenticators
+#### <a name="lusa"></a>5.1.2.1. Look-up Secret Authenticators
 CSPs creating look-up secret authenticators SHALL use an approved random bit generator  [[SP 800-90Ar1]](SP800-90Ar1) to generate the list of secrets, and SHALL deliver the authenticator securely to the subscriber. Look-up secrets SHALL have at least 64 bits of entropy, or SHALL have at least 20 bits of entropy if the number of failed authentication attempts is limited as described in [Section 5.2.2](#throttle).
 
 Look-up secrets MAY be distributed by the CSP in person, by postal mail to the subscriber's address of record, or by online distribution. If distributed online, look-up secrets SHALL be distributed over a secure channel in accordance with the post-enrollment binding requirements in [Section 6.1.2](#post-enroll-bind).
@@ -111,7 +111,7 @@ The purpose of the secret is to securely bind the authentication operation on th
   </table>
   </div>
 
-#### 5.1.3.1. Out-of-Band Authenticators
+#### <a name="ooba"></a> 5.1.3.1. Out-of-Band Authenticators
 
 The out-of-band authenticator SHALL establish a separate channel with the verifier in order to retrieve the out-of-band secret or authentication request. This channel is considered to be out-of-band with respect to the primary communication channel, even if it terminates on the same device, provided the device does not leak information from one to the other without the authorization of the claimant.
 
@@ -196,7 +196,7 @@ If the authenticator output has less than 64 bits of entropy, the verifier SHALL
   </div>
 
 
-#### 5.1.5.1. Multi-factor OTP Authenticators
+#### 5.1.5.1. <a name="mfotpa"></a>Multi-factor OTP Authenticators
 
 Multi-factor OTP authenticators operate in a similar manner to single-factor OTP authenticators (see [Section 5.1.4.1](#sfotpa)), except that they require the entry of either a memorized secret or use of a biometric to obtain a password from the authenticator. Each use of the authenticator SHALL require the input of the additional factor.
 
@@ -235,7 +235,7 @@ If the authenticator output or activation secret has less than 64 bits of entrop
 
 
 
-#### 5.1.6.1. Single-factor Cryptographic Software Authenticators
+#### <a name="sfcsa"></a>5.1.6.1. Single-factor Cryptographic Software Authenticators
 
 Single-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator. The key SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, or trusted execution environment if available). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access. Single-factor cryptographic software authenticators SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
@@ -254,7 +254,7 @@ The requirements for a single-factor cryptographic software verifier are identic
   </table>
   </div>
 
-#### 5.1.7.1. Single-factor Cryptographic Device Authenticators
+#### 5.1.7.1. <a name="sfcda"></a>Single-factor Cryptographic Device Authenticators
 
 Single-factor cryptographic device authenticators encapsulate a secret key that is unique to the device and SHALL NOT be exportable (i.e., it cannot be removed from the device). The authenticator operates by signing a challenge nonce presented through a direct computer interface such as a USB port. Although cryptographic devices contain software, they differ from cryptographic software authenticators by the fact that all embedded software is under control of the CSP (or other issuer), and that the entire authenticator is subject to any applicable FIPS 140 requirements at the AAL being authenticated.
 
@@ -283,7 +283,7 @@ The challenge nonce SHALL be at least 64 bits in length, and SHALL either be uni
 
 
 
-#### 5.1.8.1. Multi-factor Cryptographic Software Authenticators
+#### <a name="mfcsa"></a>5.1.8.1. Multi-factor Cryptographic Software Authenticators
 
 Multi-factor software cryptographic authenticators encapsulate a secret key that is unique to the authenticator and is accessible only through the input of an additional factor, either a memorized secret or a biometric. The key SHOULD be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, trusted execution environment). The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.  Multi-factor cryptographic software authenticators SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 

@@ -70,31 +70,26 @@ Related mechanisms that assist in mitigating the threats identified above are su
 </div>
 
 
-| **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
-|---------------------------------|----------------------------------|
-| Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.|
-| | Use a combination of authenticators that includes a memorized secret or biometric.
-| Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
-| Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
-| | Maintain situational awareness when entering memorized secrets and OTPs to ensure that they cannot be observed by others.
-| | Avoid use of non-trusted wireless networks as unencrypted secondary out-of-band authentication channels.
-| | Authenticate over authenticated protected channels (observe lock icon in browser window, for example).
-| | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*.
-| | Use authentication endpoints that employ trusted input and trusted display capabilities.
-| Offline cracking | Use an authenticator with a high entropy authenticator secret.
-| | Store memorized secrets in a salted, hashed form, including a keyed hash.
-| Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.
-| Phishing or pharming | Use authenticators that provide verifier impersonation resistance.
-| | Be alert for unexpected hostnames in URLs.
-| | Do not click on links in email messages; instead, enter the URL manually or through a trusted bookmark.
-| Social engineering | Do not reveal authentication secrets to others, regardless of their story.
-| | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents.
-| Online guessing | Use authenticators that generate high entropy output.
-| | Use an authenticator that locks up after a number of repeated failed activation attempts.
-| Endpoint compromise | Use hardware authenticators that require physical action by the subscriber.
-| | Provide secure display of identity of verifier and RP.
-| | Maintain software-based keys in restricted-access storage.
-| Unauthorized binding | Use MitM-resistant protocols for provisioning of authenticators and associated keys.
+| **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** | **Normative Reference(s)** |
+|---------------------------------|----------------------------------|-------|
+| Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.| [4.2.1](#aal2types), [4.3.1](#aal3types) |
+| | Use a combination of authenticators that includes a memorized secret or biometric. | [4.2.1](#aal2types), [4.3.1](#aal3types) |
+| Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. | [4.2.2](#aal2req), [4.3.2](#aal3req), [5.1.7.1](#sfcda) |
+| Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use. | [4.2.2](#aal2req) |
+| | Avoid use of non-trusted wireless networks as unencrypted secondary out-of-band authentication channels. | [5.1.3.1](#ooba) |
+| | Authenticate over authenticated protected channels (observe lock icon in browser window, for example). | [4.1.2](#aal1req), [4.2.2](#aal2req), [4.3.2](#aal3req) |
+| | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*. | [5.2.8](#replay) |
+| | Use authentication endpoints that employ trusted input and trusted display capabilities. | [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
+| Offline cracking | Use an authenticator with a high entropy authenticator secret. | [5.1.2.1](#lusa), [5.1.4.1](#sfotpa), [5.1.5.1](#mfotpa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
+| | Store memorized secrets in a salted, hashed form, including a keyed hash. | [5.1.1.2](#memsecretver), [5.2.7](#verifier-secrets) |
+| Side-channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values. | [4.3.2](#aal3req)
+| Phishing or pharming | Use authenticators that provide verifier impersonation resistance. | [5.2.5](#verifimpers) |
+| Social engineering | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents. | [6.1.2.1](#bindexisting), [6.1.2.3](#replacement) |
+| Online guessing | Use authenticators that generate high entropy output. | [5.1.2.1](#lusa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
+| | Use an authenticator that locks up after a number of repeated failed activation attempts. | [5.2.2](#throttle) | 
+| Endpoint compromise | Use hardware authenticators that require physical action by the subscriber. | [5.2.9](#intent) |
+| | Maintain software-based keys in restricted-access storage. | [5.1.3.1](#ooba), [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
+| Unauthorized binding | Use MitM-resistant protocols for provisioning of authenticators and associated keys. | [6.1](#binding) |
 
 There are several other strategies that may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
 
