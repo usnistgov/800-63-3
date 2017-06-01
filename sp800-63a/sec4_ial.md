@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. A CSP may then bind these attributes to an authenticator (described in [[SP 800-63B]](sp800-63b.html)).
+This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [Selecting IAL](https://pages.nist.gov/TIG-Stage/sp800-63-3.html#IAL_CYOA) for details on how to chose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [[SP 800-63B]](sp800-63b.html)).
 
 The only outcome of identity proofing is to ensure that the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing. As an example, such attributes could include:  
 
@@ -18,7 +18,7 @@ This document also provides requirements for CSPs that will collect additional i
 
 ### 4.1. Process Flow
 
-[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment, to include the corresponding sections with normative requirements.
+[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment.
 
 <a name="63aSec4-Figure1"></a>
 
@@ -48,29 +48,31 @@ The following provides a sample of how a CSP and an applicant interact during th
 	b. The CSP sends an enrollment code to the validated phone number of the applicant, the applicant provides the enrollment code to the CSP, and the CSP confirms they match, verifying that the applicant is in possession and control of the validated phone number.  
 	c. The applicant has been successfully identity proofed.
 
+> Note: The identity proofing process can be fulfilled by multiple parties. It is not expected that a single organization, process, technique, or technology will deliver these process steps.
+
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
 
 
-The following requirements apply to any CSP performing identity proofing at IAL2 or 3.
+The following requirements apply to any CSP performing identity proofing at IAL2 or 3.  
 
 1. Identity proofing SHALL NOT be performed to determine suitability or entitlement to gain access to services or benefits.
 
-<a name="4.2-r2"></a> 2. Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant. This MAY include attributes that correlate identity evidence to authoritative sources.
+2. <a name="4.2-r2"></a>Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant. This MAY include attributes that correlate identity evidence to authoritative sources.
 
-<a name="4.2-r3"></a> 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing. This SHALL include whether such attributes are voluntary or mandatory in order to complete the identity proofing process and the consequences for not providing the attributes.
+3. <a name="4.2-r3"></a>The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing. This SHALL include whether such attributes are voluntary or mandatory in order to complete the identity proofing process and the consequences for not providing the attributes.
 
-<a name="4.2-r4"></a> 4. The CSP SHALL NOT use attributes collected and maintained for the identity proofing process for any purpose other than identity proofing, authentication, assertion of attributes, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the applicant for additional uses. CSPs SHALL NOT make such consent a condition of the service.
+4. <a name="4.2-r4"></a>The CSP SHALL NOT use attributes collected and maintained for the identity proofing process for any purpose other than identity proofing, authentication, assertion of attributes, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the applicant for additional uses. CSPs SHALL NOT make such consent a condition of the service.
 
-<a name="4.2-r5"></a> 5. The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing process. These mechanisms SHALL be easy for applicants to find and access.
+5. <a name="4.2-r5"></a>The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing process. These mechanisms SHALL be easy for applicants to find and access.
 
-<a name="4.2-r6"></a> 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  These errors might include the number of retries allowed, use of alternative proofing (i.e., in-person if remote fails), or fraud countermeasures applied when anomalies are detected.
+6. <a name="4.2-r6"></a>The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  These errors might include the number of retries allowed, use of alternative proofing (i.e., in-person if remote fails), or fraud countermeasures applied when anomalies are detected.
 
-<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessments of privacy and security risks to determine:
+7. <a name="4.2-r7"></a>The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessments of privacy and security risks to determine:
 
-	a. Any steps that it will take to verify the identity of the applicant beyond the mandatory requirements specified herein;  
-	b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
-	c. The schedule of retention for these records. Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.  
+ a. Any steps that it will take to verify the identity of the applicant beyond the mandatory requirements specified herein;  
+ b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
+ c. The schedule of retention for these records. Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.  
 
 8. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 
@@ -80,15 +82,16 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 11. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or protecting that data from unauthorized access for the duration of retention.
 
-<a name="4.2-r12"></a> 12. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
+12. <a name="4.2-r12"></a>Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
 
-	a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the Privacy Act.  
-	b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
-	c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the E-Government Act of 2002.  
-	d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
+ a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the Privacy Act.
+ b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
+ c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the E-Government Act of 2002.  
+ d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
-<a name="4.2-r13"></a>
-13. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
+13. <a name="4.2-r13"></a>The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
+
+
 
 ### 4.3. Identity Assurance Level 1
 
@@ -100,7 +103,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 IAL2 allows for **remote** or **in-person** identity proofing. IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant.
 
-CSPs SHALL proof according to the requirements in [Section 4.4.1](#normal or [Section 4.4.2](#referee). A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.4.2](#referee).
+CSPs SHALL proof according to the requirements in [Section 4.4.1](#normal) or [Section 4.4.2](#referee). A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.4.2](#referee).
 
 #### <a name="normal"></a>4.4.1. IAL2 Conventional Proofing Requirements
 
