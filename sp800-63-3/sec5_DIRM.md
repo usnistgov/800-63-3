@@ -145,7 +145,7 @@ This guidance addresses only those risks associated with authentication and iden
 
 ### <a name="daps"></a> 5.5. Digital Identity Acceptance Statement
 
-Agencies SHOULD include this information in existing artifacts required to achieve a security assessment and authorization.
+Agencies SHOULD include this information in existing artifacts required to achieve a SA&A.
 
 The statement SHALL include, at a minimum:
 
