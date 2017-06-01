@@ -16,7 +16,7 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 <a name="63cSec7-Figure1"></a>
 
 <div class="text-center" markdown="1">
-![Figure 1: Back-channel presentation](sp800-63c/media/back-channel.png)
+<img src="sp800-63c/media/back-channel.png" alt="Back-channel Presentation" style="width:614px;height:600px;;min-width:614px;min-height:600px;"/>
 
 **Figure 7-1. Back-channel Presentation**
 
@@ -64,8 +64,7 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 <a name="63cSec7-Figure2"></a>
 
 <div class="text-center" markdown="1">
-![Figure 2: Front-channel presentation](sp800-63c/media/front-channel.png)
-
+<img src="sp800-63c/media/front-channel.png" alt="Front-channel Presentation" style="width:686px;height:600px;;min-width:686px;min-height:600px;"/>
 
 **Figure 7-2. Front-channel Presentation**
 
