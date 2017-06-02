@@ -86,7 +86,7 @@ Federation involves the transfer of personal attributes from a third party, the 
 
 Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with the privacy interests of subscribers.
 
-The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request to transmit the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in [Section 6.3],(#ppi) or privacy-enhancing cryptographic protocols, to provide unlinkability and discourage subscriber activity tracking and profiling.
+The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the information for any purpose other than federated authentication, to comply with law or legal process, or in the case of a specific user request to transmit the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in [Section 6.3](#ppi) or privacy-enhancing cryptographic protocols to provide unlinkability and discourage subscriber activity tracking and profiling.
 
 An IdP MAY disclose information on subscriber activities to other RPs within the federation for security purposes such as communication of compromised subscriber accounts.
 
