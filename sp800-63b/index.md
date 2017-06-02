@@ -6,15 +6,15 @@ description: "SP 800-63B"
 
 # SP 800-63B
 
-This is a working draft of NIST Special Publication 800-63B *Authentication and Lifecycle Management*. This document is a sub-document referenced by [SP 800-63-3](../sp800-63-3/) covering the associated topics that had been previously in SP 800-63-2.
+This is a working draft of NIST Special Publication 800-63B *Authentication and Lifecycle Management*. This document is a sub-document referenced by [SP 800-63](../sp800-63-3/).
 
-SP 800-63B provides guidance on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified levels of strength.
+SP 800-63B provides guidance on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a remote subscriber to an identity system at specified levels of strength. This guideline addresses:
 
-- An identifier that can be used to associate the subscriber with previous interactions with the same relying party
+- An identifier that can be used to associate the subscriber with previous interactions with the same relying party,
 
-- A metric describing the strength of the authentication process
+- A metric describing the strength of the authentication process, and
 
-- Optionally, one or more attributes associated with the subscriber
+- Optionally, one or more attributes associated with the subscriber.
 
 This document is broken up into sections as follows:
 
