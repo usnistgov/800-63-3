@@ -36,7 +36,7 @@ AAL1 authentication SHALL occur by the use of any of the following authenticator
 
 Cryptographic authenticators used at AAL1 SHALL use approved cryptography. Software-based authenticators that operate within the context of an operating system MAY, where applicable, attempt to detect compromise (e.g., by malware) of the user endpoint in which they are running and SHOULD not complete the operation when such a compromise is detected.
 
-Communication between the claimant and verifier (using the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
+Communication between the claimant and verifier (using the primary channel in the case of an Out-of-Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
 Verifiers operated by government agencies at AAL1 SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1.
 
@@ -46,7 +46,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.1.4. Security Controls
 
-The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
+The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [[SP 800-53]](#SP800-53), or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard, and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
 
 #### <a name="aal1records"></a> 4.1.5. Records Retention Policy
 
@@ -54,7 +54,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### 4.2. Authenticator Assurance Level 2
 
-AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. In order to authenticate at AAL2, claimants SHALL successfully authenticate using both authentication factors. Approved cryptographic techniques are required at AAL2 and above.
+AAL2 provides high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. In order to authenticate at AAL2, claimants SHALL successfully authenticate using both authentication factors. Approved cryptographic techniques are required at AAL2 and above.
 
 #### 4.2.1. Permitted Authenticator Types
 
@@ -80,11 +80,11 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 Cryptographic authenticators used at AAL2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of an operating system MAY, where applicable, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD not complete the operation when such a compromise is detected. At least one authenticator used at AAL2 SHALL be replay resistant as described in Section [5.2.8](#replay). Authentication at AAL2 SHOULD demonstrate authentication intent from at least one authenticator as discussed in Section [5.2.9](#intent).
 
-Communication between the claimant and verifier (the primary channel in the case of an Out of Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
+Communication between the claimant and verifier (the primary channel in the case of an Out-of-Band authenticator) SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
 Verifiers operated by government agencies at AAL2 SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1.
 
-When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked, nor whether the unlock process met the requirements for the relevant authenticator type.
+When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. This is because it is generally not possible for a verifier to know that the device had been locked, or if the unlock process met the requirements for the relevant authenticator type.
 
 When a biometric factor is used in authentication at AAL2, the performance requirements stated in Section [5.2.3](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
 
@@ -104,7 +104,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
+AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
 
 #### 4.3.1. Permitted Authenticator Types
 
@@ -126,7 +126,7 @@ Verifiers at AAL3 SHALL be validated at [FIPS 140](#FIPS140-2) Level 1 or higher
 
 Verifiers at AAL3 SHALL be verifier compromise resistant as described in [Section 5.2.7](#verifier-secrets) with respect to at least one authentication factor.
 
-When a device such a smartphone is used in the authentication process (presuming that the device is able to meet the requirements above), the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered to satisfy one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked, nor whether the unlock process met the requirements for the relevant authenticator type.
+When a device such a smartphone is used in the authentication process (presuming that the device is able to meet the requirements above), the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered to satisfy one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked, or if the unlock process met the requirements for the relevant authenticator type.
 
 When a biometric factor is used in authentication at AAL3, the verifier SHALL make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in Section [5.2.3](#biometric_use).
 
@@ -136,7 +136,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.3.4. Security Controls
 
-The CSP SHALL employ appropriately-tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53) or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the high baseline of security controls defined in [[SP 800-53]](#SP800-53), or an equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP)) or industry standard, and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
 
 #### <a name="aal3records"></a> 4.3.5. Records Retention Policy
 

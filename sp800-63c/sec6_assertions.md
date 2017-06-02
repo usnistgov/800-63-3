@@ -5,7 +5,7 @@
 
 *This section is normative.*
 
-An assertion used for authentication is a packaged set of attribute values or attribute references about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute references about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein.
+An assertion used for authentication is a packaged set of attribute values or attribute references about, or associated with, an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute references about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein.
 
 Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute references regarding the subscriber.
 
@@ -38,7 +38,7 @@ The lifetime of the assertion is the time between its issuance and its expiratio
 
 ### 6.1. Assertion Binding <a name="assertion-binding"></a>
 
-Assertion binding can be classified based on whether presentation by a claimant of an assertion or an assertion reference is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
+Assertion binding can be classified based on whether presentation by a claimant of an assertion, or an assertion reference, is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
 
 #### 6.1.1. Bearer Assertions <a name="bearer"></a>
 
@@ -47,7 +47,7 @@ A bearer assertion can be presented by any party as proof of the bearer's identi
 Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 7.1](#back-channel)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
 
 #### 6.1.2. Holder-of-Key Assertions <a name="holderofkey"></a>
-A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP.  Note that the reference to the key is asserted (and signed) by the issuer of the assertion.
+A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system, including the browser, IdP, or RP.  Note that the reference to the key is asserted (and signed) by the issuer of the assertion.
 
 When the RP receives the holder-of-key assertion, the subscriber proves possession of the key referenced in the assertion directly to the RP. While the subscriber could also have used a key-based means of authenticating to the IdP, the primary authentication at the IdP and the federated authentication at the RP are considered separately and are not assumed to use the same keys or related sessions.
 
@@ -66,7 +66,7 @@ The following requirements apply to all holder-of-key assertions:
 
 ### 6.2. Assertion Protection
 
-Independent of the binding mechanism (discussed in [Section 6.1](#assertion-binding)) or the federation model used to obtain them (described in [Section 5.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
+Independent of the binding mechanism (discussed in [Section 6.1](#assertion-binding)), or the federation model used to obtain them (described in [Section 5.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
 
 #### 6.2.1. Assertion Identifier
 
@@ -106,7 +106,7 @@ Note that in a proxied federation model, the initial IdP may be unable to genera
 
 #### 6.3.2. <a name="ppi-gen"></a>Pairwise Pseudonymous Identifier Generation
 
-Pairwise pseudonymous identifiers SHALL be opaque, containing no identifying information about the subscriber. They SHALL also be unguessable by a party having access to some information identifying the subscriber. Pairwise pseudonymous identifiers MAY be generated randomly and assigned to subscribers by the IdP or MAY be derived from other subscriber information if the derivation is done in an irreversible, unguessable manner (e.g., using a keyed hash function with a secret key). Normally, the identifiers SHALL only be known by and used by one pair of endpoints (e.g., IdP-RP). However, an IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, provided:
+Pairwise pseudonymous identifiers SHALL contain no identifying information about the subscriber. They SHALL also be unguessable by a party having access to some information identifying the subscriber. Pairwise pseudonymous identifiers MAY be generated randomly and assigned to subscribers by the IdP or MAY be derived from other subscriber information if the derivation is done in an irreversible, unguessable manner (e.g., using a keyed hash function with a secret key). Normally, the identifiers SHALL only be known by and used by one pair of endpoints (e.g., IdP-RP). However, an IdP MAY generate the same identifier for a subscriber at multiple RPs at the request of those RPs, provided:
 
 * Those RPs have a demonstrable relationship that justifies an operational need for the correlation, such as a shared security domain or shared legal ownership; and
 * All RPs sharing an identifier consent to being correlated in such a manner.
