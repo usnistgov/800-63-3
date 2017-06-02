@@ -8,6 +8,8 @@ In order to satisfy the requirements of a given AAL, a claimant SHALL be authent
 
 Detailed normative requirements for authenticators and verifiers at each AAL are provided in Section 5.
 
+See [SP 800-63-3 Section 6.2](sp800-63-3.html#AAL_CYOA) for details on how to choose the most appropriate AAL.
+
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
 At IAL1, it is possible that attributes are collected and made available by the digital service. Any PII, whether self-asserted or validated, requires multi-factor authentication; therefore agencies SHALL select a minimum of AAL2 when self-asserted PII is made available online.
