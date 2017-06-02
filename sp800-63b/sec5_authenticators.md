@@ -4,7 +4,7 @@
 
 _This section is normative._
 
-This section provides the detailed requirements specific to each type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4), and the requirement for verifier impersonation resistance at AAL3 described in [Section 5.2.5](#verifimpers), the technical requirements for each of the authenticator types are the same regardless of the AAL at which the authenticator is used.
+This section provides the detailed requirements specific to each type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4) and the requirement for verifier impersonation resistance at AAL3 described in [Section 5.2.5](#verifimpers), the technical requirements for each of the authenticator types are the same regardless of the AAL at which the authenticator is used.
 
 ### <a name="reqauthtype"></a> 5.1. Requirements by Authenticator Type
 
@@ -347,14 +347,14 @@ When the subscriber successfully authenticates, the verifier SHOULD disregard an
 
 #### <a name="biometric_use"></a>5.2.3. Use of Biometrics
 
-The use of biometrics (*something you are*) in authentication includes both measurement of physical charac teristics (e.g., fingerprint, iris, facial characteristics) and behavioral characteristics (e.g., typing cadence). Both classes are considered biometric modalities, although different modalities may differ in the extent to which they establish authentication intent as described in [Section 5.2.9](#intent).
+The use of biometrics (*something you are*) in authentication includes both measurement of physical characteristics (e.g., fingerprint, iris, facial characteristics) and behavioral characteristics (e.g., typing cadence). Both classes are considered biometric modalities, although different modalities may differ in the extent to which they establish authentication intent as described in [Section 5.2.9](#intent).
 
 For a variety of reasons, this document supports only limited use of biometrics for authentication. These reasons include:
 
-- Biometric False Match Rates (FMR) do not provide confidence in the authentication of the subscriber by themselves. In addition, FMR do not protect against spoofing attacks.
+- The biometric False Match Rate (FMR) does not provide confidence in the authentication of the subscriber by itself. In addition, FMR does not account for spoofing attacks.
 - Biometric comparison is probabilistic, whereas the other authentication factors are deterministic.
 - Biometric template protection schemes provide a method for revoking biometric credentials that are comparable to other authentication factors (e.g., PKI certificates and passwords). However, the availability of such solutions is limited, and standards for testing these methods are under development.
-- Biometric characteristics do not constitute secrets.They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies, such as liveness detection, can mitigate the risk of these types of attacks, additional trust in the sensor and/or biometric processing is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
+- Biometric characteristics do not constitute secrets. They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). While presentation attack detection (PAD) technologies, such as liveness detection, can mitigate the risk of these types of attacks, additional trust in the sensor and/or biometric processing is required to ensure that PAD is operating properly in accordance with the needs of the CSP and the subscriber.
 
 Therefore, the limited use of biometrics for authentication is supported with the following requirements and guidelines:
 

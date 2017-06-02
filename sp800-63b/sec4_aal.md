@@ -52,7 +52,7 @@ The CSP shall comply with their respective records retention policies in accorda
 
 ### 4.2. Authenticator Assurance Level 2
 
-AAL2 provides high confidence that the claimant controls the authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. In order to authenticate at AAL2, claimants SHALL successfully authenticate using both authentication factors. Approved cryptographic techniques are required at AAL2 and above.
+AAL2 provides high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. In order to authenticate at AAL2, claimants SHALL successfully authenticate using both authentication factors. Approved cryptographic techniques are required at AAL2 and above.
 
 #### 4.2.1. Permitted Authenticator Types
 
@@ -102,7 +102,7 @@ CSPs shall comply with their respective records retention policies in accordance
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls the authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
+AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
 
 #### 4.3.1. Permitted Authenticator Types
 

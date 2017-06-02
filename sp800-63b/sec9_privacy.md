@@ -19,7 +19,7 @@ CSPs should be able to reasonably justify any response they take to identified p
 
 ### 9.3. Use Limitation
 
-[Section 4.4](#aal_privacy) does not permit the CSP to use information about authenticators that is collected and maintained in the authentication process for any purpose other than authentication, or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. Care should be taken to ensure that the use of such information is limited to its original purpose for collection. Consult your SAOP if there are questions about whether proposed agency uses fall within this scope. As stated in [Section 4.4](#aal_privacy), acceptance by the subscriber of additional uses SHALL NOT be a condition of providing authentication services. 
+[Section 4.4](#aal_privacy) does not permit the CSP to use information about authenticators that is collected and maintained in the authentication process for any purpose other than authentication or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. Care should be taken to ensure that the use of such information is limited to its original purpose for collection. Consult your SAOP if there are questions about whether proposed agency uses fall within this scope. As stated in [Section 4.4](#aal_privacy), acceptance by the subscriber of additional uses SHALL NOT be a condition of providing authentication services. 
 
 ### 9.4. Agency-specific Privacy Compliance 
 

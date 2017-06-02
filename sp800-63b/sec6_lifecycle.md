@@ -13,13 +13,13 @@ During the lifecycle of an authenticator bound to a subscriber's identity, a num
 Authenticators SHALL be bound to subscriber accounts by either:
 
 - issuance by the CSP as part of enrollment, binding, or other processes, or
-- a subscriber-provided authenticator, that is acceptable to the CSP.
+- a subscriber-provided authenticator that is acceptable to the CSP.
 
 This guideline refers to the *binding* rather than the issuance of an authenticator in order to accommodate both these options.
 
 Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are, or have been, associated with each identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2. The CSP SHALL also verify the type of user-provided authenticator (e.g., single-factor cryptographic device vs. multi-factor cryptographic device) so that verifiers can determine compliance with requirements at at each AAL.
 
-The record created by the CSP SHALL contain the date and time the authenticator was bound to the account. The record SHOULD include information about the source of the binding, such as the IP address, and device identifier of any device associated with the enrollment. If available, the record SHOULD also contain information about the source of unsuccessful authentications attempted with the authenticator.
+The record created by the CSP SHALL contain the date and time the authenticator was bound to the account. The record SHOULD include information about the source of the binding (e.g., IP address, device identifier) of any device associated with the enrollment. If available, the record SHOULD also contain information about the source of unsuccessful authentications attempted with the authenticator.
 
 #### 6.1.1. Binding at Enrollment
 
@@ -52,7 +52,7 @@ For physical transactions -
 
 #### 6.1.2.1. Binding of Additional Authenticator at Existing AAL
 
-CSPs and verifiers SHOULD encourage subscribers to maintain at least two valid authenticators of each factor that they will be using, with the exception of memorized secrets. For example, a subscriber, who usually uses an OTP device as a physical authenticator, MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged. See [Section 6.1.2.3](#replacement) for more information on replacement of memorized secret authenticators.
+CSPs and verifiers SHOULD encourage subscribers to maintain at least two valid authenticators of each factor that they will be using, with the exception of memorized secrets. For example, a subscriber who usually uses an OTP device as a physical authenticator MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged. See [Section 6.1.2.3](#replacement) for more information on replacement of memorized secret authenticators.
 
 Accordingly, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. Before adding the new authenticator, the CSP SHALL first require the subscriber to authenticate at the AAL (or a higher AAL) at which the new authenticator will be used. When an authenticator is added, the CSP SHOULD send a notification to the subscriber via a mechanism that is independent of the transaction binding the new authenticator. The CSP MAY limit the number of authenticators that may be bound in this manner.
 
@@ -64,7 +64,7 @@ Prior to binding the new authenticator, the CSP SHALL first require the subscrib
 
 #### 6.1.2.3. <a name="replacement"></a> Replacement of Lost Authentication Factor
 
-If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL2 or IAL3, that subscriber SHALL repeat the identity proofing process described in [SP 800-63A](sp800-63a.html). An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence, MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [SP 800-63A, Section 4.2](sp800-63a.html#genProofReqs). The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL3 SHALL be done in person, or through a supervised remote process as described in [SP 800-63A Section 5.3.3.2](sp800-63a.html#supervised), and SHALL verify the biometric collected during the proofing process.
+If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL2 or IAL3, that subscriber SHALL repeat the identity proofing process described in [SP 800-63A](sp800-63a.html). An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence, MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [SP 800-63A Section 4.2](sp800-63a.html#genProofReqs). The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL3 SHALL be done in person, or through a supervised remote process as described in [SP 800-63A Section 5.3.3.2](sp800-63a.html#supervised), and SHALL verify the biometric collected during the proofing process.
 
 The CSP SHOULD send a notification of the event to the subscriber; this MAY be the same notice as is required as part of the proofing process.
 
@@ -80,7 +80,7 @@ CSPs SHOULD, where practical, accommodate the use of subscriber-provided authent
 
 #### 6.1.4. Renewal
 
-The CSP SHOULD bind an updated authenticator in an appropriate amount of time in advance of an existing authenticator's expiration. The process for this SHOULD conform closely to the initial authenticator issuance process (e.g., confirming address of record). Following successful use of the new authenticator, the CSP MAY revoke the authenticator that it is replacing.
+The CSP SHOULD bind an updated authenticator an appropriate amount of time in advance of an existing authenticator's expiration. The process for this SHOULD conform closely to the initial authenticator issuance process (e.g., confirming address of record). Following successful use of the new authenticator, the CSP MAY revoke the authenticator that it is replacing.
 
 ### 6.2. Loss, Theft, Damage, and Unauthorized Duplication
 
@@ -88,7 +88,7 @@ Compromised authenticators include those that have been lost, stolen, and subjec
 
 Suspension, revocation, or destruction of compromised authenticators SHOULD occur as promptly as practical following detection. Agencies MAY establish time limits for this process.
 
-To facilitate secure reporting of the loss, theft, or damage to an authenticator, the CSP SHOULD provide the subscriber with a method of authenticating to the CSP using a backup or alternate authenticator. This backup authenticator could be a memorized secret or a physical authenticator and MAY be used for this purpose and either MAY be used for this purpose with only one authentication factor required. Alternatively, the subscriber MAY establish an authenticated protected channel to the CSP and verify information collected during the proofing process. As an option, the CSP MAY choose to verify an address of record (i.e., email, telephone, postal) and suspend authenticator(s) reported to have been compromised. The suspension SHALL be reversible if the subscriber successfully authenticates to the CSP using a valid (not suspended) authenticator and requests reactivation of an authenticator suspended in this manner. The CSP MAY set a time limit after which a suspended authenticator can no longer be reactivated.
+To facilitate secure reporting of the loss, theft, or damage to an authenticator, the CSP SHOULD provide the subscriber with a method of authenticating to the CSP using a backup or alternate authenticator. This backup authenticator SHALL be either a memorized secret or a physical authenticator. Either MAY be used; only one authentication factor is required to make this report. Alternatively, the subscriber MAY establish an authenticated protected channel to the CSP and verify information collected during the proofing process. As an option, the CSP MAY choose to verify an address of record (i.e., email, telephone, postal) and suspend authenticator(s) reported to have been compromised. The suspension SHALL be reversible if the subscriber successfully authenticates to the CSP using a valid (not suspended) authenticator and requests reactivation of an authenticator suspended in this manner. The CSP MAY set a time limit after which a suspended authenticator can no longer be reactivated.
 
 ### 6.3. Expiration
 
