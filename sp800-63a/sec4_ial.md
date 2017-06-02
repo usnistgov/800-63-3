@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [Selecting IAL](https://pages.nist.gov/TIG-Stage/sp800-63-3.html#IAL_CYOA) for details on how to chose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [[SP 800-63B]](sp800-63b.html)).
+This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [SP 800-63-3 Section 6.1](sp800-63-3.html#IAL_CYOA) for details on how to choose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
 
 The only outcome of identity proofing is to ensure that the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing. As an example, such attributes could include:  
 

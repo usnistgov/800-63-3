@@ -8,7 +8,7 @@ In order to satisfy the requirements of a given AAL, a claimant SHALL be authent
 
 Detailed normative requirements for authenticators and verifiers at each AAL are provided in Section 5.
 
-See [Selecting AAL](https://pages.nist.gov/TIG-Stage/sp800-63-3.html#AAL_CYOA) for details on how to chose the most appropriate AAL. 
+See [SP 800-63-3 Section 6.2](sp800-63-3.html#AAL_CYOA) for details on how to choose the most appropriate AAL.
 
 FIPS 140 requirements are satisfied by [[FIPS 140-2]](#FIPS140-2) or newer revisions.
 
