@@ -2,9 +2,13 @@
 
 # <a name="800-63c"></a> DRAFT NIST Special Publication 800-63C
 
+![](sp800-63-3/media/div-1.png)  
+
 # Digital Identity Guidelines  
 
-### Federation and Assertions
+### _Federation and Assertions_
+
+![](sp800-63-3/media/div-2.png)  
 
 Paul A. Grassi  
 Justin P. Richer  
@@ -120,20 +124,23 @@ http://dx.doi.org/10.6028/NIST.SP.XXX
 
 {:/comment}
 
-
+<div class="text-justify" markdown="1">
 >Certain commercial entities, equipment, or materials may be identified in this document in order to describe an experimental procedure or concept adequately. Such identification is not intended to imply recommendation or endorsement by NIST, nor is it intended to imply that the entities, materials, or equipment are necessarily the best available for the purpose.
 <br /><br />
 >There may be references in this publication to other publications currently under development by NIST in accordance with its assigned statutory responsibilities. The information in this publication, including concepts and methodologies, may be used by federal agencies even before the completion of such companion publications. Thus, until each publication is completed, current requirements, guidelines, and procedures, where they exist, remain operative. For planning and transition purposes, federal agencies may wish to closely follow the development of these new publications by NIST.
 <br /><br />
->Organizations are encouraged to review all draft publications during public comment periods and provide feedback to NIST. Many NIST cybersecurity publications, other than the ones noted above, are available at [http://csrc.nist.gov/publications](http://csrc.nist.gov/publications).
+>Organizations are encouraged to review all draft publications during public comment periods and provide feedback to NIST. Many NIST cybersecurity publications, other than the ones noted above, are available at [http://csrc.nist.gov/publications/](http://csrc.nist.gov/publications/).
+</div>
 
+<div class="text-center" markdown="1">
 **Comments on this publication may be submitted to eauth-comments@nist.gov**    
 All comments are subject to release under the Freedom of Information Act (FOIA).
 
 National Institute of Standards and Technology  
 Attn: Computer Security Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 8930) Gaithersburg, MD 20899-8930  
-Email: <eauth-comments@nist.gov>
+Email: <dig-comments@nist.gov>
+</div>
 
 <div class="text-center" markdown="1">
 
@@ -168,7 +175,9 @@ digital authentication; electronic authentication; electronic credentials; feder
 
 </div>
 
-The authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
+The authors would like to acknowledge the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Ellen Nadeau from NIST, and Kat Megas from NIST.
+
+The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus.  Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
 <div class="text-center" markdown="1">
 
@@ -186,7 +195,9 @@ The terms "CAN" and "CANNOT" indicate a possibility and capability, whether mate
 
 <div class="breaker"/>
 
-## Table of Contents  
+<div class="text-center" markdown="1">
+## Table of Contents
+</div>  
 
 [1. Purpose](#purpose)
 

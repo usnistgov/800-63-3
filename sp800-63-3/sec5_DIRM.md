@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This section,and the corresponding risk assessment guidance supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies.  Rather, requirements contained herein provide specific guidance related to digital identity risk that agency RPs SHALL apply while executing all relevant RMF lifecycle phases.
+This section, and the corresponding risk assessment guidance, supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies.  Rather, requirements contained herein provide specific guidance related to digital identity risk that agency RPs SHALL apply while executing all relevant RMF lifecycle phases.
 
 ### <a name="5-1-overview"></a> 5.1. Overview
 
@@ -14,9 +14,9 @@ In today's digital services, combining proofing, authenticator, and federation r
 
 This guideline details requirements to assist agencies in avoiding:
 
-1. identity proofing errors (i.e., a false applicant claiming an identity that is not rightfully theirs); and
-2. authentication errors (i.e., a false claimant using a credential that is not rightfully theirs); and
-3. federation errors (an identity assertion is compromised). 
+1. Identity proofing errors (i.e., a false applicant claiming an identity that is not rightfully theirs); and
+2. Authentication errors (i.e., a false claimant using a credential that is not rightfully theirs); and
+3. Federation errors (i.e., an identity assertion is compromised). 
 
 From the perspective of an identity proofing failure, there are two dimensions of potential failure:
 
@@ -43,7 +43,7 @@ A summary of each of the identity, authenticator, and federation assurance level
 | Identity Assurance Level |
 |:----------------------|
 | **IAL1** - At IAL1, attributes, if any, are self-asserted or should be treated as self-asserted.|
-| **IAL2** - IAL2 introduces the need for either remote or in-person identity proofing. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [[SP 800-63A]](sp800-63a.html).|
+| **IAL2** - At IAL2, either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [[SP 800-63A]](sp800-63a.html).|
 | **IAL3** - At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized representative of the CSP through examination of physical documentation as described in [[SP 800-63A]](sp800-63a.html).|
 
 |Authenticator Assurance Level|
@@ -70,26 +70,26 @@ Authentication, proofing, and federation errors with potentially worse consequen
 
 Categories of harm and impact include:  
 
-1. Inconvenience, distress, or damage to standing or reputation
-2. Financial loss or agency liability
-3. Harm to agency programs or public interests
-4. Unauthorized release of sensitive information
-5. Personal safety
-6. Civil or criminal violations
+1. Inconvenience, distress, or damage to standing or reputation;
+2. Financial loss or agency liability;
+3. Harm to agency programs or public interests;
+4. Unauthorized release of sensitive information;
+5. Personal safety; and
+6. Civil or criminal violations.
 
-Required assurance levels for digital transactions are determined by assessing the potential impact of each of the above categories using the potential impact values described in Federal Information Processing Standard (FIPS) 199, "Standards for Security Categorization of Federal Information and Information Systems." 
+Required assurance levels for digital transactions are determined by assessing the potential impact of each of the above categories using the potential impact values described in Federal Information Processing Standard (FIPS) 199, _Standards for Security Categorization of Federal Information and Information Systems_.
 
 The three potential impact values are:
 
-1. Low impact
-2. Moderate impact
-3. High impact
+1. Low impact,
+2. Moderate impact, and
+3. High impact.
 
 #### 5.3.1. Business Process vs. Online Transaction
 
-The assurance level determination is only based on transactions that are part of a digital system. An online transaction may not be equivalent to a complete business process that requires offline processing, or online processing in a completely segmented system. In selecting the appropriate assurance levels, the agency should assess the risk associated with online transactions they are offering via the digital service, not the entire business process associated with the provided benefit or service. For example, in an online survey, sensitive PII may be collected, but it is never made available online to the submitter after the information is saved. In this instance, it is important for the information to be carefully protected in backend systems, but there is no reason to identity proof or even authenticate the user providing the information for the purposes of their own access to the system or its associated benefits. The online transaction is solely a submission of the data. The entire business process may require a significant amount of data validation, without ever needing to know if the correct person submitted the information. In this scenario, there is no need for any identity proofing nor authentication.
+The assurance level determination is only based on transactions that are part of a digital system. An online transaction may not be equivalent to a complete business process that requires offline processing, or online processing in a completely segmented system. In selecting the appropriate assurance levels, the agency should assess the risk associated with online transactions they are offering via the digital service, not the entire business process associated with the provided benefit or service. For example, in an online survey, personal information may be collected, but it is never made available online to the submitter after the information is saved. In this instance, it is important for the information to be carefully protected in backend systems, but there is no reason to identity proof or even authenticate the user providing the information for the purposes of their own access to the system or its associated benefits. The online transaction is solely a submission of the data. The entire business process may require a significant amount of data validation, without ever needing to know if the correct person submitted the information. In this scenario, there is no need for any identity proofing nor authentication.
 
-Another example where the assessed risk could differ if the agency evaluated the entire business process rather than the online transaction requirements is a digital service that accepts resumes to apply for open job postings. In this use case, the digital service allows--or at least does not restrict--an individual to submit a resume on behalf of anyone else, and in subsequent visits to the site, access the resume for various purposes. Since the resume information is available to the user in later sessions, and is likely to contain PII, the agency must select an AAL that requires MFA, even though the user self-asserted the PII. In this case, the requirements of [EO 13681](#eo13681) apply and the application must provide at least AAL2. However, the identity proofing requirements remain unclear. The entire business process of examining a résumé and ultimately hiring and onboarding a person requires a significant amount of identity proofing. The agency needs a high level of confidence that the job applicant is in fact the subject of the résumé submitted online if a decision to hire is made. Yet this level of proofing is not required to submit the résumé online. Identity proofing is not required to complete the digital portion of the transaction successfully. Identity proofing the submitter would create more risk than required in the online system as excess personal information would be collected when no such information is needed for the portion of the hiring process served by the digital job application portal and may reduce usability. Therefore, the most appropriate IAL selection would be 1. There is no need to identity proof the user to successfully complete the online transaction. This decision for the online portal itself is independent of a seemlingly obvious identiy proofing requirement for the entire business process, lest a job be offered to a fraudulent applicant.
+Another example where the assessed risk could differ if the agency evaluated the entire business process rather than the online transaction requirements is a digital service that accepts resumes to apply for open job postings. In this use case, the digital service allows--or at least does not restrict--an individual to submit a resume on behalf of anyone else, and in subsequent visits to the site, access the resume for various purposes. Since the resume information is available to the user in later sessions, and is likely to contain personal information, the agency must select an AAL that requires MFA, even though the user self-asserted the personal information. In this case, the requirements of [EO 13681](#eo13681) apply and the application must provide at least AAL2. However, the identity proofing requirements remain unclear. The entire business process of examining a résumé and ultimately hiring and onboarding a person requires a significant amount of identity proofing. The agency needs a high level of confidence that the job applicant is in fact the subject of the résumé submitted online if a decision to hire is made. Yet this level of proofing is not required to submit the résumé online. Identity proofing is not required to complete the digital portion of the transaction successfully. Identity proofing the submitter would create more risk than required in the online system as excess personal information would be collected when no such information is needed for the portion of the hiring process served by the digital job application portal and may reduce usability. Therefore, the most appropriate IAL selection would be 1. There is no need to identity proof the user to successfully complete the online transaction. This decision for the online portal itself is independent of a seemingly obvious identity proofing requirement for the entire business process, lest a job be offered to a fraudulent applicant.
 
 #### 5.3.2. Impacts per Category
 
@@ -99,59 +99,69 @@ This section defines the potential impacts for each category of harm. Each assur
 
 _Potential impact of inconvenience, distress, or damage to standing or reputation:_    
 
-- Low—at—worst, limited, short-term inconvenience, distress, or embarrassment to any party.
-- Moderate—at—worst, serious short-term or limited long-term inconvenience, distress, or damage to the standing or reputation of any party.
-- High—severe or serious long-term inconvenience, distress, or damage to the standing or reputation of any party. This is ordinarily reserved for situations with particularly severe effects or which potentially affect many individuals.
+- Low — at worst, limited, short-term inconvenience, distress, or embarrassment to any party.
+- Moderate — at worst, serious short-term or limited long-term inconvenience, distress, or damage to the standing or reputation of any party.
+- High — severe or serious long-term inconvenience, distress, or damage to the standing or reputation of any party. This is ordinarily reserved for situations with particularly severe effects or which potentially affect many individuals.
 
 _Potential impact of financial loss:_
 
-- Low—at—worst, an insignificant or inconsequential financial loss to any party, or at worst, an insignificant or inconsequential agency liability.
-- Moderate—at—worst, a serious financial loss to any party, or a serious agency liability.
-- High—severe or catastrophic financial loss to any party, or severe or catastrophic agency liability.
+- Low — at worst, an insignificant or inconsequential financial loss to any party, or at worst, an insignificant or inconsequential agency liability.
+- Moderate — at worst, a serious financial loss to any party, or a serious agency liability.
+- High — severe or catastrophic financial loss to any party, or severe or catastrophic agency liability.
 
 _Potential impact of harm to agency programs or public interests:_
 
-- Low—at—worst, a limited adverse effect on organizational operations or assets, or public interests. Examples of limited adverse effects are: (i) mission capability degradation to the extent and duration that the organization is able to perform its primary functions with noticeably reduced effectiveness, or (ii) minor damage to organizational assets or public interests.
-- Moderate—at—worst, a serious adverse effect on organizational operations or assets, or public interests. Examples of serious adverse effects are: (i) significant mission capability degradation to the extent and duration that the organization is able to perform its primary functions with significantly reduced effectiveness; or (ii) significant damage to organizational assets or public interests.
-- High—a severe or catastrophic adverse effect on organizational operations or assets, or public interests. Examples of severe or catastrophic effects are: (i) severe mission capability degradation or loss of to the extent and duration that the organization is unable to perform one or more of its primary functions; or (ii) major damage to organizational assets or public interests.
+- Low — at worst, a limited adverse effect on organizational operations or assets, or public interests. Examples of limited adverse effects are: (i) mission capability degradation to the extent and duration that the organization is able to perform its primary functions with noticeably reduced effectiveness, or (ii) minor damage to organizational assets or public interests.
+- Moderate — at worst, a serious adverse effect on organizational operations or assets, or public interests. Examples of serious adverse effects are: (i) significant mission capability degradation to the extent and duration that the organization is able to perform its primary functions with significantly reduced effectiveness; or (ii) significant damage to organizational assets or public interests.
+- High — a severe or catastrophic adverse effect on organizational operations or assets, or public interests. Examples of severe or catastrophic effects are: (i) severe mission capability degradation or loss of to the extent and duration that the organization is unable to perform one or more of its primary functions; or (ii) major damage to organizational assets or public interests.
 
 _Potential impact of unauthorized release of sensitive information:_
 
-- Low—at—worst, a limited release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in a loss of confidentiality with a low impact as defined in FIPS PUB 199.
-- Moderate—at—worst, a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a moderate impact as defined in FIPS PUB 199.
-- High—a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a high impact as defined in FIPS PUB 199.
+- Low — at worst, a limited release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in a loss of confidentiality with a low impact as defined in FIPS 199.
+- Moderate — at worst, a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a moderate impact as defined in FIPS 199.
+- High — a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a high impact as defined in FIPS 199.
 
 _Potential impact to personal safety:_
 
-- Low—at—worst, minor injury not requiring medical treatment.
-- Moderate—at—worst, moderate risk of minor injury or limited risk of injury requiring medical treatment.
-- High—a risk of serious injury or death.
+- Low — at worst, minor injury not requiring medical treatment.
+- Moderate — at worst, moderate risk of minor injury or limited risk of injury requiring medical treatment.
+- High — a risk of serious injury or death.
 
 _The potential impact of civil or criminal violations is:_
 
-- Low—at—worst, a risk of civil or criminal violations of a nature that would not ordinarily be subject to enforcement efforts.
-- Moderate—at—worst, a risk of civil or criminal violations that may be subject to enforcement efforts.
-- High—a risk of civil or criminal violations that are of special importance to enforcement programs.
+- Low — at worst, a risk of civil or criminal violations of a nature that would not ordinarily be subject to enforcement efforts.
+- Moderate — at worst, a risk of civil or criminal violations that may be subject to enforcement efforts.
+- High — a risk of civil or criminal violations that are of special importance to enforcement programs.
 
 ### 5.4. Risk Acceptance and Compensating Controls
 
-The 800-63 suite specifies baseline requirements for digital identity services based on assurance level. Agencies SHOULD implement identity services per the requirements in these guidelines and SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services. 
+The SP 800-63 suite specifies baseline requirements for digital identity services based on assurance level. Agencies SHOULD implement identity services per the requirements in these guidelines and SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services. 
 
 Agencies MAY determine alternatives to the NIST recommended guidance, for the assessed xALs, based on their mission, risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.
 
-Agencies SHALL demonstrate comparability of any chosen alternative, to include any compensating controls, when the complete set of applicable 800-63 requirements is not implemented. For example, an agency may choose a National Information Assurance Partnership (NIAP) protection profile over FIPS, where the profile is equivalent (or stronger) than the FIPS requirements. That said, agencies SHALL NOT alter the assessed xAL based on agency capabilities. Rather, the agency MAY adjust their implementation of solutions based on the agency's ability to mitigate risk via means not explicitly addressed by 800-63 requirements. The agency SHALL implement procedures to document both the justification for any departure from normative requirements and detail the compensating control employed.
+Agencies SHALL demonstrate comparability of any chosen alternative, to include any compensating controls, when the complete set of applicable SP 800-63 requirements is not implemented. For example, an agency may choose a National Information Assurance Partnership (NIAP) protection profile over FIPS, where the profile is equivalent to or stronger than the FIPS requirements. That said, agencies SHALL NOT alter the assessed xAL based on agency capabilities. Rather, the agency MAY adjust their implementation of solutions based on the agency's ability to mitigate risk via means not explicitly addressed by SP 800-63 requirements. The agency SHALL implement procedures to document both the justification for any departure from normative requirements and detail the compensating control employed.
 
-This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, "Risk Management Guide for Information Technology Systems"](#SP800-30) recommends a general methodology for managing risk in federal systems. 
+This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, _Risk Management Guide for Information Technology Systems_](#SP800-30) recommends a general methodology for managing risk in federal systems. 
 
 ### <a name="daps"></a> 5.5. Digital Identity Acceptance Statement
 
-Agencies SHOULD include this information in existing artifacts required to achieve SA&A.
+Agencies SHOULD include this information in existing artifacts required to achieve a SA&A.
 
 The statement SHALL include, at a minimum:
 
-1. Assessed xAL.
-2. Implemented xAL.
-3. Rationale, if implemented xAL differs from assessed xAL.
-4. Comparability demonstration of compensating controls when the complete set of applicable 800-63 requirements are not implemented.
+1. Assessed xAL,
+2. Implemented xAL,
+3. Rationale, if implemented xAL differs from assessed xAL,
+4. Comparability demonstration of compensating controls when the complete set of applicable 800-63 requirements are not implemented, and
 5. If not accepting federated identities, rationale.
 
+### 5.6 Migrating Identities
+ 
+As these guidelines are revised, CSPs SHALL consider how changes in requirements affect their population of users. In some instances the user population will be unaffected, yet in others, the CSP will require users to undergo a transitional activity. For example, request users, upon initial logon since last revision, supply additional proofing evidence to adhere to new IAL requirements. This SHALL be a risk-based decision, made in context of the CSP, any RPs that use the CSP, mission, and the population served. The following considerations serve only as a guide to agencies when considering the impacts of requirements changes:
+ 
+1. If the RP is experiencing identity-related fraud, a migration may prove beneficial.  If not, migration may not be an added value.
+2. New, stronger, or user-friendly authentication options are added to individual AALs the CSP could issue new authenticators or allow users to register authenticators they already have.
+3. Federation requirements may or may not have a user impact. For example, consent requirements or infrastructure requirements could necessitate an infrastructure or protocol upgrade.
+4. Addition or removal of xALs may not require a migration, but would trigger a new risk assessment to determine if a change is necessary for the RP.
+ 
+The guidance does not prescribe that any migration needs to occur, only that is be considered as revisions are released. It is up to the risk tolerance and mission of the CSP and RP to determine the best approach.

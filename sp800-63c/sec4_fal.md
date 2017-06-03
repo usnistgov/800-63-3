@@ -5,9 +5,9 @@
 
 *This section is normative.*
 
-This section defines allowable Federation Assurance Levels, or FAL. The FAL describes requirements for how assertions and constructed and secured for a given transaction. These levels can be requested by an RP or required by the configuration of both the RP and the IdP for a given transaction. 
+This section defines allowable Federation Assurance Levels, or FAL. The FAL describes requirements for how assertions are constructed and secured for a given transaction. These levels can be requested by an RP or required by the configuration of both the RP and the IdP for a given transaction. 
 
-All assertions SHALL be used with a federation protocol as described in [Section 4](#federation). All assertions SHALL comply with the detailed requirements in [Section 6](#assertions). All assertions SHALL be presented using one of the methods described in [Section 7](#presentation). While many different federation implementation options are possible, the FAL is intended to provide clear implementation recommendations representing increasingly secure deployment choices. Combinations of aspects not found in the FAL table are possible but outside the scope of this document.
+All assertions SHALL be used with a federation protocol as described in [Section 4](#federation). All assertions SHALL comply with the detailed requirements in [Section 6](#assertions). All assertions SHALL be presented using one of the methods described in [Section 7](#presentation). While many different federation implementation options are possible, the FAL is intended to provide clear implementation recommendations representing increasingly secure deployment options. Combinations of aspects not found in the FAL table are possible but outside the scope of this document. See [SP 800-63-3 Section 6.3](sp800-63-3.html#FAL_CYOA) for details on how to choose the most appropriate FAL.
 
 This table presents different requirements for each FAL. Each successive level subsumes and fulfills all requirements of lower levels. Federations presented through a proxy SHALL be represented by the lowest level used during the proxied transaction.
 
@@ -30,7 +30,7 @@ For example, FAL1 maps to the OpenID Connect Basic Client profile or SAML (Secur
 
 Regardless of what is requested or required by the protocol, the FAL in use is easily detected by the RP by observing the nature of the assertion as it is presented as part of the federation protocol. Therefore, the RP is responsible for determining which FALs it is willing to accept for a given authentication transaction and ensuring that the transaction meets the requirements of that FAL.
 
-If the RP is using a front-channel presentation mechanism as defined in [Section 7.2](#front-channel) (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHOULD require FAL2 or greater in order to protect the information in the assertion from disclosure to the browser or other parties in the transaction other than the intended RP.
+If the RP is using a front-channel presentation mechanism as defined in [Section 7.2](#front-channel) (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHALL require FAL2 or greater in order to protect the information in the assertion from disclosure to the browser or other parties in the transaction other than the intended RP.
 
 In addition, the IdP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g. [[FEDRAMP]](#FEDRAMP))  or industry standard.
 

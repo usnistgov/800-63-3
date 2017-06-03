@@ -5,7 +5,7 @@
 
 *This section is normative.*
 
-Assertions MAY be presented in either a *back-channel* or *front-channel* manner from the IdP to the RP. There are tradeoffs with each model, but each require the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in [Section 5.1.4](#proxied).
+Assertions MAY be presented in either a *back-channel* or *front-channel* manner from the IdP to the RP. There are tradeoffs with each model, but each requires the proper validation of the assertion. Assertions MAY also be proxied to facilitate federation between IdPs and RPs under specific circumstances, as discussed in [Section 5.1.4](#proxied).
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
 
@@ -16,7 +16,7 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 <a name="63cSec7-Figure1"></a>
 
 <div class="text-center" markdown="1">
-![Figure 1: Back-channel presentation](sp800-63c/media/back-channel.png)
+<img src="sp800-63c/media/back-channel.png" alt="Back-channel Presentation" style="width:614px;height:600px;;min-width:614px;min-height:600px;"/>
 
 **Figure 7-1. Back-channel Presentation**
 
@@ -50,7 +50,7 @@ Elements within the assertion SHALL be validated by the RP including:
  - *time validation*: ensuring the expiration and issue times are within acceptable limits of the current timestamp
  - *audience restriction*: ensuring this RP is the intended recipient of the assertion
 
-Conveyance of the assertion reference from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP as well as the assertion from the IdP to the RP SHALL be made over an authenticated protected channel.
+Conveyance of the assertion reference from the IdP to the subscriber, as well as from the subscriber to the RP, SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP, as well as the assertion from the IdP to the RP, SHALL be made over an authenticated protected channel.
 
 When assertion references are presented, the IdP SHALL verify that the party presenting the assertion reference is the same party that requested the authentication. The IdP can do this by requiring the RP to authenticate itself when presenting the assertion reference to the IdP or through other similar means (see [[RFC 7636](#RFC7636)] for one protocol's method of RP identification).
 
@@ -64,8 +64,7 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 <a name="63cSec7-Figure2"></a>
 
 <div class="text-center" markdown="1">
-![Figure 2: Front-channel presentation](sp800-63c/media/front-channel.png)
-
+<img src="sp800-63c/media/front-channel.png" alt="Front-channel Presentation" style="width:686px;height:600px;;min-width:686px;min-height:600px;"/>
 
 **Figure 7-2. Front-channel Presentation**
 
@@ -84,7 +83,7 @@ Elements within the assertion SHALL be validated by the RP including:
  - *time validation*: ensuring the expiration and issue times are within acceptable limits of the current timestamp
  - *audience restriction*: ensuring this RP is the intended recipient of the assertion
 
-Conveyance of the assertion from the IdP to the subscriber as well as from the subscriber to the RP SHALL be made over an authenticated protected channel.
+Conveyance of the assertion from the IdP to the subscriber, as well as from the subscriber to the RP, SHALL be made over an authenticated protected channel.
 
 Note that in a federation proxy described in [Section 5.1.4](#proxied), the IdP audience restricts the assertion to the proxy, and the proxy restricts any newly-created assertions to the downstream RP.
 
