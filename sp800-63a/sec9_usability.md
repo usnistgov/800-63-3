@@ -124,7 +124,7 @@ Usability considerations specific to the enrollment session include:
 
 
 ###  9.4. Post-Enrollment
-Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [800-63B, Sections 10.1 through 10.3](sp800-63b.html#usabilitycommon). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
+Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [800-63B, Sections 10.1 through 10.3](sp800-63b.html#usabilitycommon)). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
 
 Usability considerations for post-enrollment include:
 
