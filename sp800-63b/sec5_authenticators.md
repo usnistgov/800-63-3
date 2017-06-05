@@ -111,33 +111,31 @@ The purpose of the secret is to securely bind the authentication operation on th
   </table>
   </div>
 
-#### <a name="ooba"></a> 5.1.3.1. Out-of-Band Authenticators
+#### <a name="ooba"></a> 5.1.3.1 Out-of-Band Authenticators
 
 The out-of-band authenticator SHALL establish a separate channel with the verifier in order to retrieve the out-of-band secret or authentication request. This channel is considered to be out-of-band with respect to the primary communication channel, even if it terminates on the same device, provided the device does not leak information from one to the other without the authorization of the claimant.
 
-The out-of-band device SHOULD be uniquely addressable and communication over the secondary channel SHALL be encrypted unless sent via the public switched telephone network (PSTN). Methods that do not prove possession of a specific device, such as voice-over-IP (VOIP) or email, SHALL NOT be used for out-of-band authentication.
+The out-of-band device SHOULD be uniquely addressable and communication over the secondary channel SHALL be encrypted unless sent via the public switched telephone network (PSTN). Methods that do not prove possession of a specific device, such as voice-over-IP (VOIP) or email, SHALL NOT be used for out-of-band authentication. For additional authenticator requirements specific to the PSTN, see [Section 5.1.3.3](#pstnOOB).
 
 The out-of-band authenticator SHALL uniquely authenticate itself in one of the following ways in communicating with the verifier:
 
 - Establish an authenticated protected channel to the verifier using approved cryptography. The key used SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, trusted platform module, secure element).
 
-- Authenticate to a public mobile telephone network using a SIM card, or equivalent, that uniquely identifies the device. This method SHALL only be used if a secret is being sent from the verifier to the out-of-band device via the telephone network (SMS or voice).
+- Authenticate to a public mobile telephone network using a SIM card or equivalent that uniquely identifies the device. This method SHALL only be used if a secret is being sent from the verifier to the out-of-band device via the PSTN (SMS or voice).
 
-If a secret is sent by the verifier to the out-of-band device, the device SHOULD NOT display the authentication secret on the device while it is locked by the owner (i.e., requires an entry of a PIN, passcode, or biometric). However, authenticators SHOULD indicate the receipt of an authentication secret on a locked device.
+If a secret is sent by the verifier to the out-of-band device, the device SHOULD NOT display the authentication secret on a device while it is locked by the owner (i.e., requires an entry of a PIN, passcode, or biometric). However, authenticators SHOULD indicate the receipt of an authentication secret on a locked device.
 
 If the out-of-band authenticator sends an approval message over the secondary communication channel (rather than by the claimant transferring a received secret to the primary communication channel), it SHALL do one of the following:
 
-* The authenticator SHALL accept transfer of the secret from the primary channel, which it SHALL send to the verifier over the secondary channel to associate the approval with the authentication transaction. The claimant MAY perform the transfer manually, or use a technology such as a barcode or QR code to effect the transfer.
+* The authenticator SHALL accept transfer of the secret from the primary channel which it SHALL send to the verifier over the secondary channel to associate the approval with the authentication transaction. The claimant MAY perform the transfer manually or use a technology such as a barcode or QR code to effect the transfer.
 
 * The authenticator SHALL present a secret received via the secondary channel from the verifier and prompt the claimant to verify the consistency of that secret with the primary channel, prior to accepting a yes/no response from the claimant. It SHALL then send that response to the verifier.
 
-#### 5.1.3.2. Out-of-Band Verifiers
+#### 5.1.3.2 Out-of-Band Verifiers
 
-If out-of-band verification is to be made using the public switched telephone network (PSTN), the verifier SHALL verify that the pre-registered telephone number being used is associated with a physical device. Changing the pre-registered telephone number SHALL NOT be possible without two-factor authentication at the time of the change. Verifiers SHALL use known and verifiable routes to deliver the secret, for example, by using Class 2 SMS. Verifiers SHOULD be aware of indicators such as device swap, SIM change, number porting, or other abnormal behavior *before* using the PSTN to deliver an out-of-band authentication secret.
+For additional verification requirements specific to the PSTN, see [Section 5.1.3.3](#pstnOOB).
 
-> Note: Out-of-band authentication using the PSTN (SMS or voice) as an out-of-band channel is discouraged and is being considered for removal in future editions of this guideline.
-
-If out-of-band verification is to be made using a secure application, such as on a smart phone, the verifier MAY send a push notification to that device. The verifier then waits for the establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method, such as an approved hash function or proof of possession of the identifying key, to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator.
+If out-of-band verification is to be made using a secure application, such as on a smart phone, the verifier MAY send a push notification to that device. The verifier then waits for the establishment of an authenticated protected channel and verifies the authenticator's identifying key. The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method such as use of an approved hash function or proof of possession of the identifying key to uniquely identify the authenticator. Once authenticated, the verifier transmits the authentication secret to the authenticator.
 
 Depending on the type of out-of-band authenticator, one of the following SHALL take place:
 
@@ -150,6 +148,14 @@ Depending on the type of out-of-band authenticator, one of the following SHALL t
 In all cases, the authentication SHALL be considered invalid if not completed within 10 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
 
 The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator [[SP 800-90Ar1]](#SP800-90Ar1). If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
+
+#### <a name="pstnOOB"></a> 5.1.3.3 Authentication using the Public Switched Telephone Network
+
+Use of the PSTN for out-of-band verification is RESTRICTED as described in this section and in [Section 5.2.10](#restricted)). If out-of-band verification is to be made using the PSTN, the verifier SHALL verify that the pre-registered telephone number being used is associated with a specific physical device. Changing the pre-registered telephone number is considered to be the binding of a new authenticator and SHALL only occur as described in [Section 6.1.2](#post-enroll-bind).
+    
+Verifiers SHOULD consider risk indicators such as device swap, SIM change, number porting, or other abnormal behavior before using the PSTN to deliver an out-of-band authentication secret. 
+
+> NOTE: Consistent with the restriction of authenticators in [Section 5.2.10](#restricted), NIST may adjust the RESTRICTED status of the PSTN over time based on the evolution of the threat landscape and the technical operation of the PSTN.
 
 #### <a name="singlefactorOTP"></a> 5.1.4. Single-factor OTP Device
 
@@ -454,3 +460,21 @@ An authentication process requires intent if it requires the subject to explicit
 Authentication intent MAY be established in a number of ways. Authentication processes that require intervention of the subject, e.g., to enter an authenticator output on their endpoint from an OTP device, establish intent by their very nature.  Cryptographic devices that require user action (e.g., pushing a button or reinsertion) for each authentication or reauthentication operation are also considered to establish intent.
 
 Depending on the modality, presentation of a biometric may or may not establish authentication intent. Presentation of a fingerprint would normally establish intent, while observation of the claimant face using a camera normally would not by itself. Behavioral biometrics similarly are less likely to establish authentication intent because they do not require a specific action on the part of the claimant.
+
+#### <a name="restricted"></a> 5.2.10 Restricted Authenticators
+
+As threats evolve, the performance of authenticators in resisting false acceptance typically degrades. Conversely, the performance of some authenticators may improve, for example when changes to their underlying standards improves their ability to resist particular attacks.
+
+To account for these changes in authenticator performance, NIST places additional restrictions on authenticator types or specific classes or instantiations of an authenticator type.
+
+The use of a RESTRICTED authenticator requires that the implementing organization accept some risk that increases over time. If the organization determines that the risk imposed on any party is unacceptable, then that authenticator SHALL NOT be used. It is the responsibility of the organization to determine the level of tolerable risk for their application and its associated data and to define any methods for mitigating excessive risks.
+
+Furthermore, the risk of an authentication error is typically borne by multiple parties, including the implementing organization, organizations that rely on the authentication decision, and the subscriber. Because the subscriber may be exposed to additional risk when an organization accepts a RESTRICTED authenticator, and that the subscriber may have a limited understanding of and ability to control that risk, the CSP SHALL:
+
+1. Offer subscribers at least one alternate authenticator that is not RESTRICTED and can be used to authenticate at the required AAL.
+
+2. Provide meaningful notice to subscribers regarding the security risks of the RESTRICTED authenticator and availability of alternative(s) that are not RESTRICTED.
+
+3. Address any additional risk to subscribers in its risk assessment.
+
+4. Develop a migration plan for the possibility that the RESTRICTED authenticator is no longer acceptable at some point in the future and include this migration plan in its practice statement.
