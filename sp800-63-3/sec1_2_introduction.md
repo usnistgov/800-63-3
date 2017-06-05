@@ -44,7 +44,7 @@ As such, SP 800-63 is organized as a suite of documents as follows:
 
 NIST anticipates that individual documents in this suite will be revised asynchronously. At any time, the most recent revision of each should be used (e.g., if at a time in the future SP 800-63A-1 and SP 800-63B-2 are the most recent revisions of each document, they should be used together even though the revision numbers do not match). To minimize the risk of compatibility errors, a reference to the base document (i.e., SP 800-63 rather than SP 800-63-3) always refers to the current version of the document.
 
-The following table states which sections of this 800-63-3 document are normative and which are informative:
+The following table states which sections of this document are normative and which are informative:
 
 |Section Name|Normative/Informative|
 |----|:--:|
