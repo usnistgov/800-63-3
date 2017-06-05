@@ -100,69 +100,17 @@ These technical guidelines do not address the authentication of a person who is 
 
 The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released. Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities. Furthermore, there may be a significant security benefit to using strong authenticators even if no identity proofing is required. Therefore, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital identity model.
 
-### 2.5. Relationship to Other Standards and Guidelines
+### 2.5. Change History
 
-This document has been written to satisfy the needs of federal agencies. However, with the expansion of consituent and customer services throughout the world that require digital identity and authentication assurance, as well as an increasing number of use cases that promote international identity federation and interoperability, these guidelines are intended to achieve alignment to national and international standards that describe levels of identity assurance. [Table 2-1](#63Sec2-Table1) provides a representative snapshot of mappings to various international and national assurance documents. This is not meant to imply that there is direct correlation between the IALs and AALs in this document and the levels in those standards, but that this document fulfills the criteria as demonstrated in those standards.
+#### 2.5.1. SP 800-63-1
 
-<a name="63Sec2-Table1"></a>
+NIST SP 800-63-1 updated NIST SP 800-63 to reflect current authenticator (then referred to as token) technologies and restructured it to provide a better understanding of the digital identity architectural model used here. Additional (minimum) technical requirements were specified for the CSP, protocols used to transport authentication information, and assertions if implemented within the digital identity model. 
 
-<div class="text-center" markdown="1">
-
-**Table 2-1.  800-63 Informative Mapping to Other Standards and Guidelines**
-
-</div>
-
-SP 800-63|[[eIDAS]](#eIDAS)|[[GPG 45]](#GPG45)|[[GPG 44]](#GPG44)|[[RSDOPS]](#RSDOPS)|[[STORK 2.0]](#STORK2.0)|[[ISO 29115:2013]](#ISO29115)|[[Canada]](#Canada)
-:---------:|:----:|:----:|:----:|:----:|:-------:|:--------:|:-------:|:------------------:
-AAL/IAL1|Low|Level 1|Level 1|Level 1|QAA Level 1|LoA 1|IAL/CAL 1
-AAL/IAL2|Substantial|Level 3|Level 2|Level 3|QAA Level 3|LoA 3|IAL/CAL 3
-AAL/IAL3|High|Level 4|Level 3 (see note)|N/A2|QAA Level 4|LoA 4|IAL/CAL 4
-
-> Note: GPG44 Level 3 allows for software cryptographic modules, which is not allowed at AAL3.
-
-### 2.6. Change History
-
-#### 2.6.1. SP 800-63-1
-
-NIST SP 800-63-1 updated NIST SP 800-63 to reflect current authenticator (then referred to as token) technologies and restructured it to provide a better understanding of the digital identity architectural model used here. Additional (minimum) technical requirements were specified for the CSP, protocols used to transport authentication information, and assertions if implemented within the digital identity model. Other changes to NIST SP 800-63 included:
-
--   Recognition of more types of tokens, including pre-registered
-    knowledge token, look-up secret token, out-of-band token, as well
-    as some terminology changes for more conventional token types;
-
--   Detailed requirements for assertion protocols and Kerberos;
-
--   A new section on token and credential management;
-
--   Simplification of guidelines for password entropy and throttling;
-
--   Emphasis that the document is aimed at Federal IT systems;
-
--   Recognition of different models, including a broader digital authentication model (in contrast to the simpler model common among Federal IT systems shown in Figure 1) and an additional assertion model, the Proxy Model, presented in Figure 6;
-
--   Clarification of differences between Levels 3 and 4 in Table 12; and
-
--   New guidelines that permit leveraging existing credentials to issue derived credentials.
-
-The subsequent sections of NIST SP 800-63-1 presented a series of recommendations for the secure implementation of Registration Authorities (RAs), CSPs, Verifiers,
-and RPs. It should be noted that secure implementation of any one of these can only provide the desired LOA if the others are also implemented securely. Therefore, the following assumptions were made in NIST SP 800-63-1:
-
--   RAs, CSPs, and Verifiers are trusted entities. Agencies implementing any of the above trusted entities have some assurance that all other trusted entities with which the agency interacts are also implemented appropriately for the desired security level.
-
--   The RP is not considered a trusted entity. However, in some authentication systems the Verifier maintains a relationship with the RP to facilitate secure communications and may employ security controls which only attain their full value when the RP acts responsibly. The subscriber also trusts the RP to properly perform the requested service and to follow all relevant privacy policy.
-
--   It is assumed that there exists a process of certification through which agencies can obtain the above assurance for trusted entities which they do not implement themselves.
-
--   A trusted entity is considered to be implemented appropriately if it complies with the recommendations in this document and does not behave maliciously.
-
--   While it is generally assumed that trusted entities will not behave maliciously, this document does contain some recommendations to
-    reduce and isolate any damage done by a malicious or negligent trusted entity.
-
-#### 2.6.2. SP 800-63-2
+#### 2.5.2. SP 800-63-2
 
 NIST SP 800-63-2 was a limited update of SP 800-63-1 and substantive changes were made only in Section 5. *Registration and Issuance Processes*. The substantive changes in the revised draft were intended to facilitate the use of professional credentials in the identity proofing process, and to reduce the need to use postal mail to an address of record to issue credentials for level 3 remote registration. Other changes to Section 5 were minor explanations and clarifications.
 
-#### 2.6.3. SP 800-63-3
+#### 2.5.3. SP 800-63-3
 
 NIST SP 800-63-3 is a substantial update and restructuring of SP 800-63-2. SP 800-63-3 introduces individual components of digital authentication assurance - AAL, IAL, and FAL - to support the growing need for independent treatment of authentication strength and confidence in an individual's claimed identity (e.g., in strong pseudonymous authentication). A risk assessment methodology and its application to IAL, AAL, and FAL has been included in this guideline. It also moves the whole of digital identity guidance covered under SP 800-63 from a single document describing authentication to a suite of four documents, of which SP 800-63-3 is the top-level document.
 
@@ -175,8 +123,8 @@ Other areas updated in 800-63-3 include:
 -  Restructured identity proofing model.
 -	Updated requirements regarding remote identity proofing.
 -	Clarification on the use of independent channels and devices as "something you have".
--	Removal of pre-registered knowledge tokens (authenticators), with the recognition that they are special cases of (often very weak) passwords.
+-	**Removal** of pre-registered knowledge tokens (authenticators), with the recognition that they are special cases of (often very weak) passwords.
 -	Requirements regarding account recovery in the event of loss or theft of an authenticator.
--	Removal of email as a valid channel for out-of-band authenticators.
+-	**Removal** of email as a valid channel for out-of-band authenticators.
 -   Expanded discussion of reauthentication and session management.
 -   Expanded discussion of identity federation; restructuring of assertions in the context of federation.
