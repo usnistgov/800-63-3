@@ -54,7 +54,7 @@ In order to assist the claimant in entering a memorized secret successfully, the
 
 The verifier SHALL use approved encryption and an authenticated protected channel when requesting memorized secrets in order to provide resistance to eavesdropping and MitM attacks.
 
-Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks. Memorized secrets SHALL be “salted” and hashed using a suitable one-way key derivation function.  Key derivation functions take as inputs a password, a salt and a cost factor and output a password hash.  Their purpose is to make each password guessing trial by an attacker, who has obtained a password hash file, expensive and therefore make the cost of a guessing attack high or prohibitive.  Examples of suitable key derivation functions include PBKDF2 [[SP 800-132]](#SP800-132) and Balloon [[BALLOON]](#balloon). The use of a memory-hard function is also encouraged because it increases the cost of an attack. The key derivation function SHALL use an approved one-way function such as HMAC [[FIPS 198-1]](#FIPS198-1), [[SP 800-107]](#SP800-107) (using any approved hash function), SHA-3 [[FIPS 202]](#FIPS202), CMAC [[SP 800-38B]](#SP800-38B) or KMAC, cSHAKE or ParallelHash [[SP 800-185]](#SP800-185). The chosen output length of the key derivation function SHOULD be the same as the length of the underlying one-way function output.
+Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks. Memorized secrets SHALL be “salted” and hashed using a suitable one-way key derivation function.  Key derivation functions take as inputs a password, a salt and a cost factor and output a password hash.  Their purpose is to make each password guessing trial by an attacker who has obtained a password hash file expensive and therefore make the cost of a guessing attack high or prohibitive.  Examples of suitable key derivation functions include PBKDF2 [[SP 800-132]](#SP800-132) and Balloon [[BALLOON]](#balloon). The use of a memory-hard function is also encouraged because it increases the cost of an attack. The key derivation function SHALL use an approved one-way function such as HMAC [[FIPS 198-1]](#FIPS198-1), [[SP 800-107]](#SP800-107) (using any approved hash function), SHA-3 [[FIPS 202]](#FIPS202), CMAC [[SP 800-38B]](#SP800-38B) or KMAC, cSHAKE or ParallelHash [[SP 800-185]](#SP800-185). The chosen output length of the key derivation function SHOULD be the same as the length of the underlying one-way function output.
 
 The salt SHALL be at least 32 bits in length and be chosen arbitrarily so as to minimize salt value collisions among stored hashes. Both the salt value and the resulting hash SHALL be stored for each subscriber using a memorized secret authenticator.
 
@@ -172,7 +172,7 @@ Single-factor OTP devices are similar to look-up secret authenticators with the 
 
 #### <a name="sfotpa"></a>5.1.4.1. Single-factor OTP Authenticators
 
-Single-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used, or is based on a real-time clock.
+Single-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or is based on a real-time clock.
 
 The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime. OTP authenticators, particularly software-based OTP generators, SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
@@ -184,7 +184,7 @@ If the nonce used to generate the authenticator output is based on a real-time c
 
 Single-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator. As such, the symmetric keys used by authenticators are also present in the verifier, and SHALL be strongly protected against compromise.
 
-When a single-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL generate and exchange, or obtain, secrets required to duplicate the authenticator output using approved cryptography.
+When a single-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL either generate and exchange or obtain secrets required to duplicate the authenticator output using approved cryptography.
 
 The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs [[RFC 6238]](#RFC6238) SHALL have a defined lifetime that is determined by the expected clock drift (in either direction) of the authenticator over its lifetime, plus allowance for network delay and user entry of the OTP. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period.
 

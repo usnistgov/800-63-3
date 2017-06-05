@@ -5,7 +5,7 @@
 
 *This section is normative.*
 
-An assertion used for authentication is a packaged set of attribute values or attribute references about, or associated with, an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute references about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein.
+An assertion used for authentication is a packaged set of attribute values or attribute references about or associated with an authenticated subscriber that is passed from the IdP to the RP in a federated identity system. Assertions contain a variety of information, including assertion metadata, attribute values and attribute references about the subscriber, and other information that the RP can leverage, such as restrictions, and expiration time. While the primary function of an assertion is to authenticate the user to an RP, the information conveyed in the assertion can be used by the RP for a number of use cases, for example, authorization or personalization of a website. This guideline does not restrict RP use cases nor the type of protocol or data payload that is used to federate an identity, provided the chosen solution meets all mandatory requirements contained herein.
 
 Assertions MAY represent only an authentication event, or MAY also represent attribute values and attribute references regarding the subscriber.
 
@@ -38,7 +38,7 @@ The lifetime of the assertion is the time between its issuance and its expiratio
 
 ### 6.1. Assertion Binding <a name="assertion-binding"></a>
 
-Assertion binding can be classified based on whether presentation by a claimant of an assertion, or an assertion reference, is sufficient for binding to the subscriber or if stronger proof that the assertion is bound to the subscriber is required.
+Assertion binding can be classified based on whether presentation by a claimant of an assertion or an assertion reference is sufficient for binding to the subscriber, or if the RP requires additional proof that the assertion is bound to the subscriber.
 
 #### 6.1.1. Bearer Assertions <a name="bearer"></a>
 
