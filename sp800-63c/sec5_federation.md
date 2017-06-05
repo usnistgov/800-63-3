@@ -1,4 +1,3 @@
-<div class="breaker"></div>
 <a name="federation"></a>
 
 ## 5. Federation
@@ -19,7 +18,7 @@ In a federation protocol, a three-party relationship is formed between the subsc
 
 </div>
 
-The subscriber authenticates to the IdP, and then the result of that authentication event is asserted to the RP across the network. In this transaction, the IdP acts as the verifier for the credential as described in [[SP 800-63B]](sp800-63b.html). The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 6](#assertions). Additional attributes MAY be made available through a secondary protocol protected by an authorized credential.
+The subscriber authenticates to the IdP, and then the result of that authentication event is asserted to the RP across the network. In this transaction, the IdP acts as the verifier for the credential as described in [SP 800-63B](sp800-63b.html). The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 6](#assertions). Additional attributes MAY be made available through a secondary protocol protected by an authorized credential.
 
 ### <a name="federation-model"></a> 5.1. Federation Models
 
@@ -80,7 +79,7 @@ Protocols requiring the transfer of keying information SHALL use a secure method
 
 IdPs SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit from which IdPs it is willing to accept identity information.
 
-Frequently, parties in a dynamic registration model do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of the parties involved in dynamic registration. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [Section 5.1.3](#authorities), or another trusted party). This cryptographically verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [[RFC 7591]](#RFC7591) Section 2.3 for more information on one protocol's implementation of software statements.)
+Frequently, parties in a dynamic registration model do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of RP being dynamically registered. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [Section 5.1.3](#authorities), or another trusted party). This cryptographically verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [RFC 7591](#RFC7591) Section 2.3 for more information on one protocol's implementation of software statements.)
 
 #### <a name="authorities"></a> 5.1.3. Federation Authorities
 

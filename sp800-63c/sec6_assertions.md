@@ -11,11 +11,11 @@ Assertions MAY represent only an authentication event, or MAY also represent att
 
 All assertions SHALL include the following assertion metadata:
 
-1. Subject - An identifier for the party that the assertion is about (the subscriber).
+1. Subject - An identifier for the party that the assertion is about (i.e., the subscriber).
 2. Issuer - An identifier for the IdP that issued the assertion.
-3. Audience - An identifier for the party intended to consume the assertion (the RP).
+3. Audience - An identifier for the party intended to consume the assertion (i.e., the RP).
 4. Issuance - A timestamp indicating when the assertion was issued by the IdP.
-5. Expiration - A timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (note that this is the expiration of the assertion and not the expiration of the session at the RP).
+5. Expiration - A timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (i.e., the expiration of the assertion and not the expiration of the session at the RP).
 6. Identifier - A value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions.
 7. Signature - Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
 8. Authentication Time - A timestamp indicating when the IdP last verified the presence of the subscriber at the IdP through a primary authentication event (if available).
@@ -24,7 +24,7 @@ Assertions MAY also include the following information:
 
 1. Key binding - Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion described in [Section 6.1.2](#holderofkey).
 2. Attribute values and attribute references - Information about the subscriber.
-3. Attribute metadata - Additional information about one or more subscriber attributes, such as that described in [[NISTIR 8112]](#nistir8112).
+3. Attribute metadata - Additional information about one or more subscriber attributes, such as that described in [NISTIR 8112](#nistir8112).
 
 Assertions SHOULD specify the AAL when an authentication event is being asserted and IAL when identity proofed attributes or references based thereon are being asserted. If not specified, the RP SHALL NOT assign any specific IAL or AAL to the assertion.
 
@@ -66,7 +66,7 @@ The following requirements apply to all holder-of-key assertions:
 
 ### 6.2. Assertion Protection
 
-Independent of the binding mechanism (discussed in [Section 6.1](#assertion-binding)), or the federation model used to obtain them (described in [Section 5.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
+Independent of the binding mechanism (discussed in [Section 6.1](#assertion-binding)) or the federation model used to obtain them (described in [Section 5.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
 
 #### <a name="assertion-id"></a>6.2.1. Assertion Identifier
 
@@ -111,6 +111,6 @@ Pairwise pseudonymous identifiers SHALL contain no identifying information about
 * Those RPs have a demonstrable relationship that justifies an operational need for the correlation, such as a shared security domain or shared legal ownership; and
 * All RPs sharing an identifier consent to being correlated in such a manner.
 
-The RPs SHALL conduct a privacy risk assessment to consider the privacy risks associated with requesting a common identifier. See Section 9.2 for further privacy considerations.
+The RPs SHALL conduct a privacy risk assessment to consider the privacy risks associated with requesting a common identifier. See [Section 9.2](#notice) for further privacy considerations.
 
 The IdP SHALL ensure that only intended RPs are correlated; otherwise, a rogue RP could learn of the pseudonymous identifier for a set of correlated RPs by fraudulently posing as part of that set.

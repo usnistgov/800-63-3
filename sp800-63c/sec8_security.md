@@ -1,4 +1,3 @@
-<div class="breaker"></div>
 <a name="security"></a>
 
 ## 8. Security
