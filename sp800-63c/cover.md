@@ -25,12 +25,8 @@ Yee-Yin Choong
 Kristen K. Greene      
 Mary F. Theofanos
 
-{::comment}
-
 This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
-
-{:/comment}
+https://doi.org/10.6028/NIST.SP.800-63c
 
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)

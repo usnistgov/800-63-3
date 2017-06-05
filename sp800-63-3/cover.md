@@ -79,12 +79,9 @@ CODEN: NSPUE2
 
 </div>
 
-{::comment}
 
 This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
-
-{:/comment}
+https://doi.org/10.6028/NIST.SP.800-63-3 
 
 <div class="text-justify" markdown="1">
 >Certain commercial entities, equipment, or materials may be identified in this document in order to describe an experimental procedure or concept adequately. Such identification is not intended to imply recommendation or endorsement by NIST, nor is it intended to imply that the entities, materials, or equipment are necessarily the best available for the purpose.

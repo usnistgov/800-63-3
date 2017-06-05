@@ -69,12 +69,8 @@ Mary F. Theofanos
 *Information Access Division  
 Information Technology Laboratory*  
 
-{::comment}
-
 This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
-
-{:/comment}
+https://doi.org/10.6028/NIST.SP.800-63a 
 
 
 Month TBD 2017
