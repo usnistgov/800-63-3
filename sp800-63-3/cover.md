@@ -195,7 +195,7 @@ The components of identity assurance detailed in these guidelines are as follows
 
 * **IAL** refers to the identity proofing process.
 * **AAL** refers to the authentication process.
-* **FAL** refers to the assertion protocol used in a federated environment to communicate authentication and attribute information (if applicable) to a relying party (RP).
+* **FAL** refers to the strength of an assertion in a federated environment, used to communicate authentication and attribute information (if applicable) to a relying party (RP).  
 
 The separation of these categories provides agencies flexibility in the identity solutions they choose and increases the ability to include privacy-enhancing techniques as fundamental elements of identity systems at any assurance level.  For example, these guidelines support scenarios that will allow pseudonymous interactions even when strong, multi-factor authenticators are used.  In addition, these guidelines encourage minimizing the dissemination of identifying information by requiring federated identity providers (IdPs) to support a range of options for querying data, such as asserting whether an individual is older than a certain age rather than querying the entire date of birth. While many agency use cases will require individuals to be fully identified, these guidelines encourage pseudonymous access to government digital services wherever possible and, even where full identification is necessary, limiting the amount of personal information collected as much as possible.
 
@@ -232,7 +232,7 @@ The three AALs define the subsets of options agencies can select based on their 
 
 **AAL1** - AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
-**AAL2** - AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through secure authentication protocol(s). Approved cryptographic techniques are required at AAL2 and above.
+**AAL2** - AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through secure authentication protocol(s). [Approved cryptographic](#approved) techniques are required at AAL2 and above.
 
 **AAL3** - AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
