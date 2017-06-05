@@ -8,7 +8,7 @@ _This section is normative._
 
 This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
 
-The only outcome of identity proofing is to ensure that the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  There may be many different set that suffice as the minimum, so CSPs should choose this set to balance privacy and usability needs of the user, as well as the likely attributes needed in future uses of the digital identity. As an example, such attributes, to the extent they are the minimum necessary, could include:  
+The only objective of identity proofing is to ensure that the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  There may be many different set that suffice as the minimum, so CSPs should choose this set to balance privacy and usability needs of the user, as well as the likely attributes needed in future uses of the digital identity. As an example, such attributes, to the extent they are the minimum necessary, could include:  
 
 1. Full name
 2. Date of birth
@@ -32,15 +32,16 @@ The following provides a sample of how a CSP and an applicant interact during th
 
 1. Resolution
 
-	a. The CSP collects PII from the user, such as name, address, date of birth, email, and phone number.  
+	a. The CSP collects PII from the applicant, such as name, address, date of birth, email, and phone number.  
 	b. The CSP also collects two forms of identity evidence, such as a driver license and a passport. For example, using the camera of a laptop, the CSP can capture a photo of both sides of both pieces of identity evidence.  
 	c. The CSP asks the applicant for a photo of themselves to match to the license and passport.
 
 2. Validation
 
-	a. The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information supplied by the applicant matches their records.  
-	b. The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.  
-	c. The CSP queries the issuing sources for the license and passport and validates the information matches.
+	a. The CSP asks the applicant for a photo of themselves to match to the license and passport.
+	b. The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information supplied by the applicant matches their records.  
+	c. The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.  
+	d. The CSP queries the issuing sources for the license and passport and validates the information matches.
 
 3. Verification
 
@@ -68,24 +69,24 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 <a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine:
 
-	a) Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
-	b) The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing (Note: Specific federal requirements may apply.); and  
-	c) The schedule of retention for these records (Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.).  
+  a. Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
+  b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing (Note: Specific federal requirements may apply.); and  
+  c. The schedule of retention for these records (Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.).  
 
 <a name="4.2-r8"></a> 8. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 
 <a name="4.2-r9"></a> 9. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an authenticated protected channel.
 
-<a name="4.2-r10"></a> 10. The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures (e.g., inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1)), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. In the event the CSP uses fraud mitigation measures, the CSP SHALL conduct a privacy risk assessment for these mitigation measures. Such assessments SHOULD include any privacy risk mitigations (e.g., limited retention, use limitations, notice) or other technological mitigations (e.g., cryptography), and be documented per requirement 4.2(7) above.
+<a name="4.2-r10"></a> 10. The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures (e.g., inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1)), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. In the event the CSP uses fraud mitigation measures, the CSP SHALL conduct a privacy risk assessment for these mitigation measures. Such assessments SHALL include any privacy risk mitigations (e.g., limited retention, use limitations, notice) or other technological mitigations (e.g., cryptography), and be documented per requirement 4.2(7) above.
 
 <a name="4.2-r11"></a> 11. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.
 
 <a name="4.2-r12"></a> 12. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
 
-	a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.  
-	b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
-	c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
-	d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
+  a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.  
+  b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
+  c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
+  d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
 
 <a name="4.2-r13"></a> 
 13. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
@@ -118,7 +119,7 @@ The CSP SHALL collect the following from the applicant:
 
 See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
-#### 4.4.1.3. Validation Requirements
+#### <a name="4-4-1-3"></a>4.4.1.3. Validation Requirements
 
 The CSP SHALL validate identity evidence as follows:
 
@@ -130,7 +131,7 @@ See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more
 
 The CSP SHALL verify identity evidence as follows:
 
-1. At IAL2, at least one piece of STRONG (or SUPERIOR) identity evidence is required. At a minimum, the applicant's binding to the STRONG (or SUPERIOR) identity evidence must be verified by a process that is able to achieve a strength of STRONG.
+1. At a minimum, the applicant's binding to identity evidence must be verified by a process that is able to achieve a strength of STRONG.
 2. KBV SHALL NOT be used for in-person (physical or supervised remote) identity verification.
 
 See [Section 5.3. Identity Verification](#verify) for more information on acceptable identity evidence.
@@ -161,7 +162,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, whether physical or digital.
 
-#### 4.4.1.7. Biometric Collection
+#### <a name="4-4-1-7"></a>4.4.1.7. Biometric Collection
 
 The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [Section 5.2.3. of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
@@ -175,7 +176,7 @@ In instances where an individual cannot meet the identity evidence requirements 
 
 ### <a name="ial3-requirements"></a> 4.5. Identity Assurance Level 3
 
-IAL3 adds additional rigor to the steps required at IAL2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages. Biometrics are used to detect fraudulent enrollments, duplicate enrollments, and as a mechanism to re-establish binding to a credential.  In addition, identity proofing at IAL3 is performed in-person. See [Section 5.3.3.](#vip) for more details.
+IAL3 adds additional rigor to the steps required at IAL2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages. Biometrics are used to detect fraudulent enrollments, duplicate enrollments, and as a mechanism to re-establish binding to a credential.  In addition, identity proofing at IAL3 is performed in-person (to include supervised remote). See [Section 5.3.3.](#vip) for more details.
 
 #### 4.5.1. Resolution Requirements
 
@@ -192,7 +193,7 @@ The CSP SHALL collect the following from the applicant:
 
 See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
-#### 4.5.3. Validation Requirements  
+#### <a name="4-5-3"></a>4.5.3. Validation Requirements  
 
 The CSP SHALL validate identity evidence as follows:
 
@@ -204,7 +205,7 @@ See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more
 
 The CSP SHALL verify identity evidence as follows:
 
-1. At IAL3, when SUPERIOR identity evidence is collected, the applicant's binding to the SUPERIOR identity evidence must be verified by a process that is able to achieve a strength of SUPERIOR. If the CSP only collects two pieces of STRONG identity evidence, the applicant's binding to *both* pieces of STRONG identity evidence must be verified by a process that is able to achieve a strength of STRONG.
+1. At a minimum, the applicant's binding to identity evidence must be verified by a process that is able to achieve a strength of SUPERIOR.
 2. KBV SHALL NOT be used for in-person (physical or supervised remote) identity verification.
 
 See [Section 5.3. Identity Verification](#verify) for more information on acceptable identity evidence.
@@ -214,14 +215,14 @@ See [Section 5.3. Identity Verification](#verify) for more information on accept
 The CSP SHALL perform all identity proofing steps with the applicant in-person. See [Section 5.3.3.](#vip) for more details.
 
 
-#### 4.5.6. Address Confirmation
+#### <a name="4-5-6"></a>4.5.6. Address Confirmation
 
 1. The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant, not contained on any supplied, valid piece of identity evidence.
 2. Self-asserted address data SHALL NOT be used for confirmation.
 3. A notification of proofing SHALL be sent to the confirmed address of record.
 4. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time. The enrollment code SHALL be valid for a maximum of 7 days.
 
-#### 4.5.7. Biometric Collection
+#### <a name="4-5-7"></a>4.5.7. Biometric Collection
 
 The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing.  See [Section 5.2.3. of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
