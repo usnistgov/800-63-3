@@ -13,12 +13,8 @@ Paul A. Grassi
 Michael E. Garcia  
 James L. Fenton
 
-{::comment}
-
-This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
-
-{:/comment}
+This publication is available free of charge from:  
+https://doi.org/10.6028/NIST.SP.800-63-3  
 
 ![](sp800-63-3/media/csd.png)  
 ![](sp800-63-3/media/nist_logo.png)
@@ -38,13 +34,8 @@ James L. Fenton
 *Altmode Networks  
 Los Altos, CA*
 
-{::comment}
-
-This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
-
-{:/comment}
-
+This publication is available free of charge from:  
+https://doi.org/10.6028/NIST.SP.800-63-3  
 
 Month TBD 2017
 
@@ -77,11 +68,10 @@ National Institute of Standards and Technology Special Publication 800-63-3
 Natl. Inst. Stand. Technol. Spec. Publ. 800-63-3, xxx pages (MonthTBD 2017)  
 CODEN: NSPUE2
 
+This publication is available free of charge from:  
+https://doi.org/10.6028/NIST.SP.800-63-3  
+
 </div>
-
-
-This publication is available free of charge from:
-https://doi.org/10.6028/NIST.SP.800-63-3 
 
 <div class="text-justify" markdown="1">
 >Certain commercial entities, equipment, or materials may be identified in this document in order to describe an experimental procedure or concept adequately. Such identification is not intended to imply recommendation or endorsement by NIST, nor is it intended to imply that the entities, materials, or equipment are necessarily the best available for the purpose.
@@ -99,7 +89,6 @@ All comments are subject to release under the Freedom of Information Act (FOIA).
 National Institute of Standards and Technology  
 Attn: Computer Security Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 8930) Gaithersburg, MD 20899-8930  
-=======
 Email: <dig-comments@nist.gov>
 
 </div>

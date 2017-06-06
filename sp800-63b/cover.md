@@ -30,8 +30,8 @@ Yee-Yin Choong
 Kristen K. Greene      
 Mary F. Theofanos   
 
-This publication is available free of charge from:
-https://doi.org/10.6028/NIST.SP.800-63b
+This publication is available free of charge from:  
+https://doi.org/10.6028/NIST.SP.800-63b  
 
 
 ![](sp800-63-3/media/csd.png)  
@@ -88,12 +88,8 @@ Mary F. Theofanos
 *Information Access Division  
 Information Technology Laboratory*  
 
-{::comment}
-
-This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
-
-{:/comment}
+This publication is available free of charge from:  
+https://doi.org/10.6028/NIST.SP.800-63b  
 
 
 Month TBD 2017
@@ -127,14 +123,12 @@ National Institute of Standards and Technology Special Publication 800-63B
 Natl. Inst. Stand. Technol. Spec. Publ. 800-63B, xxx pages (MonthTBD 2017)  
 CODEN: NSPUE2
 
+
+
+This publication is available free of charge from:  
+https://doi.org/10.6028/NIST.SP.800-63b  
+
 </div>
-
-{::comment}
-
-This publication is available free of charge from:
-http://dx.doi.org/10.6028/NIST.SP.XXX  
-
-{:/comment}
 
 <div class="text-justify" markdown="1">
 >Certain commercial entities, equipment, or materials may be identified in this document in order to describe an experimental procedure or concept adequately. Such identification is not intended to imply recommendation or endorsement by NIST, nor is it intended to imply that the entities, materials, or equipment are necessarily the best available for the purpose.
