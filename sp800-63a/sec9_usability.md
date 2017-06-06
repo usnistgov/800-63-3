@@ -6,7 +6,7 @@
 
 _This section is informative._
 
-The goal of this section is to raise implementers' awareness of usability considerations associated with enrollment and identity proofing (for usability considerations for typical authenticator usage and intermittent events, see 800-63-3B).
+The goal of this section is to raise implementers' awareness of usability considerations associated with enrollment and identity proofing. For usability considerations associated with typical authenticator usage and intermittent events, see [SP 800-63B Section 10](sp800-63b.html#sec10).
 
 [ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, goals, and context of use as key elements necessary for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability.
 
@@ -124,7 +124,7 @@ Usability considerations specific to the enrollment session include:
 
 
 ###  9.4. Post-Enrollment
-Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [800-63B, Sections 10.1 through 10.3](sp800-63b.html#usabilitycommon)). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
+Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [SP 800-63B Sections 10.1 through 10.3](sp800-63b.html#usabilitycommon)). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
 
 Usability considerations for post-enrollment include:
 
