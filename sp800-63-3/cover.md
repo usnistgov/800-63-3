@@ -222,7 +222,7 @@ SP 800-63A sets requirements to achieve a given IAL. The three IALs reflect the 
 
 **IAL1** - There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as such (including attributes a Credential Service Provider, or CSP, asserts to an RP).
 
-**IAL2** - Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity. IAL2 introduces the need for either remote or physically-present identity proofing.  Attributes can be asserted by Credential Service Providers (CSPs) to RPs in support of pseudonymous identity with verified attributes.
+**IAL2** - Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity. IAL2 introduces the need for either remote or physically-present identity proofing.  Attributes can be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
 **IAL3** - Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL2, attributes can be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 
