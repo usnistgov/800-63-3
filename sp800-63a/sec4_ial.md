@@ -30,24 +30,31 @@ This document also provides requirements for CSPs that will collect additional i
 
 The following provides a sample of how a CSP and an applicant interact during the identity proofing process:
 
-1. Resolution
+<div class="text-left" markdown="0">
 
-	a. The CSP collects PII from the applicant, such as name, address, date of birth, email, and phone number.  
-	b. The CSP also collects two forms of identity evidence, such as a driver license and a passport. For example, using the camera of a laptop, the CSP can capture a photo of both sides of both pieces of identity evidence.  
-	c. The CSP asks the applicant for a photo of themselves to match to the license and passport.
+<ol type="1" start="1">
+	<li><strong>Resolution</strong></li>
+		<ol type="a" start="a">
+			<li>The CSP collects PII from the applicant, such as name, address, date of birth, email, and phone number.</li>  
+	  	<li>The CSP also collects two forms of identity evidence, such as a driver license and a passport. For example, using the camera of a laptop, the CSP can capture a photo of both sides of both pieces of identity evidence.</li>
+  	</ol>
+	<li><strong>Validation</strong></li>
+  		<ol type="a" start="a">  
+			<li>The CSP asks the applicant for a photo of themselves to match to the license and passport.</li>
+			<li>The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information supplied by the applicant matches their records.</li>  
+			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.</li>  
+			<li>The CSP queries the issuing sources for the license and passport and validates the information matches.</li>
+		</ol>
+	<li><strong>Verification</strong></li>
+		<ol type="a" start="a">  
+			<li>The CSP asks the applicant for a photo of themselves to match to the license and passport.</li>
+			<li>The CSP matches the pictures on the license and the passport to the applicant picture and determines they match.</li>    
+			<li>The CSP sends an enrollment code to the validated phone number of the applicant, the user provides the enrollment code to the CSP, and the CSP confirms they match, verifying the user is in possession and control of the validated phone number.</li>  
+			<li>The applicant has been successfully proofed.</li>
+		</ol>
+</ol>
 
-2. Validation
-
-	a. The CSP asks the applicant for a photo of themselves to match to the license and passport.
-	b. The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information supplied by the applicant matches their records.  
-	c. The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.  
-	d. The CSP queries the issuing sources for the license and passport and validates the information matches.
-
-3. Verification
-
-	a. The CSP matches the pictures on the license and the passport to the applicant picture and determines they match.    
-	b. The CSP sends an enrollment code to the validated phone number of the applicant, the user provides the enrollment code to the CSP, and the CSP confirms they match, verifying the user is in possession and control of the validated phone number.  
-	c. The applicant has been successfully proofed.
+</div>	
 
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
@@ -55,41 +62,37 @@ The following provides a sample of how a CSP and an applicant interact during th
 
 The following requirements apply to any CSP performing identity proofing at IAL2 or IAL3.
 
-1. Identity proofing SHALL NOT be performed to determine suitability or entitlement to gain access to services or benefits.
+<div class="text-left" markdown="0">
+	<ol type="1" start="1">
+		<li>Identity proofing SHALL NOT be performed to determine suitability or entitlement to gain access to services or benefits.</li>
+		<li><a name="4.2-r2"></a>Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant providing identity evidence for appropriate identity resolution, validation, and verification. This MAY include attributes that correlate identity evidence to authoritative sources and to provide RPs with attributes used to make authorization decisions.</li>
+		<li><a name="4.2-r3"></a>The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether such attributes are voluntary or mandatory to complete the identity proofing process, and the consequences for not providing the attributes.
+		</li>
+		<li><a name="4.2-r4"></a>The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent with these additional purposes a condition of the service.</li>
+		<li><a name="4.2-r5"></a>The CSP SHALL provide mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and use. The CSP SHALL assess the mechanisms for their efficacy in achieving resolution of complaints or problems.</li>
+		<li><a name="4.2-r6"></a>The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (e.g., in-person if remote fails), or fraud counter-measures when anomolies are detected.</li>
+		<li><a name="4.2-r7"></a>The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine:</li>
+			<ol type="a" start="a">
+				<li>Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;</li>
+				<li>The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing (Note: Specific federal requirements may apply.); and</li>
+				<li>The schedule of retention for these records (Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply).</li>
+			</ol>
+		<li><a name="4.2-r8"></a>All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.</li>
+		<li><a name="4.2-r9"></a>The entire proofing transaction, including transactions that involve a third party, SHALL occur over an authenticated protected channel.</li>
+		<li><a name="4.2-r10"></a>The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures (e.g., inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1)), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. In the event the CSP uses fraud mitigation measures, the CSP SHALL conduct a privacy risk assessment for these mitigation measures. Such assessments SHALL include any privacy risk mitigations (e.g., risk acceptance or transfer, limited retention, use limitations, notice) or other technological mitigations (e.g., cryptography), and be documented per requirement 4.2(7) above.</li>
+		<li><a name="4.2-r11"></a>In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.</li>
+		<li><a name="4.2-r12"></a>Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:</li>
+			<ol type="a" start="a">
+				<li>The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.</li>
+				<li>The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.</li>
+				<li>The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.</li>
+				<li>The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.</li>
+			</ol>
+		<li><a name="4.2-r13"></a>The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.</li>
+	</ol>
+</div>
 
-<a name="4.2-r2"></a> 2. Collection of PII SHALL be limited to the minimum necessary to validate the existence of the claimed identity and associate the claimed identity to the applicant providing identity evidence for appropriate identity resolution, validation, and verification. This MAY include attributes that correlate identity evidence to authoritative sources and to provide RPs with attributes used to make authorization decisions.
 
-<a name="4.2-r3"></a> 3. The CSP SHALL provide explicit notice at the time of collection to the applicant regarding the purpose for collecting and maintaining a record of the attributes necessary for identity proofing, including whether such attributes are voluntary or mandatory to complete the identity proofing process, and the consequences for not providing the attributes.
-
-<a name="4.2-r4"></a> 4. The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent with these additional purposes a condition of the service.
-
-<a name="4.2-r5"></a> 5. The CSP SHALL provide mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and use. The CSP SHALL assess the mechanisms for their efficacy in achieving resolution of complaints or problems.
-
-<a name="4.2-r6"></a> 6. The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  For example, the number of retries allowed, proofing alternatives (e.g., in-person if remote fails), or fraud counter-measures when anomolies are detected.
-
-<a name="4.2-r7"></a> 7. The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine:
-
-  a. Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;  
-  b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing (Note: Specific federal requirements may apply.); and  
-  c. The schedule of retention for these records (Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.).  
-
-<a name="4.2-r8"></a> 8. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
-
-<a name="4.2-r9"></a> 9. The entire proofing transaction, including transactions that involve a third party, SHALL occur over an authenticated protected channel.
-
-<a name="4.2-r10"></a> 10. The CSP SHOULD obtain additional confidence in identity proofing using fraud mitigation measures (e.g., inspecting geolocation, examining the device characteristics of the applicant, evaluating behavioral characteristics, checking vital statistic repositories such as the [Death Master File](https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1)), so long as any additional mitigations do not substitute for the mandatory requirements contained herein. In the event the CSP uses fraud mitigation measures, the CSP SHALL conduct a privacy risk assessment for these mitigation measures. Such assessments SHALL include any privacy risk mitigations (e.g., risk acceptance or transfer, limited retention, use limitations, notice) or other technological mitigations (e.g., cryptography), and be documented per requirement 4.2(7) above.
-
-<a name="4.2-r11"></a> 11. In the event a CSP ceases to conduct identity proofing and enrollment processes, the CSP SHALL be responsible for fully disposing of or destroying any sensitive data including PII, or its protection from unauthorized access for the duration of retention.
-
-<a name="4.2-r12"></a> 12. Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
-
-  a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the Privacy Act.  
-  b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
-  c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII to conduct identity proofing triggers the requirements of the E-Government Act of 2002.  
-  d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
-
-<a name="4.2-r13"></a> 
-13. The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution and cannot be accomplished by collection of another attribute or combination of attributes.
 
 ### 4.3. Identity Assurance Level 1
 
@@ -142,23 +145,38 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 
 #### <a name="4-4-1-6"></a> 4.4.1.6. Address Confirmation
 
-1. Valid records to confirm address SHALL be issuing source(s) or authoritative source(s).
-2. The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant that is not contained on any supplied piece of identity evidence.
-3. Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.
-4. **If CSP performs in-person proofing (physical or supervised remote):**  
+<div class="text-left" markdown="0">
 
-	a. The CSP SHOULD send a notification of proofing to a confirmed address of record.  
-	b. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.  
-	c. The enrollment code SHALL be valid for a maximum of 7 days.  
+<ol type="1" start="1">
+	<li>Valid records to confirm address SHALL be issuing source(s) or authoritative source(s).</li>
+	<li>The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant that is not contained on any supplied piece of identity evidence.</li>
+	<li>Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.</li>
+	<li><strong>If CSP performs in-person proofing (physical or supervised remote):</strong></li>
+		<ol type="a" start="a">
+			<li>The CSP SHOULD send a notification of proofing to a confirmed address of record.</li>  
+	  		<li>The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.</li>
+	  		<li>The enrollment code SHALL be valid for a maximum of 7 days.</li>
+  		</ol>
+	
+	
+  		<ol type="a" start="a">  
+			<li>The CSP asks the applicant for a photo of themselves to match to the license and passport.</li>
+			<li>The CSP validates the information supplied in 1.a. by checking an authoritative source they maintain. The CSP determines the information supplied by the applicant matches their records.</li>  
+			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes  matches the plain-text information, and that the identification numbers follow standard formats.</li>  
+			<li>The CSP queries the issuing sources for the license and passport and validates the information matches.</li>
+		</ol>
+	<li><strong>If the CSP performs remote proofing (unsupervised):</strong></li>
+		<ol type="a" start="a">  
+			<li>The CSP SHALL send an enrollment code to a confirmed address of record for the applicant.</li>
+			<li>The applicant SHALL present a valid enrollment code to complete the identity proofing process.</li>    
+			<li>The CSP SHOULD send the enrollment code to the postal address that has been validated in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email if it has been validated in records.</li>  
+			<li>If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.</li>
+			<li>Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 10 days but MAY be made valid up to 30 days via an exception process to accommodate addresses outside the contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.</li>
+			<li>The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a notification of proofing will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver license.</li>
+		</ol>
+</ol>
 
-5. **If the CSP performs remote proofing (unsupervised):**  
-
-	a. The CSP SHALL send an enrollment code to a confirmed address of record for the applicant.  
-	b. The applicant SHALL present a valid enrollment code to complete the identity proofing process.  
-	c. The CSP SHOULD send the enrollment code to the postal address that has been validated in records.  The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email if it has been validated in records.  
-	d. If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.  
-	e. Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 10 days but MAY be made valid up to 30 days via an exception process to accommodate addresses outside the contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.  
-	f. The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a notification of proofing will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver license.  
+</div>	
 
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, whether physical or digital.
 
@@ -168,7 +186,7 @@ The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofi
 
 #### 4.4.1.8. Security Controls
 
-The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP))  or industry standard.
+The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP))  or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *moderate-impact* systems or equivalent are satisfied.
 
 #### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
 
@@ -228,7 +246,7 @@ The CSP SHALL collect and record a biometric sample at the time of proofing (e.g
 
 #### 4.5.8. Security  Controls
 
-The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the High baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard.
+The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the high baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *high-impact* systems or equivalent are satisfied.
 
 ### <a name="enrollmentcode"></a> 4.6. Enrollment Code
 
