@@ -9,7 +9,7 @@
 Sections [4.1.5](#aal1records), [4.2.5](#aal2records), and [4.3.5](#aal3records) require the CSP to conduct a privacy risk assessment for records retention. Such a privacy risk assessment would include:
 
 1. The likelihood that the records retention could create a problem for the subscriber, such as invasiveness or unauthorized access to the information.
-2.  The impact if a problem did occur.
+2. The impact if a problem did occur.
 
 CSPs should be able to reasonably justify any response they take to identified privacy risks, including accepting the risk, mitigating the risk, and sharing the risk. The use of subscriber consent is a form of sharing the risk, and therefore appropriate for use only when a subscriber could reasonably be expected to have the capacity to assess and accept the shared risk.
 

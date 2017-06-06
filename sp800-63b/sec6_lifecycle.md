@@ -17,7 +17,7 @@ Authenticators SHALL be bound to subscriber accounts by either:
 
 This guideline refers to the *binding* rather than the issuance of an authenticator in order to accommodate both these options.
 
-Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are, or have been, associated with each identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2. The CSP SHALL also verify the type of user-provided authenticator (e.g., single-factor cryptographic device vs. multi-factor cryptographic device) so that verifiers can determine compliance with requirements at at each AAL.
+Throughout the online identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with each identity. The CSP or verifier SHALL also maintain the information required for throttling authentication attempts when required, as described in section 5.2.2. The CSP SHALL also verify the type of user-provided authenticator (e.g., single-factor cryptographic device vs. multi-factor cryptographic device) so that verifiers can determine compliance with requirements at at each AAL.
 
 The record created by the CSP SHALL contain the date and time the authenticator was bound to the account. The record SHOULD include information about the source of the binding (e.g., IP address, device identifier) of any device associated with the enrollment. If available, the record SHOULD also contain information about the source of unsuccessful authentications attempted with the authenticator.
 
@@ -52,7 +52,7 @@ For physical transactions -
 
 #### <a name="post-enroll-bind"></a> 6.1.2. Post-Enrollment Binding
 
-#### 6.1.2.1. Binding of Additional Authenticator at Existing AAL
+#### <a name="bindexisting"></a>6.1.2.1. Binding of Additional Authenticator at Existing AAL
 
 CSPs and verifiers SHOULD encourage subscribers to maintain at least two valid authenticators of each factor that they will be using, with the exception of memorized secrets. For example, a subscriber who usually uses an OTP device as a physical authenticator MAY also be issued a number of look-up secret authenticators, or register a device for out-of-band authentication, in case the physical authenticator is lost, stolen, or damaged. See [Section 6.1.2.3](#replacement) for more information on replacement of memorized secret authenticators.
 

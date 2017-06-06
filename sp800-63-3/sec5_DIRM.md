@@ -1,12 +1,12 @@
 <a name="sec5"></a>
 
 <div class="breaker"></div>
-
+. 
 ## 5. Digital Identity Risk Management
 
 _This section is normative._
 
-This section, and the corresponding risk assessment guidance, supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies.  Rather, requirements contained herein provide specific guidance related to digital identity risk that agency RPs SHALL apply while executing all relevant RMF lifecycle phases.
+This section, and the corresponding risk assessment guidance, supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies. Rather, requirements contained herein provide specific guidance related to digital identity risk that agency RPs SHALL apply while executing all relevant RMF lifecycle phases.
 
 ### <a name="5-1-overview"></a> 5.1. Overview
 
@@ -35,7 +35,7 @@ An agency RP SHALL select, based on risk, the following individual assurance lev
 
 * IAL - The robustness of the identity proofing process to confidently determine the identity of an individual. IAL is selected to mitigate potential identity proofing errors.
 * AAL - The robustness of the authentication process itself, and the binding between an authenticator and the identifier of a specific individual. AAL is selected to to mitigate potential authentication errors (i.e., a false claimant using a credential that is not rightfully theirs). 
-* FAL - The robustness of the assertion protocol used by the federation to communicate authentication and attribute information (if applicable) to a RP. FAL is optional as not all digital systems will leverage federated identity architectures. FAL is selected to mitigate potential federation errors (an identity assertion is compromised). 
+* FAL - The robustness of the assertion protocol used by the federation to communicate authentication and attribute information (if applicable) to an RP. FAL is optional as not all digital systems will leverage federated identity architectures. FAL is selected to mitigate potential federation errors (an identity assertion is compromised). 
 
 A summary of each of the identity, authenticator, and federation assurance levels is provided below.
 
@@ -159,7 +159,7 @@ The statement SHALL include, at a minimum:
  
 As these guidelines are revised, CSPs SHALL consider how changes in requirements affect their population of users. In some instances the user population will be unaffected, yet in others, the CSP will require users to undergo a transitional activity. For example, request users, upon initial logon since last revision, supply additional proofing evidence to adhere to new IAL requirements. This SHALL be a risk-based decision, made in context of the CSP, any RPs that use the CSP, mission, and the population served. The following considerations serve only as a guide to agencies when considering the impacts of requirements changes:
  
-1. If the RP is experiencing identity-related fraud, a migration may prove beneficial.  If not, migration may not be an added value.
+1. If the RP is experiencing identity-related fraud, a migration may prove beneficial. If not, migration may not be an added value.
 2. New, stronger, or user-friendly authentication options are added to individual AALs the CSP could issue new authenticators or allow users to register authenticators they already have.
 3. Federation requirements may or may not have a user impact. For example, consent requirements or infrastructure requirements could necessitate an infrastructure or protocol upgrade.
 4. Addition or removal of xALs may not require a migration, but would trigger a new risk assessment to determine if a change is necessary for the RP.
