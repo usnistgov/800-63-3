@@ -126,7 +126,7 @@ guidelines cover identity proofing and authentication of users (such as employee
 contractors, or private individuals) interacting with government IT
 systems over open networks. They define technical requirements in each of the areas of identity proofing,
 registration, authenticators, management processes, authentication protocols, federation, and
-related assertions. This publication supersedes NIST SP 800-63-1 and SP 800-63-2.
+related assertions. This publication supersedes NIST Special Publication 800-63-2.
 
 <div class="text-center" markdown="1">
 
@@ -176,7 +176,7 @@ For these guidelines, digital identity is the unique representation of a subject
 
 Identity proofing establishes that a subject is who they claim to be. Digital authentication establishes that a subject attempting to access a digital service is in control of one or more valid authenticators associated with that subject's digital identity. For services in which return visits are applicable, successfully authenticating provides reasonable risk-based assurances that the subject accessing the service today is the same as that which accessed the service previously. Digital identity presents a technical challenge because this process often involves the proofing of individuals over an open network, and always involves the authentication of individual subjects over an open network to access digital government services. The processes and technologies to establish and use digital identities offer multiple opportunities for impersonation and other attacks.
 
-These technical guidelines supersede NIST Special Publication (SP) 800-63-1 and SP 800-63-2. Agencies use these guidelines as part of the risk assessment and implementation of its digital service(s). These guidelines provide mitigations of an authentication error's negative impacts by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, agencies will select a third component, *Federation Assurance Level (FAL)*. 
+These technical guidelines supersede NIST Special Publication SP 800-63-2. Agencies use these guidelines as part of the risk assessment and implementation of its digital service(s). These guidelines provide mitigations of an authentication error's negative impacts by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, agencies will select a third component, *Federation Assurance Level (FAL)*. 
 
 These guidelines retire the concept of a level of assurance (LOA) as a single ordinal that drives implementation-specific requirements. Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this is not a requirement and agencies should not assume they will be the same in any given system. 
 
