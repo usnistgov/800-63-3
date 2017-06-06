@@ -67,7 +67,7 @@ These guidelines primarily focus on agency services that interact with the non-f
 
 ### 2.2. Considerations, Other Requirements, and Flexibilities
 
-Agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies must ensure that any mitigations and compensating controls do not degrade the intended security and privacy protections of the selected assurance levels. Agencies may consider partitioning the functionality of a digital service to allow less
+Agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy protections of the selected assurance levels. Agencies may consider partitioning the functionality of a digital service to allow less
 sensitive functions to be available at a lower level of authentication
 and identity assurance.
 
