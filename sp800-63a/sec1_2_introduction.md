@@ -56,4 +56,4 @@ At IAL2 and IAL3, pseudonymity in federated environments is enabled by limiting 
 
 Since the individual will have undergone an identity proofing process at enrollment, transactions with respect to individual interactions with the CSP may not necessarily be pseudonymous.
 
-Detailed requirements for each of the IALs is given in [Section 4](#ial-section) and [Section 5](#ipv-section).
+Detailed requirements for each of the IALs are given in [Section 4](#ial-section) and [Section 5](#ipv-section).
