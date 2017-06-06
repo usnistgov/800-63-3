@@ -50,11 +50,11 @@ The CSP SHOULD employ appropriately-tailored security controls from the low base
 
 #### <a name="aal1records"></a> 4.1.5. Records Retention Policy
 
-The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+The CSP shall comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply. If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including assessements of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
 
 ### 4.2. Authenticator Assurance Level 2
 
-AAL2 provides high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. In order to authenticate at AAL2, claimants SHALL successfully authenticate using both authentication factors. Approved cryptographic techniques are required at AAL2 and above.
+AAL2 provides high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Proof of possession and control of authenticators demonstrating two different authentication factors out of the three (*something you know*, *something you have*, and *something you are*) is required. In order to authenticate at AAL2, claimants SHALL successfully authenticate using both authentication factors. Secure authentication protocols and approved cryptographic techniques SHALL be used.
 
 #### <a name="aal2types"></a>4.2.1. Permitted Authenticator Types
 
@@ -104,7 +104,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### 4.3. Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
+AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using authenticators demonstrating two different authentication factors out of the three (*something you know*, *something you have*, and *something you are*). Secure authentication protocols and approved cryptographic techniques SHALL be used.
 
 #### <a name="aal3types"></a>4.3.1. Permitted Authenticator Types
 
