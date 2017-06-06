@@ -44,7 +44,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.1.4. Security Controls
 
-The CSP SHOULD employ appropriately-tailored security controls from the low baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g. [FEDRAMP](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *low* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the low baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g. [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *low-impact* systems or equivalent are satisfied.
 
 #### <a name="aal1records"></a> 4.1.5. Records Retention Policy
 
@@ -94,7 +94,7 @@ Reauthentication of a session that has not yet reached its time limit MAY requir
 
 #### 4.2.4. Security Controls
 
-The CSP SHALL employ appropriately-tailored security controls from the moderate baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *moderate* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the moderate baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *moderate-impact* systems or equivalent are satisfied.
 
 #### <a name="aal2records"></a> 4.2.5. Records Retention Policy
 
@@ -135,7 +135,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.3.4. Security Controls
 
-The CSP SHALL employ appropriately-tailored security controls from the high baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard and SHOULD ensure that the minimum assurance requirements associated with the *high* baseline are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the high baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *high-impact* systems or equivalent are satisfied.
 
 #### <a name="aal3records"></a> 4.3.5. Records Retention Policy
 
