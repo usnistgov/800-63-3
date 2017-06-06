@@ -35,7 +35,7 @@ An agency RP SHALL select, based on risk, the following individual assurance lev
 
 * IAL - The robustness of the identity proofing process to confidently determine the identity of an individual. IAL is selected to mitigate potential identity proofing errors.
 * AAL - The robustness of the authentication process itself, and the binding between an authenticator and the identifier of a specific individual. AAL is selected to to mitigate potential authentication errors (i.e., a false claimant using a credential that is not rightfully theirs). 
-* FAL - The robustness of the assertion protocol used by the federation to communicate authentication and attribute information (if applicable) to a RP. FAL is optional as not all digital systems will leverage federated identity architectures. FAL is selected to mitigate potential federation errors (an identity assertion is compromised). 
+* FAL - The robustness of the assertion protocol used by the federation to communicate authentication and attribute information (if applicable) to an RP. FAL is optional as not all digital systems will leverage federated identity architectures. FAL is selected to mitigate potential federation errors (an identity assertion is compromised). 
 
 A summary of each of the identity, authenticator, and federation assurance levels is provided below.
 
