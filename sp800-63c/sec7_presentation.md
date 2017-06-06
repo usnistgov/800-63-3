@@ -34,7 +34,7 @@ The assertion reference:
  3. SHOULD be time limited with a short lifetime of seconds or minutes.
  4. SHOULD be presented along with authentication of the RP.
 
-In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
+In this model, the assertion itself is requested directly from the IdP by the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
 This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed without sending the user back to the IdP. This query occurs using an authorization credential issued alongside the assertion, as described in [Section 6](#assertions).
 
