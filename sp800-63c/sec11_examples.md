@@ -73,7 +73,7 @@ When Kerberos authentication is based on passwords, the protocol is known to
 be vulnerable to offline dictionary attacks by eavesdroppers who capture the
 initial user-to-KDC exchange. Longer password length and complexity provide
 some mitigation to this vulnerability, although sufficiently long passwords
-tend to be cumbersome for users.  However, when Kerberos password-based
+tend to be cumbersome for users. However, when Kerberos password-based
 authentication is used in a FAST (or similar) tunnel, a successful
 Man-in-the-Middle attack is additionally required in order to perform the
 dictionary attack.

@@ -54,7 +54,7 @@ The following provides a sample of how a CSP and an applicant interact during th
 ### <a name="genProofReqs"></a> 4.2. General Requirements
 
 
-The following requirements apply to any CSP performing identity proofing at IAL2 or 3.  
+The following requirements apply to any CSP performing identity proofing at IAL2 or 3.
 
 1. Identity proofing SHALL NOT be performed to determine suitability or entitlement to gain access to services or benefits.
 
@@ -66,13 +66,13 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 5. <a name="4.2-r5"></a>The CSP SHALL provide effective mechanisms for redress of applicant complaints or problems arising from the identity proofing process. These mechanisms SHALL be easy for applicants to find and access.
 
-6. <a name="4.2-r6"></a>The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled.  These errors might include the number of retries allowed, use of alternative proofing (i.e., in-person if remote fails), or fraud countermeasures applied when anomalies are detected.
+6. <a name="4.2-r6"></a>The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information that details how the CSP handles proofing errors that result in an applicant not being successfully enrolled. These errors might include the number of retries allowed, use of alternative proofing (i.e., in-person if remote fails), or fraud countermeasures applied when anomalies are detected.
 
 7. <a name="4.2-r7"></a>The CSP SHALL maintain a record, to include audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessments of privacy and security risks to determine:
 
  a. Any steps that it will take to verify the identity of the applicant beyond the mandatory requirements specified herein;  
  b. The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing. Note: Specific federal requirements may apply; and  
- c. The schedule of retention for these records. Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.  
+ c. The schedule of retention for these records. Note: CSPs may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.
 
 8. All PII collected as part of the enrollment process SHALL be protected to ensure confidentiality, integrity, and attribution of the information source.
 
@@ -84,7 +84,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 12. <a name="4.2-r12"></a>Regardless of whether the CSP is an agency or private sector provider, the following requirements apply to the agency offering or using the proofing service:  
 
- a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the Privacy Act.
+ a. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the Privacy Act.  
  b. The agency SHALL publish a System of Records Notice (SORN) to cover such collection, as applicable.  
  c. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the collection of PII for identity proofing triggers the requirements of the E-Government Act of 2002.  
  d. The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.
@@ -109,7 +109,7 @@ CSPs SHALL proof according to the requirements in [Section 4.4.1](#normal) or [S
 
 #### 4.4.1.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context.  This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context. This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
 #### 4.4.1.2. Evidence Collection Requirements
 
@@ -151,7 +151,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 
 	a. The CSP SHOULD send a notification of proofing to the address of record.  
 	b. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.  
-	c. The enrollment code SHALL be valid for a maximum of 7 days.  
+	c. The enrollment code SHALL be valid for a maximum of 7 days.
 
 5. **If the CSP performs remote proofing (unsupervised):**  
 
@@ -160,7 +160,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 	c. The CSP SHOULD send the enrollment code to the postal address that has been verified in records. The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email that has been verified in records.  
 	d. If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.  
 	e. Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 10 days. To accommodate addresses outside the Contiguous United States, enrollment codes MAY be made valid up to 30 days via an exception process. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.  
-	f. The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a notification of proofing will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver license.  
+	f. The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a notification of proofing will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver license.
 
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, physical or digital.
 
@@ -174,7 +174,7 @@ The CSP SHALL employ appropriately-tailored security controls, to include contro
 
 #### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
 
-In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the applicant.  See [Section 5.3.4.](#trustref) for more details.
+In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the applicant. See [Section 5.3.4.](#trustref) for more details.
 
 ### <a name="ial3-requirements"></a> 4.5. Identity Assurance Level 3
 
@@ -182,7 +182,7 @@ IAL3 adds additional rigor to the steps required at IAL2. This includes providin
 
 #### 4.5.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record. This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
 
 #### 4.5.2. Evidence Collection Requirements
@@ -234,7 +234,7 @@ The CSP SHALL employ appropriately-tailored security controls, to include contro
 
 ### <a name="enrollmentcode"></a> 4.6. Enrollment Code
 
-An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offering the applicant the ability to re-establish binding to their enrollment record. Binding is not always completed in the same session as the original identity proofing transaction.  
+An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offering the applicant the ability to re-establish binding to their enrollment record. Binding is not always completed in the same session as the original identity proofing transaction.
 
 An enrollment code SHALL be comprised of one of the following:
 
@@ -263,6 +263,6 @@ Resolution|No requirements|The minimum attributes necessary to accomplish identi
 Evidence|No identity evidence is collected| - One (1) piece of SUPERIOR or STRONG evidence depending on strength of original proof and validation occurs with issuing source; or<br><br>- Two (2) pieces of STRONG evidence, or <br><br> - One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence|- Two (2) pieces of SUPERIOR evidence, or<br><br> - One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br> - Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence
 Validation|No validation|Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented|Same as IAL2
 Verification| No verification |Verified by a process that is able to achieve a strength of STRONG.|Verified by a process that is able to achieve a strength of SUPERIOR.<br>
-Address Confirmation|No requirements for address confirmation|Required. Enrollment code sent to any address of record.  Notification sent by means different from enrollment code.|Required. Notification of proofing to postal address.
+Address Confirmation|No requirements for address confirmation|Required. Enrollment code sent to any address of record. Notification sent by means different from enrollment code.|Required. Notification of proofing to postal address.
 Biometric Collection|No|Optional|Mandatory
 Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent federal or industry standard)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent federal or industry standard)
