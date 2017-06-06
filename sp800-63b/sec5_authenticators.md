@@ -4,7 +4,7 @@
 
 _This section is normative._
 
-This section provides the detailed requirements specific for each type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4) and the requirement for verifier impersonation resistance at AAL3 described in [Section 5.2.5.](#verifimpers), the technical requirements for each of the authenticator types are the same regardless of the AAL at which the authenticator is used.
+This section provides the detailed requirements specific for each type of authenticator. With the exception of reauthentication requirements specified in [Section 4](#AAL_SEC4) and the requirement for verifier impersonation resistance at AAL3 described in [Section 5.2.5](#verifimpers), the technical requirements for each of the authenticator types are the same regardless of the AAL at which the authenticator is used.
 
 ### <a name="reqauthtype"></a> 5.1. Requirements by Authenticator Type
 
@@ -198,7 +198,7 @@ If the authenticator output has less than 64 bits of entropy, the verifier SHALL
 
 #### 5.1.5.1. Multi-factor OTP Authenticators
 
-Multi-factor OTP authenticators operate in a similar manner to single-factor OTP authenticators (see [Section 5.1.4.1.](#sfotpa)), except that they require the entry of either a memorized secret or use of a biometric to obtain a password from the authenticator. Each use of the authenticator SHALL require the input of the additional factor.
+Multi-factor OTP authenticators operate in a similar manner to single-factor OTP authenticators (see [Section 5.1.4.1](#sfotpa)), except that they require the entry of either a memorized secret or use of a biometric to obtain a password from the authenticator. Each use of the authenticator SHALL require the input of the additional factor.
 
 In addition to activation information, multi-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or is based on a real-time clock.
 
@@ -208,7 +208,7 @@ The authenticator output is obtained by using an approved block cipher or hash f
 
 If the nonce used to generate the authenticator output is based on a real-time clock, the nonce SHALL be changed at least once every 2 minutes. The OTP value associated with a given nonce SHALL be accepted only once.
 
-A memorized secret used by the authenticator for activation SHALL be a randomly-chosen numeric secret at least 6 decimal digits in length or other memorized secret of comparable complexity as described in [Section 5.1.1.2.](#memsecretver) and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3.](#biometric_use), including limits on the number of consecutive authentication failures.
+A memorized secret used by the authenticator for activation SHALL be a randomly-chosen numeric secret at least 6 decimal digits in length or other memorized secret of comparable complexity as described in [Section 5.1.1.2](#memsecretver) and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
 The unencrypted secret key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after a password has been generated.
 
@@ -218,9 +218,9 @@ Multi-factor OTP verifiers effectively duplicate the process of generating the O
 
 When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier (or associated CSP) SHALL generate and exchange or obtain secrets required to duplicate the authenticator output using approved cryptography. The verifier or CSP SHALL also establish, via the authenticator source, that the authenticator is a multi-factor device. In the absence of a trusted statement that it is a multi-factor device, the verifier SHALL treat the authenticator as single-factor, in accordance with [Section 5.1.4](#singlefactorOTP).
 
-The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs [[RFC 6238]](#RFC6238) SHALL have a defined lifetime that is determined by the expected clock drift (in either direction) of the authenticator over its lifetime, plus allowance for network delay and user entry of the OTP.  In order to provide replay resistance as described in [Section 5.2.8.](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period. Verifiers MAY warn a claimant whose authentication is denied because of duplicate use of an OTP of that event in case an attacker has been able to authenticate in advance. Verifiers MAY also warn an existing session of the attempted duplicate use of an OTP that such an attempt has occurred.
+The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and MitM attacks. Time-based OTPs [[RFC 6238]](#RFC6238) SHALL have a defined lifetime that is determined by the expected clock drift (in either direction) of the authenticator over its lifetime, plus allowance for network delay and user entry of the OTP.  In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given time-based OTP only once during the validity period. Verifiers MAY warn a claimant whose authentication is denied because of duplicate use of an OTP of that event in case an attacker has been able to authenticate in advance. Verifiers MAY also warn an existing session of the attempted duplicate use of an OTP that such an attempt has occurred.
 
-If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3.](#biometric_use), including limits on the number of consecutive authentication failures.
+If the authenticator output or activation secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
 #### <a name="sfcs"></a> 5.1.6. Single-factor Cryptographic Software
 
@@ -289,7 +289,7 @@ Multi-factor software cryptographic authenticators encapsulate a secret key that
 
 Each authentication operation using the authenticator SHALL require the input of both factors.
 
-Any memorized secret used by the authenticator for activation SHALL be at least 6 decimal digits in length or of equivalent complexity and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3.](#biometric_use), and SHALL include limits on the allowable number of consecutive authentication failures.
+Any memorized secret used by the authenticator for activation SHALL be at least 6 decimal digits in length or of equivalent complexity and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), and SHALL include limits on the allowable number of consecutive authentication failures.
 
 The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be zeroized immediately after an authentication transaction has taken place.
 
@@ -317,7 +317,7 @@ The secret key and its algorithm SHALL provide at least the minimum security len
 
 Each authentication operation using the authenticator SHOULD require the input of the additional factor. Input of the additional factor MAY be accomplished via either direct input on the device or via a hardware connection (e.g., USB, smartcard).
 
-Any memorized secret used by the authenticator for activation SHALL be at least 6 decimal digits in length or of equivalent complexity and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3.](#biometric_use), and SHALL include limits on the number of consecutive authentication failures.
+Any memorized secret used by the authenticator for activation SHALL be at least 6 decimal digits in length or of equivalent complexity and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), and SHALL include limits on the number of consecutive authentication failures.
 
 The unencrypted key and activation secret or biometric sample (and any biometric data derived from the biometric sample such as a probe produced through signal processing) SHALL be overwritten in memory immediately after an authentication transaction has taken place.
 
@@ -333,7 +333,7 @@ CSPs SHALL provide subscriber instructions on how to appropriately  protect the 
 
 #### <a name="throttle"></a>5.2.2. Rate Limiting (Throttling)
 
-When required in the authenticator type descriptions under [Section 5.1.](#reqauthtype), the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to no more than 100 consecutive failed attempts on a single account.
+When required in the authenticator type descriptions under [Section 5.1](#reqauthtype), the verifier SHALL implement controls to protect against online guessing attacks. Unless otherwise specified in the description of a given authenticator, the verifier SHALL effectively limit online attackers to no more than 100 consecutive failed attempts on a single account.
 
 Additional techniques MAY be used to reduce the likelihood that an attacker will lock the legitimate claimant out as a result of rate limiting. These include:
 
@@ -427,13 +427,13 @@ In situations where the verifier and CSP are separate entities (as shown by the 
 
 #### <a name="verifier-secrets"></a>5.2.7. Verifier Compromise Resistance
 
-Use of some types of authenticators requires that the verifier store a copy of the authenticator secret. For example, an OTP authenticator (described in [Section 5.1.4.](#singlefactorOTP)) requires that the verifier independently generate the authenticator output for comparison against the value sent by the claimant. Because of the potential for the verifier to be compromised and stored secrets stolen, authentication protocols that do not require the verifier to persistently store secrets that could be used for authentication are considered stronger, and are described herein as being *verifier compromise resistant*. Note that such verifiers are not resistant to all attacks; a verifier could be compromised in a different way, such as to always accept a particular authenticator output.
+Use of some types of authenticators requires that the verifier store a copy of the authenticator secret. For example, an OTP authenticator (described in [Section 5.1.4](#singlefactorOTP)) requires that the verifier independently generate the authenticator output for comparison against the value sent by the claimant. Because of the potential for the verifier to be compromised and stored secrets stolen, authentication protocols that do not require the verifier to persistently store secrets that could be used for authentication are considered stronger, and are described herein as being *verifier compromise resistant*. Note that such verifiers are not resistant to all attacks; a verifier could be compromised in a different way, such as to always accept a particular authenticator output.
 
 Verifier compromise resistance can be achieved in different ways, for example:
 
 1. Use a cryptographic authenticator that requires that the verifier store a public key corresponding to a private key held by the authenticator.
 
-2. Store the expected authenticator output in hashed form. This method can be used with some look-up secret authenticators (described in [Section 5.1.2.](#lookupsecrets)), for example.
+2. Store the expected authenticator output in hashed form. This method can be used with some look-up secret authenticators (described in [Section 5.1.2](#lookupsecrets)), for example.
 
 In order to be considered verifier compromise resistant, public keys stored by the verifier SHALL be associated with the use of approved cryptographic algorithms and SHALL provide at least the minimum security strength specified in the latest revision of [SP 800-131A](#SP800-131A) (112 bits as of the date of this publication).
 

@@ -74,7 +74,7 @@ Usability considerations for intermittent events across authenticator types incl
 * Clearly communicate how and where to acquire technical assistance. For example, provide users with information such as a link to an online self-service feature, chat sessions or a phone number for help desk support. Ideally, sufficient information can be provided to enable users to recover from intermittent events on their own without outside intervention.
 
 ### 10.2. Usability Considerations by Authenticator Type
-In addition to the previously described general usability considerations applicable to most authenticators ([Section 10.1.](#usabilitycommon)), the following sections describe other usability considerations specific to specific authenticator types.
+In addition to the previously described general usability considerations applicable to most authenticators ([Section 10.1](#usabilitycommon)), the following sections describe other usability considerations specific to specific authenticator types.
 
 #### <a name="memorizedsecrets"></a> 10.2.1. Memorized Secrets
 **_Typical Usage_**
@@ -98,7 +98,7 @@ Usability considerations for intermittent events include:
   * Clearly communicate memorized secret requirements, as specified in [Section 5.1.1](#reqauthtype).
   * Allow at least 64 characters in length to support the use of passphrases. Encourage users to make memorized secrets as lengthy as they want, using any characters they like (including spaces), thus aiding memorization.
   * Do not impose other composition rules (e.g. mixtures of different character types) on memorized secrets.
-  * Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See [Section 5.1.1.](#reqauthtype) for additional information).
+  * Do not require that memorized secrets be changed arbitrarily (e.g., periodically) unless there is a user request or evidence of authenticator compromise. (See [Section 5.1.1](#reqauthtype) for additional information).
 
 * Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a "black list" of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
 
@@ -173,7 +173,7 @@ Usability considerations for typical usage include:
 #### 10.2.8. Multi-factor Cryptographic Software
 **_Typical Usage_**
 
-In order to authenticate, users prove possession and control of the cryptographic key stored on disk or some other "soft" media that requires activation. The activation is through the input of a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1.](#memorizedsecrets) for memorized secrets and [Section 10.4.](#biomusability) for biometrics used in multi-factor authenticators).
+In order to authenticate, users prove possession and control of the cryptographic key stored on disk or some other "soft" media that requires activation. The activation is through the input of a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
 
 Usability considerations for typical usage include:
 
@@ -182,7 +182,7 @@ Usability considerations for typical usage include:
 #### 10.2.9. Multi-factor Cryptographic Device
 **_Typical Usage_**
 
-Users authenticate by proving possession of the multi-factor cryptographic device and control of the protected cryptographic key. The device is activated by a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1.](#memorizedsecrets) for memorized secrets and [Section 10.4.](#biomusability) for biometrics used in multi-factor authenticators).
+Users authenticate by proving possession of the multi-factor cryptographic device and control of the protected cryptographic key. The device is activated by a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
 
 Usability considerations for typical usage include:
 

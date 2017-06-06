@@ -6,7 +6,7 @@ _This section is normative._
 
 Once an authentication event has taken place, it is often desirable to allow the user to continue using the application across multiple subsequent interactions without requiring the user to repeat the authentication event every time. This requirement is particularly true for federation scenarios (described in [SP 800-63C](sp800-63c.html)), where the authentication event necessarily involves several components and parties coordinating across a network.
 
-To facilitate this behavior, a *session* MAY be started in response to an authentication event, and continue the session until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in [Section 7.2.](#sessionreauthn)), wherein the user repeats some or all of the initial authentication event, thereby re-establishing the session.
+To facilitate this behavior, a *session* MAY be started in response to an authentication event, and continue the session until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event (described in [Section 7.2](#sessionreauthn)), wherein the user repeats some or all of the initial authentication event, thereby re-establishing the session.
 
 Session management is preferable over continual presentation of credentials as the usability requirements of continual presentation often create incentives for workarounds such as cached unlocking credentials, negating the freshness of the authentication event. 
 
@@ -24,7 +24,7 @@ Secrets used for session binding:
 - SHOULD be erased on the user endpoint when the user logs out or when the secret is deemed to have expired.
 - SHOULD not be placed in insecure locations such as HTML5 Local Storage due to the potential exposure of local storage to XSS attacks.
 - SHALL be sent to and received from the device using an authenticated protected channel.
-- SHALL time out and not be accepted after the times specified in [Sections 4.1.4.](#aal1reauth), [4.2.4.](#aal2reauth), and [4.3.4.](#aal3reauth), as appropriate for the AAL.
+- SHALL time out and not be accepted after the times specified in [Sections 4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth), as appropriate for the AAL.
 - SHALL not be available to insecure communications between the host and user endpoint; authenticated sessions SHALL not fall back to an insecure transport, such as from https to http, following authentication.
 
 URLs or POST content SHALL contain a session identifier that SHALL be verified by the RP to ensure that actions taken outside the session do not affect the protected session.
@@ -61,7 +61,7 @@ Session secrets SHALL be non-persistent. That is, they SHALL NOT be retained acr
 
 Periodic reauthentication of sessions SHALL be performed to confirm the continued presence of the subscriber at an authenticated session (i.e., that the subscriber has not walked away without logging out).
 
-A session SHALL NOT be extended past the guidelines in Sections [4.1.3.](#aal1reauth), [4.2.3.](#aal2reauth), and [4.3.3.](#aal3reauth) (depending on AAL) based on presentation of the session secret alone. Prior to session expiration, the reauthentication time limit SHALL be extended by prompting the subscriber for the authentication factor(s) specified in [Table 7-1](#63bSec7-Table1).
+A session SHALL NOT be extended past the guidelines in Sections [4.1.3](#aal1reauth), [4.2.3](#aal2reauth), and [4.3.3](#aal3reauth) (depending on AAL) based on presentation of the session secret alone. Prior to session expiration, the reauthentication time limit SHALL be extended by prompting the subscriber for the authentication factor(s) specified in [Table 7-1](#63bSec7-Table1).
 
 When a session has been terminated due to a time-out or other action, the user SHALL be required to establish a new session by authenticating again.
 
@@ -84,6 +84,6 @@ When a session has been terminated due to a time-out or other action, the user S
 
 #### 7.2.1. Reauthentication from a Federation or Assertion
 
-When using a federation protocol as described in [SP 800-63C, Section 5.](sp800-63c.html#federation) to connect the CSP and RP, special considerations apply to session management and reauthentication. The federation protocol communicates an authentication event between the CSP and the RP but establishes no session between them. Since the CSP and RP often employ separate session management technologies, there SHALL NOT be any assumption of correlation between these sessions. Consequently, when an RP session expires and the RP requires reauthentication, it is entirely possible that the session at the CSP has not expired and that a new assertion could be generated from this session at the CSP without reauthenticating the user.
+When using a federation protocol as described in [SP 800-63C, Section 5](sp800-63c.html#federation) to connect the CSP and RP, special considerations apply to session management and reauthentication. The federation protocol communicates an authentication event between the CSP and the RP but establishes no session between them. Since the CSP and RP often employ separate session management technologies, there SHALL NOT be any assumption of correlation between these sessions. Consequently, when an RP session expires and the RP requires reauthentication, it is entirely possible that the session at the CSP has not expired and that a new assertion could be generated from this session at the CSP without reauthenticating the user.
 
 An RP requiring reauthentication through a federation protocol SHALL, if possible within the protocol, specify the maximum acceptable authentication age to the CSP, and the CSP SHALL reauthenticate the subscriber if they have not been authenticated within that time period or if it is not specified. The CSP SHALL communicate the authentication event time to the RP to allow the RP to decide if the assertion is sufficient for reauthentication and to determine the time for the next reauthentication event.

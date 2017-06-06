@@ -60,19 +60,19 @@ At AAL2, authentication SHALL occur by the use of either a multi-factor authenti
 
 When a multi-factor authenticator is used, any of the following MAY be used:
 
-* Multi-factor OTP Device ([Section 5.1.5.](#multifactorOTP))
-* Multi-factor Cryptographic Software ([Section 5.1.8.](#mfcs))
-* Multi-factor Cryptographic Device ([Section 5.1.9.](#mfcd))
+* Multi-factor OTP Device ([Section 5.1.5](#multifactorOTP))
+* Multi-factor Cryptographic Software ([Section 5.1.8](#mfcs))
+* Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
 
 When a combination of two single-factor authenticators is used, it SHALL include a Memorized Secret authenticator ([Section 5.1.1.](#memsecret)) and one possession-based (i.e., "something you have") authenticator from the following list:
 
-* Look-up Secret ([Section 5.1.2.](#lookupsecrets))
-* Out-of-Band Device ([Section 5.1.3.](#out-of-band))
-* Single-factor OTP Device ([Section 5.1.4.](#singlefactorOTP))
-* Single-factor Cryptographic Software ([Section 5.1.6.](#sfcs))
-* Single-factor Cryptographic Device ([Section 5.1.7.](#sfcd))
+* Look-up Secret ([Section 5.1.2](#lookupsecrets))
+* Out-of-Band Device ([Section 5.1.3](#out-of-band))
+* Single-factor OTP Device ([Section 5.1.4](#singlefactorOTP))
+* Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
+* Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
 
-> Note: When biometric authentication implements the requirements in [Section 5.2.3.](#biometric_use), the device has to be authenticated in addition to the biometric; a biometric is recognized as a factor, but not recognized as an authenticator by itself. Therefore, when conducting authentication with a biometric, it is unnecessary to use two authenticators because the associated device serves as "something you have", while the biometric serves as "something you are." 
+> Note: When biometric authentication implements the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated in addition to the biometric; a biometric is recognized as a factor, but not recognized as an authenticator by itself. Therefore, when conducting authentication with a biometric, it is unnecessary to use two authenticators because the associated device serves as "something you have", while the biometric serves as "something you are." 
 
 #### 4.2.2. Authenticator and Verifier Requirements
 
@@ -84,7 +84,7 @@ Verifiers operated by government agencies at AAL2 SHALL be validated to meet the
 
 When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked, nor whether the unlock process met the requirements for the relevant authenticator type.
 
-When a biometric factor is used in authentication at AAL2, the performance requirements stated in [Section 5.2.3.](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
+When a biometric factor is used in authentication at AAL2, the performance requirements stated in [Section 5.2.3](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
 
 #### <a name="aal2reauth"></a>4.2.3. Reauthentication
 
@@ -108,12 +108,12 @@ AAL3 provides very high confidence that the claimant controls authenticator(s) r
 
 AAL3 authentication SHALL occur by the use of one of a combination of authenticators satisfying the requirements in Section 4.3. Possible combinations are:
 
-* Multi-factor Cryptographic Device ([Section 5.1.9.](#mfcd))
-* Single-factor Cryptographic Device ([Section 5.1.7.](#sfcd)) used in conjunction with Memorized Secret ([Section 5.1.1.](#memsecret))
-* Multi-factor OTP device (software or hardware) ([Section 5.1.5.](#multifactor OTP)) used in conjunction with a Single-factor Cryptographic Device ([Section 5.1.7.](#sfcd))
-* Multi-factor OTP device (hardware only) ([Section 5.1.5](#multifactor OTP)) used in conjunction with a Single-factor Cryptographic Software ([Section 5.1.6.](#sfcs))
-* Single-factor OTP device (hardware only) ([Section 5.1.4.](#singlefactorOTP)) used in conjunction with a Multi-factor Cryptographic Software authenticator ([Section 5.1.8.](#mfcs))
-* Single-factor OTP device (hardware only) ([Section 5.1.4.](#singlefactorOTP)) used in conjunction with a Single-factor Cryptographic Software authenticator ([Section 5.1.6.](#sfcs))  and a Memorized Secret ([Section 5.1.1.](#memsecret))
+* Multi-factor Cryptographic Device ([Section 5.1.9](#mfcd))
+* Single-factor Cryptographic Device ([Section 5.1.7](#sfcd)) used in conjunction with Memorized Secret ([Section 5.1.1](#memsecret))
+* Multi-factor OTP device (software or hardware) ([Section 5.1.5](#multifactor OTP)) used in conjunction with a Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
+* Multi-factor OTP device (hardware only) ([Section 5.1.5](#multifactor OTP)) used in conjunction with a Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
+* Single-factor OTP device (hardware only) ([Section 5.1.4](#singlefactorOTP)) used in conjunction with a Multi-factor Cryptographic Software authenticator ([Section 5.1.8](#mfcs))
+* Single-factor OTP device (hardware only) ([Section 5.1.4](#singlefactorOTP)) used in conjunction with a Single-factor Cryptographic Software authenticator ([Section 5.1.6](#sfcs)) and a Memorized Secret ([Section 5.1.1](#memsecret))
 
 #### 4.3.2. Authenticator and Verifier Requirements
 
