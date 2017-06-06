@@ -172,7 +172,7 @@ Single-factor OTP devices are similar to look-up secret authenticators with the 
 
 #### <a name="sfotpa"></a>5.1.4.1. Single-factor OTP Authenticators
 
-Single-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or is based on a real-time clock.
+Single-factor OTP authenticators contain two persistent values. The first is a symmetric key that persists for the lifetime of the device. The second is a nonce that is changed each time the authenticator is used or a nonce based on a real-time clock.
 
 The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime. OTP authenticators, particularly software-based OTP generators, SHALL be designed to discourage, or at least not facilitate, the cloning of the secret key onto multiple devices.
 
