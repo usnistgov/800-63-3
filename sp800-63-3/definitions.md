@@ -255,7 +255,7 @@ A characteristic of an authentication system or an authenticator that requires m
 
 The three authentication factors are something you know, something you have, and something you are.
 
-#### Multi-factor Authentication (MFA)
+#### <a name=”mfa-definition”></a>Multi-factor Authentication (MFA)
 An authentication system or an authenticator that requires more than one distinct [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.
