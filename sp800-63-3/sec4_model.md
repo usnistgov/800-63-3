@@ -45,7 +45,7 @@ The right side of [Figure 4-1](#63Sec4-Figure1) shows the entities and interacti
 3.	The CSP or verifier provides an assertion about the subscriber to the RP, which may use the information in the assertion to make an authorization decision.
 4.	An authenticated session is established between the subscriber and the RP.
 
-In all cases, the RP should request the attributes it requires from a CSP prior to authentication of the claimant.  In addition, the claimant should be requested to consent to the release of those attributes prior to generation and release of an assertion.
+In all cases, the RP should request the attributes it requires from a CSP prior to authentication of the claimant. In addition, the claimant should be requested to consent to the release of those attributes prior to generation and release of an assertion.
 
 In some cases, the verifier does not need to communicate in real time with the CSP to complete the authentication activity (e.g., some uses of digital certificates). Therefore, the dashed line between the verifier and the CSP represents a logical link between the two entities. In some implementations, the verifier, RP, and CSP functions may be distributed and separated as shown in [Figure 4-1](#63Sec4-Figure1); however, if these functions reside on the same platform, the interactions between the components are local messages between applications running on the same system rather than protocols over shared, untrusted networks.
 
@@ -114,7 +114,7 @@ Overall, SP 800-63 does not presuppose a federated identity architecture; rather
 
 Federated architectures have many significant benefits, including, but not limited to:  
 
-* Enhanced user experience.  For example, an individual can be identity proofed once and can reuse the issued credential at multiple RPs.
+* Enhanced user experience. For example, an individual can be identity proofed once and can reuse the issued credential at multiple RPs.
 * Cost reduction to both the user (reduction in authenticators) and the agency (reduction in information technology infrastructure).
 * Data minimization as agencies do not need to pay for collection, storage, disposal, and compliance activities related to storing personal information.
 * Pseudonymous attribute assertions as agencies can request a minimized set of attributes, to include claims, to fulfill service delivery.
@@ -133,7 +133,7 @@ The RP is responsible for authenticating the source (the verifier) and for confi
 Examples of assertions include:
 
 * Security Assertion Markup Language (SAML) assertions are specified using a mark-up language intended for describing security assertions. They can be used by a verifier to make a statement to a RP about the identity of a claimant. SAML assertions may optionally be digitally signed.
-* OpenID Connect claims are specified using JavaScript Object Notation (JSON) for describing security, and optionally, user claims.  JSON user info claims may optionally be digitally signed.
+* OpenID Connect claims are specified using JavaScript Object Notation (JSON) for describing security, and optionally, user claims. JSON user info claims may optionally be digitally signed.
 * Kerberos tickets allow a ticket granting authority to issue session keys to two authenticated parties using symmetric key based encapsulation schemes.
 
 #### 4.4.2. Relying Parties

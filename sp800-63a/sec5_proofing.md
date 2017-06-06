@@ -10,10 +10,10 @@ This section lists the requirements to resolve, validate, and verify an identity
 
 ### <a name="resolve"></a>5.1. Identity Resolution
 
-The goal of identity resolution is to uniquely distinguish an individual within a given population or context. Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing process.  
+The goal of identity resolution is to uniquely distinguish an individual within a given population or context. Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing process.
 
-1.  Exact matches of information used in the proofing process could be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, issuing sources, and authoritative sources. Matching algorithms and rules used SHOULD be available publicly or, at a minimum, to the relevant community of interest. For example, they may be included as part of the written policy or practice statement referenced above.
-2.  KBV (sometimes referred to as KBA) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity.
+1. Exact matches of information used in the proofing process could be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, issuing sources, and authoritative sources. Matching algorithms and rules used SHOULD be available publicly or, at a minimum, to the relevant community of interest. For example, they may be included as part of the written policy or practice statement referenced above.
+2. KBV (sometimes referred to as KBA) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity.
 
 ### <a name="validate"></a>5.2. Identity Evidence Collection and Validation
 
@@ -29,7 +29,7 @@ This section provides quality requirements for identity evidence collected durin
 
 <div class="text-center" markdown="1">
 
-**Table 5-1.  Strengths of Identity Evidence**
+**Table 5-1. Strengths of Identity Evidence**
 
 </div>
 
@@ -46,9 +46,9 @@ This section provides quality requirements for identity evidence collected durin
 
 Once identity evidence is obtained by the CSP, the accuracy, authenticity, and integrity of the evidence and related information is checked against authoritative sources in order to determine that the presented evidence is:  
 
-1. Genuine, authentic, and not a counterfeit, fake, or forgery.
+1. Genuine, authentic, and not a counterfeit, fake, or forgery.  
 2. The information is correct.  
-3. The information relates to a real-life subject.  
+3. The information relates to a real-life subject.
 
 [Table 5-2](#63aSec5-Table2) lists the characteristics validation processes at each level of strength, ranging from unacceptable to superior.
 
@@ -56,7 +56,7 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 <div class="text-center" markdown="1">
 
-**Table 5-2.  Validating Identity Evidence**
+**Table 5-2. Validating Identity Evidence**
 
 </div>
 
@@ -83,7 +83,7 @@ The goal of identity verification is to confirm and establish a linkage between 
 
 <div class="text-center" markdown="1">
 
-**Table 5-3.  Verifying Identity Evidence**
+**Table 5-3. Verifying Identity Evidence**
 
 </div>
 
@@ -91,7 +91,7 @@ The goal of identity verification is to confirm and establish a linkage between 
 |:---:|:------------------------------|
 |Unacceptable|Evidence verification was not performed or verification of the evidence failed. The CSP is unable to confirm that the applicant is the owner of the claimed identity.|
 |Weak|The applicant has been confirmed as having access to the evidence provided to support the claimed identity.|
-|Fair|- The applicant's ownership of the claimed identity has been confirmed by:<br>&nbsp;&nbsp;&nbsp;&nbsp;- KBV.  See [Section 5.3.2](#kbv) for more details. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- a physical comparison of the applicant to the strongest piece of identity evidence provided to support the claimed identity. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison of the applicant to the identity evidence. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). |
+|Fair|- The applicant's ownership of the claimed identity has been confirmed by:<br>&nbsp;&nbsp;&nbsp;&nbsp;- KBV. See [Section 5.3.2](#kbv) for more details. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- a physical comparison of the applicant to the strongest piece of identity evidence provided to support the claimed identity. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison of the applicant to the identity evidence. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). |
 |Strong|- The applicant's ownership of the claimed identity has been confirmed by: <br>&nbsp;&nbsp;&nbsp;&nbsp;- physical comparison, using appropriate technologies, to a photograph, on the strongest piece of identity evidence provided to support the claimed identity. Physical comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OR**<br>&nbsp;&nbsp;&nbsp;&nbsp;- biometric comparison, using appropriate technologies, of the applicant to the strongest piece of identity evidence provided to support the claimed identity. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use).|
 |Superior|- The applicant's ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest piece of identity evidence provided to support the claimed identity, using appropriate technologies. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3]](sp800-63b.html#biometric_use).|
 
@@ -106,8 +106,8 @@ The following requirements apply to the identity verification steps for IAL2 and
 4. The CSP SHOULD perform KBV by verifying the applicant's knowledge of recent transactional history in which the CSP is a participant. The CSP SHALL ensure that transaction information has at least 20 bits of entropy. For example, to reach minimum entropy requirements, the CSP could ask the applicant for verification of the amount(s) and transaction numbers(s) of a micro-deposit(s) to a valid bank account, so long as the total number of digits is seven or greater.
 5. The CSP MAY perform KBV by asking the applicant questions to demonstrate they are the owner of the claimed information. However, the following requirements apply:
 
-	a. KBV SHOULD be based on multiple authoritative sources.
-  b. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.  
+	a. KBV SHOULD be based on multiple authoritative sources.  
+	b. The CSP SHALL require a minimum of four KBV questions with each requiring a correct answer to successfully complete the KBV step.  
 	c. The CSP SHOULD require free form response KBV questions. The CSP MAY allow multiple choice answers, however, if multiple choice answers are provided, the CSP SHALL require a minimum of four answer options per question.  
 	d. The CSP SHOULD require free form response KBV questions.  The CSP MAY allow multiple choice questions, however, if multiple choice questions are provided, the CSP SHALL require a minimum of four answer options per question.  
 	e. The CSP SHALL time out KBV sessions after two minutes of inactivity per question. In cases of session timeout, the CSP SHALL restart the entire KBV process and consider this a failed attempt.  
@@ -115,7 +115,7 @@ The following requirements apply to the identity verification steps for IAL2 and
 	g. The CSP SHOULD NOT ask the same KBV questions in subsequent attempts.  
 	h. The CSP SHALL NOT ask a KBV question that provides information that could assist in answering any future KBV question. This applies to a single session or a subsequent session after a failed attempt.  
 	i. The CSP SHALL NOT use KBV questions for which the answers do not change (e.g., "What was your first car?").  
-	j. The CSP SHALL ensure that KBV questions do not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification.   
+	j. The CSP SHALL ensure that KBV questions do not reveal PII that the applicant has not already provided, nor personal information that, when combined with other information in a KBV session, could result in unique identification. 
 
 #### <a name="vip"></a>5.3.3. In-person Proofing Requirements
 
@@ -158,4 +158,4 @@ In addition to the IAL3 validation and verification requirements specified in [S
 
 ### 5.4. Binding Requirements
 
-See [800-63B, Section 6.1, Authenticator Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#binding) for instructions on binding authenticators to subscribers.  
+See [800-63B, Section 6.1, Authenticator Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#binding) for instructions on binding authenticators to subscribers.

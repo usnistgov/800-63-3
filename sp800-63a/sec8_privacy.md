@@ -14,14 +14,14 @@ These privacy considerations provide information regarding the General Requireme
 
 #### 8.1.1. Social Security Numbers
 
-[Section 4.2, requirement (13)](#4.2-r13) prohibits collection of the SSN except where other attributes or combinations of attributes are insufficient to achieve identity resolution. It is not permitted to be used anywhere else in the proofing process. Overreliance on the SSN can contribute to misuse and place the applicant at risk of harms such as identity theft. Nonetheless, the SSN may serve to achieve identity resolution for RPs, in particular federal agencies, that use SSNs to correlate a subscriber to existing records. Thus, this document recognizes the role of the SSN as an identifier and makes appropriate allowance for its use.  
-> Note: Evidence requirements at the higher IALs preclude the usage of the SSN or the Social Security Card as acceptable identity evidence.  
+[Section 4.2, requirement (13)](#4.2-r13) prohibits collection of the SSN except where other attributes or combinations of attributes are insufficient to achieve identity resolution. It is not permitted to be used anywhere else in the proofing process. Overreliance on the SSN can contribute to misuse and place the applicant at risk of harms such as identity theft. Nonetheless, the SSN may serve to achieve identity resolution for RPs, in particular federal agencies, that use SSNs to correlate a subscriber to existing records. Thus, this document recognizes the role of the SSN as an identifier and makes appropriate allowance for its use.
+> Note: Evidence requirements at the higher IALs preclude the usage of the SSN or the Social Security Card as acceptable identity evidence.
 
 Prior to collecting the SSN for identity proofing, organizations need to consider any legal obligation to collect the SSN, the necessity of using the SSN for interoperability with third party processes and systems, or operational requirements. Operational requirements can be demonstrated by an inability to alter systems, processes, or forms due to cost or unacceptable levels of risk. Operational necessity is not justified by ease of use or unwillingness to change.
 
 For federal agencies, the initial requirement in [Executive Order (EO) 9397](#9397) to use the SSN as a primary means of identification for individuals working for, with, or conducting business with their agency, has since been eliminated. Accordingly, EO 9397 cannot be referenced as the sole authority establishing the collection of the SSN as necessary.
 
-Federal agencies need to review any decision to collect the SSN relative to their obligation to reduce the collection and unnecessary use of SSNs under Office of Management and Budget policy.  
+Federal agencies need to review any decision to collect the SSN relative to their obligation to reduce the collection and unnecessary use of SSNs under Office of Management and Budget policy.
 
 ### <a name="consent"></a>8.2. Notice and Consent
 
@@ -42,14 +42,13 @@ Federal agencies should consult SAOPs if there are questions about whether propo
 The Privacy Act requires federal CSPs that maintain a system of records to follow procedures to enable applicants to access and, if incorrect, amend their records. Any Privacy Act Statement should include a reference to the applicable SORN(s), which provide the applicant with instructions on how to make a request for access or correction. Non-federal CSPs should have comparable procedures, including contact information for any third parties if they are the source of the information.
 CSPs should make clear to users the availability of alternative methods for completing the process, (e.g., in person at a customer service center, if available), in the event an applicant is unable to establish his/her identity and complete the registration process online.
 
-> Note:  If the ID proofing process is not successful, CSPs should inform the applicant of the procedures to address the issue but should not inform the applicant as to the specifics of why the registration failed, (e.g., do not inform the applicant, "Your SSN did not match the one that we have on record for you") as doing so could allow fraudulent applicants to gain more knowledge about the accuracy of the PII.  
-
+> Note:  If the ID proofing process is not successful, CSPs should inform the applicant of the procedures to address the issue but should not inform the applicant as to the specifics of why the registration failed, (e.g., do not inform the applicant, "Your SSN did not match the one that we have on record for you") as doing so could allow fraudulent applicants to gain more knowledge about the accuracy of the PII.
 
 ### 8.5. Privacy Risk Assessment
 
 [Sections 4.2, requirement (7)](#4.2-r7) and [(10)](#gr13) require the CSP to conduct a privacy risk assessment. In conducting a privacy risk assessment, CSPs should consider:  
 
-1.  The likelihood that the action it takes (e.g., additional verification steps or records retention) could create a problem for the applicant such as invasiveness or unauthorized access to the information; and
+1. The likelihood that the action it takes (e.g., additional verification steps or records retention) could create a problem for the applicant such as invasiveness or unauthorized access to the information; and
 2. The impact if a problem did occur. CSPs should be able to justify any response it takes to identified privacy risks, including accepting the risk, mitigating the risk, and sharing the risk. The use of applicant consent should be considered a form of sharing the risk, and therefore should only be used when an applicant could reasonably be expected to have the capacity to assess and accept the shared risk.
 
 ### 8.6. Agency Specific Privacy Compliance
@@ -58,4 +57,4 @@ CSPs should make clear to users the availability of alternative methods for comp
 
 The SAOP can similarly assist the agency in determining whether a PIA is required. These considerations should not be read as a requirement to develop a Privacy Act SORN or PIA for identity proofing alone; in many cases it will make the most sense to draft a PIA and SORN that encompasses the entire digital authentication process or include the digital authentication process as part of a larger programmatic PIA that discusses the program or benefit to which the agency is establishing online access.
 
-Due to the many components of digital authentication, it is important for the SAOP to have an awareness and understanding of each individual component. For example, other privacy artifacts may be applicable to an agency offering or using proofing services such as Data Use Agreements or Computer Matching Agreements. The SAOP can assist the agency in determining what additional requirements apply. Moreover, a thorough understanding of the individual components of digital authentication will enable the SAOP to thoroughly assess and mitigate privacy risks either through compliance processes or by other means.  
+Due to the many components of digital authentication, it is important for the SAOP to have an awareness and understanding of each individual component. For example, other privacy artifacts may be applicable to an agency offering or using proofing services such as Data Use Agreements or Computer Matching Agreements. The SAOP can assist the agency in determining what additional requirements apply. Moreover, a thorough understanding of the individual components of digital authentication will enable the SAOP to thoroughly assess and mitigate privacy risks either through compliance processes or by other means.

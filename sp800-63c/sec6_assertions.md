@@ -47,7 +47,7 @@ A bearer assertion can be presented by any party as proof of the bearer's identi
 Note that mere possession of a bearer assertion or reference is not always enough to impersonate a subscriber. For example, if an assertion is presented in the back-channel federation model (described in [Section 7.1](#back-channel)), additional controls MAY be placed on the transaction (such as identification of the RP and assertion injection protections) that help to further protect the RP from fraudulent activity.
 
 #### 6.1.2. <a name="holderofkey"></a>Holder-of-Key Assertions
-A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP.  Note that the reference to the key is asserted (and signed) by the issuer of the assertion.
+A holder-of-key assertion contains a reference to a key possessed by and representing the subscriber. The key referenced in a holder-of-key represents the subscriber, not any other party in the system including the browser, IdP, or RP. Note that the reference to the key is asserted (and signed) by the issuer of the assertion.
 
 When the RP receives the holder-of-key assertion, the subscriber proves possession of the key referenced in the assertion directly to the RP. While the subscriber could also have used a key-based means of authenticating to the IdP, the primary authentication at the IdP and the federated authentication at the RP are considered separately and are not assumed to use the same keys or related sessions.
 
@@ -84,7 +84,7 @@ When encrypting assertions the IdP SHALL encrypt the contents of the assertion u
 
 All encryption of assertions SHALL use approved cryptography.
 
-When assertions are passed through third parties, such as a browser, the actual assertion SHALL be encrypted. For example, the XML SAML assertion using XML-Encryption.  For assertions that are passed directly between IDP and RP, the actual assertion MAY be encrypted. If it is not, the assertion SHALL be sent over an authenticated protected channel.
+When assertions are passed through third parties, such as a browser, the actual assertion SHALL be encrypted. For example, the XML SAML assertion using XML-Encryption. For assertions that are passed directly between IDP and RP, the actual assertion MAY be encrypted. If it is not, the assertion SHALL be sent over an authenticated protected channel.
 
 > Note: Assertion encryption is required at FAL2 and FAL3.
 

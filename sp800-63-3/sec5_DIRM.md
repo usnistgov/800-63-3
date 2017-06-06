@@ -1,12 +1,12 @@
 <a name="sec5"></a>
 
 <div class="breaker"></div>
-
+. 
 ## 5. Digital Identity Risk Management
 
 _This section is normative._
 
-This section, and the corresponding risk assessment guidance, supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies.  Rather, requirements contained herein provide specific guidance related to digital identity risk that agency RPs SHALL apply while executing all relevant RMF lifecycle phases.
+This section, and the corresponding risk assessment guidance, supplements the [NIST Risk Management Framework (RMF)](#NIST-RMF) and its component special publications. This guideline does not establish additional risk management processes for agencies. Rather, requirements contained herein provide specific guidance related to digital identity risk that agency RPs SHALL apply while executing all relevant RMF lifecycle phases.
 
 ### <a name="5-1-overview"></a> 5.1. Overview
 
@@ -159,7 +159,7 @@ The statement SHALL include, at a minimum:
  
 As these guidelines are revised, CSPs SHALL consider how changes in requirements affect their population of users. In some instances the user population will be unaffected, yet in others, the CSP will require users to undergo a transitional activity. For example, request users, upon initial logon since last revision, supply additional proofing evidence to adhere to new IAL requirements. This SHALL be a risk-based decision, made in context of the CSP, any RPs that use the CSP, mission, and the population served. The following considerations serve only as a guide to agencies when considering the impacts of requirements changes:
  
-1. If the RP is experiencing identity-related fraud, a migration may prove beneficial.  If not, migration may not be an added value.
+1. If the RP is experiencing identity-related fraud, a migration may prove beneficial. If not, migration may not be an added value.
 2. New, stronger, or user-friendly authentication options are added to individual AALs the CSP could issue new authenticators or allow users to register authenticators they already have.
 3. Federation requirements may or may not have a user impact. For example, consent requirements or infrastructure requirements could necessitate an infrastructure or protocol upgrade.
 4. Addition or removal of xALs may not require a migration, but would trigger a new risk assessment to determine if a change is necessary for the RP.

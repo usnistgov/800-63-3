@@ -69,7 +69,7 @@ When a session has been terminated, due to a time-out or other action, the user 
 
 <div class="text-center" markdown="1">
 
-**Table 7-1.  AAL Reauthentication Requirements**
+**Table 7-1. AAL Reauthentication Requirements**
 
 </div>
 
