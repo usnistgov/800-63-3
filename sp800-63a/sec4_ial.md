@@ -258,11 +258,11 @@ _This section is informative._
 
 Requirement | IAL1 | IAL2 | IAL3
 ------------|-------|-------|-------
-Presence|No requirements|In-person and unsupervised remote|In-person and supervised remote
-Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution<br><br>KBV may be used for added confidence| Same as IAL2
-Evidence|No identity evidence is collected| - One (1) piece of SUPERIOR or STRONG evidence depending on strength of original proof and validation occurs with issuing source; or<br><br>- Two (2) pieces of STRONG evidence, or <br><br> - One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence|- Two (2) pieces of SUPERIOR evidence, or<br><br> - One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br> - Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence
-Validation|No validation|Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented|Same as IAL2
+Presence|No requirements|In-person and unsupervised remote.|In-person and supervised remote.
+Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution.<br><br>KBV may be used for added confidence.| Same as IAL2
+Evidence|No identity evidence is collected| - One (1) piece of SUPERIOR or STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br>- Two (2) pieces of STRONG evidence, or <br><br> - One (1) piece of STRONG evidence plus two (2) pieces of FAIR evidence.|- Two (2) pieces of SUPERIOR evidence, or<br><br> - One (1) piece of SUPERIOR evidence and one (1) piece of STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br> - Two (2) pieces of STRONG evidence plus one (1) piece of FAIR evidence.
+Validation|No validation|Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented.|Same as IAL2.
 Verification| No verification |Verified by a process that is able to achieve a strength of STRONG.|Verified by a process that is able to achieve a strength of SUPERIOR.<br>
 Address Confirmation|No requirements for address confirmation|Required. Enrollment code sent to any address of record. Notification sent by means different from enrollment code.|Required. Notification of proofing to postal address.
 Biometric Collection|No|Optional|Mandatory
-Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent federal or industry standard)|[[SP 800-53]](#SP800-53) High Baseline (or equivalent federal or industry standard)
+Security Controls|N/A|[[SP 800-53]](#SP800-53) Moderate Baseline (or equivalent federal or industry standard).|[[SP 800-53]](#SP800-53) High Baseline (or equivalent federal or industry standard).
