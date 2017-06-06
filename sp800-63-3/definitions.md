@@ -22,11 +22,11 @@ The validated and verified location (physical or digital) where an individual ca
 #### Applicant
 A subject undergoing the processes of enrollment and identity proofing.
 
-#### Approved Cryptography
+#### <a name="approved"></a> Approved Cryptography
 Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
 
 #### Assertion
-A statement from a verifier to a RP that contains information about a subscriber. Assertions may also contain verified attributes.
+A statement from a verifier to an RP that contains information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assertion Reference
 A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier.
@@ -35,7 +35,7 @@ A data object, created in conjunction with an assertion, which identifies the ve
 Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
-An attempt by an unauthorized entity to fool a verifier or a RP into believing that the unauthorized individual in question is the subscriber.
+An attempt by an unauthorized entity to fool a verifier or an RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
 A party, including an insider, who acts with malicious intent to compromise a system.
@@ -140,7 +140,7 @@ While common usage often assumes that the credential is maintained by the subscr
 A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. A CSP may be an independent third party, or may issue credentials for its own use.
 
 #### Cross-site Request Forgery (CSRF)
-An attack in which a subscriber who is currently authenticated to a RP and connected through a secure session browses to an attacker's website, causing the subscriber to unknowingly invoke unwanted actions at the RP.
+An attack in which a subscriber who is currently authenticated to an RP and connected through a secure session browses to an attacker's website, causing the subscriber to unknowingly invoke unwanted actions at the RP.
 
 For example, if a bank website is vulnerable to a CSRF attack, it may be possible for a subscriber to unintentionally authorize a large money transfer, merely by viewing a malicious link in a webmail message while a connection to the bank is open in another browser window.
 
@@ -189,7 +189,7 @@ A measure of the amount of uncertainty that an attacker faces to determine the v
 The value where a sensor's false match rate (FMR) and false non-match rate (FNMR) are equal. EER is a figure of merit for the sensor; the lower the EER is, the more certain the sensor's decision is likely to be.
 
 #### Federal Information Processing Standard (FIPS)
-Under the Information Technology Management Reform Act (Public Law 104-106), the Secretary of Commerce approves the standards and guidelines developed by the National Institute of Standards and Technology (NIST) for Federal computer systems. These standards and guidelines are issued by NIST as Federal Information Processing Standards (FIPS) for use government-wide. NIST develops FIPS when there are compelling Federal government requirements, such as for security and interoperability and there are no acceptable industry standards or solutions. See background information for more details.
+Under the Information Technology Management Reform Act (Public Law 104-106), the Secretary of Commerce approves the standards and guidelines developed by the National Institute of Standards and Technology (NIST) for federal computer systems. These standards and guidelines are issued by NIST as Federal Information Processing Standards (FIPS) for use government-wide. NIST develops FIPS when there are compelling federal government requirements, such as for security and interoperability and there are no acceptable industry standards or solutions. See background information for more details.
 
 FIPS documents are available online through the FIPS home page: <http://www.nist.gov/itl/fips.cfm>
 
@@ -197,7 +197,7 @@ FIPS documents are available online through the FIPS home page: <http://www.nist
 A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level (FAL)
-A category describing the assertion protocol used by the federation to communicate authentication and attribute information (if applicable) to a RP.
+A category describing the assertion protocol used by the federation to communicate authentication and attribute information (if applicable) to an RP.
 
 #### Federation Proxy
 A component that acts as a logical RP to a set of IdPs and a logical IdP to a set of RPs, bridging the two systems with a single component. These are sometimes referred to as "brokers".
@@ -255,7 +255,7 @@ A characteristic of an authentication system or an authenticator that requires m
 
 The three authentication factors are something you know, something you have, and something you are.
 
-#### Multi-factor Authentication (MFA)
+#### <a name=”mfa-definition”></a>Multi-factor Authentication (MFA)
 An authentication system or an authenticator that requires more than one distinct [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
 
 The three authentication factors are something you know, something you have, and something you are.

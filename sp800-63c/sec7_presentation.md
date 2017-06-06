@@ -1,4 +1,3 @@
-<div class="breaker"></div>
 <a name="presentation"></a>
 
 ## 7. Assertion Presentation
@@ -35,7 +34,7 @@ The assertion reference:
  3. SHOULD be time limited with a short lifetime of seconds or minutes.
  4. SHOULD be presented along with authentication of the RP.
 
-In this model, the assertion itself is requested directly from the IdP to the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
+In this model, the assertion itself is requested directly from the IdP by the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
 This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has completed without sending the user back to the IdP. This query occurs using an authorization credential issued alongside the assertion, as described in [Section 6](#assertions).
 
@@ -46,13 +45,13 @@ The RP SHALL protect itself against injection of manufactured or captured assert
 Elements within the assertion SHALL be validated by the RP including:
 
  - *issuer verification*: ensuring the assertion was issued by the IdP the RP expects it to be from
- - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP the assertion is from
+ - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP sending the assertion
  - *time validation*: ensuring the expiration and issue times are within acceptable limits of the current timestamp
  - *audience restriction*: ensuring this RP is the intended recipient of the assertion
 
 Conveyance of the assertion reference from the IdP to the subscriber, as well as from the subscriber to the RP, SHALL be made over an authenticated protected channel. Conveyance of the assertion reference from the RP to the IdP, as well as the assertion from the IdP to the RP, SHALL be made over an authenticated protected channel.
 
-When assertion references are presented, the IdP SHALL verify that the party presenting the assertion reference is the same party that requested the authentication. The IdP can do this by requiring the RP to authenticate itself when presenting the assertion reference to the IdP or through other similar means (see [[RFC 7636](#RFC7636)] for one protocol's method of RP identification).
+When assertion references are presented, the IdP SHALL verify that the party presenting the assertion reference is the same party that requested the authentication. The IdP can do this by requiring the RP to authenticate itself when presenting the assertion reference to the IdP or through other similar means (see [RFC 7636](#RFC7636) for one protocol's method of RP identification).
 
 Note that in a federation proxy described in [Section 5.1.4](#proxied), the IdP audience restricts the assertion reference and assertion to the proxy, and the proxy restricts any newly-created assertion references or assertions to the downstream RP.
 
@@ -78,8 +77,8 @@ The RP SHALL protect itself against injection of manufactured or captured assert
 
 Elements within the assertion SHALL be validated by the RP including:
 
- - *issuer verification*: ensuring the assertion was issued by the IdP the RP expects it to be from
- - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP the assertion is from
+ - *issuer verification*: ensuring the assertion was issued by the expected IdP
+ - *signature validation*: ensuring the signature of the assertion corresponds to the key related to the IdP making the assertion
  - *time validation*: ensuring the expiration and issue times are within acceptable limits of the current timestamp
  - *audience restriction*: ensuring this RP is the intended recipient of the assertion
 
@@ -95,5 +94,5 @@ Note that the IdP may have access to information that may be useful to the RP in
 
 Additional attributes about the user MAY be included outside of the assertion itself as part of a separate authorized request from the RP to the IdP. The authorization for access to these attributes MAY be issued alongside the assertion itself. Splitting user information in this manner can aid in protecting user privacy and allow for limited disclosure of identifying attributes on top of the essential information in the authentication assertion itself.
 
-The RP SHALL, where feasible, request attribute references rather than full attribute values as described in [Section 9.3](#minimization). The IdP SHALL support attribute references.  
+The RP SHALL, where feasible, request attribute references rather than full attribute values as described in [Section 9.3](#minimization). The IdP SHALL support attribute references.
 

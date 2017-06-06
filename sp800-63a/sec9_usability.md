@@ -57,7 +57,7 @@ Such preparation is only possible if users receive the necessary information (e.
 
 In order to ensure users are equipped to make informed decisions about whether to proceed with the enrollment process, and what will be needed for their session, provide users:
 
-* Information about the entire process, such as what to expect in each step.   
+* Information about the entire process, such as what to expect in each step.
   * Clear explanations of the expected timeframes to allow users to plan accordingly.
 
 * Explanation of the need for, and benefits of, identity proofing to allow users to understand the value proposition.

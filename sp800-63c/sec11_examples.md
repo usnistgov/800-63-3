@@ -9,7 +9,7 @@ Three types of assertion technologies are discussed below: SAML assertions, Kerb
 
 ### 11.1. Security Assertion Markup Language (SAML)
 
-SAML is an XML-based framework for creating and exchanging authentication and attribute information between trusted entities over the internet. As of this writing, the latest specification for \[[SAML](#SAML)\] is SAML v2.0, issued 15 March 2005.
+SAML is an XML-based framework for creating and exchanging authentication and attribute information between trusted entities over the internet. As of this writing, the latest specification for [SAML](#SAML) is SAML v2.0, issued 15 March 2005.
 
 The building blocks of SAML include:
 
@@ -52,7 +52,7 @@ the Authentication Server (AS). The AS encrypts a session key for the
 subscriber using the subscriber's long term credential. The long term
 credential may either be a secret key shared between the AS and the
 subscriber, or in the PKINIT variant of Kerberos, a public key
-certificate. It should be noted that most variants of Kerberos based on
+certificate. Most variants of Kerberos based on
 a shared secret key between the subscriber and IdP derive this key
 from a user generated password. As such, they are vulnerable to offline
 dictionary attack by a passive eavesdropper unless Flexible Authentication
@@ -73,7 +73,7 @@ When Kerberos authentication is based on passwords, the protocol is known to
 be vulnerable to offline dictionary attacks by eavesdroppers who capture the
 initial user-to-KDC exchange. Longer password length and complexity provide
 some mitigation to this vulnerability, although sufficiently long passwords
-tend to be cumbersome for users.  However, when Kerberos password-based
+tend to be cumbersome for users. However, when Kerberos password-based
 authentication is used in a FAST (or similar) tunnel, a successful
 Man-in-the-Middle attack is additionally required in order to perform the
 dictionary attack.
