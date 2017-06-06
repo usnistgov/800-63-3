@@ -206,7 +206,7 @@ NIST SP 800-63-A addresses how applicants can prove their identities and become 
 
 SP 800-63A sets requirements to achieve a given IAL. The three IALs reflect the options agencies may select based on their risk profile and the potential harm caused by an attacker making a successful false claim of an identity. The IALs are as follows:
 
-**IAL1** - There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as such.
+**IAL1** - There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the authentication process are self-asserted or should be treated as such (including attributes a Credential Service Provider, or CSP, asserts to an RP).
 
 **IAL2** - Evidence supports the real-world existence of the claimed identity and verifies that the applicant is appropriately associated with this real-world identity. IAL2 introduces the need for either remote or physically-present identity proofing. Attributes can be asserted by Credential Service Providers (CSPs) to RPs in support of pseudonymous identity with verified attributes.
 
@@ -221,7 +221,7 @@ The three AALs define the subsets of options agencies can select based on their 
 
 **AAL1** - AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
-**AAL2** - AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through secure authentication protocol(s). [Approved cryptographic](#approved) techniques are required at AAL2 and above.
+**AAL2** - AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of [two distinct authentication factors](#mfa-definition) is required through secure authentication protocol(s).  [Approved cryptographic](#approved) techniques are required at AAL2 and above.
 
 **AAL3** - AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.
 
