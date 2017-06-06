@@ -189,7 +189,7 @@ A measure of the amount of uncertainty that an attacker faces to determine the v
 The value where a sensor's false match rate (FMR) and false non-match rate (FNMR) are equal. EER is a figure of merit for the sensor; the lower the EER is, the more certain the sensor's decision is likely to be.
 
 #### Federal Information Processing Standard (FIPS)
-Under the Information Technology Management Reform Act (Public Law 104-106), the Secretary of Commerce approves the standards and guidelines developed by the National Institute of Standards and Technology (NIST) for Federal computer systems. These standards and guidelines are issued by NIST as Federal Information Processing Standards (FIPS) for use government-wide. NIST develops FIPS when there are compelling Federal government requirements, such as for security and interoperability and there are no acceptable industry standards or solutions. See background information for more details.
+Under the Information Technology Management Reform Act (Public Law 104-106), the Secretary of Commerce approves the standards and guidelines developed by the National Institute of Standards and Technology (NIST) for federal computer systems. These standards and guidelines are issued by NIST as Federal Information Processing Standards (FIPS) for use government-wide. NIST develops FIPS when there are compelling federal government requirements, such as for security and interoperability and there are no acceptable industry standards or solutions. See background information for more details.
 
 FIPS documents are available online through the FIPS home page: <http://www.nist.gov/itl/fips.cfm>
 

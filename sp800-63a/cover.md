@@ -96,7 +96,7 @@ Technology*
 
 This publication has been developed by NIST in accordance with its statutory responsibilities under the Federal Information Security Modernization Act (FISMA) of 2014, 44 U.S.C. § 3551 et seq., Public Law  (P.L.) 113-283. NIST is responsible for developing information security standards and guidelines, including minimum requirements for federal information systems, but such standards and guidelines shall not apply to national security systems without the express approval of appropriate federal officials exercising policy authority over such systems. This guideline is consistent with the requirements of the Office of Management and Budget (OMB) Circular A-130.
 
-Nothing in this publication should be taken to contradict the standards and guidelines made mandatory and binding on Federal agencies by the Secretary of Commerce under statutory authority. Nor should these guidelines be interpreted as altering or superseding the existing authorities of the Secretary of Commerce, Director of the OMB, or any other Federal official. This publication may be used by nongovernmental organizations on a voluntary basis and is not subject to copyright in the United States. Attribution would, however, be appreciated by NIST.
+Nothing in this publication should be taken to contradict the standards and guidelines made mandatory and binding on federal agencies by the Secretary of Commerce under statutory authority. Nor should these guidelines be interpreted as altering or superseding the existing authorities of the Secretary of Commerce, Director of the OMB, or any other federal official. This publication may be used by nongovernmental organizations on a voluntary basis and is not subject to copyright in the United States. Attribution would, however, be appreciated by NIST.
 
 <div class="text-center" markdown="1">
 
@@ -147,7 +147,7 @@ to advance the development and productive use of information technology.
 ITL's responsibilities include the development of management,
 administrative, technical, and physical standards and guidelines for the
 cost-effective security and privacy of other than national
-security-related information in Federal information systems. The Special
+security-related information in federal information systems. The Special
 Publication 800-series reports on ITL's research, guidelines, and
 outreach efforts in information system security, and its collaborative
 activities with industry, government, and academic organizations.
@@ -158,7 +158,7 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-These guidelines provide technical requirements for Federal agencies
+These guidelines provide technical requirements for federal agencies
 implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
