@@ -255,7 +255,7 @@ A characteristic of an authentication system or an authenticator that requires m
 
 The three authentication factors are something you know, something you have, and something you are.
 
-#### <a name=”mfa-definition”></a>Multi-factor Authentication (MFA)
+#### <a name="mfa-definition"></a>Multi-factor Authentication (MFA)
 An authentication system that requires more than one distinct [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a multi-factor authenticator or by a combination of authenticators that provide different factors.
 
 The three authentication factors are *something you know*, *something you have*, and *something you are*.
@@ -352,7 +352,7 @@ Credentials that describe the binding in a way that does not compromise the auth
 The public part of an asymmetric key pair that is used to verify signatures or encrypt data.
 
 #### Public Key Certificate
-A digital document issued and digitally signed by the private key of a certificate authority that binds an identifier to a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](https://pages.nist.gov/800-63-3/sp800-63b.html#RFC5280).
+A digital document issued and digitally signed by the private key of a certificate authority that binds an identifier to a subscriber to a public key. The certificate indicates that the subscriber identified in the certificate has sole control and access to the private key. See also [[RFC 5280]](sp800-63b.html#RFC5280).
 
 #### Public Key Infrastructure (PKI)
 A set of policies, processes, server platforms, software, and workstations used for the purpose of administering certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
