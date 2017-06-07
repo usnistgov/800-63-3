@@ -456,9 +456,9 @@ A password based authentication protocol that allows a claimant to authenticate 
 
 ### A.2 Abbreviations
 
-Selected acronyms in this paper are defined below.
+Selected abbreviations in these guidelines are defined below.
 
-|Acronym|Term|
+|Abbreviation|Term|
 |:-----|:---------|
 |ABAC|Attribute Based Access Control|
 |AS|Authentication Server|
@@ -515,4 +515,4 @@ Selected acronyms in this paper are defined below.
 |TGS|Ticket Granting Server|
 |TGT|Ticket Granting Ticket|
 |TLS|Transport Layer Security|
-|Voice-over-IP|VOIP|
+|VOIP|Voice-over-IP|
