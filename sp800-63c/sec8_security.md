@@ -45,7 +45,7 @@ Mechanisms that assist in mitigating the threats identified above are identified
 | | Send assertion over an authenticated protected channel authenticating the IdP | [7.1](#back-channel), [7.2](#front-channel) |
 | | Include a non-guessable random identifier in the assertion | [6.2.1](#assertion-id) |
 | Assertion disclosure | Send assertion over an authenticated protected channel authenticating the RP | [7.1](#back-channel), [7.2](#front-channel) |
-| | Encrypt assertion for a specific RP (may be accomplished by use of a mutually authenticated protected channel) | [6.2.3](#encrypted-assertion) | [6.2.3] |
+| | Encrypt assertion for a specific RP (may be accomplished by use of a mutually authenticated protected channel) | [6.2.3](#encrypted-assertion) |
 | Assertion repudiation by the IdP | Cryptographically sign the assertion at the IdP with a key that supports non-repudiation; verify signature at RP | [6.2.2](#signed-assertion) |
 | Assertion repudiation by the subscriber | Issue holder-of-key assertions; proof of possession of presented key verifies subscriber's participation | [6.1.2](#holderofkey) |
 | Assertion redirect | Include identity of the RP ("audience") for which the assertion is issued in its signed content; RP verifies that they are intended recipient | [6](#assertions), [7.1](#back-channel), [7.2](#front-channel) |
