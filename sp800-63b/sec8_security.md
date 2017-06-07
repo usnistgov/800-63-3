@@ -14,7 +14,7 @@ An attacker who can gain control of an authenticator will often be able to masqu
     
 - *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber's fingerprint and construct a replica.
 
-This document assumes that the subscriber is not colluding with the attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
+This document assumes that the subscriber is not colluding with an attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
 
 <a name="63bSec8-Table1"></a>
 
@@ -70,31 +70,26 @@ Related mechanisms that assist in mitigating the threats identified above are su
 </div>
 
 
-| **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** |
-|---------------------------------|----------------------------------|
-| Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.|
-| | Use a combination of authenticators that includes a memorized secret or biometric.
-| Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. |
-| Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use.
-| | Maintain situational awareness when entering memorized secrets and OTPs to ensure that they cannot be observed by others.
-| | Avoid use of non-trusted wireless networks as unencrypted secondary out-of-band authentication channels.
-| | Authenticate over authenticated protected channels (observe lock icon in browser window, for example).
-| | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*.
-| | Use authentication endpoints that employ trusted input and trusted display capabilities.
-| Offline cracking | Use an authenticator with a high entropy authenticator secret.
-| | Store memorized secrets in a salted, hashed form, including a keyed hash.
-| Side channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values.
-| Phishing or pharming | Use authenticators that provide verifier impersonation resistance.
-| | Be alert for unexpected hostnames in URLs.
-| | Do not click on links in email messages; instead, enter the URL manually or through a trusted bookmark.
-| Social engineering | Do not reveal authentication secrets to others, regardless of their story.
-| | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents.
-| Online guessing | Use authenticators that generate high entropy output.
-| | Use an authenticator that locks up after a number of repeated failed activation attempts.
-| Endpoint compromise | Use hardware authenticators that require physical action by the subscriber.
-| | Provide secure display of identity of verifier and RP.
-| | Maintain software-based keys in restricted-access storage.
-| Unauthorized binding | Use MitM-resistant protocols for provisioning of authenticators and associated keys.
+| **Authenticator Threat/Attack** | **Threat Mitigation Mechanisms** | **Normative Reference(s)** |
+|---------------------------------|----------------------------------|-------|
+| Theft | Use multi-factor authenticators that need to be activated through a memorized secret or biometric.| [4.2.1](#aal2types), [4.3.1](#aal3types) |
+| | Use a combination of authenticators that includes a memorized secret or biometric. | [4.2.1](#aal2types), [4.3.1](#aal3types) |
+| Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. | [4.2.2](#aal2req), [4.3.2](#aal3req), [5.1.7.1](#sfcda) |
+| Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use. | [4.2.2](#aal2req) |
+| | Avoid use of non-trusted wireless networks as unencrypted secondary out-of-band authentication channels. | [5.1.3.1](#ooba) |
+| | Authenticate over authenticated protected channels (observe lock icon in browser window, for example). | [4.1.2](#aal1req), [4.2.2](#aal2req), [4.3.2](#aal3req) |
+| | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*. | [5.2.8](#replay) |
+| | Use authentication endpoints that employ trusted input and trusted display capabilities. | [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
+| Offline cracking | Use an authenticator with a high entropy authenticator secret. | [5.1.2.1](#lusa), [5.1.4.1](#sfotpa), [5.1.5.1](#mfotpa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
+| | Store memorized secrets in a salted, hashed form, including a keyed hash. | [5.1.1.2](#memsecretver), [5.2.7](#verifier-secrets) |
+| Side-channel attack | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values. | [4.3.2](#aal3req)
+| Phishing or pharming | Use authenticators that provide verifier impersonation resistance. | [5.2.5](#verifimpers) |
+| Social engineering | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents. | [6.1.2.1](#bindexisting), [6.1.2.3](#replacement) |
+| Online guessing | Use authenticators that generate high entropy output. | [5.1.2.1](#lusa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
+| | Use an authenticator that locks up after a number of repeated failed activation attempts. | [5.2.2](#throttle) | 
+| Endpoint compromise | Use hardware authenticators that require physical action by the subscriber. | [5.2.9](#intent) |
+| | Maintain software-based keys in restricted-access storage. | [5.1.3.1](#ooba), [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
+| Unauthorized binding | Use MitM-resistant protocols for provisioning of authenticators and associated keys. | [6.1](#binding) |
 
 There are several other strategies that may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
 
@@ -102,7 +97,7 @@ There are several other strategies that may be applied to mitigate the threats d
 
 - *Physical security mechanisms* may be employed to protect a stolen authenticator from duplication. Physical security mechanisms can provide tamper evidence, detection, and response.
 
-- *Requiring the use of long memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
+- *Requiring the use of long, memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
 
 - *System and network security controls* may be employed to prevent an attacker from gaining access to a system or installing malicious software.
 
@@ -118,6 +113,6 @@ In order to maintain the integrity of the authentication factors, it is essentia
 
 ### 8.4. Session Attacks
 
-The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks, such as XSS. In addition, it is important to sanitize all information to be displayed [[OWASP-XSS-prevention]](#OWASP-XSS-prevention) to ensure that it does not contain executable content. These guidelines also recommend that session secrets be made inaccessible to mobile code in order to provide extra protection against exfiltration of session secrets should it be possible to inject malicious mobile code.
+The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks, such as XSS. In addition, it is important to sanitize all information to be displayed [[OWASP-XSS-prevention]](#OWASP-XSS-prevention) to ensure that it does not contain executable content. These guidelines also recommend that session secrets be made inaccessible to mobile code in order to provide extra protection against exfiltration of session secrets, should it be possible to inject malicious mobile code.
 
 Another post-authentication threat, CSRF, takes advantage of users' tendency to have multiple sessions active at the same time. It is important to embed and verify a session identifier into web requests to prevent the ability for a valid URL or request to be unintentionally or maliciously activated.

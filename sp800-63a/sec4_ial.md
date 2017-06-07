@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
+This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [SP 800-63-3 Section 6.1](sp800-63-3.html#IAL_CYOA) for details on how to choose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
 
 The only objective of identity proofing is to ensure that the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  There may be many different set that suffice as the minimum, so CSPs should choose this set to balance privacy and usability needs of the user, as well as the likely attributes needed in future uses of the digital identity. As an example, such attributes, to the extent they are the minimum necessary, could include:  
 
@@ -18,7 +18,7 @@ This document also provides requirements for CSPs that will collect additional i
 
 ### 4.1. Process Flow
 
-[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment, to include the corresponding sections with normative requirements.
+[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment.
 
 <a name="63aSec4-Figure1"></a>
 
@@ -55,6 +55,8 @@ The following provides a sample of how a CSP and an applicant interact during th
 </ol>
 
 </div>	
+
+> Note: The identity proofing process can be delivered by multiple service providers. It is possible, but not expected, that a single organization, process, technique, or technology will fulfill these process steps.
 
 
 ### <a name="genProofReqs"></a> 4.2. General Requirements
@@ -94,6 +96,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 
 
+
 ### 4.3. Identity Assurance Level 1
 
 1. A CSP that supports only IAL1 CSP SHALL NOT validate and verify attributes.
@@ -110,7 +113,7 @@ A CSP SHALL proof according to the requirements in [Section 4.4.1](#normal) or [
 
 #### 4.4.1.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context.  This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context. This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
 #### 4.4.1.2. Evidence Collection Requirements
 
@@ -182,7 +185,7 @@ The CSP SHALL employ appropriately tailored security controls, to include contro
 
 #### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
 
-In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the applicant.  See [Section 5.3.4.](#trustref) for more details.
+In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the applicant. See [Section 5.3.4.](#trustref) for more details.
 
 ### <a name="ial3-requirements"></a> 4.5. Identity Assurance Level 3
 
@@ -190,8 +193,7 @@ IAL3 adds additional rigor to the steps required at IAL2, to include providing f
 
 #### 4.5.1. Resolution Requirements
 
-Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record.  This MAY include the collection of attributes that assist in data queries. See [Section 5.1.](#resolve) for general resolution requirements.
-
+Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record. This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
 #### 4.5.2. Evidence Collection Requirements
 
@@ -266,11 +268,11 @@ _This section is informative._
 
 Requirement | IAL1 | IAL2 | IAL3
 ------------|-------|-------|-------
-Presence|No requirements|In-person and unsupervised remote|In-person and supervised remote
-Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution<br><br>KBV may be used for added confidence| Same as IAL2
-Evidence|No identity evidence is collected| - One piece of SUPERIOR or STRONG evidence depending on strength of original proof and validation occurs with issuing source; or<br><br>- Two pieces of STRONG evidence, or <br><br> - One piece of STRONG evidence plus two pieces of FAIR evidence|- Two pieces of SUPERIOR evidence, or<br><br> - One piece of SUPERIOR evidence and one piece of STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br> - Two pieces of STRONG evidence plus one piece of FAIR evidence
-Validation|No validation|Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented|Same as IAL2
+Presence|No requirements|In-person and unsupervised remote.|In-person and supervised remote.
+Resolution|No requirements|The minimum attributes necessary to accomplish identity resolution.<br><br>KBV may be used for added confidence.| Same as IAL2
+Evidence|No identity evidence is collected| - One piece of SUPERIOR or STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br>- Two pieces of STRONG evidence, or <br><br> - One piece of STRONG evidence plus two (2) pieces of FAIR evidence.|- Two pieces of SUPERIOR evidence, or<br><br> - One piece of SUPERIOR evidence and one piece of STRONG evidence depending on strength of original proof and validation occurs with issuing source, or<br><br> - Two pieces of STRONG evidence plus one piece of FAIR evidence.
+Validation|No validation|Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented.|Same as IAL2.
 Verification| No verification |Verified by a process that is able to achieve a strength of STRONG.|Verified by a process that is able to achieve a strength of SUPERIOR.<br>
-Address Confirmation|No requirements for address confirmation|Required. Enrollment code sent to any address of record.  Notification sent by means different from enrollment code.|Required. Notification of proofing to postal address.
+Address Confirmation|No requirements for address confirmation|Required. Enrollment code sent to any address of record. Notification sent by means different from enrollment code.|Required. Notification of proofing to postal address.
 Biometric Collection|No|Optional|Mandatory
 Security Controls|N/A|[SP 800-53](#SP800-53) Moderate Baseline (or equivalent federal or industry standard)|[SP 800-53](#SP800-53) High Baseline (or equivalent federal or industry standard)

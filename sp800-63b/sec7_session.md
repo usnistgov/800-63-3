@@ -40,11 +40,11 @@ Cookies:
 - SHALL be tagged to be accessible only on secure (HTTPS) sessions.
 - SHALL be accessible to the minimum practical set of hostnames and paths.
 - SHOULD be tagged to be inaccessible via JavaScript (HttpOnly).
-- SHOULD be tagged to expire at or soon after the validity period of the session. This requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.
+- SHOULD be tagged to expire at, or soon after, the validity period of the session. This requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.
 
 #### 7.1.2. Access Tokens
 
-An access token, such as found in OAuth, is used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token (and any associated refresh tokens) MAY be valid long after the authentication session has ended and the user has left the application.
+An access token, such as found in OAuth, is used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token, and any associated refresh tokens, MAY be valid long after the authentication session has ended and the user has left the application.
 
 #### 7.1.3. Device Identification
 
@@ -63,13 +63,13 @@ Periodic reauthentication of sessions SHALL be performed to confirm the continue
 
 A session SHALL NOT be extended past the guidelines in Sections [4.1.3](#aal1reauth), [4.2.3](#aal2reauth), and [4.3.3](#aal3reauth) (depending on AAL) based on presentation of the session secret alone. Prior to session expiration, the reauthentication time limit SHALL be extended by prompting the subscriber for the authentication factor(s) specified in [Table 7-1](#63bSec7-Table1).
 
-When a session has been terminated due to a time-out or other action, the user SHALL be required to establish a new session by authenticating again.
+When a session has been terminated, due to a time-out or other action, the user SHALL be required to establish a new session by authenticating again.
 
 <a name="63bSec7-Table1"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 7-1.  AAL Reauthentication Requirements**
+**Table 7-1. AAL Reauthentication Requirements**
 
 </div>
 
@@ -80,7 +80,7 @@ When a session has been terminated due to a time-out or other action, the user S
 |2|Presentation of a memorized secret or biometric|
 |3|Presentation of all factors|
 
->Note: At AAL2, a memorized secret or biometric and not a physical authenticator is required because the session secret is *something you have*, and an additional authentication factor is required to continue the session.
+>Note: At AAL2, a memorized secret or biometric, and not a physical authenticator, is required because the session secret is *something you have*, and an additional authentication factor is required to continue the session.
 
 #### 7.2.1. Reauthentication from a Federation or Assertion
 

@@ -29,7 +29,7 @@ This section provides quality requirements for identity evidence collected durin
 
 <div class="text-center" markdown="1">
 
-**Table 5-1.  Strengths of Identity Evidence**
+**Table 5-1. Strengths of Identity Evidence**
 
 </div>
 
@@ -56,7 +56,7 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 <div class="text-center" markdown="1">
 
-**Table 5-2.  Validating Identity Evidence**
+**Table 5-2. Validating Identity Evidence**
 
 </div>
 
@@ -83,7 +83,7 @@ The goal of identity verification is to confirm and establish a linkage between 
 
 <div class="text-center" markdown="1">
 
-**Table 5-3.  Verifying Identity Evidence**
+**Table 5-3. Verifying Identity Evidence**
 
 </div>
 
@@ -137,13 +137,13 @@ In-person proofing can be satisfied in two ways:
 
 #### <a name="supervised"></a> 5.3.3.2. Requirements for Supervised Remote In-person Proofing
 
-It is possible for a CSP to remotely achieve security and confidence comparable to in-person proofing.  The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP or when the applicant is remote to the CSP.
+Remote processes for proofing can be employed by CSPs to achieve comparable levels of confidence and security to in-person events. The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP to those where the applicant is remote.
 
 Supervised remote identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6.](#ial3-requirements):
 
-1. The CSP SHALL monitor the entire identity proofing transaction, from which the applicant SHALL NOT depart during the identity proofing session.  For example, by using a continuous high-resolution video transmission of the applicant.
-2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the enrollment and identity proofing session.
-3. The CSP SHALL require all actions taken by the applicant during the enrollment and identity proofing process to be clearly visible to the remote operator. 
+1. The CSP SHALL monitor the entire identity proofing session, from which the applicant SHALL NOT depart—for example, by a continuous high-resolution video transmission of the applicant.
+2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing session.
+3. The CSP SHALL require all actions taken by the applicant during the identity proofing session to be clearly visible to the remote operator. 
 4. The CSP SHALL require that all digital verification of evidence (e.g., via chip or wireless technologies) be performed by integrated scanners and sensors.
 5. The CSP SHALL require operators to have undergone a training program to detect potential fraud and to properly perform a virtual in-process proofing session.
 6. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as the concourse of a shopping mall.
@@ -164,4 +164,4 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 
 ### 5.4. Binding Requirements
 
-See [SP 800-63B, Section 6.1. Authenticator Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#binding) for instructions on binding authenticators to subscribers.  
+See [800-63B, Section 6.1 Authenticator Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#binding) for instructions on binding authenticators to subscribers.
