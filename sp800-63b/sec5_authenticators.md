@@ -477,4 +477,4 @@ Furthermore, the risk of an authentication error is typically borne by multiple 
 
 3. Address any additional risk to subscribers in its risk assessment.
 
-4. Develop a migration plan for the possibility that the RESTRICTED authenticator is no longer acceptable at some point in the future and include this migration plan in its [digital identity acceptance statement](https://pages.nist.gov/800-63-3/sp800-63-3.html#daps).
+4. Develop a migration plan for the possibility that the RESTRICTED authenticator is no longer acceptable at some point in the future and include this migration plan in its [digital identity acceptance statement](sp800-63-3.html#daps).
