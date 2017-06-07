@@ -46,16 +46,13 @@ https://doi.org/10.6028/NIST.SP.800-63b
 ### Authentication and Lifecycle Management
 
 Paul A. Grassi  
+Elaine M. Newton  
 *Applied Cybersecurity Division  
 Information Technology Laboratory*  
 
 James L. Fenton  
 *Altmode Networks  
 Los Altos, CA*  
-
-Elaine M. Newton  
-*Office of the Director  
-Information Technology Laboratory*  
 
 Ray A. Perlner  
 Andrew R. Regenscheid  
@@ -171,7 +168,7 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. These guidelines focus on the authentication of subjects interacting with government systems over open networks, establishing that a given claimant is a subscriber who has been previously authenticated. The result of the authentication process may be used locally by the system performing the authentication or may be asserted elsewhere in a federated identity system. This document defines technical requirements for each of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. These guidelines focus on the authentication of subjects interacting with government systems over open networks, establishing that a given claimant is a subscriber who has been previously authenticated. The result of the authentication process may be used locally by the system performing the authentication or may be asserted elsewhere in a federated identity system. This document defines technical requirements for each of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST Special Publication (SP) 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
 
