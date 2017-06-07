@@ -22,7 +22,7 @@ All assertions SHALL include the following assertion metadata:
 
 Assertions MAY also include the following information:
 
-,1. Key binding – Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion described in [Section 6.1.2](#holderofkey).
+1. Key binding – Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion described in [Section 6.1.2](#holderofkey).
 2. Attribute values and attribute references – Information about the subscriber.
 3. Attribute metadata – Additional information about one or more subscriber attributes, such as that described in [NISTIR 8112](#nistir8112).
 
@@ -66,7 +66,7 @@ The following requirements apply to all holder-of-key assertions:
 
 ### 6.2 Assertion Protection
 
-Independent of the binding mechanism (discussed in [Section 6.1](#assertion-binding)), or the federation model used to obtain them (described in [Section 5.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
+Independent of the binding mechanism (discussed in [Section 6.1](#assertion-binding)) or the federation model used to obtain them (described in [Section 5.1](#federation-model)), assertions SHALL include a set of protections to prevent attackers from manufacturing valid assertions or reusing captured assertions at disparate RPs. The protections required are dependent on the details of the use case being considered, and recommended protections are listed here.
 
 #### <a name="assertion-id"></a>6.2.1 Assertion Identifier
 
