@@ -23,8 +23,7 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 
 <a name="A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource*, July 28, 2016, available at: <https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf>.
 
-<a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30, *Guide for Conducting
-Risk Assessments*, September 2012, available at: <http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf>.
+<a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30, *Guide for Conducting Risk Assessments*, September 2012, available at: <http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf>.
 
 <a name="SP800-37"></a>[SP 800-37] NIST Special Publication 800-37, *Guide for Applying the Risk Management Framework to Federal Information Systems, A Security Life Cycle Approach*, February 2010, available at: <http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r1.pdf>.
 
@@ -45,6 +44,6 @@ Risk Assessments*, September 2012, available at: <http://nvlpubs.nist.gov/nistpu
 
 <a name="Canada"></a>[Canada] Government of Canada, *Standard on Identity and Credential Assurance*, February 1, 2013, available at: <https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26776>.
 
-<a name="steiner"></a>[Steiner]Steiner, Peter. "On the Internet, nobody knows you're a dog", *The New Yorker*, July 5, 1993.
+<a name="steiner"></a>[Steiner] Steiner, Peter. "On the Internet, nobody knows you're a dog", *The New Yorker*, July 5, 1993.
 
 <a name="NIST-RMF"></a>[NIST RMF] Risk Management Framework Overview, available at <http://csrc.nist.gov/groups/SMA/fisma/framework.html>.
