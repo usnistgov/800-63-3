@@ -1,12 +1,12 @@
 <a name="security"></a>
 
-## 8. Security
+## 8 Security
 
 *This section is informative.*
 
 Since the federated authentication process involves coordination between multiple components, including the CSP which now acts as an IdP, there are additional opportunities for attackers to compromise federated identity transactions. This section summarizes many of the attacks and their mitigations that are applicable when federation is being used.
 
-### 8.1. Federation Threats
+### 8.1 Federation Threats
 
 As in non-federated authentication, the motivation of attackers is typically to gain access (or a greater level of access) to a resource or service provided by an RP. Attackers may also attempt to impersonate a subscriber. Rogue or compromised IdPs, RPs, user agents (e.g., browsers), and parties outside of a typical federation transaction are potential attackers. To accomplish their attack, they might intercept or modify assertions and assertion references. Furthermore, two or more entities may attempt to subvert federation protocols by directly compromising the integrity or confidentiality of the assertion data. For the purpose of these types of threats, any authorized parties who attempt to exceed their privileges are considered attackers.
 
@@ -29,13 +29,13 @@ In some cases, the subscriber is issued some secret information so that they can
 | Assertion reuse | Assertion can be used more than once with same RP | Intercepted assertion used by attacker to authenticate their own session |
 | Assertion substitution | Attacker uses an assertion intended for a different subscriber | Session hijacking attack between IdP and RP |
 
-### 8.2. Federation Threat Mitigation Strategies
+### 8.2 Federation Threat Mitigation Strategies
 
 Mechanisms that assist in mitigating the threats identified above are identified in Table 8-2.
 
 <div class="text-center" markdown="1">
 
-**Table 8-2. Mitigating Authenticator Threats**
+**Table 8-2 Mitigating Authenticator Threats**
 
 </div>
 

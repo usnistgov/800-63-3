@@ -1,6 +1,6 @@
 <a name="fal"></a>
 
-## 4. Federation Assurance Level (FAL)
+## 4 Federation Assurance Level (FAL)
 
 *This section is normative.*
 
@@ -15,7 +15,7 @@ This table presents different requirements for each FAL. Each successive level s
 <div class="text-center" markdown="1">
 
 
-**Table 4-1. Federation Assertion Levels**
+**Table 4-1 Federation Assertion Levels**
 
 </div>
 
@@ -33,13 +33,13 @@ If the RP is using a front-channel presentation mechanism as defined in [Section
 
 In addition, the IdP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g. [FEDRAMP](#FEDRAMP))  or industry standard.
 
-### <a name="key-mgmt"></a>4.1. Key Management
+### <a name="key-mgmt"></a>4.1 Key Management
 
 At any FAL, the IdP SHALL ensure that an RP is unable to impersonate the IdP at another RP by protecting the assertion with a signature and key using approved cryptography. If the assertion is protected by a digital signature using an asymmetric key, the IdP MAY use the same public and private key pair to sign assertions to multiple RPs. The IdP MAY publish its public key in a verifiable fashion, such as at an HTTPS-protected URL at a well-known location. If the assertion is protected by a MAC using a shared key, the IdP SHALL use a different shared key for each RP.
 
 Government-operated IdPs asserting authentication at AAL2 and all IdPs asserting authentication at AAL3 SHALL protect keys used for signing or encrypting those assertions with mechanisms validated at [FIPS 140](#FIPS140) Level 1 or higher.
 
-### 4.2. <a name="runtime-decisions"></a>Runtime Decisions
+### 4.2 <a name="runtime-decisions"></a>Runtime Decisions
 
 The fact that parties have federated SHALL NOT be interpreted as permission to pass information. The decision of whether an authentication can occur or attributes are passed can be determined by the use of a whitelist, a blacklist, or a runtime decision by an authorized party.
 

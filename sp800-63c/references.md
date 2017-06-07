@@ -1,7 +1,7 @@
 <div class="breaker"></div>
 <a name="references"></a>
 
-## 12. References
+## 12 References
 
 *This section is informative.*
 

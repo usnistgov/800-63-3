@@ -1,7 +1,7 @@
 <div class="breaker"></div>
 <a name="purpose"></a>
 
-## 1. Purpose
+## 1 Purpose
 
 *This section is informative.*
 
@@ -12,7 +12,7 @@ This document, SP 800-63C, provides requirements to identity providers (IdPs) an
 <div class="breaker"></div>
 <a name="introduction"></a>
 
-## 2. Introduction
+## 2 Introduction
 
 *This section is informative.*
 
