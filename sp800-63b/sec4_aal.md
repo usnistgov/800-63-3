@@ -8,7 +8,7 @@ In order to satisfy the requirements of a given AAL, a claimant SHALL be authent
 
 Detailed normative requirements for authenticators and verifiers at each AAL are provided in Section 5.
 
-See [SP 800-63-3 Section 6.2](sp800-63-3.html#AAL_CYOA) for details on how to choose the most appropriate AAL.
+See [SP 800-63 Section 6.2](sp800-63-3.html#AAL_CYOA) for details on how to choose the most appropriate AAL.
 
 FIPS 140 requirements are satisfied by [FIPS 140-2](#FIPS140-2) or newer revisions.
 
@@ -16,7 +16,7 @@ At IAL1, it is possible that attributes are collected and made available by the 
 
 ### 4.1 Authenticator Assurance Level 1
 
-AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
+AAL1 provides some assurance that the claimant controls an authenticator bound to the subscriber's account. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
 #### 4.1.1 Permitted Authenticator Types
 
@@ -54,7 +54,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### 4.2 Authenticator Assurance Level 2
 
-AAL2 provides high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. In order to authenticate at AAL2, claimants SHALL successfully authenticate using both authentication factors. Approved cryptographic techniques are required at AAL2 and above.
+AAL2 provides high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Proof of possession and control of [two distinct authentication factors](#mfa-definition) is required through secure authentication protocol(s). [Approved cryptographic](#approved) techniques are required at AAL2 and above.
 
 #### <a name="aal2types"></a>4.2.1 Permitted Authenticator Types
 
@@ -104,7 +104,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### 4.3 Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL successfully authenticate using two different authentication factors. 
+AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance; the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL prove possession and control of [two distinct authentication factors](#mfa-definition) through secure authentication protocol(s). [Approved cryptographic](#approved) techniques are required.
 
 #### <a name="aal3types"></a>4.3.1 Permitted Authenticator Types
 

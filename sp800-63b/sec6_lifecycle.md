@@ -41,7 +41,7 @@ For remote transactions -
 
   b) Long-term authenticator secrets SHALL only be issued to the applicant within a protected session.
 
-For physical transactions -
+For in-person transactions -
 
   a) The applicant SHALL identify themselves in person by either using a secret as described in remote transaction (a) above, or through the use of a biometric that was recorded during a prior encounter.	
 
