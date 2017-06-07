@@ -135,7 +135,7 @@ In-person proofing can be satisfied in two ways:
 1. The CSP SHALL have the operator view the biometric source (e.g., fingers, face) for presence of non-natural materials and perform such inspections as part of the proofing process.
 2. The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [SP 800-63B, Section 5.2.3](sp800-63b.html#biometric_use) apply.
 
-#### <a name="supervised"></a> 5.3.3.2. Requirements for Supervised Remote In-person Proofing
+#### <a name="supervised"></a> 5.3.3.2 Requirements for Supervised Remote In-person Proofing
 
 Remote processes for proofing can be employed by CSPs to achieve comparable levels of confidence and security to in-person events. The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP to those where the applicant is remote.
 

@@ -175,7 +175,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 
 #### <a name="4-4-1-7"></a>4.4.1.7 Biometric Collection
 
-The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [Section 5.2.3. of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
+The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
 #### 4.4.1.8 Security Controls
 
