@@ -10,7 +10,7 @@ This section, and the corresponding risk assessment guidance, supplements the [N
 
 ### <a name="5-1-overview"></a> 5.1 Overview
 
-In today's digital services, combining proofing, authenticator, and federation requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden on the implementing organization. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. To this end, the 800-63 suite recognizes that an authentication error is not a singleton that drives all requirements.
+In today's digital services, combining proofing, authenticator, and federation requirements into a single bundle sometimes has unintended consequences and can put unnecessary implementation burden on the implementing organization. It is quite possible that an agency can deliver the most effective set of identity services by assessing the risk and impacts of failures for each individual component of digital authentication, rather than as a single, all-encompassing LOA. To this end, the SP 800-63 suite recognizes that an authentication error is not a singleton that drives all requirements.
 
 This volume details requirements to assist agencies in avoiding:
 
@@ -135,7 +135,7 @@ _The potential impact of civil or criminal violations is:_
 
 ### 5.4 Risk Acceptance and Compensating Controls
 
-The SP 800-63 suite specifies baseline requirements for digital identity services based on assurance level. Agencies SHOULD implement identity services per the requirements in these guidelines and SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services. 
+The SP 800-63 suite specifies baseline requirements for digital identity services based on assurance level. Agencies SHOULD implement identity services per the requirements in these guidelines and SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services.
 
 Agencies MAY determine alternatives to the NIST recommended guidance, for the assessed xALs, based on their mission, risk tolerance, existing business processes, special considerations for certain populations, availablity of data that provides similar mitigations to those described in this suite, or due to other capabilities that are unique to the agency.
 
