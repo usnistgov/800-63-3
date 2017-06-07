@@ -1,10 +1,10 @@
 <a name="sec9"></a>
 
-## 9. Privacy Considerations
+## 9 Privacy Considerations
 
 *These privacy considerations supplement the guidance in Section 4. This section is informative.*
 
-### 9.1. Privacy Risk Assessment	
+### 9.1 Privacy Risk Assessment	
 
 Sections [4.1.5](#aal1records), [4.2.5](#aal2records), and [4.3.5](#aal3records) require the CSP to conduct a privacy risk assessment for records retention. Such a privacy risk assessment would include:
 
@@ -13,15 +13,15 @@ Sections [4.1.5](#aal1records), [4.2.5](#aal2records), and [4.3.5](#aal3records)
 
 CSPs should be able to reasonably justify any response they take to identified privacy risks, including accepting the risk, mitigating the risk, and sharing the risk. The use of subscriber consent is a form of sharing the risk, and therefore appropriate for use only when a subscriber could reasonably be expected to have the capacity to assess and accept the shared risk.
 
-### 9.2. Privacy Controls
+### 9.2 Privacy Controls
 
 [Section 4.4](#aal_privacy) encourages CSPs to employ appropriately-tailored privacy controls. NIST [SP 800-53](#SP800-53) provides a set of privacy controls for CSPs to consider when deploying authentication mechanisms. These controls cover notices, redress, and other important considerations for successful and trustworthy deployments. 
 
-### 9.3. Use Limitation
+### 9.3 Use Limitation
 
 [Section 4.4](#aal_privacy) does not permit the CSP to use information about authenticators that is collected and maintained in the authentication process for any purpose other than authentication, related fraud mitigation or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. Care should be taken to ensure that the use of such information is limited to its original purpose for collection. Consult your SAOP if there are questions about whether proposed agency uses fall within this scope. As stated in [Section 4.4](#aal_privacy), acceptance by the subscriber of additional uses SHALL NOT be a condition of providing authentication services. 
 
-### 9.4. <a name="agency-privacy"></a>Agency-specific Privacy Compliance 
+### 9.4 <a name="agency-privacy"></a>Agency-specific Privacy Compliance 
 
 [Section 4.4](#aal_privacy) covers specific compliance obligations for federal CSPs. It is critical to involve your agency's SAOP in the earliest stages of digital authentication system development in order to assess and mitigate privacy risks and advise the agency on compliance requirements, such as whether or not the collection of PII to issue or maintain authenticators triggers the *Privacy Act of 1974* [[Privacy Act]](#PrivacyAct) or the *E-Government Act of 2002* [[E-Gov]](#E-Gov) requirement to conduct a PIA. For example, with respect to centralized maintenance of biometrics, it is likely that the Privacy Act requirements will be triggered and require coverage by either a new or existing Privacy Act system of records due to the collection and maintenance of PII and any other attributes necessary for authentication. The SAOP can similarly assist the agency in determining whether a PIA is required. 
 

@@ -1,10 +1,10 @@
 <a name="sec8"></a>
 
-## 8. Threats and Security Considerations
+## 8 Threats and Security Considerations
 
 *This section is informative.*
 
-### 8.1. Authenticator Threats
+### 8.1 Authenticator Threats
 
 An attacker who can gain control of an authenticator will often be able to masquerade as the authenticator's owner. Threats to authenticators can be categorized based on attacks on the types of authentication factors that comprise the authenticator:
 
@@ -58,14 +58,14 @@ This document assumes that the subscriber is not colluding with an attacker who 
 | | Malicious code on the endpoint compromises a multi-factor software cryptographic authenticator. | Malicious code proxies authentication or exports authenticator keys from the endpoint.
 | Unauthorized binding | Attacker is able to cause an authenticator under their control to be bound to subscriber account. | Attacker intercepts authenticator or provisioning key en route to subscriber.
 
-### 8.2. Threat Mitigation Strategies
+### 8.2 Threat Mitigation Strategies
 Related mechanisms that assist in mitigating the threats identified above are summarized in [Table 8-2](#63bSec8-Table2).
 
 <a name="63bSec8-Table2"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 8-2. Mitigating Authenticator Threats**
+**Table 8-2 Mitigating Authenticator Threats**
 
 </div>
 
@@ -105,13 +105,13 @@ There are several other strategies that may be applied to mitigate the threats d
 
 - *Out of band techniques* may be employed to verify proof of possession of registered devices (e.g., cell phones).
 
-### 8.3. Authenticator Recovery
+### 8.3 Authenticator Recovery
 
 The weak point in many authentication mechanisms is the process followed when a subscriber loses control of one or more authenticators and needs to replace them. In many cases, the options remaining available to authenticate the subscriber are limited, and economic concerns (e.g., cost of maintaining call centers) motivate the use of inexpensive, and often less secure, backup authentication methods. To the extent that authenticator recovery is human-assisted, there is also the risk of social engineering attacks.
 
 In order to maintain the integrity of the authentication factors, it is essential that it not be possible to leverage an authentication involving one factor to obtain an authenticator of a different factor. For example, a memorized secret must not be usable to obtain a new list of look-up secrets.
 
-### 8.4. Session Attacks
+### 8.4 Session Attacks
 
 The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks, such as XSS. In addition, it is important to sanitize all information to be displayed [[OWASP-XSS-prevention]](#OWASP-XSS-prevention) to ensure that it does not contain executable content. These guidelines also recommend that session secrets be made inaccessible to mobile code in order to provide extra protection against exfiltration of session secrets, should it be possible to inject malicious mobile code.
 

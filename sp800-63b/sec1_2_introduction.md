@@ -1,6 +1,6 @@
 <a name="sec1"></a>
 
-## 1. Purpose
+## 1 Purpose
 
 _This section is informative._
 
@@ -8,7 +8,7 @@ This document and its companion documents, [Special Publication (SP) 800-63](sp8
 
 <a name="sec2"></a>
 
-## 2. Introduction
+## 2 Introduction
 
 _This section is informative._
 

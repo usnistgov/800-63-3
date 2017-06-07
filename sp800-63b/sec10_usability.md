@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 10. Usability Considerations
+## 10 Usability Considerations
 
 _This section is informative._
 
@@ -27,7 +27,7 @@ Guidelines and considerations are described from the users' perspective.
 
 Accessibility differs from usability and is out of scope for this document. [Section 508](#Section508) was enacted to eliminate barriers in information technology and require federal agencies to make their online public content accessible to people with disabilities. Refer to Section 508 law and standards for accessibility guidance.
 
-### <a name="usabilitycommon"></a> 10.1. Usability Considerations Common to Authenticators
+### <a name="usabilitycommon"></a> 10.1 Usability Considerations Common to Authenticators
 When selecting and implementing an authentication system, consider usability across the entire lifecycle of the selected authenticators (i.e., enrollment and distribution, typical use, and intermittent events), while being mindful of the combination of users, their goals, and context of use.
 
 A single authenticator type usually does not suffice for the entire user population. Therefore, whenever possible (based on AAL requirements), CSPs should support alternative authenticator types and allow users to choose based on their needs. Task immediacy, perceived cost benefit tradeoffs, and unfamiliarity with certain authenticators often impact choice. Users tend to choose options that incur the least burden or cost at that moment. For example, if a task requires immediate access to an information system, a user may prefer to create a new account and password rather than select an authenticator requiring more steps. Alternatively, users may choose a federated identity option (approved at the appropriate AAL) if they already have an account with an identity provider. Users may understand some authenticators better than others, and have different levels of trust based on their understanding and experience.
@@ -73,10 +73,10 @@ Usability considerations for intermittent events across authenticator types incl
 
 * Clearly communicate how and where to acquire technical assistance. For example, provide users with information such as a link to an online self-service feature, chat sessions or a phone number for help desk support. Ideally, sufficient information can be provided to enable users to recover from intermittent events on their own without outside intervention.
 
-### 10.2. Usability Considerations by Authenticator Type
+### 10.2 Usability Considerations by Authenticator Type
 In addition to the previously described general usability considerations applicable to most authenticators ([Section 10.1](#usabilitycommon)), the following sections describe other usability considerations specific to specific authenticator types.
 
-#### <a name="memorizedsecrets"></a> 10.2.1. Memorized Secrets
+#### <a name="memorizedsecrets"></a> 10.2.1 Memorized Secrets
 **_Typical Usage_**
 
 Users manually input the memorized secret (commonly referred to as a password or PIN).
@@ -102,7 +102,7 @@ Usability considerations for intermittent events include:
 
 * Provide clear, meaningful and actionable feedback when chosen passwords are rejected (e.g., when it appears on a "black list" of unacceptable passwords or has been used previously). Advise users that they need to select a different secret because their previous choice was commonly used.
 
-#### 10.2.2. Look-up Secrets
+#### 10.2.2 Look-up Secrets
 **_Typical Usage_**
 
 Users use the authenticator (physical or electronic record) to look up the appropriate secret(s) needed to respond to a verifier's prompt. For example, a user may be asked to provide a specific subset of the numeric or character strings printed on a card in table format.
@@ -112,7 +112,7 @@ Usability considerations for typical usage include:
 * User experience during entry of look-up secrets.
   * Consider the prompts' complexity and size. The larger the subset of secrets a user is prompted to look up, the greater the usability implications are, both the cognitive workload and physical difficulty during entry.
 
-#### 10.2.3. Out of Band
+#### 10.2.3 Out of Band
 **_Typical Usage_**
 
 Out of band authentication requires users have access to a primary and secondary communication channel.
@@ -125,7 +125,7 @@ Usability considerations for typical usage:
 
 * A better usability option is to offer features that do not require text entry on mobile devices (e.g., a single tap on the screen, or a copy feature so users can copy and paste out-of-band secrets). Providing users such features is particularly helpful when the primary and secondary channels are on the same device. For example, it is difficult for users to transfer the authentication secret on a smartphone because they must switch back and forth—potentially multiple times—between the out of band application and the primary channel.
 
-#### 10.2.4. Single-factor OTP Device
+#### 10.2.4 Single-factor OTP Device
 **_Typical Usage_**
 
 Users access the OTP generated by the single-factor OTP device. The authenticator output is typically displayed on the device and the user enters it for the verifier.
@@ -138,7 +138,7 @@ Usability considerations for typical usage include:
   * If the single-factor OTP device supplies its output via an electronic interface such as USB, this is preferable since users do not have to manually enter the authenticator output. However, if a physical input (such as pressing a button) is required to operate, the location of the USB ports could pose usability difficulties. For example, the USB ports of some computers are located on the back of the computer and will be difficult for users to reach.
   * Limited availability of a direct computer interface such as a USB port could pose usability difficulties. For example, the number of USB ports on laptop computers is often very limited; this may force users to unplug other USB peripherals in order to use the single-factor OTP device.
 
-#### 10.2.5. Multi-factor OTP Device
+#### 10.2.5 Multi-factor OTP Device
 **_Typical Usage_**
 
 Users access the OTP generated by the multi-factor OTP device through a second authentication factor. The OTP is typically displayed on the device and the user manually enters it for the verifier. The second authentication factor may be achieved through some kind of integral entry pad to enter a memorized secret, an integral biometric (e.g., fingerprint) reader or a direct computer interface (e.g., USB port). Usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
@@ -150,7 +150,7 @@ Usability considerations for typical usage include:
   * Consider form-factor constraints if users must unlock the multi-factor OTP device via an integral entry pad or enter the authenticator output on mobile devices. Typing on small devices is significantly more error prone and time-consuming than typing on a traditional keyboard. The smaller the integral entry pad and onscreen keyboard, the more difficult it is to type. Providing larger touch areas improves usability for unlocking the multi-factor OTP device or entering the authenticator output on mobile devices.
   * Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor OTP device.
 
-#### 10.2.6. Single-factor Cryptographic Software
+#### 10.2.6 Single-factor Cryptographic Software
 **_Typical Usage_**
 
 Users authenticate by proving possession and control of the cryptographic software key.
@@ -159,7 +159,7 @@ Usability considerations for typical usage include:
 
 * Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users from having to deal with multiple similarly- and ambiguously-named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
 
-#### 10.2.7. Single-factor Cryptographic Device
+#### 10.2.7 Single-factor Cryptographic Device
 **_Typical Usage_**
 
 Users authenticate by proving possession of the single-factor cryptographic device.
@@ -170,7 +170,7 @@ Usability considerations for typical usage include:
 
 * Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the single-factor cryptographic device.
 
-#### 10.2.8. Multi-factor Cryptographic Software
+#### 10.2.8 Multi-factor Cryptographic Software
 **_Typical Usage_**
 
 In order to authenticate, users prove possession and control of the cryptographic key stored on disk or some other "soft" media that requires activation. The activation is through the input of a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
@@ -179,7 +179,7 @@ Usability considerations for typical usage include:
 
 * Give cryptographic keys appropriately descriptive names that are meaningful to users since users have to recognize and recall which cryptographic key to use for which authentication task. This prevents users from having to deal with multiple similarly- and ambiguously-named cryptographic keys. Selecting from multiple cryptographic keys on smaller mobile devices may be particularly problematic if the names of the cryptographic keys are shortened due to reduced screen size.
 
-#### 10.2.9. Multi-factor Cryptographic Device
+#### 10.2.9 Multi-factor Cryptographic Device
 **_Typical Usage_**
 
 Users authenticate by proving possession of the multi-factor cryptographic device and control of the protected cryptographic key. The device is activated by a second authentication factor, either a memorized secret or a biometric; usability considerations for the additional factor apply as well (see [Section 10.2.1](#memorizedsecrets) for memorized secrets and [Section 10.4](#biomusability) for biometrics used in multi-factor authenticators).
@@ -193,7 +193,7 @@ Usability considerations for typical usage include:
 
 * Limited availability of a direct computer interface like a USB port could pose usability difficulties. For example, laptop computers often have a limited number of USB ports, which may force users to unplug other USB peripherals to use the multi-factor cryptographic device.
 
-### 10.3. Summary of Usability Considerations
+### 10.3 Summary of Usability Considerations
 [Table 10-1](#t10-1) summarizes the usability considerations for typical usage and intermittent events for each authenticator type. Many of the usability considerations for typical usage apply to most of the authenticator types, as demonstrated in the rows. The table highlights common and divergent usability characteristics across the authenticator types. Each column allows readers to easily identify the usability attributes to address for each authenticator. Depending on users' goals and context of use, users may value certain usability attributes over others. Whenever possible, provide alternative authenticator types and allow users to choose between them.
 
 Multi-factor authenticators (e.g., multi-factor OTP devices, multi-factor cryptographic software, and multi-factor cryptographic devices) also inherit their secondary factor's usability considerations. As biometrics are only allowed as an activation factor in multi-factor authentication solutions, usability considerations for biometrics are not included in Table 10-1 and are discussed in Section 10.4.
@@ -208,7 +208,7 @@ Multi-factor authenticators (e.g., multi-factor OTP devices, multi-factor crypto
 
 </div>
 
-### <a name="biomusability"></a> 10.4. Biometrics Usability Considerations
+### <a name="biomusability"></a> 10.4 Biometrics Usability Considerations
 This section provides a high-level overview of biometrics general usability considerations. For a more detailed discussion of biometric usability, see *Usability & Biometrics, Ensuring Successful Biometric Systems* [[NIST Usability]](#use-and-bio).
 
 Although there are other biometric modalities, the following three biometric modalities are more commonly used for authentication: fingerprint, face and iris.

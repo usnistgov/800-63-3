@@ -1,6 +1,6 @@
 <a name="sec7"></a>
 
-## 7. Session Management
+## 7 Session Management
 
 _This section is normative._
 
@@ -10,7 +10,7 @@ To facilitate this behavior, a *session* MAY be started in response to an authen
 
 Session management is preferable over continual presentation of credentials as the usability requirements of continual presentation often create incentives for workarounds such as cached unlocking credentials, negating the freshness of the authentication event. 
 
-### 7.1. Session Bindings
+### 7.1 Session Bindings
 
 A session occurs between the software that a subscriber is running, such as a browser, application, or operating system (the session subject), and the RP or CSP that the subscriber is accessing (the session host). A session secret SHALL be shared between the subscriber's software and the service being accessed. This secret binds the two ends of the session, allowing the user to continue using the service over time. The secret SHALL be presented directly by the user's software or possession of the secret SHALL be proven using a cryptographic mechanism. 
 
@@ -31,7 +31,7 @@ URLs or POST content SHALL contain a session identifier that SHALL be verified b
 
 There are several different mechanisms for managing a session over time. The following sections give different examples along with additional requirements and considerations particular to each example technology. Additional informative guidance is available in the OWASP *Session Management Cheat Sheet* [[OWASP-session]](#OWASP-session).
 
-#### 7.1.1. Browser Cookies
+#### 7.1.1 Browser Cookies
 
 Browser cookies are the predominant mechanism by which a session will be created and tracked for a user accessing a service. 
 
@@ -42,15 +42,15 @@ Cookies:
 - SHOULD be tagged to be inaccessible via JavaScript (HttpOnly).
 - SHOULD be tagged to expire at, or soon after, the validity period of the session. This requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.
 
-#### 7.1.2. Access Tokens
+#### 7.1.2 Access Tokens
 
 An access token, such as found in OAuth, is used to allow an application to access a set of services on behalf of a user following an authentication event. The presence of an OAuth access token SHALL NOT be interpreted by the RP to indicate the presence of the user, in the absence of other signals. The OAuth access token, and any associated refresh tokens, MAY be valid long after the authentication session has ended and the user has left the application.
 
-#### 7.1.3. Device Identification
+#### 7.1.3 Device Identification
 
 Other methods of secure device identification, including but not limited to mutual TLS, token binding, or other mechanisms, MAY be used to enact a session between a user and a service. 
 
-### 7.2. <a name="sessionreauthn"></a>Reauthentication 
+### 7.2 <a name="sessionreauthn"></a>Reauthentication 
 
 Continuity of authenticated sessions SHALL be based upon the possession of a session secret issued by the verifier at the time of authentication and optionally refreshed during the session. The nature of a session depends on the application, including:
 
@@ -69,7 +69,7 @@ When a session has been terminated, due to a time-out or other action, the user 
 
 <div class="text-center" markdown="1">
 
-**Table 7-1. AAL Reauthentication Requirements**
+**Table 7-1 AAL Reauthentication Requirements**
 
 </div>
 
@@ -82,7 +82,7 @@ When a session has been terminated, due to a time-out or other action, the user 
 
 >Note: At AAL2, a memorized secret or biometric, and not a physical authenticator, is required because the session secret is *something you have*, and an additional authentication factor is required to continue the session.
 
-#### 7.2.1. Reauthentication from a Federation or Assertion
+#### 7.2.1 Reauthentication from a Federation or Assertion
 
 When using a federation protocol as described in [SP 800-63C, Section 5](sp800-63c.html#federation) to connect the CSP and RP, special considerations apply to session management and reauthentication. The federation protocol communicates an authentication event between the CSP and the RP but establishes no session between them. Since the CSP and RP often employ separate session management technologies, there SHALL NOT be any assumption of correlation between these sessions. Consequently, when an RP session expires and the RP requires reauthentication, it is entirely possible that the session at the CSP has not expired and that a new assertion could be generated from this session at the CSP without reauthenticating the user.
 
