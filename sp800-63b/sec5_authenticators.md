@@ -25,7 +25,7 @@ Memorized secrets SHALL be at least 8 characters in length if chosen by the subs
 
 #### <a name="memsecretver"></a> 5.1.1.2 Memorized Secret Verifiers
 
-Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHOULD permit subscriber-chosen memorized secrets at least 64 characters in length. All printing ASCII [[RFC 20]](#RFC20) characters as well as the space character SHOULD be acceptable in memorized secrets. Unicode [[ISO/ISC 10646:2014]](#ISOIEC10646) characters SHOULD be accepted as well. To make allowances for likely mistyping, verifiers MAY replace multiple consecutive space characters with a single space character prior to verification, provided that the result is at least 8 characters in length. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
+Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHOULD permit subscriber-chosen memorized secrets at least 64 characters in length. All printing ASCII [RFC 20](#RFC20) characters as well as the space character SHOULD be acceptable in memorized secrets. Unicode [ISO/ISC 10646:2014](#ISOIEC10646) characters SHOULD be accepted as well. To make allowances for likely mistyping, verifiers MAY replace multiple consecutive space characters with a single space character prior to verification, provided that the result is at least 8 characters in length. Truncation of the secret SHALL NOT be performed. For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
 
 If Unicode characters are accepted in memorized secrets, the verifier SHOULD apply the Normalization Process for Stabilized Strings defined in Section 12.1 of Unicode Standard Annex 15 [[UAX 15]](#UAX15) using either the NFKC or NFKD normalization. This process is applied prior to hashing of the byte string representing the memorized secret. Subscribers choosing memorized secrets containing Unicode characters SHOULD be advised that some characters may be represented differently by some endpoints, which can affect their ability to authenticate successfully.
 
@@ -42,7 +42,7 @@ When processing requests to establish and change memorized secrets, verifiers SH
 
 If the chosen secret is found in the list, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
 
-Verifiers SHOULD offer guidance to the subscriber, such as a password-strength meter [[Meters]](#meters), to assist the user in choosing a strong memorized secret. This is particularly important following the rejection of a memorized secret on the above-described list as it discourages trivial modification of listed (and likely very weak) memorized secrets [[Blacklists]](#blacklists).
+Verifiers SHOULD offer guidance to the subscriber, such as a password-strength meter [Meters](#meters), to assist the user in choosing a strong memorized secret. This is particularly important following the rejection of a memorized secret on the above-described list as it discourages trivial modification of listed (and likely very weak) memorized secrets [Blacklists](#blacklists).
 
 Verifiers SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
@@ -54,7 +54,7 @@ In order to assist the claimant in entering a memorized secret successfully, the
 
 The verifier SHALL use approved encryption and an authenticated protected channel when requesting memorized secrets in order to provide resistance to eavesdropping and MitM attacks.
 
-Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks. Memorized secrets SHALL be salted and hashed using a suitable one-way key derivation function. Key derivation functions take as inputs a password, a salt, and a cost factor then generate a password hash. Their purpose is to make each password guessing trial by an attacker who has obtained a password hash file expensive and therefore the cost of a guessing attack high or prohibitive. Examples of suitable key derivation functions include PBKDF2 [[SP 800-132]](#SP800-132) and Balloon [[BALLOON]](#balloon). A memory-hard function should be used because it increases the cost of an attack. The key derivation function SHALL use an approved one-way function such as HMAC [[FIPS 198-1]](#FIPS198-1), any approved hash function in [SP 800-107](#SP800-107), SHA-3 [[FIPS 202]](#FIPS202), CMAC [[SP 800-38B]](#SP800-38B) or KMAC, cSHAKE or ParallelHash [[SP 800-185]](#SP800-185). The chosen output length of the key derivation function SHOULD be the same as the length of the underlying one-way function output.
+Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks. Memorized secrets SHALL be salted and hashed using a suitable one-way key derivation function. Key derivation functions take as inputs a password, a salt, and a cost factor then generate a password hash. Their purpose is to make each password guessing trial by an attacker who has obtained a password hash file expensive and therefore the cost of a guessing attack high or prohibitive. Examples of suitable key derivation functions include PBKDF2 [SP 800-132](#SP800-132) and Balloon [BALLOON](#balloon). A memory-hard function should be used because it increases the cost of an attack. The key derivation function SHALL use an approved one-way function such as HMAC [FIPS 198-1](#FIPS198-1), any approved hash function in [SP 800-107](#SP800-107), SHA-3 [FIPS 202](#FIPS202), CMAC [SP 800-38B](#SP800-38B) or KMAC, cSHAKE or ParallelHash [SP 800-185](#SP800-185). The chosen output length of the key derivation function SHOULD be the same as the length of the underlying one-way function output.
 
 The salt SHALL be at least 32 bits in length and be chosen arbitrarily so as to minimize salt value collisions among stored hashes. Both the salt value and the resulting hash SHALL be stored for each subscriber using a memorized secret authenticator.
 
@@ -74,7 +74,7 @@ In addition, verifiers SHOULD perform an additional iteration of a key derivatio
   </div>
 
 #### <a name="lusa"></a>5.1.2.1 Look-up Secret Authenticators
-CSPs creating look-up secret authenticators SHALL use an approved random bit generator [[SP 800-90Ar1]](SP800-90Ar1) to generate the list of secrets and SHALL deliver the authenticator securely to the subscriber. Look-up secrets SHALL have at least 64 bits of entropy or SHALL have at least 20 bits of entropy if the number of failed authentication attempts is limited as described in [Section 5.2.2](#throttle).
+CSPs creating look-up secret authenticators SHALL use an approved random bit generator [SP 800-90Ar1](SP800-90Ar1) to generate the list of secrets and SHALL deliver the authenticator securely to the subscriber. Look-up secrets SHALL have at least 64 bits of entropy or SHALL have at least 20 bits of entropy if the number of failed authentication attempts is limited as described in [Section 5.2.2](#throttle).
 
 Look-up secrets MAY be distributed by the CSP in person, by postal mail to the subscriber's address of record, or by online distribution. If distributed online, look-up secrets SHALL be distributed over a secure channel in accordance with the post-enrollment binding requirements in [Section 6.1.2](#post-enroll-bind).
 
@@ -147,7 +147,7 @@ Depending on the type of out-of-band authenticator, one of the following SHALL t
 
 In all cases, the authentication SHALL be considered invalid if not completed within 10 minutes. In order to provide replay resistance as described in [Section 5.2.8](#replay), verifiers SHALL accept a given authentication secret only once during the validity period.
 
-The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator [[SP 800-90Ar1]](#SP800-90Ar1). If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
+The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator [SP 800-90Ar1](#SP800-90Ar1). If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber's account as described in [Section 5.2.2](#throttle).
 
 #### <a name="pstnOOB"></a> 5.1.3.3 Authentication using the Public Switched Telephone Network
 
@@ -263,7 +263,7 @@ The requirements for a single-factor cryptographic software verifier are identic
 
 Single-factor cryptographic device authenticators encapsulate a secret key that is unique to the device and SHALL NOT be exportable (i.e., it cannot be removed from the device). The authenticator operates by signing a challenge nonce presented through a direct computer interface (e.g., a USB port). Although cryptographic devices contain software, they differ from cryptographic software authenticators in that all embedded software is under control of the CSP or issuer and that the entire authenticator is subject to all applicable FIPS 140 requirements at the AAL being authenticated.
 
-The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [[SP 800-131A]](#SP800-131A) (112 bits as of the date of this publication). The challenge nonce SHALL be at least 64 bits in length. Approved cryptography SHALL be used.
+The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [SP 800-131A](#SP800-131A) (112 bits as of the date of this publication). The challenge nonce SHALL be at least 64 bits in length. Approved cryptography SHALL be used.
 
 Single-factor cryptographic device authenticators SHOULD require a physical input (e.g., the pressing of a button) in order to operate. This provides defense against unintended operation of the device, which might occur if the endpoint to which it is connected is compromised.
 

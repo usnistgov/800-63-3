@@ -8,13 +8,13 @@
 
 An attacker who can gain control of an authenticator will often be able to masquerade as the authenticator's owner. Threats to authenticators can be categorized based on attacks on the types of authentication factors that comprise the authenticator:
 
-- *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through offline attacks on a password database maintained by the verifier.
+* *Something you know* may be disclosed to an attacker. The attacker might guess a memorized secret. Where the authenticator is a shared secret, the attacker could gain access to the CSP or verifier and obtain the secret value or perform a dictionary attack on a hash of that value. An attacker may observe the entry of a PIN or passcode, find a written record or journal entry of a PIN or passcode, or may install malicious software (e.g., a keyboard logger) to capture the secret. Additionally, an attacker may determine the secret through offline attacks on a password database maintained by the verifier.
 
-- *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner's computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated. Out-of-band secrets may be intercepted by an attacker and used to authenticate their own session.
-    
-- *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber's fingerprint and construct a replica.
+* *Something you have* may be lost, damaged, stolen from the owner, or cloned by an attacker. For example, an attacker who gains access to the owner's computer might copy a software authenticator. A hardware authenticator might be stolen, tampered with, or duplicated. Out-of-band secrets may be intercepted by an attacker and used to authenticate their own session.
 
-This document assumes that the subscriber is not colluding with an attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for e-authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
+* *Something you are* may be replicated. For example, an attacker may obtain a copy of the subscriber's fingerprint and construct a replica.
+
+This document assumes that the subscriber is not colluding with an attacker who is attempting to falsely authenticate to the verifier. With this assumption in mind, the threats to the authenticator(s) used for digital authentication are listed in [Table 8-1](#63bSec8-Table1), along with some examples.
 
 <a name="63bSec8-Table1"></a>
 
@@ -38,25 +38,25 @@ This document assumes that the subscriber is not colluding with an attacker who 
 | | | Counterfeit biometric authenticator manufactured. |
 | Eavesdropping | The authenticator secret or authenticator output is revealed to the attacker as the subscriber is authenticating. | Memorized secrets are obtained by watching keyboard entry. |
 | | | Memorized secrets or authenticator outputs are intercepted by keystroke logging software. |
-| | | A PIN is captured from PIN pad device. |
+| | | A PIN is captured from a PIN pad device. |
 | | | A hashed password is obtained and used by an attacker for another authentication (*pass-the-hash attack*). |
-| | An out of band secret is intercepted by the attacker by compromising the communication channel. | An out of band secret is transmitted via unencrypted wifi and received by the attacker. |
+| | An out-of-band secret is intercepted by the attacker by compromising the communication channel. | An out-of-band secret is transmitted via unencrypted wifi and received by the attacker. |
 | Offline cracking | The authenticator is exposed using analytical methods outside the authentication mechanism. | A software PKI authenticator is subjected to dictionary attack to identify the correct password to use to decrypt the private key. |
 | Side channel attack | The authenticator secret is exposed using physical characteristics of the authenticator. | A key is extracted by differential power analysis on a hardware cryptographic authenticator. |
 | | | A cryptographic authenticator secret is extracted by analysis of the response time of the authenticator over a number of attempts. |
 | Phishing or pharming | The authenticator output is captured by fooling the subscriber into thinking the attacker is a verifier or RP. | A password is revealed by subscriber to a website impersonating the verifier.
 | | | A memorized secret is revealed by a bank subscriber in response to an email inquiry from a phisher pretending to represent the bank. |
 | | | A memorized secret is revealed by the subscriber at a bogus verifier website reached through DNS spoofing.
-| Social engineering | The attacker establishes a level of trust with a subscriber in order to convince the subscriber to reveal his or her authenticator secret or authenticator output. | A memorized secret is revealed by the subscriber to an officemate asking for the password on behalf of the subscriber's boss. |
+| Social engineering | The attacker establishes a level of trust with a subscriber in order to convince the subscriber to reveal their authenticator secret or authenticator output. | A memorized secret is revealed by the subscriber to an officemate asking for the password on behalf of the subscriber's boss. |
 | | | A memorized secret is revealed by a subscriber in a telephone inquiry from an attacker masquerading as a system administrator. |
 | | | An out of band secret sent via SMS is received by an attacker who has convinced the mobile operator to redirect the victim's mobile phone to the attacker. |
 | Online guessing | The attacker connects to the verifier online and attempts to guess a valid authenticator output in the context of that verifier. | Online dictionary attacks are used to guess memorized secrets. |
 | | | Online guessing is used to guess authenticator outputs for an OTP device registered to a legitimate claimant. |
-| Endpoint compromise | Malicious code on the endpoint proxies remote access to a connected authenticator without user consent. | A cryptographic authenticator connected to the endpoint is used to authenticate remote attackers. |
+| Endpoint compromise | Malicious code on the endpoint proxies remote access to a connected authenticator without the subscriber's consent. | A cryptographic authenticator connected to the endpoint is used to authenticate remote attackers. |
 | | Malicious code on the endpoint causes authentication to other than the intended verifier. | Authentication is performed on behalf of an attacker rather than the subscriber.
-| | | A malicious app on the endpoint reads an out of band secret sent via SMS; the attacker uses the secret to authenticate.
+| | | A malicious app on the endpoint reads an out-of-band secret sent via SMS and the attacker uses the secret to authenticate.
 | | Malicious code on the endpoint compromises a multi-factor software cryptographic authenticator. | Malicious code proxies authentication or exports authenticator keys from the endpoint.
-| Unauthorized binding | Attacker is able to cause an authenticator under their control to be bound to subscriber account. | Attacker intercepts authenticator or provisioning key en route to subscriber.
+| Unauthorized binding | An attacker is able to cause an authenticator under their control to be bound to a subscriber's account. | An attacker intercepts an authenticator or provisioning key en route to the subscriber.
 
 ### 8.2 Threat Mitigation Strategies
 Related mechanisms that assist in mitigating the threats identified above are summarized in [Table 8-2](#63bSec8-Table2).
@@ -77,7 +77,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Duplication |  Use authenticators from which it is difficult to extract and duplicate long-term authentication secrets. | [4.2.2](#aal2req), [4.3.2](#aal3req), [5.1.7.1](#sfcda) |
 | Eavesdropping | Ensure the security of the endpoint, especially with respect to freedom from malware such as key loggers, prior to use. | [4.2.2](#aal2req) |
 | | Avoid use of non-trusted wireless networks as unencrypted secondary out-of-band authentication channels. | [5.1.3.1](#ooba) |
-| | Authenticate over authenticated protected channels (observe lock icon in browser window, for example). | [4.1.2](#aal1req), [4.2.2](#aal2req), [4.3.2](#aal3req) |
+| | Authenticate over authenticated protected channels (e.g., observe lock icon in browser window). | [4.1.2](#aal1req), [4.2.2](#aal2req), [4.3.2](#aal3req) |
 | | Use authentication protocols that are resistant to replay attacks such as *pass-the-hash*. | [5.2.8](#replay) |
 | | Use authentication endpoints that employ trusted input and trusted display capabilities. | [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
 | Offline cracking | Use an authenticator with a high entropy authenticator secret. | [5.1.2.1](#lusa), [5.1.4.1](#sfotpa), [5.1.5.1](#mfotpa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
@@ -86,24 +86,24 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | Phishing or pharming | Use authenticators that provide verifier impersonation resistance. | [5.2.5](#verifimpers) |
 | Social engineering | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents. | [6.1.2.1](#bindexisting), [6.1.2.3](#replacement) |
 | Online guessing | Use authenticators that generate high entropy output. | [5.1.2.1](#lusa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
-| | Use an authenticator that locks up after a number of repeated failed activation attempts. | [5.2.2](#throttle) | 
+| | Use an authenticator that locks up after a number of repeated failed activation attempts. | [5.2.2](#throttle) |
 | Endpoint compromise | Use hardware authenticators that require physical action by the subscriber. | [5.2.9](#intent) |
 | | Maintain software-based keys in restricted-access storage. | [5.1.3.1](#ooba), [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
 | Unauthorized binding | Use MitM-resistant protocols for provisioning of authenticators and associated keys. | [6.1](#binding) |
 
 There are several other strategies that may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
 
-- *Multiple factors* make successful attacks more difficult to accomplish. If an attacker needs to both steal a cryptographic authenticator and guess a memorized secret, then the work to discover both factors may be too high.
+* *Multiple factors* make successful attacks more difficult to accomplish. If an attacker needs to both steal a cryptographic authenticator and guess a memorized secret, then the work to discover both factors may be too high.
 
-- *Physical security mechanisms* may be employed to protect a stolen authenticator from duplication. Physical security mechanisms can provide tamper evidence, detection, and response.
+* *Physical security mechanisms* may be employed to protect a stolen authenticator from duplication. Physical security mechanisms can provide tamper evidence, detection, and response.
 
-- *Requiring the use of long, memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
+* *Requiring the use of long, memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
 
-- *System and network security controls* may be employed to prevent an attacker from gaining access to a system or installing malicious software.
+* *System and network security controls* may be employed to prevent an attacker from gaining access to a system or installing malicious software.
 
-- *Periodic training* may be performed to ensure subscribers understand when and how to report compromise (or suspicion of compromise) or otherwise recognize patterns of behavior that may signify an attacker attempting to compromise the authentication process.
+* *Periodic training* may be performed to ensure subscribers understand when and how to report compromise - or suspicion of compromise - or otherwise recognize patterns of behavior that may signify an attacker attempting to compromise the authentication process.
 
-- *Out of band techniques* may be employed to verify proof of possession of registered devices (e.g., cell phones).
+* *Out of band techniques* may be employed to verify proof of possession of registered devices (e.g., cell phones).
 
 ### 8.3 Authenticator Recovery
 
@@ -113,6 +113,6 @@ In order to maintain the integrity of the authentication factors, it is essentia
 
 ### 8.4 Session Attacks
 
-The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks, such as XSS. In addition, it is important to sanitize all information to be displayed [[OWASP-XSS-prevention]](#OWASP-XSS-prevention) to ensure that it does not contain executable content. These guidelines also recommend that session secrets be made inaccessible to mobile code in order to provide extra protection against exfiltration of session secrets, should it be possible to inject malicious mobile code.
+The above discussion focuses on threats to the authentication event itself, but hijacking attacks on the session following an authentication event can have similar security impacts. The session management guidelines in [Section 7](#sec7) are essential to maintain session integrity against attacks, such as XSS. In addition, it is important to sanitize all information to be displayed [OWASP-XSS-prevention](#OWASP-XSS-prevention) to ensure that it does not contain executable content. These guidelines also recommend that session secrets be made inaccessible to mobile code in order to provide extra protection against exfiltration of session secrets.
 
-Another post-authentication threat, CSRF, takes advantage of users' tendency to have multiple sessions active at the same time. It is important to embed and verify a session identifier into web requests to prevent the ability for a valid URL or request to be unintentionally or maliciously activated.
+Another post-authentication threat, cross site request forgery (CSRF), takes advantage of users' tendency to have multiple sessions active at the same time. It is important to embed and verify a session identifier into web requests to prevent the ability for a valid URL or request to be unintentionally or maliciously activated.
