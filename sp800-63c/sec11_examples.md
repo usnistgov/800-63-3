@@ -13,9 +13,9 @@ SAML is an XML-based framework for creating and exchanging authentication and at
 
 The building blocks of SAML include:
 
-- The Assertions XML schema which defines the structure of the assertion.
-- The SAML Protocols which are used to request assertions and artifacts (the assertion references used in the indirect model described in [Section 7.1](#back-channel)).
-- The Bindings that define the underlying communication protocols (such as HTTP or SOAP) and can be used to transport the SAML assertions. 
+- The Assertions XML schema, which defines the structure of the assertion.
+- The SAML Protocols, which are used to request assertions and artifacts (the assertion references used in the indirect model described in [Section 7.1](#back-channel)).
+- The Bindings, that define the underlying communication protocols (such as HTTP or SOAP), and can be used to transport the SAML assertions. 
 
 The three components above define a SAML profile that corresponds to a particular use case such as "Web Browser SSO".
 
@@ -41,21 +41,21 @@ Authorization statements are beyond the scope of this document and will not be d
 
 ### 11.2 Kerberos Tickets <a name="kerberos"></a>
 
-The Kerberos Network Authentication Service \[[RFC 4120](#RFC4120)\] was designed to provide strong authentication for client/server applications using symmetric-key cryptography on a local, shared network. Extensions to Kerberos can support the use of public key cryptography for selected steps of the protocol. Kerberos also supports confidentiality and integrity protection of session data between the subscriber and the RP. Even though Kerberos uses assertions, since it is designed for use on shared networks it is not truly a federation protocol. 
+The Kerberos Network Authentication Service \[[RFC 4120](#RFC4120)\] was designed to provide strong authentication for client/server applications using symmetric-key cryptography on a local, shared network. Extensions to Kerberos can support the use of public key cryptography for selected steps of the protocol. Kerberos also supports confidentiality and integrity protection of session data between the subscriber and the RP. Even though Kerberos uses assertions, it was designed for use on shared networks and, therefore, is not truly a federation protocol. 
 
 Kerberos supports authentication of a subscriber over an untrusted, shared local network using one or more IdPs. The subscriber implicitly authenticates to the IdP by demonstrating the ability to decrypt a random session key encrypted for the subscriber by the IdP. (Some Kerberos variants also require the subscriber to explicitly authenticate to the IdP, but this is not universal.) In addition to the encrypted session key, the IdP also generates another encrypted object called a Kerberos ticket. The ticket contains the same session key, the identity of the subscriber to whom the session key was issued, and an expiration time after which the session key is no longer valid. The ticket is confidentiality and integrity protected by a pre-established key that is shared between the IdP and the RP during an explicit setup phase.
 
-To authenticate using the session key, the subscriber sends the ticket to the RP along with encrypted data that proves that the subscriber possesses the session key embedded within the Kerberos ticket. Session keys are either used to generate new tickets, or to encrypt and authenticate communications between the subscriber and the RP.
+To authenticate using the session key, the subscriber sends the ticket to the RP, along with encrypted data that proves that the subscriber possesses the session key embedded within the Kerberos ticket. Session keys are either used to generate new tickets, or to encrypt and authenticate communications between the subscriber and the RP.
 
 To begin the process, the subscriber sends an authentication request to
 the Authentication Server (AS). The AS encrypts a session key for the
 subscriber using the subscriber's long term credential. The long term
 credential may either be a secret key shared between the AS and the
 subscriber, or in the PKINIT variant of Kerberos, a public key
-certificate. Most variants of Kerberos based on
-a shared secret key between the subscriber and IdP derive this key
-from a user generated password. As such, they are vulnerable to offline
-dictionary attack by a passive eavesdropper unless Flexible Authentication
+certificate. Most variants of Kerberos, based on
+a shared secret key between the subscriber and IdP, derive this key
+from a user-generated password. As such, they are vulnerable to offline
+dictionary attacks by passive eavesdroppers, unless Flexible Authentication
 Secure Tunneling (FAST) \[[RFC 6113](#RFC6113)\] or some other tunneling and
 armoring mechanism is used.
 

@@ -4,7 +4,7 @@
 
 *This section is informative.*
 
-Since the federated authentication process involves coordination between multiple components, including the CSP which now acts as an IdP, there are additional opportunities for attackers to compromise federated identity transactions. This section summarizes many of the attacks and their mitigations that are applicable when federation is being used.
+Since the federated authentication process involves coordination between multiple components, including the CSP which now acts as an IdP, there are additional opportunities for attackers to compromise federated identity transactions. This section summarizes many of the attacks and their mitigations that are applicable to federation.
 
 ### 8.1 Federation Threats
 

@@ -165,7 +165,7 @@ digital authentication; electronic authentication; electronic credentials; feder
 
 </div>
 
-The authors would like to acknowledge the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Ellen Nadeau from NIST, and Kat Megas from NIST.
+The authors would like to acknowledge the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC) and Kat Megas from NIST.
 
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus. Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
