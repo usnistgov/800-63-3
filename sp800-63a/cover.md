@@ -1,6 +1,6 @@
 <div class="text-right" markdown="1">
 
-# <a name="800-63a"></a> DRAFT NIST Special Publication 800-63A
+# <a name="800-63a"></a> NIST Special Publication 800-63A
 
 ![](sp800-63-3/media/div-1.png)  
 
@@ -32,7 +32,7 @@ https://doi.org/10.6028/NIST.SP.800-63a
 
 </div><div class="breaker text-right" markdown="1">
 
-# DRAFT NIST Special Publication 800-63A
+# NIST Special Publication 800-63A
 
 # Digital Identity Guidelines
 

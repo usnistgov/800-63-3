@@ -1,7 +1,7 @@
 
 <div class="text-right" markdown="1">
 
-# <a name="800-63b"></a> DRAFT NIST Special Publication 800-63B
+# <a name="800-63b"></a> NIST Special Publication 800-63B
 
 ![](sp800-63-3/media/div-1.png)  
 
@@ -30,8 +30,8 @@ Yee-Yin Choong
 Kristen K. Greene      
 Mary F. Theofanos   
 
-This publication is available free of charge from:  
-https://doi.org/10.6028/NIST.SP.800-63b  
+This publication is available free of charge from:    
+https://doi.org/10.6028/NIST.SP.800-63b    
 
 
 ![](sp800-63-3/media/csd.png)  
@@ -39,7 +39,7 @@ https://doi.org/10.6028/NIST.SP.800-63b
 
 </div><div class="breaker text-right" markdown="1">
 
-# DRAFT NIST Special Publication 800-63B
+# NIST Special Publication 800-63B
 
 # Digital Identity Guidelines
 
@@ -88,9 +88,8 @@ Mary F. Theofanos
 *Information Access Division  
 Information Technology Laboratory*  
 
-This publication is available free of charge from:  
-https://doi.org/10.6028/NIST.SP.800-63b  
-
+This publication is available free of charge from:    
+https://doi.org/10.6028/NIST.SP.800-63b    
 
 Month TBD 2017
 
@@ -122,8 +121,6 @@ Nothing in this publication should be taken to contradict the standards and guid
 National Institute of Standards and Technology Special Publication 800-63B  
 Natl. Inst. Stand. Technol. Spec. Publ. 800-63B, xxx pages (MonthTBD 2017)  
 CODEN: NSPUE2
-
-
 
 This publication is available free of charge from:  
 https://doi.org/10.6028/NIST.SP.800-63b  
