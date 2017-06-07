@@ -18,7 +18,7 @@ This document also provides requirements for CSPs that will collect additional i
 
 ### 4.1. Process Flow
 
-[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for Identity Proofing and Enrollment, to include the corresponding sections with normative requirements.
+[Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment, to include the corresponding sections with normative requirements.
 
 <a name="63aSec4-Figure1"></a>
 
