@@ -182,7 +182,7 @@ These guidelines provide technical requirements for federal agencies implementin
 
 </div>
 
-authentication; credential service provider; digital authentication; digital credentials; electronic authentication; electronic credentials.
+authentication; credential service provider; digital authentication; digital credentials; electronic authentication; electronic credentials, federation.
 
 <div class="text-center" markdown="1">
 

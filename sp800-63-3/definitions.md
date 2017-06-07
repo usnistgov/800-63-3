@@ -256,9 +256,12 @@ A characteristic of an authentication system or an authenticator that requires m
 The three authentication factors are something you know, something you have, and something you are.
 
 #### <a name=”mfa-definition”></a>Multi-factor Authentication (MFA)
-An authentication system or an authenticator that requires more than one distinct [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a single authenticator that provides more than one factor or by a combination of authenticators that provide different factors.
+An authentication system that requires more than one distinct [authentication factor](#af) for successful authentication. Multi-factor authentication can be performed using a multi-factor authenticator or by a combination of authenticators that provide different factors.
 
-The three authentication factors are something you know, something you have, and something you are.
+The three authentication factors are *something you know*, *something you have*, and *something you are*.
+
+#### Multi-factor Authenticator
+An authenticator that provides more than one distinct authentication factor, such as a cryptographic authentication device with an integrated biometric sensor that is required to activate the device.
 
 #### Network
 An open communications medium, typically the Internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (e.g., impersonation, man-in-the-middle, session hijacking) and passive (e.g., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP, RP).
@@ -371,6 +374,9 @@ An attack in which the attacker is able to replay previously captured messages (
 
 #### Replay Resistance
 The property of an authentication process to resist replay attacks, typically by use of an authenticator output that is valid only for a specific authentication.
+
+#### Restricted
+An authenticator type, class, or instantiation having additional risk of false acceptance associated with its use that is therefore subject to additional requirements.
 
 #### Risk Assessment
 The process of identifying, estimating, and prioritizing risks to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, and other organizations, resulting from the operation of a system. It is part of risk management, incorporates threat and vulnerability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis.
