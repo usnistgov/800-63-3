@@ -6,9 +6,9 @@
 
 _This section is informative._
 
-There are two general categories of threats to the enrollment process: impersonation and either compromise or malfeasance of the infrastructure provider. This section focuses on addressing impersonation threats. Infrastructure threats are addressed by traditional computer security controls (e.g., intrusion protection, record keeping, independent audits) and are outside the scope of this document. For more information on security controls, see [SP 800-53](#SP800-53), *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*.
+There are two general categories of threats to the enrollment process: impersonation, and either compromise or malfeasance of the infrastructure provider. This section focuses on impersonation threats, as infrastructure threats are addressed by traditional computer security controls (e.g., intrusion protection, record keeping, independent audits) and are outside the scope of this document. For more information on security controls, see [SP 800-53](#SP800-53), *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*.
 
-The threats to the enrollment process include impersonation attacks and threats to the transport mechanisms for identity proofing, authenticator binding, and credential issuance. [Table 7-1](#63aSec7-Table1) lists the threats related to enrollment and identity proofing.
+Threats to the enrollment process include impersonation attacks and threats to the transport mechanisms for identity proofing, authenticator binding, and credential issuance. [Table 7-1](#63aSec7-Table1) lists the threats related to enrollment and identity proofing.
 
 <a name="63aSec7-Table1"></a>
 
@@ -29,9 +29,7 @@ The threats to the enrollment process include impersonation attacks and threats 
 
 ### 7.1 Threat Mitigation Strategies
 
-Enrollment threats can be deterred by making impersonation more difficult to accomplish or by increasing the likelihood of detection. This recommendation deals primarily with methods for making impersonation more difficult; however, it does prescribe certain methods and procedures that may help to prove who carried out an impersonation. At each level, methods are employed to determine that a person with the claimed identity exists, that the applicant is the person who is entitled to the claimed identity, and that the applicant cannot later repudiate the enrollment. As the level of assurance increases, the methods employed provide increasing resistance to casual, systematic and
-insider impersonation. [Table 7-2](#63aSec7-Table2) lists strategies for mitigating threats
-to the enrollment and issuance processes.
+Enrollment threats can be deterred by making impersonation more difficult to accomplish or by increasing the likelihood of detection. This recommendation deals primarily with methods for making impersonation more difficult; however, it does prescribe certain methods and procedures that may help to prove who carried out an impersonation. At each level, methods are employed to determine that a person with the claimed identity exists, that the applicant is the person who is entitled to the claimed identity, and that the applicant cannot later repudiate the enrollment. As the level of assurance increases, the methods employed provide increasing resistance to casual, systematic and insider impersonation. [Table 7-2](#63aSec7-Table2) lists strategies for mitigating threats to the enrollment and issuance processes.
 
 <a name="63aSec7-Table2"></a>
 
