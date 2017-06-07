@@ -32,6 +32,7 @@ In the manual registration model, the IdP and RP manually provision configuratio
 
 <div class="text-center" markdown="1">
 <img src="sp800-63c/media/manual.png" alt="Manual Registration" style="width:630px;height:400px;;min-width: 630px;min-height:400px;"/>
+
 **Figure 5-2 Manual Registration**
 
 </div>
@@ -140,11 +141,11 @@ An IdP MAY disclose information on subscriber activities to other RPs within the
 
 The following requirements apply specifically to federal agencies:
 
-1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis to determine whether the agency that is acting as either an IdP or an RP in an identity federation triggers the requirements of the Privacy Act (see [Section 9.4](#agency-privacy)).
+1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) to conduct an analysis determining whether the requirements of the Privacy Act are triggered by the agency that is acting as an IdP, by the agency that is acting as an RP, or both (see [Section 9.4](#agency-privacy)).
 
 2. The agency SHALL publish or identify coverage by a System of Records Notice (SORN) as applicable.
 
-3. The agency SHALL consult with their SAOP to conduct an analysis to determine whether the agency, which is acting as either an IdP or an RP in an identity federation, triggers the requirements of the E-Government Act.
+3. The agency SHALL consult with their SAOP to conduct an analysis determining whether the requirements of the E-Government Act are triggered by the agency that is acting as an IdP, the agency that is acting as an RP, or both.
 
 4. The agency SHALL publish or identify coverage by a Privacy Impact Assessment (PIA) as applicable.
 
