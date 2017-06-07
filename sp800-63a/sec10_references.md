@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 10. References
+## 10 References
 
 *This section is informative.*
 

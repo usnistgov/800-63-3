@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 7. Threats and Security Considerations
+## 7 Threats and Security Considerations
 
 _This section is informative._
 
@@ -14,7 +14,7 @@ The threats to the enrollment process include impersonation attacks and threats 
 
 <div class="text-center" markdown="1">
 
-**Table 7-1. Enrollment and Identity Proofing Threats**
+**Table 7-1 Enrollment and Identity Proofing Threats**
 
 </div>
 
@@ -27,7 +27,7 @@ The threats to the enrollment process include impersonation attacks and threats 
 | | Repudiation of enrollment | A subscriber denies enrollment, claiming that they did not enroll with the CSP.|
 
 
-### 7.1. Threat Mitigation Strategies
+### 7.1 Threat Mitigation Strategies
 
 Enrollment threats can be deterred by making impersonation more difficult to accomplish or by increasing the likelihood of detection. This recommendation deals primarily with methods for making impersonation more difficult; however, it does prescribe certain methods and procedures that may help to prove who carried out an impersonation. At each level, methods are employed to determine that a person with the claimed identity exists, that the applicant is the person who is entitled to the claimed identity, and that the applicant cannot later repudiate the enrollment. As the level of assurance increases, the methods employed provide increasing resistance to casual, systematic and
 insider impersonation. [Table 7-2](#63aSec7-Table2) lists strategies for mitigating threats
@@ -37,7 +37,7 @@ to the enrollment and issuance processes.
 
 <div class="text-center" markdown="1">
 
-**Table 7-2. Enrollment and Issuance Threat Mitigation Strategies**
+**Table 7-2 Enrollment and Issuance Threat Mitigation Strategies**
 
 </div>
 

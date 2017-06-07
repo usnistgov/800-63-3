@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## <a name="ial-section"></a> 4. Identity Assurance Level Requirements
+## <a name="ial-section"></a> 4 Identity Assurance Level Requirements
 
 _This section is normative._
 
@@ -16,7 +16,7 @@ The only objective of identity proofing is to ensure that the applicant is who t
 
 This document also provides requirements for CSPs that will collect additional information used for purposes other than identity proofing.
 
-### 4.1. Process Flow
+### 4.1 Process Flow
 
 [Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment.
 
@@ -25,7 +25,7 @@ This document also provides requirements for CSPs that will collect additional i
 <div class="text-center" markdown="1">
 <img src="sp800-63a/media/ProofingProcess.png" alt="Identity Proofing Process" style="width:1074px;height:496px;;min-width: 1074px;min-height: 496px;"/>
 
-**Figure 4-1. The Identity Proofing User Journey**
+**Figure 4-1 The Identity Proofing User Journey**
 </div>
 
 The following provides a sample of how a CSP and an applicant interact during the identity proofing process:
@@ -59,7 +59,7 @@ The following provides a sample of how a CSP and an applicant interact during th
 > Note: The identity proofing process can be delivered by multiple service providers. It is possible, but not expected, that a single organization, process, technique, or technology will fulfill these process steps.
 
 
-### <a name="genProofReqs"></a> 4.2. General Requirements
+### <a name="genProofReqs"></a> 4.2 General Requirements
 
 
 The following requirements apply to any CSP performing identity proofing at IAL2 or IAL3.
@@ -95,27 +95,25 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 </div>
 
 
-
-
-### 4.3. Identity Assurance Level 1
+### 4.3 Identity Assurance Level 1
 
 1. A CSP that supports only IAL1 CSP SHALL NOT validate and verify attributes.
 2. The CSP MAY request zero or more self-asserted attributes from the applicant to support their service offering.
 3. An IAL2 or IAL3 CSP SHOULD support RPs that only require IAL1, if the user consents.
 
-### 4.4. Identity Assurance Level 2
+### 4.4 Identity Assurance Level 2
 
 IAL2 allows for **remote** or **in-person** identity proofing.  IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant.
 
 A CSP SHALL proof according to the requirements in [Section 4.4.1](#normal) or [Section 4.4.2](#referee). A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.4.2](#referee).
 
-#### <a name="normal"></a>4.4.1. IAL2 Conventional Proofing Requirements
+#### <a name="normal"></a>4.4.1 IAL2 Conventional Proofing Requirements
 
-#### 4.4.1.1. Resolution Requirements
+#### 4.4.1.1 Resolution Requirements
 
 Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity in a given context. This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
-#### 4.4.1.2. Evidence Collection Requirements
+#### 4.4.1.2 Evidence Collection Requirements
 
 The CSP SHALL collect the following from the applicant:
 
@@ -123,30 +121,30 @@ The CSP SHALL collect the following from the applicant:
 2. Two pieces of STRONG evidence; **OR**
 3. One piece of STRONG evidence plus two pieces of FAIR evidence.
 
-See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
+See [Section 5.2.1 Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
-#### <a name="4-4-1-3"></a>4.4.1.3. Validation Requirements
+#### <a name="4-4-1-3"></a>4.4.1.3 Validation Requirements
 
 The CSP SHALL validate identity evidence as follows:
 
 Each piece of evidence SHALL be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
 
-See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence.
+See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence.
 
-#### 4.4.1.4. Verification Requirements
+#### 4.4.1.4 Verification Requirements
 
 The CSP SHALL verify identity evidence as follows:
 
 1. At a minimum, the applicant's binding to identity evidence must be verified by a process that is able to achieve a strength of STRONG.
 2. KBV SHALL NOT be used for in-person (physical or supervised remote) identity verification.
 
-See [Section 5.3. Identity Verification](#verify) for more information on acceptable identity evidence.
+See [Section 5.3 Identity Verification](#verify) for more information on acceptable identity evidence.
 
-#### 4.4.1.5. Presence Requirements
+#### 4.4.1.5 Presence Requirements
 
 The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offer both in-person and remote proofing.
 
-#### <a name="4-4-1-6"></a> 4.4.1.6. Address Confirmation
+#### <a name="4-4-1-6"></a> 4.4.1.6 Address Confirmation
 
 <div class="text-left" markdown="0">
 
@@ -175,27 +173,27 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 
 > Note: Postal address is the preferred method of sending any communications, to include enrollment code and notifications, with the applicant. However, this guideline supports any confirmed address of record, whether physical or digital.
 
-#### <a name="4-4-1-7"></a>4.4.1.7. Biometric Collection
+#### <a name="4-4-1-7"></a>4.4.1.7 Biometric Collection
 
 The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [Section 5.2.3. of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
-#### 4.4.1.8. Security Controls
+#### 4.4.1.8 Security Controls
 
 The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the moderate or high baseline of security controls defined in [[SP 800-53]](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP))  or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *moderate-impact* systems or equivalent are satisfied.
 
-#### <a name="referee"></a>4.4.2. IAL2 Trusted Referee Proofing Requirements
+#### <a name="referee"></a>4.4.2 IAL2 Trusted Referee Proofing Requirements
 
-In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1.](#normal), the agency MAY use a trusted referee to assist in identity proofing the applicant. See [Section 5.3.4.](#trustref) for more details.
+In instances where an individual cannot meet the identity evidence requirements specified in [Section 4.4.1](#normal), the agency MAY use a trusted referee to assist in identity proofing the applicant. See [Section 5.3.4](#trustref) for more details.
 
-### <a name="ial3-requirements"></a> 4.5. Identity Assurance Level 3
+### <a name="ial3-requirements"></a> 4.5 Identity Assurance Level 3
 
-IAL3 adds additional rigor to the steps required at IAL2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages. Biometrics are used to detect fraudulent enrollments, duplicate enrollments, and as a mechanism to re-establish binding to a credential.  In addition, identity proofing at IAL3 is performed in-person (to include supervised remote). See [Section 5.3.3.](#vip) for more details.
+IAL3 adds additional rigor to the steps required at IAL2, to include providing further evidence of superior strength, and is subjected to additional and specific processes, including the use of biometrics, to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages. Biometrics are used to detect fraudulent enrollments, duplicate enrollments, and as a mechanism to re-establish binding to a credential.  In addition, identity proofing at IAL3 is performed in-person (to include supervised remote). See [Section 5.3.3](#vip) for more details.
 
-#### 4.5.1. Resolution Requirements
+#### 4.5.1 Resolution Requirements
 
 Collection of PII SHALL be limited to the minimum necessary to resolve to a unique identity record. This MAY include the collection of attributes that assist in data queries. See [Section 5.1](#resolve) for general resolution requirements.
 
-#### 4.5.2. Evidence Collection Requirements
+#### 4.5.2 Evidence Collection Requirements
 
 The CSP SHALL collect the following from the applicant:
 
@@ -203,46 +201,46 @@ The CSP SHALL collect the following from the applicant:
 2. One piece of SUPERIOR evidence and one piece of STRONG evidence **if** the issuing source of the STRONG evidence, during its identity proofing event, confirmed the claimed identity by collecting two or more forms of SUPERIOR or STRONG evidence **and** the CSP validates the evidence directly with the issuing source; **OR**
 3. Two pieces of STRONG evidence plus one piece of FAIR evidence.
 
-See [Section 5.2.1. Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
+See [Section 5.2.1 Identity Evidence Quality Requirements](#evidence-quality) for more information on acceptable identity evidence.
 
-#### <a name="4-5-3"></a>4.5.3. Validation Requirements  
+#### <a name="4-5-3"></a>4.5.3 Validation Requirements  
 
 The CSP SHALL validate identity evidence as follows:
 
 Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each evidence will be validated at a strength of STRONG.
 
-See [Section 5.2.2. Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence
+See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence
 
-#### 4.5.4. Verification Requirements
+#### 4.5.4 Verification Requirements
 
 The CSP SHALL verify identity evidence as follows:
 
 1. At a minimum, the applicant's binding to identity evidence must be verified by a process that is able to achieve a strength of SUPERIOR.
 2. KBV SHALL NOT be used for in-person (physical or supervised remote) identity verification.
 
-See [Section 5.3. Identity Verification](#verify) for more information on acceptable identity evidence.
+See [Section 5.3 Identity Verification](#verify) for more information on acceptable identity evidence.
 
-#### 4.5.5. Presence Requirements
+#### 4.5.5 Presence Requirements
 
-The CSP SHALL perform all identity proofing steps with the applicant in-person. See [Section 5.3.3.](#vip) for more details.
+The CSP SHALL perform all identity proofing steps with the applicant in-person. See [Section 5.3.3](#vip) for more details.
 
 
-#### <a name="4-5-6"></a>4.5.6. Address Confirmation
+#### <a name="4-5-6"></a>4.5.6 Address Confirmation
 
 1. The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant, not contained on any supplied, valid piece of identity evidence.
 2. Self-asserted address data SHALL NOT be used for confirmation.
 3. A notification of proofing SHALL be sent to the confirmed address of record.
 4. The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time. The enrollment code SHALL be valid for a maximum of 7 days.
 
-#### <a name="4-5-7"></a>4.5.7. Biometric Collection
+#### <a name="4-5-7"></a>4.5.7 Biometric Collection
 
-The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing.  See [Section 5.2.3. of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing.  See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
-#### 4.5.8. Security  Controls
+#### 4.5.8 Security  Controls
 
 The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the high baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *high-impact* systems or equivalent are satisfied.
 
-### <a name="enrollmentcode"></a> 4.6. Enrollment Code
+### <a name="enrollmentcode"></a> 4.6 Enrollment Code
 
 An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offering the applicant the ability to reestablish binding to their enrollment record.  Binding NEED NOT be completed in the same session as the original identity proofing transaction.  
 
@@ -252,7 +250,7 @@ An enrollment code SHALL be comprised of one of the following:
 2. A machine readable optical label, such as a QR Code, that contains data of similar or higher entropy as a random six character alphanumeric.
 
 
-### 4.7. Summary of Requirements
+### 4.7 Summary of Requirements
 
 _This section is informative._
 
@@ -262,7 +260,7 @@ _This section is informative._
 
 <div class="text-center" markdown="1">
 
-**Table 4-1. IAL Requirements Summary**
+**Table 4-1 IAL Requirements Summary**
 
 </div>
 

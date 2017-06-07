@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 9. Usability Considerations
+## 9 Usability Considerations
 
 _This section is informative._
 
@@ -28,7 +28,7 @@ Guidelines and considerations are described from the users' perspective.
 
 Accessibility differs from usability and is out of scope for this document. [Section 508](#Section508) was enacted to eliminate barriers in information technology and require federal agencies to make their electronic and information technology public content accessible to people with disabilities. Refer to Section 508 law and standards for accessibility guidance.
 
-### 9.1. General User Experience Considerations During Enrollment and Identity Proofing
+### 9.1 General User Experience Considerations During Enrollment and Identity Proofing
 
 
 This sub-section provides usability considerations that are applicable across all steps. Usability considerations specifically for each step are detailed in [Sections 9.2](#sec9_2) to [9.4](#sec9_4).
@@ -49,7 +49,7 @@ This sub-section provides usability considerations that are applicable across al
 * Perform usability evaluation for each step with representative users, realistic goals and tasks, and appropriate contexts of use.
 
 
-### <a name="sec9_2"></a>9.2. Pre-Enrollment Preparation
+### <a name="sec9_2"></a>9.2 Pre-Enrollment Preparation
 
 This section describes an effective approach to facilitate sufficient pre-enrollment preparation so users can avoid challenging, frustrating enrollment sessions. Ensuring users are as prepared as possible for their enrollment sessions is critical to the overall success and usability of the enrollment and identity proofing process. 
 
@@ -72,12 +72,12 @@ In order to ensure users are equipped to make informed decisions about whether t
     * Offer appointment reminders and allow users to specify their preferred appointment reminder format(s) (e.g., postal mail, voicemail, email, text message). Users need information such as date, time, location, and a description of required identity evidence.
 * Information on the allowed and required identity evidence and attributes, whether each piece is voluntary or mandatory, and the consequences for not providing the complete set of identity evidence. Users need to know the specific combinations of identity evidence, including requirements specific to a piece of identity evidence (e.g., a raised seal on a birth certificate). This is especially important due to potential difficulties procuring the necessary identity evidence. 
   * Where possible, implement tools to make it easier to obtain the necessary identity evidence. 
-  * Inform users of any special requirements for minors and people with unique needs. For example, provide users with the information necessary to use trusted referees, such as a notary, legal guardian, or some other form of certified individual that can legally vouch for or act on behalf of the individual (see [Section 5.3.4.](#trustref)). 
+  * Inform users of any special requirements for minors and people with unique needs. For example, provide users with the information necessary to use trusted referees, such as a notary, legal guardian, or some other form of certified individual that can legally vouch for or act on behalf of the individual (see [Section 5.3.4](#trustref)). 
   * If forms are required:
      * Provide fillable forms before and at the enrollment session. Do not require that users have access to a printer. 
      * Minimize the amount of information users must enter on a form, as users are easily frustrated and more error-prone with longer forms. Where possible, pre-populate forms. 
 
-### 9.3. Enrollment and Proofing Session
+### 9.3 Enrollment and Proofing Session
 
 Usability considerations specific to the enrollment session include:  
 
@@ -123,7 +123,7 @@ Usability considerations specific to the enrollment session include:
   * Make the navigation consistent, easy to find, and easy to follow. 
       
 
-###  <a name="sec9_4"></a>9.4. Post-Enrollment 
+###  <a name="sec9_4"></a>9.4 Post-Enrollment 
 Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [800-63B, Sections 10.1 through 10.3](sp800-63b.html#usabilitycommon). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
 
 Usability considerations for post-enrollment include:
