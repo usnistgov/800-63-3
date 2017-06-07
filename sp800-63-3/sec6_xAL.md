@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 6. <a name="CYOA"></a>Selecting Assurance Levels
+## 6 <a name="CYOA"></a>Selecting Assurance Levels
 
 _This section is normative._  
 
@@ -12,7 +12,7 @@ First, compare the risk assessment impact profile to the impact profiles associa
 
 <a name="63Sec6-Table6-1"></a>
 <div class="text-center" markdown="1">
-**Table 6-1. Maximum Potential Impacts for Each Assurance Level**
+**Table 6-1 Maximum Potential Impacts for Each Assurance Level**
 </div>
 
 <table>
@@ -52,8 +52,7 @@ First, compare the risk assessment impact profile to the impact profiles associa
     <td>N/A</td>
     <td>Low/Mod</td>
     <td>High</td>
-  </tr>
- 
+  </tr> 
     <td>Personal Safety</td>
     <td>N/A</td>
     <td>Low</td>
@@ -84,7 +83,7 @@ Despite the user being pseudonymous, the agency should still protect the applica
 
 > Note: The upshot of potentially having a different IAL, AAL, and FAL within a single application stems from the fact that this document no longer supports the notion of an overall LOA. The "low watermark" approach to determining LOA no longer applies. An application with IAL1 and AAL2 should not be considered any less secure or privacy enhancing than an application with IAL2 and AAL2. The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
 
-#### <a name="IAL_CYOA"></a> 6.1. Selecting IAL
+#### <a name="IAL_CYOA"></a> 6.1 Selecting IAL
 
 The IAL decision tree in [Figure 6-1](#63Sec6-Figure1) combines the results from the risk assessment with additional considerations related to identity proofing services to allow agencies to select the most appropriate identity proofing requirements for their digital service offering. 
 
@@ -92,9 +91,9 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 <a name="63Sec6-Figure1"></a>
 <div class="text-center" markdown="1">
-<img src="sp800-63-3/media/IAL_CYOA.png" alt="IAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
+<img src="sp800-63-3/media/IAL_CYOA.png" alt="IAL Choose Your Own" style="width:1000px;height:1093px;;min-width: 1000px;min-height:1093px;"/>
 
-**Figure 6-1. Selecting IAL**
+**Figure 6-1 Selecting IAL**
 </div>
 
 
@@ -141,7 +140,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 > Note: Agencies should also consider their constituents' demographics when selecting the most appropriate proofing process. While not a function of IAL selection, certain proofing process(es) may be more appropriate for some demographics than others. Agencies will benefit as this type of analysis ensures the greatest opportunity for their constituents to be proofed successfully.
  
-#### <a name="AAL_CYOA"></a> 6.2. Selecting AAL
+#### <a name="AAL_CYOA"></a> 6.2 Selecting AAL
 
 The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements  for their digital service offering. 
 
@@ -149,9 +148,9 @@ The AAL selection does not mean the digital service provider will need to issue 
 
 <a name="63Sec6-Figure2"></a>
 <div class="text-center" markdown="1">
-<img src="sp800-63-3/media/AAL_CYOA.png" alt="AAL Choose Your Own" style="width:1000px;height:1195px;;min-width: 1000px;min-height: 1195px;"/>
+<img src="sp800-63-3/media/AAL_CYOA.png" alt="AAL Choose Your Own" style="width:1000px;height:958px;;min-width: 1000px;min-height:958px;"/>
 
-**Figure 6-2. Selecting AAL**
+**Figure 6-2 Selecting AAL**
 </div>
 
 <div class="text-left" markdown="1">
@@ -174,7 +173,7 @@ The AAL selection does not mean the digital service provider will need to issue 
   </table>
 </div>
 
-#### <a name="FAL_CYOA"></a> 6.3. Selecting FAL
+#### <a name="FAL_CYOA"></a> 6.3 Selecting FAL
 
 All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
 
@@ -186,7 +185,7 @@ FAL3 further requires the subscriber prove possession of a key in addition to th
 
 Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL2 and FAL3, and subscriber keys need to be managed at FAL3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
 
-### 6.4. Combining xALs 
+### 6.4 Combining xALs 
 
 This guideline introduces a model where individual xALs can be selected without requiring parity to each other. While options exist to select varying xALs for a system, in many instances the same level will be chosen for all xALs.
 
@@ -196,7 +195,7 @@ The ability to combine varying xALs offers significant flexibility to agencies, 
 
 <div class="text-center" markdown="1">
 
-**Table 6-2. Acceptable Combinations of IAL and AAL**
+**Table 6-2 Acceptable Combinations of IAL and AAL**
 
 </div>
 

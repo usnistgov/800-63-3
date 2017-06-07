@@ -2,11 +2,11 @@
 
 <div class="breaker"></div>
 
-## 4. Digital Identity Model
+## 4 Digital Identity Model
 
 *This section is informative.*
 
-### <a name="4-1"></a>4.1. Overview 
+### <a name="4-1"></a>4.1 Overview 
 
 The digital identity model used in these guidelines reflects current technologies and architectures available in the market. More complex models that separate functions - such as issuing credentials and providing attributes - among a larger number of parties are also available and may have advantages in some classes of applications. While a simpler model is used in this document, it does not preclude agencies from separating these functions. In addition, certain enrollment, identity proofing, and issuance processes performed by the CSP are sometimes delegated to an entity known as either the RA or the identity manager (IM). A close relationship between the RA and CSP is typical, and the nature of this relationship may differ among RAs, IMs, and CSPs. The type of relationship and its requirements is outside of the scope of this document. Accordingly, the term CSP will be inclusive of RA and IM functions. Finally, a CSP may provide other services in addition to digital identity services. In these situations, the requirements specified throughout these documents only applies to the CSP function(s), not the additional services.
 
@@ -26,7 +26,7 @@ The various entities and interactions that comprise the digital identity model u
 <div class="text-center" markdown="1">
 <img src="sp800-63-3/media/model.png" alt="Digital Identity Model" style="width:1000px;height:528px;;min-width: 1000px;min-height: 528px;"/>
 
-**Figure 4-1. Digital Identity Model**
+**Figure 4-1 Digital Identity Model**
 </div>
 
 The left side of the diagram shows the enrollment, credential issuance, lifecycle management activities, and various states of an identity proofing and authentication process. The usual sequence of interactions is as follows:
@@ -51,7 +51,7 @@ In some cases, the verifier does not need to communicate in real time with the C
 
 As noted above, a CSP maintains status information about the credentials it issues. CSPs will generally assign a finite lifetime when issuing credentials to limit the maintenance period. When the status changes, or when the credentials near expiration, credentials may be renewed or re-issued; or, the credential may be revoked and destroyed. Typically, the subscriber authenticates to the CSP using his or her existing, unexpired authenticator and credential in order to request issuance of a new authenticator and credential. If the subscriber fails to request authenticator and credential re-issuance prior to their expiration or revocation, he or she may be required to repeat the enrollment process to obtain a new authenticator and credential. Alternatively, the CSP may choose to accept a request during a grace period after expiration.
 
-### 4.2. Enrollment and Identity Proofing
+### 4.2 Enrollment and Identity Proofing
 
 Normative requirements can be found in [[SP 800-63A]](sp800-63a.html), *Enrollment and Identity Proofing*.
 
@@ -61,11 +61,11 @@ An individual, referred to as an *applicant* at this stage, opts to be identity 
 
 The CSP establishes a mechanism to uniquely identify each subscriber, register the subscriber's credentials, and track the authenticators issued to that subscriber. The subscriber may be given authenticators at the time of enrollment, the CSP may bind authenticators the subscriber already has, or they may be generated later as needed. Subscribers have a duty to maintain control of their authenticators and comply with CSP policies in order to maintain active authenticators. The CSP maintains enrollment records for each subscriber to allow recovery of authenticators, for example, when they are lost or stolen.
 
-### 4.3. Authentication and Lifecycle Management
+### 4.3 Authentication and Lifecycle Management
 
 Normative requirements can be found in [[SP 800-63B]](sp800-63b.html), *Authentication and Lifecycle Management*.
 
-#### 4.3.1. Authenticators
+#### 4.3.1 Authenticators
 
 The classic paradigm for authentication systems identifies three factors as the cornerstones of authentication:  
 
@@ -92,11 +92,11 @@ For example, item 1 can be satisfied by pairing a memorized secret (what you kno
 
 As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication, but they do have their place in the authentication of digital identities. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris patterns, voiceprints, and many other characteristics. [[SP 800-63A]](sp800-63a.html), *Enrollment and Identity Proofing* recommends that biometrics be collected in the enrollment process to later help prevent a registered subscriber from repudiating the enrollment, and to help identify those who commit enrollment fraud.
 
-#### 4.3.2. Credentials
+#### 4.3.2 Credentials
 
 As described in the preceding sections, a credential binds an authenticator to the subscriber, via an identifier, as part of the issuance process. A credential is stored and maintained by the CSP, though the claimant may possess it. The claimant possesses an authenticator, but is not necessarily in possession of the credential. For example, database entries containing the user attributes are considered to be credentials for the purpose of this document but are possessed by the verifier. X.509 public key certificates are a classic example of credentials the claimant can, and often does, possess.
 
-#### 4.3.3. Authentication Process
+#### 4.3.3 Authentication Process
 
 The authentication process begins with the claimant demonstrating to the verifier possession and control of an authenticator that is bound to the asserted identity through an authentication protocol. Once possession and control have been demonstrated, the verifier verifies that the credential remains valid, usually by interacting with the CSP.
 
@@ -106,7 +106,7 @@ Additionally, mechanisms located at the verifier can mitigate online guessing at
 
 The verifier is a functional role, but is frequently implemented in combination with the CSP, the RP, or both. If the verifier is a separate entity from the CSP, it is often desirable to ensure that the verifier does not learn the subscriber's authenticator secret in the process of authentication, or at least to ensure that the verifier does not have unrestricted access to secrets stored by the CSP.
 
-### 4.4. Federation and Assertions
+### 4.4 Federation and Assertions
 
 Normative requirements can be found in [[SP 800-63C]](sp800-63c.html), *Federation and Assertions*.
 
@@ -122,7 +122,7 @@ Federated architectures have many significant benefits, including, but not limit
 
 The following sections discuss the components of a federated identity architecture should an agency elect this type of model.
 
-#### 4.4.1. Assertions
+#### 4.4.1 Assertions
 
 Upon completion of the authentication process, the verifier generates an assertion containing the result of the authentication and provides it to the RP. The assertion is used to communicate the result of the authentication process, and optionally information about the subscriber, from the verifier to the RP. Assertions may be communicated directly to the RP, or can be forwarded through the subscriber, which has further implications for system design.
 
@@ -136,7 +136,7 @@ Examples of assertions include:
 * OpenID Connect claims are specified using JavaScript Object Notation (JSON) for describing security, and optionally, user claims. JSON user info claims may optionally be digitally signed.
 * Kerberos tickets allow a ticket granting authority to issue session keys to two authenticated parties using symmetric key based encapsulation schemes.
 
-#### 4.4.2. Relying Parties
+#### 4.4.2 Relying Parties
 
 An RP relies on results of an authentication protocol to establish confidence in the identity or attributes of a subscriber for the purpose of conducting an online transaction. RPs may use a subscriber's authenticated identity (pseudonymous or non-pseudonymous), the IAL, AAL, and FAL (FAL indicating the strength of the assertion protocol), and other factors to make authorization decisions. The verifier and the RP may be the same entity, or they may be separate entities. If they are separate entities, the RP normally receives an assertion from the verifier. The RP ensures that the assertion came from a verifier trusted by the RP. The RP also processes any additional information in the assertion, such as personal attributes or expiration times. The RP is the final arbiter concerning whether a specific assertion presented by a verifier meets the RP's established criteria for system access regardless of IAL, AAL, or FAL. 
 

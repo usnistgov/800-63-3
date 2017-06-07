@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## <a name="derived-authN"></a> 6. Derived Credentials
+## <a name="derived-authN"></a> 6 Derived Credentials
 
 _This section is informative._
 

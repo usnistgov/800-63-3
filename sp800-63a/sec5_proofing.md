@@ -2,24 +2,24 @@
 
 <div class="breaker"></div>
 
-## <a name="ipv-section"></a> 5. Identity Resolution, Validation, and Verification
+## <a name="ipv-section"></a> 5 Identity Resolution, Validation, and Verification
 
 _This section is normative._
 
 This section lists the requirements to resolve, validate, and verify an identity and any supplied identity evidence. The requirements are intended to ensure the claimed identity is the actual identity of the subject attempting to enroll with the CSP and that scalable attacks affecting a large population of enrolled individuals require a greater time and cost than the value of the resources the system is protecting.
 
-### <a name="resolve"></a>5.1. Identity Resolution
+### <a name="resolve"></a>5.1 Identity Resolution
 
 The goal of identity resolution is to uniquely distinguish an individual within a given population or context.  Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing transaction.  
 
 1.  Exact matches of information used in the proofing process can be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, issuing sources, and authoritative sources. Matching algorithms and rules used SHOULD be available publicly or, at minimum, to the relevant community of interest. For example, they may be included as part of the written policy or _practice statement_ referenced in [Section 4.2](#genProofReqs).
 2.  KBV (sometimes referred to as KBA) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity.
 
-### <a name="validate"></a>5.2. Identity Evidence Collection and Validation
+### <a name="validate"></a>5.2 Identity Evidence Collection and Validation
 
 The goal of identity validation is to collect from the applicant the most appropriate identity evidence (e.g., a passport or driver's license) and determine its authenticity, validity, and accuracy.  Identity validation is made up of three process steps: collecting the appropriate identity evidence, confirming the evidence is genuine and authentic, and confirming the data contained on the identity evidence is valid, current, and related to a real-life subject.
 
-#### <a name="evidence-quality"></a> 5.2.1. Identity Evidence Quality Requirements
+#### <a name="evidence-quality"></a> 5.2.1 Identity Evidence Quality Requirements
 
 This section provides quality requirements for identity evidence collected during identity proofing.
 
@@ -29,7 +29,7 @@ This section provides quality requirements for identity evidence collected durin
 
 <div class="text-center" markdown="1">
 
-**Table 5-1. Strengths of Identity Evidence**
+**Table 5-1 Strengths of Identity Evidence**
 
 </div>
 
@@ -42,7 +42,7 @@ This section provides quality requirements for identity evidence collected durin
 |Superior|- The issuing source of the evidence confirmed the claimed identity by following written procedures designed to enable it to have high confidence that the source knows the real-life identity of the subject. Such procedures shall be subject to recurring oversight by regulatory or publicly accountable institutions.<br><br>- The issuing source visually identified the applicant and performed further checks to confirm the existence of that person. <br><br>- The issuing process for the evidence ensured that it was delivered into the possession of the person to whom it relates.<br><br>- The evidence contains at least one reference number that uniquely identifies the person to whom it relates.<br><br>- The full name on the evidence must be the name that the person was officially known by at the time of issuance. Not permitted are pseudonyms, aliases, an initial for surname, or initials for all given names.<br><br>- The evidence contains a photograph of the person to whom it relates.<br><br>- The evidence contains a biometric template (of any modality) of the person to whom it relates.<br><br>- The evidence includes digital information, the information is protected using cryptographic or proprietary methods, or both, and those methods ensure the integrity of the information and enable the authenticity of the issuing source to be confirmed.<br><br>- The evidence includes physical security features that require proprietary knowledge and proprietary technologies to be able to reproduce it.<br><br>- The evidence is unexpired.|
 
 
-#### <a name="evidence_validation"></a> 5.2.2. Validating Identity Evidence
+#### <a name="evidence_validation"></a> 5.2.2 Validating Identity Evidence
 
 Once identity evidence is obtained by the CSP, the accuracy, authenticity, and integrity of the evidence and related information is checked against authoritative sources in order to determine that the presented evidence:  
 
@@ -56,7 +56,7 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 <div class="text-center" markdown="1">
 
-**Table 5-2. Validating Identity Evidence**
+**Table 5-2 Validating Identity Evidence**
 
 </div>
 
@@ -70,20 +70,20 @@ Once identity evidence is obtained by the CSP, the accuracy, authenticity, and i
 
 Training requirements for personnel validating evidence SHALL be based on the policies, guidelines, or requirements of the CSP or the RP. 
 
-### 5.3. <a name="verify"></a> Identity Verification
+### 5.3 <a name="verify"></a> Identity Verification
 
 The goal of identity verification is to confirm and establish a linkage between the claimed identity and the real-life existence of the subject presenting the evidence.
 
-#### 5.3.1. Identity Verification Methods
+#### 5.3.1 Identity Verification Methods
 
-[Table 5-3](#63aSec5-Table3) details the verification methods necessary to achieve a given identity verification strength. The CSP SHALL adhere to the requirements in [Section 5.3.2.](#kbv) if KBV is used to verify an identity.
+[Table 5-3](#63aSec5-Table3) details the verification methods necessary to achieve a given identity verification strength. The CSP SHALL adhere to the requirements in [Section 5.3.2](#kbv) if KBV is used to verify an identity.
 
 
 <a name="63aSec5-Table3"></a>
 
 <div class="text-center" markdown="1">
 
-**Table 5-3. Verifying Identity Evidence**
+**Table 5-3 Verifying Identity Evidence**
 
 </div>
 
@@ -96,7 +96,7 @@ The goal of identity verification is to confirm and establish a linkage between 
 |Superior|- The applicant's ownership of the claimed identity has been confirmed by biometric comparison of the applicant to the strongest piece of identity evidence provided to support the claimed identity, using appropriate technologies. Biometric comparison performed remotely SHALL adhere to all requirements as specified in [[SP 800-63B, Section 5.2.3.]](sp800-63b.html#biometric_use).|
 
 
-#### <a name="kbv"></a>5.3.2. Knowledge Based Verification Requirements
+#### <a name="kbv"></a>5.3.2 Knowledge Based Verification Requirements
 
 The following requirements apply to the identity verification steps for IAL2 and IAL3. There are no restrictions for the use of KBV for identity resolution.
 
@@ -123,19 +123,19 @@ The following requirements apply to the identity verification steps for IAL2 and
 </div>	
 
 
-#### <a name="vip"></a>5.3.3. In-person Proofing Requirements
+#### <a name="vip"></a>5.3.3 In-person Proofing Requirements
 
 In-person proofing can be satisfied in two ways:
 
 - A physical interaction with the applicant, supervised by an operator
 - An remote interaction with the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).
 
-#### 5.3.3.1. General Requirements
+#### 5.3.3.1 General Requirements
 
 1. The CSP SHALL have the operator view the biometric source (e.g., fingers, face) for presence of non-natural materials and perform such inspections as part of the proofing process.
-2. The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [SP 800-63B, Section 5.2.3.](sp800-63b.html#biometric_use) apply.
+2. The CSP SHALL collect biometrics in such a way that ensures that the biometric is collected from the applicant, and not another subject. All biometric performance requirements in [SP 800-63B, Section 5.2.3](sp800-63b.html#biometric_use) apply.
 
-#### <a name="supervised"></a> 5.3.3.2. Requirements for Supervised Remote In-person Proofing
+#### <a name="supervised"></a> 5.3.3.2 Requirements for Supervised Remote In-person Proofing
 
 Remote processes for proofing can be employed by CSPs to achieve comparable levels of confidence and security to in-person events. The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP to those where the applicant is remote.
 
@@ -149,7 +149,7 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 6. The CSP SHALL employ physical tamper detection and resistance features appropriate for the environment in which it is located. For example, a kiosk located in a restricted area or one where it is monitored by a trusted individual requires less tamper detection than one that is located in a semi-public area such as the concourse of a shopping mall.
 7. The CSP SHALL ensure that all communications take place over a mutually authenticated protected channel.
 
-#### <a name="trustref"></a> 5.3.4. Trusted Referee Requirements
+#### <a name="trustref"></a> 5.3.4 Trusted Referee Requirements
 
 1. The CSP MAY use trusted referees, such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.
 2. The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements.
@@ -162,6 +162,6 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 2. Minors under age 13 require additional special considerations under COPPA, and other laws, to which the CSP SHALL ensure compliance, as applicable.
 3. The CSP SHOULD involve a parent or legal adult guardian as a trusted referee for an applicant that is a minor, as described elsewhere in this section.
 
-### 5.4. Binding Requirements
+### 5.4 Binding Requirements
 
 See [800-63B, Section 6.1 Authenticator Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#binding) for instructions on binding authenticators to subscribers.

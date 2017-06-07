@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 7. <a name="toFedorNotToFed"></a> Federation Considerations
+## 7 <a name="toFedorNotToFed"></a> Federation Considerations
 
 _This section is informative._
 

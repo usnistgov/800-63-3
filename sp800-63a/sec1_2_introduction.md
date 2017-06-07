@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 1. <a name="purpose"></a> Purpose
+## 1 <a name="purpose"></a> Purpose
 
 _This section is informative._
 
@@ -10,7 +10,7 @@ This document provides requirements for enrollment and identity proofing of appl
 
 <a name="sec2"></a>
 
-## 2. <a name="intro"></a> Introduction
+## 2 <a name="intro"></a> Introduction
 
 _This section is informative._
 
@@ -33,7 +33,7 @@ The following table states which sections of this document are normative and whi
 |9. Usability Considerations|Informative|
 |10. References|Informative|
 
-## 2.1. Expected Outcomes of Identity Proofing
+## 2.1 Expected Outcomes of Identity Proofing
 
 When a subject is identity proofed, the expected outcomes are:  
 
@@ -42,7 +42,7 @@ When a subject is identity proofed, the expected outcomes are:
 * Validate that the claimed identity exists in the real world.
 * Verify that the claimed identity is associated with the real person supplying the identity evidence.
 
-## 2.2. Identity Assurance Levels
+## 2.2 Identity Assurance Levels
 
 Assurance in a subscriber's identity is described using one of three IALs: 
 

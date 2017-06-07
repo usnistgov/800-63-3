@@ -1,10 +1,10 @@
 <a name="def-and-acr"></a>
 
-## Appendix A: Definitions and Acronyms
+## Appendix A&mdash;Definitions and Abbreviations
 
 *This section is normative.*
 
-### A.1. Definitions
+### A.1 Definitions
 
 A wide variety of terms is used in the area of authentication. While many terms' definitions are consistent with earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition for many of these terms, careful attention to how the terms are defined here is warranted.
 
@@ -460,11 +460,11 @@ Overwrite a memory location with data consisting entirely of bits with the value
 #### Zero-knowledge Password Protocol
 A password based authentication protocol that allows a claimant to authenticate to a verifier without revealing the password to the verifier. Examples of such protocols are EKE, SPEKE and SRP.
 
-### A.2. Acronyms
+### A.2 Abbreviations
 
-Selected acronyms in this paper are defined below.
+Selected abbreviations in these guidelines are defined below.
 
-|Acronym|Term|
+|Abbreviation|Term|
 |:-----|:---------|
 |ABAC|Attribute Based Access Control|
 |AS|Authentication Server|
@@ -521,4 +521,4 @@ Selected acronyms in this paper are defined below.
 |TGS|Ticket Granting Server|
 |TGT|Ticket Granting Ticket|
 |TLS|Transport Layer Security|
-|Voice-over-IP|VOIP|
+|VOIP|Voice-over-IP|
