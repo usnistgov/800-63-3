@@ -2,7 +2,7 @@
 
 <div class="breaker"></div>
 
-## 1. <a name="purpose"></a>Purpose
+## 1 <a name="purpose"></a>Purpose
 
 *This section is informative.*
 
@@ -10,7 +10,7 @@ This recommendation and its companion documents, Special Publication (SP) 800-63
 
 <a name="sec2"></a>
 
-## 2. <a name="intro"></a>Introduction
+## 2 <a name="intro"></a>Introduction
 
 *This section is informative.*
 
@@ -57,7 +57,7 @@ The following table states which sections of this document are normative and whi
 |7. Federation Considerations|Informative|
 |8. References|Informative|
 
-### 2.1. Applicability
+### 2.1 Applicability
 
 Not all digital services require authentication or identity proofing; however, this guidance applies to all such transactions for which digital identity or authentication are required, regardless of the constituency (e.g. citizens, business partners, government entities).
 
@@ -65,7 +65,7 @@ Transactions not covered by this guidance include those that are associated with
 
 These guidelines primarily focus on agency services that interact with the non-federal workforce such as citizens accessing benefits or private sector partners accessing information sharing collaboration spaces. However, it also applies to internal agency systems that are accessed by employees and contractors. These users are expected to hold a valid government-issued credential, primarily the Personal Identity Verification (PIV) card or a derived PIV. Therefore 800-63A and 800-63B are secondary to the requirements of FIPS 201 and its corresponding set of special publications and agency-specific instructions. However 800-63C and the risk-based selection of an appropriate FAL applies, regardless of the credential type the internal user holds. FAL selection provides agencies guidance and flexibility in how to PIV-enable their applications based on system risk.
 
-### 2.2. Considerations, Other Requirements, and Flexibilities
+### 2.2 Considerations, Other Requirements, and Flexibilities
 
 Agencies may employ other risk mitigation measures and compensating controls not specified herein. Agencies need to ensure that any mitigations and compensating controls do not degrade the intended security and privacy protections of the selected assurance levels. Agencies may consider partitioning the functionality of a digital service to allow less
 sensitive functions to be available at a lower level of authentication
@@ -89,25 +89,25 @@ digital authentication. NIST recommends that non-federal entities
 implementing these guidelines follow equivalent standards to ensure the secure operations of their digital systems.
 
 
-### 2.3. A Few Limitations
+### 2.3 A Few Limitations
 
 These technical guidelines do not address the authentication of a person who is physically present (e.g., for access to buildings), even though some authenticators that are used remotely may be used for physical authentication. In addition, this revision of these guidelines does not explicitly address device identity, often referred to as machine-to-machine (such as router-to-router) authentication or interconnected devices, commonly referred to as the internet of things (IoT). That said, these guidelines are written to reference generic subjects wherever possible to leave open the possiblity for applicability to devices. Also excluded are specific requirements for issuing authenticators to devices when they are used in authentication protocols with people.
 
-### 2.4. How to Use this Suite of SPs
+### 2.4 How to Use this Suite of SPs
 
 The business model, marketplace, and the composition of the way identity services are delivered has drastically changed since the first version of SP 800-63 was released. Notably, CSPs can be componentized and composed of multiple independently operated and owned business entities. Furthermore, there may be a significant security benefit to using strong authenticators even if no identity proofing is required. Therefore, in this revision, a suite of SPs under the 800-63 moniker has been created to facilitate these new models and make it easy to access the specific requirements for the function an entity may serve under the overall digital identity model.
 
-### 2.5. Change History
+### 2.5 Change History
 
-#### 2.5.1. SP 800-63-1
+#### 2.5.1 SP 800-63-1
 
 NIST SP 800-63-1 updated NIST SP 800-63 to reflect current authenticator (then referred to as token) technologies and restructured it to provide a better understanding of the digital identity architectural model used here. Additional (minimum) technical requirements were specified for the CSP, protocols used to transport authentication information, and assertions if implemented within the digital identity model. 
 
-#### 2.5.2. SP 800-63-2
+#### 2.5.2 SP 800-63-2
 
 NIST SP 800-63-2 was a limited update of SP 800-63-1 and substantive changes were made only in Section 5, *Registration and Issuance Processes*. The substantive changes in the revised draft were intended to facilitate the use of professional credentials in the identity proofing process, and to reduce the need to send postal mail to an address of record to issue credentials for level 3 remote registration. Other changes to Section 5 were minor explanations and clarifications.
 
-#### 2.5.3. SP 800-63-3
+#### 2.5.3 SP 800-63-3
 
 NIST SP 800-63-3 is a substantial update and restructuring of SP 800-63-2. SP 800-63-3 introduces individual components of digital authentication assurance - AAL, IAL, and FAL - to support the growing need for independent treatment of authentication strength and confidence in an individual's claimed identity (e.g., in strong pseudonymous authentication). A risk assessment methodology and its application to IAL, AAL, and FAL has been included in this guideline. It also moves the whole of digital identity guidance covered under SP 800-63 from a single document describing authentication to a suite of four documents (to separately address the individual components mentioned above) of which SP 800-63-3 is the top-level document.
 
