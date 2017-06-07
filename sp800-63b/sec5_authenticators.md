@@ -402,7 +402,7 @@ Biometric samples collected in the authentication process MAY be used to train c
 
 Biometrics are also used in some cases to prevent repudiation of enrollment and to verify that the same individual participates in all phases of the enrollment process as described in [SP 800-63A](sp800-63a.html).
 
-#### <a name="attestation"></a>5.2.4. Attestation
+#### <a name="attestation"></a>5.2.4 Attestation
 
 Attestation is information conveyed to the verifier regarding a directly-connected authenticator or the endpoint involved in an authentication operation. Information conveyed by attestation MAY include, but is not limited to:
 
