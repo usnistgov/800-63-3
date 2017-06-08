@@ -71,13 +71,13 @@ As shown in [Figure 5-3](#63cSec5-Figure3), dynamic registration involves four s
 
 2. Validate. The RP and IdP determine each other's validity. This can be accomplished through keying information, metadata, software statements, or other means.
 
-3. Register RP attributes. The RP sends its attributes to the IdP and the IdP associates those attributes with the RP.
+3. Register RP attributes. The RP sends its attributes to the IdP, and the IdP associates those attributes with the RP.
 
 4. Federation Protocol. The IdP and RP then communicate using a standard federation protocol.
 
 Protocols requiring the transfer of keying information SHALL use a secure method to establish such keying information needed to operate the federated relationship during the registration process, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
-IdPs SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes, and other information, made available to such RPs. An RP capable of dynamically registering MAY limit from which IdPs it is willing to accept identity information.
+IdPs SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit from which IdPs it is willing to accept identity information.
 
 Frequently, parties in a dynamic registration model do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of an RP being dynamically registered. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [Section 5.1.3](#authorities), or another trusted party). This cryptographically verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [RFC 7591](#RFC7591) Section 2.3 for more information on one protocol's implementation of software statements.)
 
@@ -125,7 +125,7 @@ Where proxies are used, they function as an IdP on one side and an RP on the oth
 **Figure 5-5 Federation Proxy**
 </div>
 
-A proxied federation model provides several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 5.2](#privacy-reqs) below.
+A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 5.2](#privacy-reqs) below.
 
 See [Section 9.5](#blinding) for further information on blinding techniques, their uses, and limitations.
 
