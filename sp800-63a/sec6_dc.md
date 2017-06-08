@@ -8,7 +8,7 @@ _This section is informative._
 
 Deriving credentials is based on the process of an individual proving to a CSP that they are the rightful subject of an identity record (i.e., a credential) that is bound to one or more authenticators they possess. This process is made available by a CSP that wants individuals to have an opportunity to obtain new authenticators bound to the existing, identity proofed record, or credential. As minimizing the number of times the identitiy proofing process is repeated benefits the individual and CSP, deriving identity is accomplished by proving possession and successful authentication of an authenticator that is already bound to the original, proofed digital identity.
 
-The definition of derived in this section does *not* imply that an authenticator is cryptographically tied to a primary authenticator, for example deriving a key from another key. Rather, an authenticator can be derived by simply issuing on the basis of successfully authenticating with an authenticator that is already bound to a proofed identity, as opposed to unnecessarily repeating an identity proofing process.
+The definition of derived in this section does *not* imply that an authenticator is cryptographically tied to a primary authenticator, for example deriving a key from another key. Rather, an authenticator can be derived by simply issuing on the basis of successful authentication with an authenticator that is already bound to a proofed identity, rather than unnecessarily repeating an identity proofing process.
 
 There are two specific use cases for deriving identity:
 
