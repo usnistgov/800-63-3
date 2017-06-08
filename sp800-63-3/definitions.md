@@ -1,14 +1,12 @@
 <a name="def-and-acr"></a>
 
-## Appendix A&mdash;Definitions and Abbreviations
+## Appendix A &mdash; Definitions and Abbreviations
 
 *This section is normative.*
 
 ### A.1 Definitions
 
-A wide variety of terms is used in the area of authentication. While many terms' definitions are consistent with earlier versions of SP 800-63, some have changed in this revision. Since there is no single, consistent definition for many of these terms, careful attention to how the terms are defined here is warranted.
-
-The definitions in this section are primarily those that are referenced in this document. Refer to the other documents in the SP 800-63  suite for additional definitions and abbreviations specific to their content.
+A wide variety of terms is used in the realm of authentication. While many terms' definitions are consistent with earlier versions of SP 800-63, some have changed in this revision. Many of these terms lack a single, consistent definition, warranting careful attention to how the terms are defined here.
 
 #### <a name="access"></a> Access
 To make contact with one or more discrete functions of an online, digital service.
@@ -23,19 +21,19 @@ The validated and verified location (physical or digital) where an individual ca
 A subject undergoing the processes of enrollment and identity proofing.
 
 #### <a name="approved"></a> Approved Cryptography
-Federal Information Processing Standard (FIPS) approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
+Federal Information Processing Standard (FIPS)-approved or NIST recommended. An algorithm or technique that is either 1) specified in a FIPS or NIST Recommendation, or 2) adopted in a FIPS or NIST Recommendation.
 
 #### Assertion
 A statement from a verifier to an RP that contains information about a subscriber. Assertions may also contain verified attributes.
 
 #### Assertion Reference
-A data object, created in conjunction with an assertion, which identifies the verifier and includes a pointer to the full assertion held by the verifier.
+A data object, created in conjunction with an assertion, that identifies the verifier and includes a pointer to the full assertion held by the verifier.
 
 #### Asymmetric Keys
-Two related keys, consisting of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
+Two related keys, comprised of a public key and a private key, that are used to perform complementary operations such as encryption and decryption or signature verification and generation.
 
 #### Attack
-An attempt by an unauthorized entity to fool a verifier or an RP into believing that the unauthorized individual in question is the subscriber.
+An unauthorized entity's attempt to fool a verifier or RP into believing that the unauthorized individual in question is the subscriber.
 
 #### Attacker
 A party, including an insider, who acts with malicious intent to compromise a system.
@@ -44,28 +42,28 @@ A party, including an insider, who acts with malicious intent to compromise a sy
 A quality or characteristic ascribed to someone or something.
 
 #### Attribute Bundle
-A packaged set of attributes, usually contained within an assertion. Attribute bundles offer relying parties a simple way to retrieve the most relevant attributes they need from identity providers. Attribute bundles are synonymous with OpenID Connect scopes. See [OpenID Connect Core 1.0](http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims).
+A packaged set of attributes, usually contained within an assertion. Attribute bundles offer RPs a simple way to retrieve the most relevant attributes they need from IdPs. Attribute bundles are synonymous with OpenID Connect scopes [[OpenID Connect Core 1.0]](#OpenIDConnectCore).
 
 #### Attribute Reference
-A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute 'birthday', a reference could be 'older than 18' or 'born in December'.
+A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute "birthday," a reference could be "older than 18" or "born in December."
 
 #### Attribute Value
-A complete statement asserting a property of a subscriber, independent of format. For example, for the attribute 'birthday', a value could be '12/1/1980' or 'December 1, 1980'.
+A complete statement asserting a property of a subscriber, independent of format. For example, for the attribute "birthday," a value could be "12/1/1980" or "December 1, 1980."
 
 #### Authenticate
 See [Authentication](#authentication).
 
 #### Authenticated Protected Channel
-An encrypted communication channel that uses approved cryptography where the initiator of the connection (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) BCP 195 is an example of an authenticated protected channel when the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the authentication of the client by the server. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
+An encrypted communication channel that uses approved cryptography where the connection initiator (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) [[BCP 195]](#bcp195) is an example of an authenticated protected channel where the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the server to authenticate the client. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
 
 #### <a name="authentication"></a> Authentication
-Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system.
+Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to a system's resources.
 
 #### <a name="af"></a> Authentication Factor
 The three types of authentication factors are *something you know*, *something you have*, and *something you are*. Every authenticator has one or more authentication factors.
 
 #### Authentication Intent
-The process of confirming the intent of the claimant to authenticate or reauthenticate by including a process requiring user intervention in the authentication flow. Some authenticators (e.g., OTP devices) establish authentication intent as part of their operation, others require a specific step, such as pressing a button, to establish intent. Authentication intent is a countermeasure against use by malware of the endpoint as a proxy for authenticating an attacker without the subscriber's knowledge.
+The process of confirming the claimant's intent to authenticate or reauthenticate by including a process requiring user intervention in the authentication flow. Some authenticators (e.g., OTP devices) establish authentication intent as part of their operation, others require a specific step, such as pressing a button, to establish intent. Authentication intent is a countermeasure against use by malware of the endpoint as a proxy for authenticating an attacker without the subscriber's knowledge.
 
 #### Authentication Protocol
 A defined sequence of messages between a claimant and a verifier that demonstrates that the claimant has possession and control of one or more valid authenticators to establish their identity, and, optionally, demonstrates that the claimant is communicating with the intended verifier.
@@ -74,18 +72,15 @@ A defined sequence of messages between a claimant and a verifier that demonstrat
 An exchange of messages between a claimant and a verifier that results in authentication (or authentication failure) between the two parties.
 
 #### Authentication Secret
-A generic term for any secret value that could be used by an attacker to impersonate the subscriber in an authentication protocol.
+A generic term for any secret value that an attacker could use to impersonate the subscriber in an authentication protocol.
 
-These are further divided into *short-term authentication secrets*, which are only useful to an attacker for a limited period of time, and *long-term authentication secrets*, which allow an attacker to impersonate the subscriber until they are manually reset. The authenticator secret is the canonical example of a long term authentication secret, while the authenticator output, if it is different from the authenticator secret, is usually a short term authentication secret.
+These are further divided into *short-term authentication secrets*, which are only useful to an attacker for a limited period of time, and *long-term authentication secrets*, which allow an attacker to impersonate the subscriber until they are manually reset. The authenticator secret is the canonical example of a long-term authentication secret, while the authenticator output, if it is different from the authenticator secret, is usually a short-term authentication secret.
 
 #### Authenticator
-Something that the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
-
-#### Authenticator Type
-A category of authenticators having common characteristics. Some authenticator types provide one authentication factor; others provide two.
+Something the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant's identity. In previous editions of SP 800-63, this was referred to as a *token*.
 
 #### Authenticator Assurance Level (AAL)
-A category describing the strength  of the authentication process.
+A category describing the strength of the authentication process.
 
 #### Authenticator Output
 The output value generated by an authenticator. The ability to generate valid authenticator outputs on demand proves that the claimant possesses and controls the authenticator. Protocol messages sent to the verifier are dependent upon the authenticator output, but they may or may not explicitly contain it.
@@ -93,11 +88,14 @@ The output value generated by an authenticator. The ability to generate valid au
 #### Authenticator Secret
 The secret value contained within an authenticator.
 
+#### Authenticator Type
+A category of authenticators with common characteristics. Some authenticator types provide one authentication factor, others provide two.
+
 #### Authenticity
 The property that data originated from its purported source.
 
 #### Authoritative Source
-An entity that has access to, or verified copies of, accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by a policy decision of the agency or CSP before they can be used in the validation phase of identity proofing.
+An entity that has access to, or verified copies of, accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by a policy decision of the agency or CSP before they can be used in the identity proofing validation phase.
 
 #### Authorize
 A decision to grant [access](#access), typically automated by evaluating a subject's attributes.
@@ -106,7 +104,7 @@ A decision to grant [access](#access), typically automated by evaluating a subje
 Communication between two systems that relies on a direct connection (allowing for standard protocol-level proxies), without using redirects through an intermediary such as a browser. This can be accomplished using HTTP requests and responses.
 
 #### Bearer Assertion
-An assertion a party presents as proof of its identity, where possession of the assertion itself is sufficient proof of identity for the assertion bearer.
+The assertion a party presents as proof of identity, where possession of the assertion itself is sufficient proof of identity for the assertion bearer.
 
 #### Binding
 An association between a subscriber identity and an authenticator or given subscriber session.
@@ -115,32 +113,32 @@ An association between a subscriber identity and an authenticator or given subsc
 Automated recognition of individuals based on their biological and behavioral characteristics.
 
 #### Challenge-Response Protocol
-An authentication protocol where the verifier sends the claimant a challenge (usually a random value or a nonce) that the claimant combines with a secret (such as by hashing the challenge and a shared secret together, or by applying a private key operation to the challenge) to generate a response that is sent to the verifier. The verifier can independently verify the response generated by the claimant (such as by re-computing the hash of the challenge and the shared secret and comparing to the response, or performing a public key operation on the response) and establish that the claimant possesses and controls the secret.
+An authentication protocol where the verifier sends the claimant a challenge (usually a random value or nonce) that the claimant combines with a secret (such as by hashing the challenge and a shared secret together, or by applying a private key operation to the challenge) to generate a response that is sent to the verifier. The verifier can independently verify the response generated by the claimant (such as by re-computing the hash of the challenge and the shared secret and comparing to the response, or performing a public key operation on the response) and establish that the claimant possesses and controls the secret.
 
 #### Claimant
 A subject whose identity is to be verified using one or more authentication protocols.
 
 #### Claimed Address
-The physical location asserted by a subject at which they can be reached. It includes the individual's residential street address and may also include the individual's mailing address.
+The physical location asserted by a subject where they can be reached. It includes the individual's residential street address and may also include their mailing address.
 
 For example, a person with a foreign passport living in the U.S. will need to give an address when going through the identity proofing process. This address would not be an "address of record" but a "claimed address."
 
 #### Claimed Identity
-A declaration of unvalidated and unverified personal attributes by the applicant.
+An applicant's declaration of unvalidated and unverified personal attributes.
 
 #### Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA)
-An interactive feature added to web-forms to distinguish use of the form by humans as opposed to automated agents. Typically, it requires entering text corresponding to a distorted image or from a sound stream.
+An interactive feature added to web forms to distinguish whether a human or automated agent is using the form. Typically, it requires entering text corresponding to a distorted image or a sound stream.
 
 #### Credential
-An object or data structure that authoritatively binds an identity, via an identifier or identifiers, and, optionally, additional attributes, to at least one authenticator possessed and controlled by a subscriber.
+An object or data structure that authoritatively binds an identity - via an identifier or identifiers - and (optionally) additional attributes, to at least one authenticator possessed and controlled by a subscriber.
 
-While common usage often assumes that the credential is maintained by the subscriber, this document also uses the term to refer to electronic records maintained by the CSP which establish a binding between the subscriber's authenticator(s) and identity.
+While common usage often assumes that the subscriber maintains the credential, these guidelines also use the term to refer to electronic records maintained by the CSP that establish binding between the subscriber's authenticator(s) and identity.
 
 #### Credential Service Provider (CSP)
-A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. A CSP may be an independent third party, or may issue credentials for its own use.
+A trusted entity that issues or registers subscriber authenticators and issues electronic credentials to subscribers. A CSP may be an independent third party or issue credentials for its own use.
 
 #### Cross-site Request Forgery (CSRF)
-An attack in which a subscriber who is currently authenticated to an RP and connected through a secure session browses to an attacker's website, causing the subscriber to unknowingly invoke unwanted actions at the RP.
+An attack in which a subscriber currently authenticated to an RP and connected through a secure session browses to an attacker's website, causing the subscriber to unknowingly invoke unwanted actions at the RP.
 
 For example, if a bank website is vulnerable to a CSRF attack, it may be possible for a subscriber to unintentionally authorize a large money transfer, merely by viewing a malicious link in a webmail message while a connection to the bank is open in another browser window.
 
@@ -151,7 +149,7 @@ A vulnerability that allows attackers to inject malicious code into an otherwise
 An authenticator where the secret is a cryptographic key.
 
 #### Cryptographic Key
-A value used to control cryptographic operations, such as decryption, encryption, signature generation, or signature verification. For the purposes of this document, key requirements shall meet the minimum requirements stated in Table 2 of NIST SP 800-57 Part 1.
+A value used to control cryptographic operations, such as decryption, encryption, signature generation, or signature verification. For the purposes of these guidelines, key requirements shall meet the minimum requirements stated in Table 2 of NIST SP 800-57 Part 1.
 
 See also Asymmetric Keys, Symmetric Key.
 
@@ -168,10 +166,10 @@ A credential issued based on proof of possession and control of an authenticator
 The process of establishing confidence in user identities presented digitally to a system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
-An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation but not confidentiality protection.
+An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation, but not confidentiality protection.
 
 ####Diversionary
-In regards to KBV, a multiple-choice question for which all answers provided are incorrect, requiring the applicant to select an option similar to 'none of the above'.
+In regards to KBV, a multiple-choice question for which all answers provided are incorrect, requiring the applicant to select an option similar to "none of the above."
 
 #### Eavesdropping Attack
 An attack in which an attacker listens passively to the authentication protocol to capture information that can be used in a subsequent active attack to masquerade as the claimant.
@@ -183,18 +181,15 @@ See *Digital Authentication*.
 The process through which an applicant applies to become a subscriber of a CSP and the CSP validates the applicant's identity.
 
 #### Entropy
-A measure of the amount of uncertainty that an attacker faces to determine the value of a secret. Entropy is usually stated in bits. A value having *n* bits of entropy has the same degree of uncertainty as a uniformly distributed *n*-bit random value.
-
-#### Equal Error Rate (EER)
-The value where a sensor's false match rate (FMR) and false non-match rate (FNMR) are equal. EER is a figure of merit for the sensor; the lower the EER is, the more certain the sensor's decision is likely to be.
+A measure of the amount of uncertainty an attacker faces to determine the value of a secret. Entropy is usually stated in bits. A value having *n* bits of entropy has the same degree of uncertainty as a uniformly distributed *n*-bit random value.
 
 #### Federal Information Processing Standard (FIPS)
-Under the Information Technology Management Reform Act (Public Law 104-106), the Secretary of Commerce approves the standards and guidelines developed by the National Institute of Standards and Technology (NIST) for federal computer systems. These standards and guidelines are issued by NIST as Federal Information Processing Standards (FIPS) for use government-wide. NIST develops FIPS when there are compelling federal government requirements, such as for security and interoperability and there are no acceptable industry standards or solutions. See background information for more details.
+Under the Information Technology Management Reform Act (Public Law 104-106), the Secretary of Commerce approves the standards and guidelines that the National Institute of Standards and Technology (NIST) develops for federal computer systems. NIST issues these standards and guidelines as Federal Information Processing Standards (FIPS) for government-wide use. NIST develops FIPS when there are compelling federal government requirements, such as for security and interoperability, and there are no acceptable industry standards or solutions. See background information for more details.
 
-FIPS documents are available online through the FIPS home page: <http://www.nist.gov/itl/fips.cfm>
+FIPS documents are available online on the FIPS home page: <http://www.nist.gov/itl/fips.cfm>
 
 #### Federation
-A process that allows for the conveyance of identity and authentication information across a set of networked systems.
+A process that allows the conveyance of identity and authentication information across a set of networked systems.
 
 #### Federation Assurance Level (FAL)
 A category describing the assertion protocol used by the federation to communicate authentication and attribute information (if applicable) to an RP.
@@ -206,7 +201,7 @@ A component that acts as a logical RP to a set of IdPs and a logical IdP to a se
 Communication between two systems that relies on redirects through an intermediary such as a browser. This is normally accomplished by appending HTTP query parameters to URLs hosted by the receiver of the message.
 
 #### Hash Function
-A function that maps a bit string of arbitrary length to a fixed length bit string. Approved hash functions satisfy the following properties:
+A function that maps a bit string of arbitrary length to a fixed-length bit string. Approved hash functions satisfy the following properties:
 
 1. One-way - It is computationally infeasible to find any input that maps to any pre-specified output; and
 
@@ -219,7 +214,7 @@ An attribute or set of attributes that uniquely describe a subject within a give
 A category that conveys the degree of confidence that the applicant's claimed identity is their real identity.
 
 #### Identity Evidence
-Information or documentation that is provided by the applicant to support the claimed identity. Identity evidence may be physical (e.g. a driver license) or digital (e.g. an assertion generated and issued by a CSP based on the applicant successfully authenticating to the CSP).
+Information or documentation provided by the applicant to support the claimed identity. Identity evidence may be physical (e.g. a driver license) or digital (e.g. an assertion generated and issued by a CSP based on the applicant successfully authenticating to the CSP).
 
 #### Identity Proofing
 The process by which a CSP collects, validates, and verifies information about a person.
@@ -231,18 +226,18 @@ The party that manages the subscriber’s primary authentication credentials and
 An authority responsible for the generation of data, digital evidence (such as assertions), or physical documents that can be used as identity evidence. 
 
 #### Kerberos
-A widely used authentication protocol developed at MIT. In "classic" Kerberos, users share a secret password with a Key Distribution Center (KDC). The user, Alice, who wishes to communicate with another user, Bob, authenticates to the KDC and is furnished a "ticket" by the KDC to use to authenticate with Bob.
+A widely used authentication protocol developed at MIT. In "classic" Kerberos, users share a secret password with a Key Distribution Center (KDC). The user (Alice) who wishes to communicate with another user (Bob) authenticates to the KDC and the KDC furnishes a "ticket" to use to authenticate with Bob.
 
 See [SP 800-63C Section 11.2](sp800-63c.html#kerberos) for more information.
 
-#### Knowledge Based Verification (KBV)
+#### Knowledge-Based Verification (KBV)
 Identity verification method based on knowledge of private information associated with the claimed identity. This is often referred to as knowledge-based authentication (KBA) or knowledge-based proofing (KBP).
 
 #### Man-in-the-Middle Attack (MitM)
 An attack in which an attacker is positioned between two communicating parties in order to intercept and/or alter data traveling between them. In the context of authentication, the attacker would be positioned between claimant and verifier, between registrant and CSP during enrollment, or between subscriber and CSP during authenticator binding.
 
 #### Memorized Secret
-A type of authenticator consisting of a character string that is intended to be memorized or memorable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
+A type of authenticator comprised of a character string intended to be memorized or memorable by the subscriber, permitting the subscriber to demonstrate *something they know* as part of an authentication process.
 
 #### Message Authentication Code (MAC)
 A cryptographic checksum on data that uses a symmetric key to detect both accidental and intentional modifications of the data. MACs provide authenticity and integrity protection, but not non-repudiation protection.
@@ -264,7 +259,7 @@ The three authentication factors are *something you know*, *something you have*,
 An authenticator that provides more than one distinct authentication factor, such as a cryptographic authentication device with an integrated biometric sensor that is required to activate the device.
 
 #### Network
-An open communications medium, typically the Internet, that is used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the security of the network; it is assumed to be open and subject to active (e.g., impersonation, man-in-the-middle, session hijacking) and passive (e.g., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP, RP).
+An open communications medium, typically the Internet, used to transport messages between the claimant and other parties. Unless otherwise stated, no assumptions are made about the network's security; it is assumed to be open and subject to active (e.g., impersonation, man-in-the-middle, session hijacking) and passive (e.g., eavesdropping) attack at any point between the parties (e.g., claimant, verifier, CSP, RP).
 
 #### Nonce
 A value used in security protocols that is never repeated with the same key. For example, nonces used as challenges in challenge-response authentication protocols SHALL not be repeated until authentication keys are changed. Otherwise, there is a possibility of a replay attack. Using a nonce as a challenge is a different requirement than a random challenge, because a nonce is not necessarily unpredictable.
@@ -294,12 +289,12 @@ See *memorized secret*.
 
 See *Personally Identifiable Information*.
 
+#### Personal Identification Number (PIN)
+A memorized secret typically consisting of only decimal digits.
+
 #### Personal Information
 
 See *Personally Identifiable Information*.
-
-#### Personal Identification Number (PIN)
-A memorized secret typically consisting of only decimal digits.
 
 #### Personally Identifiable Information (PII)
 As defined by OMB Circular A-130, Personally Identifiable Information is information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual.
@@ -314,7 +309,7 @@ An attack in which the subscriber is lured (usually through an email) to interac
 The ability to activate and use the authenticator in an authentication protocol.
 
 #### Practice Statement
-A formal statement of the practices followed by the parties to an authentication process (e.g., CSP or verifier). It usually describes the policies and practices of the parties and can become legally binding.
+A formal statement of the practices followed by the parties to an authentication process (e.g., CSP or verifier). It usually describes the parties' policies and practices and can become legally binding.
 
 #### Private Credentials
 Credentials that cannot be disclosed by the CSP because the contents can be used to compromise the authenticator.
@@ -322,16 +317,16 @@ Credentials that cannot be disclosed by the CSP because the contents can be used
 #### Private Key
 The secret part of an asymmetric key pair that is used to digitally sign or decrypt data.
 
-#### Protected Session
-A session wherein messages between two participants are encrypted and integrity is protected using a set of shared secrets called session keys.
-
-A participant is said to be *authenticated* if, during the session, they prove possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
-
 #### Presentation Attack
 Presentation to the biometric data capture subsystem with the goal of interfering with the operation of the biometric system.
 
 #### Presentation Attack Detection (PAD)
 Automated determination of a presentation attack. A subset of presentation attack determination methods, referred to as *liveness detection*, involve measurement and analysis of anatomical characteristics or involuntary or voluntary reactions, in order to determine if a biometric sample is being captured from a living subject present at the point of capture.
+
+#### Protected Session
+A session wherein messages between two participants are encrypted and integrity is protected using a set of shared secrets called session keys.
+
+A participant is said to be *authenticated* if, during the session, they prove possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
 
 #### Protected Session
 A session established on an authenticated protected channel.
@@ -385,7 +380,7 @@ The process of identifying, estimating, and prioritizing risks to organizational
 The program and supporting processes to manage information security risk to organizational operations (including mission, functions, image, reputation), organizational assets, individuals, other organizations, and includes: (i) establishing the context for risk-related activities; (ii) assessing risk; (iii) responding to risk once determined; and (iv) monitoring risk over time.
 
 #### Salt
-A non-secret value that is used in a cryptographic process, usually to ensure that the results of computations for one instance cannot be reused by an attacker.
+A non-secret value used in a cryptographic process, usually to ensure that the results of computations for one instance cannot be reused by an attacker.
 
 #### Secure Sockets Layer (SSL)
 See *Transport Layer Security (TLS)*.
@@ -394,13 +389,13 @@ See *Transport Layer Security (TLS)*.
 A persistent interaction between a subscriber and an endpoint, either an RP or a CSP. A session begins with an authentication event and ends with a session termination event. A session is bound by use of a session secret that the subscriber's software (a browser, application, or OS) can present to the RP or CSP in lieu of the subscriber's authentication credentials.
 
 #### Session Hijack Attack
-An attack in which the attacker is able to insert himself or herself between a claimant and a verifier subsequent to a successful authentication exchange between the latter two parties. The attacker is able to pose as a subscriber to the verifier or vice versa to control session data exchange. Sessions between the claimant and the RP can also be similarly compromised.
+An attack in which the attacker is able to insert himself or herself between a claimant and a verifier subsequent to a successful authentication exchange between the latter two parties. The attacker is able to pose as a subscriber to the verifier or vice versa to control session data exchange. Sessions between the claimant and the RP can be similarly compromised.
 
 #### Shared Secret
 A secret used in authentication that is known to the subscriber and the verifier.
 
-#### Side Channel Attack
-An attack enabled by leakage of information from a physical cryptosystem. Timing, power consumption, electromagnetic and acoustic emissions are examples of characteristics that could be exploited in a side-channel attack.
+#### Side-Channel Attack
+An attack enabled by leakage of information from a physical cryptosystem. Characteristics that could be exploited in a side-channel attack include timing, power consumption, and electromagnetic and acoustic emissions.
 
 #### <a name="sf"></a> Single-factor
 A characteristic of an authentication system or an authenticator that requires only one authentication factor (something you know, something you have, or something you are) for successful authentication.
@@ -411,14 +406,14 @@ The act of deceiving an individual into revealing sensitive information, obtaini
 #### Special Publication (SP)
 A type of publication issued by NIST. Specifically, the SP 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 
-#### Subject  
+#### Subject 
 A person, organization, device, hardware, network, software, or service.
 
 #### Subscriber
 A party who has received a credential or authenticator from a CSP.
 
 #### Symmetric Key
-A cryptographic key that is used to perform both the cryptographic operation and its inverse, for example to encrypt and decrypt, or create a message authentication code and to verify the code.
+A cryptographic key used to perform both the cryptographic operation and its inverse. For example, to encrypt and decrypt or create a message authentication code and to verify the code.
 
 #### Token
 See *Authenticator*.
@@ -434,13 +429,13 @@ See *Authenticator Secret*.
 A discrete event between a user and a system that supports a business or programmatic purpose. A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall digital identity risk assessment.
 
 #### Transport Layer Security (TLS)
-An authentication and security protocol widely implemented in browsers and web servers. TLS is defined by RFC 5246. TLS is similar to the older SSL protocol, and TLS 1.0 is effectively SSL version 3.1. NIST SP 800-52, *Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations* specifies how TLS is to be used in government applications.
+An authentication and security protocol widely implemented in browsers and web servers. TLS is defined by RFC 5246. TLS is similar to the older SSL protocol, and TLS 1.0 is effectively SSL version 3.1. NIST SP 800-52, *Guidelines for the Selection and Use of Transport Layer Security (TLS) Implementations*, specifies how TLS is to be used in government applications.
 
 #### Trust Anchor
 A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate). A trust anchor may have name or policy constraints limiting its scope.
 
 #### Usability
-Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use.
+Per [ISO/IEC 9241-11](#ISO9241): Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use.
 
 #### Verifier
 An entity that verifies the claimant's identity by verifying the claimant's possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber's identifier and check their status.
@@ -458,7 +453,7 @@ Credentials that are bound to a subscriber in a manner than can be modified with
 Overwrite a memory location with data consisting entirely of bits with the value zero so that the data is destroyed and not recoverable. This is often contrasted with deletion methods that merely destroy reference to data within a file system rather than the data itself.
 
 #### Zero-knowledge Password Protocol
-A password based authentication protocol that allows a claimant to authenticate to a verifier without revealing the password to the verifier. Examples of such protocols are EKE, SPEKE and SRP.
+A password-based authentication protocol that allows a claimant to authenticate to a verifier without revealing the password to the verifier. Examples of such protocols are EKE, SPEKE and SRP.
 
 ### A.2 Abbreviations
 
@@ -467,8 +462,8 @@ Selected abbreviations in these guidelines are defined below.
 |Abbreviation|Term|
 |:-----|:---------|
 |ABAC|Attribute Based Access Control|
-|AS|Authentication Server|
 |AAL|Authenticator Assurance Level|
+|AS|Authentication Server|
 |CAPTCHA|Completely Automated Public Turing test to tell Computer and Humans Apart|
 |CSP|Credential Service Provider|
 |CSRF|Cross-site Request Forgery|
@@ -476,46 +471,46 @@ Selected abbreviations in these guidelines are defined below.
 |DNS|Domain Name Service|
 |EO|Executive Order|
 |FACT Act|Fair and Accurate Credit Transaction Act of 2003|
+|FAL|Federation Assurance Level|
 |FEDRAMP|Federal Risk and Authorization Management Program|
 |FMR|False Match Rate|
 |FNMR|False Non-Match Rate|
 |FIPS|Federal Information Processing Standard|
 |FISMA|Federal Information Security Modernization Act|
-|FAL|Federation Assurance Level|
 |IAL|Identity Assurance Level|
 |IM|Identity Manager|
 |IdP|Identity Provider|
 |IoT|Internet of Things|
-|JSON|JavaScript Object Notation |
 |JOSE|JSON Object Signing and Encryption|
+|JSON|JavaScript Object Notation |
 |JWT|JSON Web Token|
+|KBA|Knowledge-Based Authentication|
+|KBV|Knowledge-Based Verification|
 |KDC|Key Distribution Center|
-|KBA|Knowledge Based Authentication|
-|KBV|Knowledge Based Verification|
 |LOA|Level of Assurance|
+|MAC|Message Authentication Code|
 |MitM|Man-in-the-Middle|
 |MitMA|Man-in-the-Middle Attack|
-|MAC|Message Authentication Code|
 |MFA|Multi-factor Authentication|
-|NARA|National Archives and Records Administration|
 |N/A|Not Applicable|
+|NARA|National Archives and Records Administration|
 |OMB|Office of Management and Budget|
 |OTP|One-Time Password|
+|PAD|Presentation Attack Detection|
 |PHI|Personal Health Information|
+|PIA|Privacy Impact Assessment |
 |PII|Personal Identifiable Information|
 |PIN|Personal Identification Number|
-|PAD|Presentation Attack Detection|
-|PIA|Privacy Impact Assessment |
 |PKI|Public Key Infrastructure |
 |PL|Public Law|
 |PSTN|Public Switched Telephone Network|
 |RA|Registration Authority|
-|RP|Relying Party|
 |RMF|Risk Management Framework|
-|SSL|Secure Sockets Layer|
-|SAML|Security Assertion Markup Language|
+|RP|Relying Party|
 |SA&A|Security Authorization & Accreditation|
+|SAML|Security Assertion Markup Language|
 |SAOP|Senior Agency Official for Privacy|
+|SSL|Secure Sockets Layer|
 |SMS|Short Message Service|
 |SP|Special Publication|
 |SORN|System of Records Notice|
