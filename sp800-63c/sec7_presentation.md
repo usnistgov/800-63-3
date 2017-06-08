@@ -36,7 +36,7 @@ The assertion reference:
 
 In this model, the assertion itself is requested directly from the IdP by the RP, minimizing chances of interception and manipulation by a third party (including the subscriber themselves).
 
-This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has been completed, without sending the user back to the IdP. This query occurs using an authorization credential issued alongside the assertion, as described in [Section 6](#assertions).
+This method also allows the RP to query the IdP for additional attributes about the subscriber not included in the assertion itself, since back-channel communication can continue to occur after the initial authentication transaction has been completed without sending the user back to the IdP. This query occurs using an authorization credential issued alongside the assertion, as described in [Section 6](#assertions).
 
 In the back-channel method, there are more network transactions required, but the information is limited to only those parties that need it. Since an RP is expecting to get an assertion only from the IdP directly, the attack surface is reduced. Consequently, it is more difficult to inject assertions directly into the RP.
 
