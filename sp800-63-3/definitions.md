@@ -8,13 +8,13 @@
 
 A wide variety of terms is used in the realm of authentication. While many terms' definitions are consistent with earlier versions of SP 800-63, some have changed in this revision. Many of these terms lack a single, consistent definition, warranting careful attention to how the terms are defined here.
 
-This section primarily defines terms used in this volume. Refer to the other volumes in the SP 800-63 suite for additional definitions and abbreviations specific to their content.
+The definitions in this section are primarily terms used in these guidelines. Refer to the other volumes in the SP 800-63  suite for additional definitions and abbreviations specific to their content.
 
 #### <a name="access"></a> Access
 To make contact with one or more discrete functions of an online, digital service.
 
 #### Active Attack
-An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider (CSP), verifier, or Relying Party (RP). Examples of active attacks include man-in-the-middle (MitM), impersonation and session hijacking.
+An attack on the authentication protocol where the attacker transmits data to the claimant, Credential Service Provider (CSP), verifier, or Relying Party (RP). Examples of active attacks include man-in-the-middle (MitM), impersonation, and session hijacking.
 
 #### Address of Record
 The validated and verified location (physical or digital) where an individual can receive communications using approved mechanisms.
@@ -56,7 +56,7 @@ A complete statement asserting a property of a subscriber, independent of format
 See [Authentication](#authentication).
 
 #### Authenticated Protected Channel
-An encrypted communication channel that uses approved cryptography where the connection initiator (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) Best Current Practice (BCP) 195 is an example of an authenticated protected channel where the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the server to authenticate the client. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
+An encrypted communication channel that uses approved cryptography where the connection initiator (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) Best Current Practice [BCP 195] is an example of an authenticated protected channel where the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the server to authenticate the client. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
 
 #### <a name="authentication"></a> Authentication
 Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to a system's resources.
@@ -184,9 +184,6 @@ The process through which an applicant applies to become a subscriber of a CSP a
 
 #### Entropy
 A measure of the amount of uncertainty an attacker faces to determine the value of a secret. Entropy is usually stated in bits. A value having *n* bits of entropy has the same degree of uncertainty as a uniformly distributed *n*-bit random value.
-
-#### Equal Error Rate (EER)
-The value where a sensor's false match rate (FMR) and false non-match rate (FNMR) are equal. EER is a figure of merit for the sensor; the lower the EER, the more certain the sensor's decision is likely to be.
 
 #### Federal Information Processing Standard (FIPS)
 Under the Information Technology Management Reform Act (Public Law 104-106), the Secretary of Commerce approves the standards and guidelines that the National Institute of Standards and Technology (NIST) develops for federal computer systems. NIST issues these standards and guidelines as Federal Information Processing Standards (FIPS) for government-wide use. NIST develops FIPS when there are compelling federal government requirements, such as for security and interoperability, and there are no acceptable industry standards or solutions. See background information for more details.
@@ -400,7 +397,7 @@ An attack in which the attacker is able to insert himself or herself between a c
 A secret used in authentication that is known to the subscriber and the verifier.
 
 #### Side Channel Attack
-An attack enabled by leakage of information from a physical cryptosystem. Characteristics that could be exploited in a side-channel attack include timing, power consumption, electromagnetic and acoustic emissions.
+An attack enabled by leakage of information from a physical cryptosystem. Characteristics that could be exploited in a side-channel attack include timing, power consumption, and electromagnetic and acoustic emissions.
 
 #### <a name="sf"></a> Single-factor
 A characteristic of an authentication system or an authenticator that requires only one authentication factor (something you know, something you have, or something you are) for successful authentication.
@@ -440,7 +437,7 @@ An authentication and security protocol widely implemented in browsers and web s
 A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate). A trust anchor may have name or policy constraints limiting its scope.
 
 #### Usability
-Per  International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 9241-11: Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use.
+Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use.
 
 #### Verifier
 An entity that verifies the claimant's identity by verifying the claimant's possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber's identifier and check their status.
