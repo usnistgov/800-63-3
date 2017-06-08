@@ -101,7 +101,7 @@ There are several other strategies that may be applied to mitigate the threats d
 
 * *System and network security controls* may be employed to prevent an attacker from gaining access to a system or installing malicious software.
 
-* *Periodic training* may be performed to ensure subscribers understand when and how to report compromise - or suspicion of compromise - or otherwise recognize patterns of behavior that may signify an attacker attempting to compromise the authentication process.
+* *Periodic training* may be performed to ensure subscribers understand when and how to report compromise — or suspicion of compromise — or otherwise recognize patterns of behavior that may signify an attacker attempting to compromise the authentication process.
 
 * *Out of band techniques* may be employed to verify proof of possession of registered devices (e.g., cell phones).
 

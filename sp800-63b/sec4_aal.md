@@ -12,7 +12,7 @@ See [SP 800-63 Section 6.2](sp800-63-3.html#AAL_CYOA) for details on how to choo
 
 FIPS 140 requirements are satisfied by [FIPS 140-2](#FIPS140-2) or newer revisions.
 
-At IAL1, it is possible that attributes are collected and made available by the digital identity service. Any PII or other personal information – whether self-asserted or validated – requires multi-factor authentication. Therefore, agencies SHALL select a minimum of AAL2 when self-asserted PII or other personal information is made available online.
+At IAL1, it is possible that attributes are collected and made available by the digital identity service. Any PII or other personal information — whether self-asserted or validated — requires multi-factor authentication. Therefore, agencies SHALL select a minimum of AAL2 when self-asserted PII or other personal information is made available online.
 
 ### 4.1 Authenticator Assurance Level 1
 
@@ -80,13 +80,13 @@ When a combination of two single-factor authenticators is used, it SHALL include
 
 Cryptographic authenticators used at AAL2 SHALL use approved cryptography. Authenticators procured by government agencies SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1. Software-based authenticators that operate within the context of an operating system MAY, where applicable, attempt to detect compromise of the platform in which they are running (e.g., by malware) and SHOULD not complete the operation when such a compromise is detected. At least one authenticator used at AAL2 SHALL be replay resistant as described in [Section 5.2.8](#replay). Authentication at AAL2 SHOULD demonstrate authentication intent from at least one authenticator as discussed in [Section 5.2.9](#intent).
 
-Communication between the claimant and verifier – the primary channel in the case of an out-of-band authenticator – SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
+Communication between the claimant and verifier — the primary channel in the case of an out-of-band authenticator — SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks.
 
 Verifiers operated by government agencies at AAL2 SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1.
 
-When a device such a smartphone is used in the authentication process, the unlocking of that device – typically done using a PIN or biometric – SHALL NOT be considered one of the authentication factors. This is because it is generally not possible for a verifier to know that the device had been locked or if the unlock process met the requirements for the relevant authenticator type.
+When a device such a smartphone is used in the authentication process, the unlocking of that device — typically done using a PIN or biometric — SHALL NOT be considered one of the authentication factors. This is because it is generally not possible for a verifier to know that the device had been locked or if the unlock process met the requirements for the relevant authenticator type.
 
-When a biometric factor is used in authentication at AAL2, the performance requirements stated in [Section 5.2.3](#biometric_use) SHALL be met and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
+When a biometric factor is used in authentication at AAL2, the performance requirements stated in [Section 5.2.3](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
 
 #### <a name="aal2reauth"></a>4.2.3 Reauthentication
 
@@ -104,7 +104,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### 4.3 Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance – the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL prove possession and control of [two distinct authentication factors](sp800-63-3.html#mfa-definition) through secure authentication protocol(s). [Approved cryptographic](sp800-63-3.html#approved) techniques are required.
+AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance — the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL prove possession and control of [two distinct authentication factors](sp800-63-3.html#mfa-definition) through secure authentication protocol(s). [Approved cryptographic](sp800-63-3.html#approved) techniques are required.
 
 #### <a name="aal3types"></a>4.3.1 Permitted Authenticator Types
 
@@ -129,13 +129,13 @@ Verifiers at AAL3 SHALL be verifier compromise resistant as described in [Sectio
 
 Hardware-based authenticators and verifiers at AAL3 SHOULD resist relevant side-channel (e.g., timing and power-consumption analysis) attacks. Relevant side-channel attacks SHALL be determined by a risk assessment performed by the CSP.
 
-When a device such a smartphone is used in the authentication process – presuming that the device is able to meet the requirements above - the unlocking of that device SHALL NOT be considered to satisfy one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked nor whether the unlock process met the requirements for the relevant authenticator type.
+When a device such a smartphone is used in the authentication process — presuming that the device is able to meet the requirements above — the unlocking of that device SHALL NOT be considered to satisfy one of the authentication factors. This is because it is generally not possible for verifier to know that the device had been locked nor whether the unlock process met the requirements for the relevant authenticator type.
 
 When a biometric factor is used in authentication at AAL3, the verifier SHALL make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in [Section 5.2.3](#biometric_use).
 
 #### <a name="aal3reauth"></a>4.3.3 Reauthentication
 
-Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL3, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity, as described in [Section 7.2](#sessionreauthn). At a minimum, reauthentication of the subscriber SHALL be repeated following any period of inactivity last 15 minutes. Reauthentication SHALL use both authentication factors. The session SHALL be terminated (i.e., logged out) when either of these time limits is reached. The verifier MAY prompt the user to cause activity just before the inactivity timeout.
+Periodic reauthentication of subscriber sessions SHALL be performed as described in [Section 7.2](#sessionreauthn). At AAL3, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity, as described in [Section 7.2](#sessionreauthn). Reauthentication of the subscriber SHALL be repeated following any period of inactivity lasting 15 minutes or longer. Reauthentication SHALL use both authentication factors. The session SHALL be terminated (i.e., logged out) when either of these time limits is reached. The verifier MAY prompt the user to cause activity just before the inactivity timeout.
 
 #### 4.3.4 Security Controls
 
