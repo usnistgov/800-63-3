@@ -1,6 +1,6 @@
 <a name="def-and-acr"></a>
 
-## Appendix A&mdash;Definitions and Abbreviations
+## Appendix A &mdash; Definitions and Abbreviations
 
 *This section is normative.*
 
