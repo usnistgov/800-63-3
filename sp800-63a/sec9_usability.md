@@ -6,13 +6,13 @@
 
 _This section is informative._
 
-The goal of this section is to raise implementers' awareness of usability considerations associated with enrollment and identity proofing (for usability considerations for typical authenticator usage and intermittent events, see [SP 800-63B](#800-63b).
+This section is intended to raise implementers' awareness of the usability considerations associated with enrollment and identity proofing (for usability considerations for typical authenticator usage and intermittent events, see [SP 800-63B](#800-63b).
 
-[ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, goals, and context of use as key elements necessary for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability. 
+International Organization for Standardization/International Electrotechnical Commission [ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, goals, and context of use as the necessary elements for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability.
 
 The overarching goal of usability for enrollment and identity proofing is to promote a smooth, positive enrollment process for users by minimizing user burden (e.g., time and frustration) and enrollment friction (e.g., the number of steps to complete and amount of information to track). To achieve this goal, organizations have to first familiarize themselves with their users.
 
-The enrollment and identity proofing process sets the stage for a user's interactions with a given CSP and the online services that the user will access; since negative first impressions can influence user perception of subsequent interactions, organizations need to promote a positive user experience throughout the process. 
+The enrollment and identity proofing process sets the stage for a user's interactions with a given CSP and the online services that the user will access; as negative first impressions can influence user perception of subsequent interactions, organizations need to promote a positive user experience throughout the process.
 
 Usability cannot be achieved in a piecemeal manner. Performing a usability evaluation on the enrollment and identity proofing process is critical. It is important to conduct usability evaluation with representative users, realistic goals and tasks, and appropriate contexts of use. The enrollment and identity proofing process should be designed and implemented so it is easy for users to do the right thing, hard to do the wrong thing, and easy to recover when the wrong thing happens.
 
@@ -20,7 +20,7 @@ From the user's perspective, the three main steps of enrollment and identity pro
 
 General and step-specific usability considerations are described in sub-sections below.
 
-##### ASSUMPTIONS 
+##### ASSUMPTIONS
 
 In this section, the term "users" means "applicants" or "subscribers."
 
@@ -31,17 +31,17 @@ Accessibility differs from usability and is out of scope for this document. [Sec
 ### 9.1 General User Experience Considerations During Enrollment and Identity Proofing
 
 
-This sub-section provides usability considerations that are applicable across all steps. Usability considerations specifically for each step are detailed in [Sections 9.2](#sec9_2) to [9.4](#sec9_4).
+This sub-section provides usability considerations that are applicable across all steps. Usability considerations specific to each step are detailed in [Sections 9.2](#sec9_2) to [9.4](#sec9_4).
 
-* Minimize the number of steps at every step of the process required for enrollment and make each step as clear and easy as possible for users, in order to avoid user frustration.
+* To avoid user frustration, minimize the number of steps at every step of the process required for enrollment and make each step as clear and easy as possible.
  
-* Clearly communicate how and where to acquire technical assistance. For example, provide users helpful information, such as a link to online self-service feature, chat sessions, and a phone number for help desk support. Ideally, sufficient information should be provided to enable users to answer their own enrollment preparation questions without outside intervention.
+* Clearly communicate how and where to acquire technical assistance. For example, provide helpful information such as a link to online self-service feature, chat sessions, and a phone number for help desk support. Ideally, sufficient information should be provided to enable users to answer their own enrollment preparation questions without outside intervention.
 
-* Clearly explain to users who is collecting their data and why. Also indicate the path their data will take, in particular where the data is being stored.
+* Clearly explain who is collecting their data and why. Also indicate the path their data will take, in particular where the data is being stored.
 
-* Ensure all information presented to the user is usable: 
+* Ensure all information presented is usable.
   * Follow good information design practice for all user-facing materials (e.g., data collection notices and fillable forms). 
-  * Write materials in plain language, typically at a 6th to 8th grade literacy level and avoid technical jargon. Use active voice and conversational style, logically sequence main points, use the same word consistently rather than synonyms to avoid confusion, and use bullets, numbers, and formatting where appropriate to aid readability. 
+  * Write materials in plain language, typically at a 6th to 8th grade literacy level, and avoid technical jargon. Use active voice and conversational style, logically sequence main points, use the same word consistently rather than synonyms to avoid confusion, and use bullets, numbers, and formatting where appropriate to aid readability. 
   * Consider text legibility, such as font style, size, color, and contrast with surrounding background. The highest contrast is black on white. Text legibility is important because users have different levels of visual acuity. Illegible text will contribute to user comprehension errors or user entry errors (e.g., when completing fillable forms).
   * Use sans serif font styles for electronic materials and serif fonts for paper materials.
   * When possible, avoid fonts that do not clearly distinguish between easily confusable characters (such as the letter "O" and the number "0"). This is especially important for enrollment codes.
@@ -53,33 +53,33 @@ This sub-section provides usability considerations that are applicable across al
 
 This section describes an effective approach to facilitate sufficient pre-enrollment preparation so users can avoid challenging, frustrating enrollment sessions. Ensuring users are as prepared as possible for their enrollment sessions is critical to the overall success and usability of the enrollment and identity proofing process. 
 
-Such preparation is only possible if users receive the necessary information (e.g., documentation required) in a usable format in an appropriate timeframe. This includes making users aware of exactly what identity evidence will be required, conveyed from users' perspective, not the implementers' perspectives. Users do not need to know anything about IALs or whether the identity evidence required is scored as 'fair', 'strong', or 'superior,' whereas organizations need to know what type of IAL is required for access to a particular system. 
+Such preparation is only possible if users receive the necessary information (e.g., required documentation) in a usable format in an appropriate timeframe. This includes making users aware of exactly what identity evidence will be required. Users do not need to know anything about IALs or whether the identity evidence required is scored as "fair," "strong," or "superior," whereas organizations need to know what type of IAL is required for access to a particular system. 
 
-In order to ensure users are equipped to make informed decisions about whether to proceed with the enrollment process, and what will be needed for their session, provide users: 
+To ensure users are equipped to make informed decisions about whether to proceed with the enrollment process, and what will be needed for their session, provide users: 
 
 * Information about the entire process, such as what to expect in each step.   
   * Clear explanations of the expected timeframes to allow users to plan accordingly. 
 
-* Explanation of the need for—and benefits of—identity proofing to allow users to understand the value proposition. 
+* Explanation of the need for — and benefits of — identity proofing to allow users to understand the value proposition. 
 
-* Information on the monetary amount and acceptable forms of payment, if there is an enrollment fee. Offering a larger variety of acceptable forms of payment allows users to choose their preferred payment operation.
+* Information on the monetary amount and acceptable forms of payment, and if there is an enrollment fee. Offering a larger variety of acceptable forms of payment allows users to choose their preferred payment operation.
 
-* Information on whether the user's enrollment session will be in-person or in-person over remote channels, and whether a user can choose. Only provide information relevant to the allowable session option(s). 
-  * Information on the location(s), whether a user can choose her or his preferred location, and necessary logistical information for in-person or in-person over remote channels session. Note that users may be reluctant to bring identity evidence to certain public places (bank versus supermarket), as it increases exposure to loss or theft.
+* Information on whether the user's enrollment session will be in-person or in-person over remote channels, and whether a user can choose. Only provide information relevant to the allowable session option(s).
+  * Information on the location(s), whether a user can choose their preferred location, and necessary logistical information for in-person or in-person over remote channels session. Note that users may be reluctant to bring identity evidence to certain public places (bank versus supermarket), as it increases exposure to loss or theft.
   * Information on the technical requirements (e.g., requirements for internet access) for remote sessions.
   * An option to set an appointment for in-person or in-person over remote channels identity proofing sessions to minimize wait times. If walk-ins are allowed, make it clear to users that their wait times may be greater without an appointment.
-    * Provide clear instructions regarding setting up an enrollment session appointment and reminders, and how to reschedule existing appointments.
+    * Provide clear instructions for setting up an enrollment session appointment, reminders, and how to reschedule existing appointments.
     * Offer appointment reminders and allow users to specify their preferred appointment reminder format(s) (e.g., postal mail, voicemail, email, text message). Users need information such as date, time, location, and a description of required identity evidence.
 * Information on the allowed and required identity evidence and attributes, whether each piece is voluntary or mandatory, and the consequences for not providing the complete set of identity evidence. Users need to know the specific combinations of identity evidence, including requirements specific to a piece of identity evidence (e.g., a raised seal on a birth certificate). This is especially important due to potential difficulties procuring the necessary identity evidence. 
-  * Where possible, implement tools to make it easier to obtain the necessary identity evidence. 
+  * Where possible, implement tools to make it easier to obtain the necessary identity evidence.
   * Inform users of any special requirements for minors and people with unique needs. For example, provide users with the information necessary to use trusted referees, such as a notary, legal guardian, or some other form of certified individual that can legally vouch for or act on behalf of the individual (see [Section 5.3.4](#trustref)). 
   * If forms are required:
-     * Provide fillable forms before and at the enrollment session. Do not require that users have access to a printer. 
+     * Provide fillable forms before and at the enrollment session. Do not require users to have access to a printer. 
      * Minimize the amount of information users must enter on a form, as users are easily frustrated and more error-prone with longer forms. Where possible, pre-populate forms. 
 
 ### 9.3 Enrollment and Proofing Session
 
-Usability considerations specific to the enrollment session include:  
+Usability considerations specific to the enrollment session include:
 
 * Remind users at the start of the enrollment session of the enrollment session procedure, without expecting them to remember from the pre-enrollment preparation step. If the enrollment session does not immediately follow pre-enrollment preparation, it is especially important to clearly remind users of the typical timeframe to complete the proofing and enrollment phase. 
   * Provide rescheduling options for in-person or in-person over remote channels.
@@ -124,7 +124,7 @@ Usability considerations specific to the enrollment session include:
       
 
 ###  <a name="sec9_4"></a>9.4 Post-Enrollment 
-Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [800-63B, Sections 10.1 through 10.3](sp800-63b.html#usabilitycommon). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
+Post-enrollment refers to the step immediately after enrollment but prior to typical usage of an authenticator (for usability considerations for typical authenticator usage and intermittent events, see [800-63B, Sect 10.1-10.3](sp800-63b.html#usabilitycommon). As described above, users have already been informed at the end of their enrollment session regarding the expected delivery (or pick-up) mechanism by which they will receive their authenticator.
 
 Usability considerations for post-enrollment include:
 
