@@ -4,7 +4,7 @@
 
 ## 6 <a name="CYOA"></a>Selecting Assurance Levels
 
-_This section is normative.
+_This section is normative._
 
 The risk assessment results are the primary factor in selecting the most appropriate levels. This section details how to apply the results of the risk assessment with additional factors unrelated to risk to determine the most advantageous xAL selection.
 
