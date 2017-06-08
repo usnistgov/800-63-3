@@ -192,7 +192,7 @@ In today's environment, an organization's identity solution need not be a monoli
 
 Each volume has adopted verbs that are internationally recognized in standards organizations as normative and requirements-based. When used in a normative statement in these guidelines, they are CAPITALIZED for ease of identification. For example, SHALL is used to denote a mandatory requirement, while SHOULD refers to a technique, technology, or process that is recommended but not mandatory. For more details on the definitions of these terms see the [Requirements Notation and Conventions](#notation) at the beginning of each document.
 
-These documents may inform – but do not restrict or constrain - the development or use of standards for application outside the federal government, such as e-commerce transactions.
+These documents may inform – but do not restrict or constrain – the development or use of standards for application outside the federal government, such as e-commerce transactions.
 
 These guidelines are organized as follows:
 
@@ -227,7 +227,7 @@ The three AALs define the subsets of options agencies can select based on their 
 
 [**SP 800-63C Federation and Assertions**](sp800-63c.html)
 
-NIST SP 800-63C provides requirements when using federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, this volume offers privacy-enhancing techniques to share information about a valid, authenticated subject, and describes methods that allow for strong multi-factor authentication (MFA) while the subject remains pseudonymous to the digital service. _SP 800-63C contains both normative and informative material._
+NIST SP 800-63C provides requirements when using federated identity architectures and assertions to convey the results of authentication processes and relevant identity information to an agency application. In addition, this volume offers privacy-enhancing techniques to share information about a valid, authenticated subject and describes methods that allow for strong multi-factor authentication (MFA) while the subject remains pseudonymous to the digital service. _SP 800-63C contains both normative and informative material._
 
 The three FALs reflect the options agencies can select based on their risk profile and the potential harm caused by an attacker taking control of federated transactions. The FALs are as follows:
 
@@ -237,7 +237,7 @@ The three FALs reflect the options agencies can select based on their risk profi
 
 **FAL3** - Requires the subscriber to present proof of possession of a cryptographic key referenced in the assertion in addition to the assertion artifact itself. The assertion is signed by the IdP and encrypted to the RP using approved cryptography.
 
-These guidelines are agnostic to the vast array of identity service architectures that agencies can develop or acquire, and are meant to be applicable regardless of the approach an agency selects. However, agencies are encouraged to use federation where possible, and the ability to mix and match IAL, AAL, and FAL is simplified when federated architectures are used. Futher, federation is a keystone in the ability to enhance the privacy of the federal government's constituents as they access valuable government digital services.
+These guidelines are agnostic to the vast array of identity service architectures that agencies can develop or acquire, and are meant to be applicable regardless of the approach an agency selects. However, agencies are encouraged to use federation where possible, and the ability to mix and match IAL, AAL, and FAL is simplified when federated architectures are used. Further, federation is a keystone in the ability to enhance the privacy of the federal government's constituents as they access valuable government digital services.
 
 <div class="breaker"/>
 
