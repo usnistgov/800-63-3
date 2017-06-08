@@ -38,13 +38,13 @@ https://doi.org/10.6028/NIST.SP.800-63a
 
 ###  Enrollment and Identity Proofing Requirements
 
-Paul A. Grassi
-*Applied Cybersecurity Division
-Information Technology Laboratory*
+Paul A. Grassi  
+*Applied Cybersecurity Division  
+Information Technology Laboratory*  
 
-James L. Fenton
-*Altmode Networks
-Los Altos, CA*
+James L. Fenton  
+*Altmode Networks  
+Los Altos, CA*  
 
 Privacy Authors:  
 
@@ -140,7 +140,7 @@ The Information Technology Laboratory (ITL) at the National Institute of Standar
 
 </div>
 
-These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST Special Publications (SP) 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST Special Publication (SP) 800-63-2.
 
 <div class="text-center" markdown="1">
 
@@ -156,7 +156,7 @@ authentication; credential service provider; electronic authentication; digital 
 
 </div>
 
-The authors would like to acknowledge the contributions and guidance of our international peers, including Adam Cooper, Alastair Treharne, and Julian White from the Cabinet Office, United Kingdom, and Tim Bouma from the Treasury Board of Canada Secretariat, Government of Canada, and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), and Ellen Nadeau from NIST. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
+The authors would like to acknowledge the contributions and guidance of our international peers, including Adam Cooper, Alastair Treharne, and Julian White from the Cabinet Office, United Kingdom, and Tim Bouma from the Treasury Board of Canada Secretariat, Government of Canada, and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC) and Ellen Nadeau from NIST. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus. Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 

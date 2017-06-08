@@ -154,7 +154,7 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 1. The CSP MAY use trusted referees &mdash; such as notaries, legal guardians, medical professionals, conservators, persons with power of attorney, or some other form of trained and approved or certified individuals &mdash; that can vouch for or act on behalf of the applicant in accordance with applicable laws, regulations, or agency policy. The CSP MAY use a trusted referee for both remote and in-person processes.
 2. The CSP SHALL establish written policy and procedures as to how a trusted referee is determined and the lifecycle by which the trusted referee retains their status as a valid referee, to include any restrictions, as well as any revocation and suspension requirements.
 3. The CSP SHALL proof the trusted referee at the same IAL as the applicant proofing. In addition, the CSP SHALL determine the minimum evidence required to bind the relationship between the trusted referee and the applicant.
-4. The CSP SHOULD perform re-proofing of the subscriber at regular intervals defined in the written policy specified in [SP 800-63A, Sect 5.3.4.1] above, with the goal of satisfying the requirements of [SP 600-63A, Sect 4.4.1](#normal).
+4. The CSP SHOULD perform re-proofing of the subscriber at regular intervals defined in the written policy specified in item 1 above, with the goal of satisfying the requirements of [Section 4.4.1](#normal).
 
 #### Considerations for Minors
 
@@ -164,4 +164,4 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 
 ### 5.4 Binding Requirements
 
-See [800-63B, Section 6.1 Authenticator Binding](https://pages.nist.gov/800-63-3/sp800-63b.html#binding) for instructions on binding authenticators to subscribers.
+See [800-63B, Section 6.1 Authenticator Binding](sp800-63b.html#binding) for instructions on binding authenticators to subscribers.
