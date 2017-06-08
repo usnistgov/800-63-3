@@ -42,6 +42,8 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 
 <a name="ISO29003"></a>[ISO 29003] International Standards Organization, ISO/IEC DIS 29003 *Information technology -- Security techniques -- Identity proofing* (under development)
 
+<a name="ISO9241-11></a>[ISO 9241-11] International Standards Organization, ISO/IEC 9241-11 *Ergonomic requirements for office work with visual display terminals (VDTs) -- Part 11: Guidance on usability*, 1998, available at: <https://www.iso.org/standard/16883.html>. 
+
 <a name="Canada"></a>[Canada] Government of Canada, *Standard on Identity and Credential Assurance*, February 1, 2013, available at: <https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=26776>.
 
 <a name="steiner"></a>[Steiner] Steiner, Peter. "On the Internet, nobody knows you're a dog", *The New Yorker*, July 5, 1993.
