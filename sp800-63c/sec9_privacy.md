@@ -18,7 +18,7 @@ To build subscriber trust in federation, subscribers need to be able to develop 
 
 If an IdP is using a whitelist of RPs as described in [Section 4.2](#runtime-decisions), any RPs on that list are not presented to the subscriber during an authentication transaction. Since the IdP does not provide notice to the subscriber at runtime, the IdP makes its list of whitelisted RPs available to the subscriber so that the subscriber can see which RPs on the whitelist have access to which of their attributes in an authentication transaction. Since IdPs can not share a subscriber's authentication information or attributes with a whitelisted RP outside of an authentication transaction involving the subscriber (see [Section 5.2](#privacy-reqs)), the existence of an RP on a list of IdPs does not indicate that the subscriber's information will be shared. However, if the subscriber logs into any of the whitelisted RPs using the IdP, the attributes indicated will be shared as part of the authentication transaction.
 
-,If a subscriber's runtime decisions were stored by the IdP to facilitate future transactions, the IdP also needs to allow the subscriber to view and revoke any RPs that were previously approved during a runtime decision. This list includes information on which attributes were approved.
+If a subscriber's runtime decisions were stored by the IdP to facilitate future transactions, the IdP also needs to allow the subscriber to view and revoke any RPs that were previously approved during a runtime decision. This list includes information on which attributes were approved.
 
 ### <a name="minimization"></a> 9.3 Data Minimization
 
