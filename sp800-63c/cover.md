@@ -39,18 +39,24 @@ https://doi.org/10.6028/NIST.SP.800-63c
 
 ### Federation and Assertions
 
-Paul A. Grassi  
-Ellen M. Nadeau  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*
+<table class="authors">
+  <tr>
+    <td>Paul A. Grassi<br>Ellen M. Nadeau<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+    <td>Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, MA</i></td>    
+  </tr>
+  <tr>	
+    <td>Sarah K. Squire<br><i>Engage Identity</i><br><i>Seattle, WA</i></td>
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+  </tr>
+  <tr>
+    <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i><br><br>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td>
+    <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Mary F. Theofanos<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
+  </tr>
+</table>
 
-Justin P. Richer  
-*Bespoke Engineering  
-Billerica, MA*
 
-Sarah K. Squire  
-*Engage Identity  
-Seattle, WA*  
+
+
 
 James L. Fenton  
 *Altmode Networks  

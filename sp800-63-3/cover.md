@@ -25,14 +25,15 @@ https://doi.org/10.6028/NIST.SP.800-63-3
 
 # Digital Identity Guidelines
 
-Paul A. Grassi  
-Michael E. Garcia  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*
+<table class="authors">
+  <tr>
+    <td>Paul A. Grassi<br>Michael E. Garcia<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+  </tr>
+</table>
 
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*
+
+
 
 This publication is available free of charge from:  
 https://doi.org/10.6028/NIST.SP.800-63-3  
@@ -135,7 +136,7 @@ related assertions. This publication supersedes NIST Special Publication 800-63-
 </div>
 
 authentication; authentication assurance; authenticator; assertions; credential service provider;
-digital authentication; digital credentials; identity proofing; federation; 
+digital authentication; digital credentials; identity proofing; federation;
 passwords; PKI.
 
 <div class="text-center" markdown="1">
@@ -172,13 +173,13 @@ Digital identity is the online persona of a subject, and a single definition is 
 
 Digital identity as a legal identity further complicates the definition and ability to use digital identities across a range of social and economic use cases. Digital identity is hard. Proving someone is who they say they are - especially remotely, via a digital service - is fraught with opportunities for an attacker to successfully impersonate someone. As correctly captured by [Peter Steiner in The New Yorker](#steiner): "On the internet, nobody knows you're a dog." These guidelines provide mitigations to the vulnerabilities inherent online, while recognizing and encouraging that when accessing some low-risk digital services, 'being a dog' is just fine;  other, high-risk services need a level of confidence that the digital identity accessing the service is the legitimate proxy to the real life subject.
 
-For these guidelines, digital identity is the unique representation of a subject engaged in an online transaction. A digital identity is always unique in the context of a digital service, but does not necessarily need to uniquely identify the subject in all contexts. In other words, accessing a digital service may not mean that the real-life identity of the subject is known. 
+For these guidelines, digital identity is the unique representation of a subject engaged in an online transaction. A digital identity is always unique in the context of a digital service, but does not necessarily need to uniquely identify the subject in all contexts. In other words, accessing a digital service may not mean that the real-life identity of the subject is known.
 
 Identity proofing establishes that a subject is who they claim to be. Digital authentication establishes that a subject attempting to access a digital service is in control of one or more valid authenticators associated with that subject's digital identity. For services in which return visits are applicable, successfully authenticating provides reasonable risk-based assurances that the subject accessing the service today is the same as that which accessed the service previously. Digital identity presents a technical challenge because this process often involves the proofing of individuals over an open network, and always involves the authentication of individual subjects over an open network to access digital government services. The processes and technologies to establish and use digital identities offer multiple opportunities for impersonation and other attacks.
 
-These technical guidelines supersede NIST Special Publication SP 800-63-2. Agencies use these guidelines as part of the risk assessment and implementation of its digital service(s). These guidelines provide mitigations of an authentication error's negative impacts by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, agencies will select a third component, *Federation Assurance Level (FAL)*. 
+These technical guidelines supersede NIST Special Publication SP 800-63-2. Agencies use these guidelines as part of the risk assessment and implementation of its digital service(s). These guidelines provide mitigations of an authentication error's negative impacts by separating the individual elements of identity assurance into discrete, component parts. For non-federated systems, agencies will select two components, referred to as *Identity Assurance Level (IAL)* and *Authenticator Assurance Level (AAL)*. For federated systems, agencies will select a third component, *Federation Assurance Level (FAL)*.
 
-These guidelines retire the concept of a level of assurance (LOA) as a single ordinal that drives implementation-specific requirements. Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this is not a requirement and agencies should not assume they will be the same in any given system. 
+These guidelines retire the concept of a level of assurance (LOA) as a single ordinal that drives implementation-specific requirements. Rather, by combining appropriate business and privacy risk management side-by-side with mission need, agencies will select IAL, AAL, and FAL as distinct options; while many systems will have the same numerical level for each of IAL, AAL, and FAL, this is not a requirement and agencies should not assume they will be the same in any given system.
 
 The components of identity assurance detailed in these guidelines are as follows:
 
