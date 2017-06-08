@@ -24,12 +24,12 @@ Threats to the enrollment process include impersonation attacks and threats to t
 |---------------|------------------------|------------------|
 |Enrollment | Falsified identity proofing evidence | An applicant claims an incorrect identity by using a forged driver's license.|
 | | Fraudulent use of another's identity | An applicant uses a passport associated with a different individual.
-| | Repudiation of enrollment | A subscriber denies enrollment, claiming that they did not enroll with the CSP.|
+| | Enrollment repudiation | A subscriber denies enrollment, claiming that they did not enroll with the CSP.|
 
 
 ### 7.1 Threat Mitigation Strategies
 
-Enrollment threats can be deterred by making impersonation more difficult to accomplish or by increasing the likelihood of detection. This recommendation deals primarily with methods for making impersonation more difficult; however, it does prescribe certain methods and procedures that may help to prove who carried out an impersonation. At each level, methods are employed to determine that a person with the claimed identity exists, that the applicant is the person who is entitled to the claimed identity, and that the applicant cannot later repudiate the enrollment. As the level of assurance increases, the methods employed provide increasing resistance to casual, systematic and insider impersonation. [Table 7-2](#63aSec7-Table2) lists strategies for mitigating threats to the enrollment and issuance processes.
+Enrollment threats can be deterred by making impersonation more difficult to accomplish or by increasing the likelihood of detection. This recommendation deals primarily with methods for making impersonation more difficult; however, it does prescribe certain methods and procedures that may help prove who perpetrated an impersonation. At each level, methods are employed to determine that a person with the claimed identity exists, that the applicant is the person entitled to the claimed identity, and that the applicant cannot later repudiate the enrollment. As the level of assurance increases, the methods employed provide increasing resistance to casual, systematic, and insider impersonation. [Table 7-2](#63aSec7-Table2) lists strategies for mitigating threats to the enrollment and issuance processes.
 
 <a name="63aSec7-Table2"></a>
 
@@ -45,5 +45,5 @@ Enrollment threats can be deterred by making impersonation more difficult to acc
 | Enrollment | Falsified identity proofing evidence | CSP validates physical security features of presented evidence.|[4.4.1.3](#4-4-1-3), [4.5.3](#4-5-3), [5.2.2](#evidence_validation)|
 | | | CSP validates personal details in the evidence with the issuer or other authoritative source.|[4.4.1.3](#4-4-1-3), [4.5.3](#4-5-3), [4.5.6](#4-5-6) [5.2.2](#evidence_validation)|
 | | Fraudulent use of another's identity | CSP verifies identity evidence or biometric of applicant against information on evidence or obtained from issuer or other authoritative source.|[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7), [5.3](#verify)|
-| | |Verify Applicant-provided non-government issued documentation (e.g., electricity bills in the name of the applicant with the current address of the applicant printed on the bill, or a credit card bill) to help in achieving a higher level of confidence in the identity of the applicant.|[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7), [5.3](#verify)|
-| | Repudiation of enrollment | CSP saves a biometric of the subscriber. |[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7)
+| | |Verify applicant-provided non-government-issued documentation (e.g., electricity bills in the name of the applicant with the current address of the applicant printed on the bill, or a credit card bill) to help achieve a higher level of confidence in the applicant's identity.|[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7), [5.3](#verify)|
+| | Enrollment repudiation | CSP saves a subscriber's biometric. |[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7)
