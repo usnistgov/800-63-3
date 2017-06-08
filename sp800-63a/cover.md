@@ -20,7 +20,7 @@ Jamie M. Danker
 
 Usability Authors:  
 
-Yee-Yin Choong
+Yee-Yin Choong  
 Kristen K. Greene    
 Mary F. Theofanos   
 
