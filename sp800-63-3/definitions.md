@@ -516,9 +516,12 @@ Selected abbreviations in these guidelines are defined below.
 |SAML|Security Assertion Markup Language|
 |SA&A|Security Authorization & Accreditation|
 |SAOP|Senior Agency Official for Privacy|
+|SMS|Short Message Service|
 |SP|Special Publication|
 |SORN|System of Records Notice|
+|TEE|Trusted Execution Environment|
 |TGS|Ticket Granting Server|
 |TGT|Ticket Granting Ticket|
 |TLS|Transport Layer Security|
+|TPM|Trusted Platform Module|
 |VOIP|Voice-over-IP|
