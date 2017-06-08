@@ -9,7 +9,7 @@ description: "SP 800-63-3"
 This is a working draft of NIST Special Publication (SP) 800-63-3 *Digital Authentication Guidelines*. This document is the top-level replacement for SP 800-63-2, and references [SP 800-63A](../sp800-63a/), [SP 800-63B](../sp800-63b/), and SP [800-63C](../sp800-63c/).
 
 
-This document is broken up into sections as follows:
+This volume is broken up into sections as follows:
 
 [Front matter](cover.html)
 

@@ -64,8 +64,6 @@ https://doi.org/10.6028/NIST.SP.800-63b
   </tr>
 </table>
 
-
-
 This publication is available free of charge from:    
 https://doi.org/10.6028/NIST.SP.800-63b    
 
@@ -149,7 +147,7 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. These guidelines focus on the authentication of subjects interacting with government systems over open networks, establishing that a given claimant is a subscriber who has been previously authenticated. The result of the authentication process may be used locally by the system performing the authentication or may be asserted elsewhere in a federated identity system. This document defines technical requirements for each of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. These guidelines focus on the authentication of subjects interacting with government systems over open networks, establishing that a given claimant is a subscriber who has been previously authenticated. The result of the authentication process may be used locally by the system performing the authentication or may be asserted elsewhere in a federated identity system. This document defines technical requirements for each of the three authenticator assurance levels. This publication supersedes corresponding sections of NIST Special Publication (SP) 800-63-2.
 
 <div class="text-center" markdown="1">
 
@@ -165,7 +163,7 @@ authentication; credential service provider; digital authentication; digital cre
 
 </div>
 
-The authors would like to acknowledge the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Ellen Nadeau from NIST, and Kat Megas from NIST.
+The authors would like to acknowledge the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC) and Kat Megas from NIST.
 
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus. Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 

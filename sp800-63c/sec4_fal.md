@@ -4,7 +4,7 @@
 
 *This section is normative.*
 
-This section defines allowable Federation Assurance Levels, or FAL. The FAL describes requirements for how assertions are constructed and secured for a given transaction. These levels can be requested by an RP, or required by the configuration of both the RP and the IdP, for a given transaction.
+This section defines allowable Federation Assurance Levels, or FAL. The FAL describes requirements for how assertions are constructed and secured for a given transaction. These levels can be requested by an RP or required by the configuration of both the RP and the IdP for a given transaction.
 
 All assertions SHALL be used with a federation protocol as described in [Section 4](#federation). All assertions SHALL comply with the detailed requirements in [Section 6](#assertions). All assertions SHALL be presented using one of the methods described in [Section 7](#presentation). While many different federation implementation options are possible, the FAL is intended to provide clear implementation recommendations representing increasingly secure deployment options. Combinations of aspects not found in the FAL table are possible but outside the scope of this document. See [SP 800-63 Section 6.3](sp800-63-3.html#FAL_CYOA) for details on how to choose the most appropriate FAL.
 
@@ -41,7 +41,7 @@ Government-operated IdPs asserting authentication at AAL2 and all IdPs asserting
 
 ### 4.2 <a name="runtime-decisions"></a>Runtime Decisions
 
-The fact that parties have federated SHALL NOT be interpreted as permission to pass information. The decision of whether an authentication can occur or attributes passed can be determined by the use of a whitelist, a blacklist, or a runtime decision by an authorized party.
+The fact that parties have federated SHALL NOT be interpreted as permission to pass information. The decision of whether an authentication can occur or attributes are passed can be determined by the use of a whitelist, a blacklist, or a runtime decision by an authorized party.
 
 IdPs MAY establish whitelists of RPs that are authorized to receive authentication and attributes from the IdP, without a runtime decision from the subscriber. All RPs in an IdP's whitelist SHALL abide by the provisions and requirements in the 800-63 suite. IdPs SHALL make whitelists available to subscribers as described in [Section 9.2](#notice). IdPs MAY also establish blacklists of RPs who are not authorized to receive authentication or attributes from the IdP, even when requested by the subscriber. Both whitelists and blacklists identify RPs by their domain or other sufficiently unique identifier, depending on the federation protocol in use. Every RP that is not on a whitelist or a blacklist SHALL be placed by default in a gray area where runtime authorization decisions will be made by an authorized party, usually the subscriber. The IdP MAY remember a subscriber's decision to authorize a given RP, provided that the IdP SHALL allow the subscriber to revoke such remembered access at a future time.
 

@@ -20,7 +20,7 @@ Jamie M. Danker
 
 Usability Authors:  
 
-Yee-Yin Choong    
+Yee-Yin Choong  
 Kristen K. Greene    
 Mary F. Theofanos   
 
@@ -48,7 +48,6 @@ https://doi.org/10.6028/NIST.SP.800-63a
     <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Mary F. Theofanos<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
   </tr>
 </table>
-
 
 
 This publication is available free of charge from:  
@@ -83,7 +82,7 @@ Nothing in this publication should be taken to contradict the standards and guid
 <div class="text-center" markdown="1">
 
 National Institute of Standards and Technology Special Publication 800-63-3  
-Natl. Inst. Stand. Technol. Spec. Publ. 800-63-3, xxx pages (MonthTBD 2017)  
+Natl. Inst. Stand. Technol. Spec. Publ. 800-63A, xxx pages (MonthTBD 2017)  
 CODEN: NSPUE2
 
 
@@ -118,19 +117,7 @@ Email: dig-comments@nist.gov
 
 </div>
 
-The Information Technology Laboratory (ITL) at the National Institute of
-Standards and Technology (NIST) promotes the U.S. economy and public
-welfare by providing technical leadership for the Nation's measurement
-and standards infrastructure. ITL develops tests, test methods,
-reference data, proof of concept implementations, and technical analyses
-to advance the development and productive use of information technology.
-ITL's responsibilities include the development of management,
-administrative, technical, and physical standards and guidelines for the
-cost-effective security and privacy of other than national
-security-related information in federal information systems. The Special
-Publication 800-series reports on ITL's research, guidelines, and
-outreach efforts in information system security, and its collaborative
-activities with industry, government, and academic organizations.
+The Information Technology Laboratory (ITL) at the National Institute of Standards and Technology (NIST) promotes the U.S. economy and public welfare by providing technical leadership for the nation's measurement and standards infrastructure. ITL develops tests, test methods, reference data, proof of concept implementations, and technical analyses to advance the development and productive use of information technology. ITL's responsibilities include the development of management, administrative, technical, and physical standards and guidelines for the cost-effective security and privacy of other than national security-related information in federal information systems. The Special Publication 800-series reports on ITL's research, guidelines, and outreach efforts in information system security, and its collaborative activities with industry, government, and academic organizations.
 
 <div class="text-center" markdown="1">
 
@@ -138,8 +125,7 @@ activities with industry, government, and academic organizations.
 
 </div>
 
-These guidelines provide technical requirements for federal agencies
-implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST Special Publication (SP) 800-63-2.
 
 <div class="text-center" markdown="1">
 
@@ -155,7 +141,7 @@ authentication; credential service provider; electronic authentication; digital 
 
 </div>
 
-The authors would like to acknowledge the contributions and guidance of our international peers, including Adam Cooper, Alastair Treharne, and Julian White from the Cabinet Office, United Kingdom, and Tim Bouma from the Treasury Board of Canada Secretariat, Government of Canada, and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Ellen Nadeau from NIST, and Kat Megas from NIST. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
+The authors would like to acknowledge the contributions and guidance of our international peers, including Adam Cooper, Alastair Treharne, and Julian White from the Cabinet Office, United Kingdom, and Tim Bouma from the Treasury Board of Canada Secretariat, Government of Canada, and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC) and Ellen Nadeau from NIST. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus. Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today.
 
