@@ -11,7 +11,7 @@
 
 Paul A. Grassi  
 Michael E. Garcia  
-James L. Fenton
+James L. Fenton  
 
 This publication is available free of charge from:  
 https://doi.org/10.6028/NIST.SP.800-63-3  
