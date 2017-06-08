@@ -85,11 +85,11 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-185"></a>[SP 800-185] NIST Special Publication 800-185, *SHA-3 Derived Functions: cSHAKE, KMAC, TupleHash, and ParallelHash*, December, 2016.
 
-<a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, May 25, 2001.
+<a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, May 25, 2001 (with Change Notices through December 3, 2002). Available at:<http://csrc.nist.gov/publications/fips/>
 
 <a name="FIPS198-1"></a>[FIPS 198-1] Federal Information Processing Standard Publication 198-1, *The Keyed-Hash Message Authentication Code (HMAC)*, July 2008.
 
-<a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, available at: <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
+<a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013. Available at: <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
 
 <a name="FIPS202"></a>[FIPS 202] Federal Information Processing Standard Publication 202, *SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions*, August 2015.
 

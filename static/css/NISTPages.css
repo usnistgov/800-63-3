@@ -153,3 +153,11 @@ table>tbody+tbody{
 table table{
   background-color:#fff
 }
+
+table.authors{
+  border:hidden;
+}
+
+table.authors td{
+  border:hidden;
+}

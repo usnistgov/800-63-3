@@ -27,7 +27,7 @@
 
 <a name="OIDC"><a>[OIDC] OpenID Foundation, *OpenID Connect Core 1.0 incorporating errata set 1*, available at: <http://openid.net/specs/openid-connect-core-1_0.html>.
 
-<a name="FIPS140"></a>[FIPS 140] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, May 25, 2001. Available at:<http://csrc.nist.gov/publications/fips/>.
+<a name="FIPS140"></a>[FIPS 140] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, May 25, 2001 (with Change Notices through December 3, 2002). Available at:<http://csrc.nist.gov/publications/fips/>.
 
 <a name="FEDRAMP"></a>[FEDRAMP] General Services Administration, *Federal Risk and Authorization Management Program*, available at: <https://www.fedramp.gov/>.
 

@@ -25,14 +25,15 @@ https://doi.org/10.6028/NIST.SP.800-63-3
 
 # Digital Identity Guidelines
 
-Paul A. Grassi  
-Michael E. Garcia  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*
+<table class="authors">
+  <tr>
+    <td>Paul A. Grassi<br>Michael E. Garcia<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+  </tr>
+</table>
 
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*
+
+
 
 This publication is available free of charge from:  
 https://doi.org/10.6028/NIST.SP.800-63-3  
@@ -135,7 +136,7 @@ related assertions. This publication supersedes NIST Special Publication 800-63-
 </div>
 
 authentication; authentication assurance; authenticator; assertions; credential service provider;
-digital authentication; digital credentials; identity proofing; federation; 
+digital authentication; digital credentials; identity proofing; federation;
 passwords; PKI.
 
 <div class="text-center" markdown="1">
@@ -259,4 +260,4 @@ These guidelines are agnostic to the vast array of identity service architecture
 
 [8. References](#references)
 
-[Appendix A. Definitions and Abbreviations](#def-and-acr)
+[Appendix A &mdash; Definitions and Abbreviations](#def-and-acr)

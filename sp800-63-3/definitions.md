@@ -481,6 +481,7 @@ Selected abbreviations in these guidelines are defined below.
 |IM|Identity Manager|
 |IdP|Identity Provider|
 |IoT|Internet of Things|
+|ISO/IEC|International Organization for Standardization/International Electrotechnical Commission|
 |JOSE|JSON Object Signing and Encryption|
 |JSON|JavaScript Object Notation |
 |JWT|JSON Web Token|

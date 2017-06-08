@@ -38,32 +38,17 @@ https://doi.org/10.6028/NIST.SP.800-63a
 
 ###  Enrollment and Identity Proofing Requirements
 
-Paul A. Grassi  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*  
+<table class="authors">
+  <tr>
+    <td>Paul A. Grassi<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+  </tr>
+  <tr>
+    <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i><br><br>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td>
+    <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Mary F. Theofanos<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
+  </tr>
+</table>
 
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*  
-
-Privacy Authors:  
-
-Naomi B. Lefkovitz  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*    
-
-Jamie M. Danker  
-*National Protection and Programs Directorate  
-Department of Homeland Security*    
-
-
-Usability Authors:    
-
-Yee-Yin Choong  
-Kristen K. Greene  
-Mary F. Theofanos  
-*Information Access Division  
-Information Technology Laboratory*  
 
 This publication is available free of charge from:  
 https://doi.org/10.6028/NIST.SP.800-63a   

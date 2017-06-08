@@ -45,47 +45,24 @@ https://doi.org/10.6028/NIST.SP.800-63b
 
 ### Authentication and Lifecycle Management
 
-Paul A. Grassi  
-Elaine M. Newton*  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*  
-
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*  
-
-Ray A. Perlner  
-Andrew R. Regenscheid  
-*Computer Security Division  
-Information Technology Laboratory*
-
-William E. Burr  
-*Dakota Consulting, Inc.  
-Silver Spring, MD*
-
-Justin P. Richer  
-*Bespoke Engineering  
-Billerica, MA*  
-
-Privacy Authors:  
-
-Naomi B. Lefkovitz  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*    
-
-Jamie M. Danker  
-*National Protection and Programs Directorate  
-Department of Homeland Security*    
-
-Usability Authors:    
-
-Yee-Yin Choong  
-Kristen K. Greene  
-Mary F. Theofanos  
-*Information Access Division  
-Information Technology Laboratory*  
-
-*Former employee of NIST.
+<table class="authors">
+  <tr>
+    <td>Paul A. Grassi<br>Elaine M. Newton<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+  </tr>
+  <tr>
+	<td>Ray A. Perlner<br>Andrew R. Regenscheid<br><i>Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+    <td>William E. Burr<br><i>Dakota Consulting, Inc.</i><br><i>Silver Spring, MD</i></td>
+  </tr>
+  <tr>
+  
+  	<td colspan="2">Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, MA</i></td>
+  </tr>
+  <tr>
+    <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i><br><br>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td>
+    <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Mary F. Theofanos<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
+  </tr>
+</table>
 
 This publication is available free of charge from:    
 https://doi.org/10.6028/NIST.SP.800-63b    
@@ -232,4 +209,4 @@ The terms "CAN" and "CANNOT" indicate a possibility or capability, whether mater
 
 [11. References](#references)
 
-[Appendix A. Strength of Memorized Secrets](#appA)
+[Appendix A &mdash; Strength of Memorized Secrets](#appA)
