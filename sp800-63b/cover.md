@@ -211,4 +211,4 @@ The terms "CAN" and "CANNOT" indicate a possibility or capability, whether mater
 
 [11. References](#references)
 
-[Appendix A. Strength of Memorized Secrets](#appA)
+[Appendix A &mdash; Strength of Memorized Secrets](#appA)
