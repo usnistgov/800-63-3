@@ -44,7 +44,7 @@ A party, including an insider, who acts with malicious intent to compromise a sy
 A quality or characteristic ascribed to someone or something.
 
 #### Attribute Bundle
-A packaged set of attributes, usually contained within an assertion. Attribute bundles offer RPs a simple way to retrieve the most relevant attributes they need from IdPs. Attribute bundles are synonymous with OpenID Connect scopes. See [OpenID Connect Core 1.0](http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims).
+A packaged set of attributes, usually contained within an assertion. Attribute bundles offer RPs a simple way to retrieve the most relevant attributes they need from IdPs. Attribute bundles are synonymous with OpenID Connect scopes. See [[OpenID Connect Core 1.0]](http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims).
 
 #### Attribute Reference
 A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute "birthday," a reference could be "older than 18" or "born in December."

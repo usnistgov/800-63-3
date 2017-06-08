@@ -43,8 +43,8 @@ A summary of each of the identity, authenticator, and federation assurance level
 | Identity Assurance Level |
 |:----------------------|
 | **IAL1** - At IAL1, attributes, if any, are self-asserted or should be treated as self-asserted.|
-| **IAL2** - At IAL2, either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [[SP 800-63A]](sp800-63a.html).|
-| **IAL3** - At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in [[SP 800-63A]](sp800-63a.html).|
+| **IAL2** - At IAL2, either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
+| **IAL3** - At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
 
 |Authenticator Assurance Level|
 |:----------------------|
