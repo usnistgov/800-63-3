@@ -97,7 +97,7 @@ Nothing in this publication should be taken to contradict the standards and guid
 <div class="text-center" markdown="1">
 
 National Institute of Standards and Technology Special Publication 800-63-3  
-Natl. Inst. Stand. Technol. Spec. Publ. 800-63-3, xxx pages (MonthTBD 2017)  
+Natl. Inst. Stand. Technol. Spec. Publ. 800-63A, xxx pages (MonthTBD 2017)  
 CODEN: NSPUE2
 
 
@@ -140,7 +140,7 @@ The Information Technology Laboratory (ITL) at the National Institute of Standar
 
 </div>
 
-These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the enrollment and verification of an identity for use in digital authentication. Central to this is a process known as *identity proofing* in which an applicant provides evidence to a credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert that identification at a useful identity assurance level. This document defines technical requirements for each of three identity assurance levels. This publication supersedes corresponding sections of NIST Special Publications (SP) 800-63-1 and SP 800-63-2.
 
 <div class="text-center" markdown="1">
 

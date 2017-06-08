@@ -90,7 +90,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 				<li>The agency SHALL consult with their SAOP to conduct an analysis determining whether the collection of PII to conduct identity proofing triggers E-Government Act of 2002 requirements.</li>
 				<li>The agency SHALL publish a Privacy Impact Assessment (PIA) to cover such collection, as applicable.</li>
 			</ol>
-		<li><a name="4.2-r13"></a>The CSP SHOULD NOT collect the SSN unless it is necessary for performing identity resolution, and identity resolution cannot be accomplished by collection of another attribute or combination of attributes.</li>
+		<li><a name="4.2-r13"></a>The CSP SHOULD NOT collect the Social Security Number (SSN) unless it is necessary for performing identity resolution, and identity resolution cannot be accomplished by collection of another attribute or combination of attributes.</li>
 	</ol>
 </div>
 
