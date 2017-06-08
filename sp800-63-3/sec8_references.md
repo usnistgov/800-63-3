@@ -49,3 +49,7 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 <a name="steiner"></a>[Steiner] Steiner, Peter. "On the Internet, nobody knows you're a dog", *The New Yorker*, July 5, 1993.
 
 <a name="NIST-RMF"></a>[NIST RMF] Risk Management Framework Overview, available at <http://csrc.nist.gov/groups/SMA/fisma/framework.html>.
+
+<a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
+
+<a name="OpenIDConnectCore"></a>[OpenID Connect Core 1.0] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014. Available at: <https://openid.net/specs/openid-connect-core-1_0.html>.

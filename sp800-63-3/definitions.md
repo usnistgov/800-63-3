@@ -8,8 +8,6 @@
 
 A wide variety of terms is used in the realm of authentication. While many terms' definitions are consistent with earlier versions of SP 800-63, some have changed in this revision. Many of these terms lack a single, consistent definition, warranting careful attention to how the terms are defined here.
 
-The definitions in this section are primarily terms used in these guidelines. Refer to the other volumes in the SP 800-63  suite for additional definitions and abbreviations specific to their content.
-
 #### <a name="access"></a> Access
 To make contact with one or more discrete functions of an online, digital service.
 
@@ -44,7 +42,7 @@ A party, including an insider, who acts with malicious intent to compromise a sy
 A quality or characteristic ascribed to someone or something.
 
 #### Attribute Bundle
-A packaged set of attributes, usually contained within an assertion. Attribute bundles offer RPs a simple way to retrieve the most relevant attributes they need from IdPs. Attribute bundles are synonymous with OpenID Connect scopes. See [[OpenID Connect Core 1.0]](http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims).
+A packaged set of attributes, usually contained within an assertion. Attribute bundles offer RPs a simple way to retrieve the most relevant attributes they need from IdPs. Attribute bundles are synonymous with OpenID Connect scopes [[OpenID Connect Core 1.0]](#OpenIDConnectCore).
 
 #### Attribute Reference
 A statement asserting a property of a subscriber without necessarily containing identity information, independent of format. For example, for the attribute "birthday," a reference could be "older than 18" or "born in December."
@@ -56,7 +54,7 @@ A complete statement asserting a property of a subscriber, independent of format
 See [Authentication](#authentication).
 
 #### Authenticated Protected Channel
-An encrypted communication channel that uses approved cryptography where the connection initiator (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) Best Current Practice [BCP 195] is an example of an authenticated protected channel where the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the server to authenticate the client. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
+An encrypted communication channel that uses approved cryptography where the connection initiator (client) has authenticated the recipient (server). Authenticated protected channels provide confidentiality and MitM protection and are frequently used in the user authentication process. Transport Layer Security (TLS) [[BCP 195]](#bcp195) is an example of an authenticated protected channel where the certificate presented by the recipient is verified by the initiator. Unless otherwise specified, authenticated protected channels do not require the server to authenticate the client. Authentication of the server is often accomplished through a certificate chain leading to a trusted root rather than individually with each server.
 
 #### <a name="authentication"></a> Authentication
 Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to a system's resources.
@@ -396,7 +394,7 @@ An attack in which the attacker is able to insert himself or herself between a c
 #### Shared Secret
 A secret used in authentication that is known to the subscriber and the verifier.
 
-#### Side Channel Attack
+#### Side-Channel Attack
 An attack enabled by leakage of information from a physical cryptosystem. Characteristics that could be exploited in a side-channel attack include timing, power consumption, and electromagnetic and acoustic emissions.
 
 #### <a name="sf"></a> Single-factor
@@ -437,7 +435,7 @@ An authentication and security protocol widely implemented in browsers and web s
 A public or symmetric key that is trusted because it is directly built into hardware or software, or securely provisioned via out-of-band means, rather than because it is vouched for by another trusted entity (e.g. in a public key certificate). A trust anchor may have name or policy constraints limiting its scope.
 
 #### Usability
-Per ISO/IEC 9241-11: Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use.
+Per [ISO/IEC 9241-11](#ISO9241): Extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use.
 
 #### Verifier
 An entity that verifies the claimant's identity by verifying the claimant's possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber's identifier and check their status.
