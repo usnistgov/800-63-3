@@ -1,5 +1,7 @@
 <a name="def-and-acr"></a>
 
+<div class="breaker"></div>
+
 ## Appendix A &mdash; Definitions and Abbreviations
 
 *This section is normative.*
@@ -223,7 +225,7 @@ The process by which a CSP collects, validates, and verifies information about a
 The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
 
 #### Issuing Source
-An authority responsible for the generation of data, digital evidence (such as assertions), or physical documents that can be used as identity evidence. 
+An authority responsible for the generation of data, digital evidence (such as assertions), or physical documents that can be used as identity evidence.
 
 #### Kerberos
 A widely used authentication protocol developed at MIT. In "classic" Kerberos, users share a secret password with a Key Distribution Center (KDC). The user (Alice) who wishes to communicate with another user (Bob) authenticates to the KDC and the KDC furnishes a "ticket" to use to authenticate with Bob.
@@ -406,7 +408,7 @@ The act of deceiving an individual into revealing sensitive information, obtaini
 #### Special Publication (SP)
 A type of publication issued by NIST. Specifically, the SP 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 
-#### Subject 
+#### Subject
 A person, organization, device, hardware, network, software, or service.
 
 #### Subscriber
