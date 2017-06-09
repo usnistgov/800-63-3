@@ -168,9 +168,9 @@ A credential issued based on proof of possession and control of an authenticator
 The process of establishing confidence in user identities presented digitally to a system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
-An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation, but not confidentiality protection.
+An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation, but not confidentiality protection.  
 
-####Diversionary
+#### Diversionary
 In regards to KBV, a multiple-choice question for which all answers provided are incorrect, requiring the applicant to select an option similar to "none of the above."
 
 #### Eavesdropping Attack
@@ -302,7 +302,7 @@ See *Personally Identifiable Information*.
 As defined by OMB Circular A-130, Personally Identifiable Information is information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual.
 
 #### Pharming
-An attack in which an attacker corrupts an infrastructure service such as DNS (Domain Name Service) causing the subscriber to be misdirected to a forged verifier/RP, which could cause the subscriber to reveal sensitive information, download harmful software, or contribute to a fraudulent act.
+An attack in which an attacker corrupts an infrastructure service such as DNS (Domain Name System) causing the subscriber to be misdirected to a forged verifier/RP, which could cause the subscriber to reveal sensitive information, download harmful software, or contribute to a fraudulent act.
 
 #### Phishing
 An attack in which the subscriber is lured (usually through an email) to interact with a counterfeit verifier/RP and tricked into revealing information that can be used to masquerade as that subscriber to the real verifier/RP.
@@ -470,7 +470,7 @@ Selected abbreviations in these guidelines are defined below.
 |CSP|Credential Service Provider|
 |CSRF|Cross-site Request Forgery|
 |XSS|Cross-site Scripting|
-|DNS|Domain Name Service|
+|DNS|Domain Name System|
 |EO|Executive Order|
 |FACT Act|Fair and Accurate Credit Transaction Act of 2003|
 |FAL|Federation Assurance Level|
@@ -502,7 +502,7 @@ Selected abbreviations in these guidelines are defined below.
 |PAD|Presentation Attack Detection|
 |PHI|Personal Health Information|
 |PIA|Privacy Impact Assessment |
-|PII|Personal Identifiable Information|
+|PII|Personally Identifiable Information|
 |PIN|Personal Identification Number|
 |PKI|Public Key Infrastructure |
 |PL|Public Law|

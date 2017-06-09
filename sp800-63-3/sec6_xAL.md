@@ -73,9 +73,9 @@ In analyzing risks, the agency SHALL consider all of the expected direct and ind
 
 It is possible that the assurance levels may differ across IAL, AAL, and FAL. For example, suppose an agency establishes a "health tracker" application in which users submit personal information in the form of personal health information (PHI). In line with the terms of [EO 13681](#EO13681) requiring "that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication," the agency is required to implement MFA at AAL2 or AAL3.
 
-EO 13681 also requires agencies employ "an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an "effective proofing process" would be to not proof at all, therefore the agency would select IAL1. This allows the user of the health tracker system to be pseudonymous.
+EO 13681 also requires agencies employ "an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identity of the user. In this case, an "effective proofing process" would be to not proof at all, therefore the agency would select IAL1. This allows the user of the health tracker system to be pseudonymous.
 
-Despite the user being pseudonymous, the agency should still protect the application with AAL2 or AAL3 because a malicous actor could gain access to the user's PHI by compromising the account. If it is a targeted attack, the malicious actor may know the user's identity, creating the same negative impact to the user as if the agency has identity proofed.
+Despite the user being pseudonymous, the agency should still select AAL2 or AAL3 for authentication because a malicious actor could gain access to the user's PHI by compromising the account.
 
 > Note: An agency can accept a higher assurance level than those required in the table above. For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2. The same holds true for authenticators: stronger authenticators can be used at RPs that have lower authenticator requirements. However, RPs will have to ensure that this only occurs in federated scenarios with appropriate privacy protections by the CSP such that only attributes that have been requested by the RP and authorized by the subscriber are provided to the RP and that excessive personal information does not leak from the credential or an assertion. See [privacy requirements](./sp800-63c.html#privacy) in SP 800-63C for more details.
 
@@ -175,7 +175,7 @@ The AAL selection does not mean the digital service provider will need to issue 
 
 #### <a name="FAL_CYOA"></a> 6.3 Selecting FAL
 
-The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from the risk assessment with additional considerations related to federations to allow agencies to select the most appropriate requirements for their digital service offering. 
+The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from the risk assessment with additional considerations related to federation to allow agencies to select the most appropriate requirements for their digital service offering. 
 
 <a name="63Sec6-Figure3"></a>
 <div class="text-center" markdown="1">
