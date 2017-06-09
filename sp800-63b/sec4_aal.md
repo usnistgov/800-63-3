@@ -74,7 +74,7 @@ When a combination of two single-factor authenticators is used, it SHALL include
 * Single-factor Cryptographic Software ([Section 5.1.6](#sfcs))
 * Single-factor Cryptographic Device ([Section 5.1.7](#sfcd))
 
-> Note: When biometric authentication meets the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated in addition to the biometric; a biometric is recognized as a factor, but not recognized as an authenticator by itself. Therefore, when conducting authentication with a biometric, it is unnecessary to use two authenticators because the associated device serves as "something you have", while the biometric serves as "something you are."
+> Note: When biometric authentication meets the requirements in [Section 5.2.3](#biometric_use), the device has to be authenticated in addition to the biometric; a biometric is recognized as a factor, but not recognized as an authenticator by itself. Therefore, when conducting authentication with a biometric, it is unnecessary to use two authenticators because the associated device serves as "something you have," while the biometric serves as "something you are."
 
 #### <a name="aal2req"></a>4.2.2 Authenticator and Verifier Requirements
 
@@ -104,7 +104,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### 4.3 Authenticator Assurance Level 3
 
-AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier impersonation resistance — the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL prove possession and control of [two distinct authentication factors](sp800-63-3.html#mfa-definition) through secure authentication protocol(s). [Approved cryptographic](sp800-63-3.html#approved) techniques are required.
+AAL3 provides very high confidence that the claimant controls authenticator(s) bound to the subscriber's account. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 authentication SHALL use a hardware-based cryptographic authenticator and an authenticator that provides verifier-impersonation resistance — the same device MAY fulfill both these requirements. In order to authenticate at AAL3, claimants SHALL prove possession and control of [two distinct authentication factors](sp800-63-3.html#mfa-definition) through secure authentication protocol(s). [Approved cryptographic](sp800-63-3.html#approved) techniques are required.
 
 #### <a name="aal3types"></a>4.3.1 Permitted Authenticator Types
 
@@ -119,13 +119,13 @@ AAL3 authentication SHALL occur by the use of one of a combination of authentica
 
 #### <a name="aal3req"></a>4.3.2 Authenticator and Verifier Requirements
 
-Communication between the claimant and verifier SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks. All cryptographic device authenticators used at AAL3 SHALL be verifier impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.8](#replay). All authentication and reauthentication processes at AAL3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.9](#intent).
+Communication between the claimant and verifier SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to MitM attacks. All cryptographic device authenticators used at AAL3 SHALL be verifier-impersonation resistant as described in Section [5.2.5](#verifimpers) and SHALL be replay resistant as described in Section [5.2.8](#replay). All authentication and reauthentication processes at AAL3 SHALL demonstrate authentication intent from at least one authenticator as described in Section [5.2.9](#intent).
 
 Multi-factor authenticators used at AAL3 SHALL be hardware cryptographic modules validated at [FIPS 140](#FIPS140-2) Level 2 or higher overall with at least [FIPS 140](#FIPS140-2) Level 3 physical security. Single-factor cryptographic devices used at AAL3 SHALL be validated at [FIPS 140](#FIPS140-2) Level 1 or higher overall with at least [FIPS 140](#FIPS140-2) Level 3 physical security.
 
 Verifiers at AAL3 SHALL be validated at [FIPS 140](#FIPS140-2) Level 1 or higher.
 
-Verifiers at AAL3 SHALL be verifier compromise resistant as described in [Section 5.2.7](#verifier-secrets) with respect to at least one authentication factor.
+Verifiers at AAL3 SHALL be verifier-compromise resistant as described in [Section 5.2.7](#verifier-secrets) with respect to at least one authentication factor.
 
 Hardware-based authenticators and verifiers at AAL3 SHOULD resist relevant side-channel (e.g., timing and power-consumption analysis) attacks. Relevant side-channel attacks SHALL be determined by a risk assessment performed by the CSP.
 
@@ -179,8 +179,8 @@ Requirement | AAL1 | AAL2 | AAL3
 **Reauthentication** | 30 days | 12 hours or 30 minutes inactivity; MAY use one authentication factor | 12 hours or 15 minutes inactivity; SHALL use both authentication factors
 **Security controls**|[SP 800-53](#SP800-53) Low Baseline (or equivalent)|[SP 800-53](#SP800-53) Moderate Baseline (or equivalent)|[SP 800-53](#SP800-53) High Baseline (or equivalent)
 **MitM resistance** | Required | Required | Required |
-**Verifier impersonation resistance** | Not required | Not required | Required |
-**Verifier compromise resistance** | Not required | Not required | Required |
+**Verifier-impersonation resistance** | Not required | Not required | Required |
+**Verifier-compromise resistance** | Not required | Not required | Required |
 **Replay resistance** | Not required | Required | Required |
 **Authentication intent** | Not required | Recommended | Required |
 **Records Retention Policy** | Required | Required | Required |
