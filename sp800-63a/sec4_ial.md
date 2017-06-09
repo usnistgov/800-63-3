@@ -6,7 +6,7 @@
 
 _This section is normative._
 
-This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process in which their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [SP 800-63-3 Section 6.1](sp800-63-3.html#IAL_CYOA) for details on how to choose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
+This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process whereby their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [SP 800-63-3 Section 6.1](sp800-63-3.html#IAL_CYOA) for details on how to choose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
 
 Identity proofing's sole objective is to ensure the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  There may be many different sets that suffice as the minimum, so CSPs should choose this set to balance privacy and the user's usability needs, as well as the likely attributes needed in future uses of the digital identity. For example, such attributes &mdash; to the extent they are the minimum necessary &mdash; could include:
 
@@ -40,7 +40,6 @@ The following provides a sample of how a CSP and an applicant interact during th
   	</ol>
 	<li><strong>Validation</strong></li>
   		<ol type="a" start="a">  
-			<li>The CSP asks the applicant for a photo of themselves to match to the license and passport.</li>
 			<li>The CSP validates the information supplied in 1i by checking an authoritative source. The CSP determines the information supplied by the applicant matches their records.</li>  
 			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes matches the plain-text information, and that the identification numbers follow standard formats.</li>  
 			<li>The CSP queries the issuing sources for the license and passport and validates the information matches.</li>
@@ -72,8 +71,8 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 		</li>
 		<li><a name="4.2-r4"></a>The CSP SHALL NOT use attributes collected and maintained in the identity proofing process for any purpose other than identity proofing, authentication, or attribute assertions, or to comply with law or legal process unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent with these additional purposes a condition of the service.</li>
 		<li><a name="4.2-r5"></a>The CSP SHALL provide mechanisms for redress of applicant complaints or problems arising from the identity proofing. These mechanisms SHALL be easy for applicants to find and use. The CSP SHALL assess the mechanisms for their efficacy in achieving resolution of complaints or problems.</li>
-		<li><a name="4.2-r6"></a>The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information detailing how the CSP handles proofing errors that result in an applicant not being successfully enrolled. For example, the number of retries allowed, proofing alternatives (e.g., in-person if remote fails), or fraud counter-measures when anomolies are detected.</li>
-		<li><a name="4.2-r7"></a>The CSP SHALL maintain a record, including audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including asessements of privacy and security risks to determine:</li>
+		<li><a name="4.2-r6"></a>The identity proofing and enrollment processes SHALL be performed according to an applicable written policy or *practice statement* that specifies the particular steps taken to verify identities. The *practice statement* SHALL include control information detailing how the CSP handles proofing errors that result in an applicant not being successfully enrolled. For example, the number of retries allowed, proofing alternatives (e.g., in-person if remote fails), or fraud counter-measures when anomalies are detected.</li>
+		<li><a name="4.2-r7"></a>The CSP SHALL maintain a record, including audit logs, of all steps taken to verify the identity of the applicant and SHALL record the types of identity evidence presented in the proofing process. The CSP SHALL conduct a risk management process, including assessments of privacy and security risks to determine:</li>
 			<ol type="a" start="a">
 				<li>Any steps that it will take to verify the identity of the applicant beyond any mandatory requirements specified herein;</li>
 				<li>The PII, including any biometrics, images, scans, or other copies of the identity evidence that the CSP will maintain as a record of identity proofing (Note: Specific federal requirements may apply.); and</li>
@@ -136,7 +135,7 @@ See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more 
 The CSP SHALL verify identity evidence as follows:
 
 1. At a minimum, the applicant's binding to identity evidence must be verified by a process that is able to achieve a strength of STRONG.
-2. KBV SHALL NOT be used for in-person (physical or supervised remote) identity verification.
+2. Knowledge-based Verification (KBV) SHALL NOT be used for in-person (physical or supervised remote) identity verification.
 
 See [Section 5.3 Identity Verification](#verify) for more information on acceptable identity evidence.
 
@@ -175,7 +174,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 
 #### <a name="4-4-1-7"></a>4.4.1.7 Biometric Collection
 
-The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
+The CSP MAY collect biometrics for the purposes of non-repudiation and re-proofing. See [SP 800-63B, Section 5.2.3](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
 #### 4.4.1.8 Security Controls
 
@@ -234,7 +233,7 @@ The CSP SHALL perform all identity proofing steps with the applicant in-person. 
 
 #### <a name="4-5-7"></a>4.5.7 Biometric Collection
 
-The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing. See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, ﬁngerprints) for the purposes of non-repudiation and re-proofing. See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
 #### 4.5.8 Security Controls
 
