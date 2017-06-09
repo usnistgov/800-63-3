@@ -142,7 +142,7 @@ The IAL selection does not mean the digital service provider will need to perfor
  
 #### <a name="AAL_CYOA"></a> 6.2 Selecting AAL
 
-The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements  for their digital service offering. 
+The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements for their digital service offering. 
 
 The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information on whether the agency can federate is provided in [Section 7](#toFedorNotToFed). 
 
@@ -175,15 +175,44 @@ The AAL selection does not mean the digital service provider will need to issue 
 
 #### <a name="FAL_CYOA"></a> 6.3 Selecting FAL
 
+The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from the risk assessment with additional considerations related to federations to allow agencies to select the most appropriate requirements for their digital service offering. 
+
+<a name="63Sec6-Figure3"></a>
+<div class="text-center" markdown="1">
+<img src="sp800-63-3/media/FAL_CYOA.png" alt="FAL Choose Your Own" style="width:1000px;height:983px;;min-width: 1000px;min-height:983px;"/>
+
+**Figure 6-3 Selecting FAL**
+</div>
+
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63-3/media/fal-step1.png" alt="FAL Step 1"/></td>
+  </tr>
+  <tr>
+   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user accessed could compromise an assertion. Such compromise could include being able to replay it to gain unauthorized access impersonating a valid user or a assertion leaking information through the browser? Risk should be considered from the perspective of the organization and to a valid user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63-3/media/fal-step2.png" alt="FAL Step 2"/></td>
+  </tr>
+  <tr>
+
+   <td>FAL2 is required when any personal information is contained in an assertion, as the audience and encryption requirements do not adequately protect personal information from being released (it isn't adequately protected). Since the other paths in this decision tree already drive the agency to an AAL that requires FAL2 or higher, the question of personal information is only raised at this point. That said, personal information release at all AALs should be considered when performing the risk assessment. Release of even self-asserted personal information requires assertion protection via FAL2. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. As such, self-asserted data must be protected appropriately.</td> 
+
+  </tr>
+  <tr>
+    <td><img src="sp800-63-3/media/fal-step3.png" alt="FAL Step 3"/></td>
+  </tr>
+  <tr>
+   <td>NEED TO EVALUATE GRAPHIC
+   
+   RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.</td> 
+  </tr>
+  
+  </table>
+</div>
+
 All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
-
-RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.
-
-FAL2 and higher require the assertion itself be encrypted such that the intended RP is the only party that can decrypt it. This method improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion) and increases privacy protection by protecting the assertion message itself beyond having it be passed along authenticated protected channels. RPs that allow front-channel assertion presentation should require at least FAL2 to protect the content of the assertion, since the assertion can be seen by the subscriber and handled by the subscriber's browser.
-
-FAL3 further requires the subscriber prove possession of a key in addition to the ability to present an assertion or assertion reference. This allows the RP to strongly verify the binding of the assertion to the subscriber by means of a subscriber-held key. This key is referenced in the assertion and represents the subscriber.
-
-Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL2 and FAL3, and subscriber keys need to be managed at FAL3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
 
 ### 6.4 Combining xALs 
 
