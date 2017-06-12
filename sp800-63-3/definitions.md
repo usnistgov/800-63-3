@@ -1,5 +1,7 @@
 <a name="def-and-acr"></a>
 
+<div class="breaker"></div>
+
 ## Appendix A &mdash; Definitions and Abbreviations
 
 *This section is normative.*
@@ -166,9 +168,9 @@ A credential issued based on proof of possession and control of an authenticator
 The process of establishing confidence in user identities presented digitally to a system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
-An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation, but not confidentiality protection.
+An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation, but not confidentiality protection.  
 
-####Diversionary
+#### Diversionary
 In regards to KBV, a multiple-choice question for which all answers provided are incorrect, requiring the applicant to select an option similar to "none of the above."
 
 #### Eavesdropping Attack
@@ -223,7 +225,7 @@ The process by which a CSP collects, validates, and verifies information about a
 The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
 
 #### Issuing Source
-An authority responsible for the generation of data, digital evidence (such as assertions), or physical documents that can be used as identity evidence. 
+An authority responsible for the generation of data, digital evidence (such as assertions), or physical documents that can be used as identity evidence.
 
 #### Kerberos
 A widely used authentication protocol developed at MIT. In "classic" Kerberos, users share a secret password with a Key Distribution Center (KDC). The user (Alice) who wishes to communicate with another user (Bob) authenticates to the KDC and the KDC furnishes a "ticket" to use to authenticate with Bob.
@@ -300,7 +302,7 @@ See *Personally Identifiable Information*.
 As defined by OMB Circular A-130, Personally Identifiable Information is information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual.
 
 #### Pharming
-An attack in which an attacker corrupts an infrastructure service such as DNS (Domain Name Service) causing the subscriber to be misdirected to a forged verifier/RP, which could cause the subscriber to reveal sensitive information, download harmful software, or contribute to a fraudulent act.
+An attack in which an attacker corrupts an infrastructure service such as DNS (Domain Name System) causing the subscriber to be misdirected to a forged verifier/RP, which could cause the subscriber to reveal sensitive information, download harmful software, or contribute to a fraudulent act.
 
 #### Phishing
 An attack in which the subscriber is lured (usually through an email) to interact with a counterfeit verifier/RP and tricked into revealing information that can be used to masquerade as that subscriber to the real verifier/RP.
@@ -406,7 +408,7 @@ The act of deceiving an individual into revealing sensitive information, obtaini
 #### Special Publication (SP)
 A type of publication issued by NIST. Specifically, the SP 800-series reports on the Information Technology Laboratory's research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 
-#### Subject 
+#### Subject
 A person, organization, device, hardware, network, software, or service.
 
 #### Subscriber
@@ -468,7 +470,7 @@ Selected abbreviations in these guidelines are defined below.
 |CSP|Credential Service Provider|
 |CSRF|Cross-site Request Forgery|
 |XSS|Cross-site Scripting|
-|DNS|Domain Name Service|
+|DNS|Domain Name System|
 |EO|Executive Order|
 |FACT Act|Fair and Accurate Credit Transaction Act of 2003|
 |FAL|Federation Assurance Level|
@@ -500,7 +502,7 @@ Selected abbreviations in these guidelines are defined below.
 |PAD|Presentation Attack Detection|
 |PHI|Personal Health Information|
 |PIA|Privacy Impact Assessment |
-|PII|Personal Identifiable Information|
+|PII|Personally Identifiable Information|
 |PIN|Personal Identification Number|
 |PKI|Public Key Infrastructure |
 |PL|Public Law|

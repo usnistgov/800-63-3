@@ -73,17 +73,17 @@ In analyzing risks, the agency SHALL consider all of the expected direct and ind
 
 It is possible that the assurance levels may differ across IAL, AAL, and FAL. For example, suppose an agency establishes a "health tracker" application in which users submit personal information in the form of personal health information (PHI). In line with the terms of [EO 13681](#EO13681) requiring "that all agencies making personal data accessible to citizens through digital applications require the use of multiple factors of authentication," the agency is required to implement MFA at AAL2 or AAL3.
 
-EO 13681 also requires agencies employ "an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identify of the user. In this case, an "effective proofing process" would be to not proof at all, therefore the agency would select IAL1. This allows the user of the health tracker system to be pseudonymous.
+EO 13681 also requires agencies employ "an effective identity proofing process, as appropriate" when personal information is released. This does not mean that proofing at IAL2 or IAL3 (to match the required AAL) is necessary. In the above example, there may be no need for the agency system to know the actual identity of the user. In this case, an "effective proofing process" would be to not proof at all, therefore the agency would select IAL1. This allows the user of the health tracker system to be pseudonymous.
 
-Despite the user being pseudonymous, the agency should still protect the application with AAL2 or AAL3 because a malicous actor could gain access to the user's PHI by compromising the account. If it is a targeted attack, the malicious actor may know the user's identity, creating the same negative impact to the user as if the agency has identity proofed.
+Despite the user being pseudonymous, the agency should still select AAL2 or AAL3 for authentication because a malicious actor could gain access to the user's PHI by compromising the account.
 
-> Note: An agency can accept a higher assurance level than those required in the table above. For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2. The same holds true for authenticators: stronger authenticators can be used at RPs that have lower authenticator requirements. However, RPs will have to ensure that this only occurs in federated scenarios with appropriate privacy protections by the CSP such that only attributes that have been requested by the RP and authorized by the subscriber are provided to the RP and that excessive personal information does not leak from the credential or an assertion. See [privacy requirements](./sp800-63c.html#privacy) in SP 800-63C for more details.
+> Note: An agency can accept a higher assurance level than those required in the table above. For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2. The same holds true for authenticators: stronger authenticators can be used at RPs that have lower authenticator requirements. However, RPs will have to ensure that this only occurs in federated scenarios with appropriate privacy protections by the CSP such that only attributes that have been requested by the RP and authorized by the subscriber are provided to the RP and that excessive personal information does not leak from the credential or an assertion. See the [privacy considerations in SP 800-63C](sp800-63c.html#privacy) for more details.
 
 <!---->
 
 > Note: The upshot of potentially having a different IAL, AAL, and FAL within a single application stems from the fact that this document no longer supports the notion of an overall LOA &mdash; the "low watermark" approach to determining LOA no longer applies. An application with IAL1 and AAL2 should not be considered any less secure or privacy-enhancing than an application with IAL2 and AAL2. The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
 
-#### <a name="IAL_CYOA"></a> 6.1 Selecting IAL
+### <a name="IAL_CYOA"></a> 6.1 Selecting IAL
 
 The IAL decision tree in [Figure 6-1](#63Sec6-Figure1) combines the results from the risk assessment with additional considerations related to identity proofing services to allow agencies to select the most appropriate identity proofing requirements for their digital service offering. 
 
@@ -140,9 +140,9 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 > Note: Agencies should also consider their constituents' demographics when selecting the most appropriate proofing process. While not a function of IAL selection, certain proofing processes may be more appropriate for some demographics than others. Agencies will benefit as this type of analysis ensures the greatest opportunity for their constituents to be proofed successfully.
  
-#### <a name="AAL_CYOA"></a> 6.2 Selecting AAL
+### <a name="AAL_CYOA"></a> 6.2 Selecting AAL
 
-The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements  for their digital service offering. 
+The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements for their digital service offering. 
 
 The AAL selection does not mean the digital service provider will need to issue authenticators themselves. More information on whether the agency can federate is provided in [Section 7](#toFedorNotToFed). 
 
@@ -173,17 +173,44 @@ The AAL selection does not mean the digital service provider will need to issue 
   </table>
 </div>
 
-#### <a name="FAL_CYOA"></a> 6.3 Selecting FAL
+### <a name="FAL_CYOA"></a> 6.3 Selecting FAL
 
-All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
+The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from the risk assessment with additional considerations related to federation to allow agencies to select the most appropriate requirements for their digital service offering. 
 
-RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.
+<a name="63Sec6-Figure3"></a>
+<div class="text-center" markdown="1">
+<img src="sp800-63-3/media/FAL_CYOA.png" alt="FAL Choose Your Own" style="width:1000px;height:983px;;min-width: 1000px;min-height:983px;"/>
 
-FAL2 and higher require the assertion itself be encrypted such that the intended RP is the only party that can decrypt it. This method improves the enforcement of audience restriction at RPs (since an unintended RP won't be able to decrypt an assertion) and increases privacy protection by protecting the assertion message itself beyond having it be passed along authenticated protected channels. RPs that allow front-channel assertion presentation should require at least FAL2 to protect the content of the assertion, since the assertion can be seen by the subscriber and handled by the subscriber's browser.
+**Figure 6-3 Selecting FAL**
+</div>
 
-FAL3 further requires the subscriber prove possession of a key in addition to the ability to present an assertion or assertion reference. This allows the RP to strongly verify the binding of the assertion to the subscriber by means of a subscriber-held key. This key is referenced in the assertion and represents the subscriber.
+<div class="text-left" markdown="1">
+<table style="width:100%">
+  <tr>
+    <td><img src="sp800-63-3/media/fal-step1.png" alt="FAL Step 1"/></td>
+  </tr>
+  <tr>
+   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user could compromise an assertion. Examples of compromise include use of assertion replay to impersonate a valid user or leakage of assertion information information through the browser. Risk should be considered from the perspective of the organization and to the subscriber, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
+  </tr>
+  <tr>
+    <td><img src="sp800-63-3/media/fal-step2.png" alt="FAL Step 2"/></td>
+  </tr>
+  <tr>
 
-Increasing the FAL increases the complexity of the deployment and management of a federation system, as RP keys need to be managed at FAL2 and FAL3, and subscriber keys need to be managed at FAL3. Therefore, RPs should add advanced functionality where it is feasible and warranted for the application.
+   <td>FAL2 is required when any personal information is passed in an assertion. Personal information release at all FALs should be considered when performing the risk assessment. FAL2 or higher is required when any personal information is contained in an assertion, as the audience and encryption requirements at FAL1 are not sufficient to protect personal information from being released. Release of even self-asserted personal information requires assertion protection via FAL2. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. However, when personal information is available to the RP via an authorized API call, such information need not be included in the assertion itself. Since the assertion no longer includes personal information, it need not be encrypted and this FAL requirement does not apply.</td> 
+
+  </tr>
+  <tr>
+    <td><img src="sp800-63-3/media/fal-step3.png" alt="FAL Step 3"/></td>
+  </tr>
+  <tr>
+   <td>RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.</td> 
+  </tr>
+  
+  </table>
+</div>
+
+All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [SP 800-63C](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
 
 ### 6.4 Combining xALs 
 

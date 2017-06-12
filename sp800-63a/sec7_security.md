@@ -44,6 +44,6 @@ Enrollment threats can be deterred by making impersonation more difficult to acc
 |--------------|-------------------|-------------------------|------------------------|
 | Enrollment | Falsified identity proofing evidence | CSP validates physical security features of presented evidence.|[4.4.1.3](#4-4-1-3), [4.5.3](#4-5-3), [5.2.2](#evidence_validation)|
 | | | CSP validates personal details in the evidence with the issuer or other authoritative source.|[4.4.1.3](#4-4-1-3), [4.5.3](#4-5-3), [4.5.6](#4-5-6) [5.2.2](#evidence_validation)|
-| | Fraudulent use of another's identity | CSP verifies identity evidence or biometric of applicant against information on evidence or obtained from issuer or other authoritative source.|[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7), [5.3](#verify)|
+| | Fraudulent use of another's identity | CSP verifies identity evidence and biometric of applicant against information obtained from issuer or other authoritative source.|[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7), [5.3](#verify)|
 | | |Verify applicant-provided non-government-issued documentation (e.g., electricity bills in the name of the applicant with the current address of the applicant printed on the bill, or a credit card bill) to help achieve a higher level of confidence in the applicant's identity.|[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7), [5.3](#verify)|
 | | Enrollment repudiation | CSP saves a subscriber's biometric. |[4.4.1.7](#4-4-1-7), [4.5.7](#4-5-7)
