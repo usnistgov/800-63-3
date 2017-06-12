@@ -60,7 +60,7 @@ Usability considerations for typical usage of all authenticators include:
   * Provide clear, meaningful feedback on the number of remaining allowed attempts. For rate limiting (i.e., throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.
 
 * Minimize the impact of form-factor constraints, such as limited touch and display areas on mobile devices:
-  * Larger touch areas improve usability for text entry since typing on small devices is significantly more error prone and time consuming than typing on a full size keyboard. The smaller the onscreen keyboard, the more difficult it is to type, due to the size of the input mechanism (e.g., a finger) relative to the size of the on-screen target.
+  * Larger touch areas improve usability for text entry since typing on small devices is significantly more error prone and time consuming than typing on a full-size keyboard. The smaller the onscreen keyboard, the more difficult it is to type, due to the size of the input mechanism (e.g., a finger) relative to the size of the on-screen target.
   * Follow good user interface and information design for small displays.
 
 Intermittent events include events such as reauthentication, account lock-out, expiration, revocation, damage, loss, theft, and non-functional software.
@@ -74,7 +74,7 @@ Usability considerations for intermittent events across authenticator types incl
 * Clearly communicate how and where to acquire technical assistance. For example, provide users with information such as a link to an online self-service feature, chat sessions or a phone number for help desk support. Ideally, sufficient information can be provided to enable users to recover from intermittent events on their own without outside intervention.
 
 ### 10.2 Usability Considerations by Authenticator Type
-In addition to the previously described general usability considerations applicable to most authenticators ([Section 10.1](#usabilitycommon)), the following sections describe other usability considerations specific to specific authenticator types.
+In addition to the previously described general usability considerations applicable to most authenticators ([Section 10.1](#usabilitycommon)), the following sections describe other usability considerations specific to particular authenticator types.
 
 #### <a name="memorizedsecrets"></a> 10.2.1 Memorized Secrets
 **_Typical Usage_**
