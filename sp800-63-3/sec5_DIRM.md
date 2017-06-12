@@ -164,4 +164,4 @@ As these guidelines are revised, CSPs SHALL consider how changes in requirements
 3. Federation requirements may or may not have a user impact. For example, consent requirements or infrastructure requirements could necessitate an infrastructure or protocol upgrade.
 4. Addition or removal of xALs may not require a migration, but would trigger a new risk assessment to determine if a change is necessary for the RP.
  
-The guidance does not prescribe that any migration needs to occur, only that it be considered as revisions are released. It is up CSP and RP, based on their risk tolerance and mission, to determine the best approach.
+The guidance does not prescribe that any migration needs to occur, only that it be considered as revisions are released. It is up to the CSP and RP, based on their risk tolerance and mission, to determine the best approach.

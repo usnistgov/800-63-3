@@ -77,7 +77,7 @@ EO 13681 also requires agencies employ "an effective identity proofing process, 
 
 Despite the user being pseudonymous, the agency should still select AAL2 or AAL3 for authentication because a malicious actor could gain access to the user's PHI by compromising the account.
 
-> Note: An agency can accept a higher assurance level than those required in the table above. For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2. The same holds true for authenticators: stronger authenticators can be used at RPs that have lower authenticator requirements. However, RPs will have to ensure that this only occurs in federated scenarios with appropriate privacy protections by the CSP such that only attributes that have been requested by the RP and authorized by the subscriber are provided to the RP and that excessive personal information does not leak from the credential or an assertion. See [privacy requirements](./sp800-63c.html#privacy) in SP 800-63C for more details.
+> Note: An agency can accept a higher assurance level than those required in the table above. For example, in a federated transaction, an agency can accept an IAL3 identity if their application is assessed at IAL2. The same holds true for authenticators: stronger authenticators can be used at RPs that have lower authenticator requirements. However, RPs will have to ensure that this only occurs in federated scenarios with appropriate privacy protections by the CSP such that only attributes that have been requested by the RP and authorized by the subscriber are provided to the RP and that excessive personal information does not leak from the credential or an assertion. See the [privacy considerations in SP 800-63C](sp800-63c.html#privacy) for more details.
 
 <!---->
 
@@ -190,27 +190,27 @@ The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from
     <td><img src="sp800-63-3/media/fal-step1.png" alt="FAL Step 1"/></td>
   </tr>
   <tr>
-   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user could compromise an assertion. Compromise could include being able to replay an assertion to impersonate a valid user or an assertion leaking information through the browser. Risk should be considered from the perspective of the organization and to a valid user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
+   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user could compromise an assertion. Examples of compromise include use of assertion replay to impersonate a valid user or leakage of assertion information information through the browser. Risk should be considered from the perspective of the organization and to the subscriber, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/fal-step2.png" alt="FAL Step 2"/></td>
   </tr>
   <tr>
 
-   <td>FAL2 is required when any personal information is passed in an assertion. Since the other paths in this decision tree already drive the agency to FAL2 or higher, the question of personal information is only raised at this point. That said, personal information release at all FALs should be considered when performing the risk assessment. FAL2 or higher is required when any personal information is contained in an assertion, as the audience and encryption requirements do not adequately protect personal information from being released. Release of even self-asserted personal information requires assertion protection via FAL2. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service.</td> 
+   <td>FAL2 is required when any personal information is passed in an assertion. Personal information release at all FALs should be considered when performing the risk assessment. FAL2 or higher is required when any personal information is contained in an assertion, as the audience and encryption requirements at FAL1 are not sufficient to protect personal information from being released. Release of even self-asserted personal information requires assertion protection via FAL2. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. However, when personal information is available to the RP via an authorized API call, such information need not be included in the assertion itself. Since the assertion no longer includes personal information, it need not be protected at FAL2.</td> 
 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/fal-step3.png" alt="FAL Step 3"/></td>
   </tr>
   <tr>
-   <td>RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, particularly at FAL2 or higher, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.</td> 
+   <td>RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.</td> 
   </tr>
   
   </table>
 </div>
 
-All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [[SP 800-63C]](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
+All FALs require assertions to have a baseline of protections, including signatures, expirations, audience restrictions, and others enumerated in [SP 800-63C](sp800-63c.html#assertions). When taken together, these measures make it so that assertions cannot be created or modified by an unauthorized party, and that an RP will not accept an assertion created for a different system. 
 
 ### 6.4 Combining xALs 
 

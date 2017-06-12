@@ -6,7 +6,7 @@
 
 _This section is informative._
 
-This section is intended to raise implementers' awareness of the usability considerations associated with enrollment and identity proofing (for usability considerations for typical authenticator usage and intermittent events, see [SP 800-63B, Section 10](sp800-63b#sec10).
+This section is intended to raise implementers' awareness of the usability considerations associated with enrollment and identity proofing (for usability considerations for typical authenticator usage and intermittent events, see [SP 800-63B, Section 10](sp800-63b.html#sec10).
 
 ISO/IEC [ISO/IEC 9241-11](#ISO9241-11) defines usability as the "extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use." This definition focuses on users, goals, and context of use as the necessary elements for achieving effectiveness, efficiency, and satisfaction. A holistic approach considering these key elements is necessary to achieve usability.
 
@@ -45,7 +45,7 @@ This sub-section provides usability considerations that are applicable across al
   * Consider text legibility, such as font style, size, color, and contrast with surrounding background. The highest contrast is black on white. Text legibility is important because users have different levels of visual acuity. Illegible text will contribute to user comprehension errors or user entry errors (e.g., when completing fillable forms).
   * Use sans serif font styles for electronic materials and serif fonts for paper materials.
   * When possible, avoid fonts that do not clearly distinguish between easily confusable characters (such as the letter "O" and the number "0"). This is especially important for enrollment codes.
-  * Use a minimum font size of 12 points, as long as the text fits the display.  
+  * Use a minimum font size of 12 points, as long as the text fits the display.
 * Perform a usability evaluation for each step with representative users. Establish realistic goals and tasks, and appropriate contexts of use for the usability evaluation.
 
 
@@ -134,6 +134,6 @@ Usability considerations for post-enrollment include:
 
 * Minimize the amount of time that users wait for their authenticator to arrive. Shorter wait times will allow users to access information systems and services more quickly. 
 
-* Inform users whether they need to go to a physical location to pick up their authenticators. The previous-identified usability considerations for appointments and reminders still apply. 
+* Inform users whether they need to go to a physical location to pick up their authenticators. The previously-identified usability considerations for appointments and reminders still apply. 
 
 * Along with the authenticator, give users information relevant to the use and maintenance of the authenticator; this may include instructions for use, especially if there are different requirements for first-time use or initialization, information on authenticator expiration, and what to do if the authenticator is lost or stolen. 

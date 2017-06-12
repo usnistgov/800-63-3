@@ -135,7 +135,7 @@ See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more 
 The CSP SHALL verify identity evidence as follows:
 
 1. At a minimum, the applicant's binding to identity evidence must be verified by a process that is able to achieve a strength of STRONG.
-2. Knowledge-based Verification (KBV) SHALL NOT be used for in-person (physical or supervised remote) identity verification.
+2. Knowledge-based verification (KBV) SHALL NOT be used for in-person (physical or supervised remote) identity verification.
 
 See [Section 5.3 Identity Verification](#verify) for more information on acceptable identity evidence.
 
@@ -233,7 +233,7 @@ The CSP SHALL perform all identity proofing steps with the applicant in-person. 
 
 #### <a name="4-5-7"></a>4.5.7 Biometric Collection
 
-The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, ﬁngerprints) for the purposes of non-repudiation and re-proofing. See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing. See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
 
 #### 4.5.8 Security Controls
 

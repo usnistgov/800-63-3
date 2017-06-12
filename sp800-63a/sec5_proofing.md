@@ -13,7 +13,7 @@ This section lists the requirements to resolve, validate, and verify an identity
 The goal of identity resolution is to uniquely distinguish an individual within a given population or context. Effective identity resolution uses the smallest set of attributes necessary to resolve to a unique individual. It provides the CSP an important starting point in the overall identity proofing process, to include the initial detection of potential fraud, but in no way represents a complete and successful identity proofing transaction.
 
 1.  Exact matches of information used in the proofing process can be difficult to achieve. The CSP MAY employ appropriate matching algorithms to account for differences in personal information and other relevant proofing data across multiple forms of identity evidence, issuing sources, and authoritative sources. Matching algorithms and rules used SHOULD be available publicly or, at minimum, to the relevant community of interest. For example, they may be included as part of the written policy or _practice statement_ referred to in [Section 4.2](#genProofReqs).
-2.  KBV (sometimes referred to as Knowledge-based Authentication) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity.
+2.  KBV (sometimes referred to as knowledge-based authentication) has historically been used to verify a claimed identity by testing the knowledge of the applicant against information obtained from public databases. The CSP MAY use KBV to resolve to a unique, claimed identity.
 
 ### <a name="validate"></a>5.2 Identity Evidence Collection and Validation
 

@@ -1,6 +1,5 @@
-<a name="references"></a>
-
 <div class="breaker"></div>
+<a name="references"></a>
 
 ## 8 References
 
@@ -12,6 +11,8 @@
 
 <a name="ESIG"></a>[ESIG] Federal CIO Council, *Use of Electronic Signatures in Federal Organization Transactions*, January 25, 2013,
 available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf>.
+
+<a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013. Available at: <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
 
 <a name="FISMA"></a>[FISMA] *Federal Information Security Modernization Act of 2014*, available at: <https://www.congress.gov/bill/113th-congress/senate-bill/2521>.
 

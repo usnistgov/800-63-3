@@ -13,7 +13,7 @@ This guideline and its companion volumes are agnostic to the authentication and 
 1. Potential users already have an authenticator at or above required AAL.
 2. Multiple credential form factors are required to cover all possible user communities.
 3. Agency does not have infrastructure to support authentication management (e.g., account recovery, authenticator issuance, help desk).
-4. There is a desire to allow the primary authenticator to be modified and upgraded over time without changing the RP's implementation.
+4. There is a desire to allow primary authenticators to be added and upgraded over time without changing the RP's implementation.
 5. There are different environments to be supported, as federation protocols are network-based and allow for implementation on a wide variety of platforms and languages.
 6. Potential users come from multiple communities, each with its own existing identity infrastructure.
 
