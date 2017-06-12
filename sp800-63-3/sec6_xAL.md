@@ -83,7 +83,7 @@ Despite the user being pseudonymous, the agency should still select AAL2 or AAL3
 
 > Note: The upshot of potentially having a different IAL, AAL, and FAL within a single application stems from the fact that this document no longer supports the notion of an overall LOA &mdash; the "low watermark" approach to determining LOA no longer applies. An application with IAL1 and AAL2 should not be considered any less secure or privacy-enhancing than an application with IAL2 and AAL2. The only difference between these applications is the amount of proofing required, which may not impact the security and privacy of each application. That said, if an agency incorrectly determines the xAL, security and privacy could very well be impacted.
 
-#### <a name="IAL_CYOA"></a> 6.1 Selecting IAL
+### <a name="IAL_CYOA"></a> 6.1 Selecting IAL
 
 The IAL decision tree in [Figure 6-1](#63Sec6-Figure1) combines the results from the risk assessment with additional considerations related to identity proofing services to allow agencies to select the most appropriate identity proofing requirements for their digital service offering. 
 
@@ -140,7 +140,7 @@ The IAL selection does not mean the digital service provider will need to perfor
 
 > Note: Agencies should also consider their constituents' demographics when selecting the most appropriate proofing process. While not a function of IAL selection, certain proofing processes may be more appropriate for some demographics than others. Agencies will benefit as this type of analysis ensures the greatest opportunity for their constituents to be proofed successfully.
  
-#### <a name="AAL_CYOA"></a> 6.2 Selecting AAL
+### <a name="AAL_CYOA"></a> 6.2 Selecting AAL
 
 The AAL decision tree in [Figure 6-2](#63Sec6-Figure2) combines the results from the risk assessment with additional considerations related to authentication to allow agencies to select the most appropriate authentication requirements for their digital service offering. 
 
@@ -173,7 +173,7 @@ The AAL selection does not mean the digital service provider will need to issue 
   </table>
 </div>
 
-#### <a name="FAL_CYOA"></a> 6.3 Selecting FAL
+### <a name="FAL_CYOA"></a> 6.3 Selecting FAL
 
 The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from the risk assessment with additional considerations related to federation to allow agencies to select the most appropriate requirements for their digital service offering. 
 
