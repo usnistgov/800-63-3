@@ -190,23 +190,21 @@ The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from
     <td><img src="sp800-63-3/media/fal-step1.png" alt="FAL Step 1"/></td>
   </tr>
   <tr>
-   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user accessed could compromise an assertion. Such compromise could include being able to replay it to gain unauthorized access impersonating a valid user or a assertion leaking information through the browser? Risk should be considered from the perspective of the organization and to a valid user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
+   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user could compromise an assertion. Such compromise could include being able to replay it to impersonate a valid user or a assertion leaking information through the browser. Risk should be considered from the perspective of the organization and to a valid user, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/fal-step2.png" alt="FAL Step 2"/></td>
   </tr>
   <tr>
 
-   <td>FAL2 is required when any personal information is contained in an assertion, as the audience and encryption requirements do not adequately protect personal information from being released (it isn't adequately protected). Since the other paths in this decision tree already drive the agency to an AAL that requires FAL2 or higher, the question of personal information is only raised at this point. That said, personal information release at all AALs should be considered when performing the risk assessment. Release of even self-asserted personal information requires assertion protection via FAL2. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service. As such, self-asserted data must be protected appropriately.</td> 
+   <td>FAL2 is required when any personal information is passed in an assertion. Since the other paths in this decision tree already drive the agency to FAL2 or higher, the question of personal information is only raised at this point. That said, personal information release at all FALs should be considered when performing the risk assessment. FAL2 or higher is required when any personal information is contained in an assertion, as the audience and encryption requirements do not adequately protect personal information from being released. Release of even self-asserted personal information requires assertion protection via FAL2. Even though self-asserted information can be falsified, most users will provide accurate information to benefit from the digital service.</td> 
 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/fal-step3.png" alt="FAL Step 3"/></td>
   </tr>
   <tr>
-   <td>NEED TO EVALUATE GRAPHIC
-   
-   RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.</td> 
+   <td>RPs should use a back-channel presentation mechanism as described in [SP 800-63C Section 7.1](sp800-63c.html#back-channel) where possible, particularly at FAL2 or higher, as such mechanisms allow for greater privacy and security. Since the subscriber handles only an assertion reference and not the assertion itself, there is less chance of leakage of attributes or other sensitive information found in the assertion to the subscriber's browser or other programs. As the RP directly presents the assertion reference to the IdP, the IdP can often take steps to identify and authenticate the RP during this step. Further, as the RP fetches the assertion directly from the IdP over an authenticated protected channel, there are fewer opportunities for an attacker to inject an assertion into an RP.</td> 
   </tr>
   
   </table>
