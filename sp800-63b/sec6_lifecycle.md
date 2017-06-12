@@ -45,7 +45,7 @@ For in-person transactions -
 
 1. The applicant SHALL identify themselves in person by either using a secret as described in remote transaction (1) above, or through the use of a biometric that was recorded during a prior encounter.
 
-2. Temporary secrets SHALL not be reused.
+2. Temporary secrets SHALL NOT be reused.
 
 3. If the CSP issues long-term authenticator secrets during a physical transaction, then they SHALL be loaded locally onto a physical device that is issued in person to the applicant or delivered in a manner that confirms the address of record.
 

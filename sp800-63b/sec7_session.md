@@ -25,7 +25,7 @@ Secrets used for session binding:
 5. SHOULD NOT be placed in insecure locations such as HTML5 Local Storage due to the potential exposure of local storage to cross-site scripting (XSS) attacks.
 6. SHALL be sent to and received from the device using an authenticated protected channel.
 7. SHALL time out and not be accepted after the times specified in [Sections 4.1.4](#aal1reauth), [4.2.4](#aal2reauth), and [4.3.4](#aal3reauth), as appropriate for the AAL.
-8. SHALL not be available to insecure communications between the host and subscriber's endpoint. Authenticated sessions SHALL not fall back to an insecure transport, such as from https to http, following authentication.
+8. SHALL NOT be available to insecure communications between the host and subscriber's endpoint. Authenticated sessions SHALL NOT fall back to an insecure transport, such as from https to http, following authentication.
 
 URLs or POST content SHALL contain a session identifier that SHALL be verified by the RP to ensure that actions taken outside the session do not affect the protected session.
 
