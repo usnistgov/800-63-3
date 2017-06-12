@@ -24,7 +24,7 @@ Assertions MAY also include the following information:
 
 1. Key binding – Public key or key identifier of a key held by the subscriber to demonstrate their binding with the assertion described in [Section 6.1.2](#holderofkey).
 2. Attribute values and attribute references – Information about the subscriber.
-3. Attribute metadata – Additional information about one or more subscriber attributes, such as that described in [NISTIR 8112](#nistir8112).
+3. Attribute metadata – Additional information about one or more subscriber attributes, such as that described in NIST Internal Report 8112 [[NISTIR 8112]](#nistir8112).
 
 Assertions SHOULD specify the AAL when an authentication event is being asserted and IAL when identity proofed attributes, or references based thereon, are being asserted. If not specified, the RP SHALL NOT assign any specific IAL or AAL to the assertion.
 
@@ -80,17 +80,17 @@ The assertion signature SHALL either be a digital signature using asymmetric key
 
 #### 6.2.3 <a name="encrypted-assertion"></a>Encrypted Assertion
 
-When encrypting assertions the IdP SHALL encrypt the contents of the assertion using either the RP's public key or a shared symmetric key. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for encryption MAY be fetched by the IdP in a secure fashion at runtime, such as through an HTTPS URL hosted by the RP.
+When encrypting assertions, the IdP SHALL encrypt the contents of the assertion using either the RP's public key or a shared symmetric key. Shared symmetric keys used for this purpose by the IdP SHALL be independent for each RP to which they send assertions, and are normally established during registration of the RP. Public keys for encryption MAY be fetched by the IdP in a secure fashion at runtime, such as through an HTTPS URL hosted by the RP.
 
 All encryption of assertions SHALL use approved cryptography.
 
-When assertions are passed through third parties, such as a browser, the actual assertion SHALL be encrypted. For example, the XML SAML assertion using XML-Encryption. For assertions that are passed directly between IDP and RP, the actual assertion MAY be encrypted. If it is not, the assertion SHALL be sent over an authenticated protected channel.
+When assertions are passed through third parties, such as a browser, the actual assertion SHALL be encrypted. This encryption MAY include, for example, the XML SAML assertion using XML-Encryption. For assertions that are passed directly between IDP and RP, the actual assertion MAY be encrypted. If it is not, the assertion SHALL be sent over an authenticated protected channel.
 
 > Note: Assertion encryption is required at FAL2 and FAL3.
 
 #### 6.2.4 Audience Restriction
 
-Assertions SHALL use audience restriction techniques to allow an RP to recognize whether or not it is the intended target of an issued assertion. All RPs SHALL check that the audience of an assertion contains an identifer for their RP to prevent the injection and replay of an assertion generated for one RP at another RP.
+Assertions SHALL use audience restriction techniques to allow an RP to recognize whether or not it is the intended target of an issued assertion. All RPs SHALL check that the audience of an assertion contains an identifier for their RP to prevent the injection and replay of an assertion generated for one RP at another RP.
 
 #### <a name="ppi"></a>6.3 Pairwise Pseudonymous Identifiers
 
