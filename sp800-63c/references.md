@@ -17,9 +17,9 @@
 ### 2. Standards
 <a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525,DOI 10.17487/RFC7525, May 2015, <https://doi.org/10.17487/RFC7525>.
 
-<a name="ISO9241-11"></a>[ISO 9241-11] International Organization for Standardization, *Ergonomic requirements for office work with visual display terminals (VDTs) – Part 11: Guidance on Usability*, ISO 9241-11:1998, ISO: Geneva, Switzerland, 1998, available at <https://www.iso.org/standard/16883.html>.
+<a name="ISO9241"></a>[ISO 9241-11] International Standards Organization, ISO/IEC 9241-11 *Ergonomic requirements for office work with visual display terminals (VDTs) — Part 11: Guidance on usability*, 1998, available at: <https://www.iso.org/standard/16883.html>.
 
-<a name="OIDC"><a>[OIDC] OpenID Foundation, *OpenID Connect Core 1.0 incorporating errata set 1*, November 2014, available at: <http://openid.net/specs/openid-connect-core-1_0.html>.
+<a name="OpenIDConnectCore"></a>[OpenID Connect Core 1.0] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014. Available at: <https://openid.net/specs/openid-connect-core-1_0.html>.
 
 <a name="RFC4120"></a>[RFC 4120] IETF, *The Kerberos Network Authentication Service (V5)*,RFC 4120, DOI 10.17487/RFC4120, July 2005, <https://doi.org/10.17487/RFC4120>.
 
