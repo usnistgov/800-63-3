@@ -8,7 +8,7 @@ Once an authentication event has taken place, it is often desirable to allow the
 
 To facilitate this behavior, a *session* MAY be started in response to an authentication event, and continue the session until such time that it is terminated. The session MAY be terminated for any number of reasons, including but not limited to an inactivity timeout, an explicit logout event, or other means. The session MAY be continued through a reauthentication event — described in [Section 7.2](#sessionreauthn) — wherein the user repeats some or all of the initial authentication event, thereby re-establishing the session.
 
-Session management is preferable over continual presentation of credentials as continual presentation's poor usability often creates incentives for workarounds such as cached unlocking credentials, negating the freshness of the authentication event.
+Session management is preferable over continual presentation of credentials as the poor usability of continual presentation often creates incentives for workarounds such as cached unlocking credentials, negating the freshness of the authentication event.
 
 ### 7.1 Session Bindings
 
