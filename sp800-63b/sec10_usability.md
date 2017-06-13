@@ -18,7 +18,7 @@ The impact of usability across digital systems needs to be considered as part of
 
 Leveraging federation for authentication can alleviate many of the usability issues, though such an approach has its own tradeoffs, as discussed in [NIST SP 800-63C, Federation and Assertions](sp800-63c.html).
 
-This section provides general usability considerations and possible implementations, but does not recommend specific solutions. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. Furthermore, usability considerations and their implementations are sensitive to many factors that prevent a one-size-fits-all solution. For example, a font size that works in the desktop computing environment may force text to scroll off of a small OTP device screen. Performing a usability evaluation on the selected authenticator is a critical component of implementation. It is important to conduct evaluations with representative users, realistic goals and tasks, and appropriate contexts of use.
+This section provides general usability considerations and possible implementations, but does not recommend specific solutions. The implementations mentioned are examples to encourage innovative technological approaches to address specific usability needs. Further, usability considerations and their implementations are sensitive to many factors that prevent a one-size-fits-all solution. For example, a font size that works in the desktop computing environment may force text to scroll off of a small OTP device screen. Performing a usability evaluation on the selected authenticator is a critical component of implementation. It is important to conduct evaluations with representative users, realistic goals and tasks, and appropriate contexts of use.
 
 ##### ASSUMPTIONS
 In this section, the term "users" means "claimants" or "subscribers."
@@ -34,27 +34,27 @@ A single authenticator type usually does not suffice for the entire user populat
 
 Positive user authentication experiences are integral to the success of an organization achieving desired business outcomes. Therefore, they should strive to consider authenticators from the users' perspective. The overarching authentication usability goal is to minimize user burden and authentication friction (e.g., the number of times a user has to authenticate, the steps involved, and the amount of information he or she has to track). Single sign-on exemplifies one such minimization strategy.
 
-Usability considerations that are applicable to most authenticators are described below. Subsequent sections describe usability considerations that are specific to a particular authenticator.
+Usability considerations applicable to most authenticators are described below. Subsequent sections describe usability considerations specific to a particular authenticator.
 
 Usability considerations for typical usage of all authenticators include:
 
 * Provide information on the use and maintenance of the authenticator, e.g., what to do if the authenticator is lost or stolen, and instructions for use — especially if there are different requirements for first-time use or initialization.
 
-* Availability of the authenticator should also be considered as users will need to remember to have their authenticator readily available. Consider the need for alternate authentication options to protect against loss, damage, or other negative impacts to the original authenticator.
+* Authenticator availability should also be considered as users will need to remember to have their authenticator readily available. Consider the need for alternate authentication options to protect against loss, damage, or other negative impacts to the original authenticator.
 
-* Whenever possible based on AAL requirements, users should be provided with alternate authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternate authentication options also help address availability issues that may occur with a particular authenticator.
+* Whenever possible, based on AAL requirements, users should be provided with alternate authentication options. This allows users to choose an authenticator based on their context, goals, and tasks (e.g., the frequency and immediacy of the task). Alternate authentication options also help address availability issues that may occur with a particular authenticator.
 
 * Characteristics of user-facing text:
   * Write user-facing text (e.g., instructions, prompts, notifications, error messages) in plain language for the intended audience. Avoid technical jargon and, typically, write for a 6th to 8th grade literacy level.
   * Consider the legibility of user-facing and user-entered text, including font style, size, color, and contrast with surrounding background. Illegible text contributes to user entry errors. To enhance legibility, consider the use of:
-    * High contrast, the highest contrast is black on white.
+    * High contrast. The highest contrast is black on white.
     * Sans serif fonts for electronic displays. Serif fonts for printed materials.
     * Fonts that clearly distinguish between easily confusable characters (e.g., the capital letter "O" and the number "0").
     * A minimum font size of 12 points as long as the text fits for display on the device.
 
 * User experience during authenticator entry:
-  * Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (e.g., tablets and smartphones) than on traditional desktop computers. Ensure that masking delay durations are consistent with user needs.
-  * Ensure that the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely). Ensure that allowed text entry times are consistent with user needs.
+  * Offer the option to display text during entry, as masked text entry is error-prone. Once a given character is displayed long enough for the user to see, it can be hidden. Consider the device when determining masking delay time, as it takes longer to enter memorized secrets on mobile devices (e.g., tablets and smartphones) than on traditional desktop computers. Ensure masking delay durations are consistent with user needs.
+  * Ensure the time allowed for text entry is adequate (i.e., the entry screen does not time out prematurely). Ensure allowed text entry times are consistent with user needs.
   * Provide clear, meaningful and actionable feedback on entry errors to reduce user confusion and frustration. Significant usability implications arise when users do not know they have entered text incorrectly.
   * Allow at least 10 entry attempts for authenticators requiring the entry of the authenticator output by the user. The longer and more complex the entry text, the greater the likelihood of user entry errors.
   * Provide clear, meaningful feedback on the number of remaining allowed attempts. For rate limiting (i.e., throttling), inform users how long they have to wait until the next attempt to reduce confusion and frustration.
@@ -67,7 +67,7 @@ Intermittent events include events such as reauthentication, account lock-out, e
 
 Usability considerations for intermittent events across authenticator types include:
 
-* To prevent users from needing to reauthenticate due to user inactivity, prompt users in order to trigger activity just before (e.g., 2 minutes before) an inactivity timeout would otherwise occur.
+* To prevent users from needing to reauthenticate due to user inactivity, prompt users in order to trigger activity just before (e.g., 2 minutes) an inactivity timeout would otherwise occur.
 
 * Prompt users with adequate time (e.g., 1 hour) to save their work before the fixed periodic reauthentication event required regardless of user activity.
 
@@ -116,7 +116,7 @@ Usability considerations for typical usage include:
 #### 10.2.3 Out-of-Band
 **_Typical Usage_**
 
-Out of band authentication requires users have access to a primary and secondary communication channel.
+Out-of-band authentication requires users have access to a primary and secondary communication channel.
 
 Usability considerations for typical usage:
 
@@ -133,7 +133,7 @@ Users access the OTP generated by the single-factor OTP device. The authenticato
 
 Usability considerations for typical usage include:
 
-* Authenticator output allows at least one minute between changes, but ideally allows users the full 2 minutes as specified in [Section 5.1.4.1](#sfotpa). Users need adequate time to enter the authenticator output (including looking back and forth between the single-factor OTP device and the entry screen).
+* Authenticator output allows at least one minute between changes, but ideally allows users the full two2 minutes as specified in [Section 5.1.4.1](#sfotpa). Users need adequate time to enter the authenticator output (including looking back and forth between the single-factor OTP device and the entry screen).
 
 * Depending on the implementation, the following are additional usability considerations for implementers:
   * If the single-factor OTP device supplies its output via an electronic interface (e.g, USB) this is preferable since users do not have to manually enter the authenticator output. However, if a physical input (e.g., pressing a button) is required to operate, the location of the USB ports could pose usability difficulties. For example, the USB ports of some computers are located on the back of the computer and will be difficult for users to reach.
