@@ -15,7 +15,7 @@ Authenticators SHALL be bound to subscriber accounts by either:
 - Issuance by the CSP as part of enrollment; or
 - Associating a subscriber-provided authenticator that is acceptable to the CSP.
 
-This guidance refers to the *binding* rather than the issuance of an authenticator as to accommodate both options.
+These guidelines refer to the *binding* rather than the issuance of an authenticator as to accommodate both options.
 
 Throughout the digital identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with each identity. The CSP or verifier SHALL maintain the information required for throttling authentication attempts when required, as described in [Section 5.2.2](#throttle). The CSP SHALL also verify the type of user-provided authenticator (e.g., single-factor cryptographic device vs. multi-factor cryptographic device) so verifiers can determine compliance with requirements at each AAL.
 

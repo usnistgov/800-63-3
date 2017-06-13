@@ -46,7 +46,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.1.4 Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the *low* baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g. [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *low-impact* systems, or equivalent, are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the *low* baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g. [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *low-impact* systems, or equivalent, are satisfied.
 
 #### <a name="aal1records"></a> 4.1.5 Records Retention Policy
 
@@ -84,7 +84,7 @@ Communication between the claimant and verifier (the primary channel in the case
 
 Verifiers operated by government agencies at AAL2 SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1.
 
-When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. Generally, it isnot possible for a verifier to know that the device had been locked or if the unlock process met the requirements for the relevant authenticator type.
+When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. Generally, it is not possible for a verifier to know that the device had been locked or if the unlock process met the requirements for the relevant authenticator type.
 
 When a biometric factor is used in authentication at AAL2, the performance requirements stated in [Section 5.2.3](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
 
@@ -96,7 +96,7 @@ Reauthentication of a session that has not yet reached its time limit MAY requir
 
 #### 4.2.4 Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the *moderate* baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *moderate-impact* systems or equivalent are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the *moderate* baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *moderate-impact* systems or equivalent are satisfied.
 
 #### <a name="aal2records"></a> 4.2.5 Records Retention Policy
 
@@ -139,7 +139,7 @@ Periodic reauthentication of subscriber sessions SHALL be performed as described
 
 #### 4.3.4 Security Controls
 
-The CSP SHALL employ appropriately tailored security controls from the *high* baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *high-impact* systems or equivalent are satisfied.
+The CSP SHALL employ appropriately-tailored security controls from the *high* baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *high-impact* systems or equivalent are satisfied.
 
 #### <a name="aal3records"></a> 4.3.5 Records Retention Policy
 
@@ -147,7 +147,7 @@ The CSP shall comply with its respective records retention policies in accordanc
 
 ### <a name="aal_privacy"></a>4.4 Privacy Requirements
 
-The CSP SHALL employ appropriately tailored privacy controls defined in [SP 800-53](#SP800-53) or equivalent industry standard.
+The CSP SHALL employ appropriately-tailored privacy controls defined in [SP 800-53](#SP800-53) or equivalent industry standard.
 
 CSPs SHALL NOT use or disclose information about subscribers for any purpose other than conducting authentication, related fraud mitigation, or to comply with law or legal process, unless the CSP provides clear notice and obtains consent from the subscriber for additional uses. CSPs SHALL NOT make consent a condition of the service. Care SHALL be taken to ensure that use of such information is limited to its original purpose for collection. If the use of such information does not fall within uses related to authentication or to comply with law or legal process, the CSP SHALL provide notice and obtain consent from the subscriber. This notice SHOULD follow the same principles as described in *Notice and Consent* in [SP 800-63A Section 8.2](sp800-63a.html#consent) and SHOULD NOT be rolled up into a legalistic privacy policy or general terms and conditions. Rather, if there are uses outside the bounds of these explicit purposes, the subscriber SHOULD be provided with a meaningful way to understand the purpose for additional uses, and the opportunity to accept or decline.
 
