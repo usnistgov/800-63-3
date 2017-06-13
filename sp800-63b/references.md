@@ -47,7 +47,7 @@
 
 ### 2. Standards
 
-<a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525, May 2015, <http://www.rfc-editor.org/info/bcp195>.
+<a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525,DOI 10.17487/RFC7525, May 2015, <https://doi.org/10.17487/RFC7525>.
 
 <a name="ISO9241-11"></a>[ISO 9241-11] International Organization for Standardization, *Ergonomic requirements for office work with visual display terminals (VDTs) – Part 11: Guidance on Usability*, ISO 9241-11:1998, ISO: Geneva, Switzerland, 1998, available at <https://www.iso.org/standard/16883.html>.
 
@@ -63,13 +63,13 @@
 
 <a name="RFC20"></a>[RFC 20] Cerf, V., *ASCII format for network interchange*, STD 80, RFC 20, DOI 10.17487/RFC0020, October 1969, <https://doi.org/10.17487/RFC0020>.
 
-<a name="RFC5246"></a>[RFC 5246] IETF, *The Transport Layer Security (TLS) Protocol Version 1.2*, RFC 5246, DOI 10.17487/RFC5246, August 2008, available at: <https://doi.org/10.17487/RFC5246>.
+<a name="RFC5246"></a>[RFC 5246] IETF, *The Transport Layer Security (TLS) Protocol Version 1.2*, RFC 5246, DOI 10.17487/RFC5246, August 2008, <https://doi.org/10.17487/RFC5246>.
 
-<a name="RFC5280"></a>[RFC 5280] IETF, *Internet X.509 Public Key Infrastructure Certificate and CRL Profile*, RFC 5280, DOI 10.17487/RFC5280, May 2008, available at: <https://doi.org/10.17487/RFC5280>.
+<a name="RFC5280"></a>[RFC 5280] IETF, *Internet X.509 Public Key Infrastructure Certificate and CRL Profile*, RFC 5280, DOI 10.17487/RFC5280, May 2008, <https://doi.org/10.17487/RFC5280>.
 
-<a name="RFC6238"></a>[RFC 6238] IETF, *TOTP: Time-Based One-Time Password Algorithm*,RFC 6238, DOI 10.17487/RFC6238, available at: <https://doi.org/10.17487/RFC6238>.
+<a name="RFC6238"></a>[RFC 6238] IETF, *TOTP: Time-Based One-Time Password Algorithm*,RFC 6238, DOI 10.17487/RFC6238, <https://doi.org/10.17487/RFC6238>.
 
-<a name="RFC6960"></a>[RFC 6960] IETF, *X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP*, RFC 6960, DOI 10.17487/RFC6960, available at: <https://doi.org/10.17487/RFC6960>.
+<a name="RFC6960"></a>[RFC 6960] IETF, *X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP*, RFC 6960, DOI 10.17487/RFC6960, <https://doi.org/10.17487/RFC6960>.
 
 <a name="UAX15"></a>[UAX 15] Unicode Consortium, *Unicode Normalization Forms*, Unicode Standard Annex 15, Version 9.0.0, February, 2016, available at: <http://www.unicode.org/reports/tr15/>.
 
@@ -77,13 +77,13 @@
 
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
 
-<a name="SP800-38B"></a>[SP 800-38B] NIST Special Publication 800-38B, *Recommendation for Block Cipher Modes of Operation: the CMAC Mode for Authentication*, October, 2016, available at: <http://dx.doi.org/10.6028/NIST.SP.800-38B>.
+<a name="SP800-38B"></a>[SP 800-38B] NIST Special Publication 800-38B, *Recommendation for Block Cipher Modes of Operation: the CMAC Mode for Authentication*, October, 2016, <http://dx.doi.org/10.6028/NIST.SP.800-38B>.
 
-<a name="SP800-52"></a>[SP 800-52] NIST Special Publication 800-52 Revision 1, *Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations*, April, 2014, available at: <http://dx.doi.org/10.6028/NIST.SP.800-52r1>
+<a name="SP800-52"></a>[SP 800-52] NIST Special Publication 800-52 Revision 1, *Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations*, April, 2014, <http://dx.doi.org/10.6028/NIST.SP.800-52r1>
 
-<a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53 Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, April 2013 (updated January 22, 2015), available at: <http://dx.doi.org/10.6028/NIST.SP.800-53r4>.
+<a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53 Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, April 2013 (updated January 22, 2015), <http://dx.doi.org/10.6028/NIST.SP.800-53r4>.
 
-<a name="SP800-57P1"></a>[SP 800-57 Part 1] NIST Special Publication 800-57 Part 1, Revision 4, *Recommendation for Key Management, Part 1: General*, January 2016, available at: <http://dx.doi.org/10.6028/NIST.SP.800-57pt1r4>.
+<a name="SP800-57P1"></a>[SP 800-57 Part 1] NIST Special Publication 800-57 Part 1, Revision 4, *Recommendation for Key Management, Part 1: General*, January 2016, <http://dx.doi.org/10.6028/NIST.SP.800-57pt1r4>.
 
 <a name="SP800-63-3"></a>[SP 800-63-3] NIST Special Publication 800-63-3, *Digital Identity Guidelines*, June 2017, available at: <***To be updated at publication***>.
 
@@ -91,24 +91,24 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-63B"></a>[SP 800-63B] NIST Special Publication 800-63B, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, available at: <***To be updated at publication***>.
 
-<a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digtial Identity Guidelines: Assertions and Federation*, June 2017, available at: <https://doi.org/10.6028/NIST.SP.800-63c>.
+<a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digtial Identity Guidelines: Assertions and Federation*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63c>.
 
-<a name="SP800-90Ar1></a>[SP 800-90Ar1] NIST Special Publication 800-90A Revision 1, *Recommendation for Random Number Generation Using Deterministic Random Bit Generators*, June 2015, available at: <http://dx.doi.org/10.6028/NIST.SP.800-90Ar1>.
+<a name="SP800-90Ar1"></a>[SP 800-90Ar1] NIST Special Publication 800-90A Revision 1, *Recommendation for Random Number Generation Using Deterministic Random Bit Generators*, June 2015, <http://dx.doi.org/10.6028/NIST.SP.800-90Ar1>.
 
-<a name="SP800-107"></a>[SP 800-107] NIST Special Publication 800-107 Revision 1, *Recommendation for Applications Using Approved Hash Algorithms*, August 2012, available at: <http://dx.doi.org/10.6028/NIST.SP.800-107r1>.
+<a name="SP800-107"></a>[SP 800-107] NIST Special Publication 800-107 Revision 1, *Recommendation for Applications Using Approved Hash Algorithms*, August 2012, <http://dx.doi.org/10.6028/NIST.SP.800-107r1>.
 
-<a name="SP800-131A"></a>[SP 800-131A] NIST Special Publication 800-131A Revision 1, *Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths*, November 2015, available at: <http://dx.doi.org/10.6028/NIST.SP.800-131Ar1>
+<a name="SP800-131A"></a>[SP 800-131A] NIST Special Publication 800-131A Revision 1, *Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths*, November 2015, <http://dx.doi.org/10.6028/NIST.SP.800-131Ar1>
 
-<a name="SP800-132"></a>[SP 800-132] NIST Special Publication 800-132, *Recommendation for Password-Based Key Derivation*, December 2010, available at: <http://dx.doi.org/10.6028/NIST.SP.800-132>.
+<a name="SP800-132"></a>[SP 800-132] NIST Special Publication 800-132, *Recommendation for Password-Based Key Derivation*, December 2010, <http://dx.doi.org/10.6028/NIST.SP.800-132>.
 
-<a name="SP800-185"></a>[SP 800-185] NIST Special Publication 800-185, *SHA-3 Derived Functions: cSHAKE, KMAC, TupleHash, and ParallelHash*, December, 2016, available at: <https://doi.org/10.6028/NIST.SP.800-185>.
+<a name="SP800-185"></a>[SP 800-185] NIST Special Publication 800-185, *SHA-3 Derived Functions: cSHAKE, KMAC, TupleHash, and ParallelHash*, December, 2016, <https://doi.org/10.6028/NIST.SP.800-185>.
 
 ### 4. Federal Information Processing Standard
 
-<a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, May 25, 2001 (with Change Notices through December 3, 2002), available at: <https://doi.org/10.6028/NIST.FIPS.140-2>.
+<a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, January 11, 1994 (with Change Notices through December 3, 2002), <https://doi.org/10.6028/NIST.FIPS.140-2>.
 
 <a name="FIPS198-1"></a>[FIPS 198-1] Federal Information Processing Standard Publication 198-1, *The Keyed-Hash Message Authentication Code (HMAC)*, July 2008, <https://doi.org/10.6028/NIST.FIPS.198-1>.
 
-<a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, available at: <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
+<a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
 
-<a name="FIPS202"></a>[FIPS 202] Federal Information Processing Standard Publication 202, *SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions*, August 2015, available at: <http://dx.doi.org/10.6028/NIST.FIPS.202>.
+<a name="FIPS202"></a>[FIPS 202] Federal Information Processing Standard Publication 202, *SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions*, August 2015, <http://dx.doi.org/10.6028/NIST.FIPS.202>.
