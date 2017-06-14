@@ -86,11 +86,10 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 <a name="SP800-57P1"></a>[SP 800-57 Part 1] NIST Special Publication 800-57 Part 1, Revision 4, *Recommendation for Key Management, Part 1: General*, January 2016, <http://dx.doi.org/10.6028/NIST.SP.800-57pt1r4>.
 
 <a name="SP800-63-3"></a>[SP 800-63-3] NIST Special Publication 800-63-3, *Digital Identity Guidelines*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63-3>.
- 
+
 <a name="SP800-63A"></a>[SP 800-63A] NIST Special Publication 800-63A, *Digital Identity Guidelines: Enrollment and Identity Proofing Requirements*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63a>.
 
-<a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <
-https://doi.org/10.6028/NIST.SP.800-63c>.
+<a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63c>.
 
 <a name="SP800-90Ar1"></a>[SP 800-90Ar1] NIST Special Publication 800-90A Revision 1, *Recommendation for Random Number Generation Using Deterministic Random Bit Generators*, June 2015, <http://dx.doi.org/10.6028/NIST.SP.800-90Ar1>.
 
