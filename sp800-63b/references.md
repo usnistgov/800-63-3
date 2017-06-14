@@ -4,7 +4,7 @@
 
 *This section is informative.*
 
-### 1. General references
+### 11.1 General References
 
 <a name="balloon"></a>[BALLOON] Boneh, Dan, Corrigan-Gibbs, Henry,  and Stuart Schechter. "Balloon Hashing: A Memory-Hard Function Providing Provable Protection Against Sequential Attacks," *Asiacrypt 2016*, October, 2016. Available at: <https://eprint.iacr.org/2016/027>.
 
@@ -45,7 +45,7 @@
 <a name="strength"></a>[Strength] Kelley, Patrick Gage, Saranga Komanduri, Michelle L Mazurek, Richard Shay, Timothy Vidas, Lujo Bauer, Nicolas Christin, Lorrie Faith Cranor, and Julio Lopez. “Guess Again (and Again and Again): Measuring Password Strength by Simulating Password-Cracking Algorithms.” In Security and Privacy (SP), 2012 IEEE Symposium On, 523–537. IEEE, 2012. Available at: <http://ieeexplore.ieee.org/iel5/6233637/6234400/06234434.pdf>.
 
 
-### 2. Standards
+### 11.2 Standards
 
 <a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525,DOI 10.17487/RFC7525, May 2015, <https://doi.org/10.17487/RFC7525>.
 
@@ -73,7 +73,7 @@
 
 <a name="UAX15"></a>[UAX 15] Unicode Consortium, *Unicode Normalization Forms*, Unicode Standard Annex 15, Version 9.0.0, February, 2016, available at: <http://www.unicode.org/reports/tr15/>.
 
-### 3. NIST Special Publications
+### 11.3 NIST Special Publications
 
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
 
@@ -92,7 +92,6 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 <a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <
 https://doi.org/10.6028/NIST.SP.800-63c>.
 
-
 <a name="SP800-90Ar1"></a>[SP 800-90Ar1] NIST Special Publication 800-90A Revision 1, *Recommendation for Random Number Generation Using Deterministic Random Bit Generators*, June 2015, <http://dx.doi.org/10.6028/NIST.SP.800-90Ar1>.
 
 <a name="SP800-107"></a>[SP 800-107] NIST Special Publication 800-107 Revision 1, *Recommendation for Applications Using Approved Hash Algorithms*, August 2012, <http://dx.doi.org/10.6028/NIST.SP.800-107r1>.
@@ -103,7 +102,7 @@ https://doi.org/10.6028/NIST.SP.800-63c>.
 
 <a name="SP800-185"></a>[SP 800-185] NIST Special Publication 800-185, *SHA-3 Derived Functions: cSHAKE, KMAC, TupleHash, and ParallelHash*, December, 2016, <https://doi.org/10.6028/NIST.SP.800-185>.
 
-### 4. Federal Information Processing Standard
+### 11.4 Federal Information Processing Standard
 
 <a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, January 11, 1994 (with Change Notices through December 3, 2002), <https://doi.org/10.6028/NIST.FIPS.140-2>.
 
