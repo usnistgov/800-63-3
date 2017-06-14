@@ -48,9 +48,9 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53 Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, April 2013 (updated January 22, 2015), <https://doi.org/10.6028/NIST.SP.800-53r4>.
 
-<a name="SP800-63-3"></a>[SP 800-63-3] NIST Special Publication 800-63-3, *Digital Identity Guidelines*, June 2017, available at: <***To be updated at publication***>.
+<a name="SP800-63-3"></a>[SP 800-63-3] NIST Special Publication 800-63-3, *Digital Identity Guidelines*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63-3>.
 
-<a name="SP800-63B"></a>[SP 800-63B] NIST Special Publication 800-63B, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, available at: <***To be updated at publication***>.
+<a name="SP800-63B"></a>[SP 800-63B] NIST Special Publication 800-63B, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63b>.
 
 <a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digtial Identity Guidelines: Assertions and Federation*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63c>.
 
