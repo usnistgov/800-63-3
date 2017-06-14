@@ -5,7 +5,7 @@
 
 *This section is informative.*
 
-### 1. General References
+### 12.1 General References
 <a name="FEDRAMP"></a>[FEDRAMP] General Services Administration, *Federal Risk and Authorization Management Program*, available at: <https://www.fedramp.gov/>.
 
 <a name="M-03-22"></a>[M-03-22] OMB Memorandum M-03-22, *OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002*, September 26, 2003, available at: <https://georgewbush-whitehouse.archives.gov/omb/memoranda/m03-22.html>.
@@ -14,7 +14,7 @@
 
 <a name="Section508"></a>[Section 508] Section 508 Law and Related Laws and Policies (January 30, 2017), available at: <https://www.section508.gov/content/learn/laws-and-policies>.
 
-### 2. Standards
+### 12.2 Standards
 <a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525,DOI 10.17487/RFC7525, May 2015, <https://doi.org/10.17487/RFC7525>.
 
 <a name="ISO9241"></a>[ISO 9241-11] International Standards Organization, ISO/IEC 9241-11 *Ergonomic requirements for office work with visual display terminals (VDTs) — Part 11: Guidance on usability*, 1998, available at: <https://www.iso.org/standard/16883.html>.
@@ -31,7 +31,7 @@
 
 <a name="SAML"></a>[SAML] OASIS, *Security Assertion Markup Language (SAML) V2.0 Technical Overview*, March 2008, available at: <http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html>.
 
-### 3. NIST Special publications
+### 12.3 NIST Special Publications
 IST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
 
 <a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53 Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, April 2013 (updated January 22, 2015), <http://dx.doi.org/10.6028/NIST.SP.800-53r4>.
@@ -42,6 +42,6 @@ IST 800 Series Special Publications are available at: <http://csrc.nist.gov/publ
 
 <a name="SP800-63B"></a>[SP 800-63B] NIST Special Publication 800-63B, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63b>.
 
-### 4. Federal Information Processing Standards
+### 12.4 Federal Information Processing Standards
 
 <a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, January 11, 1994 (with Change Notices through December 3, 2002), <https://doi.org/10.6028/NIST.FIPS.140-2>.
