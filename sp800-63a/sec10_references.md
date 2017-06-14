@@ -52,11 +52,7 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-63B"></a>[SP 800-63B] NIST Special Publication 800-63B, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63b>.
 
-<a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <
-https://doi.org/10.6028/NIST.SP.800-63c>.
+<a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63c>.
 
-<a name="SP800-63B"></a>[SP 800-63B] NIST Special Publication 800-63B, *Digital Identity Guidelines: Authentication and Lifecycle Management*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63b>.
-
-<a name="SP800-63C"></a>[SP 800-63C] NIST Special Publication 800-63C, *Digital Identity Guidelines: Assertions and Federation*, June 2017, <https://doi.org/10.6028/NIST.SP.800-63c>.
 
 <a name="SP800-157"></a>[SP 800-157] NIST Special Publication 800-157, *Guidelines for Derived Personal Identity Verification (PIV) Credentials*, December 2014, <http://dx.doi.org/10.6028/NIST.SP.800-157>.
