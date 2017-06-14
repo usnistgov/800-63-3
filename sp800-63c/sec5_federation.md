@@ -18,15 +18,15 @@ In a federation protocol, a three-party relationship is formed between the subsc
 
 </div>
 
-The subscriber authenticates to the IdP, and then the result of that authentication event is asserted to the RP across the network. In this transaction, the IdP acts as the verifier for the credential, as described in [SP 800-63B](sp800-63b.html). The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 6](#assertions). Additional attributes MAY be made available through a secondary protocol protected by an authorized credential.
+The subscriber authenticates to the IdP and the result of that authentication event is asserted to the RP across the network. In this transaction, the IdP acts as the verifier for the credential, as described in [SP 800-63B](sp800-63b.html). The IdP can also make attribute statements about the subscriber as part of this process. These attributes and authentication event information are carried to the RP through the use of an assertion, described in [Section 6](#assertions). Additional attributes MAY be made available through a secondary protocol protected by an authorized credential.
 
 ### <a name="federation-model"></a> 5.1 Federation Models
 
-IdPs that provide authentication services and RPs that consume those services are known as members of a federation. From an IdP's perspective, the federation consists of the RPs that it serves. From an RP's perspective, the federation consists of the IdPs that it uses. This section provides an overview of, and requirements for, common identity federation models currently in use. In each model, relationships are established between members of the federation.
+IdPs that provide authentication services and RPs that consume those services are known as members of a federation. From an IdP's perspective, the federation consists of the RPs that it serves. From an RP's perspective, the federation consists of the IdPs that it uses. This section provides an overview of and requirements for common identity federation models currently in use. In each model, relationships are established between members of the federation.
 
 #### <a name="manual-registration"></a> 5.1.1 Manual Registration
 
-In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing these RPs to receive authentication and attribute information as part of the authentication transaction. In cases where an RP is not whitelisted, the IdP SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information.
+In the manual registration model, the IdP and RP manually provision configuration information about parties with which they expect to interoperate. IdPs MAY configure RPs using an explicit whitelist, allowing these RPs to receive authentication and attribute information as part of the authentication transaction. In cases where an RP is not whitelisted, the IdP SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party (such as the subscriber) before releasing user information.
 
 <a name="63cSec5-Figure2"></a>
 
@@ -39,14 +39,13 @@ In the manual registration model, the IdP and RP manually provision configuratio
 
 As shown in [Figure 5-2](#63cSec5-Figure2), manual registration involves three steps: 
 
-1. The system administrator of the RP shares the RP's attributes with the system administrator of the IdP, who associates those attributes with the RP.
+1. The RP's system administrator shares the RP's attributes with the IdP's system administrator, who associates those attributes with the RP.
 
-2. The system administrator of the IdP shares the IdP's attributes with the system administrator of the RP, who associates those attributes with the IdP.
+2. The IdP's system administrator shares the IdP's attributes with the RP's system administrator, who associates those attributes with the IdP.
 
 3. The IdP and RP then communicate using a standard federation protocol.
 
-
-IdPs and RPs MAY act as their own authorities of who to federate with or MAY externalize those authority decisions to an external party as in [Section 5.1.3](#authorities).
+IdPs and RPs MAY act as their own authorities on who to federate with or MAY externalize those authority decisions to an external party as in [Section 5.1.3](#authorities).
 
 Protocols requiring the transfer of keying information SHALL use a secure method during the registration process to exchange keying information needed to operate the federated relationship, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
@@ -77,17 +76,17 @@ As shown in [Figure 5-3](#63cSec5-Figure3), dynamic registration involves four s
 
 Protocols requiring the transfer of keying information SHALL use a secure method during the registration process to establish such keying information needed to operate the federated relationship, including any shared secrets or public keys. Any symmetric keys used in this relationship SHALL be unique to a pair of federation participants.
 
-IdPs SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party, such as the subscriber, before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit from which IdPs it is willing to accept identity information.
+IdPs SHALL require runtime decisions (see [Section 4.2](#runtime-decisions)) to be made by an authorized party (such as the subscriber) before releasing user information. An IdP accepting dynamically registered RPs MAY limit the types of attributes and other information made available to such RPs. An RP capable of dynamically registering MAY limit which IdPs it is willing to accept identity information from.
 
-Frequently, parties in a dynamic registration model do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of an RP being dynamically registered. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [Section 5.1.3](#authorities), or another trusted party). This cryptographically-verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [RFC 7591](#RFC7591) Section 2.3 for more information on one protocol's implementation of software statements.)
+Parties in a dynamic registration model frequently do not know each other ahead of time. Where possible, this SHOULD be augmented by *software statements*, which allow federated parties to cryptographically verify some attributes of an RP being dynamically registered. Software statements are lists of attributes describing the RP software, cryptographically signed by an authority (either the IdP itself, a federation authority as in [Section 5.1.3](#authorities), or another trusted party). This cryptographically-verifiable statement allows the connection to be established or elevated between the federating parties without relying solely on self-asserted attributes. (See [RFC 7591](#RFC7591) Section 2.3 for more information on one protocol's implementation of software statements.)
 
 #### <a name="authorities"></a> 5.1.3 Federation Authorities
 
-Some federated parties defer to an authority, known as a *federation authority*, to assist in making federation decisions and to establish the working relationship between parties. In this model, the federation authority generally conducts some level of vetting on each party in the federation to verify compliance with predetermined security and integrity standards. The level of vetting, if it occurs at all, is unique to the use cases and models employed within the federation. This vetting is depicted in the left side of [Figure 5-4](#63cSec5-Figure4).
+Some federated parties defer to an authority, known as a *federation authority*, to assist in making federation decisions and to establish the working relationship between parties. In this model, the federation authority generally conducts some level of vetting on each party in the federation to verify compliance with predetermined security and integrity standards. The level of vetting &mdash; if it occurs at all &mdash; is unique to the use cases and models employed within the federation. This vetting is depicted in the left side of [Figure 5-4](#63cSec5-Figure4).
 
 Federation authorities approve IdPs to operate at certain IALs, AALs, and FALs. This information is used by relying parties, as shown in the right side of [Figure 5-4](#63cSec5-Figure4), to determine which identity providers meet their requirements.
 
-Federation authorities SHALL establish parameters regarding expected and acceptable IALs, AALs, and FALs in connection with the federated relationships they enable. Federation authorities SHALL individually vet each participant in the federation to determine that they adhere to their expected security, identity, and privacy standards. 
+Federation authorities SHALL establish parameters regarding expected and acceptable IALs, AALs, and FALs in connection with the federated relationships they enable. Federation authorities SHALL individually vet each participant in the federation to determine whether they adhere to their expected security, identity, and privacy standards.
 
 <a name="63cSec5-Figure4"></a>
 
@@ -101,21 +100,21 @@ Federation authorities SHALL establish parameters regarding expected and accepta
 Vetting of IdPs and RPs SHALL establish, as a minimum, that:
 
 * Assertions generated by IdPs adhere to the requirements in [Section 6](#assertions).
-* RPs adhere to IdP requirements for the handling of subscriber attribute data, such as retention, aggregation, and disclosure to third parties.
+* RPs adhere to IdP requirements for handling subscriber attribute data, such as retention, aggregation, and disclosure to third parties.
 * RP and IdP systems use approved profiles of federation protocols.
 
 Federation authorities MAY assist the technical connection and configuration process between members, such as by publishing configuration data for IdPs or by issuing software statements for RPs.
 
-Most federations managed through authorities have a simple membership model: either parties are in the federation or they are not. More sophisticated federations MAY have multiple tiers of membership which can be used by federated parties to tell whether other parties in the federation have been more thoroughly vetted. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers, and RPs MAY decide to accept certain information only from IdPs in higher tiers.
+Most federations managed through authorities have a simple membership model: parties are either in the federation or they are not. More sophisticated federations MAY have multiple memberhsip tiers that federated parties can use to tell whether other parties in the federation have been more thoroughly vetted. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers and RPs MAY decide to accept certain information only from IdPs in higher tiers.
 
 #### <a name="proxied"></a> 5.1.4 Proxied Federation
 
-In a proxied federation, communication between the IdP and the RP is intermediated in a way that prevents direct communication between the two parties. There are multiple methods to achieve this effect; common configurations include:
+In a proxied federation, communication between the IdP and the RP is intermediated in a way that prevents direct communication between the two parties. There are multiple methods to achieve this effect. Common configurations include:
 
 * A third party that acts as a federation proxy (or *broker*)
 * A network of nodes that distributes the communications
 
-Where proxies are used, they function as an IdP on one side and an RP on the other side. Therefore, all normative requirements that apply to IdPs and RPs SHALL apply to proxies in their respective roles.
+Where proxies are used, they function as an IdP on one side and an RP on the other. Therefore, all normative requirements that apply to IdPs and RPs SHALL apply to proxies in their respective roles.
 
 <a name="63cSec5-Figure5"></a>
 
@@ -125,15 +124,15 @@ Where proxies are used, they function as an IdP on one side and an RP on the oth
 **Figure 5-5 Federation Proxy**
 </div>
 
-A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks of federation described in [Section 5.2](#privacy-reqs) below.
+A proxied federation model can provide several benefits. Federation proxies can simplify technical integration between the RP and IdP by providing a common interface for integration. Additionally, to the extent a proxy effectively blinds the RP and IdP from each other, it can provide some business confidentiality for organizations that want to guard their subscriber lists from each other. Proxies can also mitigate some of the privacy risks described in [Section 5.2](#privacy-reqs) below.
 
 See [Section 9.5](#blinding) for further information on blinding techniques, their uses, and limitations.
 
 ### <a name="privacy-reqs"></a> 5.2 Privacy Requirements
 
-Federation involves the transfer of personal attributes from a third party, the IdP, that is not otherwise involved in a transaction. Federation also potentially gives the IdP broad visibility into subscriber activities. Accordingly, there are specific privacy requirements associated with federation.
+Federation involves the transfer of personal attributes from a third party that is not otherwise involved in a transaction &mdash; the IdP. Federation also potentially gives the IdP broad visibility into subscriber activities. Accordingly, there are specific privacy requirements associated with federation.
 
-Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with the privacy interests of subscribers.
+Communication between the RP and the IdP could reveal to the IdP where the subscriber is conducting a transaction. Communication with multiple RPs allows the IdP to build a profile of subscriber transactions that would not have existed without federation. This aggregation could enable new opportunities for subscriber tracking and use of profile information that do not always align with subscribers' privacy interests.
 
 The IdP SHALL NOT disclose information on subscriber activities at an RP to any party, nor use the subscriber's information for any purpose other than federated authentication, related fraud mitigation, to comply with law or legal process, or in the case of a specific user request, to transmit the information. The IdP SHOULD employ technical measures, such as the use of pairwise pseudonymous identifiers described in [Section 6.3](#ppi) or privacy-enhancing cryptographic protocols, to provide unlinkability and discourage subscriber activity tracking and profiling.
 

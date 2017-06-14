@@ -1,6 +1,3 @@
-<div class="breaker"></div>
-<a name="references"></a>
-
 ## 8 References
 
 *This section is informative.*
@@ -50,10 +47,10 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 
 <a name="ISO29115"></a>[ISO 29115] International Standards Organization, ISO/IEC 29115 *Information technology — Security techniques — Entity authentication assurance framework*, April 1, 2013, available at: <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=45138>.
 
-<a name="OpenIDConnectCore"></a>[OpenID Connect Core 1.0] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014, available at: <https://openid.net/specs/openid-connect-core-1_0.html>.
+<a name="OIDC"></a>[OIDC] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014, available at: <https://openid.net/specs/openid-connect-core-1_0.html>.
 
 ### 8.3 NIST Special Publications
-NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
+NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring digital authentication.
 
 <a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30 Revision 1, *Guide for Conducting Risk Assessments*, September 2012, <https://doi.org/10.6028/NIST.SP.800-30r1>.
 

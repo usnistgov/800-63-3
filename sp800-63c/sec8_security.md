@@ -4,13 +4,13 @@
 
 *This section is informative.*
 
-Since the federated authentication process involves coordination between multiple components, including the CSP which now acts as an IdP, there are additional opportunities for attackers to compromise federated identity transactions. This section summarizes many of the attacks and their mitigations that are applicable to federation.
+Since the federated authentication process involves coordination between multiple components, including the CSP which now acts as an IdP, there are additional opportunities for attackers to compromise federated identity transactions. This section summarizes many of the attacks and mitigations applicable to federation.
 
 ### 8.1 Federation Threats
 
-As in non-federated authentication, the motivation of attackers is typically to gain access (or a greater level of access) to a resource or service provided by an RP. Attackers may also attempt to impersonate a subscriber. Rogue or compromised IdPs, RPs, user agents (e.g., browsers), and parties outside of a typical federation transaction are potential attackers. To accomplish their attack, they might intercept or modify assertions and assertion references. Furthermore, two or more entities may attempt to subvert federation protocols by directly compromising the integrity or confidentiality of the assertion data. For the purpose of these types of threats, any authorized parties who attempt to exceed their privileges are considered attackers.
+As in non-federated authentication, attackers' motivations is typically to gain access (or a greater level of access) to a resource or service provided by an RP. Attackers may also attempt to impersonate a subscriber. Rogue or compromised IdPs, RPs, user agents (e.g., browsers), and parties outside of a typical federation transaction are potential attackers. To accomplish their attack, they might intercept or modify assertions and assertion references. Further, two or more entities may attempt to subvert federation protocols by directly compromising the integrity or confidentiality of the assertion data. For the purpose of these types of threats, any authorized parties who attempt to exceed their privileges are considered attackers.
 
-In some cases, the subscriber is issued some secret information so that they can be recognized by the RP. The knowledge of this information distinguishes the subscriber from attackers who wish to impersonate them. In the case of holder-of-key assertions, this secret could already have been established with the IdP prior to the initiation of the federation protocol.
+In some cases, the subscriber is issued some secret information so they can be recognized by the RP. Knowledge of this information distinguishes the subscriber from attackers who wish to impersonate them. In the case of holder-of-key assertions, this secret could have been established with the IdP prior to the initiation of the federation protocol.
 
 <div class="text-center" markdown="1">
 
@@ -20,7 +20,7 @@ In some cases, the subscriber is issued some secret information so that they can
 
 | **Federation Threats/Attacks**  | **Description**  | **Examples** |
 |---------------------------------|------------------|--------------|
-| Assertion manufacture or modification | The attacker generates a false assertion | Compromised IdP asserts identity of a claimant who has not properly authenticated. |
+| Assertion manufacture or modification | The attacker generates a false assertion | Compromised IdP asserts identity of a claimant who has not properly authenticated |
 | | The attacker modifies an existing assertion | Compromised proxy that changes AAL of an authentication assertion |
 | Assertion disclosure | Assertion visible to third party | Network monitoring reveals subscriber address of record to an outside party |
 | Assertion repudiation by the IdP | IdP later claims not to have signed transaction | User engages in fraudulent credit card transaction at RP, IdP claims not to have logged them in |
@@ -31,7 +31,7 @@ In some cases, the subscriber is issued some secret information so that they can
 
 ### 8.2 Federation Threat Mitigation Strategies
 
-Mechanisms that assist in mitigating the threats identified above are identified in Table 8-2.
+Mechanisms that assist in mitigating the above threats are identified in Table 8-2.
 
 <div class="text-center" markdown="1">
 
