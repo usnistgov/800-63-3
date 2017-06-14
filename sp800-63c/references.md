@@ -21,7 +21,7 @@
 
 <a name="OpenIDConnectCore"></a>[OpenID Connect Core 1.0] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014. Available at: <https://openid.net/specs/openid-connect-core-1_0.html>.
 
-<a name="RFC4120"></a>[RFC 4120] IETF, *The Kerberos Network Authentication Service (V5)*,RFC 4120, DOI 10.17487/RFC4120, July 2005, <https://doi.org/10.17487/RFC4120>.
+<a name="RFC4120"></a>[RFC 4120] IETF, *The Kerberos Network Authentication Service (V5)*, RFC 4120, DOI 10.17487/RFC4120, July 2005, <https://doi.org/10.17487/RFC4120>.
 
 <a name="RFC6113"></a>[RFC 6113] IETF, *A Generalized Framework for Kerberos Pre-Authentication*, RFC 6113, DOI 10.17487/RFC6113, April 2011, <https://doi.org/10.17487/RFC6113>.
 
@@ -32,7 +32,7 @@
 <a name="SAML"></a>[SAML] OASIS, *Security Assertion Markup Language (SAML) V2.0 Technical Overview*, March 2008, available at: <http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html>.
 
 ### 12.3 NIST Special Publications
-IST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
+NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
 
 <a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53 Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, April 2013 (updated January 22, 2015), <http://dx.doi.org/10.6028/NIST.SP.800-53r4>.
 

@@ -46,7 +46,7 @@ Federated identity systems should:
 
 * Make trust relationships explicit to users to facilitate informed trust decisions. Trust relationships are often dynamic and context dependent. Users may be more likely to trust some IdPs and RPs with certain attributes or transactions more than others. For example, users may be more hesitant to use federated identity systems on websites that contain valuable personal information (such as financial or health). Depending on the perceived sensitivity of users' personal data, users may be less comfortable with social network providers as IdPs since people are often concerned with the broadcasting nature of social networking implementations.
 
-* Follow the usability considerations specified in SP 800-63A, Section 9 for any user-facing information.
+* Follow the usability considerations specified in [SP 800-63A, Section 9](sp800-63a.html#sec9) for any user-facing information.
 
 * Clearly communicate how and where to acquire technical assistance. For example, provide users with information such as a link to an online self-service feature, chat sessions or a phone number for help desk support. Avoid redirecting users back and forth among transacting parties (e.g., RPs, IdPs, and brokers) to receive technical assistance.
 

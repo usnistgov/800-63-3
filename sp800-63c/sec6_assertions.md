@@ -14,7 +14,7 @@ All assertions SHALL include the following assertion metadata:
 1. Subject: An identifier for the party that the assertion is about (i.e., the subscriber).
 2. Issuer: An identifier for the IdP that issued the assertion.
 3. Audience: An identifier for the party intended to consume the assertion (i.e., the RP).
-4. Issuance: A timestamp indicating when the IdP issued assertion.
+4. Issuance: A timestamp indicating when the IdP issued the assertion.
 5. Expiration: A timestamp indicating when the assertion expires and SHALL no longer be accepted as valid by the RP (i.e., the expiration of the assertion and not the expiration of the session at the RP).
 6. Identifier: A value uniquely identifying this assertion, used to prevent attackers from replaying prior assertions.
 7. Signature: Digital signature or message authentication code (MAC), including key identifier or public key associated with the IdP, for the entire assertion.
