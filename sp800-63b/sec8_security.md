@@ -91,13 +91,13 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | | Maintain software-based keys in restricted-access storage. | [5.1.3.1](#ooba), [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
 | Unauthorized binding | Use MitM-resistant protocols for provisioning of authenticators and associated keys. | [6.1](#binding) |
 
-There are several other strategies that may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
+Several other strategies may be applied to mitigate the threats described in [Table 8-1](#63bSec8-Table1):
 
 * *Multiple factors* make successful attacks more difficult to accomplish. If an attacker needs to both steal a cryptographic authenticator and guess a memorized secret, then the work to discover both factors may be too high.
 
 * *Physical security mechanisms* may be employed to protect a stolen authenticator from duplication. Physical security mechanisms can provide tamper evidence, detection, and response.
 
-* *Requiring the use of long, memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
+* *Requiring the use of long memorized secrets* that don't appear in common dictionaries may force attackers to try every possible value.
 
 * *System and network security controls* may be employed to prevent an attacker from gaining access to a system or installing malicious software.
 
@@ -109,7 +109,7 @@ There are several other strategies that may be applied to mitigate the threats d
 
 The weak point in many authentication mechanisms is the process followed when a subscriber loses control of one or more authenticators and needs to replace them. In many cases, the options remaining available to authenticate the subscriber are limited, and economic concerns (e.g., cost of maintaining call centers) motivate the use of inexpensive, and often less secure, backup authentication methods. To the extent that authenticator recovery is human-assisted, there is also the risk of social engineering attacks.
 
-In order to maintain the integrity of the authentication factors, it is essential that it not be possible to leverage an authentication involving one factor to obtain an authenticator of a different factor. For example, a memorized secret must not be usable to obtain a new list of look-up secrets.
+To maintain the integrity of the authentication factors, it is essential that it not be possible to leverage an authentication involving one factor to obtain an authenticator of a different factor. For example, a memorized secret must not be usable to obtain a new list of look-up secrets.
 
 ### 8.4 Session Attacks
 

@@ -1,7 +1,7 @@
 <a name="sec5"></a>
 
 <div class="breaker"></div>
-. 
+
 ## 5 Digital Identity Risk Management
 
 _This section is normative._
@@ -157,7 +157,8 @@ The statement SHALL include, at a minimum:
 
 ### 5.6 Migrating Identities
  
-As these guidelines are revised, CSPs SHALL consider how changes in requirements affect their user population. In some instances, the user population will be unaffected, yet in others, the CSP will require users undergo a transitional activity. For example, CSPs may request users – upon initial logon since last revision – supply additional proofing evidence to adhere to new IAL requirements. This SHALL be a risk-based decision, made in context of the CSP, any RPs that use the CSP, mission, and the population served. The following considerations serve only as a guide to agencies when considering the impacts of requirements changes:
+
+As these guidelines are revised, CSPs SHALL consider how changes in requirements affect their user population. In some instances, the user population will be unaffected, yet in others, the CSP will require users undergo a transitional activity. For example, CSPs may request users &mdash; upon initial logon since last revision &mdash; to supply additional proofing evidence to adhere to new IAL requirements. This SHALL be a risk-based decision, made in context of the CSP, any RPs that use the CSP, mission, and the population served. The following considerations serve only as a guide to agencies when considering the impacts of requirements changes:
  
 1. If the RP is experiencing identity-related fraud, a migration may prove beneficial. If not, migration may not be an added value.
 2. New, stronger, or user-friendly authentication options are added to individual AALs the CSP could issue new authenticators or allow users to register authenticators they already have.
