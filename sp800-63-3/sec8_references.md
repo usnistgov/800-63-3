@@ -5,7 +5,7 @@
 
 *This section is informative.*
 
-### 1. General references
+### 8.1 General References
 
 <a name="A-130"></a>[A-130] OMB Circular A-130, *Managing Federal Information as a Strategic Resource*, July 28, 2016, available at: <https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf>.
 
@@ -38,7 +38,7 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 
 <a name="STORK2.0"></a>[STORK 2.0] European Union, *Secure idenTity acrOss boRders linKed 2.0*, 2014, available at: <https://www.eid-stork2.eu/>.
 
-### 2. Standards
+### 8.2 Standards
 
 <a name="bcp195"></a>[BCP 195] Sheffer, Y., Holz, R., and P. Saint-Andre, *Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)*, BCP 195, RFC 7525,DOI 10.17487/RFC7525, May 2015, <https://doi.org/10.17487/RFC7525>.
 
@@ -50,9 +50,9 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 
 <a name="ISO29115"></a>[ISO 29115] International Standards Organization, ISO/IEC 29115 *Information technology — Security techniques — Entity authentication assurance framework*, April 1, 2013, available at: <http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=45138>.
 
-<a name="OpenIDConnectCore"></a>[OpenID Connect Core 1.0] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014,  Available at: <https://openid.net/specs/openid-connect-core-1_0.html>.
+<a name="OpenIDConnectCore"></a>[OpenID Connect Core 1.0] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014, available at: <https://openid.net/specs/openid-connect-core-1_0.html>.
 
-### 3. NIST Special publications
+### 8.3 NIST Special publications
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
 
 <a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30 Revision 1, *Guide for Conducting Risk Assessments*, September 2012, <https://doi.org/10.6028/NIST.SP.800-30r1>.
@@ -62,5 +62,5 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 <a name="SP800-53A"></a>[SP 800-53A] NIST Special Publication 800-53A Revision 4, *Assessing Security and Privacy Controls in Federal Information Systems and Organizations, Building Effective Assessment Plans*, December 2014 (updated December 18, 2014), <https://doi.org/10.6028/NIST.SP.800-53Ar4>.
 
 
-### 4. Federal Information Processing Standards
-<a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013,  <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
+### 8.4 Federal Information Processing Standards
+<a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
