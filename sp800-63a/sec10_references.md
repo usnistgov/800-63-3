@@ -20,7 +20,7 @@
 
 <a name="fbcacp"></a>[FBCACP] *X.509, Certificate Policy For The Federal Bridge Certification Authority (FBCA)*, Version 2.3, October 5, 2016, available at: <https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FBCA_CP.pdf>.
 
-<a name="fbcasup"></a>[FBCASUP] *FBCA Supplementary Antecedent, In-Person Definition*, July 16, 2009, available at: <https://www.idmanagement.gov/IDM/servlet/fileFieldentityId=ka0t0000000TNPgAAO&field=File__Body__s>.
+<a name="fbcasup"></a>[FBCASUP] *FBCA Supplementary Antecedent, In-Person Definition*, July 16, 2009.
 
 <a name="FEDRAMP"></a>[FEDRAMP] General Services Administration, *Federal Risk and Authorization Management Program*, available at: <https://www.fedramp.gov/>.
 
