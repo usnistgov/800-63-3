@@ -99,7 +99,7 @@ Usability considerations specific to the enrollment session include:
 * If an enrollment code is issued:
     * Notify users in advance that they will receive an enrollment code, when to expect it, the length of time for which the code is valid, and how it will arrive (e.g., physical mail, SMS, landline telephone, email, or physical mailing address).
     * When an enrollment code is delivered to a user, include instructions on how to use the code, and the length of time for which the code is valid. This is especially important given the short validity timeframes specified in [Section 4.4.1.6](#4-4-1-6). 
-    * If issuing a machine readable-optical label, such as a QR Code (see [Section 4.6.](#enrollmentcode)), provide users with information on how to obtain QR code scanning capabilities (e.g., acceptable QR code applications).
+    * If issuing a machine-readable optical label, such as a QR Code (see [Section 4.6.](#enrollmentcode)), provide users with information on how to obtain QR code scanning capabilities (e.g., acceptable QR code applications).
     * Inform users that they will be required to repeat the enrollment process if enrollment codes expire or are lost before use.
     * Provide users with alternative options as not all users are able to use this level of technology. For example, users may not have the technology needed for this approach to be feasible.
 * At the end of the enrollment session, 
