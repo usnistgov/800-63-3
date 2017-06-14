@@ -1,7 +1,7 @@
 <a name="sec5"></a>
 
 <div class="breaker"></div>
-. 
+
 ## 5 Digital Identity Risk Management
 
 _This section is normative._
