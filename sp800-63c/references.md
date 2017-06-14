@@ -32,7 +32,7 @@
 <a name="SAML"></a>[SAML] OASIS, *Security Assertion Markup Language (SAML) V2.0 Technical Overview*, March 2008, available at: <http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html>.
 
 ### 12.3 NIST Special Publications
-NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
+NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring digital authentication.
 
 <a name="SP800-53"></a>[SP 800-53] NIST Special Publication 800-53 Revision 4, *Recommended Security and Privacy Controls for Federal Information Systems and Organizations*, April 2013 (updated January 22, 2015), <http://dx.doi.org/10.6028/NIST.SP.800-53r4>.
 
