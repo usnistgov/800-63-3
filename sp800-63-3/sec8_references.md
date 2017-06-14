@@ -52,7 +52,7 @@ available at: <https://cio.gov/wp-content/uploads/downloads/2014/03/Use_of_ESign
 
 <a name="OpenIDConnectCore"></a>[OpenID Connect Core 1.0] Sakimura, N., Bradley, B., Jones, M., de Medeiros, B., and C. Mortimore, *OpenID Connect Core 1.0 incorporating errata set 1*, November, 2014, available at: <https://openid.net/specs/openid-connect-core-1_0.html>.
 
-### 8.3 NIST Special publications
+### 8.3 NIST Special Publications
 NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/publications/nistpubs/index.html>. The following publications may be of particular interest to those implementing systems of applications requiring e-authentication.
 
 <a name="SP800-30"></a>[SP 800-30] NIST Special Publication 800-30 Revision 1, *Guide for Conducting Risk Assessments*, September 2012, <https://doi.org/10.6028/NIST.SP.800-30r1>.
@@ -60,7 +60,6 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 <a name="SP800-37"></a>[SP 800-37] NIST Special Publication 800-37 Revision 1, *Guide for Applying the Risk Management Framework to Federal Information Systems, A Security Life Cycle Approach*, February 2010 (updated June 5, 2014), <https://doi.org/10.6028/NIST.SP.800-37r1>.
 
 <a name="SP800-53A"></a>[SP 800-53A] NIST Special Publication 800-53A Revision 4, *Assessing Security and Privacy Controls in Federal Information Systems and Organizations, Building Effective Assessment Plans*, December 2014 (updated December 18, 2014), <https://doi.org/10.6028/NIST.SP.800-53Ar4>.
-
 
 ### 8.4 Federal Information Processing Standards
 <a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.
