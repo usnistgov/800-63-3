@@ -44,4 +44,4 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 ### 12.4 Federal Information Processing Standards
 
-<a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, January 11, 1994 (with Change Notices through December 3, 2002), <https://doi.org/10.6028/NIST.FIPS.140-2>.
+<a name="FIPS140-2"></a>[FIPS 140-2] Federal Information Processing Standard Publication 140-2, *Security Requirements for Cryptographic Modules*, May 25, 2001 (with Change Notices through December 3, 2002), <https://doi.org/10.6028/NIST.FIPS.140-2>.
