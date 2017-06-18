@@ -14,7 +14,7 @@
 
 <a name="9397"></a>[EO 9397] Executive Order 9397, *Numbering System for Federal Accounts Relating to Individual Persons*, November 22, 1943, available at: <https://www.ssa.gov/foia/html/EO9397.htm>.
 
-<a name="dmf"></a>[DMF] National Technical Information Service, *Social Security Death Master File*, available at: <https://www.ssdmf.com/Library/InfoManage/Guide.asp?FolderID=1>.
+<a name="dmf"></a>[DMF] Social Security Administration, *Social Security Death Master File*, available at: <https://www.ssdmf.com>.
 
 <a name="E-Gov"></a>[E-Gov] *E-Government Act of 2002* \(includes FISMA) (P.L. 107-347), December 2002, available at: <http://www.gpo.gov/fdsys/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf>.
 
