@@ -106,8 +106,8 @@ https://doi.org/10.6028/NIST.SP.800-63a
 All comments are subject to release under the Freedom of Information Act (FOIA).
 
 National Institute of Standards and Technology  
-Attn: Computer Security Division, Information Technology Laboratory  
-100 Bureau Drive (Mail Stop 8930) Gaithersburg, MD 20899-8930  
+Attn: Applied Cybersecurity Division, Information Technology Laboratory  
+100 Bureau Drive (Mail Stop 2000) Gaithersburg, MD 20899-2000  
 Email: dig-comments@nist.gov
 </div>
 
