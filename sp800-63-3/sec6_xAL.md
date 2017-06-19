@@ -190,7 +190,7 @@ The FAL decision tree in [Figure 6-3](#63Sec6-Figure3) combines the results from
     <td><img src="sp800-63-3/media/fal-step1.png" alt="FAL Step 1"/></td>
   </tr>
   <tr>
-   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user could compromise an assertion. Examples of compromise include use of assertion replay to impersonate a valid user or leakage of assertion information information through the browser. Risk should be considered from the perspective of the organization and to the subscriber, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
+   <td>Step 1 asks agencies to look at the potential impacts of a federation failure. In other words, what would occur if an unauthorized user could compromise an assertion? Examples of compromise include use of assertion replay to impersonate a valid user or leakage of assertion information information through the browser. Risk should be considered from the perspective of the organization and to the subscriber, since one may not be negatively impacted while the other could be significantly harmed. Agency risk management processes should commence with this step.</td> 
   </tr>
   <tr>
     <td><img src="sp800-63-3/media/fal-step2.png" alt="FAL Step 2"/></td>
