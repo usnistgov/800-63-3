@@ -27,7 +27,7 @@ As such, agencies SHALL assess the risk of proofing, authentication, and federat
 
 [Section 5.3](#section5-3) provides impact categories specific to digital identity to assist in the overall application of the RMF.
 
-Risk assessments determine the extent to which risk must be mitigated by the identity proofing, authentication, and federation processes. These determinations drive the relevant choices of applicable technologies and mitigation strategies, rather than the desire for any given technology driving risk determinations. Once an agency has completed the overall risk assessment; selected individual assurance levels for identity proofing, authentication, and federation (if applicable); and determined the processes and technologies they will employ to meet each assurance level, agencies SHALL develop a "Digital Identity Acceptance Statement", in accordance with [[SP 800-53A]](#SP800-53A) IA-1 a.1. See [Section 5.5](#daps) for more detail on the necessary content of the Digital Identity Acceptance Statement.
+Risk assessments determine the extent to which risk must be mitigated by the identity proofing, authentication, and federation processes. These determinations drive the relevant choices of applicable technologies and mitigation strategies, rather than the desire for any given technology driving risk determinations. Once an agency has completed the overall risk assessment; selected individual assurance levels for identity proofing, authentication, and federation (if applicable); and determined the processes and technologies they will employ to meet each assurance level, agencies SHALL develop a "Digital Identity Acceptance Statement", in accordance with [SP 800-53A](#SP800-53A) IA-1 a.1. See [Section 5.5](#daps) for more detail on the necessary content of the Digital Identity Acceptance Statement.
 
 ### 5.2 <a name="5-2"></a> Assurance Levels
 
@@ -39,24 +39,29 @@ An agency RP SHALL select, based on risk, the following individual assurance lev
 
 A summary of each of the identity, authenticator, and federation assurance levels is provided below.
 
+**Table 5-1 Identity Assurance Levels**
 
 | Identity Assurance Level |
 |:----------------------|
-| **IAL1** - At IAL1, attributes, if any, are self-asserted or should be treated as self-asserted.|
-| **IAL2** - At IAL2, either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
-| **IAL3** - At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
+| **IAL1:** At IAL1, attributes, if any, are self-asserted or should be treated as self-asserted.|
+| **IAL2:** At IAL2, either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in [SP 800-63A](sp800-63a.html).|
+| **IAL3:** At IAL3, in-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in [SP 800-63A](sp800-63a.html).|
+
+**Table 5-2 Authenticator Assurance Levels**
 
 |Authenticator Assurance Level|
 |:----------------------|
-|**AAL1** - AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator(s) through a secure authentication protocol.|
-| **AAL2** - AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL2 and above.|
-|**AAL3** - AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.|
+|**AAL1:** AAL1 provides some assurance that the claimant controls an authenticator registered to the subscriber. AAL1 requires single-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator(s) through a secure authentication protocol.|
+| **AAL2:** AAL2 provides high confidence that the claimant controls authenticator(s) registered to the subscriber. Proof of possession and control of two different authentication factors is required through a secure authentication protocol. Approved cryptographic techniques are required at AAL2 and above.|
+|**AAL3:** AAL3 provides very high confidence that the claimant controls authenticator(s) registered to the subscriber. Authentication at AAL3 is based on proof of possession of a key through a cryptographic protocol. AAL3 is like AAL2 but also requires a "hard" cryptographic authenticator that provides verifier impersonation resistance.|
+
+**Table 5-3 Federation Assurance Levels**
 
 |Federation Assurance Level|
 |:----------------------|
-|**FAL1** - FAL1 permits the RP to receive a bearer assertion from an identity provider (IdP). The IdP must sign the assertion using approved cryptography.|
-|**FAL2** - FAL2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
-|**FAL3** - FAL3 requires the subscriber to present proof of possession of a cryptographic key reference to in the assertion and the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
+|**FAL1:** FAL1 permits the RP to receive a bearer assertion from an identity provider (IdP). The IdP must sign the assertion using approved cryptography.|
+|**FAL2:** FAL2 adds the requirement that the assertion be encrypted using approved cryptography such that the RP is the only party that can decrypt it.|
+|**FAL3:** FAL3 requires the subscriber to present proof of possession of a cryptographic key reference to in the assertion and the assertion artifact itself. The assertion must be signed using approved cryptography and encrypted to the RP using approved cryptography.|
 
 When described generically or bundled, these guidelines will refer to IAL, AAL, and FAL as **_xAL_**.
 
@@ -77,7 +82,7 @@ Categories of harm and impact include:
 5. Personal safety; and
 6. Civil or criminal violations.
 
-Required assurance levels for digital transactions are determined by assessing the potential impact of each of the above categories using the potential impact values described in Federal Information Processing Standard (FIPS) 199, _Standards for Security Categorization of Federal Information and Information Systems_.
+Required assurance levels for digital transactions are determined by assessing the potential impact of each of the above categories using the potential impact values described in Federal Information Processing Standard (FIPS) 199 [[FIPS 199]](#FIPS199).
 
 The three potential impact values are:
 
@@ -99,39 +104,39 @@ This section defines the potential impacts for each category of harm. Each assur
 
 _Potential impact of inconvenience, distress, or damage to standing or reputation:_    
 
-- Low — at worst, limited, short-term inconvenience, distress, or embarrassment to any party.
-- Moderate — at worst, serious short-term or limited long-term inconvenience, distress, or damage to the standing or reputation of any party.
-- High — severe or serious long-term inconvenience, distress, or damage to the standing or reputation of any party. This is ordinarily reserved for situations with particularly severe effects or which potentially affect many individuals.
+- Low: at worst, limited, short-term inconvenience, distress, or embarrassment to any party.
+- Moderate: at worst, serious short-term or limited long-term inconvenience, distress, or damage to the standing or reputation of any party.
+- High: severe or serious long-term inconvenience, distress, or damage to the standing or reputation of any party. This is ordinarily reserved for situations with particularly severe effects or which potentially affect many individuals.
 
 _Potential impact of financial loss:_
 
-- Low — at worst, an insignificant or inconsequential financial loss to any party, or at worst, an insignificant or inconsequential agency liability.
-- Moderate — at worst, a serious financial loss to any party, or a serious agency liability.
-- High — severe or catastrophic financial loss to any party, or severe or catastrophic agency liability.
+- Low: at worst, an insignificant or inconsequential financial loss to any party, or at worst, an insignificant or inconsequential agency liability.
+- Moderate: at worst, a serious financial loss to any party, or a serious agency liability.
+- High: severe or catastrophic financial loss to any party, or severe or catastrophic agency liability.
 
 _Potential impact of harm to agency programs or public interests:_
 
-- Low — at worst, a limited adverse effect on organizational operations or assets, or public interests. Examples of limited adverse effects are: (i) mission capability degradation to the extent and duration that the organization is able to perform its primary functions with noticeably reduced effectiveness, or (ii) minor damage to organizational assets or public interests.
-- Moderate — at worst, a serious adverse effect on organizational operations or assets, or public interests. Examples of serious adverse effects are: (i) significant mission capability degradation to the extent and duration that the organization is able to perform its primary functions with significantly reduced effectiveness; or (ii) significant damage to organizational assets or public interests.
-- High — a severe or catastrophic adverse effect on organizational operations or assets, or public interests. Examples of severe or catastrophic effects are: (i) severe mission capability degradation or loss of to the extent and duration that the organization is unable to perform one or more of its primary functions; or (ii) major damage to organizational assets or public interests.
+- Low: at worst, a limited adverse effect on organizational operations or assets, or public interests. Examples of limited adverse effects are: (i) mission capability degradation to the extent and duration that the organization is able to perform its primary functions with noticeably reduced effectiveness, or (ii) minor damage to organizational assets or public interests.
+- Moderate: at worst, a serious adverse effect on organizational operations or assets, or public interests. Examples of serious adverse effects are: (i) significant mission capability degradation to the extent and duration that the organization is able to perform its primary functions with significantly reduced effectiveness; or (ii) significant damage to organizational assets or public interests.
+- High: a severe or catastrophic adverse effect on organizational operations or assets, or public interests. Examples of severe or catastrophic effects are: (i) severe mission capability degradation or loss of to the extent and duration that the organization is unable to perform one or more of its primary functions; or (ii) major damage to organizational assets or public interests.
 
 _Potential impact of unauthorized release of sensitive information:_
 
-- Low — at worst, a limited release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in a loss of confidentiality with a low impact as defined in FIPS 199.
-- Moderate — at worst, a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a moderate impact as defined in FIPS 199.
-- High — a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a high impact as defined in FIPS 199.
+- Low: at worst, a limited release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in a loss of confidentiality with a low impact as defined in FIPS 199.
+- Moderate: at worst, a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a moderate impact as defined in FIPS 199.
+- High: a release of personal, U.S. government sensitive, or commercially sensitive information to unauthorized parties resulting in loss of confidentiality with a high impact as defined in FIPS 199.
 
 _Potential impact to personal safety:_
 
-- Low — at worst, minor injury not requiring medical treatment.
-- Moderate — at worst, moderate risk of minor injury or limited risk of injury requiring medical treatment.
-- High — a risk of serious injury or death.
+- Low: at worst, minor injury not requiring medical treatment.
+- Moderate: at worst, moderate risk of minor injury or limited risk of injury requiring medical treatment.
+- High: a risk of serious injury or death.
 
 _The potential impact of civil or criminal violations is:_
 
-- Low — at worst, a risk of civil or criminal violations of a nature that would not ordinarily be subject to enforcement efforts.
-- Moderate — at worst, a risk of civil or criminal violations that may be subject to enforcement efforts.
-- High — a risk of civil or criminal violations that are of special importance to enforcement programs.
+- Low: at worst, a risk of civil or criminal violations of a nature that would not ordinarily be subject to enforcement efforts.
+- Moderate: at worst, a risk of civil or criminal violations that may be subject to enforcement efforts.
+- High: a risk of civil or criminal violations that are of special importance to enforcement programs.
 
 ### 5.4 Risk Acceptance and Compensating Controls
 
@@ -141,7 +146,7 @@ Agencies MAY determine alternatives to the NIST-recommended guidance, for the as
 
 Agencies SHALL demonstrate comparability of any chosen alternative, to include any compensating controls, when the complete set of applicable SP 800-63 requirements is not implemented. For example, an agency may choose a National Information Assurance Partnership (NIAP) protection profile over FIPS, where the profile is equivalent to or stronger than the FIPS requirements. That said, agencies SHALL NOT alter the assessed xAL based on agency capabilities. Rather, the agency MAY adjust their implementation of solutions based on the agency's ability to mitigate risk via means not explicitly addressed by SP 800-63 requirements. The agency SHALL implement procedures to document both the justification for any departure from normative requirements and detail the compensating control(s) employed.
 
-This guidance addresses only those risks associated with authentication and identity proofing errors. [NIST Special Publication 800-30, _Risk Management Guide for Information Technology Systems_](#SP800-30) recommends a general methodology for managing risk in federal systems. 
+This guidance addresses only those risks associated with authentication and identity proofing errors. NIST Special Publication 800-30, Risk Management Guide for Information Technology Systems [[SP 800-30]](#SP800-30) recommends a general methodology for managing risk in federal systems. 
 
 ### <a name="daps"></a> 5.5 Digital Identity Acceptance Statement
 

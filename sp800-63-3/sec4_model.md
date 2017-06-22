@@ -53,7 +53,7 @@ As noted above, a CSP maintains status information about the credentials it issu
 
 ### 4.2 Enrollment and Identity Proofing
 
-Normative requirements can be found in [[SP 800-63A]](sp800-63a.html), *Enrollment and Identity Proofing*.
+Normative requirements can be found in [SP 800-63A](sp800-63a.html), *Enrollment and Identity Proofing*.
 
 The previous section introduced the  participants in the conceptual digital identity model. This section provides additional details regarding the participants' relationships and responsibilities in enrollment and identity proofing.
 
@@ -63,7 +63,7 @@ The CSP establishes a mechanism to uniquely identify each subscriber, register t
 
 ### 4.3 Authentication and Lifecycle Management
 
-Normative requirements can be found in [[SP 800-63B]](sp800-63b.html), *Authentication and Lifecycle Management*.
+Normative requirements can be found in [SP 800-63B](sp800-63b.html), *Authentication and Lifecycle Management*.
 
 #### 4.3.1 Authenticators
 
@@ -90,7 +90,7 @@ A digital authentication system may incorporate multiple factors in one of two w
 
 For example, item 1 can be satisfied by pairing a memorized secret (what you know) with an out-of-band device (what you have). Both authenticator outputs are presented to the verifier to authenticate the claimant. For item 2, consider a piece of hardware (the authenticator) that contains a cryptographic key (the authenticator secret) where access is protected with a fingerprint. When used with the biometric, the cryptographic key produces an output that is used to authenticate the claimant.
 
-As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication &mdash; but they do have their place in the authentication of digital identities. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris patterns, voiceprints, and many other characteristics. [[SP 800-63A]](sp800-63a.html), *Enrollment and Identity Proofing* recommends that biometrics be collected in the enrollment process to later help prevent a registered subscriber from repudiating the enrollment, and to help identify those who commit enrollment fraud.
+As noted above, biometrics, when employed as a single factor of authentication, do not constitute acceptable secrets for digital authentication &mdash; but they do have their place in the authentication of digital identities. Biometric characteristics are unique personal attributes that can be used to verify the identity of a person who is physically present at the point of verification. They include facial features, fingerprints, iris patterns, voiceprints, and many other characteristics. [SP 800-63A](sp800-63a.html), *Enrollment and Identity Proofing* recommends that biometrics be collected in the enrollment process to later help prevent a registered subscriber from repudiating the enrollment, and to help identify those who commit enrollment fraud.
 
 #### 4.3.2 Credentials
 

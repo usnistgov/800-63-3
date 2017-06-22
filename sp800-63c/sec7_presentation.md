@@ -8,7 +8,7 @@ Assertions MAY be presented in either a *back-channel* or *front-channel* manner
 
 The IdP SHALL transmit only those attributes that were explicitly requested by the RP. RPs SHALL conduct a privacy risk assessment when determining which attributes to request. 
 
-### <a name="back-channel"></a> 7.1 Back-channel Presentation
+### <a name="back-channel"></a> 7.1 Back-Channel Presentation
 
 In the *back-channel* model, the subscriber is given an assertion reference to present to the RP, generally through the front channel. The assertion reference itself contains no information about the subscriber and SHALL be resistant to tampering and fabrication by an attacker. The RP presents the assertion reference to the IdP, usually along with authentication of the RP itself, to fetch the assertion.
 
@@ -17,7 +17,7 @@ In the *back-channel* model, the subscriber is given an assertion reference to p
 <div class="text-center" markdown="1">
 <img src="sp800-63c/media/back-channel.png" alt="Back-channel Presentation" style="width:614px;height:600px;;min-width:614px;min-height:600px;"/>
 
-**Figure 7-1 Back-channel Presentation**
+**Figure 7-1 Back Channel Presentation**
 
 </div>
 
@@ -55,7 +55,7 @@ When assertion references are presented, the IdP SHALL verify that the party pre
 
 Note that in a federation proxy described in [Section 5.1.4](#proxied), the IdP audience restricts the assertion reference and assertion to the proxy, and the proxy restricts any newly-created assertion references or assertions to the downstream RP.
 
-### <a name="front-channel"></a> 7.2 Front-channel Presentation
+### <a name="front-channel"></a> 7.2 Front-Channel Presentation
 
 In the *front-channel* model, the IdP creates an assertion and sends it to the subscriber after successful authentication. The assertion is used by the subscriber to authenticate to the RP, often through mechanisms within the subscriber's browser.
 
@@ -65,7 +65,7 @@ In the *front-channel* model, the IdP creates an assertion and sends it to the s
 <div class="text-center" markdown="1">
 <img src="sp800-63c/media/front-channel.png" alt="Front-channel Presentation" style="width:686px;height:600px;;min-width:686px;min-height:600px;"/>
 
-**Figure 7-2 Front-channel Presentation**
+**Figure 7-2 Front Channel Presentation**
 
 </div>
 

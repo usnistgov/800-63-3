@@ -31,7 +31,7 @@ Regardless of what the RP requests or what the protocol requires, the RP can eas
 
 If the RP is using a front-channel presentation mechanism, as defined in [Section 7.2](#front-channel) (e.g., the OpenID Connect Implicit Client profile or the SAML Web SSO profile), it SHALL require FAL2 or greater in order to protect the information in the assertion from disclosure to the browser or other parties in the transaction other than the intended RP.
 
-Additionally, the IdP SHALL employ appropriately-tailored security controls (to include control enhancements) from the moderate or high baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g. [FEDRAMP](#FEDRAMP)) or industry standard.
+Additionally, the IdP SHALL employ appropriately-tailored security controls (to include control enhancements) from the moderate or high baseline of security controls defined in [SP 800-53](#SP800-53) or equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard.
 
 ### <a name="key-mgmt"></a>4.1 Key Management
 

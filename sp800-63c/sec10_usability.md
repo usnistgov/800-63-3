@@ -16,9 +16,8 @@ As stated in the usability sections in 800-63A and 800-63B, overall user experie
 
 The overall user experience with federated identity systems should be as smooth and easy as possible. This can be accomplished by following usability standards (such as the ISO 25060 series of standards) and established best practices for user interaction design.
 
+ASSUMPTIONS
 
-
-##### ASSUMPTIONS 
 In this section, the term "users" means "claimants" or "subscribers." The terms "entity" and "entities" refer to the parties of federated systems.
 
 Guidelines and considerations are described from the users' perspective.
