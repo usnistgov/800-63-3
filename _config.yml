@@ -1,7 +1,7 @@
 # Site settings
 title: SP 800-63 Digital Identity Guidelines
 description: "NIST Special Publication 800-63 Digital Identity Guidelines"
-baseurl: "/800-63" # the subpath of your site, e.g. /blog
+baseurl: "/800-63-3" # the subpath of your site, e.g. /blog
 url: "https://pages.nist.gov/" # the base hostname & protocol for your site
 
 # Build settings
@@ -30,14 +30,14 @@ repo_name: 800-63-3
 # List links that should appear in the site sidebar here
 navigation:
 - text: Home
-  url: /800-63/
+  url: /800-63-3/
 - text: SP 800-63-3
-  url: /800-63/sp800-63-3/
+  url: /800-63-3/sp800-63-3/
 - text: SP 800-63A
-  url: /800-63/sp800-63a/
+  url: /800-63-3/sp800-63a/
 - text: SP 800-63B
-  url: /800-63/sp800-63b/
+  url: /800-63-3/sp800-63b/
 - text: SP 800-63C
-  url: /800-63/sp800-63c/
+  url: /800-63-3/sp800-63c/
 
 host: 0.0.0.0
