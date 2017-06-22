@@ -28,9 +28,11 @@ The Trusted Identities Group (TIG) thanks all that contributed to the developmen
 | SP 800-63A | Enrollment and Identity Proofing | https://doi.org/10.6028/NIST.SP.800-63a |
 | SP 800-63B | Authentication and Lifecycle Management | https://doi.org/10.6028/NIST.SP.800-63b |
 | SP 800-63C | Federation and Assertions | https://doi.org/10.6028/NIST.SP.800-63c |
-<br />
 
-Links to the online version of the SP 800-63 suite are below.
+  
+
+
+Links to the online version of the SP 800-63 suite:
 
 <ul class="audiences">
 <li>
