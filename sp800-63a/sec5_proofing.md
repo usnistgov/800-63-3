@@ -139,7 +139,7 @@ In-person proofing can be satisfied in two ways:
 
 CSPs can employ remote proofing processes to achieve comparable levels of confidence and security to in-person events. The following requirements establish comparability between in-person transactions where the applicant is in the same physical location as the CSP to those where the applicant is remote.
 
-Supervised remote identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6.](#ial3-requirements):
+Supervised remote identity proofing and enrollment transactions SHALL meet the following requirements, in addition to the IAL3 validation and verification requirements specified in [Section 4.6](#ial3-requirements):
 
 1. The CSP SHALL monitor the entire identity proofing session, from which the applicant SHALL NOT depart — for example, by a continuous high-resolution video transmission of the applicant.
 2. The CSP SHALL have a live operator participate remotely with the applicant for the entirety of the identity proofing session.
@@ -164,4 +164,4 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 
 ### 5.4 Binding Requirements
 
-See [800-63B, Section 6.1 Authenticator Binding](sp800-63b.html#binding) for instructions on binding authenticators to subscribers.
+[800-63B](sp800-63b.html) Section 6.1 Authenticator Binding for instructions on binding authenticators to subscribers.

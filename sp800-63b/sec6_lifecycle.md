@@ -58,7 +58,7 @@ With the exception of memorized secrets, CSPs and verifiers SHOULD encourage sub
 
 Accordingly, CSPs SHOULD permit the binding of additional authenticators to a subscriber's account. Before adding the new authenticator, the CSP SHALL first require the subscriber to authenticate at the AAL (or a higher AAL) at which the new authenticator will be used. When an authenticator is added, the CSP SHOULD send a notification to the subscriber via a mechanism that is independent of the transaction binding the new authenticator (e.g., email to an address previously associated with the subscriber). The CSP MAY limit the number of authenticators that may be bound in this manner.
 
-#### 6.1.2.2 Adding an Additional Factor to a Single-factor Account
+#### 6.1.2.2 Adding an Additional Factor to a Single-Factor Account
 
 If the subscriber's account has only one authentication factor bound to it (i.e., at IAL1/AAL1) and an additional authenticator of a different authentication factor is to be added, the subscriber MAY request that the account be upgraded to AAL2. The IAL would remain at IAL1.
 
@@ -66,7 +66,7 @@ Before binding the new authenticator, the CSP SHALL require the subscriber to au
 
 #### 6.1.2.3 <a name="replacement"></a> Replacement of a Lost Authentication Factor
 
-If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL2 or IAL3, that subscriber SHALL repeat the identity proofing process described in [SP 800-63A](sp800-63a.html). An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence, MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [SP 800-63A Section 4.2](sp800-63a.html#genProofReqs). The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL3 SHALL be done in person, or through a supervised remote process as described in [SP 800-63A Section 5.3.3.2](sp800-63a.html#supervised), and SHALL verify the biometric collected during the original proofing process.
+If a subscriber loses all authenticators of a factor necessary to complete multi-factor authentication and has been identity proofed at IAL2 or IAL3, that subscriber SHALL repeat the identity proofing process described in [SP 800-63A](sp800-63a.html). An abbreviated proofing process, confirming the binding of the claimant to previously-supplied evidence, MAY be used if the CSP has retained the evidence from the original proofing process pursuant to a privacy risk assessment as described in [SP 800-63A](sp800-63a.html) Section 4.2. The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing identity. Reestablishment of authentication factors at IAL3 SHALL be done in person, or through a supervised remote process as described in [SP 800-63A](sp800-63a.html) Section 5.3.3.2, and SHALL verify the biometric collected during the original proofing process.
 
 The CSP SHOULD send a notification of the event to the subscriber. This MAY be the same notice as is required as part of the proofing process.
 

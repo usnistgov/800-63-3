@@ -4,9 +4,9 @@
 
 ## <a name="ial-section"></a> 4 Identity Assurance Level Requirements
 
-_This section is normative._
+_This section contains both normative and informative material._
 
-This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process whereby their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [SP 800-63-3 Section 6.1](sp800-63-3.html#IAL_CYOA) for details on how to choose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
+This document describes the common pattern in which an applicant undergoes an identity proofing and enrollment process whereby their identity evidence and attributes are collected, uniquely resolved to a single identity within a given population or context, then validated and verified. See [SP 800-63-3](sp800-63-3.html) Section 6.1 for details on how to choose the most appropriate IAL. A CSP may then bind these attributes to an authenticator (described in [SP 800-63B](sp800-63b.html)).
 
 Identity proofing's sole objective is to ensure the applicant is who they claim to be to a stated level of certitude. This includes presentation, validation, and verification of the minimum attributes necessary to accomplish identity proofing.  There may be many different sets that suffice as the minimum, so CSPs should choose this set to balance privacy and the user's usability needs, as well as the likely attributes needed in future uses of the digital identity. For example, such attributes &mdash; to the extent they are the minimum necessary &mdash; could include:
 
@@ -17,6 +17,8 @@ Identity proofing's sole objective is to ensure the applicant is who they claim 
 This document also provides requirements for CSPs collecting additional information used for purposes other than identity proofing.
 
 ### 4.1 Process Flow
+
+_This section is normative._
 
 [Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment.
 
@@ -96,11 +98,15 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 ### 4.3 Identity Assurance Level 1
 
+_This section is normative._
+
 1. A CSP that supports only IAL1 CSP SHALL NOT validate and verify attributes.
 2. The CSP MAY request zero or more self-asserted attributes from the applicant to support their service offering.
 3. An IAL2 or IAL3 CSP SHOULD support RPs that only require IAL1, if the user consents.
 
 ### 4.4 Identity Assurance Level 2
+
+_This section is normative._
 
 IAL2 allows for **remote** or **in-person** identity proofing. IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant.
 
@@ -186,6 +192,8 @@ In instances where an individual cannot meet the identity evidence requirements 
 
 ### <a name="ial3-requirements"></a> 4.5 Identity Assurance Level 3
 
+_This section is normative._
+
 IAL3 adds additional rigor to the steps required at IAL2, to include providing further evidence of superior strength, and is subject to additional and specific processes (including the use of biometrics) to further protect the identity and RP from impersonation, fraud, or other significantly harmful damages. Biometrics are used to detect fraudulent enrollments, duplicate enrollments, and as a mechanism to re-establish binding to a credential. In addition, identity proofing at IAL3 is performed in-person (to include supervised remote). See [Section 5.3.3](#vip) for more details.
 
 #### 4.5.1 Resolution Requirements
@@ -233,13 +241,15 @@ The CSP SHALL perform all identity proofing steps with the applicant in-person. 
 
 #### <a name="4-5-7"></a>4.5.7 Biometric Collection
 
-The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing. See [Section 5.2.3 of SP 800-63B](sp800-63b.html#biometric_use) for more detail on biometric collection.
+The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing. See Section 5.2.3 of [SP 800-63B](sp800-63b.html) for more detail on biometric collection.
 
 #### 4.5.8 Security Controls
 
 The CSP SHALL employ appropriately tailored security controls, to include control enhancements, from the high baseline of security controls defined in [SP 800-53](#SP800-53) or an equivalent federal (e.g., [FEDRAMP](#FEDRAMP)) or industry standard. The CSP SHALL ensure that the minimum assurance-related controls for *high-impact* systems or equivalent are satisfied.
 
 ### <a name="enrollmentcode"></a> 4.6 Enrollment Code
+
+_This section is normative._
 
 An enrollment code allows the CSP to confirm that the applicant controls an address of record, as well as offering the applicant the ability to reestablish binding to their enrollment record. Binding NEED NOT be completed in the same session as the original identity proofing transaction.
 

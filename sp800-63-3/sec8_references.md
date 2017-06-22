@@ -56,7 +56,12 @@ NIST 800 Series Special Publications are available at: <http://csrc.nist.gov/pub
 
 <a name="SP800-37"></a>[SP 800-37] NIST Special Publication 800-37 Revision 1, *Guide for Applying the Risk Management Framework to Federal Information Systems, A Security Life Cycle Approach*, February 2010 (updated June 5, 2014), <https://doi.org/10.6028/NIST.SP.800-37r1>.
 
+<a name="SP800-52"></a>[SP 800-52] NIST Special Publication 800-52 Revision 1, *Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations, April 2014, <http://dx.doi.org/10.6028/NIST.SP.800-52r1>.
+
 <a name="SP800-53A"></a>[SP 800-53A] NIST Special Publication 800-53A Revision 4, *Assessing Security and Privacy Controls in Federal Information Systems and Organizations, Building Effective Assessment Plans*, December 2014 (updated December 18, 2014), <https://doi.org/10.6028/NIST.SP.800-53Ar4>.
 
 ### 8.4 Federal Information Processing Standards
+
+<a name="FIPS199"></a>[FIPS 199] Federal Information Processing Standard 199, *Standards for Security Categorization of Federal Information and Information Systems*, February 2004, <https://doi.org/10.6028/NIST.FIPS.199>.
+
 <a name="FIPS201"></a>[FIPS 201] Federal Information Processing Standard Publication 201-2, *Personal Identity Verification (PIV) of Federal Employees and Contractors*, August 2013, <http://dx.doi.org/10.6028/NIST.FIPS.201-2>.

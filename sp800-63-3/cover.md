@@ -38,7 +38,7 @@ https://doi.org/10.6028/NIST.SP.800-63-3
 This publication is available free of charge from:  
 https://doi.org/10.6028/NIST.SP.800-63-3  
 
-Month TBD 2017
+June 2017
 
 ![](sp800-63-3/media/commerce_logo.png)
 
@@ -61,12 +61,12 @@ Technology*
 
 This publication has been developed by NIST in accordance with its statutory responsibilities under the Federal Information Security Modernization Act (FISMA) of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283. NIST is responsible for developing information security standards and guidelines, including minimum requirements for federal systems, but such standards and guidelines shall not apply to national security systems without the express approval of appropriate federal officials exercising policy authority over such systems. This guideline is consistent with the requirements of the Office of Management and Budget (OMB) Circular A-130.
 
-Nothing in this publication should be taken to contradict the standards and guidelines made mandatory and binding on federal agencies by the Secretary of Commerce under statutory authority. Nor should these guidelines be interpreted as altering or superseding the existing authorities of the Secretary of Commerce, Director of the OMB, or any other federal official. This publication may be used by nongovernmental organizations on a voluntary basis and is not subject to copyright in the United States. However, NIST would appreciate attribution.
+Nothing in this publication should be taken to contradict the standards and guidelines made mandatory and binding on federal agencies by the Secretary of Commerce under statutory authority. Nor should these guidelines be interpreted as altering or superseding the existing authorities of the Secretary of Commerce, Director of the OMB, or any other federal official. This publication may be used by nongovernmental organizations on a voluntary basis and is not subject to copyright in the United States. Attribution would, however, be appreciated by NIST.
 
 <div class="text-center" markdown="1">
 
 National Institute of Standards and Technology Special Publication 800-63-3  
-Natl. Inst. Stand. Technol. Spec. Publ. 800-63-3, xxx pages (MonthTBD 2017)  
+Natl. Inst. Stand. Technol. Spec. Publ. 800-63-3, 73 pages (June 2017)  
 CODEN: NSPUE2
 
 This publication is available free of charge from:  
@@ -84,13 +84,14 @@ https://doi.org/10.6028/NIST.SP.800-63-3
 
 <div class="text-center" markdown="1">
 
-**Comments on this publication may be submitted to dig-comments@nist.gov**  
-All comments are subject to release under the Freedom of Information Act (FOIA).
+**Comments on this publication may be submitted to:**
 
 National Institute of Standards and Technology  
 Attn: Applied Cybersecurity Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 2000) Gaithersburg, MD 20899-2000  
 Email: <dig-comments@nist.gov>
+
+All comments are subject to release under the Freedom of Information Act (FOIA).
 
 </div>
 
@@ -145,7 +146,7 @@ passwords; PKI.
 
 </div>
 
-The authors gratefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all volumes in the SP 800-63 suite and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Ellen Nadeau from NIST, and Danna O'Rourke from Deloitte & Touche LLP.
+The authors gratefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all volumes in the SP 800-63 suite and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Ellen Nadeau and Ben Piccarreta from NIST, and Danna Gabel O'Rourke from Deloitte & Touche LLP.
 
 In addition, the authors would like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus. Without their tireless efforts, we would not have had the incredible baseline from which to evolve SP 800-63 to the document it is today.
 

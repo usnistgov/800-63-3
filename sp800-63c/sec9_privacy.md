@@ -50,8 +50,8 @@ The following table illustrates a spectrum of blinding implementations used in p
 
 |Proxy Type|RP knows IdP|IdP knows RP|Proxy can track subscriptions between RP and IdP|Proxy can see attributes of Subscriber|
 |---|:---:|:---:|:---:|:---:|
-|Non-blinding Proxy with Attributes|Yes|Yes|Yes|Yes|
-|Non-blinding Proxy|Yes|Yes|Yes|N/A|
+|Non-Blinding Proxy with Attributes|Yes|Yes|Yes|Yes|
+|Non-Blinding Proxy|Yes|Yes|Yes|N/A|
 |Double Blind Proxy with Attributes|No|No|Yes|Yes|
 |Double Blind Proxy|No|No|Yes|N/A|
 |Triple Blind Proxy with or without Attributes|No|No|No|No|

@@ -19,13 +19,11 @@ Andrew R. Regenscheid
 William E. Burr    
 Justin P. Richer  
 
-Privacy Authors:  
-
+**Privacy Authors:**  
 Naomi B. Lefkovitz  
 Jamie M. Danker  
 
-Usability Authors:  
-
+**Usability Authors:**  
 Yee-Yin Choong      
 Kristen K. Greene      
 Mary F. Theofanos   
@@ -48,19 +46,21 @@ https://doi.org/10.6028/NIST.SP.800-63b
 <table class="authors">
   <tr>
     <td>Paul A. Grassi<br>Elaine M. Newton<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
-    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+    <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
   </tr>
   <tr>
 	<td>Ray A. Perlner<br>Andrew R. Regenscheid<br><i>Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+	<td>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td></tr>
+	<tr>
+	<td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+	<td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
+
+	</tr>
     <td>William E. Burr<br><i>Dakota Consulting, Inc.</i><br><i>Silver Spring, MD</i></td>
+    <td>Mary F. Theofanos<br><i>Office of Data and Informatics</i><br><i>Material Measurement Laboratory</i></td>
   </tr>
   <tr>
-  
   	<td colspan="2">Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, MA</i></td>
-  </tr>
-  <tr>
-    <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i><br><br>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td>
-    <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Mary F. Theofanos<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
   </tr>
 </table>
 
@@ -95,7 +95,7 @@ Nothing in this publication should be taken to contradict the standards and guid
 <div class="text-center" markdown="1">
 
 National Institute of Standards and Technology Special Publication 800-63B  
-Natl. Inst. Stand. Technol. Spec. Publ. 800-63B, xxx pages (MonthTBD 2017)  
+Natl. Inst. Stand. Technol. Spec. Publ. 800-63B, 78 pages (June 2017)  
 CODEN: NSPUE2
 
 This publication is available free of charge from:  
@@ -112,13 +112,15 @@ https://doi.org/10.6028/NIST.SP.800-63b
 </div>
 
 <div class="text-center" markdown="1">
-**Comments on this publication may be submitted to dig-comments@nist.gov**    
-All comments are subject to release under the Freedom of Information Act (FOIA).
+**Comments on this publication may be submitted to:**    
 
 National Institute of Standards and Technology  
 Attn: Applied Cybersecurity Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 2000) Gaithersburg, MD 20899-2000  
 Email: <dig-comments@nist.gov>
+
+All comments are subject to release under the Freedom of Information Act (FOIA).
+
 </div>
 
 <div class="text-center" markdown="1">
@@ -163,7 +165,7 @@ authentication; credential service provider; digital authentication; digital cre
 
 </div>
 
-The authors would like to acknowledge the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Kat Megas from NIST, and Ryan Galluzzo and Danna O'Rourke from Deloitte & Touche LLP.
+The authors gratefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all volumes in the SP 800-63 suite and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Kat Megas, Ellen Nadeau, and Ben Piccarreta from NIST, and Ryan Galluzzo and Danna Gabel O'Rourke from Deloitte & Touche LLP.
 
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus. Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 

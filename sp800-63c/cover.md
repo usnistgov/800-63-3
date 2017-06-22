@@ -16,11 +16,11 @@ Sarah K. Squire
 James L. Fenton  
 Ellen M. Nadeau  
 
-Privacy Authors:  
+**Privacy Authors:**  
 Naomi B. Lefkovitz    
 Jamie M. Danker  
 
-Usability Authors:  
+**Usability Authors:**  
 Yee-Yin Choong      
 Kristen K. Greene      
 Mary F. Theofanos
@@ -42,49 +42,23 @@ https://doi.org/10.6028/NIST.SP.800-63c
 <table class="authors">
   <tr>
     <td>Paul A. Grassi<br>Ellen M. Nadeau<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
-    <td>Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, MA</i></td>    
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, Calif.</i></td>    
   </tr>
-  <tr>	
-    <td>Sarah K. Squire<br><i>Engage Identity</i><br><i>Seattle, WA</i></td>
-    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+  <tr>
+      <td>Justin P. Richer<br>Sarah K. Squire<br><i>Bespoke Engineering</i><br><i>Billerica, Mass.</i></td>
+      <td>&nbsp;</td>
   </tr>
   <tr>
     <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i><br><br>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td>
-    <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Mary F. Theofanos<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
+    <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i><br><br>Mary F. Theofanos<br><i>Office of Data and Informatics</i><br><i>Material Measurement Laboratory</i></td>
   </tr>
 </table>
-
-
-
-
-
-James L. Fenton  
-*Altmode Networks  
-Los Altos, CA*  
-
-Privacy Authors:
-
-Naomi B. Lefkovitz  
-*Applied Cybersecurity Division  
-Information Technology Laboratory*    
-
-Jamie M. Danker  
-*National Protection and Programs Directorate  
-Department of Homeland Security*  
-
-Usability Authors:  
-
-Yee-Yin Choong  
-Kristen K. Greene  
-Mary F. Theofanos  
-*Information Access Division  
-Information Technology Laboratory*  
 
 This publication is available free of charge from:  
 https://doi.org/10.6028/NIST.SP.800-63c  
 
 
-Month TBD 2017
+June 2017
 
 ![](sp800-63-3/media/commerce_logo.png)
 
@@ -110,7 +84,7 @@ Nothing in this publication should be taken to contradict the standards and guid
 <div class="text-center" markdown="1">
 
 National Institute of Standards and Technology Special Publication 800-63C  
-Natl. Inst. Stand. Technol. Spec. Publ. 800-63C, xxx pages (MonthTBD 2017)  
+Natl. Inst. Stand. Technol. Spec. Publ. 800-63C, 48 pages (June 2017)  
 CODEN: NSPUE2
 
 
@@ -129,13 +103,15 @@ https://doi.org/10.6028/NIST.SP.800-63c
 </div>
 
 <div class="text-center" markdown="1">
-**Comments on this publication may be submitted to eauth-comments@nist.gov**    
-All comments are subject to release under the Freedom of Information Act (FOIA).
+**Comments on this publication may be submitted to:**    
 
 National Institute of Standards and Technology  
 Attn: Applied Cybersecurity Division, Information Technology Laboratory  
 100 Bureau Drive (Mail Stop 2000) Gaithersburg, MD 20899-2000  
 Email: <dig-comments@nist.gov>
+
+All comments are subject to release under the Freedom of Information Act (FOIA).
+
 </div>
 
 <div class="text-center" markdown="1">
@@ -152,7 +128,7 @@ The Information Technology Laboratory (ITL) at the National Institute of Standar
 
 </div>
 
-This document and its companion documents, SP 800-63, SP 800-63A, and SP 800-63B, provide technical and procedural guidelines to agencies for the implementation of federated identity systems and for assertions used by federations. This publication supersedes corresponding sections of NIST SP 800-63-1 and SP 800-63-2.
+This document and its companion documents, SP 800-63, SP 800-63A, and SP 800-63B, provide technical and procedural guidelines to agencies for the implementation of federated identity systems and for assertions used by federations. This publication supersedes corresponding sections of SP 800-63-2.
 
 These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. This guideline focuses on the use of federated identity and the use of assertions to implement identity federations. Federation allows a given credential service provider to provide authentication and (optionally) subscriber attributes to a number of separately-administered relying parties. Similarly, relying parties may use more than one credential service provider.
 
@@ -171,7 +147,7 @@ digital authentication; electronic authentication; electronic credentials; feder
 
 </div>
 
-The authors would like to acknowledge the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Kat Megas from NIST, and Christine Abruzzi and Danna O'Rourke from Deloitte & Touche LLP.
+The authors gretefully acknowledge Kaitlin Boeckl for her artistic graphics contributions to all vulumed in the SP 800-63 suite and the contributions of our many reviewers, including Joni Brennan from the Digital ID & Authentication Council of Canada (DIACC), Kat Megas and Ben Piccarreta from NIST, and Christine Abruzzi and Danna Gabel O'Rourke from Deloitte & Touche LLP.
 
 The authors would also like to acknowledge the thought leadership and innovation of the original authors: Donna F. Dodson, Elaine M. Newton, Ray A. Perlner, W. Timothy Polk, Sarbari Gupta, and Emad A. Nabbus. Without their tireless efforts, we would not have had the incredible baseline from which to evolve 800-63 to the document it is today. In addition, special thanks to the Federal Privacy Council's Digital Authentication Task Force for the contributions to the development of privacy requirements and considerations.
 
