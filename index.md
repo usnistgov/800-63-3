@@ -1,7 +1,7 @@
 ---
 layout: cover
-title: "NIST SP 800-63-3 Digital Identity Guidelines"
-description: "NIST Special Publication 800-63-3 Digital Identity Guidelines"
+title: "NIST SP 800-63 Digital Identity Guidelines"
+description: "NIST Special Publication 800-63: Digital Identity Guidelines"
 ---
 <section class="home home-title" markdown="1">
 
@@ -15,11 +15,11 @@ description: "NIST Special Publication 800-63-3 Digital Identity Guidelines"
 
 #### June 22, 2017
 
-The finalized four-volume SP 800-63-3 *Digital Identity Guidelines* document suite is now available, both in PDF format and online.
+The finalized four-volume SP 800-63 *Digital Identity Guidelines* document suite is now available, both in PDF format and online.
 
 The Trusted Identities Group (TIG) thanks all that contributed to the development of these documents.
 
-PDF versions of the documents are available from:
+**PDF versions of the documents are available from:**
 
 
 | Document | Title | URL |
@@ -28,8 +28,9 @@ PDF versions of the documents are available from:
 | SP 800-63A | Enrollment and Identity Proofing | https://doi.org/10.6028/NIST.SP.800-63a |
 | SP 800-63B | Authentication and Lifecycle Management | https://doi.org/10.6028/NIST.SP.800-63b |
 | SP 800-63C | Federation and Assertions | https://doi.org/10.6028/NIST.SP.800-63c |
+<br />
 
-Links to the online version of the SP 800-63-3 suite are below.
+Links to the online version of the SP 800-63 suite are below.
 
 <ul class="audiences">
 <li>
