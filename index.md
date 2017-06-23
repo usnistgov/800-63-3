@@ -24,10 +24,10 @@ PDF versions of the documents are available from:
 
 | Document | Title | URL |
 |-----|-----|-----|
-| SP 800-63-3 | Digital Identity Guidelines | https://doi.org/10.6028/NIST.SP.800-63-3 |
-| SP 800-63A | Enrollment and Identity Proofing | https://doi.org/10.6028/NIST.SP.800-63a |
-| SP 800-63B | Authentication and Lifecycle Management | https://doi.org/10.6028/NIST.SP.800-63b |
-| SP 800-63C | Federation and Assertions | https://doi.org/10.6028/NIST.SP.800-63c |
+| SP 800-63-3 | Digital Identity Guidelines | <https://doi.org/10.6028/NIST.SP.800-63-3> |
+| SP 800-63A | Enrollment and Identity Proofing | <https://doi.org/10.6028/NIST.SP.800-63a> |
+| SP 800-63B | Authentication and Lifecycle Management | <https://doi.org/10.6028/NIST.SP.800-63b> |
+| SP 800-63C | Federation and Assertions | <https://doi.org/10.6028/NIST.SP.800-63c> |
 
 Links to the online version of the SP 800-63 suite are below.
 
