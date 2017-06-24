@@ -67,7 +67,7 @@ https://doi.org/10.6028/NIST.SP.800-63b
 This publication is available free of charge from:    
 https://doi.org/10.6028/NIST.SP.800-63b    
 
-Month TBD 2017
+June 2017
 
 ![](sp800-63-3/media/commerce_logo.png)
 
