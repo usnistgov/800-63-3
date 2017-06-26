@@ -1,37 +1,9 @@
 # SP 800-63B
 
-This is a working draft of NIST Special Publication 800-63B *Authentication and Lifecycle Management*. This document is a sub-document referenced by [SP 800-63-3](../sp800-63-3/README.html) covering the associated topics that had been previously in SP 800-63-2.
+This is NIST Special Publication (SP) 800-63B *Authentication and Lifecycle Management*. This document is referenced by SP 800-63-3 covering the associated topics that had been previously in SP 800-63-2.
 
-SP 800-63B provides guidance on the selection, use, and management of authenticators (formerly called *tokens*) to authenticate a subscriber to a digital identity system at specified levels of strength.
+The official version of this document is the PDF available at <https://doi.org/10.6028/NIST.SP.800-63b>. This repository, used for development of the SP 800-63 document suite, is available as a resource for those who prefer to view the documents in HTML form or who wish to view the original Markdown.
 
-- An identifier that can be used to associate the subscriber with previous interactions with the same relying party
+Because of differences in Markdown rendering engines, the best place to view the HTML is on the NIST Pages website at <https://pages.nist.gov/800-63-3/> rather than the GitHub rendering of the documents.
 
-- A metric describing the strength of the authentication process
-
-- Optionally, one or more attributes associated with the subscriber
-
-This document is broken up into sections as follows:
-
-[Front matter](front.md)
-
-[1. Purpose and 2. Introduction](sec1_2_introduction.md)
-
-[3. Definitions and Abbreviations](sec3_definitions.md)
-
-[4. Authenticator Assurance Levels](sec4_aal.md)
-
-[5. Authenticator and Verifier Requirements](sec5_authenticators.md)
-
-[6. Authenticator Lifecycle Management](sec6_lifecycle.md)
-
-[7. Session Management](sec7_session.md)
-
-[8. Threats and Security Considerations](sec8_security.md)
-
-[9. Privacy Considerations](sec9_privacy.md)
-
-[10. Usability Considerations](sec10_usability.md)
-
-[11. References](references.md)
-
-[Appendix A. Strength of Memorized Secrets](appA_memorized.md)
+While this is believed to be a faithful representation of the official PDF documents, NIST would appreciate being informed about any inconsistencies that may be found other than minor formatting differences. These may be reported to <dig-comments@nist.gov>.
