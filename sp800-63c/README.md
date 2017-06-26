@@ -1,33 +1,9 @@
 # SP 800-63C
 
-This is a working draft of NIST Special Publication 800-63C, *Assertions and Federation*. This document is a sub-document referenced by [SP 800-63-3](../sp800-63/README.md) covering the associated topics that had been previously in SP 800-63-2.
+This is NIST Special Publication (SP) 800-63C, *Federation and Assertions*. This document is referenced by SP 800-63-3 covering the associated topics that had been previously in SP 800-63-2.
 
-SP 800-63C provides guidance on the use of assertions to convey the results of authentication processes to a relying party. Assertions are used in federated identity systems where the authentication is performed a verifier (sometimes called an Identity Provider) and used by a different party, sometimes called a Relying Party. Federation permits a centrally-managed set of credentials to be used at a number if different relying parties.
+The official version of this document is the PDF available at <https://doi.org/10.6028/NIST.SP.800-63c>. This repository, used for development of the SP 800-63 document suite, is available as a resource for those who prefer to view the documents in HTML form or who wish to view the original Markdown.
 
-Keys and other secrets used to maintain state (stored in cookies, local storage, etc.) have been sometimes characterized as local assertions, but have very different requirements and characteristics than assertions conveyed between different parties. Accordingly, such "local assertions" are treated as reauthentication secrets and covered in SP 800-63B.
+Because of differences in Markdown rendering engines, the best place to view the HTML is on the NIST Pages website at <https://pages.nist.gov/800-63-3/> rather than the GitHub rendering of the documents.
 
-This document is broken up into sections as follows:
-
-[Front matter](front.md)
-
-[1. Purpose and 2. Introduction](sec1_2_introduction.md)
-
-[3. Definitions and Abbreviations](sec3_definitions.md)
-
-[4. Federation](sec4_federation.md)
-
-[5. Assertions](sec5_assertions.md)
-
-[6. Assertion Presentation](sec6_presentation.md)
-
-[7. Federation Assurance Level](sec7_fal.md)
-
-[8. Security](sec8_security.md)
-
-[9. Privacy](sec9_privacy.md)
-
-[10. Usability](sec10_usability.md)
-
-[11. Assertion Examples](sec11_examples.md)
-
-[12. References](references.md)
+While this is believed to be a faithful representation of the official PDF documents, NIST would appreciate being informed about any inconsistencies that may be found other than minor formatting differences. These may be reported to <dig-comments@nist.gov>.

@@ -1,5 +1,9 @@
 # SP 800-63A
 
-This is a working draft of NIST Special Publication 800-63A *Identity Proofing*. This document is a sub-document referenced by [SP 800-63-3](../sp800-63-3/README.md) covering the associated topics that had been previously in SP 800-63-2.
+This is the final version of NIST Special Publication (SP) 800-63A *Enrollment and Identity Proofing*. This document is \referenced by SP 800-63-3 covering the associated topics that had been previously in SP 800-63-2.
 
-SP 800-63A deals with the processes by which an individual can prove their identity to a CSP prior to credential issuance.
+The official version of this document is the PDF available at <https://doi.org/10.6028/NIST.SP.800-63a>. This repository, used for development of the SP 800-63 document suite, is available as a resource for those who prefer to view the documents in HTML form or who wish to view the original Markdown.
+
+Because of differences in Markdown rendering engines, the best place to view the HTML is on the NIST Pages website at <https://pages.nist.gov/800-63-3/> rather than the GitHub rendering of the documents.
+
+While this is believed to be a faithful representation of the official PDF documents, NIST would appreciate being informed about any inconsistencies that may be found other than minor formatting differences. These may be reported to <dig-comments@nist.gov>.
