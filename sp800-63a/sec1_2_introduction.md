@@ -27,7 +27,7 @@ The following table states which sections of this document are normative and whi
 |3. Definitions and Abbreviations|Informative|
 |4. Identity Assurance Level Requirements|Normative|
 |5. Identity Resolution, Validation, and Verification|Normative|
-|6. Derived Credentials|Normative|
+|6. Derived Credentials|Informative|
 |7. Threats and Security Considerations|Informative|
 |8. Privacy Considerations|Informative|
 |9. Usability Considerations|Informative|
@@ -44,7 +44,7 @@ When a subject is identity proofed, the expected outcomes are:
 
 ## 2.2 Identity Assurance Levels
 
-Assurance in a subscriber's identity is described using one of three IALs: 
+Assurance in a subscriber's identity is described using one of three IALs:
 
 **IAL1**: There is no requirement to link the applicant to a specific real-life identity. Any attributes provided in conjunction with the subject's activities are self-asserted or should be treated as self-asserted (including attributes a CSP asserts to an RP). Self-asserted attributes are neither validated nor verified.
 

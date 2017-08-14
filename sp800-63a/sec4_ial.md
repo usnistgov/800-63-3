@@ -18,7 +18,7 @@ This document also provides requirements for CSPs collecting additional informat
 
 ### 4.1 Process Flow
 
-_This section is normative._
+_This section is informative._
 
 [Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment.
 
@@ -42,7 +42,7 @@ The following provides a sample of how a CSP and an applicant interact during th
   	</ol>
 	<li><strong>Validation</strong></li>
   		<ol type="a" start="a">  
-			<li>The CSP validates the information supplied in 1i by checking an authoritative source. The CSP determines the information supplied by the applicant matches their records.</li>  
+			<li>The CSP validates the information supplied in 1a by checking an authoritative source. The CSP determines the information supplied by the applicant matches their records.</li>  
 			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes matches the plain-text information, and that the identification numbers follow standard formats.</li>  
 			<li>The CSP queries the issuing sources for the license and passport and validates the information matches.</li>
 		</ol>
@@ -55,13 +55,14 @@ The following provides a sample of how a CSP and an applicant interact during th
 		</ol>
 </ol>
 
-</div>	
+</div>
 
 > Note: The identity proofing process can be delivered by multiple service providers. It is possible, but not expected, that a single organization, process, technique, or technology will fulfill these process steps.
 
 
 ### <a name="genProofReqs"></a> 4.2 General Requirements
 
+_This section is normative._
 
 The following requirements apply to any CSP performing identity proofing at IAL2 or IAL3.
 
@@ -174,7 +175,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 		</ol>
 </ol>
 
-</div>	
+</div>
 
 > Note: Postal address is the preferred method of sending any communications, including enrollment code and notifications, with the applicant. However, these guidelines support any confirmed address of record, whether physical or digital.
 
