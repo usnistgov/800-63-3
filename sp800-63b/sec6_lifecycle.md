@@ -37,7 +37,7 @@ If enrollment and binding cannot be completed in a single physical encounter or 
 
 For remote transactions:
 
-1. The applicant SHALL identify themselves in each new transaction by presenting a temporary secret which was either established during a prior transaction, or sent to the applicant's phone number, email address, or postal address of record.
+1. The applicant SHALL identify themselves in each new binding transaction by presenting a temporary secret which was either established during a prior transaction, or sent to the applicant's phone number, email address, or postal address of record.
 
 2. Long-term authenticator secrets SHALL only be issued to the applicant within a protected session.
 
