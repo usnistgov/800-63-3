@@ -49,13 +49,13 @@ https://doi.org/10.6028/NIST.SP.800-63b
    	<td>Ray A. Perlner<br>Andrew R. Regenscheid<br><i>Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>     
   </tr>
   <tr>
-  	<td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
-  	<td>William E. Burr<br><i>Dakota Consulting, Inc.</i><br><i>Silver Spring, MD</i></td>
+  	<td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, Calif</i></td>
+  	<td>William E. Burr<br><i>Dakota Consulting, Inc.</i><br><i>Silver Spring, Md.</i></td>
   </tr>
 
   <tr>
   	<td></td>
-  	<td>Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, MA</i></td>
+  	<td>Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, Mass.</i></td>
   </tr>
 
   <tr>
