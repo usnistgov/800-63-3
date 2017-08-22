@@ -28,7 +28,7 @@ https://doi.org/10.6028/NIST.SP.800-63-3
 <table class="authors">
   <tr>
     <td>Paul A. Grassi<br>Michael E. Garcia<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
-    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, Calif.</i></td>
   </tr>
 </table>
 
