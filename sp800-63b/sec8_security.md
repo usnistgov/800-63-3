@@ -27,7 +27,7 @@ This document assumes that the subscriber is not colluding with an attacker who 
 
 | **Authenticator Threat/Attack**  | **Description**  | **Examples** |
 |------------------------------------|------------------|--------------|
-| **Assertion Manufacture or Modification** | The attacker generates a false assertion | Compromised IdP asserts identity of a claimant who has not properly authenticated |
+| **Assertion Manufacture or Modification** | The attacker generates a false assertion | Compromised CSP asserts identity of a claimant who has not properly authenticated |
 | | The attacker modifies an existing assertion | Compromised proxy that changes AAL of an authentication assertion |
 | **Theft** | A physical authenticator is stolen by an Attacker. | A hardware cryptographic device is stolen. |
 | | | An OTP device is stolen. |
@@ -84,7 +84,7 @@ Related mechanisms that assist in mitigating the threats identified above are su
 | | Use authentication endpoints that employ trusted input and trusted display capabilities. | [5.1.6.1](#sfcsa), [5.1.8.1](#mfcsa) |
 | **Offline Cracking** | Use an authenticator with a high entropy authenticator secret. | [5.1.2.1](#lusa), [5.1.4.1](#sfotpa), [5.1.5.1](#mfotpa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
 | | Store memorized secrets in a salted, hashed form, including a keyed hash. | [5.1.1.2](#memsecretver), [5.2.7](#verifier-secrets) |
-| **Side channel attack** | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values. | [4.3.2](#aal3req)
+| **Side Channel Attack** | Use authenticator algorithms that are designed to maintain constant power consumption and timing regardless of secret values. | [4.3.2](#aal3req)
 | **Phishing or Pharming** | Use authenticators that provide verifier impersonation resistance. | [5.2.5](#verifimpers) |
 | **Social Engineering** | Avoid use of authenticators that present a risk of social engineering of third parties such as customer service agents. | [6.1.2.1](#bindexisting), [6.1.2.3](#replacement) |
 | **Online Guessing** | Use authenticators that generate high entropy output. | [5.1.2.1](#lusa), [5.1.7.1](#sfcda), [5.1.9.1](#mfcda) |
