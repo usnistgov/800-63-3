@@ -46,23 +46,31 @@ https://doi.org/10.6028/NIST.SP.800-63b
 <table class="authors">
   <tr>
     <td>Paul A. Grassi<br>Elaine M. Newton<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
-    <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+   	<td>Ray A. Perlner<br>Andrew R. Regenscheid<br><i>Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>     
   </tr>
   <tr>
-	<td>Ray A. Perlner<br>Andrew R. Regenscheid<br><i>Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
-	<td>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td></tr>
-	<tr>
-	<td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
-	<td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br>Information Access Division</i><br><i>Information Technology Laboratory</i></td>
+  	<td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+  	<td>William E. Burr<br><i>Dakota Consulting, Inc.</i><br><i>Silver Spring, MD</i></td>
+  </tr>
 
-	</tr>
-    <td>William E. Burr<br><i>Dakota Consulting, Inc.</i><br><i>Silver Spring, MD</i></td>
+  <tr>
+  	<td></td>
+  	<td>Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, MA</i></td>
+  </tr>
+
+  <tr>
+	  <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
+	  <td><strong>Usability Authors:</strong><br>Yee-Yin Choong<br>Kristen K. Greene<br><i>Information Access Division</i><br><i>Information Technology Laboratory</i></td>   
+  </tr>
+
+  <tr>
+	  <td>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td>
     <td>Mary F. Theofanos<br><i>Office of Data and Informatics</i><br><i>Material Measurement Laboratory</i></td>
   </tr>
-  <tr>
-  	<td colspan="2">Justin P. Richer<br><i>Bespoke Engineering</i><br><i>Billerica, MA</i></td>
-  </tr>
 </table>
+
+
+
 
 This publication is available free of charge from:    
 https://doi.org/10.6028/NIST.SP.800-63b    
