@@ -158,8 +158,8 @@ Supervised remote identity proofing and enrollment transactions SHALL meet the f
 
 #### Considerations for Minors
 
-1. The CSP SHALL give special consideration to the legal restrictions of interacting with minors unable to meet the evidence requirements of identity proofing to ensure compliance with the [Children's Online Privacy Protection Act of 1998](#COPPA), and other laws, as applicable.
-2. Minors under age 13 require additional special considerations under COPPA, and other laws, to which the CSP SHALL ensure compliance, as applicable.
+1. The CSP SHALL give special consideration to the legal restrictions of interacting with minors unable to meet the evidence requirements of identity proofing to ensure compliance with the Children's Online Privacy Protection Act of 1998 (COPPA)[[COPPA]](#COPPA), and other laws, as applicable.
+2. Minors under age 13 require additional special considerations under COPPA [[COPPA]](#COPPA), and other laws, to which the CSP SHALL ensure compliance, as applicable.
 3. The CSP SHOULD involve a parent or legal adult guardian as a trusted referee for an applicant that is a minor, as described elsewhere in this section.
 
 ### 5.4 Binding Requirements
