@@ -13,7 +13,7 @@ The trustmark URI for these definitions is [[ URI for this document ]].
 
 ### xAL to VoT Components
 
-This document uses three categories defined in VoT: Identity Proofing (P), Primary Credential Usage (C), and Assertion Presentation (A). These categories correspond to the Identity Assurance Level (IAL), Authenticator Assurance Level (AAL), and Federation Assurance Level (FAL), respectively. 
+This document uses three categories defined in VoT: Identity Proofing (P), Primary Credential Usage (C), and Assertion Presentation (A). These categories correspond to the Identity Assurance Level (IAL), Authenticator Assurance Level (AAL), and Federation Assurance Level (FAL), respectively.
 
 This document does not use the Primary Credential Management (M) category defined in VoT.
 
@@ -25,7 +25,7 @@ This document does not use any of the existing values in VoT but instead defines
 
 ### IAL to VOT Component Values
 
-IAL maps into the VoT component P using a numeric identifier. Only one numeric identifier SHALL be used. 
+IAL maps into the VoT component P using a numeric identifier. Only one numeric identifier SHALL be used.
 
 |IAL|Component Value|
 |:----:|:--:|
@@ -42,7 +42,7 @@ In addition, the type of proofing used MAY be indicated using an alphabetic iden
 
 ### AAL to VOT Component Values
 
-AAL maps into the VoT component C using a numeric identifier. Only one numeric identifier SHALL be used. 
+AAL maps into the VoT component C using a numeric identifier. Only one numeric identifier SHALL be used.
 
 |AAL|Component Value|
 |:----:|:--:|
@@ -50,7 +50,7 @@ AAL maps into the VoT component C using a numeric identifier. Only one numeric i
 |AAL2|C2|
 |AAL3|C3|
 
-In addition, the type of authenticator used SHALL be indicated using an alphabetic identifier. Multiple aphabetic identifiers MAY be used simultaneously.
+In addition, the type of authenticator used SHALL be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously.
 
 |Authenticator|Component Value|
 |Memorized Secret|Cp|
@@ -67,7 +67,7 @@ In addition, the type of authenticator used SHALL be indicated using an alphabet
 
 ### FAL to VOT Component Values
 
-FAL maps into the VoT component A using a numeric identifier. Only one numeric identifier SHALL be used. 
+FAL maps into the VoT component A using a numeric identifier. Only one numeric identifier SHALL be used.
 
 |FAL|Component Value|
 |:----:|:--:|
@@ -75,7 +75,7 @@ FAL maps into the VoT component A using a numeric identifier. Only one numeric i
 |FAL2|A2|
 |FAL3|A3|
 
-In addition, the presentation mechanism MAP be indicated using an alphabetic identifier. Only one aphabetic identifier SHALL be used.
+In addition, the presentation mechanism MAP be indicated using an alphabetic identifier. Only one alphabetic identifier SHALL be used.
 
 |Presentation|Component Value|
 |Front channel|Af|
