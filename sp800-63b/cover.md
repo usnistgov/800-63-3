@@ -46,10 +46,10 @@ https://doi.org/10.6028/NIST.SP.800-63b
 <table class="authors">
   <tr>
     <td>Paul A. Grassi<br>Elaine M. Newton<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
-   	<td>Ray A. Perlner<br>Andrew R. Regenscheid<br><i>Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>     
+   	<td>Ray A. Perlner<br>Andrew R. Regenscheid<br><i>Computer Security Division</i><br><i>Information Technology Laboratory</i></td>     
   </tr>
   <tr>
-  	<td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, Calif</i></td>
+  	<td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, Calif.</i></td>
   	<td>William E. Burr<br><i>Dakota Consulting, Inc.</i><br><i>Silver Spring, Md.</i></td>
   </tr>
 
