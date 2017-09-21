@@ -98,7 +98,7 @@ The goal of identity verification is to confirm and establish a linkage between 
 
 #### <a name="kbv"></a>5.3.2 Knowledge-Based Verification Requirements
 
-The following requirements apply to the identity verification steps for IAL2 and IAL3. There are no restrictions for the use of KBV for identity resolution.
+The following requirements apply to the identity verification steps for IAL2. There are no restrictions for the use of KBV for identity resolution.
 
 <div class="text-left" markdown="0">
 	<ol type="1" start="1">
@@ -125,7 +125,7 @@ The following requirements apply to the identity verification steps for IAL2 and
 
 #### <a name="vip"></a>5.3.3 In-person Proofing Requirements
 
-In-person proofing can be satisfied in two ways:
+In-person proofing at IAL3 can be satisfied in two ways:
 
 - A physical interaction with the applicant, supervised by an operator.
 - An remote interaction with the applicant, supervised by an operator, based on the specific requirements in [Section 5.3.3.2](#supervised).

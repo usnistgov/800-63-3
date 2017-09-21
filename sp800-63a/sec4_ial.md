@@ -156,7 +156,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 	<li>Valid records to confirm address SHALL be issuing source(s) or authoritative source(s).</li>
 	<li>The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant that is not contained on any supplied piece of identity evidence.</li>
 	<li>Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.</li>
-	<li><strong>If CSP performs in-person proofing (physical or supervised remote):</strong></li>
+	<li><strong>If the CSP performs in-person proofing (physical or supervised remote):</strong></li>
 		<ol type="a" start="a">
 			<li>The CSP SHOULD send a notification of proofing to a confirmed address of record.</li>  
 	  		<li>The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.</li>
@@ -221,7 +221,7 @@ The CSP SHALL validate identity evidence as follows:
 
 Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
 
-See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence
+See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence.
 
 #### 4.5.4 Verification Requirements
 
