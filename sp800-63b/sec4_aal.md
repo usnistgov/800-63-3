@@ -88,7 +88,7 @@ Communication between the claimant and verifier (the primary channel in the case
 
 Verifiers operated by government agencies at AAL2 SHALL be validated to meet the requirements of [FIPS 140](#FIPS140-2) Level 1.
 
-When a device such a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. Generally, it is not possible for a verifier to know that the device had been locked or if the unlock process met the requirements for the relevant authenticator type.
+When a device such as a smartphone is used in the authentication process, the unlocking of that device (typically done using a PIN or biometric) SHALL NOT be considered one of the authentication factors. Generally, it is not possible for a verifier to know that the device had been locked or if the unlock process met the requirements for the relevant authenticator type.
 
 When a biometric factor is used in authentication at AAL2, the performance requirements stated in [Section 5.2.3](#biometric_use) SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
 
