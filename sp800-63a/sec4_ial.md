@@ -111,7 +111,7 @@ _This section is normative._
 
 IAL2 allows for **remote** or **in-person** identity proofing. IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant.
 
-A CSP SHALL preferentially proof according to the requirements in [Section 4.4.1](#normal) or [Section 4.4.2](#referee). Depending on the population the CSP serves, the CSP MAY additionally implement identity proofing in accordance with [Section 4.4.2](#referee).
+A CSP SHALL preferentially proof according to the requirements in [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY additionally implement identity proofing in accordance with [Section 4.4.2](#referee).
 
 #### <a name="normal"></a>4.4.1 IAL2 Conventional Proofing Requirements
 
