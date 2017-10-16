@@ -34,7 +34,7 @@ IAL maps into the VoT component P using a numeric identifier. Only one numeric i
 |IAL2|P2|
 |IAL3|P3|
 
-In addition, the type of proofing used MAY be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously.
+In addition, the type of proofing used MAY be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously. The proofing method SHALL be sufficient or greater than that which is required by the IAL value indicated in the vector. 
 
 |Proofing method|Component Value|
 |In-person|Pp|
@@ -50,7 +50,7 @@ AAL maps into the VoT component C using a numeric identifier. Only one numeric i
 |AAL2|C2|
 |AAL3|C3|
 
-In addition, the type of authenticator used SHALL be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously.
+In addition, the type of authenticator used SHALL be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously. The authenticators SHALL be sufficient or greater than that which is required by the AAL value indicated in the vector.
 
 |Authenticator|Component Value|
 |Memorized Secret|Cp|
@@ -75,7 +75,7 @@ FAL maps into the VoT component A using a numeric identifier. Only one numeric i
 |FAL2|A2|
 |FAL3|A3|
 
-In addition, the presentation mechanism MAP be indicated using an alphabetic identifier. Only one alphabetic identifier SHALL be used.
+In addition, the presentation mechanism MAP be indicated using an alphabetic identifier. Only one alphabetic identifier SHALL be used. The presentation mechanism SHALL be sufficient or greater than that which is required by the FAL value indicated in the vector.
 
 |Presentation|Component Value|
 |Front channel|Af|
