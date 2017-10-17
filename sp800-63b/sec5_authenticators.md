@@ -292,7 +292,7 @@ Multi-factor software cryptographic authenticators encapsulate one or more secre
 
 Each authentication operation using the authenticator SHALL require the input of both factors.
 
-Any memorized secret used by the authenticator for activation SHALL be at least 6 decimal digits in length, or equivalent complexity, and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), and SHALL include limits on the allowable number of consecutive authentication failures.
+Any memorized secret used by the authenticator for activation SHALL be a randomly-chosen numeric value at least 6 decimal digits in length or other memorized secret meeting the requirements of [Section 5.1.1.2](#memsecretver) and SHALL be rate limited as specified in [Section 5.2.2](#throttle). A biometric activation factor SHALL meet the requirements of [Section 5.2.3](#biometric_use), including limits on the number of consecutive authentication failures.
 
 The unencrypted key and activation secret or biometric sample — and any biometric data derived from the biometric sample such as a probe produced through signal processing — SHALL be zeroized immediately after an authentication transaction has taken place.
 
