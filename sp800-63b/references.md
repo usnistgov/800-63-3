@@ -26,6 +26,8 @@
 
 <a name="meters"></a>[Meters] de Carné de Carnavalet, Xavier and Mohammad Mannan. "From Very Weak to Very Strong: Analyzing Password-Strength Meters." In Proceedings of the Network and Distributed System Security Symposium (NDSS), 2014. Available at: <http://www.internetsociety.org/sites/default/files/06_3_1.pdf>
 
+<a name="NISTIR 8062"></a>[NISTIR 8062] NIST Internal Report 8062, *An Introduction to Privacy Engineering and Risk Management in Federal Systems*, January 2017, available at: <http://nvlpubs.nist.gov/nistpubs/ir/2017/NIST.IR.8062.pdf>.
+
 <a name="use-and-bio"></a>[NIST Usability] National Institute and Standards and Technology, *Usability & Biometrics, Ensuring Successful Biometric Systems*, June 11, 2008, available at: <http://www.nist.gov/customcf/get_pdf.cfm?pub_id=152184>.
 
 <a name="OWASP-session"></a>[OWASP-session] Open Web Application Security Project, *Session Management Cheat Sheet*, available at: <https://www.owasp.org/index.php/Session_Management_Cheat_Sheet>.
