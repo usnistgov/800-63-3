@@ -51,7 +51,8 @@ In addition, identity proofing characteristics MAY be indicated using an alphabe
 |Trusted Referee|Pt|
 |Additional features implemented beyond requirements for asserted IAL|Px|
 
->Note: Any credential service provider performing identity proofing at IAL2 or IAL3 MUST conduct a privacy risk assessment. Trusted referee policy and procedures MUST be documented per SP 800-63A Section 5.3.4.
+>Note: Any credential service provider performing identity proofing at IAL2 or IAL3 MUST conduct a privacy risk assessment. Trusted referee policy and procedures MUST be documented per SP 800-63A Section 5.3.4.
+
 Any discrepancies in the assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
 
 ### Authenticator or Credential Usage
@@ -125,9 +126,9 @@ In addition, the presentation mechanism MAY be indicated using an alphabetic ide
 
 Any discrepancy in the assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
 
-### Credential or Authenticator Management to VoT
+### Authenticator Management to VoT
 
-800-63 authenticator management maps into the VoT component M using an alphabetic identifier. Authenticator management method MAY be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously.
+Authenticator lifecyle management, per 800-63B Section 6, maps into the VoT component M using an alphabetic identifier. Authenticator management method MAY be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously.
 
 |Credential Management Method|Component Value|
 |:----:|:--:|
