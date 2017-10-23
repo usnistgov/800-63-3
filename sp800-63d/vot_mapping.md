@@ -49,10 +49,10 @@ In addition, identity proofing characteristics MAY be indicated using an alphabe
 |Knowledge-based Verification (KBV)|Pk|
 |Address Confirmation with Postal Address|Pa|
 |Trusted Referee|Pt|
-|Implemented IAL differs from assessed IAL|Px|
+|Additional features implemented beyond requirements for asserted IAL|Px|
 
 >Note: Any credential service provider performing identity proofing at IAL2 or IAL3 MUST conduct a privacy risk assessment. Trusted referee policy and procedures MUST be documented per SP 800-63A Section 5.3.4.
-If Px is asserted, the component value for the assessed IAL MUST also be asserted (e.g., “P2.Px”). The discrepancy in assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
+Any discrepancies in the assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
 
 ### Authenticator or Credential Usage
 
@@ -92,11 +92,13 @@ The authenticator type(s) used MAY be indicated using an alphabetic identifier. 
 |Verifier Impersonation Resistance|Cv|
 |Verifier Compromise Resistance|Cs|
 |Authentication Intent|Cn|
-|Implemented AAL differs from assessed AAL|Cx|
+|Additional features implemented beyond requirements for asserted AAL|Cx|
 |Presentation Attack Detection (PAD)|Ck|
 |Biometric comparison performed centrally|Ct|
 
->Note: Some authentication approaches described in Table XX are not applicable for all three AALs.If Cx is asserted, the component value for the assessed AAL MUST also be asserted (e.g., “C2.Cx”). The discrepancy in assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
+>Note: Some authentication approaches described in Table XX are not applicable for all three AALs.
+
+Any discrepancy in the assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
 
 
 ### Assertion Presentation
@@ -119,9 +121,9 @@ In addition, the presentation mechanism MAY be indicated using an alphabetic ide
 |:----:|:--:|
 |Front channel|Af|
 |Back channel|Ab|
-|Implemented FAL differs from assessed FAL|Ax|
+|Additional features implemented beyond requirements for asserted FAL|Ax|
 
-If Ax is asserted, the component value for the assessed FAL MUST also be asserted (e.g., “A2.Ax”). The discrepancy in assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
+Any discrepancy in the assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
 
 ### Credential or Authenticator Management to VoT
 
