@@ -17,6 +17,8 @@ This document uses the four components defined in VoT: Identity Proofing (P), Pr
 
 The VoT components P, C, and A correspond to 800-63's Identity Assurance Level (IAL), Authenticator Assurance Level (AAL), and Federation Assurance Level (FAL), respectively. While M does not correspond directly to an 800-63 assurance level category, this document defines a set of M values derived from requirements and recommendations in 800-63. 
 
+This document uses terms as defined in 800-63-3. Some definitions differ from those in VoT. Notably, the term "authenticator" herein has the same meaning as "credential" in VoT.
+
 This document does not define any additional component categories. Any additional categories SHALL NOT be used.
 
 ## Component Values
@@ -128,7 +130,8 @@ If Ax is asserted, the component value for the assessed FAL MUST also be asserte
 |Credential Management Method|Component Value|
 |:----:|:--:|
 |Credential issued/bound during proofing session|Mp|
-|Credential issued/bound after proofing session (remote)|Mr||Credential issued/bound after proofing session (in-person)|Mi|
+|Credential issued/bound after proofing session (remote)|Mr|
+|Credential issued/bound after proofing session (in-person)|Mi|
 |Second factor bound to a single-factor account|Ms|
 |Authentication factors reestablished (account recovery) using full proofing process|Ma|
 |Authentication factors reestablished (account recovery) using abbreviated proofing process|Mb|
