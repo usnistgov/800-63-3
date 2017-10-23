@@ -55,7 +55,7 @@ In addition, identity proofing characteristics MAY be indicated using an alphabe
 
 Any discrepancies in the assessed and implemented assurance level SHOULD be documented in a digital identity acceptance statement, per SP 800-63-3 Section 5.5.
 
-### Authenticator or Credential Usage
+### Authenticator Usage
 
 #### AAL to VoT
 
