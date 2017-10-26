@@ -73,15 +73,15 @@ The authenticator type(s) used MAY be indicated using an alphabetic identifier. 
 
 |Authenticator Type|Component Value|
 |:----:|:--:|
-|Memorized Secret|Cp|
+|Memorized Secret|Cc|
 |Look-up Secret|Cu|
 |Out-of-band Device|Co|
 |Single-factor OTP|Ca|
 |Multi-factor OTP|Cb|
-|Single-factor Cryptographic Software|Cc|
-|Single-factor Cryptographic Device|Cd|
-|Multi-factor Cryptographic Software|Ce|
-|Multi-factor Cryptographic Device|Cf|
+|Single-factor Cryptographic Software|Cd|
+|Single-factor Cryptographic Device|Ce|
+|Multi-factor Cryptographic Software|Cf|
+|Multi-factor Cryptographic Device|Cg|
 |Restricted Authenticator|Cr|
 
 #### Authentication Characteristics
