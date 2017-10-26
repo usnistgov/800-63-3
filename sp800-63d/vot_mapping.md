@@ -40,7 +40,7 @@ IAL maps into the VoT component P using a numeric identifier. The implemented IA
 
 #### Identity Proofing Characteristics
 
-In addition, identity proofing characteristics MAY be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously. Identity proofing methods or approaches that are required for the asserted IAL SHOULD NOT be asserted.
+In addition, identity proofing characteristics MAY be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously. Identity proofing methods or approaches that are required for the asserted IAL SHOULD NOT be asserted. The proofing method SHALL be sufficient or greater than that which is required by the IAL value indicated in the vector. 
 
 |Identity Proofing Method or Approach|Component Value|
 |:----:|:--:|
@@ -69,7 +69,7 @@ AAL maps into the VoT component C using a numeric identifier. The implemented AA
 
 #### Authenticator Types
 
-The authenticator type(s) used MAY be indicated using an alphabetic identifier. Multiple aphabetic identifiers MAY be used simultaneously.
+The authenticator type(s) used MAY be indicated using an alphabetic identifier. Multiple aphabetic identifiers MAY be used simultaneously. The authenticator type(s) SHALL be sufficient or greater than that which is required by the AAL value indicated in the vector.
 
 |Authenticator Type|Component Value|
 |:----:|:--:|
@@ -85,6 +85,8 @@ The authenticator type(s) used MAY be indicated using an alphabetic identifier. 
 |Restricted Authenticator|Cr|
 
 #### Authentication Characteristics
+
+The authentication characteristics MAY be indicated using an alphabetic identifier. Multiple alphabetic identifiers MAY be used simultaneously. The authenticator characteristics SHALL be sufficient or greater than that which is required by the AAL value indicated in the vector.
 
 |Authentication Feature|Component Value|
 |:----:|:--:|
@@ -106,7 +108,7 @@ Any discrepancy in the assessed and implemented assurance level SHOULD be docume
 
 #### FAL to VoT
 
-FAL maps into the VoT component A using a numeric identifier. Only one numeric identifier SHALL be used. 
+FAL maps into the VoT component A using a numeric identifier. Only one numeric identifier SHALL be used.
 
 |FAL|Component Value|
 |:----:|:--:|
@@ -116,7 +118,7 @@ FAL maps into the VoT component A using a numeric identifier. Only one numeric i
 
 #### Assertion Presentation
 
-In addition, the presentation mechanism MAY be indicated using an alphabetic identifier. Multiple aphabetic identifiers MAY be used simultaneously.
+In addition, the presentation mechanism MAY be indicated using an alphabetic identifier. Multiple aphabetic identifiers MAY be used simultaneously. The presentation mechanism SHALL be sufficient or greater than that which is required by the FAL value indicated in the vector.
 
 |Presentation|Component Value|
 |:----:|:--:|
