@@ -43,12 +43,12 @@ The following provides a sample of how a CSP and an applicant interact during th
 	<li><strong>Validation</strong></li>
   		<ol type="a" start="a">  
 			<li>The CSP validates the information supplied in 1a by checking an authoritative source. The CSP determines the information supplied by the applicant matches their records.</li>  
-			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes matches the plain-text information, and that the identification numbers follow standard formats.</li>  
+			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes matches the plain-text information, the identification numbers follow standard formats, and that physical and digital security features are valid.</li>  
 			<li>The CSP queries the issuing sources for the license and passport and validates the information matches.</li>
 		</ol>
 	<li><strong>Verification</strong></li>
 		<ol type="a" start="a">  
-			<li>The CSP asks the applicant for a photo of themselves to match to the license and passport.</li>
+			<li>The CSP asks the applicant to take a photo of themselves, with liveness checks, to match to the license and passport.</li>
 			<li>The CSP matches the pictures on the license and the passport to the applicant picture and determines they match.</li>    
 			<li>The CSP sends an enrollment code to the validated phone number of the applicant, the user provides the enrollment code to the CSP, and the CSP confirms they match, verifying the user is in possession and control of the validated phone number.</li>  
 			<li>The applicant has been successfully proofed.</li>
