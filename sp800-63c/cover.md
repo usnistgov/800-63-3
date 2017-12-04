@@ -45,6 +45,7 @@ https://doi.org/10.6028/NIST.SP.800-63c
     <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, Calif.</i></td>    
   </tr>
   <tr>
+  <td/>
       <td>Justin P. Richer<br>Sarah K. Squire<br><i>Bespoke Engineering</i><br><i>Billerica, Mass.</i></td>
       <td>&nbsp;</td>
   </tr>

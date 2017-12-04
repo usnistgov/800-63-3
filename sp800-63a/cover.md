@@ -39,7 +39,7 @@ https://doi.org/10.6028/NIST.SP.800-63a
 <table class="authors">
   <tr>
     <td>Paul A. Grassi<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i></td>
-    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, CA</i></td>
+    <td>James L. Fenton<br><i>Altmode Networks</i><br><i>Los Altos, Calif.</i></td>
   </tr>
   <tr>
     <td><strong>Privacy Authors:</strong><br>Naomi B. Lefkovitz<br><i>Applied Cybersecurity Division</i><br><i>Information Technology Laboratory</i><br><br>Jamie M. Danker<br><i>National Protection and Programs Directorate</i><br><i>Department of Homeland Security</i></td>

@@ -18,7 +18,7 @@ This document also provides requirements for CSPs collecting additional informat
 
 ### 4.1 Process Flow
 
-_This section is normative._
+_This section is informative._
 
 [Figure 4-1](#63aSec4-Figure1) outlines the basic flow for identity proofing and enrollment.
 
@@ -42,26 +42,27 @@ The following provides a sample of how a CSP and an applicant interact during th
   	</ol>
 	<li><strong>Validation</strong></li>
   		<ol type="a" start="a">  
-			<li>The CSP validates the information supplied in 1i by checking an authoritative source. The CSP determines the information supplied by the applicant matches their records.</li>  
-			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes matches the plain-text information, and that the identification numbers follow standard formats.</li>  
+			<li>The CSP validates the information supplied in 1a by checking an authoritative source. The CSP determines the information supplied by the applicant matches their records.</li>  
+			<li>The CSP checks the images of the license and the passport, determines there are no alterations, the data encoded in the QR codes matches the plain-text information, the identification numbers follow standard formats, and that physical and digital security features are valid.</li>  
 			<li>The CSP queries the issuing sources for the license and passport and validates the information matches.</li>
 		</ol>
 	<li><strong>Verification</strong></li>
 		<ol type="a" start="a">  
-			<li>The CSP asks the applicant for a photo of themselves to match to the license and passport.</li>
+			<li>The CSP asks the applicant to take a photo of themselves, with liveness checks, to match to the license and passport.</li>
 			<li>The CSP matches the pictures on the license and the passport to the applicant picture and determines they match.</li>    
 			<li>The CSP sends an enrollment code to the validated phone number of the applicant, the user provides the enrollment code to the CSP, and the CSP confirms they match, verifying the user is in possession and control of the validated phone number.</li>  
 			<li>The applicant has been successfully proofed.</li>
 		</ol>
 </ol>
 
-</div>	
+</div>
 
 > Note: The identity proofing process can be delivered by multiple service providers. It is possible, but not expected, that a single organization, process, technique, or technology will fulfill these process steps.
 
 
 ### <a name="genProofReqs"></a> 4.2 General Requirements
 
+_This section is normative._
 
 The following requirements apply to any CSP performing identity proofing at IAL2 or IAL3.
 
@@ -100,7 +101,7 @@ The following requirements apply to any CSP performing identity proofing at IAL2
 
 _This section is normative._
 
-1. A CSP that supports only IAL1 CSP SHALL NOT validate and verify attributes.
+1. A CSP that supports only IAL1 SHALL NOT validate and verify attributes.
 2. The CSP MAY request zero or more self-asserted attributes from the applicant to support their service offering.
 3. An IAL2 or IAL3 CSP SHOULD support RPs that only require IAL1, if the user consents.
 
@@ -110,7 +111,7 @@ _This section is normative._
 
 IAL2 allows for **remote** or **in-person** identity proofing. IAL2 supports a wide range of acceptable identity proofing techniques in order to increase user adoption, decrease false negatives (legitimate applicants that cannot successfully complete identity proofing), and detect to the best extent possible the presentation of fraudulent identities by a malicious applicant.
 
-A CSP SHALL proof according to the requirements in [Section 4.4.1](#normal) or [Section 4.4.2](#referee). A CSP SHOULD implement identity proofing in accordance with [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY implement identity proofing in accordance with [Section 4.4.2](#referee).
+A CSP SHALL preferentially proof according to the requirements in [Section 4.4.1](#normal). Depending on the population the CSP serves, the CSP MAY additionally implement identity proofing in accordance with [Section 4.4.2](#referee).
 
 #### <a name="normal"></a>4.4.1 IAL2 Conventional Proofing Requirements
 
@@ -130,9 +131,7 @@ See [Section 5.2.1 Identity Evidence Quality Requirements](#evidence-quality) fo
 
 #### <a name="4-4-1-3"></a>4.4.1.3 Validation Requirements
 
-The CSP SHALL validate identity evidence as follows:
-
-Each piece of evidence SHALL be validated with a process that can achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
+The CSP SHALL validate each piece of evidence with a process that can achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
 
 See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence.
 
@@ -157,7 +156,7 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 	<li>Valid records to confirm address SHALL be issuing source(s) or authoritative source(s).</li>
 	<li>The CSP SHALL confirm address of record. The CSP SHOULD confirm address of record through validation of the address contained on any supplied, valid piece of identity evidence. The CSP MAY confirm address of record by validating information supplied by the applicant that is not contained on any supplied piece of identity evidence.</li>
 	<li>Self-asserted address data that has not been confirmed in records SHALL NOT be used for confirmation.</li>
-	<li><strong>If CSP performs in-person proofing (physical or supervised remote):</strong></li>
+	<li><strong>If the CSP performs in-person proofing (physical or supervised remote):</strong></li>
 		<ol type="a" start="a">
 			<li>The CSP SHOULD send a notification of proofing to a confirmed address of record.</li>  
 	  		<li>The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.</li>
@@ -169,12 +168,18 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 			<li>The applicant SHALL present a valid enrollment code to complete the identity proofing process.</li>    
 			<li>The CSP SHOULD send the enrollment code to the postal address that has been validated in records. The CSP MAY send the enrollment code to a mobile telephone (SMS or voice), landline telephone, or email if it has been validated in records.</li>  
 			<li>If the enrollment code is also intended to be an authentication factor, it SHALL be reset upon first use.</li>
-			<li>Enrollment codes sent to a postal address of record SHALL be valid for a maximum of 10 days but MAY be made valid up to 30 days via an exception process to accommodate addresses outside the contiguous United States. Enrollment codes sent by telephone SHALL be valid for a maximum of 10 minutes. Enrollment codes sent via email SHALL be valid for a maximum of 24 hours.</li>
+			<li>SHALL have the following maximum validities</li>
+				<ol type="i" start="i">
+					<li>10 days, when sent to a postal address of record within the contiguous United States;</li>
+					<li>30 days, when sent to a postal address of record outside the contiguous United States;</li>
+					<li>10 minutes, when sent to a telephone of record (SMS or voice);</li>
+					<li>24 hours, when sent to an email address of record.</li>
+				</ol>
 			<li>The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a proofing notification will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver's license.</li>
 		</ol>
 </ol>
 
-</div>	
+</div>
 
 > Note: Postal address is the preferred method of sending any communications, including enrollment code and notifications, with the applicant. However, these guidelines support any confirmed address of record, whether physical or digital.
 
@@ -216,7 +221,7 @@ The CSP SHALL validate identity evidence as follows:
 
 Each piece of evidence must be validated with a process that is able to achieve the same strength as the evidence presented. For example, if two forms of STRONG identity evidence are presented, each piece of evidence will be validated at a strength of STRONG.
 
-See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence
+See [Section 5.2.2 Validating Identity Evidence](#evidence_validation) for more information on validating identity evidence.
 
 #### 4.5.4 Verification Requirements
 

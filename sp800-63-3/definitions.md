@@ -168,7 +168,10 @@ A credential issued based on proof of possession and control of an authenticator
 The process of establishing confidence in user identities presented digitally to a system. In previous editions of SP 800-63, this was referred to as *Electronic Authentication*.
 
 #### Digital Signature
-An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation, but not confidentiality protection.  
+An asymmetric key operation where the private key is used to digitally sign data and the public key is used to verify the signature. Digital signatures provide authenticity protection, integrity protection, and non-repudiation, but not confidentiality protection.
+
+#### Disassociability
+Per NISTIR 8062: Enabling the processing of PII or events without association to individuals or devices beyond the operational requirements of the system.
 
 #### Diversionary
 In regards to KBV, a multiple-choice question for which all answers provided are incorrect, requiring the applicant to select an option similar to "none of the above."
@@ -234,6 +237,9 @@ See [SP 800-63C](sp800-63c.html) Section 11.2 for more information.
 
 #### Knowledge-Based Verification (KBV)
 Identity verification method based on knowledge of private information associated with the claimed identity. This is often referred to as knowledge-based authentication (KBA) or knowledge-based proofing (KBP).
+
+#### Manageability
+Per NISTIR 8062: Providing the capability for granular administration of personally identifiable information, including alteration, deletion, and selective disclosure.
 
 #### Man-in-the-Middle Attack (MitM)
 An attack in which an attacker is positioned between two communicating parties in order to intercept and/or alter data traveling between them. In the context of authentication, the attacker would be positioned between claimant and verifier, between registrant and CSP during enrollment, or between subscriber and CSP during authenticator binding.
@@ -313,11 +319,17 @@ The ability to activate and use the authenticator in an authentication protocol.
 #### Practice Statement
 A formal statement of the practices followed by the parties to an authentication process (e.g., CSP or verifier). It usually describes the parties' policies and practices and can become legally binding.
 
+#### Predictability
+Per NISTIR 8062: Enabling reliable assumptions by individuals, owners, and operators about PII and its processing by an information system.
+
 #### Private Credentials
 Credentials that cannot be disclosed by the CSP because the contents can be used to compromise the authenticator.
 
 #### Private Key
 The secret part of an asymmetric key pair that is used to digitally sign or decrypt data.
+
+#### Processing
+Per NISTIR 8062: Operation or set of operations performed upon PII that can include, but is not limited to, the collection, retention, logging, generation, transformation, use, disclosure, transfer, and disposal of PII.
 
 #### Presentation Attack
 Presentation to the biometric data capture subsystem with the goal of interfering with the operation of the biometric system.
