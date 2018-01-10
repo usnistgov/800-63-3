@@ -105,7 +105,7 @@ Vetting of IdPs and RPs SHALL establish, as a minimum, that:
 
 Federation authorities MAY assist the technical connection and configuration process between members, such as by publishing configuration data for IdPs or by issuing software statements for RPs.
 
-Most federations managed through authorities have a simple membership model: parties are either in the federation or they are not. More sophisticated federations MAY have multiple memberhsip tiers that federated parties can use to tell whether other parties in the federation have been more thoroughly vetted. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers and RPs MAY decide to accept certain information only from IdPs in higher tiers.
+Most federations managed through authorities have a simple membership model: parties are either in the federation or they are not. More sophisticated federations MAY have multiple membership tiers that federated parties can use to tell whether other parties in the federation have been more thoroughly vetted. IdPs MAY decide that certain subscriber information is only releasable to RPs in higher tiers and RPs MAY decide to accept certain information only from IdPs in higher tiers.
 
 #### <a name="proxied"></a> 5.1.4 Proxied Federation
 
