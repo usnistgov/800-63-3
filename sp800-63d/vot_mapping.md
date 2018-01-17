@@ -5,7 +5,7 @@
 ## Mapping SP 800-63 to Vectors of Trust
 _This section is normative._
 
-Vectors of Trust (VoT) [[VoT]](https://tools.ietf.org/html/draft-richer-vectors-of-trust-05) is a standard for expressing information about an authentication transaction from an IdP to an RP. This information is split into several orthogonal component categories, similar to the way that the assurance levels defined in SP 800-63 are split into different xAL categories.
+Vectors of Trust (VoT) [[VoT]](https://tools.ietf.org/html/draft-richer-vectors-of-trust-07) is a standard for expressing information about an authentication transaction from an IdP to an RP. This information is split into several orthogonal component categories, similar to the way that the assurance levels defined in SP 800-63 are split into different xAL categories.
 
 This document uses terms as defined in [SP 800-63-3 Appendix A](sp800-63-3.html#def-and-acr). Some definitions differ from those in VoT. Notably, the term "authenticator" herein has the same meaning as "credential" in VoT.
 
@@ -17,13 +17,13 @@ The trustmark URI for these definitions is [[ URI for this document ]].
 
 This document uses the four components defined in VoT: Identity Proofing (P), Primary Credential Usage (C), Primary Credential Management (M), and Assertion Presentation (A). This document does not define any additional component categories.
 
-The VoT [component P](https://tools.ietf.org/html/draft-richer-vectors-of-trust-05#section-2.1) corresponds to identity proofing requirements and recommendations found in [SP 800-63A](sp800-63a.html). As such, the document maps SP 800-63's Identity Assurance Level (IAL) and identity proofing characteristics into VoT's P.
+The VoT [component P](https://tools.ietf.org/html/draft-richer-vectors-of-trust-07#section-2.1) corresponds to identity proofing requirements and recommendations found in [SP 800-63A](sp800-63a.html). As such, the document maps SP 800-63's Identity Assurance Level (IAL) and identity proofing characteristics into VoT's P.
 
-The VoT [component C](https://tools.ietf.org/html/draft-richer-vectors-of-trust-05#section-2.2) corresponds to authentication requirements and recommendations found in [SP 800-63B](sp800-63b.html). As such, this document maps SP 800-63's Authenticator Assurance Level (AAL), authenticator types, and authentication characteristics into VoT's C.
+The VoT [component C](https://tools.ietf.org/html/draft-richer-vectors-of-trust-07#section-2.2) corresponds to authentication requirements and recommendations found in [SP 800-63B](sp800-63b.html). As such, this document maps SP 800-63's Authenticator Assurance Level (AAL), authenticator types, and authentication characteristics into VoT's C.
 
-The VoT [component M](https://tools.ietf.org/html/draft-richer-vectors-of-trust-05#section-2.3) corresponds to authenticator lifecycle management requirements and recommendations found in [SP 800-63B Section 6](sp800-63b.html#sec6). As such, this document maps SP 800-63's authenticator lifecycle management characteristics into VoT's M.
+The VoT [component M](https://tools.ietf.org/html/draft-richer-vectors-of-trust-07#section-2.3) corresponds to authenticator lifecycle management requirements and recommendations found in [SP 800-63B Section 6](sp800-63b.html#sec6). As such, this document maps SP 800-63's authenticator lifecycle management characteristics into VoT's M.
 
-The VoT [component A](https://tools.ietf.org/html/draft-richer-vectors-of-trust-05#section-2.4) corresponds to federation requirements and recommendations found in [SP 800-63C](sp800-63c.html). As such, this document maps SP 800-63's Federation Assurance Level (FAL) and assertion presentation into VoT's A.
+The VoT [component A](https://tools.ietf.org/html/draft-richer-vectors-of-trust-07#section-2.4) corresponds to federation requirements and recommendations found in [SP 800-63C](sp800-63c.html). As such, this document maps SP 800-63's Federation Assurance Level (FAL) and assertion presentation into VoT's A.
 
 **Table: 800-63 General Mapping to VoT Components**
 
@@ -36,7 +36,7 @@ The VoT [component A](https://tools.ietf.org/html/draft-richer-vectors-of-trust-
 
 ## Component Values
 
-This document defines new component values in accordance with [VoT Section 2](https://tools.ietf.org/html/draft-richer-vectors-of-trust-05#section-2).
+This document defines new component values in accordance with [VoT Section 2](https://tools.ietf.org/html/draft-richer-vectors-of-trust-07#section-2).
 
 The component values for IAL, AAL, and FAL are expressed with numeric identifiers. Only one numeric identifier SHALL be used for each xAL. The implemented IAL, AAL, and/or FAL SHALL be indicated in the vector. Other digital identity information (i.e., identity proofing characteristics, authenticator type(s) used, authentication characteristics, authenticator lifecycle management characteristics, and assertion presentation values) are expressed with alphabetic identifiers. Multiple alphabetic identifiers MAY be used simultaneously. Some alphabetically-expressed values SHALL be indicated in the vector if implementation matches the uses described in the following sections; otherwise, these values MAY be indicated in the vector.
 
@@ -176,8 +176,6 @@ If the authenticator(s) is/are bound/issued:
 
 If the subscriber's account had only one authentication factor bound to it at account creation, and an additional authenticator of a different authentication factor is added after account creation, Ms SHALL be indicated in the vector.
 
-**NOTE: I don't think the phrasing is quite right on adding a second factor yet.**
-
 If the following conditions are met, Ma SHALL be indicated in the vector.
 
 * The subscriber has been identity proofed at IAL2 or IAL3.
@@ -212,8 +210,6 @@ If a back-channel presentation mechanism is used, Ab SHOULD be indicated in the 
 ### Summary
 
 The table below describes the values that are required to be indicated when implementation matches the uses described in the above "Use" sections to conform to this publication.
-
-**NOTE: This table gives me a headache. If we do choose to include it, or a better version of it, in the draft, do we want to add column for encouraged values "SHOULDs"? Or are there any ideas for better ways to organize this table?**
 
 |Component Value|Indication in Vector Required*|
 |:----:|:--:|
@@ -260,4 +256,4 @@ The table below describes the values that are required to be indicated when impl
 
 ## References
 
-[VoT] Vectors of Trust, April 3, 2017, available at: [https://tools.ietf.org/html/draft-richer-vectors-of-trust-05](https://tools.ietf.org/html/draft-richer-vectors-of-trust-05)
+[VoT] Vectors of Trust, December 8, 2018, available at: [https://tools.ietf.org/html/draft-richer-vectors-of-trust-07](https://tools.ietf.org/html/draft-richer-vectors-of-trust-07)
