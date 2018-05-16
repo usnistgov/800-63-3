@@ -62,5 +62,7 @@ Links to the online version of the SP 800-63 suite are below.
 </li>
 </ul>
 
+A set of [Frequently Asked Questions (FAQ) is available online](https://pages.nist.gov/800-63-FAQ/).
+
 </div>
 </section>
