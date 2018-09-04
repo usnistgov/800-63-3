@@ -84,8 +84,7 @@ sub{
 }
 
 img{
-	border:0;
-	max-width: 100%;
+	border:0
 }
 
 svg:not(:root){
@@ -319,9 +318,7 @@ input,button,select,textarea{
 
 a{
 	color:#0000FF;
-	text-decoration:none;
-	overflow-wrap: break-word;
-  	word-wrap: break-word;
+	text-decoration:none
 }
 
 a:hover,a:focus{
@@ -1637,9 +1634,7 @@ pre code{
 
 table{
 	max-width:100%;
-	background-color:transparent;
-	display: block;
-	overflow: scroll;
+	background-color:transparent
 }
 
 th{
