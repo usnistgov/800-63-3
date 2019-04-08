@@ -61,21 +61,6 @@ a.nist-links-button {
   color: #333;
 }
 
-@media screen and (max-width: 700px) {
-  .nist-header {
-    padding: 6px 10px;
-  }
-  .nist-header h1 a {
-    height: 26px;
-    width: 80px;
-    background: url('nist_logo_mark.png') 0 4px no-repeat;
-    background-size: 80px auto;
-  }
-  .mobile-hide {
-    display:none !important;
-  }
-}
-
 /* Custom styling */
 
 section.home {
@@ -161,3 +146,71 @@ table.authors{
 table.authors td{
   border:hidden;
 }
+
+
+@media screen and (max-width: 700px) {
+  .nist-header {
+    padding: 6px 10px;
+  }
+  .nist-header h1 a {
+    height: 26px;
+    width: 80px;
+    background: url('nist_logo_mark.png') 0 4px no-repeat;
+    background-size: 80px auto;
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+  
+  .navbar-fixed-left {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+  
+  .navbar-nav {
+    margin: 0;
+  }
+  
+  .navbar-fixed-left .navbar-nav > li {
+    float: left;
+    width: auto;
+    font-size: smaller;
+    border-right: 1px #555555 solid;
+    border-bottom: 1px #333333 solid;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+  }
+
+  .navbar-fixed-left .navbar-nav > li > a {
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  img {
+    max-width: 100% !important;
+    max-height: auto !important;
+    min-width: auto !important;
+    min-height: auto !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  a {
+    word-break: break-all;
+    text-overflow: ellipsis;
+  }
+
+}
+
