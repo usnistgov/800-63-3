@@ -207,5 +207,10 @@ table.authors td{
     height: auto !important;
   }
 
+  a {
+    word-break: break-all;
+    text-overflow: ellipsis;
+  }
+
 }
 
