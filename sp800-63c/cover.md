@@ -195,3 +195,5 @@ The terms "CAN" and "CANNOT" indicate a possibility and capability, whether mate
 [11. Assertion Examples](#examples)
 
 [12. References](#references)
+
+[Errata](#errata)
