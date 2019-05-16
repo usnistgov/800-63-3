@@ -7,7 +7,7 @@
 
 This recommendation and its companion documents, [SP 800-63](sp800-63-3.html), [SP 800-63A](sp800-63a.html), and [SP 800-63B](sp800-63b.html), provide technical guidelines to credential service providers (CSPs) for the implementation of digital authentication.
 
-This document, SP 800-63C, provides requirements to identity providers (IdPs) and relying parties (RPs) of federated identity systems. Federation allows a given IdP to provide authentication and (optionally) subscriber attributes to a number of separately-administered RPs through the use of assertions. Similarly, RPs may use more than one IdP.
+This document, SP 800-63C, provides requirements to identity providers (IdPs) and relying parties (RPs) of federated identity systems. Federation allows a given IdP to provide authentication attributes and (optionally) subscriber attributes to a number of separately-administered RPs through the use of assertions. Similarly, RPs may use more than one IdP.
 
 <div class="breaker"></div>
 <a name="introduction"></a>
