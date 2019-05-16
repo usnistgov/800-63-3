@@ -99,8 +99,8 @@ The property that data originated from its purported source.
 #### Authoritative Source
 An entity that has access to, or verified copies of, accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by a policy decision of the agency or CSP before they can be used in the identity proofing validation phase.
 
-#### Authorization Credential
-A credential issued to an RP by an IdP during an identity federation transaction that grants the RP authorized access to a set of APIs (e.g., an OAuth access token). This credential can be separate from the assertion provided by the federation protocol (e.g., an OpenID Connect ID Token).
+#### Authorization Component
+Something issued to an RP by an IdP during an identity federation transaction that grants the RP authorized access to a set of APIs (e.g., an OAuth access token). This credential can be separate from the assertion provided by the federation protocol (e.g., an OpenID Connect ID Token).
 
 #### Authorize
 A decision to grant [access](#access), typically automated by evaluating a subject's attributes.
