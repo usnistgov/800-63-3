@@ -16,3 +16,5 @@ This table contains changes that have been incorporated into Special Publication
 |2019-XX-XX|Editorial|Clarified that assertions contain attributes about authentication event and subscriber|Abstract, §1, §2|
 ||Editorial|Refined language on transmission requirements|§4.2|
 ||Editorial|Removed term "authorization credential" in favor of "authorization component"|§6, §7|
+||Editorial|Refined language for assertion contents|§6|
+||Editorial|Removed personal pronouns|§9|
