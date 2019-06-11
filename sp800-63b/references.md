@@ -38,7 +38,7 @@
 
 <a name="PrivacyAct"></a>[Privacy Act] *Privacy Act of 1974* (P.L. 93-579), December 1974, available at: <https://www.justice.gov/opcl/privacy-act-1974>.
 
-<a name="policies"></a>[Policies] Weir, Matt, Sudhir Aggarwal, Michael Collins, and Henry Stern. "Testing Metrics for Password Creation Policies by Attacking Large Sets of Revealed Passwords." In Proceedings of the 17th ACM Conference on Computer and Communications Security, 162–175. CCS ’10. New York, NY, USA: ACM, 2010. doi:10.1145/1866307.1866327.
+<a name="policies"></a>[Policies] Weir, Matt, Sudhir Aggarwal, Michael Collins, and Henry Stern. "Testing Metrics for Password Creation Policies by Attacking Large Sets of Revealed Passwords." In Proceedings of the 17th ACM Conference on Computer and Communications Security, 162–175. CCS '10. New York, NY, USA: ACM, 2010. doi:10.1145/1866307.1866327.
 
 <a name="Section508"></a>[Section 508] Section 508 Law and Related Laws and Policies (January 30, 2017), available at: <https://www.section508.gov/content/learn/laws-and-policies>.
 

@@ -228,7 +228,7 @@ Information or documentation provided by the applicant to support the claimed id
 The process by which a CSP collects, validates, and verifies information about a person.
 
 #### Identity Provider (IdP)
-The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
+The party that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
 
 #### Issuing Source
 An authority responsible for the generation of data, digital evidence (such as assertions), or physical documents that can be used as identity evidence.
