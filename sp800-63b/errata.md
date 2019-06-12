@@ -10,12 +10,12 @@ This table contains changes that have been incorporated into Special Publication
 |Date|Type|Change|Location
 |----|----|----|----|
 |2017-12-01|Editorial|Updated AAL descriptions for consistency with other text in document|Introduction|
-||Editorial|Deleted “cryptographic” to consistently reflect authenticator options at AAL3|§4.3|
+||Editorial|Deleted "cryptographic" to consistently reflect authenticator options at AAL3|§4.3|
 ||Substantive|Refined the requirements about processing of attributes|§4.4|
 ||Editorial|Make language regarding activation factors for multifactor authenticators consistent|§5.1.5.1, 5.1.8.1, and 5.1.9.1|
 ||Substantive|Recognizeuse of hardware TPM as hardware crypto authenticator|§5.1.7.1, 5.1.9.1|
 ||Editorial|Improve normative language on authenticated protected channels for biometrics|§5.2.3|
-||Editorial|Changed “transaction” to “binding transaction” to emphasize that requirement doesn't apply to authentication transactions|§6.1.1|
+||Editorial|Changed "transaction" to "binding transaction" to emphasize that requirement doesn't apply to authentication transactions|§6.1.1|
 ||Editorial|Replaced out-of-context note at end of section 7.2|§7.2|
 ||Editorial|Changed IdP to CSP to match terminology used elsewhere in this document|Table 8-1|
 ||Editorial|Corrected capitalization of Side Channel Attack|Table 8-2|
