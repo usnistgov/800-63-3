@@ -21,6 +21,7 @@ exclude:
 - README.md
 - CONTRIBUTING.md
 - LICENSE.md
+- docker-compose.yml
 
 # GitHub information
 org_name: usnistgov
