@@ -16,3 +16,4 @@ This table contains changes that have been incorporated into Special Publication
 ||Editorial|Added definitions for disassociability, manageability, processing, and predictability|Appendix A|
 |2019-XX-XX|Substantive|Added definition for authorization component|Appendix A|
 ||Editorial|Fixed wording of FAL3 definition|§5.2|
+||Editorial|Removed extraneous definition of Protected Session|Appendix A|
