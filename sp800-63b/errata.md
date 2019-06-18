@@ -22,3 +22,4 @@ This table contains changes that have been incorporated into Special Publication
 ||Substantive|Changed the title to processing limitation; clarified the language, incorporated privacy objectives language, and specified that consent is explicit|§9.3|
 ||Editorial|Added NISTIR 8062 as a reference|§11.1|
 ||Editorial|Corrected title of SP 800-63C|§11.3|
+|2019-XX-XX|Editorial|Clarified wording of verifier impersonation resistance requirement|§4.3.2|
