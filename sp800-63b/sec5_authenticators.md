@@ -346,7 +346,7 @@ Additional techniques MAY be used to reduce the likelihood that an attacker will
 
 - Accepting only authentication requests that come from a white list of IP addresses from which the subscriber has been successfully authenticated before.
 
-- Leveraging other risk-based or adaptive authentication techniques to identify user behavior that falls within, or out of, typical norms.
+- Leveraging other risk-based or adaptive authentication techniques to identify user behavior that falls within, or out of, typical norms. These might, for example, include use of IP address, geolocation, timing of request patterns, or browser metadata.
 
 When the subscriber successfully authenticates, the verifier SHOULD disregard any previous failed attempts for that user from the same IP address.
 
