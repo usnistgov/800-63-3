@@ -138,7 +138,7 @@ _The potential impact of civil or criminal violations is:_
 - Moderate: at worst, a risk of civil or criminal violations that may be subject to enforcement efforts.
 - High: a risk of civil or criminal violations that are of special importance to enforcement programs.
 
-### 5.4 Risk Acceptance and Compensating Controls
+### <a name="risk"></a> 5.4 Risk Acceptance and Compensating Controls
 
 The SP 800-63 suite specifies baseline requirements for digital identity services based on assurance level. Agencies SHOULD implement identity services per the requirements in these guidelines and SHOULD consider additional techniques and technologies to further secure and privacy-enhance their services.
 
