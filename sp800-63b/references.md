@@ -8,7 +8,7 @@
 
 <a name="balloon"></a>[BALLOON] Boneh, Dan, Corrigan-Gibbs, Henry,  and Stuart Schechter. "Balloon Hashing: A Memory-Hard Function Providing Provable Protection Against Sequential Attacks," *Asiacrypt 2016*, October, 2016. Available at: <https://eprint.iacr.org/2016/027>.
 
-<a name="blacklists"></a>[Blacklists] Habib, Hana, Jessica Colnago, William Melicher, Blase Ur, Sean Segreti, Lujo Bauer, Nicolas Christin, and Lorrie Cranor. "Password Creation in the Presence of Blacklists," 2017. Available at: <https://www.internetsociety.org/sites/default/files/usec2017_01_3_Habib_paper.pdf>
+<a name="blacklists"></a>[Blacklists] Habib, Hana, Jessica Colnago, William Melicher, Blase Ur, Sean Segreti, Lujo Bauer, Nicolas Christin, and Lorrie Cranor. "Password Creation in the Presence of Blacklists," 2017. Available at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/usec2017_01_3_Habib_paper.pdf>
 
 <a name="composition"></a>[Composition] Komanduri, Saranga, Richard Shay, Patrick Gage Kelley, Michelle L Mazurek, Lujo Bauer, Nicolas Christin, Lorrie Faith Cranor, and Serge Egelman. "Of Passwords and People: Measuring the Effect of Password-Composition Policies." In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 2595–2604. ACM, 2011. Available at: <https://www.ece.cmu.edu/~lbauer/papers/2011/chi2011-passwords.pdf>.
 
