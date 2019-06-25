@@ -25,3 +25,4 @@ This table contains changes that have been incorporated into Special Publication
 |2019-XX-XX|Editorial|Clarified wording of verifier impersonation resistance requirement|§4.3.2|
 ||Editorial|Emphasized use of key unlocked by additional factor to sign nonce|§5.1.9.1|
 ||Editorial|Provided examples of risk-based behavior observations|§5.2.2|
+||Editorial|Updated URL for reference [Blacklists]|§11.1|
