@@ -365,7 +365,7 @@ Therefore, the limited use of biometrics for authentication is supported with th
 
 Biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator (*something you have*).
 
-An authenticated protected channel between sensor (or an endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint SHALL be established and the sensor or endpoint SHALL be authenticated prior to capturing the biometric sample from the claimant.
+An authenticated protected channel between sensor (or an endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint SHALL be authenticated prior to capturing the biometric sample from the claimant.
 
 The biometric system SHALL operate with an FMR [[ISO/IEC 2382-37]](#ISOIEC2382-37) of 1 in 1000 or better. This FMR SHALL be achieved under conditions of a conformant attack (i.e., zero-effort impostor attempt) as defined in [[ISO/IEC 30107-1]](#ISOIEC30107-1).
 
