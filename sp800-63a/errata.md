@@ -5,7 +5,7 @@
 ## Errata
 </div> 
 
-This table contains changes that have been incorporated into Special Publication 800-63C. Errata updates can include corrections, clarifications, or other minor changes in the publication that are either editorial or substantive in nature.
+This table contains changes that have been incorporated into Special Publication 800-63A. Errata updates can include corrections, clarifications, or other minor changes in the publication that are either editorial or substantive in nature.
 
 |Date|Type|Change|Location
 |----|----|----|----|

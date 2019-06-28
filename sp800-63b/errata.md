@@ -5,7 +5,7 @@
 ## Errata
 </div> 
 
-This table contains changes that have been incorporated into Special Publication 800-63C. Errata updates can include corrections, clarifications, or other minor changes in the publication that are either editorial or substantive in nature.
+This table contains changes that have been incorporated into Special Publication 800-63B. Errata updates can include corrections, clarifications, or other minor changes in the publication that are either editorial or substantive in nature.
 
 |Date|Type|Change|Location
 |----|----|----|----|
@@ -13,7 +13,7 @@ This table contains changes that have been incorporated into Special Publication
 ||Editorial|Deleted "cryptographic" to consistently reflect authenticator options at AAL3|§4.3|
 ||Substantive|Refined the requirements about processing of attributes|§4.4|
 ||Editorial|Make language regarding activation factors for multifactor authenticators consistent|§5.1.5.1, 5.1.8.1, and 5.1.9.1|
-||Substantive|Recognizeuse of hardware TPM as hardware crypto authenticator|§5.1.7.1, 5.1.9.1|
+||Substantive|Recognize use of hardware TPM as hardware crypto authenticator|§5.1.7.1, 5.1.9.1|
 ||Editorial|Improve normative language on authenticated protected channels for biometrics|§5.2.3|
 ||Editorial|Changed "transaction" to "binding transaction" to emphasize that requirement doesn't apply to authentication transactions|§6.1.1|
 ||Editorial|Replaced out-of-context note at end of section 7.2|§7.2|
