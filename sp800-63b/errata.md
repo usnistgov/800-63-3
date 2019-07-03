@@ -7,7 +7,7 @@
 
 This table contains changes that have been incorporated into Special Publication 800-63B. Errata updates can include corrections, clarifications, or other minor changes in the publication that are either editorial or substantive in nature.
 
-|Date|Type|Change|Location
+|Date|Type|Change|Location|
 |----|----|----|----|
 |2017-12-01|Editorial|Updated AAL descriptions for consistency with other text in document|Introduction|
 ||Editorial|Deleted "cryptographic" to consistently reflect authenticator options at AAL3|§4.3|
