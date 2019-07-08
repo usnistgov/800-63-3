@@ -14,6 +14,6 @@ This table contains changes that have been incorporated into Special Publication
 ||Editorial|Fixed verbiage in xAL flowcharts|Figures 6-1, 6-2, and 6-3|
 ||Editorial|Added NISTIR 8062 as a reference|§8.1|
 ||Editorial|Added definitions for disassociability, manageability, processing, and predictability|Appendix A|
-|2019-XX-XX|Substantive|Added definition for Authorization Component|Appendix A|
-||Editorial|Fixed wording of FAL3 definition|§5.2|
+|2019-XX-XX|Editorial|Fixed wording of FAL3 definition|§5.2|
+||Substantive|Added definition for Authorization Component|Appendix A|
 ||Editorial|Removed extraneous definition of Protected Session|Appendix A|
