@@ -76,10 +76,11 @@ ul.audiences li {
 }
 
 .navbar-fixed-left {
-  width: 140px;
+  width: 160px;
   position: fixed;
   border-radius: 0;
-  height: 100%;
+  height: calc(100% - 56px); /*56px for the header*/
+  overflow-y: scroll;
 }
 
 .navbar-fixed-left .navbar-nav > li {
@@ -91,6 +92,7 @@ ul.audiences li {
   padding-left: 160px;
 }
 
+}
 .nist-header + .container {
     padding-left: 15px;
 }
@@ -98,7 +100,7 @@ ul.audiences li {
 /* On using dropdown menu (To right shift popuped) */
 .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
   margin-top: -50px;
-  margin-left: 140px;
+  margin-left: 100px;
 }
 
 .nav>li>a.icon {
@@ -107,6 +109,25 @@ ul.audiences li {
 
 .nav>li>a.icon.icon-fa {
   padding: 0;
+}
+
+.navbar-fixed-left .navbar-nav .subnav {
+  font-size: smaller;
+  line-height: 1.1em;
+}
+
+.navbar-fixed-left .navbar-nav .subnav>li {
+  list-style: none;
+  padding-bottom: 4px;
+}
+
+.navbar-fixed-left .navbar-nav .subnav>li.active {
+  font-weight: bold;
+  list-style: disc;
+}
+
+.navbar-fixed-left .navbar-nav .subnav a {
+  color: black;
 }
 
 /* Style default/base tables since we are using markdown */
@@ -148,6 +169,7 @@ table.authors td{
 }
 
 
+
 @media screen and (max-width: 700px) {
   .nist-header {
     padding: 6px 10px;
@@ -182,10 +204,52 @@ table.authors td{
     padding: 2px;
     border-radius: 4px;
   }
+  
+  .navbar-fixed-left .navbar-nav > li.active {
+    background-color: #e7e7e7;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
 
-  .navbar-fixed-left .navbar-nav > li > a {
+  .navbar-fixed-left .navbar-nav > li.active > a,
+  .navbar-fixed-left .navbar-nav .subnav > li.active > a  {
+    font-weight: bold;
+  }
+
+  .navbar-fixed-left .navbar-nav > li > a,
+  .navbar-fixed-left .navbar-nav .subnav > li > a {
     margin: 2px;
     padding: 2px;
+    font-weight: normal;
+  }
+
+  .navbar-fixed-left .navbar-nav .subnav {
+    padding: 0;
+  }
+  
+  .navbar-fixed-left .navbar-nav .subnav>li {
+    float: left;
+    width: auto;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+  
+  .navbar-fixed-left .navbar-nav .subnav>li > a {
+    font-size: larger; /* this undoes the "font-size: smaller" in the normal-width render */
+  }
+  
+  .navbar-fixed-left .navbar-nav .subnav>li.active {
+    font-weight: bold;
+    list-style: none;
+    background-color: #d6d6d6;
+  }
+  
+  .navbar-fixed-left .navbar-nav .subnav>li.active a {
+    background-color: #d6d6d6;
   }
 
   .container {
