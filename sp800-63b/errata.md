@@ -22,8 +22,8 @@ This table contains changes that have been incorporated into Special Publication
 ||Substantive|Changed the title to processing limitation; clarified the language, incorporated privacy objectives language, and specified that consent is explicit|§9.3|
 ||Editorial|Added NISTIR 8062 as a reference|§11.1|
 ||Editorial|Corrected title of SP 800-63C|§11.3|
-|2019-XX-XX|Editorial|Clarified wording of verifier impersonation resistance requirement|§4.3.2|
+|2019-XX-XX|Substantive|Clarified wording of verifier impersonation resistance requirement|§4.3.2|
 ||Editorial|Emphasized use of key unlocked by additional factor to sign nonce|§5.1.9.1|
 ||Editorial|Provided examples of risk-based behavior observations|§5.2.2|
+||Editorial|Removed redundant phrase|§5.2.3|
 ||Editorial|Updated URL for reference [Blacklists]|§11.1|
-||Editorial|Remove redundant phrase|§5.2.3|
