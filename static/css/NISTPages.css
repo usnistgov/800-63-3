@@ -170,7 +170,7 @@ table.authors td{
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   .nist-header {
     padding: 6px 10px;
   }
