@@ -1,3 +1,6 @@
+---
+published: false
+---
 <div class="breaker"></div>
 <a name="errata"></a>
 
