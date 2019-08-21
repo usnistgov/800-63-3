@@ -1,3 +1,6 @@
+---
+published: false
+---
 <a name="appA"></a>
 
 ## Appendix A&mdash;Strength of Memorized Secrets
