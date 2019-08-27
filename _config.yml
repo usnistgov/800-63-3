@@ -22,6 +22,10 @@ exclude:
 - CONTRIBUTING.md
 - LICENSE.md
 - docker-compose.yml
+- sp800-63-3/*.md
+- sp800-63a/*.md
+- sp800-63b/*.md
+- sp800-63c/*.md
 
 # GitHub information
 org_name: usnistgov
