@@ -1,6 +1,3 @@
----
-published: false
----
 <div class="breaker"></div>
 <a name="references"></a>
 

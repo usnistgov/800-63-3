@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="sec6"></a>
 
 <div class="breaker"></div>

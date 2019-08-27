@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="security"></a>
 
 ## 8 Security
