@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="sec7"></a>
 
 ## 7 Session Management

@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="privacy"></a>
 
 ## <a name="privacy-section-header"></a> 9 Privacy Considerations

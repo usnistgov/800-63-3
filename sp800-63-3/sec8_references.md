@@ -1,6 +1,3 @@
----
-published: false
----
 ## 8 References
 
 *This section is informative.*

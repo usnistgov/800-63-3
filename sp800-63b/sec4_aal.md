@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="sec4"></a>
 
 ## <a name="AAL_SEC4"></a>4 Authenticator Assurance Levels

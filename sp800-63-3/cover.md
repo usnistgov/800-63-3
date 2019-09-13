@@ -1,6 +1,3 @@
----
-published: false
----
 <div class="text-right" markdown="1">
 
 # <a name="800-63-3"></a> NIST Special Publication 800-63

@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="sec1"></a>
 
 ## 1 Purpose

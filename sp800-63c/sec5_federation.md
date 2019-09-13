@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="federation"></a>
 
 ## 5 Federation

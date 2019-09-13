@@ -1,6 +1,3 @@
----
-published: false
----
 
 <div class="text-right" markdown="1">
 

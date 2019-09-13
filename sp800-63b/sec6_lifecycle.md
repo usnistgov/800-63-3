@@ -1,6 +1,3 @@
----
-published: false
----
 <a name="sec6"></a>
 
 ## 6 Authenticator Lifecycle Management
