@@ -99,6 +99,9 @@ The property that data originated from its purported source.
 #### Authoritative Source
 An entity that has access to, or verified copies of, accurate information from an issuing source such that a CSP can confirm the validity of the identity evidence supplied by an applicant during identity proofing. An issuing source may also be an authoritative source. Often, authoritative sources are determined by a policy decision of the agency or CSP before they can be used in the identity proofing validation phase.
 
+#### Authorization Component
+Something issued to an RP by an IdP during an identity federation transaction that grants the RP authorized access to a set of APIs (e.g., an OAuth access token). This credential can be separate from the assertion provided by the federation protocol (e.g., an OpenID Connect ID Token).
+
 #### Authorize
 A decision to grant [access](#access), typically automated by evaluating a subject's attributes.
 
@@ -225,7 +228,7 @@ Information or documentation provided by the applicant to support the claimed id
 The process by which a CSP collects, validates, and verifies information about a person.
 
 #### Identity Provider (IdP)
-The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
+The party that manages the subscriber's primary authentication credentials and issues assertions derived from those credentials. This is commonly the CSP as discussed within this document suite.
 
 #### Issuing Source
 An authority responsible for the generation of data, digital evidence (such as assertions), or physical documents that can be used as identity evidence.
@@ -341,9 +344,6 @@ Automated determination of a presentation attack. A subset of presentation attac
 A session wherein messages between two participants are encrypted and integrity is protected using a set of shared secrets called session keys.
 
 A participant is said to be *authenticated* if, during the session, they prove possession of one or more authenticators in addition to the session keys, and if the other party can verify the identity associated with the authenticator(s). If both participants are authenticated, the protected session is said to be *mutually authenticated*.
-
-#### Protected Session
-A session established on an authenticated protected channel.
 
 #### Pseudonym
 A name other than a legal name.
