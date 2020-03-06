@@ -59,7 +59,8 @@ This publication is available free of charge from:
 https://doi.org/10.6028/NIST.SP.800-63c  
 
 
-June 2017
+June 2017  
+Includes [updates](#errata) as of 03-02-2020
 
 ![](sp800-63-3/media/commerce_logo.png)
 

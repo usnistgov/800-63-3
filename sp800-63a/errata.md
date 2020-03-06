@@ -20,5 +20,6 @@ This table contains changes that have been incorporated into Special Publication
 ||Substantive|Clarified and removed ambiguity in requirement|§4.4.1.6|
 ||Substantive|Changed the title to processing limitation; clarified the language, incorporated privacy objectives language, and specified that consent is explicit|§8.3|
 ||Editorial|Added NISTIR 8062 as a reference|§10.1|
-|2019-XX-XX|Editorial|Corrected change descriptions for Table 2-1, §4.3; removed §6|Errata table|
-
+|2020-03-02|Editorial|Updated Type and Change of the §4.3 errata update (2017-12-01)|Errata table|
+||Editorial|Updated Change in Table 2-1 errata update (2017-12-01) to specify the changed row|Errata table|
+||Editorial|Removed entry for change made to §6 in the 2017-12-01 errata update since no change was made|Errata table|
