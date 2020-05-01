@@ -161,7 +161,8 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 			<li>The CSP SHOULD send a notification of proofing to a confirmed address of record.</li>  
 	  		<li>The CSP MAY provide an enrollment code directly to the subscriber if binding to an authenticator will occur at a later time.</li>
 	  		<li>The enrollment code SHALL be valid for a maximum of 7 days.</li>
-  		</ol></li>
+  		</ol>
+  	</li>
 	<li><strong>If the CSP performs remote proofing (unsupervised):</strong></li>
 		<ol type="a" start="a">  
 			<li>The CSP SHALL send an enrollment code to a confirmed address of record for the applicant.</li>
@@ -174,7 +175,8 @@ The CSP SHALL support in-person or remote identity proofing. The CSP SHOULD offe
 					<li>30 days, when sent to a postal address of record outside the contiguous United States;</li>
 					<li>10 minutes, when sent to a telephone of record (SMS or voice);</li>
 					<li>24 hours, when sent to an email address of record.</li>
-				</ol></li>
+				</ol>
+			</li>
 			<li>The CSP SHALL ensure the enrollment code and notification of proofing are sent to different addresses of record. For example, if the CSP sends an enrollment code to a phone number validated in records, a proofing notification will be sent to the postal address validated in records or obtained from validated and verified evidence, such as a driver's license.</li>
 		</ol>
 </ol>
