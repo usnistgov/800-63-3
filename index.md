@@ -5,22 +5,16 @@ description: "NIST Special Publication 800-63 Digital Identity Guidelines"
 ---
 <section class="home home-title" markdown="1">
 
-# Digital Identity Guidelines: Now Available
-
+# Digital Identity Guidelines
 
 </section>
 
 <section class="home home-about" markdown="1">
 <div class="section-container" markdown="1">
 
-#### June 22, 2017
-
-The finalized four-volume SP 800-63 *Digital Identity Guidelines* document suite is now available, both in PDF format and online.
-
-The Trusted Identities Group (TIG) thanks all that contributed to the development of these documents.
+The four-volume SP 800-63 *Digital Identity Guidelines* document suite is available in both PDF format and online.
 
 PDF versions of the documents are available from:
-
 
 | Document | Title | URL |
 |-----|-----|-----|
@@ -62,7 +56,11 @@ Links to the online version of the SP 800-63 suite are below.
 </li>
 </ul>
 
-A set of [Frequently Asked Questions (FAQ) is available online](https://pages.nist.gov/800-63-FAQ/).
+#### Additional informative resources:
+* [Frequently Asked Questions (FAQ)](https://pages.nist.gov/800-63-FAQ/)
+* NIST SP 800-63-3 Implementation Resources ([PDF](https://www.nist.gov/document/sp-800-63-3-implementation-resources07012020pdf))
+* Conformance Criteria for SP 800-63A *Enrollment and Identity Proofing* ([PDF](https://www.nist.gov/document/conformance-criteria-sp-800-63a-enrollment-and-identity-proofing))
+* Conformance Criteria for SP 800-63B *Authentication and Lifecycle Management* ([PDF](https://www.nist.gov/document/conformance-criteria-sp-800-63b-authentication-and-lifecycle-management))
 
 </div>
 </section>
