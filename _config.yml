@@ -30,6 +30,7 @@ exclude:
 # GitHub information
 org_name: usnistgov
 repo_name: 800-63-3
+repository: usnistgov/800-63-3
 
 # Navigation
 # List links that should appear in the site sidebar here
