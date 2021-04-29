@@ -62,7 +62,7 @@ Links to the online version of the SP 800-63 suite are below.
 * [NIST SP 800-63-3 Implementation Resources](https://pages.nist.gov/800-63-3-Implementation-Resources/) ([PDF](https://www.nist.gov/document/sp-800-63-3-implementation-resources07012020pdf))
 * Conformance Criteria for SP 800-63A *Enrollment and Identity Proofing* ([PDF](https://www.nist.gov/document/conformance-criteria-sp-800-63a-enrollment-and-identity-proofing))
 * Conformance Criteria for SP 800-63B *Authentication and Lifecycle Management* ([PDF](https://www.nist.gov/document/conformance-criteria-sp-800-63b-authentication-and-lifecycle-management))
-* Conformance Criteria for SP 800-63C *Federation and Assertions*([PDF](https://www.nist.gov/document/conformance-criteria-sp-800-63c-federation-and-assertions))
+* Conformance Criteria for SP 800-63C *Federation and Assertions* ([PDF](https://www.nist.gov/document/conformance-criteria-sp-800-63c-federation-and-assertions))
 
 </div>
 </section>
