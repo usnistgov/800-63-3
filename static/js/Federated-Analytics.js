@@ -1,4 +1,4 @@
-<#,$,/,*.
+<#,$,/,*.,//
 #*
 #  *.v0.1 121011 : First Test Version
 #  * v1.0 121012 : Added Cookie Synchronizing and filtered out Outbound tracking of cross- and sub-domain links
