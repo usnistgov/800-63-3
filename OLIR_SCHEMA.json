@@ -1,0 +1,189 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "JSON Schema for OLIR Reference Document version 1.1",
+    "id": "https://csrc.nist.gov/1.1/olir_reference_document_json_1.1.schema",
+    "definitions": {
+        "def_relationship_item": {
+            "description": "Defines a relationship item.",
+            "type": "object",
+            "properties": {
+                "focalDocumentElement": {
+                    "type": "string"
+                },
+                "focalDocumentElementDescription": {
+                    "type": "string"
+                },
+                "securityControlBaseline": {
+                    "type": "string",
+                    "enum": [
+                        "Low",
+                        "Moderate",
+                        "High",
+                        "Not Selected"
+                    ]
+                },
+                "rationale": {
+                    "type": "string",
+                    "enum": [
+                        "Semantic",
+                        "Syntactic",
+                        "Functional"
+                    ]
+                },
+                "relationship": {
+                    "type": "string",
+                    "enum": [
+                        "subset of",
+                        "not related to",
+                        "superset of",
+                        "equal to",
+                        "intersects with"
+                    ]
+                },
+                "referenceDocumentElement": {
+                    "type": "string"
+                },
+                "referenceDocumentElementDescription": {
+                    "type": "string"
+                },
+                "fulfilledBy": {
+                    "type": "string",
+                    "enum": [
+                        "Y",
+                        "N"
+                    ]
+                },
+                "groupIdentifier": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "strengthOfRelationship": {
+                    "type": "string",
+                    "enum": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "N/A"
+                    ]
+                }
+            },
+            "required": [
+                "focalDocumentElement",
+                "focalDocumentElementDescription",
+                "rationale",
+                "relationship",
+                "referenceDocumentElement",
+                "fulfilledBy"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "informationReferenceName": {
+            "type": "string",
+            "maxLength": 200
+        },
+        "informationReferenceShortName": {
+            "type": "string",
+            "maxLength": 100
+        },
+        "referenceVersion": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "webAddress": {
+            "type": "string",
+            "maxLength": 300
+        },
+        "focalDocumentVersion": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "securityCategorization": {
+            "type": "string",
+            "enum": [
+                "Low",
+                "Moderate",
+                "High"
+            ]
+        },
+        "summary": {
+            "type": "string",
+            "maxLength": 500
+        },
+        "targetAudience": {
+            "type": "string",
+            "maxLength": 500
+        },
+        "comprehensive": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "referenceDocumentAuthor": {
+            "type": "string",
+            "maxLength": 100
+        },
+        "referenceDocument": {
+            "type": "string",
+            "maxLength": 300
+        },
+        "referenceDate": {
+            "type": "string",
+            "maxLength": 200
+        },
+        "referenceDocumentURL": {
+            "type": "string",
+            "maxLength": 500
+        },
+        "referenceDeveloper": {
+            "type": "string",
+            "maxLength": 100
+        },
+        "comments": {
+            "type": "string"
+        },
+        "pointOfContact": {
+            "type": "string",
+            "maxLength": 500
+        },
+        "dependencyRequirement": {
+            "type": "string",
+            "maxLength": 500
+        },
+        "citations": {
+            "type": "string"
+        },
+        "relationships": {
+            "description": "Array of relationships",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/def_relationship_item"
+            }
+        }
+    },
+    "required": [
+        "informationReferenceName",
+        "referenceVersion",
+        "webAddress",
+        "focalDocumentVersion",
+        "targetAudience",
+        "comprehensive",
+        "referenceDocumentAuthor",
+        "referenceDocument",
+        "referenceDocumentURL",
+        "referenceDeveloper",
+        "comments",
+        "pointOfContact",
+        "citations"
+    ]
+}
