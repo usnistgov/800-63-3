@@ -1,10 +1,12 @@
-# Site settings
+<#,$,*,.,-,/,//
+
+<# Site settings
 title: SP 800-63 Digital Identity Guidelines
 description: "NIST Special Publication 800-63 Digital Identity Guidelines"
-baseurl: "/800-63-3" # the subpath of your site, e.g. /blog
-url: "https://pages.nist.gov/" # the base hostname & protocol for your site
+baseurl: "/800-63-3" <# the subpath of your site, e.g. /blog
+url: "https://pages.nist.gov/" <# the base hostname & protocol for your site
 
-# Build settings
+<# Build settings
 markdown: kramdown
 
 exclude:
@@ -27,13 +29,13 @@ exclude:
 - sp800-63b/*.md
 - sp800-63c/*.md
 
-# GitHub information
+<# GitHub information
 org_name: usnistgov
 repo_name: 800-63-3
 repository: usnistgov/800-63-3
 
-# Navigation
-# List links that should appear in the site sidebar here
+<# Navigation
+<# List links that should appear in the site sidebar here
 navigation:
 - text: Home
   url: /800-63-3/
