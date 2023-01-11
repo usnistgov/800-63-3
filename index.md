@@ -9,6 +9,16 @@ description: "NIST Special Publication 800-63 Digital Identity Guidelines"
 
 </section>
 
+<section class="home">
+
+<div class="alert alert-success">
+
+A new draft revision of SP 800-63 is <a href="https://pages.nist.gov/800-63-4/">available online now</a>. Public comments on the new revision are due March 24, 2023.
+
+</div>
+
+</section>
+
 <section class="home home-about" markdown="1">
 <div class="section-container" markdown="1">
 
